@@ -52,7 +52,7 @@ Build-Depends: autotools-dev,
                locales,
                network-manager-dev (>= 0.9) [linux-any],
                shared-mime-info
-Vcs-Bzr: http://code.launchpad.net/~ubuntu-desktop/gnome-control-center/ubuntu
+Vcs-Bzr: http://code.launchpad.net/~ubuntu-desktop/gnome-control-center/precise
 
 Package: gnome-control-center
 Architecture: any

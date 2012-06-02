@@ -726,8 +726,8 @@ gvc_mixer_control_change_input (GvcMixerControl *control,
                 if (! gvc_mixer_control_set_default_source (control, stream)) {
                         g_warning ("Failed to set default source with stream from input %s \n",
                                    gvc_mixer_ui_device_get_description (input));
-                        return;
                 }
+                return;
         }
 
         const GvcMixerStreamPort* active_port = gvc_mixer_stream_get_port (stream);
