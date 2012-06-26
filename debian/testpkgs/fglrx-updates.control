@@ -1,0 +1,9 @@
+Section: misc
+Priority: optional
+
+Package: fglrx-updates
+Version: 9:1.0
+Depends: dkms
+Description: dummy fglrx-updates driver (fails)
+ dummy fglrx
+Preinst: fail.sh

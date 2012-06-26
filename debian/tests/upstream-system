@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+# copy tests into our temporary directory, so that they avoid the local Python
+# modules and use the system ones
+cp -r tests ${TMPDIR:=/tmp}
+
+# succeeding test must not write anything to stderr, as per DEP-8
+# work around LP#972324
+env -u TMPDIR xvfb-run env TMPDIR="$TMPDIR" $TMPDIR/tests/run 2>&1

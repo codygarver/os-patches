@@ -1,0 +1,4 @@
+#!/bin/sh
+# Remove all built files from install
+cd $(readlink -f $(dirname $0))
+rm -f *.deb Packages*

@@ -1,0 +1,16 @@
+#!/bin/sh
+# Create and install some dummy fglrx/nvidia packages; needs equivs
+set -e
+
+cd $(readlink -f $(dirname $0))
+
+for f in *.control; do
+    equivs-build $f
+done
+
+apt-ftparchive packages . | gzip -9 > Packages.gz
+
+APT_SOURCES=/etc/apt/sources.list.d/jockey-test.list
+echo "Installing $APT_SOURCES..."
+echo "deb file://$(pwd)/ /" | sudo tee $APT_SOURCES >/dev/null
+sudo apt-get update

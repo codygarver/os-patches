@@ -1,0 +1,8 @@
+Section: misc
+Priority: optional
+
+Package: fglrx
+Version: 9:1.0
+Depends: dkms
+Description: dummy fglrx driver (works)
+ dummy fglrx

@@ -1,0 +1,8 @@
+#!/bin/sh
+# Remove apt source for dummy packages
+set -e
+APT_SOURCES=/etc/apt/sources.list.d/jockey-test.list
+[ -e $APT_SOURCES ] || exit 0
+echo "Uninstalling $APT_SOURCES..."
+sudo rm $APT_SOURCES
+sudo apt-get update
