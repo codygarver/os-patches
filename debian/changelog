@@ -1,3 +1,9 @@
+notify-osd (0.9.34-0ubuntu2+nochameleon457~precise1) precise; urgency=low
+
+  * Auto build.
+
+ -- Sergey "Shnatsel" Davidoff <Shnatsel@gmail.com>  Mon, 18 Jun 2012 22:04:27 +0000
+
 notify-osd (0.9.34-0ubuntu2) precise; urgency=low
 
   * Backport Cimi's color tweaks improvements (lp: #977974)
