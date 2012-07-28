@@ -154,6 +154,10 @@ enum
 #define GNOME_DESKTOP_SCHEMA         "org.gnome.desktop.interface"
 #define GSETTINGS_FONT_KEY           "font-name"
 
+/* unity settings */
+#define UNITY_SCHEMA                 "com.canonical.Unity"
+#define GSETTINGS_AVG_BG_COL_KEY     "average-bg-color"
+
 static guint g_defaults_signals[LAST_SIGNAL] = { 0 };
 
 /*-- internal API ------------------------------------------------------------*/
@@ -286,6 +290,52 @@ _gravity_changed (GSettings* settings,
 }
 
 void
+defaults_refresh_bg_color_property (Defaults *self)
+{
+	Atom         real_type;
+	gint         result;
+	gint         real_format;
+	gulong       items_read;
+	gulong       items_left;
+	gchar*       colors;
+	Atom         representative_colors_atom;
+	Display*     display;
+
+	g_return_if_fail ((self != NULL) && IS_DEFAULTS (self));
+
+	representative_colors_atom = gdk_x11_get_xatom_by_name ("_GNOME_BACKGROUND_REPRESENTATIVE_COLORS");
+	display = gdk_x11_display_get_xdisplay (gdk_display_get_default ());
+
+	gdk_error_trap_push ();
+	result = XGetWindowProperty (display,
+				     GDK_ROOT_WINDOW (),
+				     representative_colors_atom,
+				     0L,
+				     G_MAXLONG,
+				     False,
+				     XA_STRING,
+				     &real_type,
+				     &real_format,
+				     &items_read,
+				     &items_left,
+				     (guchar **) &colors);
+	gdk_flush ();
+	gdk_error_trap_pop_ignored ();
+
+	if (result == Success && items_read)
+	{
+		/* by treating the result as a nul-terminated string, we
+		 * select the first colour in the list.
+		 */
+		g_object_set (self,
+			      "bubble-bg-color",
+			      colors,
+			      NULL);
+		XFree (colors);
+	}
+}
+
+void
 defaults_refresh_screen_dimension_properties (Defaults *self)
 {
 	Atom         real_type;
@@ -366,6 +416,7 @@ defaults_constructed (GObject* gobject)
 	self = DEFAULTS (gobject);
 
 	defaults_refresh_screen_dimension_properties (self);
+	defaults_refresh_bg_color_property (self);
 
 	/* grab system-wide font-face/size and DPI */
 	_get_font_size_dpi (self);
@@ -482,7 +533,7 @@ defaults_init (Defaults* self)
 {
 	/* "connect" to the required GSettings schemas */
 	self->nosd_settings  = g_settings_new (NOTIFY_OSD_SCHEMA);
-	self->gnome_settings = g_settings_new (GNOME_DESKTOP_SCHEMA);; 
+	self->gnome_settings = g_settings_new (GNOME_DESKTOP_SCHEMA);
 
 	g_signal_connect (self->gnome_settings,
 					  "changed",
@@ -1746,6 +1797,8 @@ defaults_get_bubble_bg_color (Defaults* self)
 
 	if (!self || !IS_DEFAULTS (self))
 		return NULL;
+
+	defaults_refresh_bg_color_property (self);
 
 	g_object_get (self,
 		      "bubble-bg-color",

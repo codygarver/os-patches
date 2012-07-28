@@ -1,4 +1,0 @@
-# bzr-builder format 0.3 deb-version {debversion}+nochameleon457
-lp:notify-osd revid:mirco.mueller@ubuntu.com-20120323143542-6geylavgps3w3p5c
-merge nochameleon lp:~elementary-os/elementaryos/os-patch-notify-osd revid:shnatsel@gmail.com-20120618204834-an056s0f6t6sq99a
-nest-part ubuntu lp:~elementary-os/ubuntu-package-imports/notify-osd-precise debian debian revid:shnatsel@gmail.com-20120618210831-g6k5y7vecjdylgic
