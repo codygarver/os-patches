@@ -39,6 +39,7 @@ class Install(FilteredCommand):
             self.preseed('oem-config/enable', 'true')
 
         questions = ['^.*/apt-install-failed$',
+                     'migration-assistant/failed-unmount',
                      'ubiquity/install/copying_error/md5',
                      'ubiquity/install/new-bootdev',
                      'CAPB',

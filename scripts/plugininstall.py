@@ -529,13 +529,20 @@ class Install(install_misc.InstallBase):
                 self._db.subst(template, substr, data)
 
         for plugin in self.plugins:
+            if plugin.NAME == 'migrationassistant' and \
+                'UBIQUITY_MIGRATION_ASSISTANT' not in os.environ:
+                    continue
             self.next_region()
             # set a generic info message in case plugin doesn't provide one
             self.db.progress('INFO', 'ubiquity/install/title')
             inst = plugin.Install(None, db=self.db)
             ret = inst.install(self.target, Progress(self.db))
             if ret:
-                raise install_misc.InstallStepError("Plugin %s failed with code %s" % (plugin.NAME, ret))
+                if plugin.NAME == 'migrationassistant':
+                    self.db.input('critical', 'ubiquity/install/broken_migration')
+                    self.db.go()
+                else:
+                    raise install_misc.InstallStepError("Plugin %s failed with code %s" % (plugin.NAME, ret))
 
     def configure_apt(self):
         """Configure /etc/apt/sources.list."""

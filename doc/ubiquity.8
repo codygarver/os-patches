@@ -11,6 +11,7 @@
 .Op Fl Fl debug
 .Op Fl Fl pdb
 .Op Fl Fl cdebconf
+.Op Fl Fl no\-migration\-assistant
 .Op Fl Fl automatic
 .Op Fl Fl only
 .Op Fl Fl query
@@ -73,6 +74,13 @@ implementation.
 In future this may provide enough memory efficiency benefits to be made the
 default, but for now it is not really worthwhile and is therefore for
 experimental use only.
+.It Fl Fl no\-migration\-assistant
+Disable
+.Ic migration\-assistant ,
+which attempts to migrate documents and settings from other installed
+operating systems.
+If the migration process causes problems, please file a bug and use this
+option.
 .It Fl Fl automatic
 Skip over questions that have been pre-answered by use of a preseed file.
 This is useful for unattended installations.
