@@ -17,7 +17,7 @@
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
+#include <string.h>
 #include "gvc-mixer-ui-device.h"
 #include "gvc-mixer-card.h"
 
@@ -348,192 +348,216 @@ TODO
  which are useles because they are essentially duplicates.
  => a depthfirst like approach is needed ...
 */
+
+
+/**
+ * get_profile_canonical_name - removes the part of the string that starts with
+ * skip_prefix, i e corresponding to the other direction. Normally either
+ * "input:" or "output:"
+ * @returns string must be freed by user 
+ */
+static gchar *
+get_profile_canonical_name(const gchar *profile_name, const gchar *skip_prefix)
+{
+    gchar *result = g_strdup(profile_name);
+    gchar *c = result;
+   
+    while (*c) {
+        /* Find '\0' or past next '+' */
+        gchar *d = c;
+        while (*d) {
+            if (*d == '+') {
+               d++;
+               break;
+            }
+            d++;
+        }
+
+        if (g_str_has_prefix(c, skip_prefix)) {
+            /* It's the other direction, so remove it from result */
+            gchar *newresult;
+            int i = c - result;
+            result[i] = '\0';
+            newresult = g_strjoin("", result, d, NULL);
+            g_free(result);
+            result = newresult;
+            c = result + i; 
+        }
+        else 
+            c = d;
+    }
+    
+    /* Cut a final '+' off */
+    if (g_str_has_suffix(result, "+"))
+        result[strlen(result)-1] = '\0';
+
+    return result;
+}
+
+const gchar*
+gvc_mixer_ui_device_get_matching_profile (GvcMixerUIDevice *device, const gchar *profile)
+{
+	gchar *skip_prefix = device->priv->type == UiDeviceInput ? "output:" : "input:";
+	gchar *target_cname = get_profile_canonical_name(profile, skip_prefix);
+	GList *t, *values = g_hash_table_get_values(device->priv->profiles);
+	gchar *result = NULL;
+
+	for (t = values; t != NULL; t = t->next) {
+		GvcMixerCardProfile* p = t->data;
+		gchar *canonical_name = get_profile_canonical_name(p->profile, skip_prefix);
+        g_debug("analysing %s", p->profile);
+		if (!strcmp(canonical_name, target_cname)) {
+			result = p->profile;
+		}
+		g_free(canonical_name);
+    }
+
+	g_free(target_cname);
+	g_debug("Matching profile for '%s' is '%s'", profile, result ? result : "(null)");
+	return result;
+}
+
+
+/** gvc_mixer_ui_device_set_profiles
+   @param in_profiles a list of GvcMixerCardProfile
+   assigns value to
+    * device->priv->profiles (profiles to be added to combobox)
+    * device->priv->supported_profiles (all profiles of this port)
+    * device->priv->disable_profile_swapping (whether to show the combobox)
+*/
 void
 gvc_mixer_ui_device_set_profiles (GvcMixerUIDevice *device, const GList *in_profiles)
 {
-	g_debug ("\n SET PROFILES %s", gvc_mixer_ui_device_get_description(device));
+	g_debug ("=== SET PROFILES === '%s'", gvc_mixer_ui_device_get_description(device));
 		
 	GList* t;
 	GHashTable *profile_descriptions;
+	GHashTable *added_profiles; 
+	int only_canonical;
+	gchar *skip_prefix = device->priv->type == UiDeviceInput ? "output:" : "input:";
 	
 	if (in_profiles == NULL)
 		return;
-	
-	device->priv->supported_profiles = g_list_copy (in_profiles);
-	profile_descriptions = g_hash_table_new_full (g_str_hash,
-	 					      g_str_equal,
-	 					      g_free,
-	 					      g_free);
 
-	// Store each profile in a hash with the shortened relevant string as the key
-	for (t = in_profiles; t != NULL; t = t->next) {
+	device->priv->supported_profiles = g_list_copy ((GList*) in_profiles);
 
-		GvcMixerCardProfile* p;
-		p = t->data;
-		
-		if (g_strcmp0 (p->profile, "off") == 0) 
-			continue;
+	added_profiles = g_hash_table_new_full(g_str_hash, g_str_equal, g_free, NULL);
+    
+	/* Run two iterations: First, add profiles which are canonical themselves,
+	   Second, add profiles for which the canonical name is not added already 
+	*/
+	for (only_canonical = 1; only_canonical >= 0; only_canonical--) {
+    	for (t = (GList *) in_profiles; t != NULL; t = t->next) {
+			GvcMixerCardProfile* p = t->data;
+			gchar *canonical_name = get_profile_canonical_name(p->profile, skip_prefix);
+			g_debug("The canonical name for '%s' is '%s'", p->profile, canonical_name);
 
-		g_debug ("\n Attempt to split profile, p->profile %s on device %s \n",
-	   			 p->profile,
-	   			 gvc_mixer_ui_device_get_description (device));
-
-		gchar** modified;
-
-		modified = g_strsplit (p->profile, "+", 0);	
-		guint count;
-		
-		count = g_strv_length (modified);
-		// It's a profile that only handles one direction, cache it and move on
-		if (count == 1){
-			g_debug ("\n Single profile, key %s against value %s for device %s \n",
-					 p->profile,
-					 modified[0],
-					 gvc_mixer_ui_device_get_description (device));
-			g_hash_table_insert (profile_descriptions,
-					 		     g_strdup (p->profile),
-					 		     g_strdup (modified[0]));
-			g_strfreev (modified);
-			continue;
-		}
-
-		if (device->priv->type == UiDeviceOutput) {
-			if (g_str_has_prefix (modified[0], "output")){
-				g_debug ("\n Found an output profile - storing key %s against value %s for device %s \n",
-						   p->profile,
-						   modified[0],
-						   gvc_mixer_ui_device_get_description (device));
-				g_hash_table_insert (profile_descriptions,
-						 		     g_strdup (p->profile),
-						 		     g_strdup (modified[0]));
-			}
-		}
-		else{
-			if (g_str_has_prefix (modified[1], "input")){
-				g_debug ("\n Found an input profile - storing key %s against value %s for device %s \n",
-					  p->profile, modified[1], gvc_mixer_ui_device_get_description (device));
-				g_hash_table_insert (profile_descriptions,
-				 		     g_strdup (p->profile),
-				 		     g_strdup (modified[1]));
-			}
-		}
-		g_strfreev (modified);				
-	}
-	
-	// Determine if we want allow the user to change the profile from the device
-	// i.e. is there any actual choice or just much of the same thing from the 
-	// context of the direction on this device.
-	gboolean identical = TRUE;
-	GList *shortened_profiles;
-	shortened_profiles = g_hash_table_get_values (profile_descriptions);
-	
-	for (t = shortened_profiles; t != NULL; t = t->next) {
-		gchar* prof;
-		prof = t->data;
-		if (g_list_next (t) != NULL){
-			gchar* next_prof;
-			GList* n;
-			n = g_list_next (t);
-			next_prof = n->data;
-			identical = g_strcmp0 (prof, next_prof) == 0; 
-			g_debug ("try to compare %s with %s", prof, next_prof);
-		}
-		if (!identical){
-			break;
-		}
-	}
-	g_list_free (shortened_profiles);
-
-	g_debug ("\n device->priv->disable_profile_swapping = %i \n", 
-		  identical);
-
-	device->priv->disable_profile_swapping = identical;
-	GList *x;
-	GList *y;
-
-	if (!identical) {
-		for (y = in_profiles; y != NULL; y = y->next) {
-			GList *profiles_with_identical_shortened_names = NULL;
-			GvcMixerCardProfile* p;
-			p = y->data;
-	
-			if (g_strcmp0 (p->profile, "off") == 0) 
+			/* Have we already added the canonical version of this profile? */
+			if (g_hash_table_contains(added_profiles, canonical_name)) {
+				g_free(canonical_name);
 				continue;
-
-			gchar* short_name;
-			short_name = g_hash_table_lookup (profile_descriptions, p->profile);
-
-			g_debug ("\n Not identical - examine  %s -> %s \n\n", short_name, p->profile);
-			
-			// If we have already populated for this short name - trust?? our prioritisation below and move on
-			if (g_hash_table_contains (device->priv->profiles, short_name) == TRUE){
-				g_debug ("\n already populated for %s => ignore %s \n", short_name, p->profile);
-				continue;
-			}		
-
-			profiles_with_identical_shortened_names = g_list_append (profiles_with_identical_shortened_names, p);
-				
-			for (x = in_profiles; x != NULL; x = x->next) {
-				GvcMixerCardProfile* l;
-				l = x->data;
-				gchar* other_modified;
-		
-				if (g_strcmp0 (l->profile, "off") == 0) 
-					continue;
-
-				// no point in comparing it against itself.								
-				if (g_strcmp0 (p->profile, l->profile) == 0)
-					continue;
-
-				other_modified = g_hash_table_lookup (profile_descriptions, l->profile);
-				
-				if (g_strcmp0 (other_modified, short_name) == 0){
-					profiles_with_identical_shortened_names = g_list_append (profiles_with_identical_shortened_names,
-					 							 l);	
-				}
 			}
-			// Algorithm flaw				
-			GList* ordered = NULL;
-			ordered = g_list_sort (profiles_with_identical_shortened_names,
-			 		       (GCompareFunc) sort_profiles);	
 
-			GvcMixerCardProfile* priority_profile = g_list_last(ordered)->data;
+			if (only_canonical && strcmp(p->profile, canonical_name)) {
+				g_free(canonical_name);
+				continue;
+            }
 
-			g_debug ("\n Sensitive combo - Populate the profile combo with profile %s against short name %s",
-			 	  priority_profile->profile, short_name);
+			g_free(canonical_name);
 
-			g_hash_table_insert (device->priv->profiles,
-			 		     g_strdup(short_name),
-					     priority_profile);
-			g_list_free (profiles_with_identical_shortened_names);		
-		}
-	}
-	else{
-		// Since the profile list was already sorted on card port creation
-		// we just need to take the last one as this will have the highest priority
-		GvcMixerCardProfile* p = NULL;
-		p = g_list_last (in_profiles)->data;
-		if (p != NULL && p->human_profile != NULL)
-			g_hash_table_insert (device->priv->profiles, 
-					     p->human_profile,
-					     p);		
-	}
-	/* DEBUG */
-	/*GList* final_keys;
-	final_keys = g_hash_table_get_keys (device->priv->profiles);
-	GList* o;
-	g_debug ("\n\n Profile population \n FOR DEVICE %s", gvc_mixer_ui_device_get_description (device));
-	for (o = final_keys; o != NULL; o = o->next){
-		gchar* key;
-		key = o->data;
-		GvcMixerCardProfile* l;
-		l = g_hash_table_lookup (device->priv->profiles, key);
-		g_debug ("\n key %s against \n profile %s \n", 
-			key,
-			l->profile);
-	}*/
-	g_hash_table_destroy (profile_descriptions);
+			g_debug("Adding profile to combobox: '%s' - '%s'", p->profile, p->human_profile);
+            g_hash_table_insert(added_profiles, g_strdup(p->profile), p);
+            g_hash_table_insert(device->priv->profiles, g_strdup(p->human_profile), p);
+        }
+    }
+
+    /* TODO: Consider adding the "Off" profile here */
+
+	device->priv->disable_profile_swapping = g_hash_table_size(added_profiles) <= 1;
+    
+    g_hash_table_destroy(added_profiles);
 }
+
+/** gvc_mixer_ui_device_get_best_profile
+  * @param selected the selected profile or its canonical name - can be NULL
+  * if any profile is okay
+  * @param current the currently selected profile
+  * @returns a profile name, does not need to be freed, valid as long as the 
+  * ui device profiles are
+  */
+const gchar* 			
+gvc_mixer_ui_device_get_best_profile (GvcMixerUIDevice *device, const gchar *selected, 
+const gchar *current)
+{
+	GList *t;
+	GList *candidates = NULL;
+	const gchar *result = NULL;
+	gchar *skip_prefix = device->priv->type == UiDeviceInput ? "output:" : "input:";
+    gchar *canonical_name_selected = NULL;
+
+	/* First make a list of profiles acceptable to switch to */
+	if (selected) 
+		canonical_name_selected = get_profile_canonical_name(selected, skip_prefix);
+
+	for (t = device->priv->supported_profiles; t != NULL; t = t->next) {
+		GvcMixerCardProfile* p = t->data;
+		gchar *canonical_name = get_profile_canonical_name(p->profile, skip_prefix);
+		if (!canonical_name_selected || !strcmp(canonical_name, canonical_name_selected)) {
+			candidates = g_list_append(candidates, p);
+			g_debug("Candidate for profile switching: '%s'", p->profile);
+		}
+	}
+
+	if (!candidates) {
+		g_warning("No suitable profile candidates for '%s'", selected ? selected : "(null)");
+		g_free(canonical_name_selected);
+		return current; 
+	}
+
+	/* 1) Maybe we can skip profile switching altogether? */
+	for (t = candidates; (result == NULL) && (t != NULL); t = t->next) {
+		GvcMixerCardProfile* p = t->data;		
+		if (!strcmp(current, p->profile))
+			result = p->profile;
+	}
+
+	/* 2) Try to keep the other side unchanged if possible */
+	if (result == NULL) {
+		guint prio = 0;
+		gchar *skip_prefix_reverse = device->priv->type == UiDeviceInput ? "input:" : "output:";
+		gchar *current_reverse = get_profile_canonical_name(current, skip_prefix_reverse);
+		for (t = candidates; t != NULL; t = t->next) {
+			GvcMixerCardProfile* p = t->data;
+			gchar *p_reverse = get_profile_canonical_name(p->profile, skip_prefix_reverse);
+			g_debug("Comparing '%s' (from '%s') with '%s', prio %d", p_reverse, p->profile, current_reverse, p->priority); 
+			if (!strcmp(p_reverse, current_reverse) && (!result || p->priority > prio)) {
+				result = p->profile;
+				prio = p->priority;
+			}
+			g_free(p_reverse);
+		}
+		g_free(current_reverse);
+	}
+
+	/* 3) All right, let's just pick the profile with highest priority. 
+		TODO: We could consider asking a GUI question if this stops streams 
+		in the other direction */
+	if (result == NULL) {
+		guint prio = 0;
+		for (t = candidates; t != NULL; t = t->next) {
+			GvcMixerCardProfile* p = t->data;
+			if ((p->priority > prio) || !result) {
+				result = p->profile;
+				prio = p->priority;
+			}
+		}
+	}
+
+	g_list_free(candidates);
+	g_free(canonical_name_selected);
+	return result;
+}
+
 
 gboolean
 gvc_mixer_ui_device_should_profiles_be_hidden (GvcMixerUIDevice *device)

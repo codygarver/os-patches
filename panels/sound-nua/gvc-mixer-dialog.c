@@ -803,14 +803,16 @@ active_input_update (GvcMixerDialog *dialog,
         profiles = g_hash_table_get_values (profs_entries);
 
         if (profiles != NULL && !gvc_mixer_ui_device_should_profiles_be_hidden (active_input)){
+                const gchar *active_profile;
                 dialog->priv->input_profile_combo = gvc_combo_box_new (_("Mode:"));                
                 gvc_combo_box_set_profiles (GVC_COMBO_BOX (dialog->priv->input_profile_combo),
                                             profs_entries);
                                 
+                active_profile = gvc_mixer_control_get_active_profile_from_ui_device (dialog->priv->mixer_control,
+                                                                                       active_input);
+                if (active_profile)
+                        gvc_combo_box_set_active (GVC_COMBO_BOX (dialog->priv->input_profile_combo), active_profile);
 
-                gvc_combo_box_set_active (GVC_COMBO_BOX (dialog->priv->input_profile_combo), 
-                                          gvc_mixer_control_get_active_profile_from_ui_device (dialog->priv->mixer_control,
-                                                                                       active_input));
                 g_object_set_data (G_OBJECT (dialog->priv->input_profile_combo),
                                    "uidevice",
                                    active_input);
@@ -958,6 +960,7 @@ active_output_update (GvcMixerDialog *dialog,
         profiles = g_hash_table_get_values (profs_entries);
 
         if (profiles != NULL && !gvc_mixer_ui_device_should_profiles_be_hidden (active_output)) {
+                const gchar *active_profile;
 
                 dialog->priv->output_profile_combo = gvc_combo_box_new (_("Mode:"));                
                 gvc_combo_box_set_profiles (GVC_COMBO_BOX (dialog->priv->output_profile_combo),
@@ -972,9 +975,11 @@ active_output_update (GvcMixerDialog *dialog,
                                                       dialog->priv->size_group, FALSE);
                 }
 
-                gvc_combo_box_set_active (GVC_COMBO_BOX (dialog->priv->output_profile_combo), 
-                                          gvc_mixer_control_get_active_profile_from_ui_device (dialog->priv->mixer_control,
-                                                                                       active_output));
+                active_profile = gvc_mixer_control_get_active_profile_from_ui_device (dialog->priv->mixer_control,
+                                                                                       active_output);
+                if (active_profile)
+                        gvc_combo_box_set_active (GVC_COMBO_BOX (dialog->priv->output_profile_combo), active_profile);
+                                          
                 
                 g_object_set_data (G_OBJECT (dialog->priv->output_profile_combo),
                                    "uidevice",

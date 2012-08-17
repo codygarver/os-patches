@@ -58,6 +58,8 @@ gint        			gvc_mixer_ui_device_get_stream_id            		(GvcMixerUIDevice 
 const gchar*			gvc_mixer_ui_device_get_description          		(GvcMixerUIDevice *dev);
 const gchar*			gvc_mixer_ui_device_get_origin				 		(GvcMixerUIDevice *dev);
 const gchar*			gvc_mixer_ui_device_get_port				 		(GvcMixerUIDevice *dev);
+const gchar* 			gvc_mixer_ui_device_get_best_profile				(GvcMixerUIDevice *dev, const gchar *selected, const gchar *current);
+const gchar* 			gvc_mixer_ui_device_get_matching_profile			(GvcMixerUIDevice *dev, const gchar *profile);
 const gchar* 			gvc_mixer_ui_device_get_user_preferred_profile		(GvcMixerUIDevice *dev);
 const gchar* 			gvc_mixer_ui_device_get_top_priority_profile		(GvcMixerUIDevice *dev);
 GHashTable*				gvc_mixer_ui_device_get_profiles 			 		(GvcMixerUIDevice *dev);

@@ -82,15 +82,6 @@ struct GvcMixerControlPrivate
         GHashTable       *cards;
         GHashTable       *ui_outputs; /* Ui visible outputs */
         GHashTable       *ui_inputs; /* Ui visible inputs */      
-        /*
-        Handle the edge case whereby inorder to satisfy a user instruction to swap
-        to an output which was on a different profile we first need to swap profile,
-        this will then trigger the sink/stream creation. 
-        The two IDs below are used to store the cached desired device ID so that when the triggered update_source/sink
-        is called we know to set the port on that stream to the port of that desired input/output.
-        */
-        guint            cached_desired_output_id; 
-        guint            cached_desired_input_id;
         GvcMixerStream   *new_default_stream; /* new default stream, used in gvc_mixer_control_set_default_sink/source () */
         gboolean          new_default_is_source; /* true if currently setting the default source, false if setting the default sink */
 
@@ -477,7 +468,7 @@ gvc_mixer_control_lookup_input_id (GvcMixerControl *control,
    The profile full name stored in that device
    TODO: This belongs within the GvcMixerUIDevice.
  */
-gchar*
+const gchar*
 gvc_mixer_control_get_active_profile_from_ui_device (GvcMixerControl* control,
                                                      GvcMixerUIDevice* device)
 {
@@ -491,7 +482,7 @@ gvc_mixer_control_get_active_profile_from_ui_device (GvcMixerControl* control,
         card = gvc_mixer_control_lookup_card_id (control, card_id);
         GvcMixerCardProfile *profile;
         profile = gvc_mixer_card_get_profile (card);
-        return profile->profile;
+        return gvc_mixer_ui_device_get_matching_profile(device, profile->profile);
 }
 
 /**
@@ -519,9 +510,9 @@ gvc_mixer_control_get_stream_from_device (GvcMixerControl *control,
  * gvc_mixer_control_change_profile_on_selected_device:
  * @control:
  * @device:
- * @profile: 
+ * @param profile Can be null if any profile present on this port is okay
  * Returns: (transfer container) (element-type gboolean):
-   This method will attempt to swap the profle on the card of the device with given profile name
+   This method will attempt to swap the profile on the card of the device with given profile name
    If successfull it will set the preferred profile on that device so as we know the next time the user
    moves to that device it should have this profile active. 
  */
@@ -531,6 +522,8 @@ gvc_mixer_control_change_profile_on_selected_device (GvcMixerControl *control,
                                                      const gchar* profile)                                                    
 {
         guint card_id;
+        const gchar *best_profile;
+        GvcMixerCardProfile *current_profile;
         g_object_get ( G_OBJECT(device), "card-id", &card_id, NULL);
         
         if (card_id == GVC_MIXER_UI_DEVICE_INVALID){
@@ -539,11 +532,19 @@ gvc_mixer_control_change_profile_on_selected_device (GvcMixerControl *control,
         }
         GvcMixerCard *card;
         card = gvc_mixer_control_lookup_card_id (control, card_id);     
-        g_debug ("\n Trying to move to profile %s on card %s on stream id %i \n",
-                profile,
+        current_profile = gvc_mixer_card_get_profile (card);
+        
+        if (current_profile)
+                best_profile = gvc_mixer_ui_device_get_best_profile (device, profile, current_profile->profile);
+        else
+                best_profile = profile;
+        
+        g_assert(best_profile);
+
+        g_debug ("Selected '%s', moving to profile '%s' on card '%s' on stream id %i \n",
+                profile ? profile : "(any)", best_profile,
                 gvc_mixer_card_get_name (card),
                 gvc_mixer_ui_device_get_stream_id (device));
-
         
         g_debug ("\n default sink name = %s \n and default sink id %u",
                  control->priv->default_sink_name,
@@ -551,8 +552,8 @@ gvc_mixer_control_change_profile_on_selected_device (GvcMixerControl *control,
 
         control->priv->profile_swapping_device_id = gvc_mixer_ui_device_get_id (device);
 
-        if (gvc_mixer_card_change_profile (card, profile)) {
-                gvc_mixer_ui_device_set_user_preferred_profile (device, profile);
+        if (gvc_mixer_card_change_profile (card, best_profile)) {
+                gvc_mixer_ui_device_set_user_preferred_profile (device, best_profile);
                 return TRUE;
         }
         return FALSE;
@@ -585,29 +586,8 @@ gvc_mixer_control_change_output (GvcMixerControl *control,
 
         stream = gvc_mixer_control_get_stream_from_device (control, output);
         if (stream == NULL){
-                guint card_id;
-                g_object_get ( G_OBJECT(output), "card-id", &card_id, NULL);
-                
-                if (card_id == GVC_MIXER_UI_DEVICE_INVALID){
-                        g_warning ("gvc_mixer_control_change_output - no stream => different profile but cant find a valid card id ?");
-                        return;
-                }
-
-                const gchar* profile_name = NULL;
-                profile_name = gvc_mixer_ui_device_get_user_preferred_profile (output);
-
-                if (profile_name == NULL){
-                        // Otherwise move to the highest priority profile on that device
-                        profile_name = gvc_mixer_ui_device_get_top_priority_profile (output);
-                }
-
-                g_debug ("\n Trying to move to profile %s \n", profile_name);
-                GvcMixerCard *card;
-                card = gvc_mixer_control_lookup_card_id (control, card_id);
-                
-                control->priv->cached_desired_output_id = gvc_mixer_ui_device_get_id (output);
-
-                gvc_mixer_card_change_profile (card, profile_name);
+                gvc_mixer_control_change_profile_on_selected_device (control,
+                        output, NULL);
                 return;
         }
 
@@ -676,7 +656,7 @@ gvc_mixer_control_change_output (GvcMixerControl *control,
    - It assumes that if the stream is null that it cannot be a bluetooth or network stream (they never show unless they have valid sinks and sources)
    In the scenario of a NULL stream on the device
         - It fetches the device's preferred profile or if NUll the profile with the highest priority on that device.
-        - It then caches this device in control->priv->cached_desired_output_id so that when the update_sink triggered
+        - It then caches this device in control->priv->cached_desired_input_id so that when the update_source triggered
           from when we attempt to change profile we will know exactly what device to highlight on that stream.
         - It attempts to swap the profile on the card from that device and returns.
  - Next, it handles network or bluetooth streams that only require their stream to be made the default.
@@ -693,30 +673,8 @@ gvc_mixer_control_change_input (GvcMixerControl *control,
 
         stream = gvc_mixer_control_get_stream_from_device (control, input);
         if (stream == NULL){
-                // TODO - make a method - swap_profile_card
-                guint card_id;
-                g_object_get ( G_OBJECT(input), "card-id", &card_id, NULL);
-                
-                if (card_id == GVC_MIXER_UI_DEVICE_INVALID){
-                        g_warning ("gvc_mixer_control_change_input -no stream => different profile but cant find a valid card id ?");
-                        return;
-                }
-
-                const gchar* profile_name = NULL;
-                profile_name = gvc_mixer_ui_device_get_user_preferred_profile (input);
-
-                if (profile_name == NULL){
-                        // Otherwise move to the highest priority profile on that device
-                        profile_name = gvc_mixer_ui_device_get_top_priority_profile (input);
-                }
-
-                g_debug ("\n trying to move to profile %s \n", profile_name);
-                GvcMixerCard *card;
-                card = gvc_mixer_control_lookup_card_id (control, card_id);
-                
-                control->priv->cached_desired_input_id = gvc_mixer_ui_device_get_id (input);
-
-                gvc_mixer_card_change_profile (card, profile_name);
+                gvc_mixer_control_change_profile_on_selected_device (control,
+                        input, NULL);
                 return;
         }
 
@@ -1569,40 +1527,6 @@ update_sink (GvcMixerControl    *control,
                 // to the appropriate outputs (=> multiple potential outputs per stream).
                 sync_devices (control, stream);	
         }
-
-        // Handle the edge case whereby inorder to satisfy a user instruction to swap
-        // to an output which was on a different profile we first need to swap profile,
-        // this will then trigger the sink/stream creation. 
-        // At this point catch the stream, if necessary swap the port and return.
-        // anticipating another update sink call from the port change to finish the volume mapping.
-
-        if (control->priv->cached_desired_output_id != GVC_MIXER_UI_DEVICE_INVALID){
-                GvcMixerUIDevice *output = NULL;
-                output = gvc_mixer_control_lookup_output_id (control,
-                                                             control->priv->cached_desired_output_id);
-                if (gvc_mixer_stream_get_ports (stream) != NULL && output != NULL){
-                        
-                        g_debug ("\n Apparently we have a cached desired output, \n we should be on port %s \n",
-                                  gvc_mixer_ui_device_get_port (output)); 
-                        GvcMixerStreamPort* active_port = gvc_mixer_stream_get_port (stream);
-                        
-                        if (g_strcmp0(active_port->port, gvc_mixer_ui_device_get_port (output)) == 0){
-                                g_debug ("\n no need to change port, its already active \n");                       
-                        }
-                        else{                                                                              
-                                if (gvc_mixer_stream_change_port (stream, gvc_mixer_ui_device_get_port (output)) == FALSE){
-                                        g_warning ("\n Tried to swap port to previously cache port but failed");
-                                }
-                                else{
-                                        g_debug ("\n Swap port to previously cached port %s - return \n",
-                                                 gvc_mixer_ui_device_get_port (output)); 
-                                        control->priv->cached_desired_output_id = GVC_MIXER_UI_DEVICE_INVALID;
-                                        return;               
-                                }
-                        }                         
-                }
-                control->priv->cached_desired_output_id = GVC_MIXER_UI_DEVICE_INVALID;
-        }        
         
         /*
         When we change profile on a device that is not the server default sink,
@@ -1611,8 +1535,6 @@ update_sink (GvcMixerControl    *control,
         that this is the intended default or selected device the user wishes to use.
         This is messy but it's the only reliable way that it can be done without ripping the whole thing apart.
         */
-        gboolean default_set = FALSE;
-
         if (control->priv->profile_swapping_device_id != GVC_MIXER_UI_DEVICE_INVALID){
                 GvcMixerUIDevice *dev = NULL;
                 dev = gvc_mixer_control_lookup_output_id (control, control->priv->profile_swapping_device_id);
@@ -1621,13 +1543,12 @@ update_sink (GvcMixerControl    *control,
                         if (gvc_mixer_ui_device_get_stream_id (dev) == gvc_mixer_stream_get_id (stream)){
                                 g_debug ("Looks like we profile swapped on a non server default sink");
                                 gvc_mixer_control_set_default_sink (control, stream);
-                                default_set = TRUE;                   
                         }  
                 }
                 control->priv->profile_swapping_device_id = GVC_MIXER_UI_DEVICE_INVALID;                
         }
 
-        if (!default_set && control->priv->default_sink_name != NULL
+        if (control->priv->default_sink_name != NULL
             && info->name != NULL
             && strcmp (control->priv->default_sink_name, info->name) == 0) {
                 _set_default_sink (control, stream);
@@ -1724,27 +1645,28 @@ update_source (GvcMixerControl      *control,
                                      GUINT_TO_POINTER (info->index),
                                      g_object_ref (stream));
                 add_stream (control, stream);
-
                 sync_devices (control, stream);
         }
 
+        if (control->priv->profile_swapping_device_id != GVC_MIXER_UI_DEVICE_INVALID){
+                GvcMixerUIDevice *dev = NULL;
+ 
+                dev = gvc_mixer_control_lookup_input_id (control, control->priv->profile_swapping_device_id);
+
+                if (dev != NULL){
+                        // now check to make sure this new stream is the same stream just matched and set on the device object
+                        if (gvc_mixer_ui_device_get_stream_id (dev) == gvc_mixer_stream_get_id (stream)){
+                                g_debug ("Looks like we profile swapped on a non server default sink");
+                                gvc_mixer_control_set_default_source (control, stream);
+                        }  
+                }
+                control->priv->profile_swapping_device_id = GVC_MIXER_UI_DEVICE_INVALID;                
+        }
         if (control->priv->default_source_name != NULL
             && info->name != NULL
             && strcmp (control->priv->default_source_name, info->name) == 0) {
                 _set_default_source (control, stream);
         }
-
-        // make sure to update the UI!
-/*        if (port_change) {
-                GvcMixerUIDevice* input;
-                input = gvc_mixer_control_lookup_device_from_stream (control, stream);
-                g_debug ("port change detected in the update source 2\n");
-                g_signal_emit (G_OBJECT (control),
-                               signals[ACTIVE_INPUT_UPDATE],
-                               0,
-                               gvc_mixer_ui_device_get_id (input));
-        }        
-*/
 }
 
 static void
@@ -3249,8 +3171,6 @@ gvc_mixer_control_constructor (GType                  type,
         self = GVC_MIXER_CONTROL (object);
 
         gvc_mixer_new_pa_context (self);
-        self->priv->cached_desired_output_id = GVC_MIXER_UI_DEVICE_INVALID;
-        self->priv->cached_desired_input_id = GVC_MIXER_UI_DEVICE_INVALID;
         self->priv->profile_swapping_device_id = GVC_MIXER_UI_DEVICE_INVALID;
 
         return object;
