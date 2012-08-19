@@ -1,3 +1,10 @@
+partman-base (153ubuntu5) precise-proposed; urgency=low
+
+  * Permit non-cylinder alignment again on GPT (closes: #674894,
+    LP: #1006894).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 02 Jul 2012 14:54:45 +0100
+
 partman-base (153ubuntu4) precise; urgency=low
 
   * Be more careful about printing translated visuals, in case a translation

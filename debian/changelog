@@ -1,3 +1,52 @@
+ubiquity (2.10.19) precise-proposed; urgency=low
+
+  * Automatic update of included source packages: base-installer
+    1.122ubuntu7.1, debian-installer-utils 1.88ubuntu2.1, flash-kernel
+    2.28ubuntu42.2. (one-time update from precise-proposed) (LP: #1021293)
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Mon, 30 Jul 2012 10:36:51 -0400
+
+ubiquity (2.10.18) precise-proposed; urgency=low
+
+  [ James M. Leddy ]
+  * Only allow a user to proceed on the networking screen if he entered a valid
+    password. This prevents a nm dbus exception. (LP: #929092)
+
+  [ Colin Watson ]
+  * Install oem-config-slideshow-ubuntu in a separate pass from
+    oem-config-$frontend and ubiquity-frontend-$frontend, since it may be
+    missing from images; and only do this for the GTK frontend in any case,
+    since other frontends don't currently use the slideshow (LP: #987050).
+  * Don't try and fail to set up encrypted swap if no swap partitions are
+    configured (LP: #989279).
+
+  [ Stéphane Graber ]
+  * Get d-i components from precise-updates. (LP: #992241)
+  * Automatic update of included source packages: partman-base
+    153ubuntu5, partman-target 77ubuntu2.1.
+
+  [ Kent Baxley ]
+  * Add the ability to run simple, custom scripts in ubiquity-dm
+    (LP: #1017580).
+
+  [ Harald Sitter ]
+  * Fix bogus attribute access in usersetup plugin leading to crashes with
+    the KDE frontend (LP: #1008255)
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Tue, 17 Jul 2012 17:48:48 -0400
+
+ubiquity (2.10.17) precise-proposed; urgency=low
+
+  [ Colin Watson ]
+  * Improve download verification to handle systems not configured for
+    multiarch, i.e. anything other than amd64 by default (LP: #998492).
+
+  [ Evan Dandrea ]
+  * Remove migration-assistant following foundations-q-testing-
+    migration-assistant. Thanks Dmitrijs Ledkovs!
+
+ -- Evan Dandrea <ev@ubuntu.com>  Fri, 25 May 2012 16:49:43 +0100
+
 ubiquity (2.10.16) precise-proposed; urgency=low
 
   [ Steve Langasek ]

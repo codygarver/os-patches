@@ -1,3 +1,9 @@
+base-installer (1.122ubuntu7.1) precise-proposed; urgency=low
+
+  * Add Calxeda support (LP: #1004018)
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Mon, 16 Jul 2012 20:29:58 -0400
+
 base-installer (1.122ubuntu7) precise; urgency=low
 
   * Backport from upstream (Joey Hess):

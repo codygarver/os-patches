@@ -62,6 +62,9 @@ write_to_flash() {
 		"Marvell Armada XP Development Board")
 			return 1
 		;;
+		"Highbank")
+			return 1
+		;;
 		# Assume that we write to flash for all other devices
 		*)
 			return 0
@@ -72,16 +75,6 @@ write_to_flash() {
 machine=$(grep "^Hardware" /proc/cpuinfo | sed 's/Hardware\s*:\s*//')
 
 dove_flash_kernel_installer() {
-	in-target update-initramfs -u || true
-	install_mkimage
-
-	# Add the rootfs to the flash-kernel.conf file
-	rootfs=$(findfs /)
-	uuid="$(block-attr --uuid "$rootfs")"
-	echo "rootfs='root=UUID=$uuid'" > /target/etc/flash-kernel.conf
-}
-
-highbank_flash_kernel_installer() {
 	in-target update-initramfs -u || true
 	install_mkimage
 
@@ -228,7 +221,7 @@ case "$machine" in
 		in-target update-initramfs -u || true
 	;;
 	"Highbank")
-		highbank_flash_kernel_installer
+		dove_flash_kernel_installer
 	;;
 	"HP Media Vault mv2120")
 		if ! apt-install mv2120-utils; then
@@ -284,6 +277,9 @@ case "$machine" in
 	"Marvell Armada XP Development Board")
 		dove_flash_kernel_installer
 	;;
+	"Highbank")
+		dove_flash_kernel_installer
+	;;
 	"Thecus N2100" | "Thecus N4100")
 		in-target update-initramfs -u || true
 	;;
@@ -296,7 +292,7 @@ case "$machine" in
 	;;
 	*)
 		case "`archdetect`" in
-			"arm*/dove" | "arm*/armadaxp")
+			"arm*/dove" | "arm*/armadaxp" | "arm*/highbank")
 				dove_flash_kernel_installer
 			;;
 			"arm*/omap" | "arm*/omap4")

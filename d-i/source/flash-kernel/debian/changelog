@@ -1,3 +1,21 @@
+flash-kernel (2.28ubuntu42.2) precise-proposed; urgency=low
+
+  * Fix typo and escaping error on Highbank to allow it to load a ramdisk (LP: #1004018)
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Thu, 19 Jul 2012 06:20:19 -0700
+
+flash-kernel (2.28ubuntu42.1) precise-proposed; urgency=low
+
+  [ Michael Casadevall ]
+  * Fix highbank support (LP: #1004018)
+  * Merge in ogra's patch for single SRU
+
+  [ Oliver Grawert ]
+  * fix handling of linaro kernels on omap4 (LP: #1023952), thanks to
+     David Cullen <david.cullen@koe-americas.com> for the patch
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Wed, 18 Jul 2012 21:05:12 -0700
+
 flash-kernel (2.28ubuntu42) precise; urgency=low
 
   * Add Calxeda highbank support to flash-kernel and flash-kernel-installer.

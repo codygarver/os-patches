@@ -277,10 +277,6 @@ dove_flash_kernel() {
 			uboot_initramfs_load_addr=0x20000000
 			script_load_addr=0x1000
 			;;
-		"highbank")
-			uboot_kernel_load_addr=0x800000
-			uboot_initramfs_load_addr=0x01000000
-			;;
 	esac
 	printf "Generating kernel u-boot image... " >&2
 	cat $kfile >> $tmp
@@ -381,8 +377,27 @@ highbank_setup_dtb() {
 }
 
 highbank_flash_kernel() {
-	dove_flash_kernel
-	highbank_setup_dtb
+	if [ -e /boot/boot.script ];then
+		cp /boot/boot.scr /boot/boot.scr.bak
+		printf "Generating u-boot configuration from /boot/boot.script... " >&2
+		mkimage -A arm -T script -C none -n "Ubuntu boot script" -d /boot/boot.script \
+			/boot/boot.scr >&2 1>/dev/null
+		echo "done." >&2
+	else
+		cat >"/boot/boot.script" <<EOF
+echo Starting Ubuntu...
+setenv bootargs console=ttyAMA0 $rootfs nosplash
+mw.l 800000 0 10000
+scsi scan
+ext2load scsi 0 0x800000 vmlinuz
+ext2load scsi 0 0x1000000 initrd.img
+bootz 0x800000 0x1000000:\${filesize} 0x1000
+EOF
+	printf "Generating u-boot config for highbank... " >&2
+	mkimage -A arm -T script -C none -n "Ubuntu boot script" -d /boot/boot.script \
+		/boot/boot.scr >&2 1>/dev/null
+	echo "done." >&2
+	fi
 }
 
 efikamx_flash_kernel() {
@@ -883,13 +898,23 @@ case "$machine" in
 				check_subarch "omap"
 			;;
 			"OMAP4430 Panda Board" | "OMAP4 Panda board")
-				check_subarch "omap4"
+				# Linaro uses the same omap kernel for OMAP 3 and 4
+				if [ `expr "$kfile" : '.*linaro.*-omap$'` -ne 0 ]; then
+				        check_subarch "omap"
+				else
+				        check_subarch "omap4"
+				fi
 				if [ -z "${UBOOT_PART}" ]; then
 					export UBOOT_PART=/dev/mmcblk0p1
 				fi
 			;;
 			"OMAP4430 4430SDP board") 
-				check_subarch "omap4"
+				# Linaro uses the same omap kernel for OMAP 3 and 4
+				if [ `expr "$kfile" : '.*linaro.*-omap$'` -ne 0 ]; then
+				        check_subarch "omap"
+				else
+				        check_subarch "omap4"
+				fi
 				if [ -z "${UBOOT_PART}" ]; then
 					export UBOOT_PART=/dev/mmcblk1p1
 				fi
