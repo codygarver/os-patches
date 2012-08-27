@@ -1,3 +1,10 @@
+jockey (0.9.7-0ubuntu7.1) precise-proposed; urgency=low
+
+  * data/handlers/cdv.py:
+    - Add support for the Cedarview graphics driver (LP: #1026518).
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 19 Jul 2012 10:38:28 +0200
+
 jockey (0.9.7-0ubuntu7) precise; urgency=low
 
   * debian/tests/control: Add dbus-x11 dependency to get dbus-launch.
