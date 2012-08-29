@@ -445,6 +445,9 @@ def get_release():
                     line = line.split()
                     if line[2] == 'LTS':
                         line[1] += ' LTS'
+                    if line[1] == 'OS':
+                        line[0] = line[0] + " " + line[1]
+                        line[1] = line[2]
                     get_release.release_info = ReleaseInfo(name=line[0], version=line[1])
         except:
             syslog.syslog(syslog.LOG_ERR, 'Unable to determine the release.')
