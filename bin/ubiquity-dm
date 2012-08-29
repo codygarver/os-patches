@@ -405,10 +405,10 @@ EndSection
                     preexec_fn=self.drop_privileges)
                 extras.append(proc)
 
-            if os.path.exists('/usr/lib/ubiquity/panel') and "xfwm4" not in wm_cmd:
+            if os.path.exists('/usr/bin/wingpanel') and "xfwm4" not in wm_cmd:
                 if "openbox-lubuntu" not in wm_cmd and "openbox" not in wm_cmd:
                     extras.append(subprocess.Popen(
-                        ['/usr/lib/ubiquity/panel'],
+                        ['/usr/bin/wingpanel'],
                         stdin=null, stdout=logfile, stderr=logfile,
                         preexec_fn=self.drop_privileges))
 
