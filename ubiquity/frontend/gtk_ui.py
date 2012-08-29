@@ -813,8 +813,8 @@ class Wizard(BaseFrontend):
 #page_title,
 #install_progress_text,
 #install_details_expander {
-color : @dark_fg_color;
-background-color : @dark_bg_color;
+color : @fg_color;
+background-color : @bg_color;
 }
 
 GtkEntry, GtkButton, GtkLabel, GtkIconView, GtkTreeView row, GtkComboBox, GtkDrawingArea {
