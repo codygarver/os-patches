@@ -908,8 +908,7 @@ color : @fg_color
                     ('com.canonical.indicator.session', 'suppress-logout-restart-shutdown'),
                     ('com.canonical.indicator.session', 'suppress-restart-menuitem'),
                     ('com.canonical.indicator.session', 'suppress-shutdown-menuitem'),
-                    ('org.gnome.desktop.lockdown', 'disable-user-switching'),
-                    ('org.pantheon.desktop.wingpanel', 'show-launcher')):
+                    ('org.gnome.desktop.lockdown','disable-user-switching')):
             gs_schema = key[0]
             gs_key = key[1]
             gs_previous = '%s/%s' % (gs_schema, gs_key)
@@ -935,8 +934,7 @@ color : @fg_color
                     ('com.canonical.indicator.session', 'suppress-logout-restart-shutdown'),
                     ('com.canonical.indicator.session', 'suppress-restart-menuitem'),
                     ('com.canonical.indicator.session', 'suppress-shutdown-menuitem'),
-                    ('org.gnome.desktop.lockdown', 'disable-user-switching'),
-                    ('org.pantheon.desktop.wingpanel', 'show-launcher')):
+                    ('org.gnome.desktop.lockdown','disable-user-switching')):
             gs_schema = key[0]
             gs_key = key[1]
             gs_previous = '%s/%s' % (gs_schema, gs_key)
