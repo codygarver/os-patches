@@ -556,6 +556,29 @@ class Wizard(BaseFrontend):
 
         gsettings.set(gs_schema, gs_key, gs_value)
 
+    def disable_wingpanel_applications_launcher(self):
+        gs_schema = 'org.pantheon.desktop.wingpanel'
+        gs_key = 'show-launcher'
+        gs_previous = '%s/%s' % (gs_schema, gs_key)
+        if gs_previous in self.gsettings_previous:
+            return
+
+        gs_value = gsettings.get(gs_schema, gs_key)
+        self.gsettings_previous[gs_previous] = gs_value
+
+        if gs_value != False:
+            gsettings.set(gs_schema, gs_key, False)
+
+        atexit.register(self.enable_wingpanel_applications_launcher)
+
+    def enable_wingpanel_applications_launcher(self):
+        gs_schema = 'org.pantheon.desktop.wingpanel'
+        gs_key = 'show-launcher'
+        gs_previous = '%s/%s' % (gs_schema, gs_key)
+        gs_value = self.gsettings_previous[gs_previous]
+
+        gsettings.set(gs_schema, gs_key, gs_value)
+
     # Disable gnome-volume-manager automounting to avoid problems during
     # partitioning.
     def disable_volume_manager(self):
@@ -653,6 +676,7 @@ class Wizard(BaseFrontend):
 
         if 'UBIQUITY_ONLY' in os.environ:
             self.disable_logout_indicator()
+            self.disable_wingpanel_applications_launcher()
             if not 'UBIQUITY_DEBUG' in os.environ:
                 self.disable_terminal()
 
