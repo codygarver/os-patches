@@ -89,8 +89,10 @@ def main():
     if options.codename or options.all:
         if short:
             print distinfo.get('CODENAME', 'n/a')
+            print distinfo.get('SUITE', 'n/a')
         else:
             print 'Codename:\t%s' % distinfo.get('CODENAME', 'n/a')
+            print 'Suite:\t%s' % distinfo.get('SUITE', 'n/a')
 
 if __name__ == '__main__':
     main()
