@@ -479,7 +479,7 @@ def get_distro(id=None, codename=None, description=None, release=None):
     if not (id and codename and description and release):
         result = _lsb_release()
         id = result['Distributor ID']
-        codename = result['Codename']
+        codename = result['Suite']
         description = result['Description']
         release = result['Release']
     if id == "Ubuntu":
