@@ -1,0 +1,507 @@
+# Danish translation python-apt.
+# Copyright (C) 2011 python-apt & nedenstående oversætttere.
+# This file is distributed under the same license as the python-apt package.
+# Mads Bille Lundby <lundbymads@gmail.com>, 2009.
+# AJenbo <anders@jenbo.dk>, 2011.
+# Ask, 2011.
+# Joe Hansen <joedalton2@yahoo.dk>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: python-apt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-19 15:59+0200\n"
+"PO-Revision-Date: 2011-06-22 14:44+0200\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <debian-l10n-danish@lists.debian.org> \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. ChangelogURI
+#: ../data/templates/Ubuntu.info.in.h:4
+#, no-c-format
+msgid "http://changelogs.ubuntu.com/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+msgstr "http://changelogs.ubuntu.com/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:13
+msgid "Ubuntu 9.10 'Karmic Koala'"
+msgstr "Ubuntu 9.10 \"Karmic Koala\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:31
+msgid "Cdrom with Ubuntu 9.10 'Karmic Koala'"
+msgstr "Cd-rom med Ubuntu 9.10 \"Karmic Koala\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:74
+msgid "Ubuntu 9.04 'Jaunty Jackalope'"
+msgstr "Ubuntu 9.04 \"Jaunty Jackalope\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:92
+msgid "Cdrom with Ubuntu 9.04 'Jaunty Jackalope'"
+msgstr "Cd-rom med Ubuntu 9.04 \"Jaunty Jackalope\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:135
+msgid "Ubuntu 8.10 'Intrepid Ibex'"
+msgstr "Ubuntu 8.10 \"Intrepid Ibex\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:153
+msgid "Cdrom with Ubuntu 8.10 'Intrepid Ibex'"
+msgstr "Cd-rom med Ubuntu 8.10 \"Intrepid Ibex\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:197
+msgid "Ubuntu 8.04 'Hardy Heron'"
+msgstr "Ubuntu 8.04 \"Hardy Heron\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:215
+msgid "Cdrom with Ubuntu 8.04 'Hardy Heron'"
+msgstr "Cd-rom med Ubuntu 8.04 \"Hardy Heron\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:252
+msgid "Ubuntu 7.10 'Gutsy Gibbon'"
+msgstr "Ubuntu 7.10 \"Gutsy Gibbon\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:270
+msgid "Cdrom with Ubuntu 7.10 'Gutsy Gibbon'"
+msgstr "Cd-rom med Ubuntu 7.10 \"Gutsy Gibbon\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:305
+msgid "Ubuntu 7.04 'Feisty Fawn'"
+msgstr "Ubuntu 7.04 \"Feisty Fawn\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:323
+msgid "Cdrom with Ubuntu 7.04 'Feisty Fawn'"
+msgstr "Cd-rom med Ubuntu 7.04 \"Feisty Fawn\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:357
+msgid "Ubuntu 6.10 'Edgy Eft'"
+msgstr "Ubuntu 6.10 \"Edgy Eft\""
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:362
+msgid "Community-maintained"
+msgstr "Vedligeholdt af fællesskabet"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:368
+msgid "Restricted software"
+msgstr "Ikke-frit software"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:375
+msgid "Cdrom with Ubuntu 6.10 'Edgy Eft'"
+msgstr "Cd-rom med Ubuntu 6.10 \"Edgy Eft\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:409
+msgid "Ubuntu 6.06 LTS 'Dapper Drake'"
+msgstr "Ubuntu 6.06 LTS \"Dapper Drake\""
+
+#. CompDescriptionLong
+#: ../data/templates/Ubuntu.info.in:412
+msgid "Canonical-supported Open Source software"
+msgstr "Canonical-understøttet software med åben kildekode"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:414
+msgid "Community-maintained (universe)"
+msgstr "Vedligeholdt af fællesskabet (universe)"
+
+#. CompDescriptionLong
+#: ../data/templates/Ubuntu.info.in:415
+msgid "Community-maintained Open Source software"
+msgstr "Software med åben kildekode vedligeholdt af fællesskabet"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:417
+msgid "Non-free drivers"
+msgstr "Proprietære drivere"
+
+#. CompDescriptionLong
+#: ../data/templates/Ubuntu.info.in:418
+msgid "Proprietary drivers for devices"
+msgstr "Proprietære drivere til enheder"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:420
+msgid "Restricted software (Multiverse)"
+msgstr "Ikke-frit software (multiverse)"
+
+#. CompDescriptionLong
+#: ../data/templates/Ubuntu.info.in:421
+msgid "Software restricted by copyright or legal issues"
+msgstr "Software begrænset af ophavsret eller legale problemer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:427
+msgid "Cdrom with Ubuntu 6.06 LTS 'Dapper Drake'"
+msgstr "Cd-rom med Ubuntu 6.06 LTS \"Dapper Drake\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:439
+msgid "Important security updates"
+msgstr "Vigtige sikkerhedsopdateringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:444
+msgid "Recommended updates"
+msgstr "Anbefalede opdateringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:449
+msgid "Pre-released updates"
+msgstr "Ikke-frigivne opdateringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:454
+msgid "Unsupported updates"
+msgstr "Ikke-understøttede opdateringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:461
+msgid "Ubuntu 5.10 'Breezy Badger'"
+msgstr "Ubuntu 5.10 \"Breezy Badger\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:475
+msgid "Cdrom with Ubuntu 5.10 'Breezy Badger'"
+msgstr "Cd-rom med Ubuntu 5.10 \"Breezy Badger\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:487
+msgid "Ubuntu 5.10 Security Updates"
+msgstr "Ubuntu 5.10 sikkerhedsopdateringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:492
+msgid "Ubuntu 5.10 Updates"
+msgstr "Ubuntu 5.10 opdateringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:497
+msgid "Ubuntu 5.10 Backports"
+msgstr "Ubuntu 5.10 tilbageporteringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:504
+msgid "Ubuntu 5.04 'Hoary Hedgehog'"
+msgstr "Ubuntu 5.04 \"Hoary Hedgehog\""
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:518
+msgid "Cdrom with Ubuntu 5.04 'Hoary Hedgehog'"
+msgstr "Cd-rom med Ubuntu 5.04 \"Hoary Hedgehog\""
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:521 ../data/templates/Debian.info.in:148
+msgid "Officially supported"
+msgstr "Understøttet officielt"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:530
+msgid "Ubuntu 5.04 Security Updates"
+msgstr "Ubuntu 5.04 sikkerhedsopdateringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:535
+msgid "Ubuntu 5.04 Updates"
+msgstr "Ubuntu 5.04 opdateringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:540
+msgid "Ubuntu 5.04 Backports"
+msgstr "Ubuntu 5.04 tilbageporteringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:546
+msgid "Ubuntu 4.10 'Warty Warthog'"
+msgstr "Ubuntu 4.10 \"Warty Warthog\""
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:552
+msgid "Community-maintained (Universe)"
+msgstr "Vedligeholdt af fællesskabet (Universe)"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:554
+msgid "Non-free (Multiverse)"
+msgstr "Ikke-frit (multiverse)"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:560
+msgid "Cdrom with Ubuntu 4.10 'Warty Warthog'"
+msgstr "Cd-rom med Ubuntu 4.10 \"Warty Warthog\""
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:563
+msgid "No longer officially supported"
+msgstr "Ikke længere officielt supporteret"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:565
+msgid "Restricted copyright"
+msgstr "Begrænset ophavsret"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:572
+msgid "Ubuntu 4.10 Security Updates"
+msgstr "Ubuntu 4.10 sikkerhedsopdateringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:577
+msgid "Ubuntu 4.10 Updates"
+msgstr "Ubuntu 4.10 opdateringer"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:582
+msgid "Ubuntu 4.10 Backports"
+msgstr "Ubuntu 4.10 tilbageporteringer"
+
+#. ChangelogURI
+#: ../data/templates/Debian.info.in.h:4
+#, no-c-format
+msgid "http://packages.debian.org/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+msgstr "http://packages.debian.org/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+
+#. Description
+#: ../data/templates/Debian.info.in:8
+msgid "Debian 6.0 'Squeeze' "
+msgstr "Debian 6.0 \"Squeeze\" "
+
+#. Description
+#: ../data/templates/Debian.info.in:33
+msgid "Debian 5.0 'Lenny' "
+msgstr "Debian 5.0 \"Lenny\" "
+
+#. Description
+#: ../data/templates/Debian.info.in:58
+msgid "Debian 4.0 'Etch'"
+msgstr "Debian 4.0 \"Etch\""
+
+#. Description
+#: ../data/templates/Debian.info.in:83
+msgid "Debian 3.1 'Sarge'"
+msgstr "Debian 3.1 \"Sarge\""
+
+#. Description
+#: ../data/templates/Debian.info.in:94
+msgid "Proposed updates"
+msgstr "Foreslåede opdateringer"
+
+#. Description
+#: ../data/templates/Debian.info.in:101
+msgid "Security updates"
+msgstr "Sikkerhedsopdateringer"
+
+#. Description
+#: ../data/templates/Debian.info.in:108
+msgid "Debian current stable release"
+msgstr "Debian aktuel stabil udgivelse"
+
+#. Description
+#: ../data/templates/Debian.info.in:121
+msgid "Debian testing"
+msgstr "Debian tester"
+
+#. Description
+#: ../data/templates/Debian.info.in:146
+msgid "Debian 'Sid' (unstable)"
+msgstr "Debian \"Sid\" (ustabil)"
+
+#. CompDescription
+#: ../data/templates/Debian.info.in:150
+msgid "DFSG-compatible Software with Non-Free Dependencies"
+msgstr "DFSG-kompatibel software med ikke-frie afhængigheder"
+
+#. CompDescription
+#: ../data/templates/Debian.info.in:152
+msgid "Non-DFSG-compatible Software"
+msgstr "Ikke-DFSG-kompatibel software"
+
+#. TRANSLATORS: %s is a country
+#: ../aptsources/distro.py:208 ../aptsources/distro.py:423
+#, python-format
+msgid "Server for %s"
+msgstr "Server for %s"
+
+#. More than one server is used. Since we don't handle this case
+#. in the user interface we set "custom servers" to true and
+#. append a list of all used servers
+#: ../aptsources/distro.py:226 ../aptsources/distro.py:232
+#: ../aptsources/distro.py:248
+msgid "Main server"
+msgstr "Hovedserver"
+
+#: ../aptsources/distro.py:252
+msgid "Custom servers"
+msgstr "Brugerdefinerede servere"
+
+#: ../apt/progress/gtk2.py:259
+#, python-format
+msgid "Downloading file %(current)li of %(total)li with %(speed)s/s"
+msgstr "Henter fil %(current)li af %(total)li med %(speed)s/s"
+
+#: ../apt/progress/gtk2.py:265
+#, python-format
+msgid "Downloading file %(current)li of %(total)li"
+msgstr "Henter fil %(current)li af %(total)li"
+
+#. Setup some child widgets
+#: ../apt/progress/gtk2.py:285
+msgid "Details"
+msgstr "Detaljer"
+
+#: ../apt/progress/gtk2.py:367
+msgid "Starting..."
+msgstr "Starter..."
+
+#: ../apt/progress/gtk2.py:373
+msgid "Complete"
+msgstr "Færdig"
+
+#: ../apt/package.py:301
+#, python-format
+msgid "Invalid unicode in description for '%s' (%s). Please report."
+msgstr "Ugyldig unicode i beskrivelsen af \"%s\" (%s). Se venligst rapport."
+
+#: ../apt/package.py:937 ../apt/package.py:1043
+msgid "The list of changes is not available"
+msgstr "Listen med ændringer er ikke tilgængelig"
+
+#: ../apt/package.py:1047
+#, python-format
+msgid ""
+"The list of changes is not available yet.\n"
+"\n"
+"Please use http://launchpad.net/ubuntu/+source/%s/%s/+changelog\n"
+"until the changes become available or try again later."
+msgstr ""
+"Listen over ændringer er ikke tilgængelig endnu\n"
+"\n"
+"Se venligst http://launchpad.net/ubuntu/+source/%s/%s/+changelog\n"
+"indtil ændringerne bliver tilgængelige eller prøv igen senere."
+
+#: ../apt/package.py:1053
+msgid ""
+"Failed to download the list of changes. \n"
+"Please check your Internet connection."
+msgstr ""
+"Fejl ved hentning af ændringslisten.\n"
+"Undersøg venligst din internetforbindelse."
+
+#: ../apt/debfile.py:56
+#, python-format
+msgid "This is not a valid DEB archive, missing '%s' member"
+msgstr "Dette er ikke et gyldigt DEB-arkiv, mangler \"%s-medlem\""
+
+#: ../apt/debfile.py:81
+#, python-format
+msgid "List of files for '%s'could not be read"
+msgstr "Listen over filer for \"%s\" kunne ikke læses"
+
+#: ../apt/debfile.py:149
+#, python-format
+msgid "Dependency is not satisfiable: %s\n"
+msgstr "Afhængighed kan ikke opfyldes; %s\n"
+
+#: ../apt/debfile.py:173
+#, python-format
+msgid "Conflicts with the installed package '%s'"
+msgstr "I konflikt med den installerede pakke \"%s\""
+
+#: ../apt/debfile.py:319
+#, python-format
+msgid "Wrong architecture '%s'"
+msgstr "Forkert arkitektur \"%s\""
+
+#. the deb is older than the installed
+#: ../apt/debfile.py:325
+msgid "A later version is already installed"
+msgstr "Der er allerede installeret en senere version"
+
+#: ../apt/debfile.py:345
+msgid "Failed to satisfy all dependencies (broken cache)"
+msgstr "Kunne ikke opfylde alle afhængigheder (beskadiget cache)"
+
+#: ../apt/debfile.py:376
+#, python-format
+msgid "Cannot install '%s'"
+msgstr "Kan ikke installere \"%s\""
+
+#: ../apt/debfile.py:484
+#, python-format
+msgid "Install Build-Dependencies for source package '%s' that builds %s\n"
+msgstr "Installér bygge-afhængigheder til kildepakke \"%s\" der bygger %s\n"
+
+#: ../apt/debfile.py:494
+msgid "An essential package would be removed"
+msgstr "En nødvendig pakke vil blive fjernet"
+
+#: ../apt/progress/text.py:81
+#, python-format
+msgid "%c%s... Done"
+msgstr "%c%s... Færdig"
+
+#: ../apt/progress/text.py:118
+msgid "Hit "
+msgstr "Tjekkede "
+
+#: ../apt/progress/text.py:126
+msgid "Ign "
+msgstr "Ign "
+
+#: ../apt/progress/text.py:128
+msgid "Err "
+msgstr "Fejl "
+
+#: ../apt/progress/text.py:138
+msgid "Get:"
+msgstr "Henter:"
+
+#: ../apt/progress/text.py:198
+msgid " [Working]"
+msgstr " [Arbejder]"
+
+#: ../apt/progress/text.py:208
+#, python-format
+msgid ""
+"Media change: please insert the disc labeled\n"
+" '%s'\n"
+"in the drive '%s' and press enter\n"
+msgstr ""
+"Medieskift: Indsæt disken med navnet\n"
+" '%s'\n"
+"i drevet '%s' og tryk retur\n"
+
+#. Trick for getting a translation from apt
+#: ../apt/progress/text.py:216
+#, python-format
+msgid "Fetched %sB in %s (%sB/s)\n"
+msgstr "Hentede %sB på %s (%sB/s)\n"
+
+#: ../apt/progress/text.py:229
+msgid "Please provide a name for this Disc, such as 'Debian 2.1r1 Disk 1'"
+msgstr "Angiv et navn for denne disk, som f.eks. 'Debian 2.1r1 Disk 1'"
+
+#: ../apt/progress/text.py:241
+msgid "Please insert a Disc in the drive and press enter"
+msgstr "Indsæt en disk i drevet og tryk retur"
+
+#: ../apt/cache.py:96
+msgid "Building data structures"
+msgstr "Opbygger datastrukturer"
+
+

@@ -1,0 +1,310 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Funda Wang <fundawang@linux.net.cn>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: update-manager HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-04 09:06+0000\n"
+"PO-Revision-Date: 2009-09-06 03:14+0000\n"
+"Last-Translator: Feng Chao <rainofchaos@gmail.com>\n"
+"Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. ChangelogURI
+#: ../data/templates/Ubuntu.info.in.h:4
+#, no-c-format
+msgid "http://changelogs.ubuntu.com/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+msgstr "http://changelogs.ubuntu.com/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:8
+msgid "Ubuntu 8.04 'Hardy Heron'"
+msgstr "Ubuntu 8.04‘Hardy Heron’"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:25
+msgid "Cdrom with Ubuntu 8.04 'Hardy Heron'"
+msgstr "已插入 Ubuntu 8.04 'Hardy Heron' 光盘的光驱"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:60
+msgid "Ubuntu 7.10 'Gutsy Gibbon'"
+msgstr "Ubuntu 7.10‘Gutsy Gibbon’"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:77
+msgid "Cdrom with Ubuntu 7.10 'Gutsy Gibbon'"
+msgstr "Ubuntu 7.10‘Gutsy Gibbon’光盘"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:112
+msgid "Ubuntu 7.04 'Feisty Fawn'"
+msgstr "Ubuntu 7.04‘(Feisty Fawn)’"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:129
+msgid "Cdrom with Ubuntu 7.04 'Feisty Fawn'"
+msgstr "已插入 Ubuntu 7.04 'Feisty Fawn' 光盘的光驱"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:163
+msgid "Ubuntu 6.10 'Edgy Eft'"
+msgstr "Ubuntu 6.10 'Edgy Eft'"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:168
+msgid "Community-maintained"
+msgstr "社区维护"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:174
+msgid "Restricted software"
+msgstr "受限软件"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:180
+msgid "Cdrom with Ubuntu 6.10 'Edgy Eft'"
+msgstr "Ubuntu 6.10 'Edgy Eft' 光盘"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:214
+msgid "Ubuntu 6.06 LTS 'Dapper Drake'"
+msgstr "Ubuntu 6.06 LTS 'Dapper Drake'"
+
+#. CompDescriptionLong
+#: ../data/templates/Ubuntu.info.in:217
+msgid "Canonical-supported Open Source software"
+msgstr "Canonical 支持的开源软件"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:219
+msgid "Community-maintained (universe)"
+msgstr "社区维护 (universe)"
+
+#. CompDescriptionLong
+#: ../data/templates/Ubuntu.info.in:220
+msgid "Community-maintained Open Source software"
+msgstr "社区维护的开源软件"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:222
+msgid "Non-free drivers"
+msgstr "非开源或私有驱动"
+
+#. CompDescriptionLong
+#: ../data/templates/Ubuntu.info.in:418
+msgid "Proprietary drivers for devices"
+msgstr "设备的专有驱动"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:225
+msgid "Restricted software (Multiverse)"
+msgstr "受限软件(Multiverse)"
+
+#. CompDescriptionLong
+#: ../data/templates/Ubuntu.info.in:226
+msgid "Software restricted by copyright or legal issues"
+msgstr "有版权和合法性问题的的软件"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:231
+msgid "Cdrom with Ubuntu 6.06 LTS 'Dapper Drake'"
+msgstr "Ubuntu 6.06 LTS 'Dapper Drake' 光盘"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:243
+msgid "Important security updates"
+msgstr "重要安全更新"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:248
+msgid "Recommended updates"
+msgstr "推荐更新"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:253
+msgid "Pre-released updates"
+msgstr "提前释放出的更新"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:258
+msgid "Unsupported updates"
+msgstr "不支持的更新"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:265
+msgid "Ubuntu 5.10 'Breezy Badger'"
+msgstr "Ubuntu 5.10 'Breezy Badger'"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:278
+msgid "Cdrom with Ubuntu 5.10 'Breezy Badger'"
+msgstr "Ubuntu 5.10 'Breezy Badger' 光盘"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:290
+msgid "Ubuntu 5.10 Security Updates"
+msgstr "Ubuntu 5.10 安全更新"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:295
+msgid "Ubuntu 5.10 Updates"
+msgstr "Ubuntu 5.10 更新"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:300
+msgid "Ubuntu 5.10 Backports"
+msgstr "Ubuntu 5.10 移植"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:307
+msgid "Ubuntu 5.04 'Hoary Hedgehog'"
+msgstr "Ubuntu 5.04 'Hoary Hedgehog'"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:320
+msgid "Cdrom with Ubuntu 5.04 'Hoary Hedgehog'"
+msgstr "Ubuntu 5.04 'Hoary Hedgehog'光盘"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:323 ../data/templates/Debian.info.in:94
+msgid "Officially supported"
+msgstr "官方支持"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:332
+msgid "Ubuntu 5.04 Security Updates"
+msgstr "Ubuntu 5.04 安全更新"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:337
+msgid "Ubuntu 5.04 Updates"
+msgstr "Ubuntu 5.10 更新"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:342
+msgid "Ubuntu 5.04 Backports"
+msgstr "Ubuntu 5.04 Backports"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:348
+msgid "Ubuntu 4.10 'Warty Warthog'"
+msgstr "Ubuntu 4.10 'Warty Warthog'"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:354
+msgid "Community-maintained (Universe)"
+msgstr "社区维护 (Universe)"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:356
+msgid "Non-free (Multiverse)"
+msgstr "非自由"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:361
+msgid "Cdrom with Ubuntu 4.10 'Warty Warthog'"
+msgstr "Ubuntu 4.10 'Warty Warthog'光盘"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:364
+msgid "No longer officially supported"
+msgstr "官方不再支持"
+
+#. CompDescription
+#: ../data/templates/Ubuntu.info.in:366
+msgid "Restricted copyright"
+msgstr "版权受限"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:373
+msgid "Ubuntu 4.10 Security Updates"
+msgstr "Ubuntu 4.10 安全更新"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:378
+msgid "Ubuntu 4.10 Updates"
+msgstr "Ubuntu 4.10 更新"
+
+#. Description
+#: ../data/templates/Ubuntu.info.in:383
+msgid "Ubuntu 4.10 Backports"
+msgstr "Ubuntu 4.10 Backports"
+
+#. ChangelogURI
+#: ../data/templates/Debian.info.in.h:4
+#, no-c-format
+msgid "http://packages.debian.org/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+msgstr "http://packages.debian.org/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+
+#. Description
+#: ../data/templates/Debian.info.in:8
+msgid "Debian 4.0 'Etch' "
+msgstr ""
+
+#. Description
+#: ../data/templates/Debian.info.in:31
+#, fuzzy
+msgid "Debian 3.1 'Sarge'"
+msgstr "Debian 3.1 \"Sarge\""
+
+#. Description
+#: ../data/templates/Debian.info.in:42
+msgid "Proposed updates"
+msgstr "建议更新"
+
+#. Description
+#: ../data/templates/Debian.info.in:47
+msgid "Security updates"
+msgstr "安全更新"
+
+#. Description
+#: ../data/templates/Debian.info.in:54
+msgid "Debian current stable release"
+msgstr "当前稳定的 Debian 发布"
+
+#. Description
+#: ../data/templates/Debian.info.in:67
+msgid "Debian testing"
+msgstr "Debian testing"
+
+#. Description
+#: ../data/templates/Debian.info.in:92
+#, fuzzy
+msgid "Debian 'Sid' (unstable)"
+msgstr "Debian \"Sid\" (非稳定)"
+
+#. CompDescription
+#: ../data/templates/Debian.info.in:96
+msgid "DFSG-compatible Software with Non-Free Dependencies"
+msgstr "带有非自由依赖关系的DFSG兼容软件"
+
+#. CompDescription
+#: ../data/templates/Debian.info.in:98
+msgid "Non-DFSG-compatible Software"
+msgstr "非DFSG兼容软件"
+
+#. TRANSLATORS: %s is a country
+#: ../aptsources/distro.py:194 ../aptsources/distro.py:401
+#, python-format
+msgid "Server for %s"
+msgstr "%s 的服务器"
+
+#. More than one server is used. Since we don't handle this case
+#. in the user interface we set "custom servers" to true and
+#. append a list of all used servers
+#: ../aptsources/distro.py:213 ../aptsources/distro.py:218
+#: ../aptsources/distro.py:232
+msgid "Main server"
+msgstr "主服务器"
+
+#: ../aptsources/distro.py:235
+msgid "Custom servers"
+msgstr "自定义服务器"
+
