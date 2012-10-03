@@ -478,7 +478,7 @@ def get_distro(id=None, codename=None, description=None, release=None):
     # make testing easier
     if not (id and codename and description and release):
         result = _lsb_release()
-        id = result['Distributor ID']z
+        id = result['Distributor ID']
         codename = result['Codename']
         description = result['Description']
         release = result['Release']
