@@ -478,11 +478,14 @@ def get_distro(id=None, codename=None, description=None, release=None):
     # make testing easier
     if not (id and codename and description and release):
         result = _lsb_release()
-        id = result['Distributor ID']
-        codename = result['Suite']
+        id = result['Distributor ID']z
+        codename = result['Codename']
         description = result['Description']
         release = result['Release']
     if id == "Ubuntu":
+        return UbuntuDistribution(id, codename, description, release)
+    if id == "elementary OS":
+        codename = result['Suite']
         return UbuntuDistribution(id, codename, description, release)
     elif id == "Debian":
         return DebianDistribution(id, codename, description, release)
