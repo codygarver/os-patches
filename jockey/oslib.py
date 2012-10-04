@@ -206,7 +206,7 @@ class OSLib:
                 if l == ' .':
                     long += '\n\n'
                 elif l.startswith(' '):
-                    long += l.lstrip()
+                    long += ' ' + l.lstrip()
                 else:
                     break
 
@@ -861,19 +861,28 @@ class OSLib:
         method returns the video ABI for a driver package. If it is not None,
         it must match current_xorg_video_abi() for this driver to be offered
         for installation.
-        
+
         If this returns None, ABI checking is disabled.
         '''
         abi = None
-        dpkg = subprocess.Popen(['apt-cache', 'show', package],
+        process = subprocess.Popen(['apt-cache', 'show', package],
                 stdout=subprocess.PIPE)
-        out = dpkg.communicate()[0]
-        if dpkg.returncode == 0:
-            m = re.search('^Depends: .*(xorg-video-abi-\w+)', out, re.M)
+        out = process.communicate()[0]
+        abis = []
+        if process.returncode == 0:
+            m = re.search('^Depends: (.*)$', out, re.M)
             if m:
-                abi = m.group(1)
+                for dep in m.group(1).split(','):
+                    if dep.strip()[:15] != 'xorg-video-abi-':
+                        continue
+                    abi_pkgs = dep.split('|')
+                    for abi_pkg in abi_pkgs:
+                        abis.append(abi_pkg.strip())
 
-        return abi
+        if len(abis)>0:
+            return abis
+        else:
+            return None
 
     #
     # Internal helper methods

@@ -22,23 +22,29 @@ class _NvidiaDriverBase(XorgDriverHandler):
 
     def __init__(self, backend, version):
         self._free = False
+        name=_('NVIDIA accelerated graphics driver')
+        description=_('3D-accelerated proprietary graphics driver for '
+                      'NVIDIA cards. Required if you want to run Unity.')
+        rationale=_('This driver is required to fully utilise '
+                    'the 3D potential of NVIDIA graphics cards, as well as provide '
+                    '2D acceleration of newer cards.\n\n'
+                    'You need to install this driver if you wish to use the Unity '
+                    'desktop, enable desktop effects, or run software that '
+                    'requires 3D acceleration, such as some games.')
         if 'update' in version:
             name=_('NVIDIA accelerated graphics driver (post-release updates)')
-        else:
-            name=_('NVIDIA accelerated graphics driver')
+        elif 'experimental' in version:
+            name=_('NVIDIA accelerated graphics driver (**experimental** beta)')
+            description = None
+            rationale = None
+
         XorgDriverHandler.__init__(self, backend, 'nvidia_' + version.replace('-', '_'),
             'nvidia-' + version,
             None, None, {'NoLogo': 'True'},
             remove_modules=['dri', 'GLcore'],
             name=name,
-            description=_('3D-accelerated proprietary graphics driver for '
-                'NVIDIA cards. Required if you want to run Unity.'),
-            rationale=_('This driver is required to fully utilise '
-                'the 3D potential of NVIDIA graphics cards, as well as provide '
-                '2D acceleration of newer cards.\n\n'
-                'You need to install this driver if you wish to use the Unity '
-                'desktop, enable desktop effects, or run software that '
-                'requires 3D acceleration, such as some games.'))
+            description=description,
+            rationale=rationale)
 
         self._module_alias = 'nvidia'
         self._recommended = None
@@ -185,6 +191,10 @@ class _NvidiaDriverBase(XorgDriverHandler):
 
         # neither vesa nor nv support composite, so safe to say yes here
         return True
+
+class NvidiaDriverExperimental304(_NvidiaDriverBase):
+    def __init__(self, backend):
+        _NvidiaDriverBase.__init__(self, backend, 'experimental-304')
 
 class NvidiaDriverCurrent(_NvidiaDriverBase):
     def __init__(self, backend):

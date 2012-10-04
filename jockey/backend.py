@@ -209,7 +209,9 @@ class Backend(dbus.service.Object):
         self._check_polkit_privilege(sender, conn, 'com.ubuntu.devicedriver.info')
 
         if mode == 'any':
-            return self.handlers.keys()
+            handler_names = self.handlers.keys()
+            handler_names.sort()
+            return handler_names
 
         if mode not in ('free', 'nonfree'):
             raise InvalidModeException(

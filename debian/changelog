@@ -1,3 +1,23 @@
+jockey (0.9.7-0ubuntu7.3) precise-proposed; urgency=low
+
+  * Improve support for the nvidia-experimental-304 package
+    (LP: #1047681)
+    - When displaying list of video drivers, sort them alphabetically.
+    - Allow experimental drivers to fallback to the description from debian/control
+    - Insert spaces when appending lines from the control file description.
+      Fixes bad formatting in jockey's package description.
+    - Handle multiple abi versions.  Fixes bug preventing experimental
+      drivers from being displayed in jockey.
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Fri, 28 Sep 2012 19:01:40 -0700
+
+jockey (0.9.7-0ubuntu7.2) precise-proposed; urgency=low
+
+  * data/handlers/nvidia.py:
+    - Add support for the nvidia-experimental-304 package (LP: #1047681).
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 25 Sep 2012 10:57:39 +0200
+
 jockey (0.9.7-0ubuntu7.1) precise-proposed; urgency=low
 
   * data/handlers/cdv.py:

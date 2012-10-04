@@ -102,10 +102,10 @@ class XorgDriverHandler(KernelModuleHandler):
     def available(self):
         if self.package:
             cur_abi = OSLib.inst.current_xorg_video_abi()
-            pkg_abi = OSLib.inst.video_driver_abi(self.package)
-            if cur_abi and pkg_abi and cur_abi != pkg_abi:
-                logging.debug('XorgDriverHandler(%s, %s, %s): Disabling as package video ABI %s does not match X.org video ABI %s',
-                        self.module, self.package, self.xorg_driver, pkg_abi, cur_abi)
+            pkg_abis = OSLib.inst.video_driver_abi(self.package)
+            if cur_abi and pkg_abis and (cur_abi not in pkg_abis):
+                logging.debug('XorgDriverHandler(%s, %s, %s): Disabling as package video ABI(s) %s not compatible with X.org video ABI %s',
+                        self.module, self.package, self.xorg_driver, ', '.join(pkg_abis), cur_abi)
                 return False
 
         return KernelModuleHandler.available(self)
