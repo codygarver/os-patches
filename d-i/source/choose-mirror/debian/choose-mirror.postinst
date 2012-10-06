@@ -6,8 +6,8 @@ anna-install apt-mirror-setup || true
 if ! db_get mirror/suite || ! [ "$RET" ]; then
 	if [ -f /etc/lsb-release ]; then
 		. /etc/lsb-release
-		if [ -n "$DISTRIB_CODENAME" ]; then
-			db_set mirror/suite "$DISTRIB_CODENAME"
+		if [ -n "$DISTRIB_SUITE" ]; then
+			db_set mirror/suite "$DISTRIB_SUITE"
 		fi
 	fi
 fi

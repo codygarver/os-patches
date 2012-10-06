@@ -39,7 +39,7 @@ for device in $(list-devices usb-partition); do
 		db_get driver-injection-disk/load
 		if [ "$RET" = true ]; then
 			if mountmedia driver-injection-disk; then
-				dir=/media/$(lsb_info DISTRIB_ID)-drivers/$(lsb_info DISTRIB_CODENAME)
+				dir=/media/$(lsb_info DISTRIB_ID)-drivers/$(lsb_info DISTRIB_SUITE)
 				for filename in $dir/*.deb $dir/*.udeb $dir/*.ude; do
 					if [ -f "$filename" ] && check_deb_arch "$filename"; then
 						log "installing driver package $filename"
