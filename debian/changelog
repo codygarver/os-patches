@@ -1,0 +1,82 @@
+xdg-user-dirs (0.14-0ubuntu2) precise; urgency=low
+
+  * Upload translations from launchpad (lp: #549088)
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 12 Apr 2012 17:48:53 +0200
+
+xdg-user-dirs (0.14-0ubuntu1) oneiric; urgency=low
+
+  * New upstream version
+  * launchpad_translations_export.patch: dropped during the unstable cycle
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 16 Jun 2011 16:49:01 +0200
+
+xdg-user-dirs (0.13-2ubuntu2) natty; urgency=low
+
+  * debian/patches/launchpad_translations_export.patch: updated translations
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 13 Apr 2011 18:44:02 +0200
+
+xdg-user-dirs (0.13-2ubuntu1) natty; urgency=low
+
+  * Merge with Debian unstable, remaining Ubuntu changes:
+  * debian/control:
+    - Add Vcs-Bzr link
+  * debian/rules:
+    - Don't strip translations
+    - Updated translations template
+    - Drop Catalan language changes
+  * debian/patches/l10n-ca.patch:
+    - Dropped
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 03 Nov 2010 15:45:16 +1100
+
+xdg-user-dirs (0.13-2) unstable; urgency=low
+
+  * Add l10n-ca.patch, with Catalan updates.
+  * Delete ca.gmo on clean, rebuild it by hand on build.
+  * Add Vcs-* headers.
+  * Bump Standards-Version to 3.9.1, no changes required.
+
+ -- Jordi Mallach <jordi@debian.org>  Mon, 04 Oct 2010 19:05:27 +0200
+
+xdg-user-dirs (0.13-1) unstable; urgency=low
+
+  * New upstream bugfix release:
+    + New translations and a fix for a memory leak.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 15 Sep 2010 10:38:12 +0200
+
+xdg-user-dirs (0.12-1) unstable; urgency=low
+
+  * New upstream bugfix release:
+    + debian/patches/01_bashism.patch:
+      - Dropped, merged upstream.
+  * debian/control.in,
+    debian/compat,
+    debian/source/format,
+    debian/rules:
+    + Update Standards-Version to 3.8.4, no additional changes needed.
+    + Updating debhelper compat level to 7.
+    + Updating to source format 3.0 (quilt).
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 24 Mar 2010 17:06:04 +0100
+
+xdg-user-dirs (0.10-1) unstable; urgency=low
+
+  * New upstream bugfix release with many new translations.
+  * debian/control.in:
+    + Update Standards-Version to 3.7.3, no additional changes needed.
+    + Move homepage to the Homepage field and fix the URL (Closes: #445898).
+  * debian/rules:
+    + Add -Wl,-z,defs to LDFLAGS and actually append.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 12 Feb 2008 14:54:52 +0100
+
+xdg-user-dirs (0.9-1) unstable; urgency=low
+
+  * Initial version (Closes: #413817)
+  * Thanks to Baptiste Mille-Mathias for the Xsession.d script.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 04 Oct 2007 15:03:16 +0200
+
