@@ -278,14 +278,6 @@ device_added_cb (GdkDeviceManager *manager,
 	update_current_page (self);
 }
 
-static gboolean
-link_activated (GtkLinkButton *button,
-		CcWacomPanel  *self)
-{
-	cc_wacom_panel_switch_to_panel (self, "bluetooth");
-	return TRUE;
-}
-
 void
 cc_wacom_panel_switch_to_panel (CcWacomPanel *self,
 				const char   *panel)
