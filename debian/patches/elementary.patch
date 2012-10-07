@@ -1,6 +1,6 @@
-diff -Nur os-patch-indicator-sound-precise/data/com.canonical.indicator.sound.gschema.xml os-patch-indicator-sound.new/data/com.canonical.indicator.sound.gschema.xml
---- os-patch-indicator-sound-precise/data/com.canonical.indicator.sound.gschema.xml	2012-10-07 18:44:34.186655000 +0100
-+++ os-patch-indicator-sound.new/data/com.canonical.indicator.sound.gschema.xml	2012-10-07 18:44:49.928953000 +0100
+diff -Nur os-patch-indicator-sound-precise/data/com.canonical.indicator.sound.gschema.xml os-patch-indicator-sound-precise.new/data/com.canonical.indicator.sound.gschema.xml
+--- os-patch-indicator-sound-precise/data/com.canonical.indicator.sound.gschema.xml	2012-10-07 19:13:29.791940000 +0100
++++ os-patch-indicator-sound-precise.new/data/com.canonical.indicator.sound.gschema.xml	2012-10-07 19:00:57.049852103 +0100
 @@ -11,13 +11,20 @@
      </key>
      <key name="interested-media-players" type="as">
@@ -23,9 +23,9 @@ diff -Nur os-patch-indicator-sound-precise/data/com.canonical.indicator.sound.gs
      <key name="global-mute" type="b">
        <default>false</default>
        <summary>Initial setting for global mute (mute all) on the menu </summary>
-diff -Nur os-patch-indicator-sound-precise/src/metadata-widget.c os-patch-indicator-sound.new/src/metadata-widget.c
---- os-patch-indicator-sound-precise/src/metadata-widget.c	2012-10-07 18:44:34.186655000 +0100
-+++ os-patch-indicator-sound.new/src/metadata-widget.c	2012-10-07 18:44:49.928953000 +0100
+diff -Nur os-patch-indicator-sound-precise/src/metadata-widget.c os-patch-indicator-sound-precise.new/src/metadata-widget.c
+--- os-patch-indicator-sound-precise/src/metadata-widget.c	2012-10-07 19:13:29.791940000 +0100
++++ os-patch-indicator-sound-precise.new/src/metadata-widget.c	2012-10-07 19:04:39.471757208 +0100
 @@ -68,7 +68,8 @@
                                               GVariant* value,
                                               gpointer userdata);
@@ -36,24 +36,7 @@ diff -Nur os-patch-indicator-sound-precise/src/metadata-widget.c os-patch-indica
  static void draw_album_art_placeholder (GtkWidget *metadata);
  
  static void draw_album_border (GtkWidget *metadata, gboolean selected);
-@@ -138,7 +139,7 @@
-   #else
-   hbox = gtk_hbox_new(FALSE, 0);
-   #endif 
--  
-+
-   priv->meta_data_h_box = hbox;
-   priv->current_height = 1;
-   
-@@ -155,6 +156,7 @@
-   g_signal_connect_after (GTK_WIDGET(self), "draw", 
-                           G_CALLBACK(metadata_widget_icon_triangle_draw_cb_gtk_3),
-                           GTK_WIDGET(self));
-+
-   #else
-   g_signal_connect(priv->album_art, "expose-event", 
-                    G_CALLBACK(metadata_image_expose),
-@@ -185,7 +187,7 @@
+@@ -185,7 +186,7 @@
    gtk_widget_set_size_request (artist, 140, 15);
  
    gtk_label_set_ellipsize(GTK_LABEL(artist), PANGO_ELLIPSIZE_MIDDLE); 
@@ -62,7 +45,7 @@ diff -Nur os-patch-indicator-sound-precise/src/metadata-widget.c os-patch-indica
    priv->artist_label = artist;
    
    // title
-@@ -196,7 +198,7 @@
+@@ -196,7 +197,7 @@
    
    gtk_widget_set_size_request (piece, 140, 15);
    gtk_label_set_ellipsize(GTK_LABEL(piece), PANGO_ELLIPSIZE_MIDDLE);
@@ -71,7 +54,7 @@ diff -Nur os-patch-indicator-sound-precise/src/metadata-widget.c os-patch-indica
    priv->piece_label =  piece;
  
    // container
-@@ -207,7 +209,7 @@
+@@ -207,7 +208,7 @@
    gtk_widget_set_size_request (container, 140, 15);
  
    gtk_label_set_ellipsize(GTK_LABEL(container), PANGO_ELLIPSIZE_MIDDLE);  
@@ -80,26 +63,7 @@ diff -Nur os-patch-indicator-sound-precise/src/metadata-widget.c os-patch-indica
    priv->container_label = container;
  
    gtk_box_pack_start (GTK_BOX (vbox), priv->piece_label, FALSE, FALSE, 0);  
-@@ -222,6 +224,8 @@
-                    G_CALLBACK(metadata_widget_selection_received_event_callback),
-                    GTK_WIDGET(self));   
- 
-+
-+
-   gint padding = 4;
-   gtk_widget_style_get(GTK_WIDGET(self), "toggle-spacing", &padding, NULL);
- 
-@@ -289,7 +293,8 @@
- }
- 
- 
--#if GTK_CHECK_VERSION(3, 0, 0)  
-+#if GTK_CHECK_VERSION(3, 0, 0)
-+
- static void
- metadata_widget_get_preferred_width (GtkWidget* self,
-                                      gint* minimum_width,
-@@ -717,15 +722,15 @@
+@@ -717,15 +718,15 @@
    
    if(g_ascii_strcasecmp(DBUSMENU_METADATA_MENUITEM_ARTIST, property) == 0){  
      gtk_label_set_text(GTK_LABEL(priv->artist_label), g_variant_get_string(value, NULL));
@@ -118,12 +82,7 @@ diff -Nur os-patch-indicator-sound-precise/src/metadata-widget.c os-patch-indica
    } 
    else if(g_ascii_strcasecmp(DBUSMENU_METADATA_MENUITEM_ARTURL, property) == 0){
      g_string_erase(priv->image_path, 0, -1);
-@@ -756,17 +761,20 @@
-   else{
-     gtk_widget_show (priv->meta_data_h_box);     
-   }
-+
-   gtk_widget_queue_draw(GTK_WIDGET(self));
+@@ -760,11 +761,13 @@
  }
  
  static void
@@ -138,12 +97,9 @@ diff -Nur os-patch-indicator-sound-precise/src/metadata-widget.c os-patch-indica
 -                                    gtk_label_get_text(GTK_LABEL(label)));
 +  markup = g_markup_printf_escaped (markup_str, gtk_label_get_text(GTK_LABEL(label)));
    gtk_label_set_markup (GTK_LABEL (label), markup);
--  g_free(markup); 
-+  g_free(markup);
+   g_free(markup); 
  }
- 
- static void
-@@ -822,16 +830,16 @@
+@@ -822,16 +825,16 @@
    gtk_label_set_text( GTK_LABEL(priv->container_label), 
                        dbusmenu_menuitem_property_get( priv->twin_item,
                                                        DBUSMENU_METADATA_MENUITEM_ALBUM));
@@ -163,9 +119,9 @@ diff -Nur os-patch-indicator-sound-precise/src/metadata-widget.c os-patch-indica
  
    g_string_erase(priv->image_path, 0, -1);
    const gchar *arturl = dbusmenu_menuitem_property_get( priv->twin_item,
-diff -Nur os-patch-indicator-sound-precise/src/music-player-bridge.vala os-patch-indicator-sound.new/src/music-player-bridge.vala
---- os-patch-indicator-sound-precise/src/music-player-bridge.vala	2012-10-07 18:44:34.186655000 +0100
-+++ os-patch-indicator-sound.new/src/music-player-bridge.vala	2012-10-07 18:44:49.928953000 +0100
+diff -Nur os-patch-indicator-sound-precise/src/music-player-bridge.vala os-patch-indicator-sound-precise.new/src/music-player-bridge.vala
+--- os-patch-indicator-sound-precise/src/music-player-bridge.vala	2012-10-07 19:13:29.791940000 +0100
++++ os-patch-indicator-sound-precise.new/src/music-player-bridge.vala	2012-10-07 19:07:07.232670190 +0100
 @@ -40,6 +40,7 @@
      this.file_monitors = new HashMap<string, string> ();
      this.settings_manager = new SettingsManager();
@@ -225,31 +181,22 @@ diff -Nur os-patch-indicator-sound-precise/src/music-player-bridge.vala os-patch
      
      var mpris_key = determine_key ( desktop );
 +    bool is_preferred = desktop in this.settings_manager.fetch_preferred ();
+     // Are we sure clients will appear like this with the new registration method in place. 
      if ( this.registered_clients.has_key (mpris_key) == false ){
        debug("New client has registered that we have not seen before: %s", dbus_name );
-       PlayerController ctrl = new PlayerController ( this.root_menu,
-@@ -171,7 +193,8 @@
+@@ -172,7 +194,8 @@
                                                       this.fetch_icon_name(desktop),                                                    
                                                       this.calculate_menu_position(),
                                                       use_playlists,
 -                                                     PlayerController.state.READY );
 +                                                     PlayerController.state.READY,
-+                                                     is_preferred);
++                                                     is_preferred );
        this.registered_clients.set ( mpris_key, ctrl );
        debug ( "Have not seen this %s before, new controller created.", desktop );        
        this.settings_manager.add_interested ( desktop );
-diff -Nur os-patch-indicator-sound-precise/src/player-controller.vala os-patch-indicator-sound.new/src/player-controller.vala
---- os-patch-indicator-sound-precise/src/player-controller.vala	2012-10-07 18:44:34.186655000 +0100
-+++ os-patch-indicator-sound.new/src/player-controller.vala	2012-10-07 18:44:49.928953000 +0100
-@@ -40,7 +40,7 @@
-   }
-   
-   public int current_state = state.OFFLINE;
--    
-+
-   public Dbusmenu.Menuitem root_menu;
-   public string dbus_name { get; set;}
-   public ArrayList<PlayerItem> custom_items;
+diff -Nur os-patch-indicator-sound-precise/src/player-controller.vala os-patch-indicator-sound-precise.new/src/player-controller.vala
+--- os-patch-indicator-sound-precise/src/player-controller.vala	2012-10-07 19:13:29.791940000 +0100
++++ os-patch-indicator-sound-precise.new/src/player-controller.vala	2012-10-07 19:09:00.633390891 +0100
 @@ -49,6 +49,7 @@
    public int menu_offset { get; set;}
    public string icon_name { get; set; }
@@ -268,16 +215,15 @@ diff -Nur os-patch-indicator-sound-precise/src/player-controller.vala os-patch-i
    {
      this.use_playlists = use_playlists;
      this.root_menu = root;
-@@ -68,6 +70,8 @@
+@@ -68,6 +70,7 @@
      this.custom_items = new ArrayList<PlayerItem>();
      this.current_state = initial_state;
      this.menu_offset = offset;
 +    this.is_preferred = is_preferred;
-+
      this.construct_widgets();
      this.establish_mpris_connection();
      this.update_layout();
-@@ -156,6 +160,11 @@
+@@ -156,6 +159,11 @@
      }
    }
  
@@ -289,18 +235,17 @@ diff -Nur os-patch-indicator-sound-precise/src/player-controller.vala os-patch-i
    public void hibernate()
    {
      update_state(PlayerController.state.OFFLINE);
-@@ -175,12 +184,14 @@
+@@ -175,12 +183,13 @@
        metadata_menuitem.should_collapse (true);
        playlists_menuitem.root_item.property_set_bool (MENUITEM_PROP_VISIBLE,
                                                        false);
 -      this.custom_items[widget_order.TRANSPORT].property_set_bool (MENUITEM_PROP_VISIBLE,
 -                                                                   this.app_info.get_id() == "rhythmbox.desktop");         
-+      this.custom_items[widget_order.TRANSPORT].property_set_bool (MENUITEM_PROP_VISIBLE, is_preferred);        
++      this.custom_items[widget_order.TRANSPORT].property_set_bool (MENUITEM_PROP_VISIBLE, is_preferred);   
        return; 
      }
 -    metadata_menuitem.should_collapse (!this.custom_items[widget_order.METADATA].populated (MetadataMenuitem.relevant_attributes_for_ui()) );
 -    if (this.app_info.get_id() == "rhythmbox.desktop"){
-+
 +    bool should_collapse = !this.custom_items[widget_order.METADATA].populated (MetadataMenuitem.relevant_attributes_for_ui());
 +    metadata_menuitem.should_collapse (should_collapse);
 +
@@ -308,9 +253,9 @@ diff -Nur os-patch-indicator-sound-precise/src/player-controller.vala os-patch-i
        TransportMenuitem transport = this.custom_items[widget_order.TRANSPORT] as TransportMenuitem;
        transport.handle_cached_action();
      }
-diff -Nur os-patch-indicator-sound-precise/src/settings-manager.vala os-patch-indicator-sound.new/src/settings-manager.vala
---- os-patch-indicator-sound-precise/src/settings-manager.vala	2012-10-07 18:44:34.186655000 +0100
-+++ os-patch-indicator-sound.new/src/settings-manager.vala	2012-10-07 18:44:49.928953000 +0100
+diff -Nur os-patch-indicator-sound-precise/src/settings-manager.vala os-patch-indicator-sound-precise.new/src/settings-manager.vala
+--- os-patch-indicator-sound-precise/src/settings-manager.vala	2012-10-07 19:13:29.791940000 +0100
++++ os-patch-indicator-sound-precise.new/src/settings-manager.vala	2012-10-07 19:10:50.410199022 +0100
 @@ -22,12 +22,14 @@
  {
    private Settings settings;
@@ -321,8 +266,7 @@ diff -Nur os-patch-indicator-sound-precise/src/settings-manager.vala os-patch-in
    }
    construct{
      this.settings = new Settings ("com.canonical.indicator.sound");
--    this.settings.changed["blacklisted-media-players"].connect (on_blacklist_event);    
-+    this.settings.changed["blacklisted-media-players"].connect (on_blacklist_event);
+     this.settings.changed["blacklisted-media-players"].connect (on_blacklist_event);    
 +    this.settings.changed["preferred-media-players"].connect (on_preferred_event);
    }
     
@@ -365,10 +309,10 @@ diff -Nur os-patch-indicator-sound-precise/src/settings-manager.vala os-patch-in
    // Convenient debug method inorder to provide visability over 
    // the contents of both interested and blacklisted containers in its gsettings
  /**
-diff -Nur os-patch-indicator-sound-precise/src/sound-service-dbus.c os-patch-indicator-sound.new/src/sound-service-dbus.c
---- os-patch-indicator-sound-precise/src/sound-service-dbus.c	2012-10-07 18:44:34.186655000 +0100
-+++ os-patch-indicator-sound.new/src/sound-service-dbus.c	2012-10-07 18:44:49.928953000 +0100
-@@ -79,8 +79,10 @@
+diff -Nur os-patch-indicator-sound-precise/src/sound-service-dbus.c os-patch-indicator-sound-precise.new/src/sound-service-dbus.c
+--- os-patch-indicator-sound-precise/src/sound-service-dbus.c	2012-10-07 19:13:29.791940000 +0100
++++ os-patch-indicator-sound-precise.new/src/sound-service-dbus.c	2012-10-07 19:12:47.651078783 +0100
+@@ -79,8 +79,11 @@
  static void sound_service_dbus_dispose    (GObject *object);
  static void sound_service_dbus_finalize   (GObject *object);
  
@@ -376,10 +320,11 @@ diff -Nur os-patch-indicator-sound-precise/src/sound-service-dbus.c os-patch-ind
  static void show_sound_settings_dialog (DbusmenuMenuitem *mi,
                                          gpointer user_data);
 +#endif
++
  static gboolean sound_service_dbus_blacklist_player (SoundServiceDbus* self,
                                                       const gchar* player_name,
                                                       gboolean blacklist); 
-@@ -195,6 +197,7 @@
+@@ -195,6 +198,7 @@
    dbusmenu_menuitem_child_add_position (priv->root_menuitem, slider_item, 1);
    dbusmenu_menuitem_child_add_position (priv->root_menuitem, voip_input_menu_item, 2);
  
@@ -387,7 +332,7 @@ diff -Nur os-patch-indicator-sound-precise/src/sound-service-dbus.c os-patch-ind
    if (!priv->greeter_mode) {
      // Separator
      DbusmenuMenuitem* separator = dbusmenu_menuitem_new();
-@@ -216,8 +219,10 @@
+@@ -216,8 +220,10 @@
      g_signal_connect(G_OBJECT(settings_mi), DBUSMENU_MENUITEM_SIGNAL_ITEM_ACTIVATED,
                       G_CALLBACK(show_sound_settings_dialog), NULL);  
    }
@@ -398,26 +343,7 @@ diff -Nur os-patch-indicator-sound-precise/src/sound-service-dbus.c os-patch-ind
  /**
  show_sound_settings_dialog:
  Bring up the gnome volume preferences dialog
-@@ -227,24 +232,15 @@
-                             gpointer user_data)
- {
-   GError * error = NULL;
--  gchar* cmd;
--  if (!g_strcmp0 (g_getenv ("XDG_CURRENT_DESKTOP"), "Unity"))
--    cmd = "gnome-control-center sound-nua";
--  else if (!g_strcmp0 (g_getenv ("DESKTOP_SESSION"), "xubuntu"))
--    cmd = "pavucontrol";
-- else if (!g_strcmp0 (g_getenv ("DESKTOP_SESSION"), "ubuntustudio"))
--    cmd = "pavucontrol";
--  else
--    cmd = "gnome-control-center sound";
--
-   if (!g_spawn_command_line_async("gnome-volume-control --page=applications", &error) &&
--          !g_spawn_command_line_async(cmd, &error) && 
-+      !g_spawn_command_line_async("gnome-control-center sound", &error) && 
-       !g_spawn_command_line_async("xfce4-mixer", &error))
-   {
-     g_warning("Unable to show dialog: %s", error->message);
+@@ -235,6 +241,7 @@
      g_error_free(error);
    }
  }
