@@ -1,0 +1,18 @@
+Description: Fix qvfb build failure on Qt 4.8.0
+Bug: https://bugreports.qt.nokia.com/browse/QTBUG-19804
+
+---
+ tools/qvfb/qvfb.pro |    2 --
+ 1 file changed, 2 deletions(-)
+
+--- a/tools/qvfb/qvfb.pro
++++ b/tools/qvfb/qvfb.pro
+@@ -38,8 +38,6 @@ SOURCES         = qvfb.cpp \
+ 
+ !embedded {
+     DEFINES         += QT_NO_QWS_SIGNALHANDLER
+-    HEADERS         += ../../src/gui/embedded/qlock_p.h
+-    SOURCES         += ../../src/gui/embedded/qlock.cpp
+ }
+ 
+ include(../shared/deviceskin/deviceskin.pri)

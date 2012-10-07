@@ -1,0 +1,22 @@
+commit f5eb19bc4dca6f3bfaaf832784a3cbca24dba479
+Author: Albert Astals Cid <albert.astals@canonical.com>
+Date:   Tue Apr 24 13:45:46 2012 +0200
+    No rectangles means no interaction with the window
+    And some tests to prove this change is needed
+    Change-Id: I6dd6c75c2bd70463561445b4f4a3894c80981d26
+
+Index: qt4-x11-4.8.1/src/gui/kernel/qdnd_x11.cpp
+===================================================================
+--- qt4-x11-4.8.1.orig/src/gui/kernel/qdnd_x11.cpp	2012-04-24 16:43:29.248208902 +0100
++++ qt4-x11-4.8.1/src/gui/kernel/qdnd_x11.cpp	2012-04-24 16:43:40.960208473 +0100
+@@ -1431,9 +1431,8 @@
+ {
+     int nrectanglesRet, dummyOrdering;
+     XRectangle *rectangles = XShapeGetRectangles(QX11Info::display(), w, shapeType, &nrectanglesRet, &dummyOrdering);
+-    bool interacts = true;
++    bool interacts = false;
+     if (rectangles) {
+-        interacts = false;
+         for (int i = 0; !interacts && i < nrectanglesRet; ++i)
+             interacts = QRect(rectangles[i].x, rectangles[i].y, rectangles[i].width, rectangles[i].height).contains(pos);
+         XFree(rectangles);

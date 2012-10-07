@@ -1,0 +1,2 @@
+version=3
+http://get.qt.nokia.com/qt/source/ qt-(?:x11|everywhere)-opensource-src-([^-]*)\.tar.gz

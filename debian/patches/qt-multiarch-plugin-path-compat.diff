@@ -1,0 +1,39 @@
+Description: include legacy pre-multiarch plugin path
+ A full multiarch system requires an architecture-qualified plugin path for
+ Qt, but installed systems may still have plugins (e.g., from other
+ distribution packages) in another pre-multiarch directory.  When constructing
+ the plugin path, include both the configured plugin path and a plugin path
+ with the architecture triplet stripped out.
+Author: Steve Langasek <steve.langasek@ubuntu.com>
+Last-Update: 2011-09-23
+
+---
+ src/corelib/kernel/qcoreapplication.cpp |   17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+
+--- a/src/corelib/kernel/qcoreapplication.cpp
++++ b/src/corelib/kernel/qcoreapplication.cpp
+@@ -2398,6 +2398,23 @@ QStringList QCoreApplication::libraryPat
+             if (!app_libpaths->contains(installPathPlugins))
+                 app_libpaths->append(installPathPlugins);
+         }
++        QString pathSep("/");
++        QStringList dirnames = QString(installPathPlugins).split(QLatin1Char('/'), QString::SkipEmptyParts);
++        if (dirnames[0] == QLatin1String("usr") && dirnames[1] == QLatin1String("lib") && dirnames[3] == QLatin1String("qt4"))
++        {
++            QString legacyPathPlugins = pathSep;
++            int i = 0;
++            for (QStringList::const_iterator it = dirnames.constBegin(); it != dirnames.constEnd(); ++it) {
++                if (++i == 3)
++                    continue;
++                legacyPathPlugins = legacyPathPlugins + QString(*it) + pathSep;
++            }
++            if (QFile::exists(legacyPathPlugins)) {
++                legacyPathPlugins = QDir(legacyPathPlugins).canonicalPath();
++                if (!app_libpaths->contains(legacyPathPlugins))
++                    app_libpaths->append(legacyPathPlugins);
++            }
++        }
+ #endif
+ 
+         // If QCoreApplication is not yet instantiated,

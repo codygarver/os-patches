@@ -1,0 +1,15 @@
+Index: qt4-x11-4.8.1/src/gui/text/qtextlayout.cpp
+===================================================================
+--- qt4-x11-4.8.1.orig/src/gui/text/qtextlayout.cpp	2012-07-14 18:25:27.081172465 +0100
++++ qt4-x11-4.8.1/src/gui/text/qtextlayout.cpp	2012-07-14 18:26:39.637174322 +0100
+@@ -2616,8 +2616,8 @@
+         x += eng->offsetInLigature(si, pos, end, glyph_pos);
+     }
+ 
+-    if (eng->option.wrapMode() != QTextOption::NoWrap && x > line.width)
+-        x = line.width;
++    if (eng->option.wrapMode() != QTextOption::NoWrap && x > line.x + line.width)
++        x = line.x + line.width;
+ 
+     *cursorPos = pos + si->position;
+     return x.toReal();
