@@ -1,6 +1,6 @@
 [Desktop Entry]
-_Name=Appearance
-_Comment=Change the background and theme
+_Name=Background
+_Comment=Change the background
 Exec=gnome-control-center background
 Icon=preferences-desktop-wallpaper
 Terminal=false
@@ -10,4 +10,4 @@ Categories=GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-Per
 OnlyShowIn=GNOME;Unity;
 X-GNOME-Settings-Panel=background
 # Translators: those are keywords for the background control-center panel
-_Keywords=Wallpaper;Screen;Desktop;Theme;Appearance;Launcher;Unity;Menus;
+_Keywords=Wallpaper;Screen;Desktop;

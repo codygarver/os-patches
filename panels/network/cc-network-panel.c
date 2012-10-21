@@ -23,10 +23,6 @@
 #include <arpa/inet.h>
 #include <netinet/ether.h>
 #include <stdlib.h>
-#include <grp.h>
-#include <unistd.h>
-#include <gio/gio.h>
-#include <gdesktop-enums.h>
 
 #include "cc-network-panel.h"
 
@@ -1118,19 +1114,13 @@ panel_get_strongest_unique_aps (const GPtrArray *aps)
         if (aps != NULL)
                 for (i = 0; i < aps->len; i++) {
                         ap = NM_ACCESS_POINT (g_ptr_array_index (aps, i));
-
-                        /* Hidden SSIDs don't get shown in the list */
                         ssid = nm_access_point_get_ssid (ap);
-                        if (!ssid)
-                                continue;
-
                         add_ap = TRUE;
 
                         /* get already added list */
                         for (j=0; j<aps_unique->len; j++) {
                                 ap_tmp = NM_ACCESS_POINT (g_ptr_array_index (aps_unique, j));
                                 ssid_tmp = nm_access_point_get_ssid (ap_tmp);
-                                g_assert (ssid_tmp);
         
                                 /* is this the same type and data? */
                                 if (nm_utils_same_ssid (ssid, ssid_tmp, TRUE)) {
@@ -3382,139 +3372,6 @@ network_add_shell_header_widgets_cb (gpointer user_data)
         return FALSE;
 }
 
-static gboolean
-is_in_admin_group (int id_group)
-{
-        gid_t groups [1024];
-       int i, ngroups;
-
-        ngroups = getgroups (1024, groups);
-        if (ngroups < 0) {
-                perror ("getgroups");
-                return FALSE;
-        }
-
-        for (i = 0; i < ngroups; ++i) {
-                if (groups[i] == id_group)
-                        return TRUE;
-        }
-
-        return FALSE;
-}
-
-static gboolean
-is_admin ()
-{
-        struct group *admin_group;
-
-        admin_group = getgrnam ("admin");
-        if (admin_group != NULL && is_in_admin_group (admin_group->gr_gid))
-                return TRUE;
-
-        admin_group = getgrnam ("sudo");
-        if (admin_group != NULL && is_in_admin_group (admin_group->gr_gid))
-                return TRUE;
-
-        return FALSE;
-}
-
-static void
-reset_system_proxy (GDBusProxy *proxy, const gchar *protocol)
-{
-        GVariant *result;
-        GError *error = NULL;
-
-        result = g_dbus_proxy_call_sync (proxy, "set_proxy",
-                                         g_variant_new ("(ss)", protocol, ""),
-                                         G_DBUS_CALL_FLAGS_NONE,
-                                         -1, NULL, &error);
-        if (result)
-                g_variant_unref (result);
-        else {
-                g_warning ("Error while calling set_proxy for %s protocol: %s", protocol, error->message);
-                g_error_free (error);
-        }
-}
-
-static void
-set_proxy_for_protocol (GDBusProxy *proxy, const gchar *protocol, GSettings *settings)
-{
-        GVariant *result;
-        gchar *proxy_str;
-        GError *error = NULL;
-
-        proxy_str = g_strdup_printf ("%s://%s:%i/",
-                                     protocol,
-                                     g_settings_get_string (settings, "host"),
-                                     g_settings_get_int (settings, "port"));
-        result = g_dbus_proxy_call_sync (proxy, "set_proxy",
-                                         g_variant_new ("(ss)", protocol, proxy_str),
-                                         G_DBUS_CALL_FLAGS_NONE,
-                                         -1, NULL, &error);
-        if (result)
-                g_variant_unref (result);
-        else {
-                g_warning ("Error while calling set_proxy for %s protocol: %s", protocol, error->message);
-                g_error_free (error);
-        }
-
-        /* Free memory */
-        g_free (proxy_str);
-        g_object_unref (settings);
-}
-
-static void
-on_proxy_apply_system_wide (GtkButton *button, gpointer user_data)
-{
-        GDBusConnection *bus;
-        GDBusProxy *proxy;
-        GError *error;
-        GDesktopProxyMode proxy_mode;
-        CcNetworkPanel *panel = CC_NETWORK_PANEL (user_data);
-
-        error = NULL;
-        bus = g_bus_get_sync (G_BUS_TYPE_SYSTEM, NULL, &error);
-        if (!bus) {
-                g_warning ("Could not retrieve system bus: %s", error->message);
-                g_error_free (error);
-
-                return;
-        }
-
-        proxy = g_dbus_proxy_new_sync (bus, 0, NULL,
-                                       "com.ubuntu.SystemService",
-                                       "/",
-                                       "com.ubuntu.SystemService",
-                                       NULL,
-                                       &error);
-        if (!proxy) {
-                g_warning ("Could not retrieve bus object: %s", error->message);
-                g_error_free (error);
-
-                return;
-        }
-
-        /* Retrieve the current settings */
-        proxy_mode = g_settings_get_enum (panel->priv->proxy_settings, "mode");
-        switch (proxy_mode) {
-        case G_DESKTOP_PROXY_MODE_NONE:
-                reset_system_proxy (proxy, "http");
-                reset_system_proxy (proxy, "https");
-                reset_system_proxy (proxy, "ftp");
-                reset_system_proxy (proxy, "socks");
-                break;
-        case G_DESKTOP_PROXY_MODE_MANUAL:
-                set_proxy_for_protocol (proxy, "http", g_settings_get_child (panel->priv->proxy_settings, "http"));
-                set_proxy_for_protocol (proxy, "https", g_settings_get_child (panel->priv->proxy_settings, "https"));
-                set_proxy_for_protocol (proxy, "ftp", g_settings_get_child (panel->priv->proxy_settings, "ftp"));
-                set_proxy_for_protocol (proxy, "socks", g_settings_get_child (panel->priv->proxy_settings, "socks"));
-                break;
-        }
-
-        /* Free memory */
-        g_object_unref (proxy);
-}
-
 static void
 cc_network_panel_init (CcNetworkPanel *panel)
 {
@@ -3649,13 +3506,6 @@ cc_network_panel_init (CcNetworkPanel *panel)
 
         /* add the virtual proxy device */
         panel_add_proxy_device (panel);
-
-        /* System wide proxy settings */
-        if (is_admin ()) {
-                g_signal_connect (G_OBJECT (gtk_builder_get_object (panel->priv->builder, "system_proxy_button")), "clicked",
-                                  G_CALLBACK (on_proxy_apply_system_wide), panel);
-        } else
-                gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (panel->priv->builder, "system_proxy_button")));
 
         /* setup wireless combobox model */
         combobox = GTK_COMBO_BOX (gtk_builder_get_object (panel->priv->builder,

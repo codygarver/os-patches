@@ -41,8 +41,7 @@ typedef enum
 
 typedef enum {
 	CC_KEYBOARD_ITEM_TYPE_NONE = 0,
-	CC_KEYBOARD_ITEM_TYPE_GCONF,
-	CC_KEYBOARD_ITEM_TYPE_GCONF_DIR,
+	CC_KEYBOARD_ITEM_TYPE_GSETTINGS_PATH,
 	CC_KEYBOARD_ITEM_TYPE_GSETTINGS
 } CcKeyboardItemType;
 
@@ -66,28 +65,13 @@ typedef struct
   char *description;
   char *gettext_package;
   char *binding;
-
-  /* GCONF */
-  char *gconf_key;
-  guint gconf_cnxn;
   gboolean editable;
-  gboolean monitored;
 
-  /* GCONF DIR */
-  char *gconf_key_dir;
-
-  char *binding_gconf_key;
-
-  char *desc_gconf_key;
+  /* GSettings path */
+  char *gsettings_path;
   gboolean desc_editable;
-  guint gconf_cnxn_desc;
-
   char *command;
-  char *cmd_gconf_key;
   gboolean cmd_editable;
-  guint gconf_cnxn_cmd;
-
-  gboolean monitored_dir;
 
   /* GSettings */
   char *schema;
@@ -103,11 +87,9 @@ typedef struct
 GType              cc_keyboard_item_get_type (void);
 
 CcKeyboardItem * cc_keyboard_item_new         (CcKeyboardItemType type);
-gboolean cc_keyboard_item_load_from_gconf     (CcKeyboardItem *item,
-					       const char *gettext_package,
-					       const char *key);
-gboolean cc_keyboard_item_load_from_gconf_dir (CcKeyboardItem *item,
-					       const char *key_dir);
+gboolean cc_keyboard_item_load_from_gsettings_path (CcKeyboardItem *item,
+					            const char     *path,
+					            gboolean        reset);
 gboolean cc_keyboard_item_load_from_gsettings (CcKeyboardItem *item,
 					       const char *description,
 					       const char *schema,

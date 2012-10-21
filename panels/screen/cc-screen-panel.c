@@ -169,6 +169,33 @@ cc_screen_panel_class_finalize (CcScreenPanelClass *klass)
 }
 
 static void
+on_signal (GDBusProxy *proxy,
+           gchar      *sender_name,
+           gchar      *signal_name,
+           GVariant   *parameters,
+           gpointer    user_data)
+{
+  CcScreenPanel *self = CC_SCREEN_PANEL (user_data);
+
+  if (g_strcmp0 (signal_name, "BrightnessChanged") == 0)
+    {
+      guint brightness;
+      GtkRange *range;
+
+      /* changed, but ignoring */
+      if (self->priv->setting_brightness)
+        return;
+
+      /* update the bar */
+      g_variant_get (parameters,
+                     "(u)",
+                     &brightness);
+      range = GTK_RANGE (WID ("screen_brightness_hscale"));
+      gtk_range_set_value (range, brightness);
+    }
+}
+
+static void
 set_brightness_cb (GObject *source_object, GAsyncResult *res, gpointer user_data)
 {
   GError *error = NULL;
@@ -246,33 +273,6 @@ get_brightness_cb (GObject *source_object, GAsyncResult *res, gpointer user_data
                     G_CALLBACK (brightness_slider_value_changed_cb),
                     user_data);
   g_variant_unref (result);
-}
-
-static void
-on_signal (GDBusProxy *proxy,
-           gchar      *sender_name,
-           gchar      *signal_name,
-           GVariant   *parameters,
-           gpointer    user_data)
-{
-  CcScreenPanel *self = CC_SCREEN_PANEL (user_data);
-
-  if (g_strcmp0 (signal_name, "Changed") == 0)
-    {
-      /* changed, but ignoring */
-      if (self->priv->setting_brightness)
-        return;
-
-      /* retrieve the value again from g-s-d */
-      g_dbus_proxy_call (self->priv->proxy,
-                         "GetPercentage",
-                         NULL,
-                         G_DBUS_CALL_FLAGS_NONE,
-                         200, /* we don't want to randomly move the bar */
-                         self->priv->cancellable,
-                         get_brightness_cb,
-                         user_data);
-    }
 }
 
 static void
@@ -393,7 +393,8 @@ set_dpms_value_for_combo (GtkComboBox *combo_box, CcScreenPanel *self)
       gtk_tree_model_get (model, &iter,
                           1, &value_tmp,
                           -1);
-      if (value == value_tmp)
+      if (value == value_tmp ||
+          (value_tmp > value_prev && value < value_tmp))
         {
           gtk_combo_box_set_active_iter (combo_box, &iter);
           return;
@@ -530,13 +531,6 @@ cc_screen_panel_init (CcScreenPanel *self)
                    G_SETTINGS_BIND_GET);
 
   update_lock_screen_sensitivity (self);
-
-  /* bind the screen lock suspend checkbutton */
-  widget = WID ("screen_lock_suspend_checkbutton");
-  g_settings_bind (self->priv->lock_settings,
-                   "ubuntu-lock-on-suspend",
-                   widget, "active",
-                   G_SETTINGS_BIND_DEFAULT);
 
   widget = WID ("screen_vbox");
   gtk_widget_reparent (widget, (GtkWidget *) self);

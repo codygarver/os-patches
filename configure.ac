@@ -19,14 +19,6 @@ AC_HEADER_STDC
 LT_PREREQ([2.2])
 LT_INIT
 
-# .so version for libgnome-control-center
-LIBGNOMECONTROLCENTER_CURRENT=1
-LIBGNOMECONTROLCENTER_REVISION=0
-LIBGNOMECONTROLCENTER_AGE=0
-AC_SUBST(LIBGNOMECONTROLCENTER_CURRENT)
-AC_SUBST(LIBGNOMECONTROLCENTER_REVISION)
-AC_SUBST(LIBGNOMECONTROLCENTER_AGE)
-
 # Internationalization support
 
 IT_PROG_INTLTOOL([0.40.1])
@@ -96,20 +88,20 @@ COMMON_MODULES="gtk+-3.0 >= $GTK_REQUIRED_VERSION
  gsettings-desktop-schemas >= $DESKTOP_SCHEMAS_REQUIRED_VERSION
  libnotify >= $LIBNOTIFY_REQUIRED_VERSION"
 
-PKG_CHECK_MODULES(LIBGNOME_CONTROL_CENTER, $COMMON_MODULES gconf-2.0)
+PKG_CHECK_MODULES(LIBGNOME_CONTROL_CENTER, $COMMON_MODULES)
 PKG_CHECK_MODULES(LIBLANGUAGE, $COMMON_MODULES gnome-desktop-3.0 fontconfig)
 PKG_CHECK_MODULES(LIBSHORTCUTS, $COMMON_MODULES x11)
 PKG_CHECK_MODULES(SHELL, $COMMON_MODULES libgnome-menu-3.0 gio-unix-2.0 x11)
 PKG_CHECK_MODULES(BACKGROUND_PANEL, $COMMON_MODULES libxml-2.0 gnome-desktop-3.0
-                  gdk-pixbuf-2.0 >= $GDKPIXBUF_REQUIRED_VERSION gconf-2.0)
-PKG_CHECK_MODULES(DATETIME_PANEL, $COMMON_MODULES dbus-glib-1
+                  gdk-pixbuf-2.0 >= $GDKPIXBUF_REQUIRED_VERSION)
+PKG_CHECK_MODULES(DATETIME_PANEL, $COMMON_MODULES
                   gnome-desktop-3.0 >= $GNOME_DESKTOP_REQUIRED_VERSION
                   polkit-gobject-1 >= $POLKIT_REQUIRED_VERSION
                   gdk-pixbuf-2.0 >= $GDKPIXBUF_REQUIRED_VERSION)
-PKG_CHECK_MODULES(DISPLAY_PANEL, $COMMON_MODULES gnome-desktop-3.0 >= 3.1.0 gconf-2.0)
+PKG_CHECK_MODULES(DISPLAY_PANEL, $COMMON_MODULES gnome-desktop-3.0 >= 3.1.0)
 PKG_CHECK_MODULES(INFO_PANEL, $COMMON_MODULES libgtop-2.0
 		  polkit-gobject-1 >= $POLKIT_REQUIRED_VERSION)
-PKG_CHECK_MODULES(KEYBOARD_PANEL, $COMMON_MODULES gconf-2.0 x11)
+PKG_CHECK_MODULES(KEYBOARD_PANEL, $COMMON_MODULES x11)
 PKG_CHECK_MODULES(MEDIA_PANEL, $COMMON_MODULES)
 PKG_CHECK_MODULES(MOUSE_PANEL, $COMMON_MODULES xi >= 1.2
                   gnome-settings-daemon >= $GSD_REQUIRED_VERSION x11)
@@ -128,9 +120,8 @@ PKG_CHECK_MODULES(SOUND_PANEL, $COMMON_MODULES libxml-2.0
                   libcanberra-gtk3 >= $CANBERRA_REQUIRED_VERSION
                   libpulse >= $PA_REQUIRED_VERSION
                   libpulse-mainloop-glib >= $PA_REQUIRED_VERSION
-                  gsettings-desktop-schemas >= $SCHEMAS_REQUIRED_VERSION
-                  gconf-2.0)
-PKG_CHECK_MODULES(UNIVERSAL_ACCESS_PANEL, $COMMON_MODULES gconf-2.0)
+                  gsettings-desktop-schemas >= $SCHEMAS_REQUIRED_VERSION)
+PKG_CHECK_MODULES(UNIVERSAL_ACCESS_PANEL, $COMMON_MODULES gsettings-desktop-schemas >= $SCHEMAS_REQUIRED_VERSION)
 PKG_CHECK_MODULES(USER_ACCOUNTS_PANEL, $COMMON_MODULES
                   polkit-gobject-1 >= $POLKIT_REQUIRED_VERSION
                   gnome-desktop-3.0
@@ -237,7 +228,7 @@ AC_SUBST(PANELS_DIR)
 PANEL_CFLAGS="-I\$(top_srcdir)/ -DG_LOG_DOMAIN=\"\\\"\$(cappletname)-cc-panel\\\"\""
 AC_SUBST(PANEL_CFLAGS)
 
-PANEL_LIBS="\$(top_builddir)/shell/libgnome-control-center.la"
+PANEL_LIBS=""
 AC_SUBST(PANEL_LIBS)
 
 PANEL_LDFLAGS="-export_dynamic -avoid-version -module -no-undefined -export-symbols-regex '^g_io_module_(load|unload)'"
@@ -327,7 +318,6 @@ fi
 
 AC_OUTPUT([
 Makefile
-shell/libgnome-control-center.pc
 panels/Makefile
 panels/common/Makefile
 panels/background/Makefile
@@ -355,9 +345,6 @@ panels/online-accounts/icons/24x24/Makefile
 panels/online-accounts/icons/32x32/Makefile
 panels/online-accounts/icons/48x48/Makefile
 panels/online-accounts/icons/256x256/Makefile
-panels/sound-nua/Makefile
-panels/sound-nua/data/Makefile
-panels/sound-nua/data/gnome-sound-nua-panel.desktop.in
 panels/sound/Makefile
 panels/sound/data/Makefile
 panels/sound/data/gnome-sound-panel.desktop.in

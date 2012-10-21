@@ -18,6 +18,7 @@ panels/common/gdm-languages.c
 [type: gettext/glade]panels/common/language-chooser.ui
 [type: gettext/glade]panels/datetime/datetime.ui
 panels/datetime/gnome-datetime-panel.desktop.in.in
+panels/datetime/org.gnome.controlcenter.datetime.policy.in
 panels/display/cc-display-panel.c
 [type: gettext/glade]panels/display/display-capplet.ui
 panels/display/gnome-display-panel.desktop.in.in
@@ -105,26 +106,9 @@ panels/wacom/gnome-wacom-panel.desktop.in.in
 panels/wacom/gsd-wacom-device.c
 panels/wacom/calibrator/gui_gtk.c
 panels/wacom/cc-wacom-nav-button.c
-panels/wacom/cc-wacom-mapping-panel.c
 panels/wacom/cc-wacom-stylus-page.c
 panels/wacom/cc-wacom-page.c
 shell/control-center.c
 shell/gnomecc.directory.in
 shell/gnome-control-center.desktop.in.in
 [type: gettext/glade]shell/shell.ui
-panels/sound-nua/applet-main.c
-panels/sound-nua/data/gnome-sound-nua-panel.desktop.in.in
-panels/sound-nua/gvc-applet.c
-panels/sound-nua/gvc-balance-bar.c
-panels/sound-nua/gvc-channel-bar.c
-panels/sound-nua/gvc-combo-box.c
-panels/sound-nua/gvc-mixer-control.c
-panels/sound-nua/gvc-mixer-dialog.c
-panels/sound-nua/gvc-sound-theme-chooser.c
-panels/sound-nua/gvc-speaker-test.c
-panels/sound-nua/gvc-stream-status-icon.c
-panels/sound-nua/sound-theme-file-utils.c
-panels/universal-access/gconf-property-editor.c
-shell/cc-shell-nav-bar.c
-newstrings.desktop.in
-

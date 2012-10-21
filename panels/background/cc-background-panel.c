@@ -24,7 +24,6 @@
 #include <string.h>
 #include <glib/gi18n-lib.h>
 #include <gdesktop-enums.h>
-#include <gconf/gconf-client.h>
 
 #include "cc-background-panel.h"
 #include "bg-wallpapers-source.h"
@@ -70,9 +69,6 @@ struct _CcBackgroundPanelPrivate
 #endif
 
   GSettings *settings;
-  GSettings *interface_settings;
-  GSettings *wm_theme_settings;
-  GSettings *unity2d_settings;
 
   GnomeDesktopThumbnailFactory *thumb_factory;
 
@@ -85,8 +81,6 @@ struct _CcBackgroundPanelPrivate
 
   GdkPixbuf *display_base;
   GdkPixbuf *display_overlay;
-
-  GSList *gconf_notify_id;
 };
 
 enum
@@ -99,26 +93,6 @@ enum
 #endif
 };
 
-#define UNITY_GCONF_OPTION_PATH "/apps/compiz-1/plugins/unityshell/screen0/options"
-#define UNITY_ICONSIZE_KEY UNITY_GCONF_OPTION_PATH"/icon_size"
-#define UNITY_LAUNCHERSENSITIVITY_KEY UNITY_GCONF_OPTION_PATH"/edge_responsiveness"
-#define UNITY_LAUNCHERHIDE_KEY UNITY_GCONF_OPTION_PATH"/launcher_hide_mode"
-#define UNITY_LAUNCHERREVEAL_KEY UNITY_GCONF_OPTION_PATH"/reveal_trigger"
-#define UNITY2D_GSETTINGS_LAUNCHER "com.canonical.Unity2d.Launcher"
-
-#define MIN_ICONSIZE 32.0
-#define MAX_ICONSIZE 64.0
-
-#define MIN_LAUNCHER_SENSIVITY 0.2
-#define MAX_LAUNCHER_SENSIVITY 8.0
-
-typedef struct
-{
-  gdouble min;
-  gdouble max;
-} MinMax;
-static MinMax iconsize_values;
-static MinMax launchersensitivity_values;
 
 #define WID(y) (GtkWidget *) gtk_builder_get_object (priv->builder, y)
 
@@ -152,10 +126,6 @@ static void
 cc_background_panel_dispose (GObject *object)
 {
   CcBackgroundPanelPrivate *priv = CC_BACKGROUND_PANEL (object)->priv;
-  GConfClient *client;
-  GSList* iter;
-
-  client = gconf_client_get_default ();
 
   if (priv->builder)
     {
@@ -197,24 +167,6 @@ cc_background_panel_dispose (GObject *object)
       priv->settings = NULL;
     }
 
-  if (priv->interface_settings)
-    {
-      g_object_unref (priv->interface_settings);
-      priv->interface_settings = NULL;
-    }
-
-  if (priv->wm_theme_settings)
-    {
-      g_object_unref (priv->wm_theme_settings);
-      priv->wm_theme_settings = NULL;
-    }
-
-  if (priv->unity2d_settings)
-    {
-      g_object_unref (priv->unity2d_settings);
-      priv->unity2d_settings = NULL;
-    }
-
   if (priv->copy_cancellable)
     {
       /* cancel any copy operation */
@@ -241,16 +193,6 @@ cc_background_panel_dispose (GObject *object)
       g_object_unref (priv->display_overlay);
       priv->display_overlay = NULL;
     }
-
-  iter = priv->gconf_notify_id;
-  while (iter != NULL)
-    {
-      gconf_client_notify_remove(client, (guint) iter->data);
-      iter = g_slist_next (iter);
-    }
-  g_object_unref (client);
-  g_slist_free (priv->gconf_notify_id);
-  priv->gconf_notify_id = NULL;
 
   G_OBJECT_CLASS (cc_background_panel_parent_class)->dispose (object);
 }
@@ -398,21 +340,12 @@ update_preview (CcBackgroundPanelPrivate *priv,
   if (priv->current_background)
     {
       GdkColor pcolor, scolor;
-      const char* bgsize = NULL;
 
-      markup = g_strdup_printf ("<i>%s</i>", cc_background_item_get_name (priv->current_background));
+      markup = g_strdup_printf ("<b>%s</b>", cc_background_item_get_name (priv->current_background));
       gtk_label_set_markup (GTK_LABEL (WID ("background-label")), markup);
       g_free (markup);
 
-      bgsize = cc_background_item_get_size (priv->current_background);
-      if (bgsize && *bgsize != '\0')
-       {
-          markup = g_strdup_printf ("(%s)", bgsize);
-          gtk_label_set_text (GTK_LABEL (WID ("size_label")), markup);
-          g_free (markup);
-       }
-      else
-          gtk_label_set_text (GTK_LABEL (WID ("size_label")), "");
+      gtk_label_set_text (GTK_LABEL (WID ("size_label")), cc_background_item_get_size (priv->current_background));
 
       gdk_color_parse (cc_background_item_get_pcolor (priv->current_background), &pcolor);
       gdk_color_parse (cc_background_item_get_scolor (priv->current_background), &scolor);
@@ -1229,503 +1162,12 @@ cc_background_panel_drag_uris (GtkWidget *widget,
   g_strfreev(uris);
 }
 
-static gchar *themes_id[] = { "Adwaita", "Ambiance", "Radiance", "HighContrast", "HighContrastInverse" };
-static gchar *themes_name[] = { "Adwaita", "Ambiance", "Radiance", "High Contrast", "High Contrast Inverse" };
-
-static gboolean
-get_theme_data (const gchar *theme_name,
-		gchar **gtk_theme,
-		gchar **icon_theme,
-		gchar **window_theme,
-		gchar **cursor_theme)
-{
-  gchar *path;
-  GKeyFile *theme_file;
-  GError *error = NULL;
-  gboolean result = FALSE;
-
-  *gtk_theme = *icon_theme = *window_theme = *cursor_theme = NULL;
-
-  theme_file = g_key_file_new ();
-  path = g_build_filename ("/usr/share/themes", theme_name, "index.theme", NULL);
-  if (g_key_file_load_from_file (theme_file, path, G_KEY_FILE_NONE, &error))
-    {
-      *gtk_theme = g_key_file_get_string (theme_file, "X-GNOME-Metatheme", "GtkTheme", NULL);
-      *icon_theme = g_key_file_get_string (theme_file, "X-GNOME-Metatheme", "IconTheme", NULL);
-      *window_theme = g_key_file_get_string (theme_file, "X-GNOME-Metatheme", "MetacityTheme", NULL);
-      *cursor_theme = g_key_file_get_string (theme_file, "X-GNOME-Metatheme", "CursorTheme", NULL);
-
-      result = TRUE;
-    }
-  else
-    {
-      g_warning ("Could not load %s: %s", path, error->message);
-      g_error_free (error);
-    }
-
-  g_key_file_free (theme_file);
-  g_free (path);
-
-  return result;
-}
-
-static void
-theme_selection_changed (GtkComboBox *combo, CcBackgroundPanel *self)
-{
-  gint active;
-  gchar *gtk_theme, *icon_theme, *window_theme, *cursor_theme;
-  GConfClient *client;
-
-  active = gtk_combo_box_get_active (combo);
-  g_return_if_fail (active >= 0 && active < G_N_ELEMENTS (themes_id));
-
-  if (!get_theme_data (gtk_combo_box_get_active_id (combo),
-                       &gtk_theme, &icon_theme, &window_theme, &cursor_theme))
-    return;
-
-  g_settings_delay (self->priv->interface_settings);
-
-  g_settings_set_string (self->priv->interface_settings, "gtk-theme", gtk_theme);
-  g_settings_set_string (self->priv->interface_settings, "icon-theme", icon_theme);
-  g_settings_set_string (self->priv->interface_settings, "cursor-theme", cursor_theme);
-  g_settings_set_string (self->priv->wm_theme_settings, "theme", window_theme);
-
-
-  /* disable overlay scrollbars for a11y */
-  if (g_strcmp0 (gtk_theme, "HighContrast") == 0 ||
-      g_strcmp0 (gtk_theme, "HighContrastInverse") == 0)
-    g_settings_set_boolean (self->priv->interface_settings, "ubuntu-overlay-scrollbars", FALSE);
-  else
-    g_settings_reset (self->priv->interface_settings, "ubuntu-overlay-scrollbars");
-
-  g_settings_apply (self->priv->interface_settings);
-
-  /* For metacity, we use GConf */
-  client = gconf_client_get_default ();
-  gconf_client_set_string (client, "/desktop/gnome/shell/windows/theme", window_theme, NULL);
-  gconf_client_set_string (client, "/apps/metacity/general/theme", window_theme, NULL);
-
-  g_object_unref (client);
-  g_free (gtk_theme);
-  g_free (icon_theme);
-  g_free (window_theme);
-  g_free (cursor_theme);
-}
-
-static void
-setup_theme_selector (CcBackgroundPanel *self)
-{
-  gchar *current_gtk_theme;
-  gchar *default_gtk_theme;
-  gint i, current_theme_index = 0;
-  GtkWidget *widget;
-  GtkWidget *liststore;
-  CcBackgroundPanelPrivate *priv = self->priv;
-  GSettings *defaults_settings = g_settings_new ("org.gnome.desktop.interface");
-
-  priv->interface_settings = g_settings_new ("org.gnome.desktop.interface");
-  priv->wm_theme_settings = g_settings_new ("org.gnome.desktop.wm.preferences");
-  current_gtk_theme = g_settings_get_string (priv->interface_settings, "gtk-theme");
-
-  /* gettint the default for the theme */
-  g_settings_delay (defaults_settings);
-  g_settings_reset (defaults_settings, "gtk-theme");
-  default_gtk_theme = g_settings_get_string (defaults_settings, "gtk-theme");
-  g_object_unref (defaults_settings);
-
-  widget = WID ("theme-selector");
-  liststore = WID ("theme-list-store");
-
-  for (i = 0; i < G_N_ELEMENTS (themes_id); i++, current_theme_index++)
-    {
-      gchar *gtk_theme, *icon_theme, *window_theme, *cursor_theme, *new_theme_name;
-      GtkTreeIter iter;
-
-      if (!get_theme_data (themes_id[i], &gtk_theme, &icon_theme, &window_theme, &cursor_theme))
-        {
-          current_theme_index--;
-          continue;
-        }
-
-      if (g_strcmp0 (gtk_theme, default_gtk_theme) == 0)
-        new_theme_name = g_strdup_printf ("%s <small><i>(%s)</i></small>", themes_name[i], _("default"));
-      else
-        new_theme_name = g_strdup (themes_name[i]);
-
-      gtk_list_store_append (GTK_LIST_STORE (liststore), &iter);
-      gtk_list_store_set (GTK_LIST_STORE (liststore), &iter, 0, themes_id[i], 1, new_theme_name, -1);
-
-      if (g_strcmp0 (gtk_theme, current_gtk_theme) == 0)
-	  /* This is the current theme, so select item in the combo box */
-         gtk_combo_box_set_active (GTK_COMBO_BOX (widget), current_theme_index);
-
-      g_free (gtk_theme);
-      g_free (new_theme_name);
-      g_free (icon_theme);
-      g_free (window_theme);
-      g_free (cursor_theme);
-    }
-    g_free (current_gtk_theme);
-    g_free (default_gtk_theme);
-
-    g_signal_connect (G_OBJECT (widget), "changed",
-		      G_CALLBACK (theme_selection_changed), self);
-}
-
-static void
-iconsize_widget_refresh (GtkAdjustment *iconsize_adj)
-{
-  gint value = gconf_client_get_int (gconf_client_get_default (), UNITY_ICONSIZE_KEY, NULL);
-  gtk_adjustment_set_value (iconsize_adj, (gdouble)value);
-}
-
-static void
-ext_iconsize_changed_callback (GConfClient* client,
-                               guint cnxn_id,
-                               GConfEntry *entry,
-                               gpointer user_data)
-{
-  iconsize_widget_refresh (GTK_ADJUSTMENT (user_data));
-}
-
-static void
-on_iconsize_changed (GtkAdjustment *adj, gpointer user_data)
-{
-  gconf_client_set_int (gconf_client_get_default (), UNITY_ICONSIZE_KEY, (gint)gtk_adjustment_get_value (adj), NULL);
-}
-
-static void
-refresh_was_modified_by_external_tool (CcBackgroundPanel *self)
-{
-  CcBackgroundPanelPrivate *priv = self->priv;
-  gboolean modified_ext_tool = FALSE;
-
-  // reveal side
-  modified_ext_tool = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (WID ("unity_reveal_spot_otheroption")));
-
-  // autohide mode
-  if (!modified_ext_tool && (!gtk_widget_get_sensitive (WID ("unity_launcher_autohide"))))
-    modified_ext_tool = TRUE;
-
-  gtk_widget_set_visible (WID ("unity-label-external-tool"), modified_ext_tool);
-}
-
-static void
-hidelauncher_set_sensitivity_reveal (CcBackgroundPanel *self, gboolean autohide)
-{
-  CcBackgroundPanelPrivate *priv = self->priv;
-  gtk_widget_set_sensitive (WID ("unity_reveal_label"), autohide);
-  gtk_widget_set_sensitive (WID ("unity_reveal_spot_topleft"), autohide);
-  gtk_widget_set_sensitive (WID ("unity_reveal_spot_left"), autohide);
-  gtk_widget_set_sensitive (WID ("unity-launcher-sensitivity"), autohide);
-  gtk_widget_set_sensitive (WID ("unity-launcher-sensitivity-label"), autohide);
-  gtk_widget_set_sensitive (WID ("unity-launcher-sensitivity-low-label"), autohide);
-  gtk_widget_set_sensitive (WID ("unity-launcher-sensitivity-high-label"), autohide);
-  gtk_widget_set_sensitive (WID ("unity-launcher-sensitivity-high-label"), autohide);
-}
-
-static void
-hidelauncher_widget_refresh (CcBackgroundPanel *self)
-{
-  CcBackgroundPanelPrivate *priv = self->priv;
-  gint value = gconf_client_get_int (gconf_client_get_default (), UNITY_LAUNCHERHIDE_KEY, NULL);
-  gboolean autohide = (value != 0);
-
-  // handle not supported value
-  if (value != 0 && value != 1)
-    {
-      gtk_widget_set_sensitive (WID ("unity_launcher_autohide"), FALSE);
-    }
-  else
-    {
-      gtk_widget_set_sensitive (WID ("unity_launcher_autohide"), TRUE);
-      gtk_switch_set_active (GTK_SWITCH (WID ("unity_launcher_autohide")), autohide);
-      g_settings_set_int (priv->unity2d_settings, "hide-mode", value);
-    }
-
-  hidelauncher_set_sensitivity_reveal (self, autohide);
-  refresh_was_modified_by_external_tool (self);
-}
-
-static void
-ext_hidelauncher_changed_callback (GConfClient* client,
-                                   guint cnxn_id,
-                                   GConfEntry *entry,
-                                   gpointer user_data)
-{
-  hidelauncher_widget_refresh (CC_BACKGROUND_PANEL (user_data));
-}
-
-static void
-on_hidelauncher_changed (GtkSwitch *switcher, gboolean enabled, gpointer user_data)
-{
-  gint value = 0;
-  gint gconf_value = gconf_client_get_int (gconf_client_get_default (), UNITY_LAUNCHERHIDE_KEY, NULL);
-  gboolean gconf_autohide_enabled;
-
-  gconf_autohide_enabled = (gconf_value != 0);
-  if (gtk_switch_get_active (switcher))
-    {
-      /* change value to "active" if activation isn't due to gconf switching to any value */
-      if (gconf_autohide_enabled)
-        return;
-      value = 1;
-    }
-
-  /* 3d */
-  gconf_client_set_int (gconf_client_get_default (), UNITY_LAUNCHERHIDE_KEY, value, NULL);
-  hidelauncher_set_sensitivity_reveal (CC_BACKGROUND_PANEL (user_data), (value != -1));
-}
-
-static void
-reveallauncher_widget_refresh (CcBackgroundPanel *self)
-{
-  CcBackgroundPanelPrivate *priv = self->priv;
-  gint value = gconf_client_get_int (gconf_client_get_default (), UNITY_LAUNCHERREVEAL_KEY, NULL);
-
-  if (value == 1)
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (WID ("unity_reveal_spot_topleft")), TRUE);
-  else if (value == 0)
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (WID ("unity_reveal_spot_left")), TRUE);
-  else
-    /* this is a hidden spot when another option is selected (through ccsm) */
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (WID ("unity_reveal_spot_otheroption")), TRUE);
-
-  refresh_was_modified_by_external_tool (self);
-}
-
-static void
-ext_reveallauncher_changed_callback (GConfClient* client,
-                                     guint cnxn_id,
-                                     GConfEntry *entry,
-                                     gpointer user_data)
-{
-  reveallauncher_widget_refresh (CC_BACKGROUND_PANEL (user_data));
-}
-
-static void
-on_reveallauncher_changed (GtkToggleButton *button, gpointer user_data)
-{
-  CcBackgroundPanel *self = CC_BACKGROUND_PANEL (user_data);
-  CcBackgroundPanelPrivate *priv = self->priv;
-  gint reveal_spot = 0;
-
-  if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (WID ("unity_reveal_spot_topleft"))))
-    reveal_spot = 1;
-  if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (WID ("unity_reveal_spot_left"))))
-    reveal_spot = 0;
-
-  gconf_client_set_int (gconf_client_get_default (), UNITY_LAUNCHERREVEAL_KEY, reveal_spot, NULL);
-  if (priv->unity2d_settings)
-    g_settings_set_int (priv->unity2d_settings, "reveal-mode", reveal_spot);
-  reveallauncher_widget_refresh (self);
-}
-
-static void
-launcher_sensitivity_widget_refresh (GtkAdjustment *launcher_sensitivity_adj)
-{
-  gdouble value = gconf_client_get_float (gconf_client_get_default (), UNITY_LAUNCHERSENSITIVITY_KEY, NULL);
-  gtk_adjustment_set_value (launcher_sensitivity_adj, (gdouble)value);
-}
-
-static void
-ext_launchersensitivity_changed_callback (GConfClient* client,
-                                          guint cnxn_id,
-                                          GConfEntry *entry,
-                                          gpointer user_data)
-{
-  launcher_sensitivity_widget_refresh (GTK_ADJUSTMENT (user_data));
-}
-
-static void
-on_launchersensitivity_changed (GtkAdjustment *adj, gpointer user_data)
-{
-  CcBackgroundPanel *self = CC_BACKGROUND_PANEL (user_data);
-  CcBackgroundPanelPrivate *priv = self->priv;
-  gdouble value = gtk_adjustment_get_value (adj);
-
-  gconf_client_set_float (gconf_client_get_default (), UNITY_LAUNCHERSENSITIVITY_KEY, value, NULL);
-  if (priv->unity2d_settings)
-    g_settings_set_double (priv->unity2d_settings, "edge-responsiveness", value);
-}
-
-static void
-on_restore_defaults_page2_clicked (GtkButton *button, gpointer user_data)
-{
-  GConfClient *client;
-  CcBackgroundPanel *self = CC_BACKGROUND_PANEL (user_data);
-  CcBackgroundPanelPrivate *priv = self->priv;
-
-  client = gconf_client_get_default ();
-
-  /* reset defaut for the profile and get the default */
-  gconf_client_unset (client, UNITY_LAUNCHERHIDE_KEY, NULL);
-  gconf_client_unset (client, UNITY_LAUNCHERSENSITIVITY_KEY, NULL);
-  gconf_client_unset (client, UNITY_LAUNCHERREVEAL_KEY, NULL);
-
-  if (priv->unity2d_settings)
-    {
-      g_settings_reset (priv->unity2d_settings, "hide-mode");
-      g_settings_reset (priv->unity2d_settings, "reveal-mode");
-      g_settings_reset (priv->unity2d_settings, "edge-responsiveness");
-    }
-}
-
-static gboolean
-background_is_unity_session (void)
-{
-  return (g_strcmp0 (g_getenv("XDG_CURRENT_DESKTOP"), "Unity") == 0);
-}
-
-/* <hacks> */
-
-/* Get scrolling in the right direction */
-static gboolean
-on_scale_scroll_event (GtkWidget      *widget,
-                       GdkEventScroll *event,
-                       gpointer *data)
-{
-  gdouble value;
-  GtkAdjustment *adj = gtk_range_get_adjustment (GTK_RANGE (widget));
-  MinMax *iconsize_values = (MinMax *) data;
-  gdouble delta = iconsize_values->max - iconsize_values->min;
-
-  value = gtk_adjustment_get_value (adj);
-
-  if ((event->direction == GDK_SCROLL_UP) ||
-     (event->direction == GDK_SCROLL_SMOOTH && event->delta_y < 0))
-    {
-      if (value + delta/8 > iconsize_values->max)
-        value = iconsize_values->max;
-      else
-        value = value + delta/8;
-      gtk_adjustment_set_value (adj, value);
-    }
-  else if ((event->direction == GDK_SCROLL_DOWN) ||
-           (event->direction == GDK_SCROLL_SMOOTH && event->delta_y > 0))
-    {
-      if (value - delta/8 < iconsize_values->min)
-        value = iconsize_values->min;
-      else
-        value = value - delta/8;
-      gtk_adjustment_set_value (adj, value);
-    }
-
-  return TRUE;
-}
-
-/* </hacks> */
-
-static void
-setup_unity_settings (CcBackgroundPanel *self)
-{
-  CcBackgroundPanelPrivate *priv = self->priv;
-  GConfClient *client;
-  GtkAdjustment* iconsize_adj;
-  GtkAdjustment* launcher_sensitivity_adj;
-  GtkScale* iconsize_scale;
-  GtkScale* launcher_sensitivity_scale;
-  const gchar * const *schemas;
-
-  client = gconf_client_get_default ();
-  gconf_client_add_dir (client, UNITY_GCONF_OPTION_PATH, 0, NULL);
-  priv->gconf_notify_id = NULL;
-
-  /* Only use the unity-2d schema if it's installed */
-  schemas = g_settings_list_schemas ();
-  while (*schemas != NULL)
-    {
-      if (g_strcmp0 (*schemas, UNITY2D_GSETTINGS_LAUNCHER) == 0)
-        {
-          priv->unity2d_settings = g_settings_new (UNITY2D_GSETTINGS_LAUNCHER);
-          break;
-        }
-      schemas++;
-    }
-
-  /* Option not supported in unity-2d */
-  if (g_strcmp0(g_getenv("DESKTOP_SESSION"), "ubuntu-2d") != 0)
-    {
-      /* Icon size change */
-      iconsize_values.min = MIN_ICONSIZE;
-      iconsize_values.max = MAX_ICONSIZE;
-      iconsize_adj = gtk_adjustment_new (48, iconsize_values.min, iconsize_values.max, 1, 5, 0);
-      iconsize_scale = GTK_SCALE (WID ("unity-iconsize-scale"));
-      gtk_range_set_adjustment (GTK_RANGE (iconsize_scale), iconsize_adj);
-      gtk_scale_add_mark (iconsize_scale, 48, GTK_POS_BOTTOM, NULL);
-      priv->gconf_notify_id = g_slist_append (priv->gconf_notify_id,
-                                              GINT_TO_POINTER (
-                                              gconf_client_notify_add (client, UNITY_ICONSIZE_KEY,
-                                                       ext_iconsize_changed_callback, iconsize_adj,
-                                                       NULL, NULL)));
-
-      g_signal_connect (iconsize_adj, "value_changed",
-                        G_CALLBACK (on_iconsize_changed), NULL);
-      g_signal_connect (G_OBJECT (iconsize_scale), "scroll-event",
-                        G_CALLBACK (on_scale_scroll_event), &iconsize_values);
-      iconsize_widget_refresh (iconsize_adj);
-    }
-  else
-    {
-      gtk_widget_hide (GTK_WIDGET (WID ("unity-separator1")));
-      gtk_widget_hide (GTK_WIDGET (WID ("unity-iconsize-box")));
-    }
-
-  /* Reveal spot setting */
-  priv->gconf_notify_id = g_slist_append (priv->gconf_notify_id,
-                                          GINT_TO_POINTER (
-                                          gconf_client_notify_add (client, UNITY_LAUNCHERREVEAL_KEY,
-                                                   ext_reveallauncher_changed_callback, self,
-                                                   NULL, NULL)));
-  g_signal_connect (WID ("unity_reveal_spot_topleft"), "toggled",
-                     G_CALLBACK (on_reveallauncher_changed), self);
-  g_signal_connect (WID ("unity_reveal_spot_left"), "toggled",
-                     G_CALLBACK (on_reveallauncher_changed), self);
-  reveallauncher_widget_refresh (self);
-
-  /* Launcher reveal */
-  launchersensitivity_values.min = MIN_LAUNCHER_SENSIVITY;
-  launchersensitivity_values.max = MAX_LAUNCHER_SENSIVITY;
-  launcher_sensitivity_adj = gtk_adjustment_new (2, launchersensitivity_values.min, launchersensitivity_values.max, 0.1, 1, 0);
-  launcher_sensitivity_scale = GTK_SCALE (WID ("unity-launcher-sensitivity"));
-  gtk_range_set_adjustment (GTK_RANGE (launcher_sensitivity_scale), launcher_sensitivity_adj);
-  gtk_scale_add_mark (launcher_sensitivity_scale, 2, GTK_POS_BOTTOM, NULL);
-  priv->gconf_notify_id = g_slist_append (priv->gconf_notify_id,
-                                          GINT_TO_POINTER (
-                                          gconf_client_notify_add (client, UNITY_LAUNCHERSENSITIVITY_KEY,
-                                                   ext_launchersensitivity_changed_callback, launcher_sensitivity_adj,
-                                                   NULL, NULL)));
-  g_signal_connect (launcher_sensitivity_adj, "value_changed",
-                    G_CALLBACK (on_launchersensitivity_changed), self);
-  g_signal_connect (G_OBJECT (launcher_sensitivity_scale), "scroll-event",
-                    G_CALLBACK (on_scale_scroll_event), &launchersensitivity_values);
-  launcher_sensitivity_widget_refresh (launcher_sensitivity_adj);
-
-  /* Autohide launcher setting */
-  priv->gconf_notify_id = g_slist_append (priv->gconf_notify_id,
-                                          GINT_TO_POINTER (
-                                          gconf_client_notify_add (client, UNITY_LAUNCHERHIDE_KEY,
-                                                   ext_hidelauncher_changed_callback, self,
-                                                   NULL, NULL)));
-  g_signal_connect (WID ("unity_launcher_autohide"), "notify::active",
-                    G_CALLBACK (on_hidelauncher_changed), self);
-  hidelauncher_widget_refresh (self);
-
-  /* Restore defaut on second page */
-  g_signal_connect (WID ("button-restore-unitybehavior"), "clicked",
-                    G_CALLBACK (on_restore_defaults_page2_clicked), self);
-
-  g_object_unref (client);
-}
-
 static void
 cc_background_panel_init (CcBackgroundPanel *self)
 {
   CcBackgroundPanelPrivate *priv;
   gchar *objects[] = { "style-liststore",
-      "sources-liststore", "theme-list-store", "background-panel", "sizegroup", NULL };
-  gchar *objects_unity[] = { "style-liststore",
-      "sources-liststore", "theme-list-store", "main-notebook", "sizegroup", NULL };
+      "sources-liststore", "background-panel", "sizegroup", NULL };
   GError *err = NULL;
   GtkWidget *widget;
   GtkListStore *store;
@@ -1735,14 +1177,9 @@ cc_background_panel_init (CcBackgroundPanel *self)
 
   priv->builder = gtk_builder_new ();
 
-  if (background_is_unity_session ())
-    gtk_builder_add_objects_from_file (priv->builder,
-                                       DATADIR"/background.ui",
-                                       objects_unity, &err);
-  else
-    gtk_builder_add_objects_from_file (priv->builder,
-                                       DATADIR"/background.ui",
-                                       objects, &err);
+  gtk_builder_add_objects_from_file (priv->builder,
+                                     DATADIR"/background.ui",
+                                     objects, &err);
 
   if (err)
     {
@@ -1793,10 +1230,7 @@ cc_background_panel_init (CcBackgroundPanel *self)
 
 
   /* add the top level widget */
-  if (background_is_unity_session ())
-    widget = WID ("main-notebook");
-  else
-    widget = WID ("background-panel");
+  widget = WID ("background-panel");
 
   gtk_container_add (GTK_CONTAINER (self), widget);
   gtk_widget_show_all (GTK_WIDGET (self));
@@ -1867,18 +1301,6 @@ cc_background_panel_init (CcBackgroundPanel *self)
 
   /* Setup the edit box with our current settings */
   source_update_edit_box (priv, TRUE);
-
-  /* Setup theme selector */
-  setup_theme_selector (self);
-
-  /* Setup unity settings */
-  if (background_is_unity_session ())
-    setup_unity_settings (self);
-  else
-    {
-      gtk_widget_hide (GTK_WIDGET (WID ("unity-separator1")));
-      gtk_widget_hide (GTK_WIDGET (WID ("unity-iconsize-box")));
-    }
 }
 
 void

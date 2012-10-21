@@ -1131,7 +1131,6 @@ gdm_get_language_from_name (const char *name,
         char *langinfo_codeset;
         char *translated_language;
         char *translated_territory;
-        char *modifier;
         gboolean is_utf8 = TRUE;
 
         g_return_val_if_fail (name != NULL, NULL);
@@ -1154,13 +1153,12 @@ gdm_get_language_from_name (const char *name,
         language_code = NULL;
         territory_code = NULL;
         codeset_code = NULL;
-        modifier = NULL;
 
         gdm_parse_language_name (name,
                                  &language_code,
                                  &territory_code,
                                  &codeset_code,
-                                 &modifier);
+                                 NULL);
 
         if (language_code == NULL) {
                 goto out;
@@ -1186,7 +1184,7 @@ gdm_get_language_from_name (const char *name,
                                         translated_territory);
         }
 
-//        language_name_get_codeset_details (name, &langinfo_codeset, &is_utf8);
+        language_name_get_codeset_details (name, &langinfo_codeset, &is_utf8);
 
         if (codeset_code == NULL && langinfo_codeset != NULL) {
             codeset_code = g_strdup (langinfo_codeset);
@@ -1198,10 +1196,6 @@ gdm_get_language_from_name (const char *name,
                                         codeset_code);
         }
 
-        if (modifier != NULL) {
-                g_string_append_printf (full_language, " - %s", modifier);
-        }
-
 out:
        g_free (language_code);
        g_free (territory_code);
@@ -1209,7 +1203,6 @@ out:
        g_free (langinfo_codeset);
        g_free (translated_language);
        g_free (translated_territory);
-       g_free (modifier);
 
        if (full_language->len == 0) {
                g_string_free (full_language, TRUE);

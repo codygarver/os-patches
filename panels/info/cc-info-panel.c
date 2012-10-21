@@ -1703,8 +1703,6 @@ info_panel_setup_overview (CcInfoPanel  *self)
       g_free (text);
     }
 
-  gtk_widget_hide (WID ("version_label"));
-
   glibtop_get_mem (&mem);
   text = g_format_size_full (mem.total, G_FORMAT_SIZE_IEC_UNITS);
   widget = WID ("memory_label");
@@ -1899,7 +1897,7 @@ on_updates_button_clicked (GtkWidget   *widget,
 {
   GError *error;
   error = NULL;
-  g_spawn_command_line_async ("update-manager", &error);
+  g_spawn_command_line_async ("gpk-update-viewer", &error);
   if (error != NULL)
     {
       g_warning ("unable to launch Software Updates: %s", error->message);

@@ -68,7 +68,6 @@ struct _CcShellCategoryViewClass
 GType cc_shell_category_view_get_type (void) G_GNUC_CONST;
 
 GtkWidget *cc_shell_category_view_new (const gchar  *name,
-                                       GIcon        *icon,
                                        GtkTreeModel *model);
 CcShellItemView* cc_shell_category_view_get_item_view (CcShellCategoryView *self);
 

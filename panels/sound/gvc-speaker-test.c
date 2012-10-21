@@ -393,8 +393,7 @@ get_channel_map_for_card (GvcMixerControl *control,
         }
         g_slist_free (sinks);
 
-        if (stream == NULL)
-		return NULL;
+        g_assert (stream);
 
         g_debug ("Found stream '%s' for card '%s'",
                  gvc_mixer_stream_get_name (stream),

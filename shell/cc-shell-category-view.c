@@ -31,14 +31,12 @@ G_DEFINE_TYPE (CcShellCategoryView, cc_shell_category_view, GTK_TYPE_FRAME)
 enum
 {
   PROP_NAME = 1,
-  PROP_ICON,
   PROP_MODEL
 };
 
 struct _CcShellCategoryViewPrivate
 {
   gchar *name;
-  GIcon *icon;
   GtkTreeModel *model;
   GtkWidget *iconview;
 };
@@ -55,10 +53,6 @@ cc_shell_category_view_get_property (GObject    *object,
     {
     case PROP_NAME:
       g_value_set_string (value, priv->name);
-      break;
-
-    case PROP_ICON:
-      g_value_set_object (value, priv->icon);
       break;
 
     case PROP_MODEL:
@@ -84,10 +78,6 @@ cc_shell_category_view_set_property (GObject      *object,
       priv->name = g_value_dup_string (value);
       break;
 
-    case PROP_ICON:
-      priv->icon = g_value_dup_object (value);
-      break;
-
     case PROP_MODEL:
       priv->model = g_value_dup_object (value);
       break;
@@ -100,12 +90,6 @@ static void
 cc_shell_category_view_dispose (GObject *object)
 {
   CcShellCategoryViewPrivate *priv = CC_SHELL_CATEGORY_VIEW (object)->priv;
-
-  if (priv->icon)
-    {
-      g_object_unref (priv->icon);
-      priv->icon = NULL;
-    }
 
   if (priv->model)
     {
@@ -158,32 +142,16 @@ cc_shell_category_view_constructed (GObject *object)
   /* create the header if required */
   if (priv->name)
     {
-      GtkWidget *hbox;
-
       GtkWidget *label;
       PangoAttrList *attrs;
 
-      hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-
-      if (priv->icon)
-        {
-          GtkWidget *image;
-          image = gtk_image_new_from_gicon (priv->icon, GTK_ICON_SIZE_LARGE_TOOLBAR);
-          gtk_widget_show (image);
-          gtk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
-        }
-
       label = gtk_label_new (priv->name);
       attrs = pango_attr_list_new ();
-      pango_attr_list_insert (attrs, pango_attr_size_new (PANGO_SCALE * 12));
+      pango_attr_list_insert (attrs, pango_attr_weight_new (PANGO_WEIGHT_BOLD));
       gtk_label_set_attributes (GTK_LABEL (label), attrs);
       pango_attr_list_unref (attrs);
+      gtk_frame_set_label_widget (GTK_FRAME (object), label);
       gtk_widget_show (label);
-
-      gtk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
-      gtk_frame_set_label_widget (GTK_FRAME (object), hbox);
-      gtk_frame_set_label_align (GTK_FRAME (object), 0.0, 0.0);
-      gtk_widget_show (hbox);
     }
 
   /* add the iconview to the vbox */
@@ -218,14 +186,6 @@ cc_shell_category_view_class_init (CcShellCategoryViewClass *klass)
                                | G_PARAM_STATIC_STRINGS);
   g_object_class_install_property (object_class, PROP_NAME, pspec);
 
-  pspec = g_param_spec_object ("icon",
-                               "Icon",
-                               "Icon of the category",
-                               G_TYPE_OBJECT,
-                               G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY
-                               | G_PARAM_STATIC_STRINGS);
-  g_object_class_install_property (object_class, PROP_ICON, pspec);
-
   pspec = g_param_spec_object ("model",
                                "Model",
                                "Model of the category",
@@ -246,12 +206,10 @@ cc_shell_category_view_init (CcShellCategoryView *self)
 
 GtkWidget *
 cc_shell_category_view_new (const gchar  *name,
-                            GIcon        *icon,
                             GtkTreeModel *model)
 {
   return g_object_new (CC_TYPE_SHELL_CATEGORY_VIEW,
                        "name", name,
-                       "icon", icon,
                        "model", model, NULL);
 }
 

@@ -36,7 +36,6 @@
 #include "shell-search-renderer.h"
 #include "cc-shell-category-view.h"
 #include "cc-shell-model.h"
-#include "cc-shell-nav-bar.h"
 
 G_DEFINE_TYPE (GnomeControlCenter, gnome_control_center, CC_TYPE_SHELL)
 
@@ -48,9 +47,8 @@ G_DEFINE_TYPE (GnomeControlCenter, gnome_control_center, CC_TYPE_SHELL)
 /* Use a fixed width for the shell, since resizing horizontally is more awkward
  * for the user than resizing vertically
  * Both sizes are defined in https://live.gnome.org/Design/SystemSettings/ */
-#define FIXED_WIDTH 740
-#define FIXED_HEIGHT 636
-#define SMALL_SCREEN_FIXED_HEIGHT 500
+#define FIXED_WIDTH 675
+#define FIXED_HEIGHT 530
 
 #define MIN_ICON_VIEW_HEIGHT 300
 
@@ -72,7 +70,6 @@ struct _GnomeControlCenterPrivate
   GtkWidget  *search_entry;
   GtkWidget  *lock_button;
   GPtrArray  *custom_widgets;
-  GtkWidget  *nav_bar;
 
   GMenuTree  *menu_tree;
   GtkListStore *store;
@@ -89,8 +86,6 @@ struct _GnomeControlCenterPrivate
 
   gchar *default_window_title;
   gchar *default_window_icon;
-
-  gboolean small_screen;
 };
 
 static const gchar *
@@ -177,7 +172,6 @@ activate_panel (GnomeControlCenter *shell,
           /* switch to the new panel */
           gtk_widget_show (box);
           gtk_notebook_set_current_page (GTK_NOTEBOOK (priv->notebook), i);
-          cc_shell_nav_bar_show_detail_button (CC_SHELL_NAV_BAR(shell->priv->nav_bar), name);
 
           /* set the title of the window */
           icon_name = get_icon_name_from_g_icon (gicon);
@@ -203,23 +197,7 @@ activate_panel (GnomeControlCenter *shell,
         }
       else
         {
-	  GKeyFile *key_file;
-
-	  /* It might be an external panel */
-	  key_file = g_key_file_new ();
-	  if (g_key_file_load_from_file (key_file, desktop_file, G_KEY_FILE_NONE, NULL))
-	    {
-	      gchar *command;
-
-	      command = g_key_file_get_string (key_file, G_KEY_FILE_DESKTOP_GROUP, G_KEY_FILE_DESKTOP_KEY_EXEC, NULL);
-	      if (command && command[0])
-	        {
-		  g_spawn_command_line_async (command, NULL);
-		  g_free (command);
-		}
-	    }
-
-	  g_key_file_free (key_file);
+          g_warning ("Could not find the loadable module for panel '%s'", id);
         }
     }
 }
@@ -265,8 +243,6 @@ shell_show_overview_page (GnomeControlCenterPrivate *priv)
 
   /* clear any custom widgets */
   _shell_remove_all_custom_widgets (priv);
-
-  cc_shell_nav_bar_hide_detail_button (CC_SHELL_NAV_BAR (priv->nav_bar));
 }
 
 void
@@ -334,8 +310,7 @@ get_item_views (GnomeControlCenter *shell)
   res = NULL;
   for (l = list; l; l = l->next)
     {
-      if (CC_IS_SHELL_CATEGORY_VIEW (l->data))
-        res = g_list_append (res, cc_shell_category_view_get_item_view (CC_SHELL_CATEGORY_VIEW (l->data)));
+      res = g_list_append (res, cc_shell_category_view_get_item_view (CC_SHELL_CATEGORY_VIEW (l->data)));
     }
 
   g_list_free (list);
@@ -608,8 +583,6 @@ search_entry_clear_cb (GtkEntry *entry)
 static void
 setup_search (GnomeControlCenter *shell)
 {
-  int margin = 12;
-  int spacing = 6;
   GtkWidget *search_scrolled, *search_view, *widget;
   GtkCellRenderer *renderer;
   GnomeControlCenterPrivate *priv = shell->priv;
@@ -629,8 +602,7 @@ setup_search (GnomeControlCenter *shell)
   priv->search_view = search_view = cc_shell_item_view_new ();
   gtk_icon_view_set_item_orientation (GTK_ICON_VIEW (search_view),
                                       GTK_ORIENTATION_HORIZONTAL);
-  gtk_icon_view_set_margin (GTK_ICON_VIEW (search_view), margin);
-  gtk_icon_view_set_spacing (GTK_ICON_VIEW (search_view), spacing);
+  gtk_icon_view_set_spacing (GTK_ICON_VIEW (search_view), 6);
   gtk_icon_view_set_model (GTK_ICON_VIEW (search_view),
                            GTK_TREE_MODEL (priv->search_filter));
 
@@ -687,24 +659,13 @@ setup_lock (GnomeControlCenter *shell)
 
 static void
 maybe_add_category_view (GnomeControlCenter *shell,
-                         const char         *name,
-                         GIcon              *icon)
+                         const char         *name)
 {
   GtkTreeModel *filter;
   GtkWidget *categoryview;
 
   if (g_hash_table_lookup (shell->priv->category_views, name) != NULL)
     return;
-
-  if (g_hash_table_size (shell->priv->category_views) > 0)
-    {
-      GtkWidget *separator;
-      separator = gtk_separator_new (GTK_ORIENTATION_HORIZONTAL);
-      gtk_widget_set_margin_top (separator, 11);
-      gtk_widget_set_margin_bottom (separator, 10);
-      gtk_box_pack_start (GTK_BOX (shell->priv->main_vbox), separator, FALSE, FALSE, 0);
-      gtk_widget_show (separator);
-    }
 
   /* create new category view for this category */
   filter = gtk_tree_model_filter_new (GTK_TREE_MODEL (shell->priv->store),
@@ -713,7 +674,7 @@ maybe_add_category_view (GnomeControlCenter *shell,
                                           (GtkTreeModelFilterVisibleFunc) category_filter_func,
                                           g_strdup (name), g_free);
 
-  categoryview = cc_shell_category_view_new (name, icon, filter);
+  categoryview = cc_shell_category_view_new (name, filter);
   gtk_box_pack_start (GTK_BOX (shell->priv->main_vbox), categoryview, FALSE, TRUE, 0);
 
   g_signal_connect (cc_shell_category_view_get_item_view (CC_SHELL_CATEGORY_VIEW (categoryview)),
@@ -761,15 +722,13 @@ reload_menu (GnomeControlCenter *shell)
         {
           GMenuTreeDirectory *subdir;
           const gchar *dir_name;
-          GIcon *dir_icon;
           GMenuTreeIter *sub_iter;
           GMenuTreeItemType sub_next_type;
 
           subdir = gmenu_tree_iter_get_directory (iter);
           dir_name = gmenu_tree_directory_get_name (subdir);
-          dir_icon = gmenu_tree_directory_get_icon (subdir);
 
-          maybe_add_category_view (shell, dir_name, dir_icon);
+          maybe_add_category_view (shell, dir_name);
 
           /* add the items from this category to the model */
           sub_iter = gmenu_tree_directory_iter (subdir);
@@ -806,10 +765,7 @@ setup_model (GnomeControlCenter *shell)
 {
   GnomeControlCenterPrivate *priv = shell->priv;
 
-  gtk_widget_set_margin_top( shell->priv->main_vbox, 8);
-  gtk_widget_set_margin_bottom( shell->priv->main_vbox, 8);
-  gtk_widget_set_margin_left( shell->priv->main_vbox, 12);
-  gtk_widget_set_margin_right( shell->priv->main_vbox, 12);
+  gtk_container_set_border_width (GTK_CONTAINER (shell->priv->main_vbox), 10);
   gtk_container_set_focus_vadjustment (GTK_CONTAINER (shell->priv->main_vbox),
                                        gtk_scrolled_window_get_vadjustment (GTK_SCROLLED_WINDOW (shell->priv->scrolled_window)));
 
@@ -859,17 +815,18 @@ notebook_switch_page_cb (GtkNotebook               *book,
                          gint                       page_num,
                          GnomeControlCenterPrivate *priv)
 {
+  /* make sure the home button is shown on all pages except the overview page */
+
   if (page_num == OVERVIEW_PAGE || page_num == SEARCH_PAGE)
     {
+      gtk_widget_hide (W (priv->builder, "home-button"));
       gtk_widget_show (W (priv->builder, "search-entry"));
       gtk_widget_hide (W (priv->builder, "lock-button"));
-      gtk_scrolled_window_set_min_content_height (GTK_SCROLLED_WINDOW (priv->scrolled_window),
-        (priv->small_screen
-        ? SMALL_SCREEN_FIXED_HEIGHT
-        : FIXED_HEIGHT) - 50 );
+      gtk_scrolled_window_set_min_content_height (GTK_SCROLLED_WINDOW (priv->scrolled_window), FIXED_HEIGHT - 50);
     }
   else
     {
+      gtk_widget_show (W (priv->builder, "home-button"));
       gtk_widget_hide (W (priv->builder, "search-entry"));
       gtk_scrolled_window_set_min_content_height (GTK_SCROLLED_WINDOW (priv->scrolled_window), MIN_ICON_VIEW_HEIGHT);
     }
@@ -902,10 +859,6 @@ _shell_set_active_panel_from_id (CcShell      *shell,
   gchar *desktop;
   GIcon *gicon;
   GnomeControlCenterPrivate *priv = GNOME_CONTROL_CENTER (shell)->priv;
-
-  if (!g_strcmp0 (g_getenv ("XDG_CURRENT_DESKTOP"), "Unity") && 
-      !g_strcmp0(start_id, "sound"))
-      start_id = "sound-nua";
 
   /* clear any custom widgets */
   _shell_remove_all_custom_widgets (priv);
@@ -944,21 +897,6 @@ _shell_set_active_panel_from_id (CcShell      *shell,
 
       iter_valid = gtk_tree_model_iter_next (GTK_TREE_MODEL (priv->store),
                                              &iter);
-    }
-
-  if (!name && g_strcmp0(start_id, "online-accounts") == 0)
-    {
-        char *desktop = "/usr/share/applications/gnome-online-accounts-panel.desktop";
-        if (!g_file_test (desktop, G_FILE_TEST_EXISTS)) 
-          {
-            g_warning ("Could not find settings panel \"%s\"", start_id);
-            return FALSE;
-          }
-        GAppInfo*appinfo = g_desktop_app_info_new_from_filename (desktop);
-        const gchar *name = g_app_info_get_name (appinfo);
-        GIcon       *icon = g_app_info_get_icon (appinfo);
-        activate_panel (GNOME_CONTROL_CENTER (shell), start_id, argv, desktop, name, icon);
-        g_object_unref(appinfo);
     }
 
   if (!name)
@@ -1155,33 +1093,13 @@ window_key_press_event (GtkWidget          *win,
   return retval;
 }
 
-static gint
-get_monitor_height (void)
-{
-  GdkScreen *screen;
-  gint x, y;
-  GdkRectangle rect;
-  GdkDisplay *display = gdk_display_get_default ();
-  GdkDeviceManager *device_manager = gdk_display_get_device_manager (display);
-  GdkDevice *device = gdk_device_manager_get_client_pointer (device_manager);
-
-  gdk_device_get_position (device, &screen, &x, &y);
-
-  gint monitor = gdk_screen_get_monitor_at_point (screen, x, y);
-  gdk_screen_get_monitor_geometry (screen, monitor, &rect);
-  return rect.height;
-}
-
 static void
 gnome_control_center_init (GnomeControlCenter *self)
 {
   GError *err = NULL;
   GnomeControlCenterPrivate *priv;
-  GtkWidget *widget;
 
   priv = self->priv = CONTROL_CENTER_PRIVATE (self);
-
-  priv->small_screen = get_monitor_height() <= FIXED_HEIGHT;
 
   /* load the user interface */
   priv->builder = gtk_builder_new ();
@@ -1196,8 +1114,6 @@ gnome_control_center_init (GnomeControlCenter *self)
 
   /* connect various signals */
   priv->window = W (priv->builder, "main-window");
-  if (priv->small_screen)
-    gtk_window_set_resizable (GTK_WINDOW (priv->window), TRUE);
   g_signal_connect_swapped (priv->window, "delete-event", G_CALLBACK (g_object_unref), self);
   g_signal_connect (priv->window, "key_press_event",
                     G_CALLBACK (window_key_press_event), self);
@@ -1209,14 +1125,8 @@ gnome_control_center_init (GnomeControlCenter *self)
   g_signal_connect (priv->notebook, "switch-page",
                     G_CALLBACK (notebook_switch_page_cb), priv);
 
-  priv->nav_bar = cc_shell_nav_bar_new ();
-  widget = W (priv->builder, "hbox1");
-  gtk_box_pack_start (GTK_BOX (widget), priv->nav_bar, FALSE, FALSE, 0);
-  gtk_box_reorder_child (GTK_BOX (widget), priv->nav_bar, 0);
-  gtk_widget_show (priv->nav_bar);
-
-  g_signal_connect (priv->nav_bar,
-                    "home-clicked", G_CALLBACK (home_button_clicked_cb), self);
+  g_signal_connect (gtk_builder_get_object (priv->builder, "home-button"),
+                    "clicked", G_CALLBACK (home_button_clicked_cb), self);
 
   /* keep a list of custom widgets to unload on panel change */
   priv->custom_widgets = g_ptr_array_new_with_free_func ((GDestroyNotify) g_object_unref);
@@ -1248,9 +1158,6 @@ gnome_control_center_new (void)
 void
 gnome_control_center_present (GnomeControlCenter *center)
 {
-  if (center->priv->small_screen) {
-    gtk_window_maximize (GTK_WINDOW (center->priv->window));
-  }
   gtk_window_present (GTK_WINDOW (center->priv->window));
 }
 

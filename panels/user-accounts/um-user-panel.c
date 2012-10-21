@@ -525,9 +525,6 @@ autologin_changed (GObject            *object,
 
         active = gtk_switch_get_active (GTK_SWITCH (object));
         user = get_selected_user (d);
-        if (user == NULL) {
-                return;
-        }
 
         if (active != um_user_get_automatic_login (user)) {
                 um_user_set_automatic_login (user, active);
@@ -586,17 +583,6 @@ show_user (UmUser *user, UmUserPanelPrivate *d)
         g_signal_handlers_unblock_by_func (widget, autologin_changed, d);
 
         gtk_widget_set_sensitive (widget, !um_user_get_locked (user));
-
-        /* Check if ecryptfs is in use, because if it is, we can't allow the
-           user to shoot themselves in the foot by enabling autologin */
-        if (is_using_ecryptfs (um_user_get_user_name (user))) {
-                gtk_widget_hide (widget);
-                gtk_widget_hide (get_widget (d, "autologin-label"));
-        }
-        else {
-                gtk_widget_show (widget);
-                gtk_widget_show (get_widget (d, "autologin-label"));
-        }
 
         widget = get_widget (d, "account-language-combo");
         model = um_editable_combo_get_model (UM_EDITABLE_COMBO (widget));

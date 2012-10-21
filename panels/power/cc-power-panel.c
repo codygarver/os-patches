@@ -40,7 +40,6 @@ struct _CcPowerPanelPrivate
 {
   GSettings     *lock_settings;
   GSettings     *gsd_settings;
-  GSettings     *power_settings;
   GCancellable  *cancellable;
   GtkBuilder    *builder;
   GDBusProxy    *proxy;
@@ -90,11 +89,6 @@ cc_power_panel_dispose (GObject *object)
     {
       g_object_unref (priv->gsd_settings);
       priv->gsd_settings = NULL;
-    }
-  if (priv->power_settings)
-    {
-      g_object_unref (priv->power_settings);
-      priv->power_settings = NULL;
     }
   if (priv->cancellable != NULL)
     {
@@ -928,7 +922,6 @@ static void
 set_ac_battery_ui_mode (CcPowerPanel *self)
 {
   gboolean has_batteries = FALSE;
-  gboolean has_lid = FALSE;
   gboolean ret;
   GError *error = NULL;
   GPtrArray *devices;
@@ -961,13 +954,7 @@ set_ac_battery_ui_mode (CcPowerPanel *self)
         }
     }
   g_ptr_array_unref (devices);
-
-  has_lid = up_client_get_lid_is_present (self->priv->up_client);
-
 out:
-  gtk_widget_set_visible (WID (priv->builder, "combobox_lid_ac"), has_lid);
-  gtk_widget_set_visible (WID (priv->builder, "label_lid_action"), has_lid);
-  gtk_widget_set_visible (WID (priv->builder, "combobox_lid_battery"), has_batteries && has_lid);    
   gtk_widget_set_visible (WID (priv->builder, "label_header_battery"), has_batteries);
   gtk_widget_set_visible (WID (priv->builder, "label_header_ac"), has_batteries);
   gtk_widget_set_visible (WID (priv->builder, "combobox_sleep_battery"), has_batteries);
@@ -1096,42 +1083,8 @@ cc_power_panel_init (CcPowerPanel *self)
                     G_CALLBACK (activate_link_cb),
                     self);
 
-  value = g_settings_get_enum (self->priv->gsd_settings, "lid-close-ac-action");
-  widget = GTK_WIDGET (gtk_builder_get_object (self->priv->builder,
-                                               "combobox_lid_ac"));
-  disable_unavailable_combo_items (self, GTK_COMBO_BOX (widget));
-  set_value_for_combo (GTK_COMBO_BOX (widget), value);
-  g_object_set_data (G_OBJECT(widget), "_gsettings_key", "lid-close-ac-action");
-  g_signal_connect (widget, "changed",
-                    G_CALLBACK (combo_enum_changed_cb),
-                    self);
-
-  value = g_settings_get_enum (self->priv->gsd_settings, "lid-close-battery-action");
-  widget = GTK_WIDGET (gtk_builder_get_object (self->priv->builder,
-                                               "combobox_lid_battery"));
-  disable_unavailable_combo_items (self, GTK_COMBO_BOX (widget));
-  set_value_for_combo (GTK_COMBO_BOX (widget), value);
-  g_object_set_data (G_OBJECT(widget), "_gsettings_key", "lid-close-battery-action");
-  g_signal_connect (widget, "changed",
-                    G_CALLBACK (combo_enum_changed_cb),
-                    self);
-
   widget = WID (self->priv->builder, "vbox_power");
   gtk_widget_reparent (widget, (GtkWidget *) self);
-
-  /* Set up Unity-specific controls */
-  /* References:
-   *  https://wiki.ubuntu.com/Power
-   *  https://docs.google.com/document/d/1ILTJDiDCd25Npt2AmgzF8aOnZZECxTfM0hvsbWT2BxA/edit?pli=1#heading=h.i5lg1g344bsb
-   */
-  if (g_strcmp0 (g_getenv ("XDG_CURRENT_DESKTOP"), "Unity") == 0)
-    {
-      widget = GTK_WIDGET (gtk_builder_get_object (self->priv->builder,
-                                                   "combobox_indicator"));
-      self->priv->power_settings = g_settings_new ("com.canonical.indicator.power");
-      g_settings_bind (self->priv->power_settings, "icon-policy",
-                       widget, "active-id", G_SETTINGS_BIND_DEFAULT);
-    }
 }
 
 void
