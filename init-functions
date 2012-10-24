@@ -91,7 +91,14 @@ pidofproc () {
             fi
         fi
     fi
-    if [ -x /bin/pidof -a ! "$specified" ]; then
+    if [ "$specified" = 1 ]; then
+        if [ -e "$pidfile" -a ! -r "$pidfile" ]; then
+            return 4 # pidfile exists, but unreadable, return unknown
+        else
+            return 3 # pidfile specified, but contains no PID to test
+        fi
+    fi
+    if [ -x /bin/pidof ]; then
         status="0"
         /bin/pidof -o %PPID -x $1 || status="$?"
         if [ "$status" = 1 ]; then

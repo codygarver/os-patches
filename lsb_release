@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python -Es
 
 # lsb_release command for Debian
 # (C) 2005-08 Chris Lawrence <lawrencc@debian.org>

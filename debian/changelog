@@ -1,3 +1,20 @@
+lsb (4.0-0ubuntu20.2) precise-proposed; urgency=low
+
+  * lsb_release: Add -Es to #! line for Python so that it will ignore
+    the $PYTHON* environment variables, and not add the user's site
+    directory to sys.path.  Both of these are general recommendations that
+    should apply to all system scripts, but in this case fixes LP: #938869
+
+ -- Barry Warsaw <barry@ubuntu.com>  Tue, 23 Oct 2012 20:20:42 -0400
+
+lsb (4.0-0ubuntu20.1) precise-proposed; urgency=low
+
+  * If a pidfile is specified, but doesn't provide a PID
+    to test, return 'not running', and return 'unknown'
+    if the pidfile exists but is unreadable (LP: #683640)
+    
+ -- Adam Stokes <adam.stokes@canonical.com>  Wed, 10 Oct 2012 14:26:06 -0400
+
 lsb (4.0-0ubuntu20) precise; urgency=low
 
   * Revert back to using python 2, in a desperate act to get the CDs back in
