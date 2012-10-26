@@ -192,6 +192,10 @@ class _NvidiaDriverBase(XorgDriverHandler):
         # neither vesa nor nv support composite, so safe to say yes here
         return True
 
+class NvidiaDriverExperimental310(_NvidiaDriverBase):
+    def __init__(self, backend):
+        _NvidiaDriverBase.__init__(self, backend, 'experimental-310')
+
 class NvidiaDriverExperimental304(_NvidiaDriverBase):
     def __init__(self, backend):
         _NvidiaDriverBase.__init__(self, backend, 'experimental-304')
