@@ -494,8 +494,8 @@ class DistUpgradeQuirks(object):
         if set(I8XX_PCI_IDS).intersection(lspci):
             res = self._view.askYesNoQuestion(
                 _("Your graphics hardware may not be fully supported in "
-                  "Ubuntu 12.04 LTS."),
-                _("The support in Ubuntu 12.04 LTS for your Intel "
+                  "elementary OS."),
+                _("The support in elementary OS for your Intel "
                   "graphics hardware is limited "
                   "and you may encounter problems after the upgrade. "
                   "For more information see "
@@ -612,7 +612,7 @@ class DistUpgradeQuirks(object):
                         "All packages were built with "
                         "optimizations requiring i686 as the "
                         "minimal architecture. It is not possible to "
-                        "upgrade your system to a new Ubuntu release "
+                        "upgrade your system to a new elementary OS release "
                         "with this hardware.")
                 self._view.error(summary, msg)
                 self.controller.abort()

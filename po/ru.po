@@ -58,10 +58,10 @@ msgstr "Не удалось рассчитать элемент sources.list"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
-"Не удалось найти файлы пакетов, может быть, это не диск дистрибутива Ubuntu "
+"Не удалось найти файлы пакетов, может быть, это не диск дистрибутива elementary OS "
 "или неверная архитектура?"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
@@ -72,14 +72,14 @@ msgstr "Не удалось добавить компакт-диск"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
 msgstr ""
 "При добавлении компакт-диска произошла ошибка, обновление будет прервано. "
 "Пожалуйста, сообщите об ошибке, если это был корректный компакт-диск "
-"Ubuntu.\n"
+"elementary OS.\n"
 "\n"
 "Сообщение об ошибке:\n"
 "«%s»"
@@ -141,18 +141,18 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "При расчёте обновления произошла неразрешимая ошибка:\n"
 "%s\n"
 "\n"
 " Это может быть вызвано:\n"
-" * Обновлением к пред-релизной версии Ubuntu\n"
-" * Запуском данной пред-релизной версии Ubuntu\n"
-" * Неофициальным программным обеспечением, которое не поддерживается Ubuntu\n"
+" * Обновлением к пред-релизной версии elementary OS\n"
+" * Запуском данной пред-релизной версии elementary OS\n"
+" * Неофициальным программным обеспечением, которое не поддерживается elementary OS\n"
 "\n"
 
 #: ../DistUpgrade/DistUpgradeCache.py:689
@@ -226,13 +226,13 @@ msgstr "Не удалось подобрать мета-пакет"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
 "Ваша система не содержит пакетов ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop или edubuntu-desktop, и поэтому невозможно определить, какая версия "
-"Ubuntu у вас запущена.\n"
+"elementary OS у вас запущена.\n"
 " Пожалуйста, установите сначала один из этих пакетов с помощью synaptic или "
 "apt-get перед продолжением."
 
@@ -790,17 +790,17 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
-msgstr "Ваша видеокарта не будет поддерживаться полностью в Ubuntu 12.04 LTS"
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
+msgstr "Ваша видеокарта не будет поддерживаться полностью в elementary OS 12.04 LTS"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
 msgstr ""
-"Поддержка вашей видеокарты в Ubuntu 12.04 LTS будет ограниченной и вы можете "
+"Поддержка вашей видеокарты в elementary OS 12.04 LTS будет ограниченной и вы можете "
 "столкнуться с проблемами после обновления. Прочтите подробности  "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Вы действительно "
 "хотите продолжить обновление?"
@@ -820,25 +820,25 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "На этом компьютере используются драйвера NVIDIA. Нет доступных версий этих "
-"драйверов, которые бы работали с вашей видеокартой в Ubuntu 10.04 LTS.\n"
+"драйверов, которые бы работали с вашей видеокартой в elementary OS 10.04 LTS.\n"
 "\n"
 "Вы хотите продолжить?"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "На этом компьютере используются драйвера AMD «fglrx».  Нет доступных версий "
-"этих драйверов, которые бы работали с вашим оборудованием в Ubuntu 10.04 "
+"этих драйверов, которые бы работали с вашим оборудованием в elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Вы хотите продолжить?"
@@ -852,11 +852,11 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Ваша система использует i568-совместимый процессор, либо процессор в котором "
 "нет расширения «cmov». Все пакеты были собраны с оптимизацией под "
-"архитектуру i686 и выше. Обновить вашу систему до новой версии Ubuntu на "
+"архитектуру i686 и выше. Обновить вашу систему до новой версии elementary OS на "
 "этом компьютере не получится."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
@@ -868,11 +868,11 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Ваша система использует процессор архитектуры ARM, старше архитектуры ARMv6. "
 "Все пакеты в karmic были собраны с оптимизацией под архитектуру ARMv6 и "
-"выше. Вашу систему невозможно обновить до нового релиза Ubuntu с текущим "
+"выше. Вашу систему невозможно обновить до нового релиза elementary OS с текущим "
 "аппаратным обеспечением."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
@@ -882,14 +882,14 @@ msgstr "Служба init недоступна"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
 "Похоже, что ваша система является виртуализованным окружением без службы "
-"init, например Linux-VServer. Ubuntu 10.04 LTS не может работать в таком "
+"init, например Linux-VServer. elementary OS 10.04 LTS не может работать в таком "
 "типе окружения, вы должны вначале исправить конфигурацию своей виртуальной "
 "машины.\n"
 "\n"
@@ -1661,8 +1661,8 @@ msgid "Distribution Upgrade"
 msgstr "Обновление дистрибутива"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
-msgstr "<b><big>Обновление Ubuntu до версии 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
+msgstr "<b><big>Обновление elementary OS до версии 12.04</big></b>"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
 msgid "    "
@@ -1754,17 +1754,17 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "Загрузка файла %(current)li из %(total)li"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
-msgstr "Ваша версия  Ubuntu больше не поддерживается."
+msgid "Your elementary OS release is not supported anymore."
+msgstr "Ваша версия  elementary OS больше не поддерживается."
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 "Вы больше не сможете получать критические обновления или исправления, "
 "связанные с безопасностью. Пожалуйста, выполните обновление до последней "
-"версии Ubuntu."
+"версии elementary OS."
 
 #: ../UpdateManager/UpdateManager.py:113
 msgid "Upgrade information"
@@ -1898,16 +1898,16 @@ msgid "Software updates may be available for your computer."
 msgstr "Возможно, доступны обновления программ для вашего компьютера."
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
-msgstr "Добро пожаловать в Ubuntu"
+msgid "Welcome to elementary OS"
+msgstr "Добро пожаловать в elementary OS"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 "Эти обновления программ были опубликованы, начиная с выпуска текущей версии "
-"Ubuntu."
+"elementary OS."
 
 #: ../UpdateManager/UpdateManager.py:708
 msgid "Software updates are available for this computer."
@@ -2013,8 +2013,8 @@ msgstr "Загрузка программы для обновления дист
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "<b>Доступна новая версия Ubuntu %s</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "<b>Доступна новая версия elementary OS %s</b>"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -2065,8 +2065,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "Обычное обновление не может быть расчитано, пожалуйста, запустите: \n"
@@ -2076,8 +2076,8 @@ msgstr ""
 "Это может быть вызвано:\n"
 " * Предыдущим обновлением, которые не было завершено\n"
 " * Проблемами с отдельными установленными пакетами или программами\n"
-" * Неофицальными пакетами, которые не поддерживаются Ubuntu\n"
-" * Естественными изменениями в предварительной версии Ubuntu"
+" * Неофицальными пакетами, которые не поддерживаются elementary OS\n"
+" * Естественными изменениями в предварительной версии elementary OS"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
 msgid "Downloading changelog"
@@ -2193,8 +2193,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "Запустить частичное обновление дистрибутива с установкой по возможности "
 "максимального количества обновлений. \n"
@@ -2202,8 +2202,8 @@ msgstr ""
 "Возможные причины:\n"
 " * Предыдущая попытка обновления дистрибутива не завершилась\n"
 " * Проблема с каким-либо установленным ПО\n"
-" * Неофициальные пакеты, непредоставляемые Ubuntu\n"
-" * Нормальные изменения предрелизной версии Ubuntu"
+" * Неофициальные пакеты, непредоставляемые elementary OS\n"
+" * Нормальные изменения предрелизной версии elementary OS"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
 msgid "Chec_k"
@@ -2303,8 +2303,8 @@ msgstr "_Настройки..."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
-msgstr "<b>Доступна новая версия Ubuntu. Хотите обновить?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
+msgstr "<b>Доступна новая версия elementary OS. Хотите обновить?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
@@ -2319,8 +2319,8 @@ msgid "Yes, Upgrade Now"
 msgstr "Да, обновить сейчас"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
-msgstr "Вы отклонили обновление до новой версии Ubuntu"
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "Вы отклонили обновление до новой версии elementary OS"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2347,8 +2347,8 @@ msgid "Directory that contains the data files"
 msgstr "Каталог, который содержит файлы данных"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
-msgstr "Проверить, доступен ли новый выпуск дистрибутива Ubuntu"
+msgid "Check if a new elementary OS release is available"
+msgstr "Проверить, доступен ли новый выпуск дистрибутива elementary OS"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
 msgid "Check if upgrading to the latest devel release is possible"
@@ -2412,8 +2412,8 @@ msgstr ""
 "кода выхода"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
-msgstr "Проверка наличия нового релиза Ubuntu"
+msgid "Checking for a new elementary OS release"
+msgstr "Проверка наличия нового релиза elementary OS"
 
 #: ../do-release-upgrade:96
 msgid ""
@@ -2437,13 +2437,13 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "Чтобы обновиться до него, выполните «do-release-upgrade»."
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "Доступно обновление Ubuntu %(version)s"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "Доступно обновление elementary OS %(version)s"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "Вы отклонили обновление до Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "Вы отклонили обновление до elementary OS %s"
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2569,7 +2569,7 @@ msgid ""
 msgstr "Удалите lilo, если grub уже установлен. (bug #314004 для деталей)"
 
 #~ msgid "Checking for a new ubuntu release"
-#~ msgstr "Проверка наличия новой версии Ubuntu"
+#~ msgstr "Проверка наличия новой версии elementary OS"
 
 #~ msgid "Your system is up-to-date"
 #~ msgstr "Ваша система не требует обновления"
@@ -2613,10 +2613,10 @@ msgstr "Удалите lilo, если grub уже установлен. (bug #31
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
 #~ "В дальнейшем вы не будете получать обновления безопасности или критические "
-#~ "обновления. Пожалуйста, обновитесь до новейшей версии Ubuntu."
+#~ "обновления. Пожалуйста, обновитесь до новейшей версии elementary OS."
 
 #~ msgid ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from "
@@ -2626,20 +2626,20 @@ msgstr "Удалите lilo, если grub уже установлен. (bug #31
 #~ "меню «Приложения» позже."
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
 #~ msgstr ""
-#~ "Поддержка интегрированного графического оборудования Intel в Ubuntu 11.04 "
+#~ "Поддержка интегрированного графического оборудования Intel в elementary OS 11.04 "
 #~ "может быть ограниченной, а также может привести к возникновению "
 #~ "неисправностей. Вы действительно хотите продолжить обновление?"
 
-#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
-#~ msgstr "<b><big>Обновление Ubuntu до версии 11.10</big></b>"
+#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
+#~ msgstr "<b><big>Обновление elementary OS до версии 11.10</big></b>"
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
 #~ msgstr ""
-#~ "Ваше графическое оборудование может не полностью поддерживаться в Ubuntu "
+#~ "Ваше графическое оборудование может не полностью поддерживаться в elementary OS "
 #~ "11.04."
 
 #~ msgid "0 kB"
@@ -2653,20 +2653,20 @@ msgstr "Удалите lilo, если grub уже установлен. (bug #31
 #~ msgstr "%.0f кБ"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from Applications later."
 #~ msgstr ""
-#~ "Эти обновления были выпущены после данной версии Ubuntu. Если вы не хотите "
+#~ "Эти обновления были выпущены после данной версии elementary OS. Если вы не хотите "
 #~ "устанавливать их сейчас, вы можете позднее выбрать \"Менеджер обновлений\" "
 #~ "из меню Приложения."
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from the Administration Menu later."
 #~ msgstr ""
-#~ "Эти обновления были выпущены после данной версии Ubuntu. Если вы не хотите "
+#~ "Эти обновления были выпущены после данной версии elementary OS. Если вы не хотите "
 #~ "устанавливать их сейчас, вы можете позднее выбрать \"Менеджер обновлений\" "
 #~ "из меню Администрирование."
 

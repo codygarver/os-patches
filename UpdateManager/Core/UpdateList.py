@@ -43,6 +43,8 @@ class UpdateList(object):
     try:
         pipe = os.popen("lsb_release -c -s")
         dist = pipe.read().strip()
+        if dist == "luna":
+            dist = "precise"
         del pipe
     except Exception, e:
         print "Error in lsb_release: %s" % e
@@ -62,7 +64,11 @@ class UpdateList(object):
           ("%s-updates" % dist, "Ubuntu", _("Recommended updates"), 9),
           ("%s-proposed" % dist, "Ubuntu", _("Proposed updates"), 8),
           ("%s-backports" % dist, "Ubuntu", _("Backports"), 7),
-          (dist, "Ubuntu", _("Distribution updates"), 6)
+          (dist, "Ubuntu", _("Distribution updates"), 6),
+          (dist, "LP-PPA-elementary-os-os-patches", _("Distribution updates"), 5),
+          (dist, "LP-PPA-elementary-os-stable", _("elementary OS"), 4),
+          (dist, "LP-PPA-elementary-os-testing", _("elementary OS"), 3),
+          (dist, "LP-PPA-elementary-os-daily", _("elementary OS"), 2)
       ]
       matcher = {}
       for (origin, archive, desc, importance) in matcher_templates:

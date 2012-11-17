@@ -54,10 +54,10 @@ msgstr "Không thể thống kê các mục trong sources.list"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
-"Không tìm thấy các gói phần mềm, có thể do không đúng đĩa cài Ubuntu hoặc "
+"Không tìm thấy các gói phần mềm, có thể do không đúng đĩa cài elementary OS hoặc "
 "sai hệ thống?"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
@@ -68,13 +68,13 @@ msgstr "Lỗi đọc dữ liệu từ CD"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
 msgstr ""
 "Có lỗi khi đọc dữ liệu từ CD, quá trình nâng cấp sẽ được hủy bỏ. Vui lòng "
-"thông báo lại lỗi này nếu đây là đĩa CD Ubuntu hợp lệ.\n"
+"thông báo lại lỗi này nếu đây là đĩa CD elementary OS hợp lệ.\n"
 "Thông báo lỗi là:\n"
 "'%s'"
 
@@ -123,9 +123,9 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "Có lỗi xảy ra khi nâng cấp:\n"
@@ -134,7 +134,7 @@ msgstr ""
 " Nguyên nhân có thể do:\n"
 " * Nâng cấp phiên bản đang trong giai đoạn phát triển\n"
 " * Đang sử dụng phiên bản đang trong giai đoạn phát triển\n"
-" * Phần mềm không được cung cấp chính thức bởi Ubuntu\n"
+" * Phần mềm không được cung cấp chính thức bởi elementary OS\n"
 "\n"
 
 #: ../DistUpgrade/DistUpgradeCache.py:689
@@ -208,11 +208,11 @@ msgstr "Không thể đoán được gói gốc"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
-"Không thể xác định được phiên bản Ubuntu bạn đang sử dụng, do hệ thống không "
+"Không thể xác định được phiên bản elementary OS bạn đang sử dụng, do hệ thống không "
 "tìm thấy các gói tin cài đặt giao diện người dùng như ubuntu-desktop, "
 "kubuntu-desktop, xubuntu-desktop hoặc là edubuntu-desktop.\n"
 " Xin vui lòng cài đặt một trong các gói trên trước, thông qua ứng dụng "
@@ -757,19 +757,19 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
-"Phần cứng đồ họa của bạn có thể không được hỗ trợ đầy đủ trong Ubuntu 12.04 "
+"Phần cứng đồ họa của bạn có thể không được hỗ trợ đầy đủ trong elementary OS 12.04 "
 "LTS."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
 msgstr ""
-"Sự hỗ trợ cho phần cứng đồ họa của bạn rất hạn chế trong Ubuntu 12.04 LTS và "
+"Sự hỗ trợ cho phần cứng đồ họa của bạn rất hạn chế trong elementary OS 12.04 LTS và "
 "bạn có thể gặp các vấn đề sau khi nâng cấp. Hãy xem thêm thông tin tại "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx . Bạn có muốn "
 "tiếp tục nâng cấp không?"
@@ -789,12 +789,12 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Máy tính sử dụng trình điều kiển đồ hoạ NVIDIA 'nvidia' . Không có phiên bản "
-"của trình điều khiển tương đương nào việc với phần cứng của bạn trong Ubuntu "
+"của trình điều khiển tương đương nào việc với phần cứng của bạn trong elementary OS "
 "10.04 LTS\n"
 "\n"
 "Bạn có muốn tiếp tục?"
@@ -802,13 +802,13 @@ msgstr ""
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Máy tính sử dụng trình điều kiển đồ hoạ AMD  'fglrx'. Không có phiên bản của "
-"trình điều khiển tương đương nào làm việc với phần cứng của bạn trong Ubuntu "
+"trình điều khiển tương đương nào làm việc với phần cứng của bạn trong elementary OS "
 "10.04 LTS\n"
 "\n"
 "Bạn có muốn tiếp tục?"
@@ -822,12 +822,12 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Hệ thống của bạn sử dụng bộ xử lý i586 hoặc bộ xử lý không hỗ trợ phần mở "
 "rọng 'cmov'. Tất cả các gói được built với dẫn tối ưu hóa đều yêu cầu phần "
 "cứng với bộ xử lý tối thiểu là i686. Bạn không thể nâng cấp hệ thống lên đến "
-"bản Ubuntu tiếp theo với cấu hình phần cứng này."
+"bản elementary OS tiếp theo với cấu hình phần cứng này."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
 msgid "No ARMv6 CPU"
@@ -838,11 +838,11 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Hệ thống của bạn sử dụng một CPU ARM là kiến trúc cũ hơn ARMv6. Tất cả các "
 "gói trong karmic được xây dựng với yêu cầu tối ưu ARMv6 như kiến trúc tối "
-"thiểu. Không thể để nâng cấp hệ thống của bạn với một bản phát hành Ubuntu "
+"thiểu. Không thể để nâng cấp hệ thống của bạn với một bản phát hành elementary OS "
 "mới với phần cứng này."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
@@ -852,14 +852,14 @@ msgstr "Không init nào có sẵn"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
 "Hệ thống của bạn dường như là một môi trường mà không có một virtualised "
-"init daemon, ví dụ: Linux-VServer. Ubuntu 10.04 LTS không có chức năng này "
+"init daemon, ví dụ: Linux-VServer. elementary OS 10.04 LTS không có chức năng này "
 "trong vòng loại của môi trường, đòi hỏi một cập nhật cho cấu hình máy ảo của "
 "bạn đầu tiên.\n"
 "\n"
@@ -1604,8 +1604,8 @@ msgid "Distribution Upgrade"
 msgstr "Nâng cấp bản phân phối"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
-msgstr "<b><big>Đang nâng cấp Ubuntu lên phiên bản 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
+msgstr "<b><big>Đang nâng cấp elementary OS lên phiên bản 12.04</big></b>"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
 msgid "    "
@@ -1697,16 +1697,16 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "Đang tải tập tin %(current)li của %(total)li"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
-msgstr "Phiên bản Ubuntu của bạn không còn được hỗ trợ."
+msgid "Your elementary OS release is not supported anymore."
+msgstr "Phiên bản elementary OS của bạn không còn được hỗ trợ."
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 "Bạn sẽ không lấy các bản sửa lỗi bảo vệ hay cập nhật cấp thiết nữa. Vui lòng "
-"nâng cấp lên phiên bản Ubuntu mới hơn."
+"nâng cấp lên phiên bản elementary OS mới hơn."
 
 #: ../UpdateManager/UpdateManager.py:113
 msgid "Upgrade information"
@@ -1834,15 +1834,15 @@ msgid "Software updates may be available for your computer."
 msgstr "Các bản cập nhật phần mềm có thể đã sẵn sàng cho máy tính của bạn."
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
-msgstr "Chào mừng đến với Ubuntu"
+msgid "Welcome to elementary OS"
+msgstr "Chào mừng đến với elementary OS"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
-"Các bản cập nhật phần mềm sau đã được đưa ra từ khi phiên Ubuntu này được "
+"Các bản cập nhật phần mềm sau đã được đưa ra từ khi phiên elementary OS này được "
 "phát hành."
 
 #: ../UpdateManager/UpdateManager.py:708
@@ -1946,8 +1946,8 @@ msgstr "Đang tải công cụ nâng cấp bản phát hành"
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "Phiên bản Ubuntu mới '%s' sẵn sàng"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "Phiên bản elementary OS mới '%s' sẵn sàng"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -1998,8 +1998,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "Không thể nâng cấp theo cách bình thường, vui lòng chạy: \n"
@@ -2009,8 +2009,8 @@ msgstr ""
 "Nó có thể do những nguyên nhân:\n"
 " * Một nâng cấp trước đó không hoàn thành\n"
 " * Có lỗi khi cài đặt một số phần mềm\n"
-" * Những gói phần mềm không được cung cấp bởi Ubuntu\n"
-" * Những thay đổi bình thường của phiên bản Ubuntu thử nghiệm trước khi phát "
+" * Những gói phần mềm không được cung cấp bởi elementary OS\n"
+" * Những thay đổi bình thường của phiên bản elementary OS thử nghiệm trước khi phát "
 "hành"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
@@ -2126,16 +2126,16 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "Khởi động nâng cấp một phần, để cài đặt như cập nhật nhiều nhất có thể. \n"
 "\n"
 "Điều này có thể được gây ra bởi:\n"
 " * Một nâng cấp trước đó đã không hoàn thành\n"
 " * Vấn đề với một số các phần mềm cài đặt\n"
-" * Phần mềm không chính thức của các gói không được cung cấp bởi Ubuntu\n"
-" * Bình thường thay đổi trước một phát hành phiên bản Ubuntu"
+" * Phần mềm không chính thức của các gói không được cung cấp bởi elementary OS\n"
+" * Bình thường thay đổi trước một phát hành phiên bản elementary OS"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
 msgid "Chec_k"
@@ -2236,9 +2236,9 @@ msgstr "Thiết _lập..."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
 msgstr ""
-"<b>Một phiên bản mới của Ubuntu đã sẵn sàng. Bạn có muốn nâng cấp không?</b>"
+"<b>Một phiên bản mới của elementary OS đã sẵn sàng. Bạn có muốn nâng cấp không?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
@@ -2253,8 +2253,8 @@ msgid "Yes, Upgrade Now"
 msgstr "Vâng, nâng cấp ngay bây giờ"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
-msgstr "Bạn vừa từ chối nâng cấp lên Ubuntu mới"
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "Bạn vừa từ chối nâng cấp lên elementary OS mới"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2281,8 +2281,8 @@ msgid "Directory that contains the data files"
 msgstr "Thư mục chứa các tập tin dữ liệu"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
-msgstr "Kiểm tra nếu một Ubuntu mới phát hành có sẵn"
+msgid "Check if a new elementary OS release is available"
+msgstr "Kiểm tra nếu một elementary OS mới phát hành có sẵn"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
 msgid "Check if upgrading to the latest devel release is possible"
@@ -2346,8 +2346,8 @@ msgstr ""
 "lệnh thoát"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
-msgstr "Đang tìm bản phát hành Ubuntu mới"
+msgid "Checking for a new elementary OS release"
+msgstr "Đang tìm bản phát hành elementary OS mới"
 
 #: ../do-release-upgrade:96
 msgid ""
@@ -2371,13 +2371,13 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "Chạy 'do-release-upgrade' để nâng cấp."
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "Ubuntu %(version)s hiện đang sẵn sàng"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "elementary OS %(version)s hiện đang sẵn sàng"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "Bạn đã từ chối việc nâng cấp lên Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "Bạn đã từ chối việc nâng cấp lên elementary OS %s"
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2500,7 +2500,7 @@ msgid ""
 msgstr "Gỡ bỏ lilo vì grub đã được cài đặt.(Xem thêm lỗi số #314004.)"
 
 #~ msgid "Checking for a new ubuntu release"
-#~ msgstr "Đang kiểm tra bản phát hành Ubuntu mới"
+#~ msgstr "Đang kiểm tra bản phát hành elementary OS mới"
 
 #~ msgid "Your system is up-to-date"
 #~ msgstr "Hệ thống của bạn đã được cập nhật mới nhất"
@@ -2544,10 +2544,10 @@ msgstr "Gỡ bỏ lilo vì grub đã được cài đặt.(Xem thêm lỗi số 
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
 #~ "Bạn sẽ không nhận được bất kỳ bản cập nhật quan trọng hay sửa lỗi bảo mật "
-#~ "nào nữa. Xin vui lòng nâng cấp lên phiên bản Ubuntu Linux mới hơn."
+#~ "nào nữa. Xin vui lòng nâng cấp lên phiên bản elementary OS Linux mới hơn."
 
 #, python-format
 #~ msgid "%.0f kB"
@@ -2620,20 +2620,20 @@ msgstr "Gỡ bỏ lilo vì grub đã được cài đặt.(Xem thêm lỗi số 
 #~ "bug update-manager' trong một cửa sổ dòng lệnh và thêm vào các tập tin trong "
 #~ "/var/log/dist-upgrade/ trong báo cáo lỗi."
 
-#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
-#~ msgstr "<b><big>Nâng cấp Ubuntu lên phiên bản 11.10</big></b>"
+#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
+#~ msgstr "<b><big>Nâng cấp elementary OS lên phiên bản 11.10</big></b>"
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
 #~ msgstr ""
-#~ "Phần cứng đồ hoạ của bạn có thể không được hỗ trợ hoàn toàn trong Ubuntu "
+#~ "Phần cứng đồ hoạ của bạn có thể không được hỗ trợ hoàn toàn trong elementary OS "
 #~ "11.04."
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
 #~ msgstr ""
-#~ "Hỗ trợ trong Ubuntu 11.04 cho phần cứng đồ hoạ intel của bạn bị giới hạn và "
+#~ "Hỗ trợ trong elementary OS 11.04 cho phần cứng đồ hoạ intel của bạn bị giới hạn và "
 #~ "bạn có thể gặp vấn đề sau nâng cấp. Bạn có muốn tiếp tục nâng cấp không?"
 
 #~ msgid ""
@@ -2644,19 +2644,19 @@ msgstr "Gỡ bỏ lilo vì grub đã được cài đặt.(Xem thêm lỗi số 
 #~ "Ứng dụng sau."
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from Applications later."
 #~ msgstr ""
-#~ "Những bản cập nhật phần mềm này đã được đưa ra từ khi phiên bản Ubuntu này "
+#~ "Những bản cập nhật phần mềm này đã được đưa ra từ khi phiên bản elementary OS này "
 #~ "được phát hành. Nếu bạn không muốn cài đặt chúng bầy giờ, hãy chọn \"Trình "
 #~ "quản lý cập nhật\" từ Ứng dụng sau."
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from the Administration Menu later."
 #~ msgstr ""
-#~ "Những bản cập nhật phần mềm này đã được đưa ra từ khi phiên bản Ubuntu này "
+#~ "Những bản cập nhật phần mềm này đã được đưa ra từ khi phiên bản elementary OS này "
 #~ "được phát hành. Nếu bạn không muốn cài đặt chúng bầy giờ, hãy chọn \"Trình "
 #~ "quản lý cập nhật\" từ trình đơn quản trị sau."

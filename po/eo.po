@@ -56,10 +56,10 @@ msgstr "Ne eblis kalkuli eron de sources.list"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
-"Neeblas trovi ajnan pakaĵdosieron. Ĉu eble ĉi tiu ne estas Ubuntu-disko aŭ "
+"Neeblas trovi ajnan pakaĵdosieron. Ĉu eble ĉi tiu ne estas elementary OS-disko aŭ "
 "neĝustas ĝia arkitekturo?"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
@@ -70,13 +70,13 @@ msgstr "Malsukcesis aldoni la KD"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
 msgstr ""
 "Estis eraro dum aldono de la KD, la aktualigo ĉesos. Bonvolu raporti ĉi tion "
-"kiel cimon, se ĉi tio estas valida Ubuntu-KD.\n"
+"kiel cimon, se ĉi tio estas valida elementary OS-KD.\n"
 "\n"
 "La erarmesaĝo estis:\n"
 "'%s'"
@@ -132,18 +132,18 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "Nesolvebla problemo okazis dum kalkulado de la ĝisdatigo:\n"
 "%s\n"
 "\n"
 " Ĉi tio estas kaŭzebla de:\n"
-" * Ĝisdatigado al antaŭeldona versio de Ubuntu\n"
-" * Rulado de la nuna antaŭeldona versio de Ubuntu\n"
-" * Neoficiala programaraj pakaĵoj ne provizitaj de Ubuntu\n"
+" * Ĝisdatigado al antaŭeldona versio de elementary OS\n"
+" * Rulado de la nuna antaŭeldona versio de elementary OS\n"
+" * Neoficiala programaraj pakaĵoj ne provizitaj de elementary OS\n"
 "\n"
 
 #: ../DistUpgrade/DistUpgradeCache.py:689
@@ -216,12 +216,12 @@ msgstr "Ne eblas diveni meta-pakaĵon"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
 "Via sistemo ne enhavas pakaĵon ubuntu-desktop, kubuntu-desktop, xubuntu-"
-"desktop aŭ edubuntu-desktop kaj ne eblis detekti kiun version de Ubuntu vi "
+"desktop aŭ edubuntu-desktop kaj ne eblis detekti kiun version de elementary OS vi "
 "rulas.\n"
 " Bonvolu unue instali iun el la suprajn pakaĵojn uzante synaptic aŭ apt-get "
 "antaŭ ol daŭrigi."
@@ -771,18 +771,18 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
-"Via grafika aparataro eble ne estas tute subtenata de Ubuntu 12.04 LTS."
+"Via grafika aparataro eble ne estas tute subtenata de elementary OS 12.04 LTS."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
 msgstr ""
-"La subteno de Ubuntu 12.04 LTS por via grafika aparataro de Intel estas "
+"La subteno de elementary OS 12.04 LTS por via grafika aparataro de Intel estas "
 "limigita kaj vi povas trovi problemojn post la promocio. Por pliaj informoj, "
 "vidu https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Ĉu vi volas "
 "daŭrigi kun la promocio?"
@@ -802,25 +802,25 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Tiu ĉi komputilo nun uzas la grafikan pelilon 'nvidia' de NVIDIA. Ne "
 "disponeblas versio de tiu ĉi pelilo, kiu funkcias kun via ekrankarto en "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "Ĉu vi volas daŭrigi?"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Tiu ĉi komputilo nun uzas la AMD 'fglrx'-grafikan pelilon. Ne haveblas "
-"versio de tiu pelilo kiu funkcias per via aparataro en Ubuntu 10.04 LTS.\n"
+"versio de tiu pelilo kiu funkcias per via aparataro en elementary OS 10.04 LTS.\n"
 "Ĉu vi volas daŭrigi?"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:609
@@ -832,11 +832,11 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Via sistemo uzas i586-procesoron aŭ procesoron sen la 'cmov'-etendaĵo. Ĉiuj "
 "pakaĵoj kunmetiĝis kun optimigoj kiuj postulas minimume i686-procesoron. Ne "
-"eblas ĝisdatigi vian sistemon al nova Ubuntu-eldono kun ĉi tiu aparataro."
+"eblas ĝisdatigi vian sistemon al nova elementary OS-eldono kun ĉi tiu aparataro."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
 msgid "No ARMv6 CPU"
@@ -847,12 +847,12 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Via sistemo uzas ARM-ĉefprocesoron kiu pli aĝas ol la ARMv6-arkitekturo. "
 "Ĉiuj pakaĵoj en karmic estas kompilitaj kun optimumigoj kiuj minimume "
 "postulas la ARMv6-arkitekturon. Ne eblas ĝisdatigi vian sistemon al nova "
-"Ubuntu-eldono kun ĉi tiu aparataro."
+"elementary OS-eldono kun ĉi tiu aparataro."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
 msgid "No init available"
@@ -861,14 +861,14 @@ msgstr "Ne disponeblas 'init'"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
 "Ŝajne via sistemo estas virtuala medio sen 'init'-demono, ekzemple Linux-"
-"VServer. Ubuntu 10.04 ne povas funkcii en tia medio. Unue vi ĝisdatigu la "
+"VServer. elementary OS 10.04 ne povas funkcii en tia medio. Unue vi ĝisdatigu la "
 "agordojn de via virtuala maŝino.\n"
 "Ĉu vi vere volas daŭrigi?"
 
@@ -1629,8 +1629,8 @@ msgid "Distribution Upgrade"
 msgstr "Ĝisdatigo de la distribuaĵo"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
-msgstr "<b><big>Promocias Ubuntu al versio 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
+msgstr "<b><big>Promocias elementary OS al versio 12.04</big></b>"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
 msgid "    "
@@ -1722,16 +1722,16 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "Elŝutante dosieron %(current)li el %(total)li"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
-msgstr "Via Ubuntu-eldono estas ne plu subtenata."
+msgid "Your elementary OS release is not supported anymore."
+msgstr "Via elementary OS-eldono estas ne plu subtenata."
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 "Vi ne plu obtenos pliajn sekurecajn flikaĵojn aŭ kritikajn ĝisdatigojn. "
-"Bonvole promociu al nova versio de Ubuntu."
+"Bonvole promociu al nova versio de elementary OS."
 
 #: ../UpdateManager/UpdateManager.py:113
 msgid "Upgrade information"
@@ -1867,16 +1867,16 @@ msgid "Software updates may be available for your computer."
 msgstr "Programaraj ĝisdatigoj povas esti disponeblaj por via komputilo."
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
-msgstr "Bonvenon al Ubuntu"
+msgid "Welcome to elementary OS"
+msgstr "Bonvenon al elementary OS"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 "Ĉi tiuj ĝisdatigoj de programaroj estas eldonitaj ekde ĉi tiu versio de "
-"Ubuntu estis publikigita."
+"elementary OS estis publikigita."
 
 #: ../UpdateManager/UpdateManager.py:708
 msgid "Software updates are available for this computer."
@@ -1982,8 +1982,8 @@ msgstr "Elŝutaanta la ilon por eldonĝisdatigi"
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "<b>Nova eldono '%s' de Ubuntu estas disponebla.</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "<b>Nova eldono '%s' de elementary OS estas disponebla.</b>"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -2034,8 +2034,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "Normala ĝisdatigo ne povas esti kalkulita. Bonvolu ruli: \n"
@@ -2045,8 +2045,8 @@ msgstr ""
 "La kaŭzo de la problemo povas esti:\n"
 " * Antaŭa ĝisdatigo kiu ne kompletiĝis\n"
 " * Problemoj kun kelkaj instalitaj programaroj\n"
-" * Neoficialaj programarpakaĵoj nesubtenataj de Ubuntu\n"
-" * Kutimaj ŝanĝoj de antaŭ-eldono de Ubuntu"
+" * Neoficialaj programarpakaĵoj nesubtenataj de elementary OS\n"
+" * Kutimaj ŝanĝoj de antaŭ-eldono de elementary OS"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
 msgid "Downloading changelog"
@@ -2160,8 +2160,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "Rulu partan ĝisdatigon por instali kiom eble plej multe da ĝisdatigoj. \n"
 "\n"
@@ -2169,8 +2169,8 @@ msgstr ""
 "\n"
 " * Antaŭa promocio kiu ne kompletiĝis\n"
 " * Problemoj kun kelkaj instalitaj programoj\n"
-" * Neoficialaj programpakaĵoj nesubtenataj de Ubuntu\n"
-" * Kutimaj ŝanĝoj de antaŭ-eldono de Ubuntu"
+" * Neoficialaj programpakaĵoj nesubtenataj de elementary OS\n"
+" * Kutimaj ŝanĝoj de antaŭ-eldono de elementary OS"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
 msgid "Chec_k"
@@ -2270,8 +2270,8 @@ msgstr "_Agordoj..."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
-msgstr "<b>Nova versio de Ubuntu disponeblas. Ĉu vi volas ĝisdatigi?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
+msgstr "<b>Nova versio de elementary OS disponeblas. Ĉu vi volas ĝisdatigi?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
@@ -2286,8 +2286,8 @@ msgid "Yes, Upgrade Now"
 msgstr "Jes, ĝisdatigu nun"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
-msgstr "Vi decidis ne ĝisdatigi al la nova Ubuntu"
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "Vi decidis ne ĝisdatigi al la nova elementary OS"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2314,8 +2314,8 @@ msgid "Directory that contains the data files"
 msgstr "Dosierujo kiu enhavas la datumdosierojn"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
-msgstr "Kontrolu, ĉu nova eldono de Ubuntu estas disponebla"
+msgid "Check if a new elementary OS release is available"
+msgstr "Kontrolu, ĉu nova eldono de elementary OS estas disponebla"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
 msgid "Check if upgrading to the latest devel release is possible"
@@ -2379,8 +2379,8 @@ msgstr ""
 "elira kodo"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
-msgstr "Kontrolas por nova eldono de Ubuntu"
+msgid "Checking for a new elementary OS release"
+msgstr "Kontrolas por nova eldono de elementary OS"
 
 #: ../do-release-upgrade:96
 msgid ""
@@ -2404,13 +2404,13 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "Rulu 'do-release-upgrade' por ĝisdatigi al ĝi"
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "Ĝisdatigoj por Ubuntu %(version) disponeblas"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "Ĝisdatigoj por elementary OS %(version) disponeblas"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "Vi decidis ne ĝisdatigi al Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "Vi decidis ne ĝisdatigi al elementary OS %s"
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2555,10 +2555,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
 #~ "Vi ne plu ricevos kritikajn ĝisdatigojn aŭ sekurajn riparojn. Bonvolu "
-#~ "ĝisdatigi al pli nova versio de Ubuntu-Linukso."
+#~ "ĝisdatigi al pli nova versio de elementary OS-Linukso."
 
 #, python-format
 #~ msgid ""
@@ -2631,15 +2631,15 @@ msgstr ""
 #~ "'ubuntu-bug update-manager' en terminalo kaj aldoni la dosierojn en "
 #~ "/var/log/dist-upgrade/ en la cimraporto."
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
-#~ msgstr "Via grafika aparataro eble ne estas tute subtenata en Ubuntu 11.04."
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
+#~ msgstr "Via grafika aparataro eble ne estas tute subtenata en elementary OS 11.04."
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
 #~ msgstr ""
-#~ "La subteno en Ubuntu 11.04 por via grafika aparataro de Intel estas limigita "
+#~ "La subteno en elementary OS 11.04 por via grafika aparataro de Intel estas limigita "
 #~ "kaj vi eble havas problemojn post la promociado. Ĉu vi volas daŭrigi kun la "
 #~ "ĝisdatigo?"
 
@@ -2667,8 +2667,8 @@ msgstr ""
 #~ "raporti tion kiel cimo per la komando 'ubuntu-bug update-manager' en "
 #~ "terminalo."
 
-#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
-#~ msgstr "<b><big>Promocianta Ubuntu al versio 11.10</big></b>"
+#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
+#~ msgstr "<b><big>Promocianta elementary OS al versio 11.10</big></b>"
 
 #, python-format
 #~ msgid "%.0f kB"
@@ -2681,19 +2681,19 @@ msgstr ""
 #~ msgstr "1 kB"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from Applications later."
 #~ msgstr ""
-#~ "Ĉi tiuj programaraj ĝisdatigoj eldoniĝis depost kiam ĉi tiu versio de Ubuntu "
+#~ "Ĉi tiuj programaraj ĝisdatigoj eldoniĝis depost kiam ĉi tiu versio de elementary OS "
 #~ "eldoniĝis. Se vi ne volas instali ilin nun, elektu la “Ĝisdatigan "
 #~ "mastrumilon” el la aplikaĵa menuo poste."
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from the Administration Menu later."
 #~ msgstr ""
-#~ "Ĉi tiuj programaraj ĝisdatigoj eldoniĝis depost kiam ĉi tiu versio de Ubuntu "
+#~ "Ĉi tiuj programaraj ĝisdatigoj eldoniĝis depost kiam ĉi tiu versio de elementary OS "
 #~ "eldoniĝis. Se vi ne volas instali ilin nun, elektu la “Ĝisdatigan "
 #~ "mastrumilon” el la administra menuo poste."

@@ -56,11 +56,11 @@ msgstr "N'eus ket tu da jediñ enankad sources.list"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
 "N'eo ket gouest da zelec'hiañ tamm restr pakad ebet, marteze n'eo ket ur "
-"gantenn Ubuntu pe an adeiladezh fall ?"
+"gantenn elementary OS pe an adeiladezh fall ?"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
 msgid "Failed to add the CD"
@@ -70,7 +70,7 @@ msgstr "C'hwitadenn war ouzhpennañ ar CD"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
@@ -133,18 +133,18 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "Degouezhet ez eus bet ur fazi pa oa o jediñ an hizivadenn :\n"
 "%s\n"
 "\n"
 "Dougezhet eo en abet da :\n"
-" * Hizivadur ur rakhandelv eus Ubuntu\n"
-" * Erounezadur eus ar rakhandelv eus Ubuntu\n"
-" * Pakadoù meziantoù ankefridiel ket pourchaset gant Ubuntu\n"
+" * Hizivadur ur rakhandelv eus elementary OS\n"
+" * Erounezadur eus ar rakhandelv eus elementary OS\n"
+" * Pakadoù meziantoù ankefridiel ket pourchaset gant elementary OS\n"
 "\n"
 
 #: ../DistUpgrade/DistUpgradeCache.py:689
@@ -214,13 +214,13 @@ msgstr "N'hall ket dinoiñ ar metapakad"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
 "Gant ho reizhiad n'eus pakad ebet o tont eus ubuntu-desktop, kubuntu-"
 "desktop, xubuntu-desktop pe edubuntu-desktop ha n'eo ket bet evit dinoiñ "
-"peseurt handelv eus Ubuntu emaoc'h o ober ganti.\n"
+"peseurt handelv eus elementary OS emaoc'h o ober ganti.\n"
 " Mar plij, staliit unan eus ar pakadoù meneget a-us en ur obr gant synaptic "
 "pe apt-get kent mont war-raok."
 
@@ -734,12 +734,12 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -760,12 +760,12 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Gant ar stur kevregat 'nvidia' savet gant NVIDIA e ra hoc'h urzhiataer. "
-"N'eus stur hegerz ebet hag a yafe en-dro gant ho kartenn gevregat e Ubuntu "
+"N'eus stur hegerz ebet hag a yafe en-dro gant ho kartenn gevregat e elementary OS "
 "10.04 LTS.\n"
 "\n"
 "Ha fellout a ra deoc'h kenderc'hel ?"
@@ -773,13 +773,13 @@ msgstr ""
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Gant ar stur kevregat 'nvidiafglrx savet gant AMD e ra hoc'h urzhiataer. "
-"N'eus stur hegerz ebet hag a yafe en-dro gant ho kartenn gevregat e Ubuntu "
+"N'eus stur hegerz ebet hag a yafe en-dro gant ho kartenn gevregat e elementary OS "
 "10.04 LTS.\n"
 "\n"
 "Ha fellout a ra deoc'h kenderc'hel ?"
@@ -793,7 +793,7 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
@@ -805,12 +805,12 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Ur c'horrgewerier ARM a zo koshoc'h eget an adeiladezh ARMv6 zo arveret gant "
 "ho reizhiad. Savet e oa bet an holl bakadoù e karmic gant gwellekadurioù a "
 "c'houlenne da gaout ARMv6 evit adeiladezh izek. N'eus ket tro da hizivaat ho "
-"reizhiad da handelv nevez Ubuntu gant ar periant-mañ."
+"reizhiad da handelv nevez elementary OS gant ar periant-mañ."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
 msgid "No init available"
@@ -820,14 +820,14 @@ msgstr "an deraouekaat n'eo ket hegerz"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
 "Ho reizhiad a hañval bezañ un endro galloudekaet hep un argerzh deraouekaat "
-"en drekva (daemon) evel Linux-VServer. N'hall ket Ubuntu 10.04 LTS mont en-"
+"en drekva (daemon) evel Linux-VServer. N'hall ket elementary OS 10.04 LTS mont en-"
 "dro gant un endro a seurt-se hag a c'houlenn ma vo hizivaet hoc'h ijinenn "
 "gefluniañ galloudel da gentañ.\n"
 "Ha fellout a ra deoc'h kenderc'hel ?"
@@ -1572,7 +1572,7 @@ msgid "Distribution Upgrade"
 msgstr "Hizivadur an dasparzhadenn"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr ""
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
@@ -1666,13 +1666,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "O pellgargañ ar restr %(current)li eus %(total)li"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
+msgid "Your elementary OS release is not supported anymore."
 msgstr ""
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 
 #: ../UpdateManager/UpdateManager.py:113
@@ -1798,12 +1798,12 @@ msgid "Software updates may be available for your computer."
 msgstr ""
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
-msgstr "Degemer mat e Ubuntu"
+msgid "Welcome to elementary OS"
+msgstr "Degemer mat e elementary OS"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 
@@ -1911,8 +1911,8 @@ msgstr "O pellgargañ an ostilh da hizivaat an handelvoù"
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "<b>Hegerz ez eus un handelv nevez eus Ubuntu '%s'</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "<b>Hegerz ez eus un handelv nevez eus elementary OS '%s'</b>"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -1963,8 +1963,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "N'eus ket tro da jediñ un hizivadenn reol, mar plij erounezit : \n"
@@ -1974,8 +1974,8 @@ msgstr ""
 "Dougezhet eo en abet da :\n"
 " * Un hizivaat kent nad eo ket bet echuet\n"
 " * Kudennoù gant pakadoù staliet zo\n"
-" * Pakadoù meziantoù ankefridiel ket pourchaset gant Ubuntu\n"
-" * Kemmoù reol ur rakhandelv eus Ubuntu"
+" * Pakadoù meziantoù ankefridiel ket pourchaset gant elementary OS\n"
+" * Kemmoù reol ur rakhandelv eus elementary OS"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
 msgid "Downloading changelog"
@@ -2087,8 +2087,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "Erounit an hizivaat darnel a-benn staliañ kement hizivadennoù a vo tro "
 "d'ober.\n"
@@ -2096,8 +2096,8 @@ msgstr ""
 "Dougezhet eo en abet da :\n"
 " * Un hizivaat kent nad eo ket bet echuet\n"
 " * Kudennoù gant pakadoù staliet zo\n"
-" * Pakadoù meziantoù ankefridiel ket pourchaset gant Ubuntu\n"
-" * Kemmoù reol ur rakhandelv eus Ubuntu"
+" * Pakadoù meziantoù ankefridiel ket pourchaset gant elementary OS\n"
+" * Kemmoù reol ur rakhandelv eus elementary OS"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
 msgid "Chec_k"
@@ -2196,9 +2196,9 @@ msgstr ""
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
 msgstr ""
-"<b>Hegerz ez eus un handelv nevez eus Ubuntu. Ha fellout a ra deoc'h hizvaat "
+"<b>Hegerz ez eus un handelv nevez eus elementary OS. Ha fellout a ra deoc'h hizvaat "
 "?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
@@ -2214,7 +2214,7 @@ msgid "Yes, Upgrade Now"
 msgstr "Ya, hizivaat brmañ"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
+msgid "You have declined to upgrade to the new elementary OS"
 msgstr "N'hoc'h eus ket bet c'hoant da hizivaat betek handelv Ubutu nevez"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
@@ -2243,7 +2243,7 @@ msgid "Directory that contains the data files"
 msgstr "Kavlec'hiad gant ar restroù roadennoù ennañ"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
+msgid "Check if a new elementary OS release is available"
 msgstr "Gwiriañ hag-eñ ez eus un handelv nevez eus Ubutu"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
@@ -2310,7 +2310,7 @@ msgstr ""
 "danevell dre ar voneg ec'hankañ"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
+msgid "Checking for a new elementary OS release"
 msgstr ""
 
 #: ../do-release-upgrade:96
@@ -2333,13 +2333,13 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "Erounit 'do-release-upgrade' a-benn hizivaat."
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "Hizivadenn Ubuntu %(version)s hegerz"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "Hizivadenn elementary OS %(version)s hegerz"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "Nac'hac'het hoc'h eus hizivaat da Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "Nac'hac'het hoc'h eus hizivaat da elementary OS %s"
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2495,4 +2495,4 @@ msgstr ""
 #~ "lañser ar melestradurezh diwezhatoc'h."
 
 #~ msgid "Checking for a new ubuntu release"
-#~ msgstr "O klask handelvoù nevez evit Ubuntu"
+#~ msgstr "O klask handelvoù nevez evit elementary OS"

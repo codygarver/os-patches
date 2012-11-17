@@ -56,10 +56,10 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
-"Tölvan fann engar pakkaskrár, er þetta örugglega Ubuntu-diskur eða kannski "
+"Tölvan fann engar pakkaskrár, er þetta örugglega elementary OS-diskur eða kannski "
 "vitlausa gerðin?"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
@@ -70,13 +70,13 @@ msgstr "Gat ekki bætt við geisladisknum"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
 msgstr ""
 "Það kom upp villa við að bæta geisladisknum við, uppfærslan mun nú hætta. "
-"Vinsamlegast tilkynntu þetta sem lús ef þetta er gildur Ubuntu-"
+"Vinsamlegast tilkynntu þetta sem lús ef þetta er gildur elementary OS-"
 "geisladiskur.\n"
 "\n"
 "Villuskilaboðin voru:\n"
@@ -134,18 +134,18 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "Villa kom upp við að reikna út uppfærsluna:\n"
 "%s\n"
 "\n"
 " Nokkrar ástæður geta ollið þessu:\n"
-" * Þú ert að uppfæra yfir í prufuútgáfu af Ubuntu\n"
-" * Þú ert að nota prufuútgáfu af Ubuntu\n"
-" * Þú hefur náð í hugbúnaðarpakka sem eru ekki á vegum Ubuntu\n"
+" * Þú ert að uppfæra yfir í prufuútgáfu af elementary OS\n"
+" * Þú ert að nota prufuútgáfu af elementary OS\n"
+" * Þú hefur náð í hugbúnaðarpakka sem eru ekki á vegum elementary OS\n"
 "\n"
 
 #: ../DistUpgrade/DistUpgradeCache.py:689
@@ -219,13 +219,13 @@ msgstr "Get ekki giskað á lýsipakka"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
 "Kerfið þitt inniheldur hvorki pakkann ‚ubuntu-desktop‘, ‚kubuntu-desktop‘, "
 "‚xubuntu-desktop‘ né ‚edubuntu-desktop‘- og ekki tókst að bera kennsl á "
-"hvaða tegund af Ubuntu þú ert að nota.\n"
+"hvaða tegund af elementary OS þú ert að nota.\n"
 " Settu upp einn af áðurnefndum pökkum með því að nota Synaptic-pakkastjórann "
 "eða með því að nota apt-get áður en þú heldur áfram."
 
@@ -716,12 +716,12 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -742,27 +742,27 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Þessi tölva er sem stendur að notast við NVIDIA ‚nvidia‘-rekilinn fyrir "
 "grafík. Það er ekki til nein útgáfa af reklinum sem virkar með skjákortinu "
-"þínu í Ubuntu 10.04 LTS\n"
+"þínu í elementary OS 10.04 LTS\n"
 "\n"
 "Viltu halda áfram?"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Þessi tölva er sem stendur að notast við AMD ‚fglrx‘-rekilinn fyrir grafík. "
 "Það er ekki til nein útgáfa af þessum rekli sem virkar með vélbúnaði þínum í "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Viltu halda áfram?"
 
@@ -775,7 +775,7 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
@@ -787,11 +787,11 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Tölva þín notar ARM-örgjörva sem er eldri en ARMv6 (útgáfa 6). Allir pakkar "
 "í karmic þurfa að lágmarki örgjörva af útgáfu ARMv6. Það er ekki hægt að "
-"uppfæra stýrikerfi þitt yfir í nýja útgáfu af Ubuntu með þessum vélbúnaði."
+"uppfæra stýrikerfi þitt yfir í nýja útgáfu af elementary OS með þessum vélbúnaði."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
 msgid "No init available"
@@ -800,7 +800,7 @@ msgstr "‚init‘ fannst ekki"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
@@ -1542,7 +1542,7 @@ msgid "Distribution Upgrade"
 msgstr "Kerfisuppfærsla"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr ""
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
@@ -1635,13 +1635,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "Sæki skrá %(current)li af %(total)li"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
+msgid "Your elementary OS release is not supported anymore."
 msgstr ""
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 
 #: ../UpdateManager/UpdateManager.py:113
@@ -1776,16 +1776,16 @@ msgid "Software updates may be available for your computer."
 msgstr "Hugbúnaðaruppfærslur gætu verið fáanlegar fyrir tölvuna þína."
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
-msgstr "Velkomin í Ubuntu"
+msgid "Welcome to elementary OS"
+msgstr "Velkomin í elementary OS"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 "Þessar hugbúnaðaruppfærslur hafa verið gefnar út síðan þessi útgáfa af "
-"Ubuntu var gefin út."
+"elementary OS var gefin út."
 
 #: ../UpdateManager/UpdateManager.py:708
 msgid "Software updates are available for this computer."
@@ -1883,8 +1883,8 @@ msgstr "Sækir uppfærslutólið fyrir útgáfuna"
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "<b>Nýja ‚%s‘ Ubuntu-útgáfan er fáanleg</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "<b>Nýja ‚%s‘ elementary OS-útgáfan er fáanleg</b>"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -1935,8 +1935,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "Ekki var mögulegt að reikna venjulega uppfærslu, vinsamlegast keyrið: \n"
@@ -1946,8 +1946,8 @@ msgstr ""
 "Örsakavaldur getur verið eftirfarandi:\n"
 " * Fyrri uppfærsla kláraði ekki sem skildi\n"
 " * Vandamál í einhverjum hugbúnaði\n"
-" * Óformlegir hugbúnaðarpakkar sem ekki er á vegum Ubuntu\n"
-" * Venjulegar breytingar á prufuútgáfu Ubuntu"
+" * Óformlegir hugbúnaðarpakkar sem ekki er á vegum elementary OS\n"
+" * Venjulegar breytingar á prufuútgáfu elementary OS"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
 msgid "Downloading changelog"
@@ -2053,8 +2053,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
@@ -2151,8 +2151,8 @@ msgstr ""
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
-msgstr "<b>Ný útgáfa Ubuntu er tiltæk. Viltu uppfæra í hana núna?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
+msgstr "<b>Ný útgáfa elementary OS er tiltæk. Viltu uppfæra í hana núna?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
@@ -2167,8 +2167,8 @@ msgid "Yes, Upgrade Now"
 msgstr "Já, uppfæra núna"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
-msgstr "Þú hefur hafnað uppfærslu í nýja útgáfu af Ubuntu"
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "Þú hefur hafnað uppfærslu í nýja útgáfu af elementary OS"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2195,8 +2195,8 @@ msgid "Directory that contains the data files"
 msgstr "Mappan sem inniheldur gagnaskrárnar"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
-msgstr "Athuga hvort til sé ný útgáfa af Ubuntu"
+msgid "Check if a new elementary OS release is available"
+msgstr "Athuga hvort til sé ný útgáfa af elementary OS"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
 msgid "Check if upgrading to the latest devel release is possible"
@@ -2253,7 +2253,7 @@ msgid ""
 msgstr ""
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
+msgid "Checking for a new elementary OS release"
 msgstr ""
 
 #: ../do-release-upgrade:96
@@ -2276,13 +2276,13 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "Keyrðu ‚do-release-upgrade‘ til að hefja uppfærsluna."
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "Uppfærsla í Ubuntu %(version)s er tiltæk"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "Uppfærsla í elementary OS %(version)s er tiltæk"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "Þú hefur hafnað uppfærslu í Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "Þú hefur hafnað uppfærslu í elementary OS %s"
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2435,7 +2435,7 @@ msgstr ""
 #~ msgstr "Kerfið þitt hefur verið uppfært"
 
 #~ msgid "Checking for a new ubuntu release"
-#~ msgstr "Leita að nýrri Ubuntu-útgáfu"
+#~ msgstr "Leita að nýrri elementary OS-útgáfu"
 
 #~ msgid "0 kB"
 #~ msgstr "0 kB"

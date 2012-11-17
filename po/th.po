@@ -57,9 +57,9 @@ msgstr "ไม่สามารถคำนวนรายการใน sourc
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
-msgstr "ไม่พบแพคเกจใดเลย บางทีนี่อาจไม่ใช่แผ่น Ubuntu หรือแผ่นอาจเสียหาย?"
+msgstr "ไม่พบแพคเกจใดเลย บางทีนี่อาจไม่ใช่แผ่น elementary OS หรือแผ่นอาจเสียหาย?"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
 msgid "Failed to add the CD"
@@ -69,13 +69,13 @@ msgstr "ไม่สามารถเพิ่มซีดีได้"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
 msgstr ""
 "มีปัญหาในการเพิ่มซีดี การปรับปรุงรุ่นจะถูกยกเลิก "
-"กรุณารายงานปัญหานี้ถ้าเป็นซีดีที่ถูกต้องของ Ubuntu\n"
+"กรุณารายงานปัญหานี้ถ้าเป็นซีดีที่ถูกต้องของ elementary OS\n"
 "\n"
 "ปัญหาคือ : \n"
 "'%s'"
@@ -126,18 +126,18 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "มีปัญหาที่แก้ไม่ได้ขณะวางแผนในการปรับปรุง:\n"
 "%s\n"
 "\n"
 " ปัญหาอาจมาจาก:\n"
-" * ปรับรุ่นขึ้นไปเป็นรุ่น pre-release ของ Ubuntu\n"
-" * ขณะนี้กำลังใช้รุ่น pre-release ของ Ubuntu อยู่\n"
-" * ไม่ใช่ซอฟต์แวร์แพคเกจที่มาจาก Ubuntu อย่างเป็นทางการ\n"
+" * ปรับรุ่นขึ้นไปเป็นรุ่น pre-release ของ elementary OS\n"
+" * ขณะนี้กำลังใช้รุ่น pre-release ของ elementary OS อยู่\n"
+" * ไม่ใช่ซอฟต์แวร์แพคเกจที่มาจาก elementary OS อย่างเป็นทางการ\n"
 "\n"
 
 #: ../DistUpgrade/DistUpgradeCache.py:689
@@ -209,12 +209,12 @@ msgstr "ไม่สามารถเดาเมตาแพกเกจได
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
-"ระบบของคุณไม่ได้ประกอบด้วย Ubuntu-desktop, Kubuntu-desktop, Xubuntu-desktop "
-"หรือ Edubuntu-desktop และไม่สามารถตรวจสอบได้ว่าคุณใช้ Ubuntu รุ่นอะไรอยู่\n"
+"ระบบของคุณไม่ได้ประกอบด้วย elementary OS-desktop, Kubuntu-desktop, Xubuntu-desktop "
+"หรือ Edubuntu-desktop และไม่สามารถตรวจสอบได้ว่าคุณใช้ elementary OS รุ่นอะไรอยู่\n"
 " กรุณาติดตั้งแพกเกจด้านบนอย่างใดอย่างหนึ่งก่อนโดยใช้โปรแกรม Synaptic หรือ "
 "apt-get ก่อนจะดำเนินการต่อไป"
 
@@ -725,12 +725,12 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -751,25 +751,25 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "คอมพิวเตอร์ตัวนี้ใช้กราฟิกไดรเวอร์ของ NVIDIA 'nvidia' "
-"ไม่พบรุ่นของไดรเวอร์ที่ทำงานกับการ์ดวิดีโอของคุณใน Ubuntu 10.04 LTS\n"
+"ไม่พบรุ่นของไดรเวอร์ที่ทำงานกับการ์ดวิดีโอของคุณใน elementary OS 10.04 LTS\n"
 "\n"
 "คุณต้องการทำต่อ?"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "คอมพิวเตอร์ตัวนี้ใช้กราฟิกไดรเวอร์ของ NVIDIA 'nvidia' "
-"ไม่พบรุ่นของไดรเวอร์ที่ทำงานกับการ์ดวิดีโอของคุณใน Ubuntu 10.04 LTS\n"
+"ไม่พบรุ่นของไดรเวอร์ที่ทำงานกับการ์ดวิดีโอของคุณใน elementary OS 10.04 LTS\n"
 "\n"
 "คุณต้องการทำต่อ?"
 
@@ -782,11 +782,11 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "ระบบของคุณใช้ i586 CPU หรือ CPU ที่ไม่มีส่วนขยาย 'cmov' "
 "แพคเกจทั้งหมดถูกสร้างขึ้นด้วยการเพิ่มประสิทธิภาพต้องเป็นสถาปัตยกรรม i686 "
-"น้อยที่สุด มันเป็นไปไม่ได้ที่จะปรุบรุ่นระบบ Ubuntu ของคุณกับฮาร์ดแวร์ใหม่นี้"
+"น้อยที่สุด มันเป็นไปไม่ได้ที่จะปรุบรุ่นระบบ elementary OS ของคุณกับฮาร์ดแวร์ใหม่นี้"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
 msgid "No ARMv6 CPU"
@@ -797,7 +797,7 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
@@ -807,7 +807,7 @@ msgstr "ไม่พบ init"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
@@ -1538,7 +1538,7 @@ msgid "Distribution Upgrade"
 msgstr "ปรับปรุงชุดเผยแพร่"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr ""
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
@@ -1633,13 +1633,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "กำลังดาวน์โหลดไฟล์ที่ %(current)li จากทั้งหมด %(total)li"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
-msgstr "Ubuntu รุ่นที่คุณใช้ไม่ให้การสนับสนุนอีกต่อไป"
+msgid "Your elementary OS release is not supported anymore."
+msgstr "elementary OS รุ่นที่คุณใช้ไม่ให้การสนับสนุนอีกต่อไป"
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 
 #: ../UpdateManager/UpdateManager.py:113
@@ -1762,12 +1762,12 @@ msgid "Software updates may be available for your computer."
 msgstr "คอมพิวเตอร์ของคุณสามารถปรับรุ่นซอฟต์แวร์ได้แล้ว"
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
+msgid "Welcome to elementary OS"
 msgstr "ยินดีต้อนรับสู่อูบุนตู"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 
@@ -1873,8 +1873,8 @@ msgstr "กำลังดาวน์โหลดเครื่องมือ
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "<b>Ubuntu รุ่นใหม่ '%s' ออกแล้ว</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "<b>elementary OS รุ่นใหม่ '%s' ออกแล้ว</b>"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -1925,8 +1925,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "การปรับปรุงแบบปกติไม่สามารถคำนวนได้ กรุณาใช้คำสั่ง: \n"
@@ -2051,8 +2051,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
@@ -2152,9 +2152,9 @@ msgstr "_ตั้งค่า..."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
 msgstr ""
-"<b>สามารถปรับรุ่นเป็น Ubuntu รุ่นใหม่ได้แล้ว "
+"<b>สามารถปรับรุ่นเป็น elementary OS รุ่นใหม่ได้แล้ว "
 "คุณต้องการปรับรุ่นเลยหรือไม่?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
@@ -2170,8 +2170,8 @@ msgid "Yes, Upgrade Now"
 msgstr "ใช่ ดำเนินการปรับรุ่นตอนนี้"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
-msgstr "คุณได้ตัดสินใจไม่ปรับรุ่น Ubuntu เป็นรุ่นใหม่"
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "คุณได้ตัดสินใจไม่ปรับรุ่น elementary OS เป็นรุ่นใหม่"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2198,8 +2198,8 @@ msgid "Directory that contains the data files"
 msgstr "ไดเรกทอรีมีแฟ้มข้อมูล"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
-msgstr "ตรวจสอบหารุ่นใหม่ของ Ubuntu"
+msgid "Check if a new elementary OS release is available"
+msgstr "ตรวจสอบหารุ่นใหม่ของ elementary OS"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
 msgid "Check if upgrading to the latest devel release is possible"
@@ -2260,7 +2260,7 @@ msgid ""
 msgstr "ตรวจสอบเฉพาะตอนมีรุ่นใหม่ออกและรายงานผลผ่านทางรหัสออก"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
+msgid "Checking for a new elementary OS release"
 msgstr ""
 
 #: ../do-release-upgrade:96
@@ -2285,13 +2285,13 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "เรียก 'do-release-upgrade' เพื่อที่จะทำการปรับปรุง"
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "Ubuntu %(version)s สามารถปรับรุ่นได้แล้ว"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "elementary OS %(version)s สามารถปรับรุ่นได้แล้ว"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "คุณได้ตัดสินใจไม่ปรับเป็นรุ่น Ubuntu  %s"
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "คุณได้ตัดสินใจไม่ปรับเป็นรุ่น elementary OS  %s"
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2454,26 +2454,26 @@ msgstr ""
 #~ msgid_plural "The updates have already been downloaded, but not installed"
 #~ msgstr[0] "การปรับปรุงได้ดาวน์โหลดแล้ว แต่ยังไม่ได้ติดตั้ง"
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
-#~ msgstr "อุปกรณ์แสดงผลของคุณอาจจะสนับสนุน Ubuntu 11.04 ได้ไม่เต็มที่"
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
+#~ msgstr "อุปกรณ์แสดงผลของคุณอาจจะสนับสนุน elementary OS 11.04 ได้ไม่เต็มที่"
 
-#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
-#~ msgstr "<b><big>กำลังปรับรุ่น Ubuntu ไปเป็นรุ่น 11.10</big></b>"
+#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
+#~ msgstr "<b><big>กำลังปรับรุ่น elementary OS ไปเป็นรุ่น 11.10</big></b>"
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
 #~ msgstr ""
-#~ "การสนับสนุนใน Ubuntu 11.04 สำหรับ Intel กราฟิกฮาร์ดแวร์ของคุณจำกัด "
+#~ "การสนับสนุนใน elementary OS 11.04 สำหรับ Intel กราฟิกฮาร์ดแวร์ของคุณจำกัด "
 #~ "และคุณอาจพบปัญหาหลังจากการปรับรุ่น คุณต้องการที่จะดำเนินการปรับรุ่นต่อหรือไม่"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from the Administration Menu later."
 #~ msgstr ""
-#~ "การปรับปรุงโปรแกรมเหล่ามีออกตั้งแต่รุ่นของ Ubuntu นี้เปิดตัว "
+#~ "การปรับปรุงโปรแกรมเหล่ามีออกตั้งแต่รุ่นของ elementary OS นี้เปิดตัว "
 #~ "หากคุณไม่ต้องการที่จะติดตั้งที่หลังให้เลือก \"Update "
 #~ "Update\"จากเมนูผู้ดูแลระบบในภายหลัง"
 

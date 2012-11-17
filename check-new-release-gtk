@@ -87,7 +87,7 @@ class CheckNewReleaseGtk(SimpleGtkbuilderApp):
         logging.warn("found new dist '%s' but it is on the ignore list" % new_dist.name)
         Gtk.main_quit()
     self.build_ui()
-    self.window_main.set_title(_("Ubuntu %(version)s Upgrade Available") % {'version': new_dist.version})
+    self.window_main.set_title(_("elementary OS %(version)s Upgrade Available") % {'version': new_dist.version})
     self.linkbutton_release_notes.set_uri(new_dist.releaseNotesURI)
     html_uri = new_dist.releaseNotesHtmlUri
     if not html_uri:
@@ -129,7 +129,7 @@ class CheckNewReleaseGtk(SimpleGtkbuilderApp):
 
   def on_button_dont_upgrade_clicked(self, button):
     #print "don't upgrade"
-    s = _("You have declined the upgrade to Ubuntu %s") % self.new_dist.version
+    s = _("You have declined the upgrade to elementary OS %s") % self.new_dist.version
     self.dialog_really_do_not_upgrade.set_markup("<b>%s</b>" % s)
     if self.dialog_really_do_not_upgrade.run() == Gtk.ResponseType.OK:
         client = Gio.Settings("com.ubuntu.update-manager")

@@ -101,15 +101,15 @@ from Core.roam import NetworkManagerHelper
 def show_dist_no_longer_supported_dialog(parent=None):
     """ show a no-longer-supported dialog """
     msg = "<big><b>%s</b></big>\n\n%s" % (
-        _("Your Ubuntu release is not supported anymore."),
+        _("Your elementary OS release is not supported anymore."),
         _("You will not get any further security fixes or critical "
           "updates. "
-          "Please upgrade to a later version of Ubuntu."))
+          "Please upgrade to a later version of elementary OS."))
     dialog = Gtk.MessageDialog(parent, 0, Gtk.MessageType.WARNING,
                                Gtk.ButtonsType.CLOSE,"")
     dialog.set_title("")
     dialog.set_markup(msg)
-    button = Gtk.LinkButton(uri="http://www.ubuntu.com/releaseendoflife",
+    button = Gtk.LinkButton(uri="http://www.elementaryos.org",
                             label=_("Upgrade information"))
     button.show()
     dialog.get_content_area().pack_end(button, True, True, 0)
@@ -696,8 +696,8 @@ class UpdateManager(SimpleGtkbuilderApp):
           # show different text on first run (UX team suggestion)
           firstrun = self.settings.get_boolean("first-run")
           if firstrun:
-              text_header = "<big><b>%s</b></big>" % _("Welcome to Ubuntu")
-              text_label_main = _("These software updates have been issued since this version of Ubuntu was released.")
+              text_header = "<big><b>%s</b></big>" % _("Welcome to elementary OS")
+              text_label_main = _("These software updates have been issued since this version of elementary OS was released.")
               self.settings.set_boolean("first-run", False)
           else:
               text_header = "<big><b>%s</b></big>" % _("Software updates are available for this computer.")
@@ -1111,7 +1111,7 @@ class UpdateManager(SimpleGtkbuilderApp):
       
   def new_dist_available(self, meta_release, upgradable_to):
     self.frame_new_release.show()
-    self.label_new_release.set_markup(_("<b>New Ubuntu release '%s' is available</b>") % upgradable_to.version)
+    self.label_new_release.set_markup(_("<b>New elementary OS release '%s' is available</b>") % upgradable_to.version)
     self.new_dist = upgradable_to
     
 

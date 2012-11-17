@@ -1,4 +1,4 @@
-# Ubuntu-ja translation of update-manager.
+# elementary OS-ja translation of update-manager.
 # Copyright (C) 2006 THE update-manager'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the update-manager package.
 # Ikuya Awashiro <ikuya@fruitsbasket.info>, 2006.
@@ -12,7 +12,7 @@ msgstr ""
 "POT-Creation-Date: 2012-04-14 00:52+0000\n"
 "PO-Revision-Date: 2012-04-12 16:16+0000\n"
 "Last-Translator: Mitsuya Shibata <mty.shibata@gmail.com>\n"
-"Language-Team: Ubuntu Japanese Team <ubuntu-ja-users@freeml.com>\n"
+"Language-Team: elementary OS Japanese Team <ubuntu-ja-users@freeml.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -57,9 +57,9 @@ msgstr "sources.listのエントリーから作業内容を見積もれません
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
-msgstr "パッケージファイルが見つかりません。UbuntuのCDではないか、異なるアーキテクチャー向けのCDかもしれません。"
+msgstr "パッケージファイルが見つかりません。elementary OSのCDではないか、異なるアーキテクチャー向けのCDかもしれません。"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
 msgid "Failed to add the CD"
@@ -69,12 +69,12 @@ msgstr "CDの追加に失敗しました"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
 msgstr ""
-"CD をリソースとして追加できなかったため、アップグレードは終了されます。この CD が正規の Ubuntu CD "
+"CD をリソースとして追加できなかったため、アップグレードは終了されます。この CD が正規の elementary OS CD "
 "の場合は、このことをバグとして報告してください。\n"
 "\n"
 "エラーメッセージ：\n"
@@ -124,18 +124,18 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "アップグレードの見積もり中に解決できない問題が発生しました:\n"
 "%s\n"
 "\n"
 " 以下の原因が考えられます:\n"
-" * Ubuntu のリリース前バージョンへアップグレードしようとしている。\n"
-" * Ubuntu のリリース前バージョンを使っている。\n"
-" * Ubuntu が提供していない、非公式なパッケージを利用している。\n"
+" * elementary OS のリリース前バージョンへアップグレードしようとしている。\n"
+" * elementary OS のリリース前バージョンを使っている。\n"
+" * elementary OS が提供していない、非公式なパッケージを利用している。\n"
 "\n"
 
 #: ../DistUpgrade/DistUpgradeCache.py:689
@@ -204,7 +204,7 @@ msgstr "メタパッケージを推測できません"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
@@ -722,17 +722,17 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
-msgstr "現在使用中のグラフィックハードウェアのサポートは Ubuntu 12.04 LTS では不完全な可能性があります。"
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
+msgstr "現在使用中のグラフィックハードウェアのサポートは elementary OS 12.04 LTS では不完全な可能性があります。"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
 msgstr ""
-"現在使用中の Intel 製グラフィックハードウェアは Ubuntu 12.04 LTS "
+"現在使用中の Intel 製グラフィックハードウェアは elementary OS 12.04 LTS "
 "では制限付きのサポートとなっているため、アップグレード後に不具合が発生する可能性があります。詳しくは "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx "
 "をご覧ください。アップグレードを続行しますか?"
@@ -752,11 +752,11 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
-"現在、このコンピューターはNVIDIA 'nvidia' グラフィックドライバーを利用しています。Ubuntu 10.04 LTS "
+"現在、このコンピューターはNVIDIA 'nvidia' グラフィックドライバーを利用しています。elementary OS 10.04 LTS "
 "では、このハードウェアで動作可能なドライバーのバージョンはありません。\n"
 "\n"
 "作業を続けますか？"
@@ -764,12 +764,12 @@ msgstr ""
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
-"現在、このコンピューターはAMD 'fglrx' グラフィックドライバーを利用しています。Ubuntu 10.04 LTS "
+"現在、このコンピューターはAMD 'fglrx' グラフィックドライバーを利用しています。elementary OS 10.04 LTS "
 "では、このハードウェアで動作可能なドライバーのバージョンはありません。\n"
 "\n"
 "作業を続けますか？"
@@ -783,11 +783,11 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "あなたのコンピューターは、i586 CPU または 'cmov' 拡張命令に対応していない CPU "
 "を使用しています。すべてのパッケージは、最低限のアーキテクチャとして i686 "
-"を必要とする最適化でビルドされています。このハードウェアでは、新しいバージョンの Ubuntu にアップグレードすることができません。"
+"を必要とする最適化でビルドされています。このハードウェアでは、新しいバージョンの elementary OS にアップグレードすることができません。"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
 msgid "No ARMv6 CPU"
@@ -798,10 +798,10 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "このシステムでは ARM CPU が使われていますが、ARMv6 アーキテクチャより古いもののようです。karmic の全てのパッケージは、ARMv6 "
-"アーキテクチャへの対応が必須な最適化オプションを利用してビルドされています。このハードウェアでは新しい Ubuntu "
+"アーキテクチャへの対応が必須な最適化オプションを利用してビルドされています。このハードウェアでは新しい elementary OS "
 "のリリースにアップグレードできません。"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
@@ -811,13 +811,13 @@ msgstr "initデーモンが見つかりません"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
-"このシステムは、initデーモンの関与なしで稼働している仮想環境のようです（例：Linux-VServer）。 Ubuntu 10.04 LTS "
+"このシステムは、initデーモンの関与なしで稼働している仮想環境のようです（例：Linux-VServer）。 elementary OS 10.04 LTS "
 "ではこのタイプの環境を稼働させることができません。アップグレードの前に、仮想マシン設定を設定しなおす必要があります。\n"
 "\n"
 "本当に作業を進めてよろしいですか？"
@@ -1540,8 +1540,8 @@ msgid "Distribution Upgrade"
 msgstr "ディストリビューションのアップグレード"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
-msgstr "<b><big>Ubuntu バージョン 12.04 へのアップグレード</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
+msgstr "<b><big>elementary OS バージョン 12.04 へのアップグレード</big></b>"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
 msgid "    "
@@ -1633,14 +1633,14 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "ファイル %(current)li / %(total)li をダウンロード中"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
-msgstr "このバージョンのUbuntuは既にサポートが打ち切られています。"
+msgid "Your elementary OS release is not supported anymore."
+msgstr "このバージョンのelementary OSは既にサポートが打ち切られています。"
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
-msgstr "今後、セキュリティ修正や重要な更新は行われません。新しいリリースの Ubuntu にアップグレードしてください。"
+"upgrade to a later version of elementary OS."
+msgstr "今後、セキュリティ修正や重要な更新は行われません。新しいリリースの elementary OS にアップグレードしてください。"
 
 #: ../UpdateManager/UpdateManager.py:113
 msgid "Upgrade information"
@@ -1761,14 +1761,14 @@ msgid "Software updates may be available for your computer."
 msgstr "このコンピューターでソフトウェアのアップデートが利用できます。"
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
-msgstr "Ubuntuへようこそ"
+msgid "Welcome to elementary OS"
+msgstr "elementary OSへようこそ"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
-msgstr "これらのソフトウェアアップデートは、このバージョンのUbuntu のリリース以降に提供されたものです。"
+msgstr "これらのソフトウェアアップデートは、このバージョンのelementary OS のリリース以降に提供されたものです。"
 
 #: ../UpdateManager/UpdateManager.py:708
 msgid "Software updates are available for this computer."
@@ -1866,8 +1866,8 @@ msgstr "リリースアップグレードツールのダウンロード"
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "<b>Ubuntu の新しいリリース '%s' が利用可能です</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "<b>elementary OS の新しいリリース '%s' が利用可能です</b>"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -1917,8 +1917,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "通常のアップグレードの見積もりが行えませんでした。以下を実行してください: \n"
@@ -1928,8 +1928,8 @@ msgstr ""
 "以下の原因が考えられます:\n"
 " * 前回のアップグレードが完了していなかった。\n"
 " * インストールしたソフトウェアのどれかに問題がある。\n"
-" * Ubuntu が提供していない、非公式なパッケージを利用している。\n"
-" * Ubuntu のリリース前バージョンにおける、通常の変更。"
+" * elementary OS が提供していない、非公式なパッケージを利用している。\n"
+" * elementary OS のリリース前バージョンにおける、通常の変更。"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
 msgid "Downloading changelog"
@@ -2043,16 +2043,16 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "できる限り多くのアップデートをインストールするため、部分アップグレードを実行します。 \n"
 "\n"
 "以下の原因が考えられます:\n"
 "* 以前のアップグレードが完了していなかった。\n"
 "* インストールしたソフトウェアのどれかに問題がある。\n"
-"* Ubuntu が提供していない、非公式なパッケージを使用している。\n"
-"* 開発版 Ubuntu を利用している（開発版における通常の変更）。"
+"* elementary OS が提供していない、非公式なパッケージを使用している。\n"
+"* 開発版 elementary OS を利用している（開発版における通常の変更）。"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
 msgid "Chec_k"
@@ -2147,8 +2147,8 @@ msgstr "設定(_S)..."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
-msgstr "<b>新しいバージョンの Ubuntu が利用可能です。アップグレードしますか?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
+msgstr "<b>新しいバージョンの elementary OS が利用可能です。アップグレードしますか?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
@@ -2163,8 +2163,8 @@ msgid "Yes, Upgrade Now"
 msgstr "今すぐアップグレードする"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
-msgstr "新しいUbuntuへのアップグレードを拒絶"
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "新しいelementary OSへのアップグレードを拒絶"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2189,9 +2189,9 @@ msgid "Directory that contains the data files"
 msgstr "データファイルの含まれるディレクトリ"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
+msgid "Check if a new elementary OS release is available"
 msgstr ""
-"新しい Ubuntu のリリースが\r\n"
+"新しい elementary OS のリリースが\r\n"
 "利用可能かどうかチェックする"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
@@ -2252,8 +2252,8 @@ msgid ""
 msgstr "新しいディストリビューション・リリースが利用可能かどうかチェックし、終了コードで結果を通知する"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
-msgstr "新しい Ubuntu のリリースをチェックしています"
+msgid "Checking for a new elementary OS release"
+msgstr "新しい elementary OS のリリースをチェックしています"
 
 #: ../do-release-upgrade:96
 msgid ""
@@ -2277,13 +2277,13 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "'do-release-upgrade' を実行してアップグレードしてください"
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "Ubuntu %(version) のアップグレードが利用可能です"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "elementary OS %(version) のアップグレードが利用可能です"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "Ubuntu %s へのアップグレードを拒絶"
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "elementary OS %s へのアップグレードを拒絶"
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2404,7 +2404,7 @@ msgid ""
 msgstr "grub もインストールされているので lilo を削除します。(詳細は bug #314004 を参照してください。)"
 
 #~ msgid "Checking for a new ubuntu release"
-#~ msgstr "新しいUbuntuのリリースをチェックする"
+#~ msgstr "新しいelementary OSのリリースをチェックする"
 
 #~ msgid "Your system is up-to-date"
 #~ msgstr "システムは最新の状態です"
@@ -2439,24 +2439,24 @@ msgstr "grub もインストールされているので lilo を削除します�
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
-#~ "今後、追加のセキュリティーアップグレードあるいは重要なアップグレードを行うことはできません。より新しいバージョンのUbuntuへアップグレードしてください"
+#~ "今後、追加のセキュリティーアップグレードあるいは重要なアップグレードを行うことはできません。より新しいバージョンのelementary OSへアップグレードしてください"
 #~ "。"
 
-#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
-#~ msgstr "<b><big>Ubuntu 11.10にアップグレードする</big></b>"
+#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
+#~ msgstr "<b><big>elementary OS 11.10にアップグレードする</big></b>"
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
 #~ msgstr ""
-#~ "Ubuntu 11.04での intel "
+#~ "elementary OS 11.04での intel "
 #~ "グラフィックスのサポートは限定されており、アップグレード後にトラブルにあう可能性があります。アップグレードを続けますか?"
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
-#~ msgstr "あなたのグラフィックデバイスはUbuntu 11.04では完全にサポートされていない可能性があります。"
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
+#~ msgstr "あなたのグラフィックデバイスはelementary OS 11.04では完全にサポートされていない可能性があります。"
 
 #, python-format
 #~ msgid ""
@@ -2523,19 +2523,19 @@ msgstr "grub もインストールされているので lilo を削除します�
 #~ "/var/log/dist-upgrade/ にあるファイルをバグレポートに含めてください。"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from Applications later."
 #~ msgstr ""
-#~ "これらのソフトウェアアップデートは、このバージョンのUbuntuのリリース後に出されたものです。ソフトを今すぐインストールしない場合は、 "
+#~ "これらのソフトウェアアップデートは、このバージョンのelementary OSのリリース後に出されたものです。ソフトを今すぐインストールしない場合は、 "
 #~ "後でアプリケーションから \"アップデートマネージャー\" を選択してください。"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from the Administration Menu later."
 #~ msgstr ""
-#~ "これらのソフトウェアアップデートは、このバージョンのUbuntuのリリース後に出されたものです。ソフトを今すぐインストールしない場合は、 "
+#~ "これらのソフトウェアアップデートは、このバージョンのelementary OSのリリース後に出されたものです。ソフトを今すぐインストールしない場合は、 "
 #~ "後でシステム管理メニューから \"アップデートマネージャー\" を選択してください。"
 
 #~ msgid ""

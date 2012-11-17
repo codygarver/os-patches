@@ -59,7 +59,7 @@ msgstr "לא ניתן לחשב את הרשומה בקובץ sources.list"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
 "לא ניתן לאתר כלל קובצי חבילות, היתכן שזהו אינו התקליטור של אובונטו או "
@@ -73,7 +73,7 @@ msgstr "הוספת התקליטור נכשלה"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
@@ -133,9 +133,9 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "אירעה שגיאה שאינה ניתנת לפתרון בעת חישוב השדרוג:\n"
@@ -215,7 +215,7 @@ msgstr "לא ניתן לזהות מהי חבילת העל"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
@@ -751,14 +751,14 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 "חומרת הגרפיקה שלך אינה נתמכת במלואה על ידי אובונטו 12.04 עם תמיכה לטווח ארוך "
 "(LTS)."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -783,7 +783,7 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
@@ -795,7 +795,7 @@ msgstr ""
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
@@ -814,7 +814,7 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "המערכת שלך משתמשת במעבד מסוג i586 או במעבד שאין לו את ההרחבה 'cmov'. כל "
 "החבילות נבנו עם שיפורים הדורשים לכל הפחות את האכיטקטורה i686. לא ניתן לשדרג "
@@ -829,7 +829,7 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "המערכת שלך משתמשת במעבד מסוג ARM שהוא ישן יותר מהארכיטקטורה ARMv6. כל "
 "החבילות ב־Karmic נבנו עם שיפורים מיוחדים הדורשים את ARMv6 כארכיטקטורה "
@@ -842,7 +842,7 @@ msgstr "אין init זמין"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
@@ -1594,7 +1594,7 @@ msgid "Distribution Upgrade"
 msgstr "שדרוג ההפצה"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr "<b><big>גרסת אובונטו משודרגת ל־12.04</big></b>"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
@@ -1687,13 +1687,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "מתקבל קובץ %(current)li מתוך %(total)li"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
+msgid "Your elementary OS release is not supported anymore."
 msgstr "גרסת האובונטו שלך אינה נתמכת עוד."
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 "לא יתקבלו עוד תיקוני אבטחה או עדכונים חשובים. נא לשדרג לגרסה עדכנית יותר של "
 "אובונטו."
@@ -1824,12 +1824,12 @@ msgid "Software updates may be available for your computer."
 msgstr "יתכן שאין עדכוני תכנה זמינים עבור המחשב שלך."
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
+msgid "Welcome to elementary OS"
 msgstr "ברוך בואך לאובונטו"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr "עדכוני תוכנות אלו הונפקו מאז הפצתה של גרסה זו של אובונטו."
 
@@ -1935,7 +1935,7 @@ msgstr "מתבצעת הורדת כלי שדרוג ההפצה"
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
 msgstr "<b>ישנה גרסה חדשה '%s' של אובונטו</b>"
 
 #. we assert a clean cache
@@ -1986,8 +1986,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "לא ניתן לחשב שדרוג רגיל, נא להריץ את הפקודה: \n"
@@ -2112,8 +2112,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "יש להריץ שדרוג חלקי, כדי להתקין כמה שיותר עדכונים. \n"
 "\n"
@@ -2218,7 +2218,7 @@ msgstr "ה_גדרות..."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
 msgstr "<b>ישנה גרסה חדשה של אובונטו זמינה להורדה. האם ברצונך לשדרג?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
@@ -2234,7 +2234,7 @@ msgid "Yes, Upgrade Now"
 msgstr "כן, לשדרג כעת"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
+msgid "You have declined to upgrade to the new elementary OS"
 msgstr "דחית את השדרוג לגרסה החדשה של אובונטו"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
@@ -2261,7 +2261,7 @@ msgid "Directory that contains the data files"
 msgstr "תיקייה המכילה את קובצי הנתונים"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
+msgid "Check if a new elementary OS release is available"
 msgstr "יש לבדוק האם יש גרסה חדשה יותר של אובונטו"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
@@ -2322,7 +2322,7 @@ msgid ""
 msgstr "יש לבדוק רק אם זמינה הפצה חדשה ולדווח על התוצאה באמצעות קוד יציאה."
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
+msgid "Checking for a new elementary OS release"
 msgstr "מתבצעת בדיקה להימצאות גרסה חדשה של אובונטו"
 
 #: ../do-release-upgrade:96
@@ -2347,12 +2347,12 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "יש להריץ את הפקודה 'do-release-upgrade' כדי לשדרג אליה."
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
+msgid "elementary OS %(version)s Upgrade Available"
 msgstr "שדרוג לאובונטו %(version)s זמין כעת"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
 msgstr "דחית את השדרוג לגרסה %s של אובונטו"
 
 #: ../check-new-release-gtk:192
@@ -2522,7 +2522,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
 #~ "לא יתקבלו עבורך עוד תיקוני אבטחה ועדכונים קריטיים. נא לשדרג לגרסה עדכנית "
 #~ "יותר של הפצת הלינוקס אובונטו."
@@ -2544,7 +2544,7 @@ msgstr ""
 #~ msgid "1 kB"
 #~ msgstr "ק״ב אחד"
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
 #~ msgstr "חמרת ההאצה הגרפית שלך אינה נתמכת במלואה באובונטו 11.04."
 
 #, python-format
@@ -2591,11 +2591,11 @@ msgstr ""
 #~ "נא לדווח על כך כתקלה באמצעות הרצת הפקודה 'ubuntu-bug update-manager' במסוף "
 #~ "ולכלול את הקבצים שבתיקייה /var/log/dist-upgrade/ בדיווח התקלה."
 
-#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
+#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
 #~ msgstr "<b><big>שדרוג אובונטו לגרסה 11.10</big></b>"
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
 #~ msgstr ""
@@ -2603,7 +2603,7 @@ msgstr ""
 #~ "לאחר השדרוג. האם ברצונך להמשיך בשדרוג?"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from Applications later."
 #~ msgstr ""
@@ -2611,7 +2611,7 @@ msgstr ""
 #~ "בהתקנתם כעת נא לבחור ב־”מנהל העדכונים“ מתפריט היישומים במועד מאוחר יותר."
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from the Administration Menu later."
 #~ msgstr ""

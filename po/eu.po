@@ -56,10 +56,10 @@ msgstr "Ezin izan da sources.list sarrera kalkulatu"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
-"Ezin izan da pakete-fitxategirik aurkitu, agian hau ez da Ubuntu disko bat "
+"Ezin izan da pakete-fitxategirik aurkitu, agian hau ez da elementary OS disko bat "
 "edo okerreko arkitekturarentzako da?"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
@@ -70,13 +70,13 @@ msgstr "Huts egin du CDa gehitzeak"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
 msgstr ""
 "Errore bat gertatu da CDa gehitzean, eguneraketa bertan behera utzi da. "
-"Baliozko Ubuntu CD bat bada hau, eman ezazu errore honen berri.\n"
+"Baliozko elementary OS CD bat bada hau, eman ezazu errore honen berri.\n"
 "\n"
 "Errorearen mezua:\n"
 "'%s'"
@@ -132,18 +132,18 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "Errore konponezin bat gertatu da eguneraketa kalkulatzean:\n"
 "%s\n"
 "\n"
 " Arrazoi posible batzuk:\n"
-" * Ubunturen aurre-argitaratutako bertsio batera eguneratzen ari zinen\n"
-" * Ubunturen aurre-argitaratutako bertsio bat darabilzu orain\n"
-" * Zerbait gertatu da Ubuntuk hornitu ez dizun software-pakete ez ofizial "
+" * elementary OSren aurre-argitaratutako bertsio batera eguneratzen ari zinen\n"
+" * elementary OSren aurre-argitaratutako bertsio bat darabilzu orain\n"
+" * Zerbait gertatu da elementary OSk hornitu ez dizun software-pakete ez ofizial "
 "baten erruz\n"
 "\n"
 
@@ -219,12 +219,12 @@ msgstr "Ezin izan da meta-paketea zehaztu"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
 "Zure sisteman ez dago ubuntu-desktop, kubuntu-desktop, xubuntu-desktop edo "
-"edubuntu-desktop paketerik eta ezin izan da detektatu zein Ubuntu bertsio "
+"edubuntu-desktop paketerik eta ezin izan da detektatu zein elementary OS bertsio "
 "erabiltzen ari zaren.\n"
 " Mesedez, jarraitu aurretik, aurreko paketeetakoren bat instalatu ezazu "
 "synaptic edo apt-get erabiltzen."
@@ -750,12 +750,12 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -776,27 +776,27 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Ordenagailu honek une honetan NVIDIA \"nvidia\" kontrolatzaile grafikoa "
 "erabiltzen ari da. Ez da aurkitu kontrolatzaile honen bertsiorik zure bideo "
-"txartelarekin Ubuntu 10.04 LTS-en funtzionatzen duena.\n"
+"txartelarekin elementary OS 10.04 LTS-en funtzionatzen duena.\n"
 "\n"
 "Jarraitu nahi duzu?"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Ordenagailu honek une honetan AMD \"fglrx\" kontrolatzaile grafikoa "
 "erabiltzen ari da. Ez da aurkitu kontrolatzaile honen bertsiorik zure bideo "
-"txartelarekin Ubuntu 10.04 LTS-en funtzionatzen duena.\n"
+"txartelarekin elementary OS 10.04 LTS-en funtzionatzen duena.\n"
 "\n"
 "Jarraitu nahi duzu?"
 
@@ -809,11 +809,11 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Zure sistemak i586 edo 'cmov' luzapena erabiltzen ez duen PUZ bat dauka. "
 "Pakete guztiak i686 behar duten optimizazioak eginez sortu dira. Ez da "
-"posible zure sistema Ubuntu banaketa berrira eguneratzea."
+"posible zure sistema elementary OS banaketa berrira eguneratzea."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
 msgid "No ARMv6 CPU"
@@ -824,11 +824,11 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Zure sistemak ARM PUZ bat darabil, ARMv6 arkitektura baino zaharragokoa. "
 "Karmic-erako pakete guztiak ARMv6 gutxieneko arkitektura gisa hartuz eraiki "
-"ziren. Ezin da sistema Ubunturen bertsio berri batera bertsio-berritu "
+"ziren. Ezin da sistema elementary OSren bertsio berri batera bertsio-berritu "
 "hardware honekin."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
@@ -838,14 +838,14 @@ msgstr "Ez dago init-ik"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
 "Zure sistemak init daemon bat ez duen giro birtualizatu bat dirudi, ad. "
-"Linux-VServer. Ubuntu 10.04 LST ezin da funtzionatu giro honen barruan, zure "
+"Linux-VServer. elementary OS 10.04 LST ezin da funtzionatu giro honen barruan, zure "
 "makina birtualaren konfigurazioaren eguneraketa bat behar izan gabe "
 "lehenik.\n"
 "\n"
@@ -1606,8 +1606,8 @@ msgid "Distribution Upgrade"
 msgstr "Banaketaren bertsio-berritzea"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
-msgstr "<b><big>Ubuntu 12.04 bertsiora eguneratzen</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
+msgstr "<b><big>elementary OS 12.04 bertsiora eguneratzen</big></b>"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
 msgid "    "
@@ -1699,13 +1699,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "%(current)li / %(total)li fitxategia deskargatzen"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
-msgstr "Darabilzun Ubunturen bertsioak ez du sostengurik dagoeneko."
+msgid "Your elementary OS release is not supported anymore."
+msgstr "Darabilzun elementary OSren bertsioak ez du sostengurik dagoeneko."
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 
 #: ../UpdateManager/UpdateManager.py:113
@@ -1838,12 +1838,12 @@ msgstr ""
 "Software eguneraketak eskuragarri egon daitezke zure ordenagailuarentzat."
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
-msgstr "Ongi etorri Ubuntura"
+msgid "Welcome to elementary OS"
+msgstr "Ongi etorri elementary OSra"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 
@@ -1950,8 +1950,8 @@ msgstr "Bertsio-berritzeko tresna deskargatzen"
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "<b>Ubunturen '%s' bertsio berria eskuragarri dago</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "<b>elementary OSren '%s' bertsio berria eskuragarri dago</b>"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -2002,8 +2002,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "Modernizazio normal bat ezin izan da kalkulatu, mesedez exekutatu: \n"
@@ -2013,8 +2013,8 @@ msgstr ""
 "Honen jatorria izan daiteke:\n"
 " *Amaitu gabe ez duen aurreko modernizazio bat\n"
 " *Problemak instalatutako softwarearekin\n"
-" *Ubuntu-k ez hornitutako software paketeak\n"
-" *Aldaketa normalak Ubuntu-ren aurreko bertsio batean"
+" *elementary OS-k ez hornitutako software paketeak\n"
+" *Aldaketa normalak elementary OS-ren aurreko bertsio batean"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
 msgid "Downloading changelog"
@@ -2130,8 +2130,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "Modernizazio partzial bat exekutatu, ahal diren eguneraketa guztiak "
 "instalatzeko. \n"
@@ -2139,8 +2139,8 @@ msgstr ""
 "Honen jatorria izan daiteke: \n"
 " *Amaitu gabe ez duen aurreko modernizazio bat\n"
 " *Problemak instalatutako softwarearekin\n"
-" *Ubuntu-k ez hornitutako software paketeak\n"
-" *Aldaketa normalak Ubuntu-ren aurreko bertsio batean"
+" *elementary OS-k ez hornitutako software paketeak\n"
+" *Aldaketa normalak elementary OS-ren aurreko bertsio batean"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
 msgid "Chec_k"
@@ -2239,9 +2239,9 @@ msgstr "_Ezarpenak..."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
 msgstr ""
-"<b>Ubunturen bertsio berri bat eskuragarri dago. Bertsio-berritu nahi "
+"<b>elementary OSren bertsio berri bat eskuragarri dago. Bertsio-berritu nahi "
 "duzu?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
@@ -2257,8 +2257,8 @@ msgid "Yes, Upgrade Now"
 msgstr "Bai, bertsio-berritu orain"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
-msgstr "Ubuntu berrira bertsio-berritzea baztertu duzu"
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "elementary OS berrira bertsio-berritzea baztertu duzu"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2285,8 +2285,8 @@ msgid "Directory that contains the data files"
 msgstr "Datu-fitxategiak dituen direktorioa"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
-msgstr "Egiaztatu ea Ubuntu bertsio berririk dagoen"
+msgid "Check if a new elementary OS release is available"
+msgstr "Egiaztatu ea elementary OS bertsio berririk dagoen"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
 msgid "Check if upgrading to the latest devel release is possible"
@@ -2351,8 +2351,8 @@ msgstr ""
 "bidali emaitza irteera-kodigoa erabiliz"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
-msgstr "Ubunturen bertsio berri baten bila"
+msgid "Checking for a new elementary OS release"
+msgstr "elementary OSren bertsio berri baten bila"
 
 #: ../do-release-upgrade:96
 msgid ""
@@ -2376,13 +2376,13 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "Exekutatu 'do-release-upgrade' bertsio-berritzeko."
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "Ubuntu %(version)s(r)en bertsio-berritzea eskuragarri"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "elementary OS %(version)s(r)en bertsio-berritzea eskuragarri"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "Ubuntu %s bertsio berria ezetsi duzu."
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "elementary OS %s bertsio berria ezetsi duzu."
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2505,7 +2505,7 @@ msgstr ""
 "#314004 bug-a)"
 
 #~ msgid "Checking for a new ubuntu release"
-#~ msgstr "Ubuntu bertsio berriak bilatzen"
+#~ msgstr "elementary OS bertsio berriak bilatzen"
 
 #~ msgid "Your system is up-to-date"
 #~ msgstr "Zure sistema eguneratuta dago"
@@ -2565,12 +2565,12 @@ msgstr ""
 #~ msgid "%.0f kB"
 #~ msgstr "%.0f kB"
 
-#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
-#~ msgstr "<b><big>Ubuntu 11.10 bertsiora eguneratzen</big></b>"
+#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
+#~ msgstr "<b><big>elementary OS 11.10 bertsiora eguneratzen</big></b>"
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
 #~ "Ez duzu segurtasun-konponketa edo eguneraketa kritiko gehiago jasoko. "
-#~ "Bertsio-berritu Ubuntu Linux."
+#~ "Bertsio-berritu elementary OS Linux."

@@ -58,10 +58,10 @@ msgstr "Klarte ikkje å rekna ut oppføringa i sources.list"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
-"Klarte ikkje å finna nokon pakkefiler. Kanskje dette ikkje er ein Ubuntu-"
+"Klarte ikkje å finna nokon pakkefiler. Kanskje dette ikkje er ein elementary OS-"
 "disk eller rett arkitektur?"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
@@ -72,13 +72,13 @@ msgstr "Klarte ikkje å leggja til CD-en"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
 msgstr ""
 "Det oppstod ein feil under lesing av CD-en, oppgraderinga vert avbroten. "
-"Dette lyt rapporterast som ein feil, dersom dette er ein gyldig Ubuntu-CD.\n"
+"Dette lyt rapporterast som ein feil, dersom dette er ein gyldig elementary OS-CD.\n"
 "\n"
 "Feilmeldinga var:\n"
 "\"%s\""
@@ -132,9 +132,9 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "Eit problem som ikkje kan løysast automatisk oppstod medan oppgraderinga "
@@ -142,9 +142,9 @@ msgstr ""
 "%s\n"
 "\n"
 " Dette kan vera årsakene:\n"
-" * Oppgradering til ei tidleg utgåve (før-utgåva) av ein Ubuntu-versjon\n"
-" * Bruken av den noverande før-utgavå av ein Ubuntu-versjon\n"
-" * Uoffisielle programpakkar som ikkje kjem frå Ubuntu\n"
+" * Oppgradering til ei tidleg utgåve (før-utgåva) av ein elementary OS-versjon\n"
+" * Bruken av den noverande før-utgavå av ein elementary OS-versjon\n"
+" * Uoffisielle programpakkar som ikkje kjem frå elementary OS\n"
 "\n"
 
 #: ../DistUpgrade/DistUpgradeCache.py:689
@@ -217,7 +217,7 @@ msgstr "Klarte ikkje å gjetta på meta-pakke"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
@@ -749,12 +749,12 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -775,12 +775,12 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Datamaskina brukar NVIDIA «nvidia»-grafikkdrivaren. Ingen tilgjengelege "
-"versjonar av denne drivaren verkar med skjermkortet ditt i Ubuntu 10.04 LTS. "
+"versjonar av denne drivaren verkar med skjermkortet ditt i elementary OS 10.04 LTS. "
 "\n"
 "\n"
 "Vil du halda fram?"
@@ -788,13 +788,13 @@ msgstr ""
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Datamaskina brukar AMD «fglrx»-grafikkdrivaren. Ingen tilgjengelege "
-"versjonar av denne drivaren verkar med maskinvaren din i Ubuntu 10.04 LTS."
+"versjonar av denne drivaren verkar med maskinvaren din i elementary OS 10.04 LTS."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:609
 msgid "No i686 CPU"
@@ -805,11 +805,11 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Systemet brukar ein i586-prosessor, eller ein prosessor som ikkje har «cmov»-"
 "utvidinga. Alle pakkane krev minimum i686-arkitektur. Det er ikkje mogleg å "
-"oppgradera systemet ditt til den nyaste Ubuntu-utgjevinga med den noverande "
+"oppgradera systemet ditt til den nyaste elementary OS-utgjevinga med den noverande "
 "maskinvaren."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
@@ -821,11 +821,11 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Systemet brukar ein ARM-prosessor som er eldre enn ARMv6-arkitekturen. Alle "
 "pakkane i karmic krev minimum ARMv6. Det er ikkje mogleg å oppgradera "
-"systemet ditt til den nyaste Ubuntu-utgjevinga med den noverande maskinvaren."
+"systemet ditt til den nyaste elementary OS-utgjevinga med den noverande maskinvaren."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
 msgid "No init available"
@@ -834,14 +834,14 @@ msgstr "Ingen oppstartsprogram (init) er tilgjengelege"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
 "Systemet ditt ser ut til å vera i eit virtualisert miljø utan "
-"oppstartsprogram (init), til dømes Linux-VServer. Ubuntu 10.04 LTS fungerer "
+"oppstartsprogram (init), til dømes Linux-VServer. elementary OS 10.04 LTS fungerer "
 "ikkje i slike miljø, og krev ei oppdatering av innstillingane i den "
 "virtuelle maskina først.\n"
 "\n"
@@ -1597,7 +1597,7 @@ msgid "Distribution Upgrade"
 msgstr "Distribusjonsoppgradering"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr ""
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
@@ -1690,13 +1690,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "Lastar ned fila %(current)li av %(total)li"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
-msgstr "Di utgåve av Ubuntu er ikkje lenger støtta."
+msgid "Your elementary OS release is not supported anymore."
+msgstr "Di utgåve av elementary OS er ikkje lenger støtta."
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 
 #: ../UpdateManager/UpdateManager.py:113
@@ -1832,12 +1832,12 @@ msgid "Software updates may be available for your computer."
 msgstr "Programvareoppdateringar er kanskje tilgjengelege for maskina di."
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
-msgstr "Velkommen til Ubuntu"
+msgid "Welcome to elementary OS"
+msgstr "Velkommen til elementary OS"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 
@@ -1945,8 +1945,8 @@ msgstr "Lastar ned oppgraderingverktøyet"
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "<b>Ubuntu-utgjevinga «%s» er no tilgjengeleg</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "<b>elementary OS-utgjevinga «%s» er no tilgjengeleg</b>"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -1997,8 +1997,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "Ei vanleg oppgradering kan ikkje utreknast, køyr:\n"
@@ -2008,8 +2008,8 @@ msgstr ""
 "Dette kan skuldast:\n"
 " * Ei tidlegare oppgradering som ikkje vart fullført\n"
 " * Problem med noko av den installerte programvara.\n"
-" * Uoffisielle programvarepakkar som ikkje er frå Ubuntu\n"
-" * Vanlege endringar i ei Ubuntu-utgåve som endå ikkje er utgjeven"
+" * Uoffisielle programvarepakkar som ikkje er frå elementary OS\n"
+" * Vanlege endringar i ei elementary OS-utgåve som endå ikkje er utgjeven"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
 msgid "Downloading changelog"
@@ -2124,8 +2124,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "Køyr ei delvis oppgradering for å installera så mange oppdateringar som "
 "mogleg.\n"
@@ -2133,8 +2133,8 @@ msgstr ""
 "Årsakene kan vera:\n"
 " * Ei tidlegare oppgradering som ikkje vart fullført\n"
 " * Problem med som av den installerte programvara\n"
-" * Uoffisielle programpakkar som ikkje vert leverte av Ubuntu\n"
-" * Normale endringar av ei før-utgåve av ein Ubuntu-versjon"
+" * Uoffisielle programpakkar som ikkje vert leverte av elementary OS\n"
+" * Normale endringar av ei før-utgåve av ein elementary OS-versjon"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
 msgid "Chec_k"
@@ -2233,8 +2233,8 @@ msgstr "_Innstillingar …"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
-msgstr "<b>Ein ny versjon av Ubuntu er tilgjengeleg. Vil du oppgradera?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
+msgstr "<b>Ein ny versjon av elementary OS er tilgjengeleg. Vil du oppgradera?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
@@ -2249,8 +2249,8 @@ msgid "Yes, Upgrade Now"
 msgstr "Oppgrader no"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
-msgstr "Du har takka nei til å oppgradera til eit nytt Ubuntu"
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "Du har takka nei til å oppgradera til eit nytt elementary OS"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2277,8 +2277,8 @@ msgid "Directory that contains the data files"
 msgstr "Mappe som inneheld datafilene"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
-msgstr "Sjekk om ei ny Ubuntu-utgjeving er tilgjengeleg"
+msgid "Check if a new elementary OS release is available"
+msgstr "Sjekk om ei ny elementary OS-utgjeving er tilgjengeleg"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
 msgid "Check if upgrading to the latest devel release is possible"
@@ -2342,7 +2342,7 @@ msgstr ""
 "resultatet via avsluttingskoden."
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
+msgid "Checking for a new elementary OS release"
 msgstr ""
 
 #: ../do-release-upgrade:96
@@ -2367,13 +2367,13 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "Køyr «do-release-upgrade» for å oppgradera til henne."
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "Oppgradering tilgjengeleg: Ubuntu %(version)s"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "Oppgradering tilgjengeleg: elementary OS %(version)s"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "Du har takka nei til å oppgradera åt Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "Du har takka nei til å oppgradera åt elementary OS %s"
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2525,10 +2525,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
 #~ "Datamaskina di vil ikkje lenger få kritiske oppdateringar eller "
-#~ "tryggleikshol tetta. Oppgrader til ein nyare versjon av Ubuntu Linux no."
+#~ "tryggleikshol tetta. Oppgrader til ein nyare versjon av elementary OS Linux no."
 
 #~ msgid "The update has already been downloaded, but not installed"
 #~ msgid_plural "The updates have already been downloaded, but not installed"
@@ -2543,7 +2543,7 @@ msgstr ""
 #~ "menyen «Administrasjon» seinare."
 
 #~ msgid "Checking for a new ubuntu release"
-#~ msgstr "Ser etter ei ny utgjeving av Ubuntu"
+#~ msgstr "Ser etter ei ny utgjeving av elementary OS"
 
 #~ msgid ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from "
@@ -2562,9 +2562,9 @@ msgstr ""
 #~ msgid "1 kB"
 #~ msgstr "1 KiB"
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
 #~ msgstr ""
-#~ "Det kan henda at grafikkortet ditt ikkje er fullstendig støtta i Ubuntu "
+#~ "Det kan henda at grafikkortet ditt ikkje er fullstendig støtta i elementary OS "
 #~ "11.04."
 
 #~ msgid ""
@@ -2591,11 +2591,11 @@ msgstr ""
 #~ "/var/log/dist-upgrade/ i feilrapporten."
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
 #~ msgstr ""
-#~ "Det er avgrensa støtte for ditt Intel-grafikkort i Ubuntu 11.04, og det kan "
+#~ "Det er avgrensa støtte for ditt Intel-grafikkort i elementary OS 11.04, og det kan "
 #~ "oppstå problem etter oppgraderinga. Vil du halda fram med oppgraderinga?"
 
 #, python-format
@@ -2632,22 +2632,22 @@ msgstr ""
 #~ "terminal."
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from Applications later."
 #~ msgstr ""
-#~ "Desse oppdateringane vart gjevne ut ettar at denne versjonen av Ubuntu vart "
+#~ "Desse oppdateringane vart gjevne ut ettar at denne versjonen av elementary OS vart "
 #~ "utgjeven. Om du ikkje vil installera dei no, vel «Oppdateringshandsamar» frå "
 #~ "Program seinare."
 
-#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
-#~ msgstr "<b><big>Oppgraderer Ubuntu til versjon 11.10</big></b>"
+#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
+#~ msgstr "<b><big>Oppgraderer elementary OS til versjon 11.10</big></b>"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from the Administration Menu later."
 #~ msgstr ""
-#~ "Desse oppdateringane vart gjevne ut etter at denne versjonen av Ubuntu vart "
+#~ "Desse oppdateringane vart gjevne ut etter at denne versjonen av elementary OS vart "
 #~ "utgjeven. Om du ikkje vil installera dei no, vel «Oppdateringshandsamar» frå "
 #~ "administrasjonsmenyen seinare."

@@ -79,7 +79,7 @@ if __name__ == "__main__":
     sys.exit(0)
 
   if not options.quiet:
-    print _("Checking for a new Ubuntu release")
+    print _("Checking for a new elementary OS release")
 
   m = MetaReleaseCore(useDevelopmentRelease=options.devel_release,
                       useProposed=options.proposed_release)
@@ -91,8 +91,8 @@ if __name__ == "__main__":
   # this will make it appear in motd (that calls do-release-upgrade in
   #  chech-new-release mode)
   if m.no_longer_supported is not None:
-    url = "http://www.ubuntu.com/releaseendoflife"
-    print _("Your Ubuntu release is not supported anymore.")
+    url = "http://www.elementaryos.org"
+    print _("Your elementary OS release is not supported anymore.")
     print _("For upgrade information, please visit:\n"
             "%(url)s\n") % { 'url' : url }
 

@@ -63,7 +63,7 @@ msgstr "sources.list ভুক্তি গননা করা সম্ভব �
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
 "কোন প্যাকেজ ফাইল পাওয়া যায়নি, সম্ভবত এটি উবুন্টু ডিস্ক নয়, নাকি এটি ভুল "
@@ -77,7 +77,7 @@ msgstr "সিডি যোগ করা সম্ভব হয়নি"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
@@ -140,9 +140,9 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "আপগ্রেডের পরিমাণ নির্ণয় করার সময় সমাধান সম্ভব নয় এমন সমস্যা হয়েছে %s:\n"
@@ -224,7 +224,7 @@ msgstr "meta-package অনুমান করা যাচ্ছ না"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
@@ -790,14 +790,14 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 "আপনার গ্রাফিক্স হার্ডওয়্যার উবুন্টু ১২.০৪ (LTS) এ সম্ভবত পুরোপুরি ভাবে "
 "সমর্থন করবে না।"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -824,12 +824,12 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "এই কম্পিউটারে বর্তমানে NVIDIA 'nvidia' গ্রাফিক্স ড্রাইভার ব্যবহার করা হচ্ছে। "
-"আপনার Ubuntu 10.04 LTS এ ভিডিও কার্ডে চলে, ড্রাইভােরর এমন কোনো সংস্করণই "
+"আপনার elementary OS 10.04 LTS এ ভিডিও কার্ডে চলে, ড্রাইভােরর এমন কোনো সংস্করণই "
 "পাওয়া যাচ্ছে না।\n"
 "\n"
 " আপনি কি চালিয়ে যেতে চান?"
@@ -837,13 +837,13 @@ msgstr ""
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "এই কম্পিউটারে বর্তমানে AMD 'fglrx' গ্রাফিক্স ড্রাইভার ব্যবহার করা হচ্ছে।  "
-"আপনার Ubuntu 10.04 LTS হার্ডওয়্যারে চলে, ড্রাইভােরর এমন কোনো সংস্করণই পাওয়া "
+"আপনার elementary OS 10.04 LTS হার্ডওয়্যারে চলে, ড্রাইভােরর এমন কোনো সংস্করণই পাওয়া "
 "যাচ্ছে না।\n"
 "\n"
 " আপনি কি চালিয়ে যেতে চান?"
@@ -857,7 +857,7 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "আপনার সিস্টেম i586 CPU বা CPU ব্যবহার করে যা  'cmov' বর্ধিতাংশ নেই। "
 "কার্মিকের সব প্যাকেজ সর্বনিম্ন i686 আর্কিটেকচারে নির্মাণ করা হয়েছে। এই "
@@ -873,7 +873,7 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "আপনার সিস্টেম ARM CPU ব্যবহার করে যা ARMv6 আর্কিটেকচারের চাইতে পুরোনো। "
 "কার্মিকের সব প্যাকেজ সর্বনিম্ন ARMv6 আর্কিটেকচারে নির্মাণ করা হয়েছে। এই "
@@ -887,7 +887,7 @@ msgstr "কোনো init নেই"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
@@ -1678,7 +1678,7 @@ msgid "Distribution Upgrade"
 msgstr "ডিস্ট্রিবিউশন আপগ্রেড"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr "<b><big>সংস্করণ ১২.০৪ এ উবুন্টু উন্নীত করা হচ্ছে</big></b>"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
@@ -1772,13 +1772,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "%(total)li এর %(current)li ডাউনলোড করা হচ্ছে"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
+msgid "Your elementary OS release is not supported anymore."
 msgstr "আপনার উবুন্টু রিলিজ এখন আর সমর্থিত নয়।"
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 "আপনি আগামীতে আর কখনও নিরাপত্তার সংশোধন অথবা সংকটপূর্ণ হালনাগাদ পাবেন না। "
 "অনুগ্রহ করে উবুন্টুর একটি পরবর্তী সংস্করণে হালনাগাদ করুন।"
@@ -1912,12 +1912,12 @@ msgid "Software updates may be available for your computer."
 msgstr "আপনার কম্পিউটারে সফ্টওয়্যার আপডেট পাওয়া যেতে পারে।"
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
+msgid "Welcome to elementary OS"
 msgstr "উবুন্টুতে স্বাগতম"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 "এই সংস্করণ অবমুক্ত হওয়ার পর থেকে এই সকল সফটওয়্যার হালনাগাদ প্রদত্ত হয়ে আসছে।"
@@ -2033,7 +2033,7 @@ msgstr "রিলিজ আপগ্রেড টুল ডাউনলোড �
 # snighda
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
 msgstr "<b>নতুন উবুন্টু রিলিজ '%s' পাওয়া যাচ্ছে</b>"
 
 #. we assert a clean cache
@@ -2087,8 +2087,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "সাধারণএকটি আপগ্রেড হিসাব করা যায় না, অনুগ্রহ করে: \n"
@@ -2098,8 +2098,8 @@ msgstr ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
 msgid "Downloading changelog"
@@ -2224,8 +2224,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "যতগুলো সম্ভব ততগুলো আপডেট ইনস্টল করার জন্য পার্সিয়াল আপগ্রেড চালান। \n"
 "এর জন্য \n"
@@ -2337,7 +2337,7 @@ msgstr "সেটিং (_S)..."
 # snigdha
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
 msgstr "<b>উবুন্টুর নতন সংস্করণ পাওয়া যাচ্ছে। আপনি কি আপগ্রেড করতে চান?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
@@ -2354,7 +2354,7 @@ msgstr "হ্যাঁ, এখনই আপগ্রেড করুন"
 
 # snigdha
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
+msgid "You have declined to upgrade to the new elementary OS"
 msgstr "আপনি উবুন্টুর নতুন সংস্করণ আপগ্রেড করতে অসম্মত হয়েছেন"
 
 # snigdha
@@ -2384,7 +2384,7 @@ msgstr "যে ডিরেক্টরীতে ডাটা ফাইল থ�
 
 # snigdha
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
+msgid "Check if a new elementary OS release is available"
 msgstr "নতুন উবুন্টু রিলিজ পাওয়া যাচ্ছে কিনা তা পরীক্ষা করুন"
 
 # snigdha
@@ -2452,7 +2452,7 @@ msgstr ""
 "মাধ্যে রিপোর্ট করুন"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
+msgid "Checking for a new elementary OS release"
 msgstr "নতুন উবুন্টু রিলিজের জন্য খোঁজ নেয়া হচ্ছে"
 
 #: ../do-release-upgrade:96
@@ -2477,12 +2477,12 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "আপগ্রেড করতে 'do-release-upgrade' চালান।"
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
+msgid "elementary OS %(version)s Upgrade Available"
 msgstr "উবুন্টু %(version)s আপগ্রেড বিদ্যমান"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
 msgstr "আপনি উবুন্টু %s তে আপগ্রেড করতে চেয়েছেন"
 
 #: ../check-new-release-gtk:192
@@ -2659,7 +2659,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
 #~ "আপনি এখন আর কোনো নিরাপত্তাজনিত বা জটিল কোনো আপেডেট পাবেন না। অনুগ্রহ করে "
 #~ "উবুন্টু লিনাক্সের নতুন সংস্করণ আপগ্রেড করুন।"
@@ -2742,12 +2742,12 @@ msgstr ""
 #~ "bug update-manager' ব্যবহার করে এই বাগ প্রতিবেদন দিন এবং বাগ প্রতিবেদনে ফাইল "
 #~ "in /var/log/dist-upgrade/ in সংযুক্ত করুন।"
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
 #~ msgstr ""
 #~ "আপনার গ্রাফিক্স হার্ডওয়্যার উবুন্টু ১১.০৪ পুরোপুরি সমর্থিত হতে পারে না।"
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
 #~ msgstr ""
@@ -2755,11 +2755,11 @@ msgstr ""
 #~ "উন্নীত করার পরে আপনি সমস্যার সম্মুখীন হতে পারেন। আপনি কি উন্নীত করণ চালিয়ে "
 #~ "যেতে চান?"
 
-#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
+#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
 #~ msgstr "<b><big>উবুন্টু সংস্করণ ১১.১০ তে উন্নীত করা হচ্ছে</big></b>"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from Applications later."
 #~ msgstr ""
@@ -2768,7 +2768,7 @@ msgstr ""
 #~ "ব্যবস্থাপক\" নির্বাচন করুন।"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from the Administration Menu later."
 #~ msgstr ""

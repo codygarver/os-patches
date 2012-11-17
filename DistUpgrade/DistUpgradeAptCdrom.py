@@ -241,7 +241,7 @@ class AptCdrom(object):
         self.packages = self._dropArch(self.packages)
         if len(self.packages) == 0:
             logging.error("no useable indexes found on CD, wrong ARCH?")
-            raise AptCdromError, _("Unable to locate any package files, perhaps this is not a Ubuntu Disc or the wrong architecture?")
+            raise AptCdromError, _("Unable to locate any package files, perhaps this is not an elementary OS Disc or the wrong architecture?")
 
         # CopyAndVerify
         if self._verifyRelease(self.signatures):
@@ -287,7 +287,7 @@ class AptCdrom(object):
             self.view.error(_("Failed to add the CD"),
                              _("There was a error adding the CD, the "
                                "upgrade will abort. Please report this as "
-                               "a bug if this is a valid Ubuntu CD.\n\n"
+                               "a bug if this is a valid elementary OS CD.\n\n"
                                "The error message was:\n'%s'") % e)
             return False
         logging.debug("AptCdrom.add() returned: %s" % res)

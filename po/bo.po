@@ -56,11 +56,11 @@ msgstr "གཏེར་མཛོད་གྲངས་ཐོ་བརྩི་མ
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
 "ཡིག་ཆ་ཐུམ་བུ་གནས་སྟོན་ཐུབ་མི་འདུག "
-"འདི་ཕལ་ཆེར་མ་ལག་Ubuntu་མཛོད་སྡེར་རེད་མི་འདུག་ཡང་ན་སྒྲིག་བཟོ་ "
+"འདི་ཕལ་ཆེར་མ་ལག་elementary OS་མཛོད་སྡེར་རེད་མི་འདུག་ཡང་ན་སྒྲིག་བཟོ་ "
 "ཡང་དག་པ་རེད་མི་འདུག"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
@@ -71,13 +71,13 @@ msgstr "་་CD་་འོད་སྡེར་ནང་ཚན་ཁ་སྣ�
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
 msgstr ""
 "་་CD་་འོད་སྡེར་ནང་ཚན་ཁ་སྣོན་དུས་སྐྱོན་བྱུང་སོང་། རིམ་སྤར་མཚམས་བཅད་ངེས། "
-"འདི་གལ་སྲིད་ནུས་ལྡན་གྱི་མ་ལག་Ubuntu "
+"འདི་གལ་སྲིད་ནུས་ལྡན་གྱི་མ་ལག་elementary OS "
 "་་CD་་སྒྲིག་སྡེར་ཡིན་ན་སྐྱོན་འདིའི་སྐོར་ཡ་ལན་སྤྲོད་རོགས\n"
 "\n"
 "ནོར་འཁྲུལ་ཡི་གེ་ནི། \n"
@@ -130,17 +130,17 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "%s་རིམ་སྤོར་རྩིས་འདངས་རྒྱག་དུསབསྐྱར་གསོ་བྱེད་མི་ཐུབ་པའི་གནོད་སྐྱོན་བྱུང་བ\n"
 "\n"
 " གནོད་སྐྱོན་འབྱུང་རྐྱེན།\n"
-" * མ་ལག་Ubuntu་སྔོན་མའི་པར་གཞི་ཞིག་ལ་རིམ་སྤོར་བྱེད་པ\n"
-" * མ་ལག་Ubuntu་སྔོན་མའི་པར་གཞི་ཞིག་དང་ཐོག་བཀོལ་སྤྱོད་བཞིན་པ\n"
-" * མ་ལག་Ubuntu་ཀྱིས་མཁོ་སྤྲོད་མ་བྱས་པའི་གཞུང་བཟོས་མཉེན་ཆས་ཐུམ་བུ་མིན་པ\n"
+" * མ་ལག་elementary OS་སྔོན་མའི་པར་གཞི་ཞིག་ལ་རིམ་སྤོར་བྱེད་པ\n"
+" * མ་ལག་elementary OS་སྔོན་མའི་པར་གཞི་ཞིག་དང་ཐོག་བཀོལ་སྤྱོད་བཞིན་པ\n"
+" * མ་ལག་elementary OS་ཀྱིས་མཁོ་སྤྲོད་མ་བྱས་པའི་གཞུང་བཟོས་མཉེན་ཆས་ཐུམ་བུ་མིན་པ\n"
 "\n"
 
 #: ../DistUpgrade/DistUpgradeCache.py:689
@@ -210,7 +210,7 @@ msgstr "meta-package་ཚོད་དཔགས་མི་ཐུབ་པ"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
@@ -735,12 +735,12 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -761,11 +761,11 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
-"རྩིས་འཁོར་འདིས་ཁNVIDIA་གཟུགས་རིས་སྒུལ་སློང་བ་བེད་སྤྱོད་བཞིན་ཡོད་པས་ Ubuntu "
+"རྩིས་འཁོར་འདིས་ཁNVIDIA་གཟུགས་རིས་སྒུལ་སློང་བ་བེད་སྤྱོད་བཞིན་ཡོད་པས་ elementary OS "
 "10.04 LTS་ནང་གི་བརྙན་རིས་བྱང་བུ་ལ་སྤྱོད་རུང་བའི་གཟུགས་རིས་སྒུལ་སློང་བ་མེད་པ\n"
 "\n"
 "ཁྱོད་ཀྱིས་མུ་མཐུད་འདོད་དམ"
@@ -773,13 +773,13 @@ msgstr ""
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "རྩིས་འཁོར་འདིས་ད་ལྟ་AMD "
-"'fglrx'་གཟུགས་རིས་སྒུལ་སློང་བ་བེད་སྤྱོད་བཞིན་ཡོད།འདིའི་པར་གཞི་གང་ཡང་Ubuntu "
+"'fglrx'་གཟུགས་རིས་སྒུལ་སློང་བ་བེད་སྤྱོད་བཞིན་ཡོད།འདིའི་པར་གཞི་གང་ཡང་elementary OS "
 "10.04 LTS་སྲ་ཆས་སྤྱོད་མི་རུང་།\n"
 "\n"
 "ཁྱོད་ཀྱིས་མུ་མཐུད་དགོས་སམ"
@@ -793,12 +793,12 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
 msgid "No ARMv6 CPU"
@@ -809,12 +809,12 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
 msgid "No init available"
@@ -823,14 +823,14 @@ msgstr "init ་མེད་པ"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
@@ -1575,7 +1575,7 @@ msgid "Distribution Upgrade"
 msgstr "འགྲེམ་སྤེལ་རིམ་སྤོར"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr ""
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
@@ -1670,13 +1670,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "ཁྱོན་ཡོངས་%(total)li་ནང་ནས་ཡིག་ཆ་%(current)li་ལེན་འཇུག་བཞིན་པ་"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
-msgstr "ཁྱོད་ཀྱི་Ubuntu པར་གཞི་འདིར་རྒྱབ་སྐྱོར་མེད་པ།"
+msgid "Your elementary OS release is not supported anymore."
+msgstr "ཁྱོད་ཀྱི་elementary OS པར་གཞི་འདིར་རྒྱབ་སྐྱོར་མེད་པ།"
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 
 #: ../UpdateManager/UpdateManager.py:113
@@ -1804,12 +1804,12 @@ msgid "Software updates may be available for your computer."
 msgstr "རྩིས་འཁོར་འདི་ལ་མཉེན་ཆས་གསར་སྒྱུར་བྱེད་རྒྱུ་ཡོད་སྲིད"
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
-msgstr "Ubuntu མ་ལག་གིས་དགའ་བསུ་ཞུ"
+msgid "Welcome to elementary OS"
+msgstr "elementary OS མ་ལག་གིས་དགའ་བསུ་ཞུ"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 
@@ -1916,8 +1916,8 @@ msgstr "རིམ་སྤོར་འགྲེམས་སྤེལ་སྤྱ
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "<b>Ubuntu་མ་ལག་འགྲེམས་སྤེལ་གསར་པ་ '%s' སྤྱོད་རུང་བ</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "<b>elementary OS་མ་ལག་འགྲེམས་སྤེལ་གསར་པ་ '%s' སྤྱོད་རུང་བ</b>"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -1968,8 +1968,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "རྒྱུན་ལྡན་གྱི་རིམ་སྤོར་ཞིག་རྩིས་འདངས་རྒྱག་མི་ཐུབ་པས་ \n"
@@ -1979,8 +1979,8 @@ msgstr ""
 "འདིའི་འབྱུང་རྐྱེན་ནི:\n"
 " * སྔོན་གྱི་རིམ་སྤོར་ཞིག་ལེགས་འགྲུབ་མ་ཐུབ་པ\n"
 " * སྒྲིག་འཇུག་ཡོད་མཉེན་ཆས་སྐྱོན་ཡིན་པ་\n"
-" * Ubuntu་མ་ལག་དཔོན་ས་ནས་ཐོབ་པའི་མཉེན་ཆས་མིན་པ\n"
-" * Ubuntu་མ་ལག་གི་འགྲེམས་སྤེལ་སྔོན་མའི་རྒྱུན་ལྡན་བཟོ་བཅོས་ཡིན་པ"
+" * elementary OS་མ་ལག་དཔོན་ས་ནས་ཐོབ་པའི་མཉེན་ཆས་མིན་པ\n"
+" * elementary OS་མ་ལག་གི་འགྲེམས་སྤེལ་སྔོན་མའི་རྒྱུན་ལྡན་བཟོ་བཅོས་ཡིན་པ"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
 msgid "Downloading changelog"
@@ -2092,16 +2092,16 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "རིམ་སྤོར་དུམ་བུ་གཅིག་བྱས་ནས་རིམ་སྤོར་ཐུབ་ཚད་སྒྲིག་འཇུག་བྱེད་པ\n"
 "\n"
 "འདི་བྱུང་བའི་རྒྱུ་རྐྱེན་ནི་:\n"
 " * ལེགས་འགྲུབ་མ་བྱུང་བའི་སྔོན་གྱི་རིམ་སྤོར\n"
 " * སྒྲིག་འཇུག་ཟིན་པའི་མཉེན་ཆས་འགའ་ལ་སྐྱོན་ཡོད་པ\n"
-" * Ubuntuམ་ལག་དཔོན་ས་ནས་བྱུང་བའི་མཉེན་ཆས་འཐུམ་་བུ་མིན་པ\n"
-" * སྔོན་གྱི་Ubuntuཔར་གཞི་ལ་བྱུང་བའི་རྒྱུན་ལྡན་བཟོ་བཅོས"
+" * elementary OSམ་ལག་དཔོན་ས་ནས་བྱུང་བའི་མཉེན་ཆས་འཐུམ་་བུ་མིན་པ\n"
+" * སྔོན་གྱི་elementary OSཔར་གཞི་ལ་བྱུང་བའི་རྒྱུན་ལྡན་བཟོ་བཅོས"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
 msgid "Chec_k"
@@ -2204,8 +2204,8 @@ msgstr ""
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
-msgstr "<b>Ubuntu ཡི་པར་གཞི་གསར་པ་ཞིག་ཡོད་པས་ཁྱོད་ཀྱིས་རིམ་སྤོར་དགོས་སམ</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
+msgstr "<b>elementary OS ཡི་པར་གཞི་གསར་པ་ཞིག་ཡོད་པས་ཁྱོད་ཀྱིས་རིམ་སྤོར་དགོས་སམ</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
@@ -2220,8 +2220,8 @@ msgid "Yes, Upgrade Now"
 msgstr "དགོས། རིམ་སྤོར་ད་་ལྟ་བྱེད།"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
-msgstr "ཁྱོད་ཀྱིས་Ubuntuགསར་པར་རིམ་སྤོར་བྱེད་པར་འདོར་ཚར"
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "ཁྱོད་ཀྱིས་elementary OSགསར་པར་རིམ་སྤོར་བྱེད་པར་འདོར་ཚར"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2248,8 +2248,8 @@ msgid "Directory that contains the data files"
 msgstr "Directory that contains the data filesཆ་འཕྲིན་གྲངས་ཡིག་ཆའི་འཇུག་སྣོད"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
-msgstr "Ubuntu་འགྲེལ་སྤེལ་གསར་པ་ལྟ་བཤེར་བྱེད་པ"
+msgid "Check if a new elementary OS release is available"
+msgstr "elementary OS་འགྲེལ་སྤེལ་གསར་པ་ལྟ་བཤེར་བྱེད་པ"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
 msgid "Check if upgrading to the latest devel release is possible"
@@ -2316,7 +2316,7 @@ msgstr ""
 "་འདིའི་མཇུག་འབྲས་ཡར་ཞུ་བྱེད་དགོས"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
+msgid "Checking for a new elementary OS release"
 msgstr ""
 
 #: ../do-release-upgrade:96
@@ -2343,13 +2343,13 @@ msgstr ""
 "upgrade'འགྲེལ་སྤེལ་རིམ་སྤོར་བྱོས་་འཁོར་སྤྱོད་བྱས་ནས་དེ་ལ་རིམ་སྤོར་བྱེད་པ"
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "Ubuntu %(པར་གཞི་)་ལ་རིམ་སྤོར་ཆོག་པ"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "elementary OS %(པར་གཞི་)་ལ་རིམ་སྤོར་ཆོག་པ"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "Ubuntu %s་རིམ་སྤོར་བྱེད་པར་ཁྱོད་ཀྱིས་འདོར་ཚར"
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "elementary OS %s་རིམ་སྤོར་བྱེད་པར་ཁྱོད་ཀྱིས་འདོར་ཚར"
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2497,9 +2497,9 @@ msgstr ""
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
-#~ "ད་ནས་བཟུང་ཁྱོད་ལ་བདེ་འཇགས་བཟོ་བཅོས་དང་གསར་སྒྱུར་གཙོ་ཆེན་ཐོབ་མི་སྲིད་པསUbuntu "
+#~ "ད་ནས་བཟུང་ཁྱོད་ལ་བདེ་འཇགས་བཟོ་བཅོས་དང་གསར་སྒྱུར་གཙོ་ཆེན་ཐོབ་མི་སྲིད་པསelementary OS "
 #~ "Linux་མ་ལག་པར་གཞི་གསར་པར་རིམ་སྤོར་བྱེད་རོགས"
 
 #~ msgid "The update has already been downloaded, but not installed"
@@ -2529,4 +2529,4 @@ msgstr ""
 #~ "སྒྱུར་དོ་དམ་པ\" ་་གསར་སྒྱུར་དོ་དམ་པ་་ ཐོག་ནས་སླར་བཟོ་ཆོག"
 
 #~ msgid "Checking for a new ubuntu release"
-#~ msgstr "Ubuntuའགྲེམ་སྤེལ་གསར་པ་ལྟ་བཤེར་བྱེད་པ"
+#~ msgstr "elementary OSའགྲེམ་སྤེལ་གསར་པ་ལྟ་བཤེར་བྱེད་པ"

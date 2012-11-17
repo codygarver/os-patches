@@ -57,10 +57,10 @@ msgstr "Methu cyfrifo cofnod sources.list"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
-"Methu cael hyd i ffeiliau pecynnau, efallai mai nid disg Ubuntu yw hwn, "
+"Methu cael hyd i ffeiliau pecynnau, efallai mai nid disg elementary OS yw hwn, "
 "neu'r math o adeiladaeth anghywir?"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
@@ -71,13 +71,13 @@ msgstr "Methu ychwanegu'r CD"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
 msgstr ""
 "Roedd gwall wrth ychwanegu'r CD, bydd yr uwchraddiad yn terfynu. Adrodd hwn "
-"fel chwilen os yw hwn yn CD Ubuntu dilys.\n"
+"fel chwilen os yw hwn yn CD elementary OS dilys.\n"
 "\n"
 "Y neges gwall oedd:\n"
 "'%s'"
@@ -142,18 +142,18 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "Digwyddodd problem nad oes modd ei datrys wrth gynllunio'r uwchraddiad:\n"
 "%s\n"
 "\n"
 " Gall y canlynol achosi hyn:\n"
-" * Uwchraddio i fersiwn cyn rhyddhau o Ubuntu\n"
-" * Rhedeg fersiwn cyn rhyddhau o Ubuntu\n"
-" * Pecynnau meddalwedd answyddogol sydd ddim yn cael eu darparu gan Ubuntu\n"
+" * Uwchraddio i fersiwn cyn rhyddhau o elementary OS\n"
+" * Rhedeg fersiwn cyn rhyddhau o elementary OS\n"
+" * Pecynnau meddalwedd answyddogol sydd ddim yn cael eu darparu gan elementary OS\n"
 "\n"
 
 #: ../DistUpgrade/DistUpgradeCache.py:689
@@ -224,13 +224,13 @@ msgstr "Methu dyfalu pecyn-meta"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
 "Nid yw dy system yn cynnwys pecyn ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop na edubuntu-desktop, a doedd hi ddim yn bosib canfod pa fersiwn o "
-"Ubuntu rwyt ti'n ei rhedeg.\n"
+"elementary OS rwyt ti'n ei rhedeg.\n"
 " Gosoda un o'r pecynnau uchod yn gyntaf drwy synaptic neu apt-get cyn parhau."
 
 #: ../DistUpgrade/DistUpgradeController.py:100
@@ -756,12 +756,12 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -782,26 +782,26 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Mae'r cyfrifiadur hwn yn defnyddio gyrrwr graffeg NVIDIA 'nvidia' ar hyn o "
 "bryd. Does dim fersiwn o'r gyrrwr hwn sy'n gweithio gyda dy gerdyn fideo yn "
-"Ubuntu 10.04 LTS ar gael.\n"
+"elementary OS 10.04 LTS ar gael.\n"
 "\n"
 "Wyt ti eisiau parhau?"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "Mae'r cyfrifiadur hwn yn defnyddio gyrrwr graffeg AMD 'fglrx'. Does dim "
-"fersiwn o'r gyrrwr hwn ar gael sy'n gweithio gyda dy galedwedd yn Ubuntu "
+"fersiwn o'r gyrrwr hwn ar gael sy'n gweithio gyda dy galedwedd yn elementary OS "
 "10.04 LTS.\n"
 "\n"
 "Wyt ti eisiau parhau?"
@@ -815,11 +815,11 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Mae dy system yn defnyddio CPU i586 neu CPU sydd heb estyniad 'cmov'. Crewyd "
 "y pecynnau fel eu bod angen o leiaf adeiladaeth i686 cyn eu bod yn gweithio. "
-"Nid yw'n bosib uwchraddio dy system i fersiwn newydd o Ubuntu gyda'r "
+"Nid yw'n bosib uwchraddio dy system i fersiwn newydd o elementary OS gyda'r "
 "caledwedd hwn."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
@@ -831,12 +831,12 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "Mae dy system yn defnyddio CPU ARM sydd ddim mor newydd ag adeiladaeth "
 "ARMv6. Crewyd y pecynnau fel eu bod angen o leiaf adeiladaeth ARMv6 cyn eu "
 "bod yn gweithio. Nid yw'n bosib uwchraddio dy system i fersiwn newydd o "
-"Ubuntu gyda'r caledwedd hwn."
+"elementary OS gyda'r caledwedd hwn."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
 msgid "No init available"
@@ -845,14 +845,14 @@ msgstr "Dim init ar gael"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
 "Ymddengys mai amgylchedd rhithiol heb daemon init yw dy system, e.e. Linux-"
-"VServer. Nid yw Ubuntu 10.04 LTS yn medru gweithredu mewn amgylchedd fel hwn "
+"VServer. Nid yw elementary OS 10.04 LTS yn medru gweithredu mewn amgylchedd fel hwn "
 "ac mae angen uwchraddio cyfluniad dy beiriant rhithiol yn gyntaf.\n"
 "\n"
 "Wyt ti'n siwr dy fod eisiau parhau?"
@@ -1623,7 +1623,7 @@ msgid "Distribution Upgrade"
 msgstr "Uwchraddio Dosbarthiad"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr ""
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
@@ -1716,13 +1716,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "Lawrlwytho ffeil %(current)li o %(total)li"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
-msgstr "Nid yw dy fersiwn o Ubuntu'n derbyn cefnogaeth bellach."
+msgid "Your elementary OS release is not supported anymore."
+msgstr "Nid yw dy fersiwn o elementary OS'n derbyn cefnogaeth bellach."
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 
 #: ../UpdateManager/UpdateManager.py:113
@@ -1857,12 +1857,12 @@ msgstr ""
 "Efallai bod diweddariadau meddalwedd ar gael ar gyfer dy gyfrifiadur."
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
-msgstr "Croeso i Ubuntu"
+msgid "Welcome to elementary OS"
+msgstr "Croeso i elementary OS"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 
@@ -1970,8 +1970,8 @@ msgstr "Lawrlwytho'r teclyn uwchraddio fersiwn"
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "<b>Mae fersiwn newydd '%s' o Ubuntu ar gael</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "<b>Mae fersiwn newydd '%s' o elementary OS ar gael</b>"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -2022,8 +2022,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "Methwyd cyfrifo uwchraddiad normal, rheda: \n"
@@ -2033,8 +2033,8 @@ msgstr ""
 "Gall y canlynol achosi hyn:\n"
 " * Uwchraddiad blaenorol heb gwblhau\n"
 " * Problemau gyda meddalwedd sydd wedi ei osod\n"
-" * Pecynnau meddalwedd answyddogol sydd ddim yn cael eu darparu gan Ubuntu\n"
-" * Newidiadau normal o fersiwn cyn rhyddhau o Ubuntu"
+" * Pecynnau meddalwedd answyddogol sydd ddim yn cael eu darparu gan elementary OS\n"
+" * Newidiadau normal o fersiwn cyn rhyddhau o elementary OS"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
 msgid "Downloading changelog"
@@ -2144,16 +2144,16 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "Rhedeg uwchraddiad rhannol i osod cymaint o ddiweddariadau â phosib. \n"
 "\n"
 "Gall y canlynol achosi hyn:\n"
 " * Uwchraddiad blaenorol heb gwblhau\n"
 " * Problemau gyda meddalwedd sydd wedi ei osod\n"
-" * Pecynnau meddalwedd answyddogol sydd ddim yn cael eu darparu gan Ubuntu\n"
-" * Newidiadau normal o fersiwn cyn rhyddhau o Ubuntu"
+" * Pecynnau meddalwedd answyddogol sydd ddim yn cael eu darparu gan elementary OS\n"
+" * Newidiadau normal o fersiwn cyn rhyddhau o elementary OS"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
 msgid "Chec_k"
@@ -2251,9 +2251,9 @@ msgstr ""
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
 msgstr ""
-"<b>Mae fersiwn newydd o Ubuntu ar gael. Wyt ti eisiau uwchraddio?</b>"
+"<b>Mae fersiwn newydd o elementary OS ar gael. Wyt ti eisiau uwchraddio?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
@@ -2268,8 +2268,8 @@ msgid "Yes, Upgrade Now"
 msgstr "Ydw, Uwchraddio Nawr"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
-msgstr "Rwyt ti wedi penderfynu peidio uwchraddio i'r Ubuntu newydd"
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "Rwyt ti wedi penderfynu peidio uwchraddio i'r elementary OS newydd"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2296,8 +2296,8 @@ msgid "Directory that contains the data files"
 msgstr "Cyfeiriadur sy'n cynnwys y ffeiliau data"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
-msgstr "Gwirio i weld os oes fersiwn newydd o Ubuntu ar gael"
+msgid "Check if a new elementary OS release is available"
+msgstr "Gwirio i weld os oes fersiwn newydd o elementary OS ar gael"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
 msgid "Check if upgrading to the latest devel release is possible"
@@ -2361,7 +2361,7 @@ msgstr ""
 "cod gadael"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
+msgid "Checking for a new elementary OS release"
 msgstr ""
 
 #: ../do-release-upgrade:96
@@ -2386,13 +2386,13 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "Rheda 'do-release-upgrade' i uwchraddio i hwn."
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "Uwchraddiad i Ubuntu %(version)s Ar Gael"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "Uwchraddiad i elementary OS %(version)s Ar Gael"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "Rwyt ti wedi penderfynu peidio uwchraddio i Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "Rwyt ti wedi penderfynu peidio uwchraddio i elementary OS %s"
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2534,10 +2534,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
 #~ "Fyddi di ddim yn derbyn diweddariadau hanfodol na rhai diogelwch. Uwchraddia "
-#~ "i fersiwn mwy newydd o Ubuntu Linux."
+#~ "i fersiwn mwy newydd o elementary OS Linux."
 
 #~ msgid "There are no updates to install"
 #~ msgstr "Does dim diweddariadau i'w gosod"
@@ -2563,4 +2563,4 @@ msgstr ""
 #~ "ddewislen Gweinyddiaeth yn nes ymlaen."
 
 #~ msgid "Checking for a new ubuntu release"
-#~ msgstr "Yn gwirio am fersiwn newydd o Ubuntu"
+#~ msgstr "Yn gwirio am fersiwn newydd o elementary OS"

@@ -55,7 +55,7 @@ msgstr "sources.list 항목을 계산할 수 없습니다."
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr "어떤 패키지 파일도 찾을 수 없습니다. 우분투 디스크가 아니거나 올바르지 않은 아키텍처인 것은 아닙니까?"
 
@@ -67,7 +67,7 @@ msgstr "CD 추가 실패"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
@@ -119,9 +119,9 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "업데이트를 계산하는 중 해결할 수 없는 문제가 생겼습니다.:\n"
@@ -200,7 +200,7 @@ msgstr "메타 패키지를 추측할 수 없음"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
@@ -710,12 +710,12 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr "그래픽 카드가 우분투 12.04 장기 지원판을 지원하지 않습니다."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -737,7 +737,7 @@ msgstr "업그레이드로 인해 데스크탑 효과나 게임, 그래픽 관�
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
@@ -748,7 +748,7 @@ msgstr ""
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
@@ -766,7 +766,7 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "현 시스템은 i586 호환 CPU가 아니거나, 'cmov' 기능이 없는 CPU를 사용하고 있습니다. 모든 패키지는 최소 i686 호환 "
 "CPU가 필요합니다. 현 시스템에서 새로운 우분투 버전으로 업그레이드 할 수 없습니다."
@@ -780,7 +780,7 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "시스템이 ARMv6 보다 더 오래된 아키텍처의 ARM CPU를 사용하고 있습니다. 우분투 karmic의 모든 꾸러미는 ARMv6에 최적화 "
 "되어있기 때문에 최소 CPU로 ARMv6이 필요합니다. 현재 하드웨어로는 새로운 우분투 버전으로 시스템을 업그레이드 할 수 없습니다."
@@ -792,7 +792,7 @@ msgstr "init 사용 불가"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
@@ -1518,7 +1518,7 @@ msgid "Distribution Upgrade"
 msgstr "배포판 업그레이드"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr "<b><big>우분투를 12.04버전으로 업그레이드합니다.</big></b>"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
@@ -1611,13 +1611,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "%(total)li개 중 %(current)li번째 파일을 다운로드 중"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
+msgid "Your elementary OS release is not supported anymore."
 msgstr "현재 사용 중인 우분투 배포판은 더 이상 지원하지 않습니다."
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr "이후 보안 패치, 중요한 업데이트를 받을 수 없습니다. 최신 버전으로 업그레이드 하십시오."
 
 #: ../UpdateManager/UpdateManager.py:113
@@ -1739,12 +1739,12 @@ msgid "Software updates may be available for your computer."
 msgstr "컴퓨터가 사용할 수 있는 소프트웨어 업데이트가 있을 수 있습니다."
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
+msgid "Welcome to elementary OS"
 msgstr "우분투의 세계에 오신 것을 환영합니다."
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr "이 소프트웨어 업데이트는 이 버전의 우분투가 배포된 이후에 발표된 업데이트입니다."
 
@@ -1844,7 +1844,7 @@ msgstr "배포판 업그레이드 도구 다운로드 중"
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
 msgstr "<b>새 우분투 버전 '%s'을(를) 사용할 수 있습니다</b>"
 
 #. we assert a clean cache
@@ -1895,8 +1895,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "일반 업그레이드를 계산할 수 없습니다. 다음 명령을 실행해주십시오.: \n"
@@ -2022,8 +2022,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "최대한 많은 업데이트를 설치하기 위해 부분적으로 업데이트합니다.\n"
 "\n"
@@ -2126,7 +2126,7 @@ msgstr "설정(_S)..."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
 msgstr "<b>새 버전의 우분투를 사용할 수 있습니다. 업그레이드 하시겠습니까?</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
@@ -2142,7 +2142,7 @@ msgid "Yes, Upgrade Now"
 msgstr "지금 업그레이드"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
+msgid "You have declined to upgrade to the new elementary OS"
 msgstr "새 우분투로 업그레이드 하는 것을 취소했습니다."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
@@ -2168,7 +2168,7 @@ msgid "Directory that contains the data files"
 msgstr "데이터 파일이 저장된 디렉터리"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
+msgid "Check if a new elementary OS release is available"
 msgstr "새로운 우분투 버전이 있는지 확인합니다"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
@@ -2228,7 +2228,7 @@ msgid ""
 msgstr "새 배포판이 있을 경우에만 확인하기. 결과는 끝내기 코드를 통해 반환"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
+msgid "Checking for a new elementary OS release"
 msgstr "새 우분투 배포판 확인"
 
 #: ../do-release-upgrade:96
@@ -2253,12 +2253,12 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "업그레이드를 하시려면 'do-release-upgrade' 명령을 실행하세요."
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
+msgid "elementary OS %(version)s Upgrade Available"
 msgstr "우분투 %(version)s(으)로 업그레이드할 수 있습니다."
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
 msgstr "우분투 %s(으)로 업그레이드하는 것을 취소했습니다."
 
 #: ../check-new-release-gtk:192
@@ -2388,7 +2388,7 @@ msgstr "grub을 설치했으므로 lilo는 제거하십시오.(자세한 내용�
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr "앞으로 보안 패치, 치명적인 버그 수정을 받을 수 없습니다. 최신 우분투로 업그레이드 하십시오."
 
 #, python-format
@@ -2429,11 +2429,11 @@ msgstr "grub을 설치했으므로 lilo는 제거하십시오.(자세한 내용�
 #~ msgid_plural "The updates have already been downloaded, but not installed"
 #~ msgstr[0] "업데이트는 이미 모두 받았으나 깔리지 않음"
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
 #~ msgstr "사용 중인 그래픽 카드가 우분투 11.04 버전을 완전히 지원하지 않을 수 있습니다."
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
 #~ msgstr ""

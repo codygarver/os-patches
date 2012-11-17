@@ -679,9 +679,9 @@ class MyCache(apt.Cache):
             details =  _("An unresolvable problem occurred while "
                          "calculating the upgrade:\n%s\n\n "
                          "This can be caused by:\n"
-                         " * Upgrading to a pre-release version of Ubuntu\n"
-                         " * Running the current pre-release version of Ubuntu\n"
-                         " * Unofficial software packages not provided by Ubuntu\n"
+                         " * Upgrading to a pre-release version of elementary OS\n"
+                         " * Running the current pre-release version of elementary OS\n"
+                         " * Unofficial software packages not provided by elementary OS\n"
                          "\n") % e
             # we never have partialUpgrades (including removes) on a stable system
             # with only ubuntu sources so we do not recommend reporting a bug

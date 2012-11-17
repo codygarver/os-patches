@@ -56,7 +56,7 @@ msgstr "sources.list प्रविष्टि क़ी गणना नही�
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
 "पैकेज संचिकाएँ नहीं मिलीं, संभवत: यह उबुंतू डिस्क नहीं है या स्थापत्य "
@@ -70,7 +70,7 @@ msgstr "सी.डी. योजन असफल रहा."
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
@@ -131,9 +131,9 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "अद्यतन की गणना करते समय अनसुलझी समस्या उत्पन्न हो गई है:\n"
@@ -217,7 +217,7 @@ msgstr "मेटा-पैकेज का अनुमान न करें"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
@@ -743,12 +743,12 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -769,7 +769,7 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
@@ -782,7 +782,7 @@ msgstr ""
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
@@ -802,7 +802,7 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "आपका तंत्र एक i586 सीपीयु या एक सीपीयु की तरह उपयोग हो रहा है जिसमें 'cmov' "
 "विस्तारक नहीं हैं. सभी पैकेज i686 के आवश्यकता के अनुकूल न्यूनतम स्थापत्य है. "
@@ -818,7 +818,7 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "आपका तंत्र ARM सीपीयु का उपयोग कर रहा है जो ARMv6 संरचना से ज्यादा पुराना "
 "है. 'कार्मिक' के सभी पैकेज इस आशावादिता के साथ बनाए गए है कि न्यूनतम संरचना "
@@ -832,7 +832,7 @@ msgstr "init उपलब्ध नहीं है"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
@@ -1586,7 +1586,7 @@ msgid "Distribution Upgrade"
 msgstr "वितरण अद्यतन"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr ""
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
@@ -1680,13 +1680,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "संचिका डाउनलोड कर रहा है %(current)li का %(total)li में से"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
+msgid "Your elementary OS release is not supported anymore."
 msgstr "आपका उबुन्टू प्रकाशन अब और समर्थित नहीं रहा."
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 
 #: ../UpdateManager/UpdateManager.py:113
@@ -1815,12 +1815,12 @@ msgid "Software updates may be available for your computer."
 msgstr "आपके कंप्यूटर हेतु सॉफ्टवेयर अद्यतन उपलब्ध रहेगा."
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
+msgid "Welcome to elementary OS"
 msgstr "उबुन्टू में स्वागत है"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 
@@ -1928,7 +1928,7 @@ msgstr "प्रकाशित अद्यतन औजार को डा�
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
 msgstr "<b>नया उबुन्टू प्रकाशन '%s' उपलब्ध है</b>"
 
 #. we assert a clean cache
@@ -1980,8 +1980,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "समान्य अद्यतन की गणना नहीं हो सकती, कृपया चलाएं: \n"
@@ -2104,8 +2104,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "आंशिक अद्यतन चलाएं, ताकि यथासंभव अधिक से अधिक अद्यतन संस्थापित हो सके. \n"
 "\n"
@@ -2212,7 +2212,7 @@ msgstr "सेटिंग (_S)..."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
 msgstr ""
 "<b>उबुन्टू का एक नया संस्करण उपलब्ध है. क्या आप उन्नत करना चाहेंगे?</b>"
 
@@ -2229,7 +2229,7 @@ msgid "Yes, Upgrade Now"
 msgstr "हाँ, अब उन्नत करें"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
+msgid "You have declined to upgrade to the new elementary OS"
 msgstr "आपने नए उबुन्टू में उन्नत करने से अस्वीकार कर दिया है"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
@@ -2257,7 +2257,7 @@ msgid "Directory that contains the data files"
 msgstr "निर्देशिका जिसमे आंकड़ा संचिका हो"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
+msgid "Check if a new elementary OS release is available"
 msgstr "नए उबुन्टू प्रकाशन की उपलब्धता की जाँच करें"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
@@ -2323,7 +2323,7 @@ msgstr ""
 "द्वारा दें"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
+msgid "Checking for a new elementary OS release"
 msgstr ""
 
 #: ../do-release-upgrade:96
@@ -2348,12 +2348,12 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "कोटि उन्नयन हेतु 'do-release-upgrade' को चलाएं."
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
+msgid "elementary OS %(version)s Upgrade Available"
 msgstr "उबुन्टू %(version)s कोटि-उन्नयन हेतु उपलब्ध है"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
 msgstr "आपने उबुन्टू %s का कोटि-उन्नयन का अवनति किया है"
 
 #: ../check-new-release-gtk:192
@@ -2521,7 +2521,7 @@ msgstr "lilo को हटाएँ क्यों कि grub भी संस
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
 #~ "आप आगे से कोई सूरक्षा निदान या नाजुक अद्यतन प्राप्त नहीं करेंगें. कृपया "
 #~ "उबुन्टू लाईनेक्स के नवीनतम संस्करण में उन्नयन करें."
@@ -2543,13 +2543,13 @@ msgstr "lilo को हटाएँ क्यों कि grub भी संस
 #~ msgid "1 kB"
 #~ msgstr "१ केबी"
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
 #~ msgstr ""
-#~ "आपके ग्राफिक्स हार्डवेयर 11.04 Ubuntu में पूरी तरह से समर्थित नहीं किया जा "
+#~ "आपके ग्राफिक्स हार्डवेयर 11.04 elementary OS में पूरी तरह से समर्थित नहीं किया जा "
 #~ "सकता है|"
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
 #~ msgstr ""

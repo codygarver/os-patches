@@ -51,9 +51,9 @@ msgstr "無法推算 sources.list 項目"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
-msgstr "找不到套件檔案；也許這不是 Ubuntu 光碟，又或者處理器架構不對？"
+msgstr "找不到套件檔案；也許這不是 elementary OS 光碟，又或者處理器架構不對？"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
 msgid "Failed to add the CD"
@@ -63,7 +63,7 @@ msgstr "無法加入光碟"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
@@ -114,18 +114,18 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "為升級進行推算時有問題無法解決：\n"
 "%s\n"
 "\n"
 " 原因可能是：\n"
-" * 要升級至測試版 Ubuntu\n"
-" * 正使用的是測試版 Ubuntu\n"
-" * 非 Ubuntu 官方軟件套件的問題\n"
+" * 要升級至測試版 elementary OS\n"
+" * 正使用的是測試版 elementary OS\n"
+" * 非 elementary OS 官方軟件套件的問題\n"
 "\n"
 
 #: ../DistUpgrade/DistUpgradeCache.py:689
@@ -190,12 +190,12 @@ msgstr "無法估計元套件 (meta-package)"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
 "您的系統沒有安裝 ubuntu-desktop、kubuntu-desktop、xubuntu-desktop 或 edubuntu-desktop "
-"套件，因此無法偵測正在使用那個版本的 Ubuntu。\n"
+"套件，因此無法偵測正在使用那個版本的 elementary OS。\n"
 " 請先以「Synaptic 套件管理員」或 apt-get 安裝上述其中一個套件再繼續。"
 
 #: ../DistUpgrade/DistUpgradeController.py:100
@@ -671,12 +671,12 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -695,23 +695,23 @@ msgstr "升級可能減低桌面特效和遊戲及其他著重圖形程式的表
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
-"這個電腦目前正使用 NVIDIA 的「nvidia」圖形驅動程式。這個驅動程式沒有任何版本可在 Ubuntu 10.04 LTS 中正常驅動您的硬件。\n"
+"這個電腦目前正使用 NVIDIA 的「nvidia」圖形驅動程式。這個驅動程式沒有任何版本可在 elementary OS 10.04 LTS 中正常驅動您的硬件。\n"
 "\n"
 "是否要繼續？"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
-"這個電腦目前正使用 AMD 的「fglrx」圖形驅動程式。這個驅動程式沒有任何版本可在 Ubuntu 10.04 LTS 中正常驅動您的硬件。\n"
+"這個電腦目前正使用 AMD 的「fglrx」圖形驅動程式。這個驅動程式沒有任何版本可在 elementary OS 10.04 LTS 中正常驅動您的硬件。\n"
 "\n"
 "是否要繼續？"
 
@@ -724,10 +724,10 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "您的系統使用 i586 處理器，或是不支援「cmov」擴充功能的處理器。所有套件都以 i686 架構為最佳化目標來建置，所以處理器至少需要有 i686 "
-"等級。對於目前的硬件來說，無法將系統升級到新的 Ubuntu 發行版。"
+"等級。對於目前的硬件來說，無法將系統升級到新的 elementary OS 發行版。"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
 msgid "No ARMv6 CPU"
@@ -738,10 +738,10 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "您系統使用的 ARM 處理器舊於 ARMv6 架構。所有 karmic 套件都以 ARMv6 架構為最佳化目標來建置，所以處理器至少需要有 ARMv6 "
-"等級。對於目前的硬件來說，無法將系統升級到新的 Ubuntu 發行版。"
+"等級。對於目前的硬件來說，無法將系統升級到新的 elementary OS 發行版。"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:667
 msgid "No init available"
@@ -750,13 +750,13 @@ msgstr "無法初始化"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
-"您的系統似乎在虛擬化環境中且無初始化程序，例如 Linux-VServer。Ubuntu 10.04 LTS "
+"您的系統似乎在虛擬化環境中且無初始化程序，例如 Linux-VServer。elementary OS 10.04 LTS "
 "無法在此環境中執行，需要先更新您的虛擬機器設定。\n"
 "\n"
 "您確定想要繼續？"
@@ -1473,8 +1473,8 @@ msgid "Distribution Upgrade"
 msgstr "發行版升級"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
-msgstr "<b><big>將 Ubuntu 升級至 12.04 版</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
+msgstr "<b><big>將 elementary OS 升級至 12.04 版</big></b>"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
 msgid "    "
@@ -1566,14 +1566,14 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "共 %(total)li 個檔案，正下載第 %(current)li 個"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
-msgstr "您的 Ubuntu 發行版本已經不再支援。"
+msgid "Your elementary OS release is not supported anymore."
+msgstr "您的 elementary OS 發行版本已經不再支援。"
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
-msgstr "將無法再取得保安修正或重要更新。請升級至最新版本 Ubuntu。"
+"upgrade to a later version of elementary OS."
+msgstr "將無法再取得保安修正或重要更新。請升級至最新版本 elementary OS。"
 
 #: ../UpdateManager/UpdateManager.py:113
 msgid "Upgrade information"
@@ -1695,12 +1695,12 @@ msgid "Software updates may be available for your computer."
 msgstr "可能有軟體更新提供予閣下之電腦。"
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
-msgstr "歡迎使用 Ubuntu"
+msgid "Welcome to elementary OS"
+msgstr "歡迎使用 elementary OS"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 
@@ -1800,8 +1800,8 @@ msgstr "正在下載發行版更新工具"
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
-msgstr "<b>有新的 Ubuntu 發行版 '%s' 可供升級</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
+msgstr "<b>有新的 elementary OS 發行版 '%s' 可供升級</b>"
 
 #. we assert a clean cache
 #: ../UpdateManager/UpdateManager.py:1154
@@ -1849,8 +1849,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "無法為標準升級進行推算，請執行：\n"
@@ -1860,8 +1860,8 @@ msgstr ""
 " 原因可能是：\n"
 " * 前次升級程序未完成\n"
 " * 某些已安裝的軟件有問題\n"
-" * 非 Ubuntu 官方軟件套件的問題\n"
-" * 測試版 Ubuntu 的正常改動"
+" * 非 elementary OS 官方軟件套件的問題\n"
+" * 測試版 elementary OS 的正常改動"
 
 #: ../UpdateManagerText/UpdateManagerText.py:122
 msgid "Downloading changelog"
@@ -1975,16 +1975,16 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "執行部份升級，會儘可能安裝最多更新。 \n"
 "\n"
 "原因可能是：\n"
 " * 前次升級程序未完成\n"
 " * 某些已安裝的軟件有問題\n"
-" * 非 Ubuntu 官方軟件套件的問題\n"
-" * 測試版 Ubuntu 的正常改動"
+" * 非 elementary OS 官方軟件套件的問題\n"
+" * 測試版 elementary OS 的正常改動"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:12
 msgid "Chec_k"
@@ -2079,8 +2079,8 @@ msgstr "設定(_S)..."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
-msgstr "<b>有新版本 Ubuntu。是否升級？</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
+msgstr "<b>有新版本 elementary OS。是否升級？</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
@@ -2095,8 +2095,8 @@ msgid "Yes, Upgrade Now"
 msgstr "是，現在升級"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
-msgstr "您已拒絕升級至新版 Ubuntu"
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "您已拒絕升級至新版 elementary OS"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2121,8 +2121,8 @@ msgid "Directory that contains the data files"
 msgstr "含有資料檔案的目錄"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
-msgstr "檢查有否新 Ubuntu 發行版可供升級"
+msgid "Check if a new elementary OS release is available"
+msgstr "檢查有否新 elementary OS 發行版可供升級"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
 msgid "Check if upgrading to the latest devel release is possible"
@@ -2181,7 +2181,7 @@ msgid ""
 msgstr "檢查是否有新的發行版並以結束碼報告結果"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
+msgid "Checking for a new elementary OS release"
 msgstr ""
 
 #: ../do-release-upgrade:96
@@ -2206,13 +2206,13 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "執行 ‘do-release-upgrade’ 進行升級工作。"
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
-msgstr "可以升級至 Ubuntu %(version)s"
+msgid "elementary OS %(version)s Upgrade Available"
+msgstr "可以升級至 elementary OS %(version)s"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
-msgstr "您已拒絕升級至 Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
+msgstr "您已拒絕升級至 elementary OS %s"
 
 #: ../check-new-release-gtk:192
 msgid "Add debug output"
@@ -2381,17 +2381,17 @@ msgstr "因 grub 已安裝，移除 lilo  (詳情見 bug #314004）"
 #~ msgid "1 kB"
 #~ msgstr "1 kB"
 
-#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
-#~ msgstr "<b><big>將 Ubuntu 升級至 11.10 版</big></b>"
+#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
+#~ msgstr "<b><big>將 elementary OS 升級至 11.10 版</big></b>"
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
-#~ msgstr "您的繪圖硬件可能無法在 Ubuntu 11.04 獲得完整的支援。"
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
+#~ msgstr "您的繪圖硬件可能無法在 elementary OS 11.04 獲得完整的支援。"
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
-#~ msgstr "您的 Intel 繪圖硬件在 Ubuntu 11.04 內的支援有限，且可能會在升級之後碰到一些問題。您要繼續進行升級嗎？"
+#~ msgstr "您的 Intel 繪圖硬件在 elementary OS 11.04 內的支援有限，且可能會在升級之後碰到一些問題。您要繼續進行升級嗎？"
 
 #~ msgid ""
 #~ "The system was unable to get the prerequisites for the upgrade. The upgrade "
@@ -2419,8 +2419,8 @@ msgstr "因 grub 已安裝，移除 lilo  (詳情見 bug #314004）"
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
-#~ msgstr "無法再取得保安修正與重大更新。請升級至新版 Ubuntu Linux。"
+#~ "upgrade to a later version of elementary OS Linux."
+#~ msgstr "無法再取得保安修正與重大更新。請升級至新版 elementary OS Linux。"
 
 #~ msgid ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from "
@@ -2428,16 +2428,16 @@ msgstr "因 grub 已安裝，移除 lilo  (詳情見 bug #314004）"
 #~ msgstr "若現在不想安裝，可稍後於「應用程式」選單開啟「更新管理員」再安裝。"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from Applications later."
-#~ msgstr "本 Ubuntu 版本自發行已發布此等軟件更新。若現在不想安裝，可稍後於「應用程式」選單開啟「更新管理員」再安裝。"
+#~ msgstr "本 elementary OS 版本自發行已發布此等軟件更新。若現在不想安裝，可稍後於「應用程式」選單開啟「更新管理員」再安裝。"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from the Administration Menu later."
-#~ msgstr "本 Ubuntu 版本自發行已發布此等軟件更新。若現在不想安裝，可稍後於「管理」選單開啟「更新管理員」再安裝。"
+#~ msgstr "本 elementary OS 版本自發行已發布此等軟件更新。若現在不想安裝，可稍後於「管理」選單開啟「更新管理員」再安裝。"
 
 #~ msgid ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from the "
@@ -2457,7 +2457,7 @@ msgstr "因 grub 已安裝，移除 lilo  (詳情見 bug #314004）"
 #~ "由現在起至下次重新開機，寫入至系統目錄之改動都＊不會＊保留。"
 
 #~ msgid "Checking for a new ubuntu release"
-#~ msgstr "檢查有否新 Ubuntu 發行版"
+#~ msgstr "檢查有否新 elementary OS 發行版"
 
 #~ msgid ""
 #~ "Fetching and installing the upgrade can take several hours. Once the "

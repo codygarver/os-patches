@@ -55,10 +55,10 @@ msgstr "sources.list  دىكى مەزمۇنلارنى ھېسابلىغىلى ب�
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a Ubuntu Disc or the "
+"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
 "wrong architecture?"
 msgstr ""
-"بوغچا ھۆججىتى يوقكەن. قارىغاندا بۇ Ubuntu دىسكىسى ئەمەس ئوخشايدۇ، ياكى نەشرى "
+"بوغچا ھۆججىتى يوقكەن. قارىغاندا بۇ elementary OS دىسكىسى ئەمەس ئوخشايدۇ، ياكى نەشرى "
 "خاتا ئوخشايدۇ."
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
@@ -69,7 +69,7 @@ msgstr "CDنى قوشۇش مەغلۇپ بولدى"
 #, python-format
 msgid ""
 "There was a error adding the CD, the upgrade will abort. Please report this "
-"as a bug if this is a valid Ubuntu CD.\n"
+"as a bug if this is a valid elementary OS CD.\n"
 "\n"
 "The error message was:\n"
 "'%s'"
@@ -128,9 +128,9 @@ msgid ""
 "%s\n"
 "\n"
 " This can be caused by:\n"
-" * Upgrading to a pre-release version of Ubuntu\n"
-" * Running the current pre-release version of Ubuntu\n"
-" * Unofficial software packages not provided by Ubuntu\n"
+" * Upgrading to a pre-release version of elementary OS\n"
+" * Running the current pre-release version of elementary OS\n"
+" * Unofficial software packages not provided by elementary OS\n"
 "\n"
 msgstr ""
 "يۈكسەلدۈرۈشنى ھېسابلاۋاتقاندا ھەل قىلغىلى بولمايدىغان مەسىلە كۆرۈلدى:\n"
@@ -212,12 +212,12 @@ msgstr "meta بوغچىلارنى قىياس قىلغىلى بولمىدى"
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
-"version of Ubuntu you are running.\n"
+"version of elementary OS you are running.\n"
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
 "سىستېمىڭىزدا ubuntu-desktop، kubuntu-desktop، xubuntu-desktop ياكى edubuntu-"
-"desktop بوغچىلىرى يوق ئىكەن ھەم Ubuntu  نىڭ قايسى نەشرى ئىكەنلىكىنىمۇ "
+"desktop بوغچىلىرى يوق ئىكەن ھەم elementary OS  نىڭ قايسى نەشرى ئىكەنلىكىنىمۇ "
 "بىلگىلى بولمىدى.\n"
 "synaptic ياكى  apt-get نى ئىشلىتىپ يۇقىرىقىلارنىڭ بىرەرىنىڭ بوغچىلىرىنى "
 "ئورنىتىپ مەشغۇلاتنى داۋاملاشتۇرۇڭ."
@@ -769,13 +769,13 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
 msgstr ""
 "كومپيۇتېرىدىكى كۆرسىتىش كارتىسىنى ئۇبۇنتۇ 12.04 LTS تولۇق قوللىمايدۇ."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in Ubuntu 12.04 LTS for your Intel graphics hardware is limited "
+"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
 "and you may encounter problems after the upgrade. For more information see "
 "https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
 "continue with the upgrade?"
@@ -800,12 +800,12 @@ msgstr ""
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
-"Ubuntu 10.04 LTS.\n"
+"elementary OS 10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "كومپيۇتېرىڭىزدا NVIDIA 'nvidia' گرافىك قوزغىتىش پروگراممىسى "
-"ئىشلىتىلىۋېتىپتۇ. Ubuntu 10.04 LTS نەشرىدە بۇنىڭغا ماس كېلىدىغان قوزغىتىش "
+"ئىشلىتىلىۋېتىپتۇ. elementary OS 10.04 LTS نەشرىدە بۇنىڭغا ماس كېلىدىغان قوزغىتىش "
 "پروگراممىسى يوق. .\n"
 "\n"
 "داۋاملاشتۇرامسىز?"
@@ -813,13 +813,13 @@ msgstr ""
 #: ../DistUpgrade/DistUpgradeQuirks.py:579
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in Ubuntu 10.04 "
+"of this driver is available that works with your hardware in elementary OS 10.04 "
 "LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
 "كومپيۇتېرىڭىزدا AMD 'fglrx' گرافىك قوزغىتىش پروگراممىسى ئىشلىتىلىۋېتىپتۇ. "
-"Ubuntu 10.04 LTS نەشرىدە بۇنىڭغا ماس كېلىدىغان قوزغىتىش پروگراممىسى يوق. .\n"
+"elementary OS 10.04 LTS نەشرىدە بۇنىڭغا ماس كېلىدىغان قوزغىتىش پروگراممىسى يوق. .\n"
 "\n"
 "داۋاملاشتۇرامسىز?"
 
@@ -832,11 +832,11 @@ msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "سىستېمىڭىزدىكى CPU نىڭ تىپى i586 ئىكەن، بۇنىڭدا 'cmov' كېڭەيتىلمىسى يوق. "
 "بارلىق بوغچىلار i686 تىپلىق CPU نى ئىشلىتىپ ئەلالاشتۇرۇش ئىقتىدارىنى "
-"ئىشلىتىپ قۇرۇلغان. بۇ كومپيۇتېرىڭىزدا، سىستېمىڭىزنى Ubuntu نىڭ يېڭى نەشرىگە "
+"ئىشلىتىپ قۇرۇلغان. بۇ كومپيۇتېرىڭىزدا، سىستېمىڭىزنى elementary OS نىڭ يېڭى نەشرىگە "
 "يۈكسەلدۈرەلەيسىز."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:646
@@ -848,7 +848,7 @@ msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
-"Ubuntu release with this hardware."
+"elementary OS release with this hardware."
 msgstr ""
 "سىزنىڭ كومپيۇتېرىڭىز ARM CPU نى ئىشلىتىۋېتىپتۇ، بۇ ARMv6 architecture دىن "
 "كونا. karmic تىكى بارلىق بوغچىلار ARMv6 غا ماسلاشتۇرۇلغان بولۇپ، "
@@ -861,14 +861,14 @@ msgstr "init يوقكەن"
 #: ../DistUpgrade/DistUpgradeQuirks.py:668
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this type of "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
 "environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
 "سىستېمىڭىز init daemon يوق، مەۋھۇم مۇھىتتەك قىلىدۇ يەنى e.g. Linux-VServer "
-"دەك. Ubuntu 10.04 LTS دا بۇنداق مۇھىتتا ئىشلىمەيدۇ. ئالدى بىلەن مەۋھۇم "
+"دەك. elementary OS 10.04 LTS دا بۇنداق مۇھىتتا ئىشلىمەيدۇ. ئالدى بىلەن مەۋھۇم "
 "ماشىنىنىڭ تەڭشىكىنى يېڭىلاش تەلەپ قىلىنىدۇ.\n"
 "\n"
 "داۋاملاشتۇرامسىز?"
@@ -1286,7 +1286,7 @@ msgid_plural ""
 "still get support from the community."
 msgstr[0] ""
 "ئورنىتىلغان %(amount)d بوغچىغا Canonical ئەمدى تېخنىكىلىق ياردەم بەرمەيدۇ، "
-"ياردەمنى Ubuntu جامائىتى بېرىدۇ."
+"ياردەمنى elementary OS جامائىتى بېرىدۇ."
 
 #. FIXME: make those two separate lines to make it clear
 #. that the "%" applies to the result of ngettext
@@ -1618,7 +1618,7 @@ msgid "Distribution Upgrade"
 msgstr "تارقىتىلمىنى يۈكسەلدۈرۈش"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:19
-msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr "<b><big>ئۇبۇنتۇ 12.04 نەشرىگە يۈكسەلدۈرۈش</big></b>"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:20
@@ -1711,13 +1711,13 @@ msgid "Downloading file %(current)li of %(total)li"
 msgstr "ھۆججەت چۈشۈرۈۋاتىدۇ %(current)li / %(total)li"
 
 #: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
-msgid "Your Ubuntu release is not supported anymore."
+msgid "Your elementary OS release is not supported anymore."
 msgstr "سىز ئىشلىتىۋاتقان ئۇبۇنتۇغا ئەمدى تېخنىكىلىق ياردەم تەمىنلەنمەيدۇ."
 
 #: ../UpdateManager/UpdateManager.py:105
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
-"upgrade to a later version of Ubuntu."
+"upgrade to a later version of elementary OS."
 msgstr ""
 "بۇنىڭدىن كېيىن بىخەتەرلىك ياماقلىرىغا ياكى مۇھىم يېڭىلانمىلارغا "
 "ئېرىشەلمەيسىز. ئۇبۇنتۇنىڭ كېيىنكى نەشرىگە يۈكسەلدۈرۈڭ."
@@ -1847,12 +1847,12 @@ msgstr ""
 "سىزنىڭ كومپيۇتېرىڭىزدا ئىشلەتكىلى بولىدىغان يېڭىلانمىلار بار بولۇشى مۇمكىن."
 
 #: ../UpdateManager/UpdateManager.py:704
-msgid "Welcome to Ubuntu"
+msgid "Welcome to elementary OS"
 msgstr "ئۇبۇنتۇغا مەرھابا"
 
 #: ../UpdateManager/UpdateManager.py:705
 msgid ""
-"These software updates have been issued since this version of Ubuntu was "
+"These software updates have been issued since this version of elementary OS was "
 "released."
 msgstr ""
 "بۇ يۇمشاق دېتال يېڭىلانمىلىرى،  ئۇبۇنتۇنىڭ مەزكۇر نەشرى ئېلان قىلىنغاندىن "
@@ -1964,7 +1964,7 @@ msgstr "نەشر يۈكسەلدۈرۈش قورالىنى چۈشۈرۈۋاتىد�
 
 #: ../UpdateManager/UpdateManager.py:1115
 #, python-format
-msgid "<b>New Ubuntu release '%s' is available</b>"
+msgid "<b>New elementary OS release '%s' is available</b>"
 msgstr "<b>يېڭى ئۇبۇنتۇ نەشرى ‹%s› بار ئىكەن</b>"
 
 #. we assert a clean cache
@@ -2016,8 +2016,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "\n"
 "نورمال يۈكسەلدۈرۈشنى ھېسابلىغىلى بولمىدى، تۆۋەندىكى بۇيرۇقنى ئىجرا قىلىڭ: \n"
@@ -2144,8 +2144,8 @@ msgid ""
 "This can be caused by:\n"
 " * A previous upgrade which didn't complete\n"
 " * Problems with some of the installed software\n"
-" * Unofficial software packages not provided by Ubuntu\n"
-" * Normal changes of a pre-release version of Ubuntu"
+" * Unofficial software packages not provided by elementary OS\n"
+" * Normal changes of a pre-release version of elementary OS"
 msgstr ""
 "ئامالنىڭ بارىچە كۆپرەك يېڭىلانمىلارنى ئورنىتىش ئۈچۈن، قىسمى upgrade نى ئىجرا "
 "قىلىڭ. \n"
@@ -2255,7 +2255,7 @@ msgstr "تەڭشەك(_S)…"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
 msgstr "<b>ئۇبۇنتۇنىڭ يېڭى نەشرى بار ئىكەن، يۈكسەلدۈرەمسىز؟</b>"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
@@ -2271,7 +2271,7 @@ msgid "Yes, Upgrade Now"
 msgstr "ھەئە، ھازىرلا يۈكسەلدۈر"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new Ubuntu"
+msgid "You have declined to upgrade to the new elementary OS"
 msgstr "يېڭى ئۇبۇنتۇغا يۈكسەلدۈرۈشنى رەت قىلدىڭىز"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
@@ -2299,7 +2299,7 @@ msgid "Directory that contains the data files"
 msgstr "سانلىق-مەلۇمات ھۆججەتلىرىنى ئوز ئىچىگە ئالغان مۇندەرىجە"
 
 #: ../update-manager:67
-msgid "Check if a new Ubuntu release is available"
+msgid "Check if a new elementary OS release is available"
 msgstr "ئۇبۇنتۇنىڭ يېڭى نەشرى بارمۇ-يوق تەكشۈرۈش"
 
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
@@ -2365,8 +2365,8 @@ msgstr ""
 "قىلىش"
 
 #: ../do-release-upgrade:82
-msgid "Checking for a new Ubuntu release"
-msgstr "Ubuntu نىڭ يېڭى نەشرىنى تەكشۈرۈش"
+msgid "Checking for a new elementary OS release"
+msgstr "elementary OS نىڭ يېڭى نەشرىنى تەكشۈرۈش"
 
 #: ../do-release-upgrade:96
 msgid ""
@@ -2391,12 +2391,12 @@ msgid "Run 'do-release-upgrade' to upgrade to it."
 msgstr "يۈكسەلدۈرۈش ئۈچۈن 'do-release-upgrade' نى ئىجرا قىلىڭ."
 
 #: ../check-new-release-gtk:90
-msgid "Ubuntu %(version)s Upgrade Available"
+msgid "elementary OS %(version)s Upgrade Available"
 msgstr "ئۇبۇنتۇ %(version) نىڭ يۈكسەلدۈرمىسى بار ئىكەن"
 
 #: ../check-new-release-gtk:132
 #, c-format
-msgid "You have declined the upgrade to Ubuntu %s"
+msgid "You have declined the upgrade to elementary OS %s"
 msgstr "ئۇبۇنتۇ %s غا يۈكسەلدۈرۈشنى رەت قىلدىڭىز"
 
 #: ../check-new-release-gtk:192
@@ -2552,10 +2552,10 @@ msgstr ""
 #~ msgid "%.0f kB"
 #~ msgstr "%.0f kB"
 
-#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
+#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
 #~ msgstr "<b><big>ئۇبۇنتۇ 11.10 نەشرىگە يۈكسەلدۈرۈش</big></b>"
 
-#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
+#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
 #~ msgstr ""
 #~ "سىزنىڭ گرافىك قاتتىق دېتالىڭىزنى ئۇبۇنتۇ 11.04 تولۇق قوللىماسلىقى مۇمكىن."
 
@@ -2637,7 +2637,7 @@ msgstr ""
 #~ "ۋاقىتلىقتۇر."
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
+#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
 #~ "you may encounter problems after the upgrade. Do you want to continue with "
 #~ "the upgrade?"
 #~ msgstr ""
@@ -2647,13 +2647,13 @@ msgstr ""
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of Ubuntu Linux."
+#~ "upgrade to a later version of elementary OS Linux."
 #~ msgstr ""
 #~ "بۇنىڭدىن كېيىن بىخەتەرلىك ياكى مۇھىم يېڭىلاشلارنى ئېلىپ بارالمايسىز. "
 #~ "ئىشلىتىۋاتقان ئۇبۇنتۇنى ئەڭ يېڭى نەشرىگە يۈكسەلدۈرۈڭ."
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from Applications later."
 #~ msgstr ""
@@ -2662,7 +2662,7 @@ msgstr ""
 #~ "قىلسىڭىزمۇ بولىدۇ."
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "These software updates have been issued since this version of elementary OS was "
 #~ "released. If you don't want to install them now, choose \"Update Manager\" "
 #~ "from the Administration Menu later."
 #~ msgstr ""

@@ -58,8 +58,8 @@ A normal upgrade can not be calculated, please run:
 This can be caused by:
  * A previous upgrade which didn't complete
  * Problems with some of the installed software
- * Unofficial software packages not provided by Ubuntu
- * Normal changes of a pre-release version of Ubuntu""")
+ * Unofficial software packages not provided by elementary OS
+ * Normal changes of a pre-release version of elementary OS""")
             sys.exit(1)
 	self.screen.resume()
 
