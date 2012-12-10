@@ -1,0 +1,41 @@
+From 25708e9c8e395c465be8e9643127b3b43ef4ffb7 Mon Sep 17 00:00:00 2001
+From: Bastien Nocera <hadess@hadess.net>
+Date: Mon, 25 Jun 2012 15:35:41 +0000
+Subject: sound: Make sure the event sound stream stays unmuted
+
+Apply mute changes to the stream straight away so that we don't get a
+race with gvc_mixer_event_role_push_volume().
+See https://bugs.freedesktop.org/show_bug.cgi?id=51413 for details.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=677478
+---
+Index: gnome-control-center-3.4.2/panels/sound/gvc-mixer-event-role.c
+===================================================================
+--- gnome-control-center-3.4.2.orig/panels/sound/gvc-mixer-event-role.c	2011-08-26 20:43:10.000000000 +0200
++++ gnome-control-center-3.4.2/panels/sound/gvc-mixer-event-role.c	2012-11-19 11:43:54.866205657 +0100
+@@ -103,6 +103,10 @@
+ gvc_mixer_event_role_change_is_muted (GvcMixerStream *stream,
+                                       gboolean        is_muted)
+ {
++        /* Apply change straight away so that we don't get a race with
++         * gvc_mixer_event_role_push_volume().
++         * See https://bugs.freedesktop.org/show_bug.cgi?id=51413 */
++        gvc_mixer_stream_set_is_muted (stream, is_muted);
+         return update_settings (GVC_MIXER_EVENT_ROLE (stream),
+                                 is_muted, NULL);
+ }
+Index: gnome-control-center-3.4.2/panels/sound-nua/gvc-mixer-event-role.c
+===================================================================
+--- gnome-control-center-3.4.2.orig/panels/sound-nua/gvc-mixer-event-role.c	2012-11-19 11:43:54.110205619 +0100
++++ gnome-control-center-3.4.2/panels/sound-nua/gvc-mixer-event-role.c	2012-11-19 11:43:54.866205657 +0100
+@@ -103,6 +103,10 @@
+ gvc_mixer_event_role_change_is_muted (GvcMixerStream *stream,
+                                       gboolean        is_muted)
+ {
++        /* Apply change straight away so that we don't get a race with
++         * gvc_mixer_event_role_push_volume().
++         * See https://bugs.freedesktop.org/show_bug.cgi?id=51413 */
++        gvc_mixer_stream_set_is_muted (stream, is_muted);
+         return update_settings (GVC_MIXER_EVENT_ROLE (stream),
+                                 is_muted, NULL);
+ }

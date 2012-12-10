@@ -38,3 +38,5 @@ git_wacom_translations.patch
 deal_with_null_ssid.patch
 Brightness-fix-for-gnome-settings-daemon-changes.patch
 git_no_preferred_mode_in_clone.patch
+git_unmute_sound_event.patch
+git_update_keyring_password.patch
