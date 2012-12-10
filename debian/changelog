@@ -1,3 +1,12 @@
+qt4-x11 (4:4.8.1-0ubuntu4.3) precise-security; urgency=low
+
+  * SECURITY UPDATE: fix for SSL compression "CRIME" attack
+    - debian/patches/CVE-2012-4929.patch: Disable SSL compression by default
+    - CVE-2012-4929
+    - LP: #1057578
+
+ -- Seth Arnold <seth.arnold@canonical.com>  Mon, 22 Oct 2012 10:54:05 -0700
+
 qt4-x11 (4:4.8.1-0ubuntu4.2) precise-proposed; urgency=low
 
   * Add kubuntu_35_text_cursor_position.diff fixes LP: #1024402

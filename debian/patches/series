@@ -57,3 +57,4 @@ kubuntu_97_a11y_qt_and_qml_backport.diff
 kubuntu_31_unity_workarea_atom.diff
 kubuntu_33_shaped_drag.diff
 kubuntu_35_text_cursor_position.diff
+CVE-2012-4929.patch
