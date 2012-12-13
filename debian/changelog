@@ -1,0 +1,68 @@
+xdg-user-dirs-gtk (0.9-0ubuntu1) precise; urgency=low
+
+  * New upstream version:
+    - Port to Gtk 3  
+    - Add Unity and LXDE to desktop file OnlyShowIn
+  * debian/control.in: build-depends on gtk3
+  * debian/patches/onlyshowin_unity.patch:
+  * debian/patches/gtk_init_only_when_required.patch:
+    - dropped, the fixes are in the new version
+  * debian/sources/format: use v3
+  * debian/watch: use xz
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 04 Apr 2012 11:47:23 +0200
+
+xdg-user-dirs-gtk (0.8-1ubuntu2) oneiric; urgency=low
+
+  * debian/patches/nodisplay_autostart.patch:
+    - Don't show in "Startup Applications" (LP: #803917)
+  * debian/patches/onlyshowin_unity.patch:
+    - Add Unity to OnlyShowIn (LP: #803519)
+
+ -- Michael Terry <mterry@ubuntu.com>  Fri, 01 Jul 2011 13:51:52 +0100
+
+xdg-user-dirs-gtk (0.8-1ubuntu1) lucid; urgency=low
+
+  * debian/patches/gtk_init_only_when_required.patch:
+    - do the gtk init only when a dialog is going to be displayed since that's
+      not required otherwise and the call is expensive on start
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Mon, 25 Jan 2010 17:24:48 +0100
+
+xdg-user-dirs-gtk (0.8-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+  * debian/control.in:
+    + Line-wrap control fields.
+    + Build depend on intltool.
+    + Update Standards-Version to 3.8.0, no additional changes needed.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 07 Mar 2009 20:53:29 +0100
+
+xdg-user-dirs-gtk (0.7-1) unstable; urgency=low
+
+  * New upstream bugfix release with many translation updates:
+    + debian/patches/01_no_desktop_bookmark.patch,
+      debian/patches/90_from_svn_handle_en_us_variants.patch:
+      - Dropped, merged upstream.
+  * debian/control.in:
+    + Update Standards-Version to 3.7.3, no additional changes needed.
+    + Move homepage to the Homepage field and fix the URL.
+  * debian/rules:
+    + Add -Wl,-z,defs to LDFLAGS and actually append.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 12 Feb 2008 15:02:40 +0100
+
+xdg-user-dirs-gtk (0.6-1) unstable; urgency=low
+
+  * Initial version (Closes: #413955).
+  * debian/patches/01_no_desktop_bookmark.patch:
+    + Don't bookmark the desktop directory since it's already handled
+      as a special case by the GNOME desktop applications (LP: #122602)
+      Patch taken from Ubuntu.
+  * debian/patches/90_from_svn_handle_en_us_variants.patch:
+    + patch from SVN, handle en_US variants correctly. Patch taken from
+      Ubuntu.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu,  8 Mar 2007 07:16:00 +0100
+
