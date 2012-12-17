@@ -16,12 +16,8 @@ set -e
 
 case "$1" in
     install|upgrade)
-        # this is replaced to be a real file an not a symlink in version
-        # 0.134.2, dpkg will not remove the symlink and put the new
-        #  file as .dpkg-new (can be removed post-lucid)
-	if [ -L /etc/update-motd.d/91-release-upgrade ]; then
+	    # ditch the resource-hungry update checks from tty login
 	    rm -f /etc/update-motd.d/91-release-upgrade
-	fi
     ;;
 
     abort-upgrade)
