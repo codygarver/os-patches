@@ -854,7 +854,7 @@ color : @fg_color
             ['/bin/busybox', 'tail', '-f', '/var/log/installer/debug',
                               '-f', '/var/log/syslog', '-q'],
             None, 0, None, None)
-        self.vte.set_font_from_string("Droid Sans Mono 10")
+        self.vte.set_font_from_string("Droid Sans 10")
         self.vte.show()
         # FIXME shrink the window horizontally instead of locking the window size.
         self.live_installer.set_resizable(False)
