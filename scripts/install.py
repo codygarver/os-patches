@@ -45,6 +45,11 @@ class Install(install_misc.InstallBase):
     def __init__(self):
         """Initial attributes."""
 
+        if not os.path.exists('/var/lib/ubiquity'):
+            os.makedirs('/var/lib/ubiquity')
+        with open('/var/lib/ubiquity/started-installing', 'a'):
+            pass
+
         self.update_proc = None
 
         if os.path.isdir('/rofs'):
@@ -184,19 +189,20 @@ class Install(install_misc.InstallBase):
             subarch = None
 
         for prefix in ('vmlinux', 'vmlinuz'):
-            kernel = os.path.join(self.casper_path, prefix)
-            if os.path.exists(kernel):
-                return kernel
-
-            if subarch:
-                kernel = os.path.join(self.casper_path, subarch, prefix)
-                if os.path.exists(kernel):
+            for suffix in ('', '.efi', '.efi.signed'):
+                kernel = os.path.join(self.casper_path, prefix)
+                if os.path.exists(kernel + suffix):
                     return kernel
 
-                kernel = os.path.join(self.casper_path,
-                                      '%s-%s' % (prefix, subarch))
-                if os.path.exists(kernel):
-                    return kernel
+                if subarch:
+                    kernel = os.path.join(self.casper_path, subarch, prefix)
+                    if os.path.exists(kernel + suffix):
+                        return kernel
+
+                    kernel = os.path.join(self.casper_path,
+                                          '%s-%s' % (prefix, subarch))
+                    if os.path.exists(kernel + suffix):
+                        return kernel
 
         return None
 
@@ -263,6 +269,24 @@ class Install(install_misc.InstallBase):
             if subarch == 'efi':
                 keep.add('grub-efi')
                 keep.add('grub-efi-amd64')
+                efi_vars = "/sys/firmware/efi/vars"
+                sb_var = os.path.join(
+                    efi_vars,
+                    "SecureBoot-8be4df61-93ca-11d2-aa0d-00e098032b8c",
+                    "data")
+                if os.path.exists(sb_var):
+                    with open(sb_var, "rb") as sb_var_file:
+                        if sb_var_file.read(1) == b"\x01":
+                            keep.add('grub-efi-amd64-signed')
+                            keep.add('shim-signed')
+                            try:
+                                altmeta = self.db.get(
+                                    'base-installer/kernel/altmeta')
+                                if altmeta:
+                                    altmeta = '-%s' % altmeta
+                            except debconf.DebconfError:
+                                altmeta = ''
+                            keep.add('linux-signed-generic%s' % altmeta)
             else:
                 keep.add('grub')
                 keep.add('grub-pc')
@@ -509,16 +533,42 @@ class Install(install_misc.InstallBase):
             prefix = os.path.basename(kernel).split('-', 1)[0]
             release = os.uname()[2]
             target_kernel = os.path.join(bootdir, '%s-%s' % (prefix, release))
-            osextras.unlink_force(target_kernel)
-            install_misc.copy_file(self.db, kernel, target_kernel, md5_check)
-            os.lchown(target_kernel, 0, 0)
-            os.chmod(target_kernel, 0644)
-            st = os.lstat(kernel)
-            try:
-                os.utime(target_kernel, (st.st_atime, st.st_mtime))
-            except Exception:
-                # We can live with timestamps being wrong.
-                pass
+            copies = []
+
+            # ISO9660 images may have to use .efi rather than .efi.signed in
+            # order to support being booted using isolinux, which must abide
+            # by archaic 8.3 restrictions.
+            for suffix in (".efi", ".efi.signed"):
+                if os.path.exists(kernel + suffix):
+                    signed_kernel = kernel + suffix
+                    break
+            else:
+                signed_kernel = None
+
+            if os.path.exists(kernel):
+                copies.append((kernel, target_kernel))
+            elif signed_kernel is not None:
+                # No unsigned kernel.  We'll construct it using sbsigntool.
+                copies.append((signed_kernel, target_kernel))
+
+            if signed_kernel is not None:
+                copies.append((signed_kernel, "%s.efi.signed" % target_kernel))
+
+            for source, target in copies:
+                osextras.unlink_force(target)
+                install_misc.copy_file(self.db, source, target, md5_check)
+                os.lchown(target, 0, 0)
+                os.chmod(target, 0o644)
+                st = os.lstat(source)
+                try:
+                    os.utime(target, (st.st_atime, st.st_mtime))
+                except Exception:
+                    # We can live with timestamps being wrong.
+                    pass
+
+            if not os.path.exists(kernel) and signed_kernel is not None:
+                # Construct the unsigned kernel.
+                subprocess.check_call(["sbattach", "--remove", target_kernel])
 
         os.umask(old_umask)
 

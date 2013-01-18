@@ -1,3 +1,56 @@
+ubiquity (2.10.23) precise-proposed; urgency=low
+
+  * Honour base-installer/kernel/altmeta when deciding which kernels to
+    install or keep installed.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 06 Dec 2012 17:20:32 +0000
+
+ubiquity (2.10.22) precise-proposed; urgency=low
+
+  [ Dmitrijs Ledkovs ]
+  * Make user-setup-encrypted-swap wait until partitioning has finished
+    before attempting to adjust /target/etc/fstab. (LP: #1024343)
+    (LP: #1068178)
+
+  [ Colin Watson ]
+  * Don't remove kernel headers just because we're removing signed kernel
+    images of the same flavour (LP: #1070427).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 01 Dec 2012 01:02:01 +0000
+
+ubiquity (2.10.21) precise-proposed; urgency=low
+
+  [ Colin Watson ]
+  * Fix missing parentheses that caused removable installation media
+    sometimes to be selected as the default GRUB device (LP: #987418).
+  * Support UEFI Secure Boot (LP: #1075181):
+    - Try to install a signed kernel if base-installer asks for one, and
+      don't leave signed kernels installed if it doesn't.
+    - If the SecureBoot EFI variable is set, then ensure that
+      grub-efi-amd64-signed and shim-signed remain installed.
+    - Copy the signed kernel from /cdrom if it is not in the squashfs.  If
+      there is a signed kernel there but no unsigned one, then use sbattach
+      to remove the signature and construct the unsigned kernel on the fly.
+  * Automatic update of included source packages: base-installer
+    1.122ubuntu7.2, grub-installer 1.68ubuntu5.1.
+
+  [ Mario Limonciello ]
+  * Don't let oem-config crash from an invalid server return on the timezone
+    page. (LP: #887879)
+
+  [ Dmitrijs Ledkovs ]
+  * Do not preseed grub-install, if we are not proceeding to install. This
+    should fix ValueError, I/O operation on closed file (LP: #1027648)
+    (LP: #792652)
+  * Prevent progress label to expand & shrink the window (LP: #1046241)
+
+  [ Jonathan Riddell ]
+  * Change from a KApplication to a QApplication to avoid using DBus, DBus
+    as needed by KApplication no longer works with our multiple user changes 
+    LP: #1055967
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 21 Nov 2012 22:55:34 +0000
+
 ubiquity (2.10.20) precise-proposed; urgency=low
 
   * Fix ubiquity upstart job to use /etc/default/locale as the source of

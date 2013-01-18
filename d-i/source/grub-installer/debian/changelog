@@ -1,3 +1,11 @@
+grub-installer (1.68ubuntu5.1) precise-proposed; urgency=low
+
+  * If the SecureBoot EFI variable is set, then install
+    grub-efi-amd64-signed rather than grub-efi, along with shim-signed if
+    available; adjust removal handling to match (LP: #1075181).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 12 Nov 2012 00:55:04 +0000
+
 grub-installer (1.68ubuntu5) precise; urgency=low
 
   * Update Ubuntu-specific translations from Launchpad.
