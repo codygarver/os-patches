@@ -231,7 +231,7 @@ user_widget_primitive_draw_cb_gtk_3 (GtkWidget *widget,
   
   GtkAllocation allocation;
   gtk_widget_get_allocation (widget, &allocation);
-  x = allocation.x + 13;        
+  x = allocation.x + 3;        
   y = allocation.height / 2;
   
   cairo_arc (cr, x, y, 3.0, 0.0, 2 * G_PI);;
@@ -256,6 +256,7 @@ user_widget_draw_usericon_gtk_3 (GtkWidget *widget,
   if (priv->using_personal_icon == FALSE)
     return FALSE;
   
+  return FALSE;
   draw_album_border (widget, FALSE);  
   return FALSE;
 }
@@ -278,6 +279,7 @@ user_widget_draw_usericon_gtk_2 (GtkWidget *widget,
   if (priv->using_personal_icon == FALSE)
     return FALSE;
   
+  return FALSE;
   draw_album_border (widget, FALSE);  
   return FALSE;
 }
