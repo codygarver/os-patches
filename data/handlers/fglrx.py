@@ -19,20 +19,25 @@ class FglrxDriver(XorgDriverHandler):
     def __init__(self, backend, package=None):
         self._free = False
 
+        name=_('ATI/AMD proprietary FGLRX graphics driver')
+        description=_('3D-accelerated proprietary graphics driver for '
+                      'ATI cards.')
+        rationale=_('This driver is required to fully utilise the 3D '
+                    'potential of some ATI graphics cards, as well as provide '
+                    '2D acceleration of newer cards.')
         if package and 'update' in package:
             name=_('ATI/AMD proprietary FGLRX graphics driver (post-release updates)')
-        else:
-            name=_('ATI/AMD proprietary FGLRX graphics driver')
+        elif package and 'experimental' in package:
+            name=_('ATI/AMD proprietary FGLRX graphics driver (**experimental** beta)')
+            description = None
+            rationale = None
 
         XorgDriverHandler.__init__(self, backend, (package and
             package.replace('-', '_') or 'fglrx'), (package and
             package or 'fglrx'), None, None, add_modules=['glx'],
             disable_modules=[], name=name,
-            description=_('3D-accelerated proprietary graphics driver for '
-                'ATI cards.'),
-            rationale=_('This driver is required to fully utilise the 3D '
-                'potential of some ATI graphics cards, as well as provide '
-                '2D acceleration of newer cards.'))
+            description=description,
+            rationale=rationale)
 
         (self._alternatives, self._other_alternatives) = self._get_alternatives()
         self.needs_kernel_headers = True
@@ -85,13 +90,13 @@ class FglrxDriver(XorgDriverHandler):
         XorgDriverHandler.enable(self)
         
         # Set the alternative to FGLRX
-        fglrx_alternative = self._alternatives.get_alternative_by_name(self.package, ignore_pattern='-updates')
+        fglrx_alternative = self._alternatives.get_alternative_by_name('fglrx', ignore_pattern='-updates')
         if not fglrx_alternative:
             logging.error('%s: get_alternative_by_name(%s) returned nothing' % (
                 self.id(), self.package))
             return
         self._alternatives.set_alternative(fglrx_alternative)
-        other_fglrx_alternative = self._other_alternatives.get_alternative_by_name(self.package)
+        other_fglrx_alternative = self._other_alternatives.get_alternative_by_name('fglrx')
         if other_fglrx_alternative:
             self._other_alternatives.set_alternative(other_fglrx_alternative)
         subprocess.call(['update-initramfs', '-u'])
@@ -99,9 +104,9 @@ class FglrxDriver(XorgDriverHandler):
 
     def enabled(self):
         # See if fglrx is the current alternative
-        target_alternative = self._alternatives.get_alternative_by_name(self.package)
+        target_alternative = self._alternatives.get_alternative_by_name('fglrx')
         current_alternative = self._alternatives.get_current_alternative()
-        other_target_alternative = self._other_alternatives.get_alternative_by_name(self.package)
+        other_target_alternative = self._other_alternatives.get_alternative_by_name('fglrx')
         other_current_alternative = self._other_alternatives.get_current_alternative()
 
         logging.debug('fglrx.enabled(%s): target_alt %s current_alt %s other target alt %s other current alt %s',
@@ -159,3 +164,7 @@ class FglrxDriver(XorgDriverHandler):
 class FglrxDriverUpdate(FglrxDriver):
     def __init__(self, backend):
         FglrxDriver.__init__(self, backend, 'fglrx-updates')
+
+class FglrxDriverExperimental9(FglrxDriver):
+    def __init__(self, backend):
+        FglrxDriver.__init__(self, backend, 'fglrx-experimental-9')

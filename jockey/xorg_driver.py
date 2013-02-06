@@ -108,6 +108,16 @@ class XorgDriverHandler(KernelModuleHandler):
                         self.module, self.package, self.xorg_driver, ', '.join(pkg_abis), cur_abi)
                 return False
 
+            # Do not install drivers which don't support Quantal's
+            # backported xserver for precise if the new X stack is
+            # already installed
+            q_lts_xserver_installed = OSLib.inst.quantal_xserver_installed()
+            q_lts_xserver_supported = OSLib.inst.quantal_xserver_supported(self.package)
+            if q_lts_xserver_installed and not q_lts_xserver_supported:
+                logging.debug('XorgDriverHandler(%s, %s, %s): Disabling as package is not compatible with Q-LTS X.org',
+                        self.module, self.package, self.xorg_driver)
+                return False
+
         return KernelModuleHandler.available(self)
 
     def enabled(self):

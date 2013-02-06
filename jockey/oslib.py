@@ -139,6 +139,7 @@ class OSLib:
         self.apt_trusted_keyring = '/etc/apt/trusted.gpg.d/jockey-drivers.gpg'
 
         self._current_xorg_video_abi = None
+        self._quantal_xserver = 'xserver-xorg-core-lts-quantal'
 
     # 
     # The following package related functions use PackageKit; if that does not
@@ -883,6 +884,24 @@ class OSLib:
             return abis
         else:
             return None
+
+    def quantal_xserver_installed(self):
+        '''Return whether quantal's backported xserver is installed'''
+        return self.package_installed(self._quantal_xserver)
+
+    def quantal_xserver_supported(self, package):
+        '''Return whether the package supports quantal's backported xserver'''
+        process = subprocess.Popen(['apt-cache', 'show', package],
+                                    stdout=subprocess.PIPE)
+        out = process.communicate()[0]
+        if process.returncode == 0:
+            m = re.search('^Depends: (.*)$', out, re.M)
+            if m:
+                for dep in m.group(1).split(','):
+                    if not dep.strip().__contains__(self._quantal_xserver):
+                        continue
+                    return True
+        return False
 
     #
     # Internal helper methods

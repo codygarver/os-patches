@@ -1,3 +1,29 @@
+jockey (0.9.7-0ubuntu7.7) precise-proposed; urgency=low
+
+  * data/handlers/fglrx.py:
+    - Fix typo which caused the handler to fail (LP: #1080588).
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Mon, 07 Jan 2013 10:55:32 +0100
+
+jockey (0.9.7-0ubuntu7.6) precise-proposed; urgency=low
+
+  * jockey/oslib.py, jockey/xorg_driver.py:
+    - Add some checks for quantal's backported xserver so as not to
+      provide drivers which don't support it (LP: #1080588).
+  * data/handlers/fglrx.py:
+    - Make sure to mark the experimental driver as such (LP: #1078290).
+    - Always pass "fglrx" to get the alternative name or jockey will
+      fail to set the correct alternative.
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 21 Nov 2012 13:18:40 +0100
+
+jockey (0.9.7-0ubuntu7.5) precise-proposed; urgency=low
+
+  * data/handlers/fglrx.py:
+    - Add support for the experimental-9 flavour (LP: #1078290).
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 13 Nov 2012 15:20:59 +0100
+
 jockey (0.9.7-0ubuntu7.4) precise-proposed; urgency=low
 
   * data/handlers/nvidia.py:
