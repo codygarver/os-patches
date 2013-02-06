@@ -1,3 +1,14 @@
+ubiquity (2.10.24) precise; urgency=low
+
+  [ Jesse Sung ]
+  * Fix multiple issues with Back/Stop and Continue/Connect buttons on
+    wireless page (LP: #883615).
+
+  [ Kent Baxley ]
+  * Hide the back button at the beginning of oem-config (LP: #1095692).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 10 Jan 2013 12:32:41 +0000
+
 ubiquity (2.10.23) precise-proposed; urgency=low
 
   * Honour base-installer/kernel/altmeta when deciding which kernels to
