@@ -58,3 +58,6 @@ kubuntu_31_unity_workarea_atom.diff
 kubuntu_33_shaped_drag.diff
 kubuntu_35_text_cursor_position.diff
 CVE-2012-4929.patch
+CVE-2012-5624.patch
+CVE-2012-6093.patch
+CVE-2013-0254.patch

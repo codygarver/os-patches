@@ -1,3 +1,29 @@
+qt4-x11 (4:4.8.1-0ubuntu4.4) precise-security; urgency=low
+
+  * SECURITY UPDATE: information disclosure via MITM redirect
+    - debian/patches/CVE-2012-5624.patch: don't redirect to file URLs in
+      src/declarative/qml/qdeclarativexmlhttprequest.cpp.
+    - CVE-2012-5624
+  * SECURITY UPDATE: incorrect errors with certificate verification
+    - debian/patches/CVE-2012-6093.patch: use openssl access functions to
+      properly handle layout changes in
+      src/network/ssl/qsslsocket_openssl.cpp,
+      src/network/ssl/qsslsocket_openssl_symbols.cpp,
+      src/network/ssl/qsslsocket_openssl_symbols_p.h.
+    - CVE-2012-6093
+  * SECURITY UPDATE: shared memory segments incorrect permissions
+    - debian/patches/CVE-2013-0254.patch: set appropriate permissions in
+      src/corelib/kernel/qsharedmemory_unix.cpp,
+      src/corelib/kernel/qsystemsemaphore_unix.cpp,
+      src/gui/image/qnativeimage.cpp,
+      src/gui/image/qpixmap_x11.cpp,
+      src/plugins/platforms/xcb/qxcbwindowsurface.cpp,
+      src/plugins/platforms/xlib/qxlibwindowsurface.cpp,
+      tools/qvfb/qvfbshmem.cpp.
+    - CVE-2013-0254
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 06 Feb 2013 08:21:20 -0500
+
 qt4-x11 (4:4.8.1-0ubuntu4.3) precise-security; urgency=low
 
   * SECURITY UPDATE: fix for SSL compression "CRIME" attack
