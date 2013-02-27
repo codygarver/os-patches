@@ -29,9 +29,6 @@ build/gnome-control-center:: $(DEB_INSTALL_MANPAGES_gnome-control-center)
 
 clean::
 	rm -f $(DEB_INSTALL_MANPAGES_gnome-control-center)
-	rm shell/cc-shell-marshal.c
-	rm shell/cc-shell-marshal.h
-
 
 
 binary-post-install/gnome-control-center-data::
