@@ -457,7 +457,7 @@ def _lsb_release():
               'Description': 'Debian GNU/Linux unstable (sid)',
               'Release': 'unstable'}
     try:
-        out = Popen(['lsb_release', '-idrc'], stdout=PIPE).communicate()[0]
+        out = Popen(['lsb_release', '-uidrc'], stdout=PIPE).communicate()[0]
         # Convert to unicode string, needed for Python 3.1
         out = out.decode("utf-8")
         result.update(l.split(":\t") for l in out.split("\n") if ':\t' in l)
@@ -483,9 +483,6 @@ def get_distro(id=None, codename=None, description=None, release=None):
         description = result['Description']
         release = result['Release']
     if id == "Ubuntu":
-        return UbuntuDistribution(id, codename, description, release)
-    if id == "elementary OS":
-        codename = result['Suite']
         return UbuntuDistribution(id, codename, description, release)
     elif id == "Debian":
         return DebianDistribution(id, codename, description, release)
