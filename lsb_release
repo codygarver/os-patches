@@ -91,7 +91,6 @@ def main():
             print distinfo.get('CODENAME', 'n/a')
         else:
             print 'Codename:\t%s' % distinfo.get('CODENAME', 'n/a')
-            print 'Suite:\t%s' % distinfo.get('SUITE', 'n/a')
 
 if __name__ == '__main__':
     main()

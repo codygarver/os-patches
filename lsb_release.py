@@ -274,7 +274,7 @@ def get_lsb_information():
 def get_distro_information():
     lsbinfo = get_lsb_information()
     # OS is only used inside guess_debian_release anyway
-    for key in ('ID', 'RELEASE', 'CODENAME', 'SUITE', 'DESCRIPTION',):
+    for key in ('ID', 'RELEASE', 'CODENAME', 'DESCRIPTION',):
         if key not in lsbinfo:
             distinfo = guess_debian_release()
             distinfo.update(lsbinfo)
