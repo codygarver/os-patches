@@ -12,8 +12,8 @@ check_deb_arch () {
 }
 
 lsb_info() {
-    [ -f /etc/lsb-release ] || return 0
-    grep "^$1=" /etc/lsb-release |\
+    [ -f /etc/upstream-release/lsb-release ] || return 0
+    grep "^$1=" /etc/upstream-release/lsb-release |\
         sed -e 's/\(.*\)/\1/;s/^[^=]*=//; s/^"//; s/"$//' | tr 'A-Z' 'a-z' || true
 }
 
@@ -39,7 +39,7 @@ for device in $(list-devices usb-partition); do
 		db_get driver-injection-disk/load
 		if [ "$RET" = true ]; then
 			if mountmedia driver-injection-disk; then
-				dir=/media/$(lsb_info DISTRIB_ID)-drivers/$(lsb_info DISTRIB_SUITE)
+				dir=/media/$(lsb_info DISTRIB_ID)-drivers/$(lsb_info DISTRIB_CODENAME)
 				for filename in $dir/*.deb $dir/*.udeb $dir/*.ude; do
 					if [ -f "$filename" ] && check_deb_arch "$filename"; then
 						log "installing driver package $filename"

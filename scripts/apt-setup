@@ -2,12 +2,10 @@
 
 . /usr/share/debconf/confmodule
 
-. /etc/lsb-release
-
-if CODENAME="$(lsb_release -cs)"; then
+if CODENAME="$(lsb_release -ucs)"; then
 	# TODO cjwatson 2006-04-07: wrong for Debian, I think
-	db_set mirror/suite "$DISTRIB_SUITE"
-	db_set mirror/codename "$DISTRIB_SUITE"
+	db_set mirror/suite "$CODENAME"
+	db_set mirror/codename "$CODENAME"
 fi
 
 rm -f /target/etc/apt/sources.list
