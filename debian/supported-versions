@@ -52,8 +52,8 @@ lsb_debian() {
 
 # If we have lsb_release, use it
 if type lsb_release >/dev/null 2>/dev/null; then
-    DISTRO="`lsb_release -is`" || DISTRO=""
-    RELEASE="`lsb_release -rs`" || RELEASE=""
+    DISTRO="`lsb_release -uis`" || DISTRO=""
+    RELEASE="`lsb_release -urs`" || RELEASE=""
 fi
     
 if [ -n "$DISTRO" -a -n "$RELEASE" ]; then
