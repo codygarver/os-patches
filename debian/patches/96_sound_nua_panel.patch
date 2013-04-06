@@ -13341,7 +13341,7 @@ Index: gnome-control-center-3.4.2/panels/sound-nua/gvc-mixer-ui-device.c
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
 +++ gnome-control-center-3.4.2/panels/sound-nua/gvc-mixer-ui-device.c	2012-06-21 17:46:17.517959206 +0200
-@@ -0,0 +1,664 @@
+@@ -0,0 +1,671 @@
 +/* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 +/*
 + * gvc-mixer-ui-device.c
@@ -13808,6 +13808,13 @@ Index: gnome-control-center-3.4.2/panels/sound-nua/gvc-mixer-ui-device.c
 +            }
 +
 +			g_free(canonical_name);
++
++			if (p->n_sinks == 0 && p->n_sources == 0) {
++				/* TODO: Right now, make sure this profile is not added, because when selected,
++				   the item will disappear and there's no way to get it back. In the long
++				   term, make sure we handle the OFF profile better. */
++				continue;
++			}
 +
 +			g_debug("Adding profile to combobox: '%s' - '%s'", p->profile, p->human_profile);
 +            g_hash_table_insert(added_profiles, g_strdup(p->profile), p);

@@ -1,3 +1,15 @@
+gnome-control-center (1:3.4.2-0ubuntu0.11) precise; urgency=low
+
+  * Added debian/patches/remove-manual-proxy-in-auto.patch to also remove
+    the manual proxy setting when in AUTO mode. (LP: #1100587)
+    
+  [ David Henningsson ]
+  * debian/patches/96_sound_nua_panel.patch:
+    - don't allow to turn bluetooth devices off, or they are dropped from
+      the devices list with is no way to turn them back on (lp: #1071561)
+
+ -- Margarita Manterola <marga@google.com>  Tue, 05 Feb 2013 11:55:06 +0100
+
 gnome-control-center (1:3.4.2-0ubuntu0.9) precise; urgency=low
 
   * debian/UbuntuLogo.png: logo was saying 12.04.1 LTS, go back to just
