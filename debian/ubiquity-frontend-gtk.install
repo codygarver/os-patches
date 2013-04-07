@@ -10,3 +10,5 @@ pixmaps/panel.png usr/share/ubiquity/pixmaps
 
 pixmaps/partitioner usr/share/ubiquity/pixmaps
 pixmaps/windows_square.png usr/share/ubiquity/pixmaps
+
+plank-item-ubiquity/ubiquity.dockitem etc/skel/.config/plank/dock1/launchers/
