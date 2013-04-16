@@ -1,0 +1,71 @@
+Source: activity-log-manager
+Section: utils
+Priority: optional
+Maintainer: Siegfried-Angel Gevatter Pujals <rainct@ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~),
+               intltool (>= 0.35.0),
+               valac (>= 0.10.0),
+               libzeitgeist-dev,
+               libgtk-3-dev,
+               libgee-dev,
+               libglib2.0-dev,
+               libgnome-control-center-dev,
+               libpolkit-gobject-1-dev,
+               desktop-file-utils,
+               dh-translations
+Homepage: https://launchpad.net/activity-log-manager
+Standards-Version: 3.9.3
+
+Package: activity-log-manager
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         activity-log-manager-common (= ${source:Version}),
+         zeitgeist-core (>= 0.8~) | zeitgeist (>= 0.8~),
+Description: blacklist configuration user interface for Zeitgeist
+ Zeitgeist is a service which logs the user's activities and events (files
+ opened, websites visited, conversations held with other people, etc.) and
+ makes the relevant information available to other applications.
+ .
+ It serves as a comprehensive activity log and also makes it possible to
+ determine relationships between items based on usage patterns.
+ .
+ This package contains Activity Log Manager, a graphical user interface which
+ lets you control what gets logged by Zeitgeist. It supports setting up
+ blacklists according to several criteria (such as application or file types),
+ temporarily stopping all logging as well as deleting recent events.
+
+Package: activity-log-manager-control-center
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         activity-log-manager-common (= ${source:Version}),
+         zeitgeist-core (>= 0.8~) | zeitgeist (>= 0.8~),
+Breaks: whoopsie (<= 0.1.10), activity-log-manager (<< 0.9.4-0ubuntu3.1)
+Replaces: whoopsie (<= 0.1.10), activity-log-manager (<< 0.9.4-0ubuntu3.1)
+Description: blacklist configuration for Zeitgeist (control center integration)
+ Zeitgeist is a service which logs the user's activities and events (files
+ opened, websites visited, conversations held with other people, etc.) and
+ makes the relevant information available to other applications.
+ .
+ It serves as a comprehensive activity log and also makes it possible to
+ determine relationships between items based on usage patterns.
+ .
+ This package contains the gnome control center integration.
+ It lets you control what gets logged by Zeitgeist. It supports setting up
+ blacklists according to several criteria (such as application or file types),
+ temporarily stopping all logging as well as deleting recent events.
+
+Package: activity-log-manager-common
+Architecture: all
+Depends: ${misc:Depends},
+Description: blacklist configuration for Zeitgeist (assets)
+ Zeitgeist is a service which logs the user's activities and events (files
+ opened, websites visited, conversations held with other people, etc.) and
+ makes the relevant information available to other applications.
+ .
+ It serves as a comprehensive activity log and also makes it possible to
+ determine relationships between items based on usage patterns.
+ .
+ This package contains the assets for either activity-log-manager or
+ activity-log-manager-control-center.

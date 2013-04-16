@@ -1,0 +1,5 @@
+01_move_to_personal_section.patch
+02_handle_upstart_in_whoopsie.patch
+03_correct_path_to_whoopsie_preferences.patch
+04_correct_privacy_policy_url.patch
+05_fix_userdirs.patch

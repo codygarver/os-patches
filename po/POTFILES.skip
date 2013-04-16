@@ -1,0 +1,5 @@
+src/activity-log-manager.c
+src/alm.c
+src/applications-widget.c
+src/files-widget.c
+src/history-widget.c

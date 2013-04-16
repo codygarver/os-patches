@@ -1,0 +1,13 @@
+=== modified file 'src/diagnostics-widget.c'
+--- activity-log-manager-0.9.4.orig/src/diagnostics-widget.c	2012-03-17 12:59:56 +0000
++++ activity-log-manager-0.9.4/src/diagnostics-widget.c	2012-04-11 13:49:06 +0000
+@@ -7,7 +7,7 @@
+ static WhoopsiePreferences* proxy = NULL;
+ 
+ #define POL_PATH "com.ubuntu.whoopsiepreferences.change"
+-#define PRIVACY_URL "http://www.ubuntu.com/aboutus/privacypolicy"
++#define PRIVACY_URL "http://www.ubuntu.com/aboutus/privacypolicy?crashdb"
+ 
+ #define WHOOPSIE_DAISY_TYPE_PREFERENCES whoopsie_daisy_preferences_get_type()
+ #define WHOOPSIE_DAISY_PREFERENCES(obj) \
+

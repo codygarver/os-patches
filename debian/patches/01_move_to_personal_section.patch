@@ -1,0 +1,13 @@
+Index: activity-log-manager-0.9.4/data/activity-log-manager-ccpanel.desktop.in
+===================================================================
+--- activity-log-manager-0.9.4.orig/data/activity-log-manager-ccpanel.desktop.in	2012-03-20 18:22:24.000000000 +0100
++++ activity-log-manager-0.9.4/data/activity-log-manager-ccpanel.desktop.in	2012-04-04 13:30:35.111305140 +0200
+@@ -11,7 +11,7 @@
+ StartupNotify=true
+ 
+ Type=Application
+-Categories=GNOME;GTK;System;Archiving;Utility;Settings;X-GNOME-SystemSettings;X-GNOME-Settings-Panel;
++Categories=GNOME;GTK;System;Archiving;Utility;Settings;X-GNOME-PersonalSettings;X-GNOME-Settings-Panel;
+ X-GNOME-Settings-Panel=activity-log-manager
+ 
+ OnlyShowIn=GNOME;Unity;

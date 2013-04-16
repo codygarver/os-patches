@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=com.ubuntu.WhoopsiePreferences
+Exec=/usr/lib/whoopsie/whoopsie-preferences
+User=root

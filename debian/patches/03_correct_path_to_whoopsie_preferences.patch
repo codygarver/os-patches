@@ -1,0 +1,10 @@
+=== modified file 'src/diagnostics/com.ubuntu.WhoopsiePreferences.service'
+--- activity-log-manager-0.9.4.orig/src/diagnostics/com.ubuntu.WhoopsiePreferences.service	2012-02-20 09:51:28 +0000
++++ activity-log-manager-0.9.4/src/diagnostics/com.ubuntu.WhoopsiePreferences.service	2012-04-11 13:39:07 +0000
+@@ -1,4 +1,4 @@
+ [D-BUS Service]
+ Name=com.ubuntu.WhoopsiePreferences
+-Exec=/usr/lib/whoopsie/whoopsie-preferences
++Exec=/usr/bin/whoopsie-preferences
+ User=root
+

@@ -1,0 +1,3 @@
+version=3
+https://launchpad.net/activity-log-manager/+download \
+ http://launchpad\.net/activity-log-manager/.+/.+/\+download/alm-(.+)\.tar\.gz

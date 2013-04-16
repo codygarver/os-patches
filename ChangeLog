@@ -1,0 +1,825 @@
+------------------------------------------------------------
+revno: 107
+fixes bug: https://launchpad.net/bugs/949849
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Tue 2012-03-20 22:53:03 +0530
+message:
+  Change X-GNOME-Keywords to Keywords
+------------------------------------------------------------
+revno: 106
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Tue 2012-03-20 22:46:10 +0530
+message:
+  Updated NEWS, ChangeLog and updated the package version number in configure.ac
+------------------------------------------------------------
+revno: 105
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Tue 2012-03-20 22:11:58 +0530
+message:
+  Adding border to Folder blocked list TreeView
+------------------------------------------------------------
+revno: 104 [merge]
+author: Stefano Candori <stefano.candori@gmail.com>
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Tue 2012-03-20 01:39:41 +0530
+message:
+  Use the right icon name for the Public Share folder in the applications selection dialog.
+------------------------------------------------------------
+revno: 103 [merge]
+fixes bug: https://launchpad.net/bugs/958483
+author: Gabor Kelemen <kelemeng@ubuntu.com>
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Mon 2012-03-19 22:27:41 +0530
+message:
+  Fix Untranslated strings in a-l-m
+------------------------------------------------------------
+revno: 102 [merge]
+fixes bug: https://launchpad.net/bugs/925637
+author: Stefano Candori <stefano.candori@gmail.com>
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Mon 2012-03-19 21:59:34 +0530
+message:
+  Enhance blacklisted folder visualization in File's Tab matching the mockup
+  
+  * Make the AppSelection dialog to be orderer automatically by usage.
+  * Fixed a segmentation fault dued to null pixbufs.
+  * Force the size of the blacklisted directory's text to be consistent with the size of the label above.
+  * Added updated .pot file.
+  
+  [Applications-widget: ApplicationChooserDialog] Various fixes here and there:
+  * Removed duplicated code for applications insertion.
+  * Gettextized some strings.
+  * Align "last used" string on the left, matching the mockup.
+  * Added hour and minute in "last used" string, matching the mockup.
+  * Added "Today" and "Yesterday" instead of the date, matching the mockup.
+  * Added "Never" string for never used applications.
+  * Fixed visualization problem when adding and suddenly removing an application from the blacklist.
+  * Use "gtk-execute" as application's icon if the application's icon isn't in the current IconTheme.
+------------------------------------------------------------
+revno: 101 [merge]
+author: Gabor Kelemen <kelemeng@ubuntu.com>
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Mon 2012-03-19 00:19:04 +0530
+message:
+  Fix Diagnostics tab i18n problems in a-l-m. Fix #957891
+------------------------------------------------------------
+revno: 100
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Sat 2012-03-03 17:39:23 +0530
+message:
+  Fix type with LP #944993
+------------------------------------------------------------
+revno: 99
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Sat 2012-03-03 17:13:23 +0530
+message:
+  Update NEWS file and update ChangeLog
+------------------------------------------------------------
+revno: 98
+fixes bug: https://launchpad.net/bugs/930093
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Sat 2012-03-03 17:04:16 +0530
+message:
+  Fix the bug in which an application blacklist was not blacklisting application launches
+------------------------------------------------------------
+revno: 97
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Fri 2012-03-02 21:11:12 +0530
+message:
+  Add Gabor Kelemen to AUTHORS
+------------------------------------------------------------
+revno: 96
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Fri 2012-03-02 21:09:07 +0530
+message:
+  Bump 0.9.2 to 0.9.3
+------------------------------------------------------------
+revno: 95 [merge]
+fixes bug: https://launchpad.net/bugs/944362
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Fri 2012-03-02 21:08:11 +0530
+message:
+  Fix the i18n issues in alm. See the bug LP #944362
+------------------------------------------------------------
+revno: 94
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Fri 2012-02-24 19:46:45 +0100
+message:
+  fix stuff
+------------------------------------------------------------
+revno: 93
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Fri 2012-02-24 18:48:20 +0100
+message:
+  fix usage counter
+------------------------------------------------------------
+revno: 92
+committer: Stefano Candori <stefano.candori@gmail.com>
+branch nick: activity-log-manager
+timestamp: Fri 2012-02-24 14:30:51 +0100
+message:
+  Added last used and usage indication to Application Chooser TreeView. (LP:#925638)
+------------------------------------------------------------
+revno: 91
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Thu 2012-02-23 01:51:23 +0530
+message:
+  Update the source package version
+------------------------------------------------------------
+revno: 90
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Thu 2012-02-23 01:48:56 +0530
+message:
+  Update NEWS
+------------------------------------------------------------
+revno: 89
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Thu 2012-02-23 01:40:45 +0530
+message:
+  Updated translations
+------------------------------------------------------------
+revno: 88
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Wed 2012-02-22 18:50:01 +0100
+message:
+  fix sizes
+------------------------------------------------------------
+revno: 87
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Wed 2012-02-22 18:39:39 +0100
+message:
+  fix styling
+------------------------------------------------------------
+revno: 86
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Wed 2012-02-22 01:24:39 +0100
+message:
+  fix copyrights
+------------------------------------------------------------
+revno: 85 [merge]
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Wed 2012-02-22 01:18:15 +0100
+message:
+  merge
+------------------------------------------------------------
+revno: 84
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: whoopsie
+timestamp: Mon 2012-02-20 20:27:33 +0000
+message:
+  Disable the metrics preference, since it wont be used.
+------------------------------------------------------------
+revno: 83
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: whoopsie
+timestamp: Mon 2012-02-20 19:45:52 +0000
+message:
+  Clean up.
+------------------------------------------------------------
+revno: 82
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: whoopsie
+timestamp: Mon 2012-02-20 19:11:11 +0000
+message:
+  Clean up errors.
+------------------------------------------------------------
+revno: 81
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: whoopsie
+timestamp: Mon 2012-02-20 19:04:18 +0000
+message:
+  Spacing.
+------------------------------------------------------------
+revno: 80
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: whoopsie
+timestamp: Mon 2012-02-20 19:03:21 +0000
+message:
+  Remove references to the diagnostics panel, which is no longer a panel.
+------------------------------------------------------------
+revno: 79
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: activity-log-manager
+timestamp: Mon 2012-02-20 18:36:10 +0000
+message:
+  Add the diagnostics UI to POTFILES.
+------------------------------------------------------------
+revno: 78
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: activity-log-manager
+timestamp: Mon 2012-02-20 18:20:16 +0000
+message:
+  Actually connect up the privacy policy button.
+------------------------------------------------------------
+revno: 77
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: activity-log-manager
+timestamp: Mon 2012-02-20 17:32:52 +0000
+message:
+  No longer needed.
+------------------------------------------------------------
+revno: 76
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: activity-log-manager
+timestamp: Mon 2012-02-20 17:31:34 +0000
+message:
+  Use extern to specify linkage.
+------------------------------------------------------------
+revno: 75
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: activity-log-manager
+timestamp: Mon 2012-02-20 17:24:27 +0000
+message:
+  Wire the diagnostics page into the GtkNotebook used in GNOME Control Center.
+------------------------------------------------------------
+revno: 74
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: activity-log-manager
+timestamp: Mon 2012-02-20 14:15:42 +0000
+message:
+  Further converting of the diagnostics page to Automake.
+------------------------------------------------------------
+revno: 73
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: activity-log-manager
+timestamp: Mon 2012-02-20 12:27:23 +0000
+message:
+  Move the diagnostics page to Automake.
+------------------------------------------------------------
+revno: 72 [merge]
+committer: Evan Dandrea <evan.dandrea@canonical.com>
+branch nick: activity-log-manager
+timestamp: Mon 2012-02-20 09:53:58 +0000
+message:
+  Merge in the diagnostics GNOME Control Center page from the whoopsie-daisy project.
+------------------------------------------------------------
+revno: 71
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Sat 2012-02-18 22:45:08 +0100
+message:
+  fixed all wanrings and gtk critical stuff
+------------------------------------------------------------
+revno: 70
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Sat 2012-02-18 22:38:27 +0100
+message:
+  fixed all wanrings and gtk critical stuff
+------------------------------------------------------------
+revno: 69
+fixes bug: https://launchpad.net/bugs/932894
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Thu 2012-02-16 01:25:47 +0530
+message:
+  Changed "Delete" to "Delete History" in History tab
+------------------------------------------------------------
+revno: 68
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Wed 2012-02-15 21:58:59 +0530
+message:
+  Remove additional languages in LINGUAS file and added POTFILES.skip
+------------------------------------------------------------
+revno: 67
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Wed 2012-02-15 18:33:12 +0530
+message:
+  Added po/*.po files for languages
+------------------------------------------------------------
+revno: 66
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Wed 2012-02-15 01:50:46 +0530
+message:
+  Added LINGAS which have to be translated and extracted the strings
+------------------------------------------------------------
+revno: 65
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Wed 2012-02-15 01:12:10 +0530
+message:
+  Make all the strings localizable
+------------------------------------------------------------
+revno: 64
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Mon 2012-02-13 23:20:48 +0530
+message:
+  Updated ChangeLog, NEWS and configure.ac for release of 0.9.1
+------------------------------------------------------------
+revno: 63
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Mon 2012-02-13 17:33:55 +0100
+message:
+  add titles
+------------------------------------------------------------
+revno: 62
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Mon 2012-02-13 17:16:21 +0100
+message:
+  fixed history
+------------------------------------------------------------
+revno: 61
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Mon 2012-02-13 21:24:37 +0530
+message:
+  Fix the issue in which deleted application was not getting listed back in application selection list
+------------------------------------------------------------
+revno: 60
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Sat 2012-02-11 22:23:55 +0530
+message:
+  Fix alm-cc.c file in which the wrong extension point panel was specified
+  
+  Changed alm to activity-log-manager
+------------------------------------------------------------
+revno: 59
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Sat 2012-02-11 16:13:34 +0100
+message:
+  add folder icon
+------------------------------------------------------------
+revno: 58
+fixes bug: https://launchpad.net/bugs/899096
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Sat 2012-02-11 15:17:06 +0530
+message:
+  Fix by making sure that paths are escaped before being blacklisted
+  
+  * Removed the prefix 'file://' as File.get_uri() already does that
+  * Make sure that malformed uri does not make the application crash
+  * Blacklists with malformed uri are not shown
+------------------------------------------------------------
+revno: 57
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Fri 2012-02-10 02:47:12 +0530
+message:
+  UI enhancements and crash fix for apps and files [-] button
+  
+  * Make the tabs size automatic rathar than hardocing it
+  * Add gradient to [+] and [-] buttons
+  * Fix crash when [-] in application tab was clicked when no application was selected
+  * Fix crash when [-] in files tab was clicked when no folder was selected
+------------------------------------------------------------
+revno: 56
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Thu 2012-02-09 21:52:54 +0530
+message:
+  Make required changes to rename every instance of alm to activity-log-manager
+------------------------------------------------------------
+revno: 55 [merge]
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Thu 2012-02-09 21:25:09 +0530
+message:
+  Change tarball name, binary name and dynamic library file name
+------------------------------------------------------------
+revno: 54
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Wed 2012-02-08 03:35:22 +0100
+message:
+  Added confirmation dialog (needs fixing)
+------------------------------------------------------------
+revno: 53
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Wed 2012-02-08 03:08:06 +0100
+message:
+  fix treeview
+------------------------------------------------------------
+revno: 52
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Tue 2012-02-07 19:46:08 +0530
+message:
+  Finish ChangeLog, NEWS and README
+------------------------------------------------------------
+revno: 51
+tags: 0.9.0
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Mon 2012-02-06 22:44:59 +0100
+message:
+  added incognito mode
+------------------------------------------------------------
+revno: 50
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Tue 2012-02-07 00:28:55 +0530
+message:
+  Check if incognito is already of the same state before toggling it and create set_incognito(bool)
+------------------------------------------------------------
+revno: 49
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Mon 2012-02-06 11:58:18 +0100
+message:
+  add to do list
+------------------------------------------------------------
+revno: 48
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Sat 2012-02-04 18:40:28 +0530
+message:
+  Fixed distcheck
+------------------------------------------------------------
+revno: 47
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm-vala
+timestamp: Thu 2012-02-02 21:46:28 +0530
+message:
+  Updated AUTHORS list, README for dependencies and COPYING to changing the license from GPLv3 to GPLv2+
+------------------------------------------------------------
+revno: 46 [merge]
+author: Didier Roche <didier.roche@canonical.com>
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Tue 2012-01-31 19:42:53 +0530
+message:
+  Add missing i18n files
+------------------------------------------------------------
+revno: 45
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Tue 2012-01-31 02:47:18 +0530
+message:
+  Fix the bug in which ApplicationWindow instance was tried to be created instead of ActivityLogManager
+------------------------------------------------------------
+revno: 44
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Tue 2012-01-31 02:09:59 +0530
+message:
+  Add alm-cc.c to repo
+------------------------------------------------------------
+revno: 43
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Tue 2012-01-31 01:09:38 +0530
+message:
+  Added data folder for desktop files and icons
+------------------------------------------------------------
+revno: 42
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-30 22:43:51 +0530
+message:
+  Fix the build system to also build the .la files if g-c-c headers are available
+------------------------------------------------------------
+revno: 41
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-30 20:13:28 +0530
+message:
+  Get basic gettext support in autotools and changes how alm is launched
+------------------------------------------------------------
+revno: 40
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-30 03:25:46 +0530
+message:
+  Provide Nautilus folder icon for special folders and folder basename
+------------------------------------------------------------
+revno: 39
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-30 01:24:09 +0530
+message:
+  Implemented adding/removing folder blacklist to the dbus
+------------------------------------------------------------
+revno: 38
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-30 00:41:50 +0530
+message:
+  Added FileChooserDialog and linked it to add_folder_to_view and also removing folder
+  
+  Pending:
+  Sending blocking and unblocking folders events to dbus
+------------------------------------------------------------
+revno: 37
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Sun 2012-01-29 22:57:26 +0530
+message:
+  Handle template_added and template_removed to add/remove folder blacklisting
+------------------------------------------------------------
+revno: 36
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Sun 2012-01-29 17:20:50 +0100
+message:
+  fake modality
+------------------------------------------------------------
+revno: 35
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Sun 2012-01-29 21:34:50 +0530
+message:
+  Added functionality so that the Folder blacklist gets shown
+------------------------------------------------------------
+revno: 34
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Sun 2012-01-29 03:52:30 +0530
+message:
+  Implement path based blacklist fetching, filtering, handling add and remove signal
+------------------------------------------------------------
+revno: 33
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Sat 2012-01-28 18:55:27 +0100
+message:
+  make dialogs transient
+------------------------------------------------------------
+revno: 32
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Sat 2012-01-28 03:01:03 +0530
+message:
+  Fixed a bug in which after blocking apps, it was showing twice in the list. Fixe another bug in which after unblocking an app, the app was not getting added back to app chooser dialog
+------------------------------------------------------------
+revno: 31
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Sat 2012-01-28 02:42:33 +0530
+message:
+  Implemented removal of app from chooser when it is blacklisted and vice-versa
+------------------------------------------------------------
+revno: 30
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Sat 2012-01-28 01:11:46 +0530
+message:
+  Implemented adding a new app to blacklist.
+  
+  PENDING: Showing the App Selection view as required. Right now it shows only app names
+------------------------------------------------------------
+revno: 29
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Fri 2012-01-27 09:43:30 +0100
+message:
+  add history delete functionality
+------------------------------------------------------------
+revno: 28
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Fri 2012-01-27 03:35:10 +0530
+message:
+  App Chooser Tree View now shows Application Names
+------------------------------------------------------------
+revno: 27
+committer: Seif Lotfy <seif@lotfy.com>
+branch nick: vala
+timestamp: Thu 2012-01-26 21:23:47 +0100
+message:
+  fix calendar widgets
+------------------------------------------------------------
+revno: 26 [merge]
+author: Seif Lotfy<seif@lotfy.com>
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Fri 2012-01-27 01:27:30 +0530
+message:
+  Work on History tab for Calendar
+------------------------------------------------------------
+revno: 25
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Fri 2012-01-27 01:13:46 +0530
+message:
+  Get application matching working
+------------------------------------------------------------
+revno: 24
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Thu 2012-01-26 03:06:43 +0530
+message:
+  Fetching the events for MostPopularActor works. Thanks to Michal Hruby for his super Jedi powers
+------------------------------------------------------------
+revno: 23
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Wed 2012-01-25 04:13:22 +0530
+message:
+  Added fix so that the list of blocked apps are kept in a HashSet for easy matching
+------------------------------------------------------------
+revno: 22
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Wed 2012-01-25 03:36:33 +0530
+message:
+  Handled application-added signal to update the UI
+------------------------------------------------------------
+revno: 21
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-23 03:53:11 +0530
+message:
+  Handled template_removed signal to find if an application has been removed
+------------------------------------------------------------
+revno: 20 [merge]
+author: Seif Lotfy <seif@lotfy.com>
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Sun 2012-01-22 20:58:21 +0530
+message:
+  Fix History widget to show Calendar
+------------------------------------------------------------
+revno: 19
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Sun 2012-01-22 20:56:42 +0530
+message:
+  Implemented Application blacklist population and removal
+  
+  Pending:
+  * Adding Application blacklist
+  * Handling signal of application blacklist added
+  * Handling signal of application blacklist deleted
+------------------------------------------------------------
+revno: 18
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Sun 2012-01-22 01:36:38 +0530
+message:
+  Created History Tab. Does not work yet
+------------------------------------------------------------
+revno: 17
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Fri 2012-01-20 01:48:06 +0530
+message:
+  Fixed the event matching for incognito
+------------------------------------------------------------
+revno: 16
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Fri 2012-01-20 00:09:03 +0530
+message:
+  Implemented File Type blacklisting
+  
+  * Listens to added and removed template signals to automatically
+    change UI states
+  * Exposed all_templates as a property of Blacklist
+  * Checked for incognito template by id than event matching in template_added and template_removed
+  * Changed HashMap<string, Button> to HashMap<string, CheckButton>
+------------------------------------------------------------
+revno: 15
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Thu 2012-01-19 17:24:12 +0530
+message:
+  Fixed event matching. Implementation incognito. It even catches signal.
+  
+  If the older version of ALM toggles incognito mode, this new ALM will 
+  respond and sync it's status
+------------------------------------------------------------
+revno: 14
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Thu 2012-01-19 01:52:00 +0530
+message:
+  get_templates is not working since the contents are not getting deserialized to Variants.
+  
+  HashTable<string, Variant> shows no problem until an attempt is made to 
+  retreive the values. All the values are null
+------------------------------------------------------------
+revno: 13
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Wed 2012-01-18 23:53:14 +0530
+message:
+  Finished Event template matching using engine's code
+  
+  Cannot use engine right now since there is no developer package available 
+  at this moment. Duplication of code is inevitable
+------------------------------------------------------------
+revno: 12
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Wed 2012-01-18 19:19:47 +0530
+message:
+  Created the zeitgeist blacklist interface remote proxy. Wrapped it around in a class
+------------------------------------------------------------
+revno: 11
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Tue 2012-01-17 01:05:09 +0530
+message:
+  Created FileTypes section in Files tab
+------------------------------------------------------------
+revno: 10
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-16 22:54:42 +0530
+message:
+  Updated Files widget
+  
+  * Removed extra VBox in Applications
+  * Added a file blacklist-dbus.vala for dbus interfacing
+------------------------------------------------------------
+revno: 9
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-16 19:16:34 +0530
+message:
+  Connected click signal of "Add" application with App list window
+------------------------------------------------------------
+revno: 8
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-16 18:25:38 +0530
+message:
+  Put the NoteBook inside another GtkBox and added a 'Record Activity' GtkSwitch
+------------------------------------------------------------
+revno: 7
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-16 16:44:12 +0530
+message:
+  Change license from GPLv3 to GPLv2 and made some more changes to App tab
+------------------------------------------------------------
+revno: 6
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-16 03:18:15 +0530
+message:
+  Added Add/Remove application button/toolbars for application list
+------------------------------------------------------------
+revno: 5 [merge]
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm2
+timestamp: Mon 2012-01-16 00:55:44 +0530
+message:
+  Merged Stefano Candori's work
+------------------------------------------------------------
+revno: 4
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Mon 2012-01-16 00:07:58 +0530
+message:
+  Added CLEANFILES which removes *.c and *.o files. Also added .bzrignore
+------------------------------------------------------------
+revno: 3
+committer: Manish Sinha <manishsinha@ubuntu.com>
+branch nick: alm
+timestamp: Sun 2012-01-15 23:39:34 +0530
+message:
+  Added gee as dependency and improved build system
+  
+  * Added DISTCLEANFILES and MAINTAINERCLEANFILES
+  * Split PKG_CHECK for ALM into seperate zeitgeist,
+    gee and gtk-3.0
+  * Moved config.vapi from alm_SOURCES to VALAFLAGS
+------------------------------------------------------------
+revno: 2
+committer: Stefano Candori <stefano.candori@gmail.com>
+branch nick: alm
+timestamp: Sun 2012-01-15 14:28:09 +0100
+message:
+  Removed Advanced tab.
+------------------------------------------------------------
+revno: 1
+committer: Stefano Candori <stefano.candori@gmail.com>
+branch nick: alm
+timestamp: Sun 2012-01-15 12:50:08 +0100
+message:
+  Init commit.
+------------------------------------------------------------
+Use --include-merged or -n0 to see merged revisions.

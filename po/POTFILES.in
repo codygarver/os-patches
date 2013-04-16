@@ -1,0 +1,11 @@
+data/activity-log-manager-ccpanel.desktop.in
+data/activity-log-manager.desktop.in
+src/activity-log-manager.vala
+src/alm.vala
+src/alm-cc.c
+src/blacklist-dbus.vala
+src/applications-widget.vala
+src/files-widget.vala
+src/history-widget.vala
+src/diagnostics/com.ubuntu.whoopsiepreferences.policy.in
+[type: gettext/glade]src/diagnostics/whoopsie.ui

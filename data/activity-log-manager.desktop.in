@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+
+_Name=Activity Log Manager
+_GenericName=Activity Log Manager
+_Comment=Configure what gets logged in your Zeitgeist activity log
+_X-Ubuntu-Software-Center-Name=Activities and Privacy Manager Tool
+
+
+Type=Application
+Exec=activity-log-manager
+Icon=activity-log-manager
+
+Categories=GNOME;GTK;Utility;

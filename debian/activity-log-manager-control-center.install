@@ -1,0 +1,7 @@
+etc/dbus-1/system.d/com.ubuntu.WhoopsiePreferences.conf
+usr/lib/control-center-1
+usr/share/applications/*-ccpanel.desktop
+usr/share/gnome-control-center/
+usr/share/polkit-1/actions/
+usr/share/dbus-1/system-services/
+usr/bin/whoopsie-preferences

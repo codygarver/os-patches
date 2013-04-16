@@ -1,0 +1,162 @@
+activity-log-manager (0.9.4-0ubuntu3.2) precise-proposed; urgency=low
+
+  * 05_fix_userdirs.patch:
+    - Verify that a user directory exists before adding it to the hash map.
+      (LP: #1024057)
+
+ -- Margarita Manterola <marga@google.com>  Mon, 26 Nov 2012 13:21:37 +0100
+
+activity-log-manager (0.9.4-0ubuntu3.1) precise; urgency=low
+
+  * Move /usr/bin/whoopsie-preferences from activity-log-manager, which
+    isn't installed by default, to activity-log-manager-control-center,
+    which is (LP: #993056).
+
+ -- Evan Dandrea <ev@ubuntu.com>  Thu, 15 Nov 2012 11:25:21 +0000
+
+activity-log-manager (0.9.4-0ubuntu3) precise; urgency=low
+
+  * 02_handle_upstart_in_whoopsie.patch:
+    - Run initctl start/stop whoopsie when enabling/disabling crash
+      reporting (LP: #978917).
+  * 03_correct_path_to_whoopsie_preferences.patch:
+    - The whoopsie_preferences binary is currently installed to /usr/bin.
+  * 04_correct_privacy_policy_url.patch:
+    - Add a parameter to the end of the privacy policy URL, so that a policy
+      specific to crash reporting can be provided.
+
+ -- Evan Dandrea <ev@ubuntu.com>  Wed, 11 Apr 2012 16:41:38 +0100
+
+activity-log-manager (0.9.4-0ubuntu2) precise; urgency=low
+
+  * 01_move_to_personal_section.patch:
+    - [UIFE] Adding landscape installer caused UI overflow (LP: #973130)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 04 Apr 2012 13:31:02 +0200
+
+activity-log-manager (0.9.4-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+    - make Diagnositics tab translatable (LP: #957891, #958483)
+    - X-GNOME-Keywords is changed to Keywords (LP: #949849)
+    - Fix untranslated strings in Application and History tab
+    - Add border to folder blacklist TreeView
+    - Fixed a segmentation fault dued to null pixbufs.
+    - Make the AppSelection dialog to be orderer automatically by usage.
+    - Force the size of the blacklisted directory's text to be consistent
+      with the size of the label above.
+    - Use "gtk-execute" as application's icon if the application's icon
+      isn't in the current IconTheme.
+    - Added "Today" and "Yesterday" instead of the date, matching the mockup.
+    - The Folders blacklisted have icons if they are special folders
+    - The blacklisted Folders list show the folder name and the folder
+      path for each entry
+    - [UIFe] Blacklisted special folder icons (from nautilus). (LP: #960498)
+  * debian/watch:
+    - update to latest upstream url
+  * debian/control:
+    - bump Standards-Version
+
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 21 Mar 2012 11:16:03 +0100
+
+activity-log-manager (0.9.3-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+    - Application blacklist does not block application launches (LP: #930093)
+    - Application selection TreeView should show last used and usage
+      (LP: #925638)
+    - Typo in /src/history-widget.vala:68 (LP: #944993)
+    - The Application selection list shows usage of applications
+    - Some whoopsie related files have been added to i18n system
+  * debian/patches/fix-i18n.patch:
+    - removed, usptreamed
+
+ -- Didier Roche <didrocks@ubuntu.com>  Mon, 05 Mar 2012 17:30:46 +0100
+
+activity-log-manager (0.9.2-0ubuntu3) precise; urgency=low
+
+  * debian/patches/fix-i18n.patch: 
+    - Add policy.in file to POTFILES.in, 
+    - Makefile changes to make the policy file translatable
+    - Add type description to the ui file, to extract its messages correctly, 
+    - Rename policy file to make it translatable, also remove gettext domain 
+      info.
+  * Run dh_translations during build, also build-dep on it. (LP: #944362)
+
+ -- Gabor Kelemen <kelemeng@gnome.hu>  Fri, 02 Mar 2012 09:36:44 +0100
+
+activity-log-manager (0.9.2-0ubuntu2) precise; urgency=low
+
+  * Fix the whoopsie breaks/replaces to use the right version comparison.
+    LP: #939842.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 23 Feb 2012 13:52:12 -0800
+
+activity-log-manager (0.9.2-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+    - get rid of all the gtk warnings (LP: #932147)
+    - Integrate diagnostics application from whoopsie (LP: #933042)
+    - get i18n support (LP: #932145)
+    - Check for availability of desktop-file-validate when running configure
+      script (LP: #928254)
+    - Rename "Delete" in history tab to "Delete History" (LP: #932894)
+    - Diagnostics is whoopsie's UI to enable disable error reporting
+    - Diagnostics can be enabled using --with-whoopsie
+    - If --with-whoopsie is passed, then --with-ccpanel is redundant
+  * debian/watch:
+    - point to the new upstream file
+  * debian/rules, debian/control,
+    debian/activity-log-manager-control-center.install:
+    - build with --with-whoopsie now (the code is already in precise, just
+      moving between packages)
+    - activity-log-manager-control-center Breaks/Replaces on older whoopsie
+    - now build-dep on libpolkit-gobject-1-dev
+    - install files previously in whoopsie
+
+ -- Didier Roche <didrocks@ubuntu.com>  Thu, 23 Feb 2012 18:47:55 +0100
+
+activity-log-manager (0.9.1-0ubuntu2) precise; urgency=low
+
+  * debian/*.install:
+    - install new desktop files
+
+ -- Didier Roche <didrocks@ubuntu.com>  Tue, 14 Feb 2012 14:08:06 +0100
+
+activity-log-manager (0.9.1-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - The .desktop.in files don't match with executable file name (LP: #928946)
+    - History tab always shows "Are you sure you want to delete the history
+      from __ to __" even in all selection (LP: #930742)
+    - Folder blacklisting doesn't use valid URI (LP: #899096)
+  * debian/watch:
+    - point to the new upstream launchpad tarball
+
+ -- Didier Roche <didrocks@ubuntu.com>  Tue, 14 Feb 2012 10:11:47 +0100
+
+activity-log-manager (0.9.0.1-0ubuntu1) precise; urgency=low
+
+  * New upstream release, with gnome-control-center integration
+  * debian/copyright:
+    - update to the new content files
+  * debian/pyversions, debian/control, debian/rules:
+    - update to the new vala version (transition from the python one) with
+      new build-deps
+    - remove the .la .a files
+  * debian/rules, debian/control, debian/*.install
+    - pass --with-ccpanel to build the g-c-c panel integration
+    - list the new upstream launchpad page
+    - add activity-log-manager-control-center package containing only the
+      control center integration and activity-log-manager-common for the asset
+    - remove COPYING file shipped by upstream on make install
+  * debian/watch:
+    - point to the new upstream launchpad tarball
+
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 08 Feb 2012 16:00:51 +0100
+
+activity-log-manager (0.8.0-1) unstable; urgency=low
+
+  * Initial packaging (Closes: #626831).
+
+ -- Siegfried-Angel Gevatter Pujals <rainct@ubuntu.com>  Mon, 16 May 2011 23:41:37 +0200

@@ -1,0 +1,131 @@
+Activity Log Manager 0.9.4
+
+* Fix LP #957891 and #958483 to make Diagnositics tab translatable
+* Fix LP #949849 when X-GNOME-Keywords is changed to Keywords
+* Fix untranslated strings in Application and History tab
+* Add border to folder blacklist TreeView
+* Fixed a segmentation fault dued to null pixbufs.
+* Make the AppSelection dialog to be orderer automatically by usage.
+* Force the size of the blacklisted directory's text to be consistent with the size of the label above.
+* Use "gtk-execute" as application's icon if the application's icon isn't in the current IconTheme.
+* Added "Today" and "Yesterday" instead of the date, matching the mockup.
+* The Folders blacklisted have icons if they are special folders
+* The blacklisted Folders list show the folder name and the folder path for each entry
+
+=================================================================================
+
+Activity Log Manager 0.9.3
+
+Bugs fixed:
+------------
+* #930093   Application blacklist does not block application launches
+        https://bugs.launchpad.net/bugs/930093
+* #925638   Application selection TreeView should show last used and usage
+        https://bugs.launchpad.net/bugs/925638
+* #944362   i18n problems in activity-log-manager
+        https://bugs.launchpad.net/bugs/944362
+
+Changes:
+--------
+* The Application selection list shows usage of applications
+* Some whoopsie related files have been added to i18n system
+
+Known issues:
+-------------
+* #925637   Folder blacklisted list should be enhanced to match with the prototype
+        https://bugs.launchpad.net/bugs/925637
+
+
+==================================================================================
+
+Activity Log Manager 0.9.2
+
+Bugs fixed:
+------------
+* #932147	get rid of all the gtk warnings.
+        https://bugs.launchpad.net/bugs/932147
+* #933042	Integrate diagnostics application from whoopsie
+        https://bugs.launchpad.net/bugs/933042
+* #932145	get i18n support
+        https://bugs.launchpad.net/bugs/932145
+* #928254	Check for availability of desktop-file-validate when running configure script
+        https://bugs.launchpad.net/bugs/928254
+* #932894	Rename "Delete" in history tab to "Delete History"
+        https://bugs.launchpad.net/bugs/932894
+
+Changes:
+--------
+* Diagnostics is whoopsie's UI to enable disable error reporting
+* Diagnostics can be enabled using --with-whoopsie
+* If --with-whoopsie is passed, then --with-ccpanel is redundant
+
+Know issues:
+-------------
+* #925637	Folder blacklisted list should be enhanced to match with the prototype
+        https://bugs.launchpad.net/bugs/925637
+* #925638	Application selection TreeView should show last used and usage
+        https://bugs.launchpad.net/bugs/925638
+* #930093	Application blacklist does not block application launches
+		https://bugs.launchpad.net/bugs/930093
+
+=====================================================================================
+
+Activity Log Manager 0.9.1 - 'Fix the Dolphin'
+
+Bugs fixed:
+------------
+* #928946 The .desktop.in files don't match with executable file name
+        https://bugs.launchpad.net/bugs/928946
+* #930742 History tab always shows "Are you sure you want to delete the history\nfrom __ to __" even in all selection
+        https://bugs.launchpad.net/bugs/930742
+* #899096 Folder blacklisting doesn't use valid URI
+        https://bugs.launchpad.net/bugs/899096
+
+Changes:
+--------
+* Gradient added to [+] and [-] buttons
+* Change tarball, desktop files, binary and library name from alm to activity-log-manager
+* Confirmation dialog before deleting history
+* Added folder icon for blacklisted paths
+
+Know issues:
+-------------
+* Translation framework is not yet working
+* Folder blacklisted list should be enhanced to match with the prototype
+        https://bugs.launchpad.net/bugs/925637
+* Application selection TreeView should show last used and usage
+        https://bugs.launchpad.net/bugs/925638
+
+=====================================================================================
+
+Activity Log Manager 0.9.0 - 'Friendly Dolphin'
+
+Bugs fixed:
+------------
+* Ported Activity Log Manager from gtk2 + python to vala + gtk3
+        https://code.launchpad.net/~activity-log-manager/activity-log-manager/trunk
+* Fixed the "Stop Logging" button confusingly looked like Apply button
+        https://bugs.launchpad.net/bugs/783566
+* Fixed Missing icon for the application which did not show up
+        https://bugs.launchpad.net/activity-log-manager/+bug/784169
+* Fixed "Deleting history does not work in Oneiric"
+        https://bugs.launchpad.net/bugs/910761
+
+
+
+Notable changes from previous release
+--------------------------------------
+* Application tab has been moved to last
+* Incognito mode now uses GtkSwitch for toggling
+* New icon provided by Canonical
+* The design for ALM 0.9 was provided by Canonical Design Team
+
+
+
+Know issues:
+-------------
+* Translation framework is not yet working
+* Folder blacklisted list should be enhanced to match with the prototype
+        https://bugs.launchpad.net/bugs/925637
+* Application selection TreeView should show last used and usage
+        https://bugs.launchpad.net/bugs/925638

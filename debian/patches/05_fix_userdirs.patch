@@ -1,0 +1,52 @@
+Index: activity-log-manager-0.9.4/src/Makefile.in
+===================================================================
+--- activity-log-manager-0.9.4.orig/src/Makefile.in	2012-03-20 19:15:07.000000000 +0100
++++ activity-log-manager-0.9.4/src/Makefile.in	2012-11-26 13:53:53.000000000 +0100
+@@ -379,8 +379,7 @@
+ 	--pkg gtk+-3.0 \
+ 	--pkg gee-1.0  \
+ 	--target-glib=2.26 \
+-	--pkg gio-unix-2.0 \
+-	config.vapi
++	--pkg gio-unix-2.0
+ 
+ SHARED_CFLAGS = \
+ 	-Wall \
+Index: activity-log-manager-0.9.4/src/files-widget.vala
+===================================================================
+--- activity-log-manager-0.9.4.orig/src/files-widget.vala	2012-03-20 17:39:25.000000000 +0100
++++ activity-log-manager-0.9.4/src/files-widget.vala	2012-11-26 13:55:33.081759039 +0100
+@@ -261,15 +261,25 @@
+ 	        mime_dict.set(_("E-mail"), NMO_EMAIL);
+ 	        mime_dict.set(_("Website"), NFO_WEBSITE);
+ 
++			UserDirectory[] special_dirs =
++			{
++				UserDirectory.DESKTOP,
++				UserDirectory.DOCUMENTS,
++				UserDirectory.DOWNLOAD,
++				UserDirectory.MUSIC,
++				UserDirectory.PICTURES,
++				UserDirectory.PUBLIC_SHARE,
++				UserDirectory.TEMPLATES,
++				UserDirectory.VIDEOS
++			};
++
+ 			defined_dirs = new HashMap<string, UserDirectory>(str_hash, str_equal);
+-			defined_dirs.set(Environment.get_user_special_dir(UserDirectory.DESKTOP), UserDirectory.DESKTOP);
+-			defined_dirs.set(Environment.get_user_special_dir(UserDirectory.DOCUMENTS), UserDirectory.DOCUMENTS);
+-			defined_dirs.set(Environment.get_user_special_dir(UserDirectory.DOWNLOAD), UserDirectory.DOWNLOAD);
+-			defined_dirs.set(Environment.get_user_special_dir(UserDirectory.MUSIC), UserDirectory.MUSIC);
+-			defined_dirs.set(Environment.get_user_special_dir(UserDirectory.PICTURES), UserDirectory.PICTURES);
+-			defined_dirs.set(Environment.get_user_special_dir(UserDirectory.PUBLIC_SHARE), UserDirectory.PUBLIC_SHARE);
+-			defined_dirs.set(Environment.get_user_special_dir(UserDirectory.TEMPLATES), UserDirectory.TEMPLATES);
+-			defined_dirs.set(Environment.get_user_special_dir(UserDirectory.VIDEOS), UserDirectory.VIDEOS);
++			for(int i = 0; i < special_dirs.length; i++) {
++				string dir_path = Environment.get_user_special_dir(special_dirs[i]);
++				if (dir_path != null) {
++					defined_dirs.set(dir_path, special_dirs[i]);
++				}
++			}
+ 		
+ 			//FIXME: Not sure if the correct icon is being fetched for stock folder
+ 			stock_folder_icon = this.render_icon_pixbuf(Stock.DIRECTORY, IconSize.LARGE_TOOLBAR);

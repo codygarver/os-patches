@@ -1,0 +1,8 @@
+<node>
+ <interface name="com.ubuntu.WhoopsiePreferences">
+  <property name="ReportCrashes" type="b" access="read" />
+  <method name="SetReportCrashes">
+   <arg direction="in" type="b" name="report" />
+  </method>
+ </interface>
+</node>
