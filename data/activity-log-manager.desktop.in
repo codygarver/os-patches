@@ -12,3 +12,5 @@ Exec=activity-log-manager
 Icon=activity-log-manager
 
 Categories=GNOME;GTK;Utility;
+
+NoDisplay=true
