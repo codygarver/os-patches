@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-05 06:47+0100\n"
+"POT-Creation-Date: 2013-04-26 02:10+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,148 @@ msgstr ""
 #: ../gtk/autostart/jockey-gtk.desktop.in.h:2
 #: ../kde/autostart/jockey-kde.desktop.in.h:2
 msgid "Notify about new hardware drivers available for the system"
+msgstr ""
+
+#: ../data/handlers/broadcom_wl.py:20
+msgid "Broadcom STA wireless driver"
+msgstr ""
+
+#: ../examples/handlers/madwifi.py:22 ../data/handlers/madwifi.py:22
+msgid "Alternate Atheros \"madwifi\" driver"
+msgstr ""
+
+#: ../examples/handlers/madwifi.py:23 ../data/handlers/madwifi.py:23
+msgid "Alternate \"madwifi\" driver for Atheros wireless LAN cards."
+msgstr ""
+
+#: ../examples/handlers/madwifi.py:24 ../data/handlers/madwifi.py:24
+msgid ""
+"Only activate this driver if you have problems with your wireless LAN "
+"connection.\n"
+"\n"
+"The free \"ath5k\" driver should work with most Atheros cards nowadays, but "
+"on some computers this alternate (but proprietary) driver still works "
+"better, or at all."
+msgstr ""
+
+#: ../examples/handlers/madwifi.py:38 ../data/handlers/madwifi.py:38
+#, python-format
+msgid "You removed the configuration file %s"
+msgstr ""
+
+#: ../examples/handlers/fglrx.py:17
+msgid "AMD proprietary FGLRX graphics driver"
+msgstr ""
+
+#: ../examples/handlers/fglrx.py:18
+msgid "3D-accelerated proprietary graphics driver for AMD (ATI) cards."
+msgstr ""
+
+#: ../examples/handlers/fglrx.py:20
+msgid ""
+"This driver is required to fully utilise the 3D potential of some AMD (ATI) "
+"graphics cards, as well as provide 2D acceleration of newer cards."
+msgstr ""
+
+#: ../examples/handlers/sl_modem.py:15 ../data/handlers/sl_modem.py:15
+msgid "Software modem"
+msgstr ""
+
+#: ../examples/handlers/sl_modem.py:17 ../data/handlers/sl_modem.py:17
+msgid ""
+"This driver enables the usage of many software modems, as commonly found in "
+"laptops.\n"
+"\n"
+"If this driver is not enabled, you will not be able to use your modem."
+msgstr ""
+
+#: ../data/handlers/cdv.py:22
+msgid "Intel Cedarview graphics driver"
+msgstr ""
+
+#: ../data/handlers/cdv.py:27
+msgid "3D-accelerated proprietary graphics driver for Intel Cedarview cards."
+msgstr ""
+
+#: ../data/handlers/cdv.py:29
+msgid ""
+"This driver is required to fully utilise the 3D potential of some Intel "
+"Cedarview cards, as well as provide 2D acceleration of newer cards."
+msgstr ""
+
+#: ../examples/handlers/vmware-client.py:17
+#: ../data/handlers/vmware-client.py:17
+msgid "VMWare Client Tools"
+msgstr ""
+
+#: ../examples/handlers/vmware-client.py:18
+#: ../data/handlers/vmware-client.py:18
+msgid "Install VMWare client drivers and tools"
+msgstr ""
+
+#: ../examples/handlers/vmware-client.py:19
+#: ../data/handlers/vmware-client.py:19
+msgid ""
+"Install the VMWare client drivers and tools for your VMWare based Ubuntu "
+"installation.\n"
+"\n"
+"This should help you use Ubuntu in your VM."
+msgstr ""
+
+#: ../backend/jockey-backend.py:32
+msgid "Enable debugging messages."
+msgstr ""
+
+#: ../backend/jockey-backend.py:35
+msgid "Write logging messages to a file instead to stderr."
+msgstr ""
+
+#: ../backend/jockey-backend.py:38
+msgid "Timeout for D-BUS service (default: 600, 0: run forever)"
+msgstr ""
+
+#: ../backend/jockey-backend.py:41
+msgid "Add a custom handler directory."
+msgstr ""
+
+#: ../backend/jockey-backend.py:44
+msgid "Run on session D-BUS (only for testing)"
+msgstr ""
+
+#: ../backend/jockey-backend.py:46
+msgid "Use a different target kernel version than the currently running one."
+msgstr ""
+
+#: ../kde/jockey-kde.desktop.in.h:1 ../jockey/ui.py:206 ../jockey/ui.py:582
+#: ../jockey/ui.py:590 ../jockey/ui.py:598 ../jockey/ui.py:802
+#: ../gtk/jockey-gtk.desktop.in.h:1
+msgid "Additional Drivers"
+msgstr ""
+
+#: ../kde/jockey-kde.desktop.in.h:2 ../gtk/jockey-gtk.desktop.in.h:2
+msgid "Configure third-party and proprietary drivers"
+msgstr ""
+
+#: ../data/handlers/fglrx.py:22
+msgid "ATI/AMD proprietary FGLRX graphics driver"
+msgstr ""
+
+#: ../data/handlers/fglrx.py:23
+msgid ""
+"This driver may increase performance and improve battery life, however it "
+"may also compromise stability."
+msgstr ""
+
+#: ../data/handlers/fglrx.py:25
+msgid "Only enable this driver if you have issues with the current one."
+msgstr ""
+
+#: ../data/handlers/fglrx.py:28
+msgid "ATI/AMD proprietary FGLRX graphics driver (post-release updates)"
+msgstr ""
+
+#: ../data/handlers/fglrx.py:30
+msgid "ATI/AMD proprietary FGLRX graphics driver (**experimental** beta)"
 msgstr ""
 
 #: ../jockey/ui.py:121
@@ -142,12 +284,6 @@ msgstr ""
 
 #: ../jockey/ui.py:204
 msgid "Restricted Additional Drivers"
-msgstr ""
-
-#: ../jockey/ui.py:206 ../jockey/ui.py:582 ../jockey/ui.py:590
-#: ../jockey/ui.py:598 ../jockey/ui.py:802 ../gtk/jockey-gtk.desktop.in.h:1
-#: ../kde/jockey-kde.desktop.in.h:1
-msgid "Additional Drivers"
 msgstr ""
 
 #: ../jockey/ui.py:216
@@ -285,7 +421,7 @@ msgid ""
 "is only relevant with --no-dbus."
 msgstr ""
 
-#: ../jockey/ui.py:539 ../jockey/ui.py:1023
+#: ../jockey/ui.py:539 ../jockey/ui.py:1022
 msgid "Restricted drivers available"
 msgstr ""
 
@@ -376,36 +512,9 @@ msgid ""
 "drivers will not be available."
 msgstr ""
 
-#: ../jockey/ui.py:931
+#: ../jockey/ui.py:930
 #, python-format
 msgid "Searching driver for %s..."
-msgstr ""
-
-#: ../gtk/jockey-gtk.desktop.in.h:2 ../kde/jockey-kde.desktop.in.h:2
-msgid "Configure third-party and proprietary drivers"
-msgstr ""
-
-#: ../examples/handlers/madwifi.py:22
-msgid "Alternate Atheros \"madwifi\" driver"
-msgstr ""
-
-#: ../examples/handlers/madwifi.py:23
-msgid "Alternate \"madwifi\" driver for Atheros wireless LAN cards."
-msgstr ""
-
-#: ../examples/handlers/madwifi.py:24
-msgid ""
-"Only activate this driver if you have problems with your wireless LAN "
-"connection.\n"
-"\n"
-"The free \"ath5k\" driver should work with most Atheros cards nowadays, but "
-"on some computers this alternate (but proprietary) driver still works "
-"better, or at all."
-msgstr ""
-
-#: ../examples/handlers/madwifi.py:38
-#, python-format
-msgid "You removed the configuration file %s"
 msgstr ""
 
 #. translators: %s is the path to xorg.conf
@@ -414,70 +523,50 @@ msgstr ""
 msgid "Reconfiguring X.org video drivers is not possible: %s is invalid."
 msgstr ""
 
-#: ../examples/handlers/fglrx.py:17
-msgid "AMD proprietary FGLRX graphics driver"
+#: ../data/handlers/pvr-omap4.py:99
+msgid "PowerVR SGX proprietary graphics driver for OMAP 4"
 msgstr ""
 
-#: ../examples/handlers/fglrx.py:18
-msgid "3D-accelerated proprietary graphics driver for AMD (ATI) cards."
+#: ../data/handlers/pvr-omap4.py:103
+msgid "3D-accelerated proprietary graphics driver for OMAP 4 SoCs."
 msgstr ""
 
-#: ../examples/handlers/fglrx.py:20
+#: ../data/handlers/pvr-omap4.py:105
 msgid ""
-"This driver is required to fully utilise the 3D potential of some AMD (ATI) "
-"graphics cards, as well as provide 2D acceleration of newer cards."
+"This driver is required to fully utilise the 3D potential of OMAP 4 powered "
+"boards."
 msgstr ""
 
-#: ../examples/handlers/sl_modem.py:15
-msgid "Software modem"
+#: ../data/handlers/nvidia.py:25 ../examples/handlers/nvidia.py:26
+msgid "NVIDIA accelerated graphics driver"
 msgstr ""
 
-#: ../examples/handlers/sl_modem.py:17
+#: ../data/handlers/nvidia.py:26
 msgid ""
-"This driver enables the usage of many software modems, as commonly found in "
-"laptops.\n"
+"3D-accelerated proprietary graphics driver for NVIDIA cards. Required if you "
+"want to run Unity."
+msgstr ""
+
+#: ../data/handlers/nvidia.py:28
+msgid ""
+"This driver is required to fully utilise the 3D potential of NVIDIA graphics "
+"cards, as well as provide 2D acceleration of newer cards.\n"
 "\n"
-"If this driver is not enabled, you will not be able to use your modem."
+"You need to install this driver if you wish to use the Unity desktop, enable "
+"desktop effects, or run software that requires 3D acceleration, such as some "
+"games."
 msgstr ""
 
-#: ../examples/handlers/vmware-client.py:17
-msgid "VMWare Client Tools"
+#: ../data/handlers/nvidia.py:35
+msgid "NVIDIA accelerated graphics driver (post-release updates)"
 msgstr ""
 
-#: ../examples/handlers/vmware-client.py:18
-msgid "Install VMWare client drivers and tools"
+#: ../data/handlers/nvidia.py:37
+msgid "NVIDIA accelerated graphics driver (**experimental** beta)"
 msgstr ""
 
-#: ../examples/handlers/vmware-client.py:19
-msgid ""
-"Install the VMWare client drivers and tools for your VMWare based Ubuntu "
-"installation.\n"
-"\n"
-"This should help you use Ubuntu in your VM."
-msgstr ""
-
-#: ../backend/jockey-backend.py:32
-msgid "Enable debugging messages."
-msgstr ""
-
-#: ../backend/jockey-backend.py:35
-msgid "Write logging messages to a file instead to stderr."
-msgstr ""
-
-#: ../backend/jockey-backend.py:38
-msgid "Timeout for D-BUS service (default: 600, 0: run forever)"
-msgstr ""
-
-#: ../backend/jockey-backend.py:41
-msgid "Add a custom handler directory."
-msgstr ""
-
-#: ../backend/jockey-backend.py:44
-msgid "Run on session D-BUS (only for testing)"
-msgstr ""
-
-#: ../backend/jockey-backend.py:46
-msgid "Use a different target kernel version than the currently running one."
+#: ../data/handlers/dvb_usb_firmware.py:21
+msgid "Firmware for DVB cards"
 msgstr ""
 
 #: ../backend/com.ubuntu.devicedriver.policy.in.h:1
@@ -511,10 +600,6 @@ msgstr ""
 
 #: ../backend/com.ubuntu.devicedriver.policy.in.h:8
 msgid "To install or remove device drivers, you need to authenticate."
-msgstr ""
-
-#: ../examples/handlers/nvidia.py:26
-msgid "NVIDIA accelerated graphics driver"
 msgstr ""
 
 #: ../examples/handlers/nvidia.py:27
