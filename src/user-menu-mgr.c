@@ -43,14 +43,8 @@ static void activate_new_session (DbusmenuMenuitem * mi,
 static void activate_user_session (DbusmenuMenuitem *mi,
                                    guint timestamp,
                                    gpointer user_data);
-static void activate_user_accounts (DbusmenuMenuitem *mi,
-                                    guint timestamp,
-                                    gpointer user_data);
 static gint compare_users_by_username (const gchar *a,
                                        const gchar *b);
-static void activate_user_accounts (DbusmenuMenuitem *mi,
-                                    guint timestamp,
-                                    gpointer user_data);                                      
 static void user_menu_mgr_rebuild_items (UserMenuMgr *self,
                                          gboolean greeter_mode);
 static gboolean check_new_session ();
@@ -252,28 +246,6 @@ user_menu_mgr_rebuild_items (UserMenuMgr *self, gboolean greeter_mode)
     }
     g_list_free(users);
   }
-  // Add the user accounts and separator
-  DbusmenuMenuitem * separator1 = dbusmenu_menuitem_new();
-  dbusmenu_menuitem_property_set (separator1,
-                                  DBUSMENU_MENUITEM_PROP_TYPE,
-                                  DBUSMENU_CLIENT_TYPES_SEPARATOR);
-  dbusmenu_menuitem_child_append (self->root_item, separator1);
-
-  DbusmenuMenuitem * user_accounts_item = dbusmenu_menuitem_new();
-  dbusmenu_menuitem_property_set (user_accounts_item,
-                                  DBUSMENU_MENUITEM_PROP_TYPE,
-                                  DBUSMENU_CLIENT_TYPES_DEFAULT);
-  dbusmenu_menuitem_property_set (user_accounts_item,
-                                  DBUSMENU_MENUITEM_PROP_LABEL,
-                                  _("User Accounts…"));
-
-  g_signal_connect (G_OBJECT (user_accounts_item),
-                    DBUSMENU_MENUITEM_SIGNAL_ITEM_ACTIVATED,
-                    G_CALLBACK (activate_user_accounts),
-                    NULL);
-                                  
-  dbusmenu_menuitem_child_append (self->root_item, user_accounts_item); 
-
 
 }
 
@@ -340,19 +312,6 @@ compare_users_by_username (const gchar *a,
   }
 
   return retval;
-}
-
-static void
-activate_user_accounts (DbusmenuMenuitem *mi,
-                          guint timestamp,
-                          gpointer user_data)
-{
-  GError * error = NULL;
-  if (!g_spawn_command_line_async("gnome-control-center user-accounts", &error))
-  {
-    g_warning("Unable to show control centre: %s", error->message);
-    g_error_free(error);
-  }
 }
 
 /* Signal called when a user is added.  It updates the count and
