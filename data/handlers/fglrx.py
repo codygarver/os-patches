@@ -22,9 +22,9 @@ class FglrxDriver(XorgDriverHandler):
         name=_('ATI/AMD proprietary FGLRX graphics driver')
         description=_('3D-accelerated proprietary graphics driver for '
                       'ATI cards.')
-        rationale=_('This driver is required to fully utilise the 3D '
-                    'potential of some ATI graphics cards, as well as provide '
-                    '2D acceleration of newer cards.')
+        rationale=_('This driver may increase performance and improve battery life, '
+                    'however it may also compromise stability. '
+                    'Only enable this driver if you have issues with the current one.')
         if package and 'update' in package:
             name=_('ATI/AMD proprietary FGLRX graphics driver (post-release updates)')
         elif package and 'experimental' in package:
