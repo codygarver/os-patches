@@ -1,3 +1,9 @@
+python-apt (0.8.3ubuntu7.1) precise-proposed; urgency=low
+
+  * Make python{,3}-apt{,-dbg} Multi-Arch: allowed. LP: #1130709.
+
+ -- Matthias Klose <doko@ubuntu.com>  Fri, 22 Feb 2013 09:14:45 +0100
+
 python-apt (0.8.3ubuntu7) precise; urgency=low
 
   [ Michael Vogt ]
