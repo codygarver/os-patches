@@ -1,3 +1,10 @@
+partman-efi (25ubuntu1.1) precise; urgency=low
+
+  * Use mkdosfs to create FAT filesystems, since libparted cannot handle
+    doing that on non-512-sector disks (LP: #1065281).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 23 Jan 2013 13:23:10 +0000
+
 partman-efi (25ubuntu1) precise; urgency=low
 
   * Resynchronise with Debian.  Remaining changes:

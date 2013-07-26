@@ -58,6 +58,8 @@ UIDIR = os.path.join(PATH, 'qt')
 
 class UbiquityUI(QtGui.QMainWindow):
     def __init__(self, parent=None):
+        QtCore.QTextCodec.setCodecForCStrings(
+            QtCore.QTextCodec.codecForName("UTF-8"))
         QtGui.QMainWindow.__init__(self, parent)
         uic.loadUi(os.path.join(UIDIR, "app.ui"), self)
 
