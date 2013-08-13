@@ -1,3 +1,9 @@
+base-installer (1.122ubuntu7.3) precise-proposed; urgency=low
+
+  * Install the signed kernels on any 64bit UEFI machine. (LP: #1184297)
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Fri, 19 Jul 2013 14:10:26 -0400
+
 base-installer (1.122ubuntu7.2) precise-proposed; urgency=low
 
   * On amd64/efi, install a signed kernel if the SecureBoot variable is set

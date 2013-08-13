@@ -1,3 +1,13 @@
+ubiquity (2.10.26) precise-proposed; urgency=low
+
+  * Automatic update of included source packages: base-installer
+    1.122ubuntu7.3, grub-installer 1.68ubuntu5.2. (LP: #1184297)
+  * Install the shim and signed grub and kernels by default on all UEFI
+    machines instead of relying on the SecureBoot nvram variable.
+    (LP: #1184297)
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Fri, 19 Jul 2013 19:59:43 -0400
+
 ubiquity (2.10.25) precise; urgency=low
 
   [ Colin Watson ]

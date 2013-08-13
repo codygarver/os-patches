@@ -416,9 +416,7 @@ case $ARCH in
 	fi
 	;;
     i386/efi|amd64/efi)
-	sb_var=/sys/firmware/efi/vars/SecureBoot-8be4df61-93ca-11d2-aa0d-00e098032b8c/data
-	if [ "$ARCH" = amd64/efi ] && [ -e "$sb_var" ] && \
-	   [ "$(printf %x \'"$(cat "$sb_var")")" = 1 ]; then
+	if [ "$ARCH" = amd64/efi ]; then
 		grub_package="grub-efi-amd64-signed"
 	else
 		grub_package="grub-efi"

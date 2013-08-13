@@ -1,3 +1,10 @@
+grub-installer (1.68ubuntu5.2) precise-proposed; urgency=low
+
+  * Always use grub-efi-amd64-signed on 64bit UEFI systems instead of
+    relying on SecureBoot detection. (LP: #1184297)
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Fri, 19 Jul 2013 14:11:15 -0400
+
 grub-installer (1.68ubuntu5.1) precise-proposed; urgency=low
 
   * If the SecureBoot EFI variable is set, then install
