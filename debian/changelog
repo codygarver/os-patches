@@ -1,3 +1,28 @@
+jockey (0.9.7-0ubuntu7.9) precise-proposed; urgency=low
+
+  * jockey/kerneldetection.py:
+    - Catch KeyError in get_linux_metapackage() (LP: #1123107).
+      Sometimes the "Source" key is not available.
+  * tests/kerneldetection.py:
+    - Add two tests to make sure that get_linux_metapackage()
+      doesn't raise a KeyError when dealing with packages
+      without a "Source" field and that the function doesn't
+      stop if one or two packages don't have the said field.
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 16 Apr 2013 11:19:02 +0200
+
+jockey (0.9.7-0ubuntu7.8) precise-proposed; urgency=low
+
+  * Add jockey/kerneldetection.py, tests/kerneldetection.py,
+    tests/fakesysfs.py and tests/testarchive.py:
+    - This is a backport of code originally written for the
+      ubuntu-drivers-common package.
+  * jockey/oslib.py:
+    - Use kerneldetection.KernelDetection() to get the
+      linux metapackage (LP: #1123107).
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 12 Feb 2013 16:51:27 +0100
+
 jockey (0.9.7-0ubuntu7.7) precise-proposed; urgency=low
 
   * data/handlers/fglrx.py:

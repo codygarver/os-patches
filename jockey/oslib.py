@@ -24,6 +24,8 @@ import warnings
 warnings.simplefilter('ignore', FutureWarning)
 import apt
 
+from jockey.kerneldetection import KernelDetection
+
 class _CapturedInstallProgress(apt.InstallProgress):
     def __init__(self):
         apt.InstallProgress.__init__(self)
@@ -123,15 +125,10 @@ class OSLib:
         #self.gpg_key_server = 'keys.gnupg.net'
         self.gpg_key_server = 'hkp://keyserver.ubuntu.com:80'
 
-        # Package which provides include files for the currently running
-        # kernel.  If the system ensures that kernel headers are always
-        # available, or being pulled in via dependencies (and there are not
-        # multiple kernel flavors), it is ok to set this to "None". This should
-        # use self.target_kernel instead of os.uname()[2].
-        # Note that we want to install the metapackage here, to ensure upgrades
-        # will keep working.
-        flavour = '-'.join(self.target_kernel.split('-')[2:])
-        self.kernel_header_package = 'linux-headers-' + flavour
+        # We want to install the linux flavour metapackage here, to ensure
+        # upgrades will keep working.
+        kernel_detection = KernelDetection()
+        self.kernel_header_package = kernel_detection.get_linux_metapackage()
 
         self.apt_show_cache = {}
         self.apt_sources = '/etc/apt/sources.list'
