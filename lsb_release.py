@@ -18,9 +18,9 @@
 #    02111-1307, USA.
 
 import sys
-import commands
 import os
 import re
+import subprocess
 
 # XXX: Update as needed
 # This should really be included in apt-cache policy output... it is already
@@ -99,12 +99,20 @@ except NameError:
 # This is Debian-specific at present
 def check_modules_installed():
     # Find which LSB modules are installed on this system
-    output = commands.getoutput("dpkg-query -f '${Version} ${Provides}\n' -W %s 2>/dev/null" % PACKAGES)
+    C_env = os.environ.copy(); C_env['LC_ALL'] = 'C'
+    output = subprocess.Popen(['dpkg-query','-f',"${Version} ${Provides}\n",'-W'] + PACKAGES.split(),
+                              env=C_env,
+                              stdout=subprocess.PIPE,
+                              stderr=subprocess.PIPE,
+                              close_fds=True).communicate()[0].decode('utf-8')
+
     if not output:
         return []
 
     modules = set()
     for line in output.split(os.linesep):
+        if not line:
+            break
         version, provides = line.split(' ', 1)
         version = version.split('-', 1)[0]
         for pkg in provides.split(','):
@@ -145,7 +153,12 @@ def parse_policy_line(data):
 def parse_apt_policy():
     data = []
     
-    policy = commands.getoutput('LANG=C apt-cache policy 2>/dev/null')
+    C_env = os.environ.copy(); C_env['LC_ALL'] = 'C'
+    policy = subprocess.Popen(['apt-cache','policy'],
+                              env=C_env,
+                              stdout=subprocess.PIPE,
+                              stderr=subprocess.PIPE,
+                              close_fds=True).communicate()[0].decode('utf-8')
     for line in policy.split('\n'):
         line = line.strip()
         m = re.match(r'(\d+)', line)

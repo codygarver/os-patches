@@ -1,3 +1,10 @@
+lsb (4.0-0ubuntu20.3) precise-proposed; urgency=low
+
+  * lsb_release.py: Use the subprocess module instead of the commands
+    module to work around Python SIGCHLD handler issue9127.  LP: #1094218
+
+ -- Barry Warsaw <barry@ubuntu.com>  Thu, 06 Jun 2013 17:21:04 -0400
+
 lsb (4.0-0ubuntu20.2) precise-proposed; urgency=low
 
   * lsb_release: Add -Es to #! line for Python so that it will ignore
