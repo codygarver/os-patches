@@ -137,6 +137,7 @@ class OSLib:
 
         self._current_xorg_video_abi = None
         self._quantal_xserver = 'xserver-xorg-core-lts-quantal'
+        self._raring_xserver = 'xserver-xorg-core-lts-raring'
 
     # 
     # The following package related functions use PackageKit; if that does not
@@ -174,7 +175,7 @@ class OSLib:
 
         raise ValueError('package %s does not exist' % package)
 
-    def package_installed(self, package):
+    def package_installed(self, package, *args):
         '''Return if the given package is installed.'''
 
         dpkg = subprocess.Popen(["dpkg-query", "-W", "-f${Status}", package],
@@ -840,25 +841,32 @@ class OSLib:
         
         If this returns None, ABI checking is disabled.
         '''
+        binary_name = 'xserver-xorg-core'
+        suffix = ''
+        if self.quantal_xserver_installed():
+            suffix = '-lts-quantal'
+        elif self.raring_xserver_installed():
+            suffix = '-lts-raring'
+        binary_name = '%s%s' % (binary_name, suffix)
         if not self._current_xorg_video_abi:
-            dpkg = subprocess.Popen(['dpkg', '-s', 'xserver-xorg-core'],
+            dpkg = subprocess.Popen(['dpkg', '-s', binary_name],
                     stdout=subprocess.PIPE)
             out = dpkg.communicate()[0]
             if dpkg.returncode == 0:
-                m = re.search('^Provides: .*(xorg-video-abi-\w+)', out, re.M)
+                m = re.search('^Provides: .*(xorg-video-abi-\w+).*', out, re.M)
                 if m:
                     self._current_xorg_video_abi = m.group(1)
 
         return self._current_xorg_video_abi
 
     def video_driver_abi(self, package):
-        '''Return video ABI for an X.org driver package.
+        '''Return video ABI list for an X.org driver package.
 
         For an X.org video driver to actually work it must be built against the
         currently used X.org driver ABI, otherwise it will cause crashes. This
         method returns the video ABI for a driver package. If it is not None,
-        it must match current_xorg_video_abi() for this driver to be offered
-        for installation.
+        one of the items it must match current_xorg_video_abi() for this driver
+        to be offered for installation.
 
         If this returns None, ABI checking is disabled.
         '''
@@ -899,6 +907,43 @@ class OSLib:
                         continue
                     return True
         return False
+
+    def raring_xserver_installed(self):
+        '''Return whether raring's backported xserver is installed'''
+        return self.package_installed(self._raring_xserver)
+
+    def raring_xserver_supported(self, package):
+        '''Return whether the package supports raring's backported xserver'''
+        process = subprocess.Popen(['apt-cache', 'show', package],
+                                    stdout=subprocess.PIPE)
+        out = process.communicate()[0]
+        if process.returncode == 0:
+            m = re.search('^Depends: (.*)$', out, re.M)
+            if m:
+                for dep in m.group(1).split(','):
+                    if not dep.strip().__contains__(self._raring_xserver):
+                        continue
+                    return True
+        return False
+
+    def package_transitional(self, package):
+        process = subprocess.Popen(['apt-cache', 'show', package],
+                                    stdout=subprocess.PIPE)
+        out = process.communicate()[0]
+        if process.returncode == 0:
+            m = re.search('.*transitional.*', out, re.M | re.I)
+            if m:
+                return True
+        return False
+
+    def package_available(self, package):
+        devnull = open(os.devnull, 'w')
+        process = subprocess.Popen(['apt-cache', 'show', package],
+                                    stdout=devnull, stderr=devnull)
+        process.communicate()
+        devnull.close()
+
+        return process.returncode == 0
 
     #
     # Internal helper methods

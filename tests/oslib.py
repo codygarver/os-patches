@@ -416,13 +416,18 @@ deb http://foo.com/foo nerdy main
     def test_ubuntu_xorg_video_abi(self):
         o = OSLib()
         self.assert_(o.current_xorg_video_abi().startswith('xorg-video-abi-'))
-        self.assert_(o.video_driver_abi('nvidia-current').startswith('xorg-video-abi-'))
+        for driver in ('nvidia-current', 'nvidia-304', 'nvidia-173'):
+            if (o.package_available(driver) and not
+                o.package_transitional):
+                for abi in o.video_driver_abi(driver):
+                    self.assert_(abi.startswith('xorg-video-abi-'))
 
     def test_ubuntu_kernel_headers(self):
         o = OSLib()
-        (short, long) = o.package_description(o.kernel_header_package)
-        self.assert_(short)
-        self.assert_(long)
+        if o.package_available(o.kernel_header_package):
+            (short, long) = o.package_description(o.kernel_header_package)
+            self.assert_(short)
+            self.assert_(long)
 
     #
     # Helper methods

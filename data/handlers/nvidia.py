@@ -68,8 +68,10 @@ class _NvidiaDriverBase(XorgDriverHandler):
             logging.debug('Disabling Nvidia driver on live system')
             return False
 
-        if 'intel' in self.loaded_drivers():
-            logging.debug('Disabling Nvidia driver on intel/hybrid system')
+        if self.has_hybrid_graphics:
+            # We disable Hybrid Graphics by default unless a specific
+            # driver allows it
+            logging.debug('Disabling nvidia-%s on a hybrid graphics system' % (self.version))
             return False
 
         logging.debug('nvidia.available: falling back to default')
@@ -94,8 +96,12 @@ class _NvidiaDriverBase(XorgDriverHandler):
                 self.xorg_conf.removeOption('Module', 'Disable', value='dri2', position=section)
 
     def enable(self):
-        XorgDriverHandler.enable(self)
-        
+        if self.has_hybrid_graphics:
+            # Do not touch xorg.conf on hybrid graphics
+            KernelModuleHandler.enable(self)
+        else:
+            XorgDriverHandler.enable(self)
+
         # Set the alternative to NVIDIA
         nvidia_alternative = self._alternatives.get_alternative_by_name(self.package)
         if not nvidia_alternative:
@@ -110,13 +116,18 @@ class _NvidiaDriverBase(XorgDriverHandler):
         subprocess.call(['update-initramfs', '-u', '-k', os.uname()[2]])
  
     def disable(self):
-        XorgDriverHandler.disable(self)
+        if self.has_hybrid_graphics:
+            # Do not touch xorg.conf on hybrid graphics
+            KernelModuleHandler.disable(self)
+        else:
+            XorgDriverHandler.disable(self)
+
         if self.package:
             try:
-                self.backend.remove_package('nvidia-settings')
-            except SystemError:
+                self.backend.remove_package('nvidia-settings-' + self.version)
+            except (ValueError, SystemError):
                 pass
-        
+
         # Set the alternative back to open drivers
         open_drivers = self._alternatives.get_open_drivers_alternative()
         logging.debug('NVidia.disable(%s): open_drivers: %s', self.module, open_drivers)
@@ -191,6 +202,98 @@ class _NvidiaDriverBase(XorgDriverHandler):
 
         # neither vesa nor nv support composite, so safe to say yes here
         return True
+
+class _NvidiaDriverHybridBase(_NvidiaDriverBase):
+    '''Abstract base class for NVidia drivers which support Hybrid graphics.'''
+
+    def __init__(self, backend, version):
+        _NvidiaDriverBase.__init__(self, backend, version)
+        self.hybrid_gfx_pkg = 'nvidia-prime'
+
+    def hybrid_available(self):
+        '''See if the OS supports Hybrid Graphics'''
+        # Do not provide a driver if Hybrid graphics is available but
+        # unsupported (we need at least the lts-raring stack)
+        if not self.supports_hybrid_graphics:
+            logging.debug('Hybrid graphics system not supported by the OS')
+            return False
+
+        # Check that the extra package to enable Hybrid graphics is available
+        if not OSLib.inst.package_available(self.hybrid_gfx_pkg):
+            logging.debug('prime package not found')
+            return False
+
+        return True
+
+    def available(self):
+        # we don't offer this driver in a life CD environment, as we will run
+        # out of RAM trying to download and install all the packages in the RAM
+        # disk.
+        if os.path.isdir('/rofs'):
+            logging.debug('Disabling Nvidia driver on live system')
+            return False
+
+        # See if it's all ready for Hybrid Graphics
+        if self.has_hybrid_graphics and not self.hybrid_available():
+            return False
+
+        logging.debug('nvidia.available: falling back to default')
+        return XorgDriverHandler.available(self)
+
+    def enable(self):
+        # First ensure that the package for Hybrid Graphics is
+        # installed, if the system supports it
+        if self.has_hybrid_graphics:
+            try:
+                self.backend.install_package(self.hybrid_gfx_pkg)
+            except (ValueError, SystemError):
+                # Package not available
+                logging.error('%s: Unable to install the %s package. '
+                              'Hybrid graphics won\'t work.',
+                        self.id(), self.hybrid_gfx_pkg)
+                return
+
+        _NvidiaDriverBase.enable(self)
+
+    def enabled(self):
+        # Check that the extra package to enable Hybrid graphics is
+        # installed
+        if (self.has_hybrid_graphics and
+            not OSLib.inst.package_installed(self.hybrid_gfx_pkg)):
+            return False
+
+        return _NvidiaDriverBase.enabled(self)
+
+    def enable_config_hook(self):
+        # Do not touch xorg.conf
+        pass
+
+    def disable(self):
+        # Try to remove the package for Hybrid Graphics if any
+        if self.has_hybrid_graphics:
+            try:
+                self.backend.remove_package(self.hybrid_gfx_pkg)
+            except (ValueError, SystemError):
+                pass
+
+        _NvidiaDriverBase.disable(self)
+
+
+class NvidiaDriver319(_NvidiaDriverHybridBase):
+    def __init__(self, backend):
+        _NvidiaDriverHybridBase.__init__(self, backend, '319')
+
+class NvidiaDriver319Updates(_NvidiaDriverHybridBase):
+    def __init__(self, backend):
+        _NvidiaDriverHybridBase.__init__(self, backend, '319-updates')
+
+class NvidiaDriver304(_NvidiaDriverBase):
+    def __init__(self, backend):
+        _NvidiaDriverBase.__init__(self, backend, '304')
+
+class NvidiaDriver304Updates(_NvidiaDriverBase):
+    def __init__(self, backend):
+        _NvidiaDriverBase.__init__(self, backend, '304-updates')
 
 class NvidiaDriverExperimental310(_NvidiaDriverBase):
     def __init__(self, backend):

@@ -1,3 +1,60 @@
+jockey (0.9.7-0ubuntu7.10) precise-proposed; urgency=low
+
+  * data/handlers/fglrx.py:
+    - Show the driver as enabled when pxpress is in use.
+      Thanks to Doro Wu for the patch (LP: #1196848).
+    - Add handlers for -experimental-{12|13}.
+    - Only -experimental-13 supports hybrid graphics.
+  * data/handlers/nvidia.py:
+    - Add handlers for 319/-updates 304/-updates.
+    - Only 319/-updates support hybrid graphics.
+    - Make sure to remove the correct nvidia-settings
+      flavour.
+  * data/handlers/{fglrx|nvidia}.py:
+    - Add support for Hybrid Graphics (LP: #1198942):
+      + Driver handlers now need to state that they support
+        hybrid graphics and subclass either the
+        _NvidiaDriverHybridBase class or the FglrxDriverHybrid
+        class.
+      + Drivers which don't claim to support hybrid graphics
+        will not show up on hybrid systems.
+      + If the nvidia-prime or the fglrx-pxpress packages are
+        not available, the drivers won't be available on
+        hybrid systems. This avoids breaking systems which
+        require further configuration which only these two
+        packages provide.
+      + Jockey doesn't touch the xorg.conf when dealing with
+        hybrid graphics (as either nvidia-prime or
+        fglrx-pxpress will take care of it).
+      + Hybrid Graphics is only supported on systems which
+        use Raring's backported X and kernel.
+  * jockey/xorg_driver.py:
+    - Add supports_hybrid_graphics class attribute.
+    - Add has_hybrid_graphics class attribute.
+    - Add better support for faking devices and packages.
+    - Ignore transitional packages.
+  * jockey/oslib.py:
+    - Add package_transitional() method.
+    - Add package_available() method.
+    - Make current_xorg_video_abi take into account
+      backported packages.
+    - Catch additional arguments in package_installed().
+      This gives us some flexibility when using fake
+      devices for testing.
+    - Add some checks for raring's backported xserver.
+  * tests/hybridgraphics.py:
+    - Add coverage for hybrid graphics.
+  * tests/oslib.py:
+    - Deal with the multiple video abis that drivers may
+      support.
+    - Make sure that the kernel headers are available before
+      failing.
+  * tests/sandbox.py:
+    - Report a more compliant fake X ABI.
+    - Update package_installed() to match the one in oslib.py.
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 26 Jul 2013 10:38:06 +0200
+
 jockey (0.9.7-0ubuntu7.9) precise-proposed; urgency=low
 
   * jockey/kerneldetection.py:

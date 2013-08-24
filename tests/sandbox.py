@@ -581,7 +581,7 @@ EndSection
                 continue
         raise ValueError('no such package')
 
-    def package_installed(self, package):
+    def package_installed(self, package, *args):
         '''Return if the given package is installed.'''
 
         return package in self.installed_packages
@@ -714,7 +714,7 @@ EndSection
         This returns a static string for the test suite. Tests are done by
         dynamically implementing video_driver_abi().
         '''
-        return 'X.org-video-1test'
+        return 'xorg-video-abi-1'
 
 #-------------------------------------------------------------------#
 

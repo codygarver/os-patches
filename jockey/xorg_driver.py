@@ -17,11 +17,11 @@
 '''Abstract handler for a restricted X.org graphics driver.'''
 
 import os.path, logging, re
-from glob import glob
-
+import subprocess
 import XKit.xutils
 import XKit.xorgparser
 
+from glob import glob
 from handlers import KernelModuleHandler
 from jockey.oslib import OSLib
 
@@ -30,13 +30,18 @@ def _(x): return x
 
 #--------------------------------------------------------------------#
 
+_has_hybrid_gfx = None
+_supports_hybrid_gfx = None
+
 class XorgDriverHandler(KernelModuleHandler):
     '''Abstract class for a restricted X.org graphics driver.'''
 
     def __init__(self, backend, module, driver_package, xorg_driver,
         alt_free_driver, extra_conf_options={}, add_modules=[],
             disable_modules=[], remove_modules=[], name=None, description=None,
-            rationale=None, do_blacklist=True):
+            rationale=None, do_blacklist=True, fake_pcilist=None,
+            fake_kernel=None, fake_xabi=None, fake_inst_func=None,
+            fake_apt_cache=None):
         '''Create handler for a particular X.org graphics driver.
         
         This usually consists of a kernel module and a driver package, plus
@@ -65,6 +70,22 @@ class XorgDriverHandler(KernelModuleHandler):
         self.add_modules = add_modules
         self.disable_modules = disable_modules
         self.remove_modules = remove_modules
+
+        # See if the system has Hybrid Graphics and cache
+        # the variable
+        global _has_hybrid_gfx
+        if fake_pcilist or _has_hybrid_gfx == None:
+            _has_hybrid_gfx = self._has_hybrid_gfx(fake_pcilist)
+        self.has_hybrid_graphics = _has_hybrid_gfx
+
+        # See if the system has Hybrid Graphics and cache
+        # the variable
+        global _supports_hybrid_gfx
+        if fake_inst_func or _supports_hybrid_gfx == None:
+            _supports_hybrid_gfx = self._supports_hybrid_gfx(fake_kernel=fake_kernel,
+                                fake_xabi=fake_xabi, fake_inst_func=fake_inst_func,
+                                fake_apt_cache=fake_apt_cache)
+        self.supports_hybrid_graphics = _supports_hybrid_gfx
 
         if self.xorg_driver:
             self.old_conf = os.path.join(OSLib.inst.backup_dir, self.xorg_driver + '.oldconf')
@@ -101,6 +122,10 @@ class XorgDriverHandler(KernelModuleHandler):
 
     def available(self):
         if self.package:
+            # Ignore transitional packages
+            if OSLib.inst.package_transitional(self.package):
+                return False
+
             cur_abi = OSLib.inst.current_xorg_video_abi()
             pkg_abis = OSLib.inst.video_driver_abi(self.package)
             if cur_abi and pkg_abis and (cur_abi not in pkg_abis):
@@ -115,6 +140,16 @@ class XorgDriverHandler(KernelModuleHandler):
             q_lts_xserver_supported = OSLib.inst.quantal_xserver_supported(self.package)
             if q_lts_xserver_installed and not q_lts_xserver_supported:
                 logging.debug('XorgDriverHandler(%s, %s, %s): Disabling as package is not compatible with Q-LTS X.org',
+                        self.module, self.package, self.xorg_driver)
+                return False
+
+            # Do not install drivers which don't support Raring's
+            # backported xserver for precise if the new X stack is
+            # already installed
+            r_lts_xserver_installed = OSLib.inst.raring_xserver_installed()
+            r_lts_xserver_supported = OSLib.inst.raring_xserver_supported(self.package)
+            if r_lts_xserver_installed and not r_lts_xserver_supported:
+                logging.debug('XorgDriverHandler(%s, %s, %s): Disabling as package is not compatible with R-LTS X.org',
                         self.module, self.package, self.xorg_driver)
                 return False
 
@@ -176,7 +211,127 @@ class XorgDriverHandler(KernelModuleHandler):
     def _mod_disabled(self, module):
         #See whether the xorg.conf has a module set to "Disable"
         return self._mod_status(module, 'Disable')
-    
+
+    def _has_hybrid_gfx(self, fakelist=None):
+        '''Look for supported Hybrid Graphics hardware'''
+        # Pci classes 300 301 302 380
+        pattern_300 = re.compile('.*0300: *(.+):(.+) \(.+\)|'
+                                 '.*0300: *(.+):(.+)')
+
+        pattern_301 = re.compile('.*0301: *(.+):(.+) \(.+\)|'
+                                 '.*0301: *(.+):(.+)')
+
+        pattern_302 = re.compile('.*0302: *(.+):(.+) \(.+\)|'
+                                 '.*0302: *(.+):(.+)')
+
+        pattern_380 = re.compile('.*0380: *(.+):(.+) \(.+\)|'
+                                 '.*0380: *(.+):(.+)')
+        cards = []
+        intel = '8086'
+        amd = '1002'
+        nvidia = '10de'
+
+        if fakelist:
+            lines = fakelist
+        else:
+            proc = subprocess.Popen(('lspci', '-n'),
+                                    stdout=subprocess.PIPE,
+                                    stderr=subprocess.PIPE)
+            lines = proc.communicate()[0].split('\n')
+
+        # Let's look for devices in the different pci classes
+        for line in lines:
+            m_300 = pattern_300.match(line)
+            m_301 = pattern_301.match(line)
+            m_302 = pattern_302.match(line)
+            m_380 = pattern_380.match(line)
+            if m_300:
+                vendor = m_300.group(1) and \
+                         m_300.group(1).strip().lower() or \
+                         m_300.group(3).strip().lower()
+                cards.append(vendor)
+                continue
+            if m_301:
+                vendor = m_301.group(1) and \
+                         m_301.group(1).strip().lower() or \
+                         m_301.group(3).strip().lower()
+                cards.append(vendor)
+                continue
+            if m_302:
+                vendor = m_302.group(1) and \
+                         m_302.group(1).strip().lower() or \
+                         m_302.group(3).strip().lower()
+                cards.append(vendor)
+                continue
+            if m_302:
+                vendor = m_302.group(1) and \
+                         m_302.group(1).strip().lower() or \
+                         m_302.group(3).strip().lower()
+                cards.append(vendor)
+                continue
+            if m_380:
+                vendor = m_380.group(1) and \
+                         m_380.group(1).strip().lower() or \
+                         m_380.group(3).strip().lower()
+                cards.append(vendor)
+                continue
+
+        return (len(cards) > 1 and
+                (intel in cards and nvidia in cards) or
+                (intel in cards and amd in cards))
+
+    def _supports_hybrid_gfx(self, fake_kernel=None,
+                             fake_xabi=None,
+                             fake_inst_func=None,
+                             fake_apt_cache=None):
+        '''See if the system supports Hybrid Graphics'''
+        if fake_inst_func:
+            is_installed = fake_inst_func
+        else:
+            is_installed = OSLib.inst.package_installed
+
+        if fake_kernel:
+            kernel = (fake_kernel and fake_kernel or
+                      os.uname()[2])
+        else:
+            kernel = os.uname()[2]
+
+        # Strip ABI and label
+        if '-' in kernel:
+            kernel = kernel[:kernel.find('-')]
+        # Get linux major and minor version
+        major, minor = kernel.split('.')[:2]
+        major = int(major)
+        minor = int(minor)
+
+        # the backported Raring and Saucy kernels
+        lts_raring = is_installed('linux-image-generic-lts-raring',
+                                  fake_apt_cache)
+        lts_saucy = is_installed('linux-image-generic-lts-saucy',
+                                  fake_apt_cache)
+
+        # Get the xserver ABI
+        x_abi = (fake_xabi and int(fake_xabi) or
+                 int(OSLib.inst.current_xorg_video_abi().split('-')[-1]))
+
+        # We don't want xserver-xorg-core-lts-quantal
+        # in spite of its ABI
+        x_lts_quantal = is_installed('xserver-xorg-core-lts-quantal',
+                                     fake_apt_cache)
+
+        logging.debug('linux-lts-raring installed: %s\n'
+                      'linux-lts-saucy installed: %s\n'
+                      'linux minor version: %d\n'
+                      'xserver ABI: %d\n'
+                      'xserver-lts-quantal: %s'% (lts_raring,
+                                                    lts_saucy,
+                                                    minor,
+                                                    x_abi,
+                                                    x_lts_quantal))
+        # X ABI 13 is not too strict a requirement
+        return ((lts_raring or lts_saucy or minor >= 9) and
+                (x_abi >= 13 and not x_lts_quantal))
+
     def enable(self):
         if not self.xorg_conf:
             logging.error('XorgDriverHandler.enable(): invalid xorg.conf, skipping')

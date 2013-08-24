@@ -5,12 +5,14 @@
 # License: GPL v2 or later
 
 import logging, os, os.path
-
+import subprocess
 import XKit.xorgparser
+
+from jockey.handlers import KernelModuleHandler
 from jockey.xorg_driver import XorgDriverHandler
+from jockey.oslib import OSLib
 from NvidiaDetector.alternatives import Alternatives
 from NvidiaDetector.alternatives import MultiArchUtils
-import subprocess
 
 # dummy stub for xgettext
 def _(x): return x
@@ -56,6 +58,13 @@ class FglrxDriver(XorgDriverHandler):
             logging.debug('Disabling fglrx driver on live system')
             return False
 
+        if self.has_hybrid_graphics:
+            # We disable Hybrid Graphics by default unless a specific
+            # driver allows it
+            logging.debug('Disabling %s on a hybrid graphics system'
+                           % (self.package))
+            return False
+
         logging.debug('fglrx.available: falling back to default')
         return XorgDriverHandler.available(self)
 
@@ -87,8 +96,12 @@ class FglrxDriver(XorgDriverHandler):
                 self.xorg_conf.removeOption('Module', 'Disable', value='dri2', position=section)
 
     def enable(self):
-        XorgDriverHandler.enable(self)
-        
+        if self.has_hybrid_graphics:
+            # Do not touch xorg.conf on hybrid graphics
+            KernelModuleHandler.enable(self)
+        else:
+            XorgDriverHandler.enable(self)
+
         # Set the alternative to FGLRX
         fglrx_alternative = self._alternatives.get_alternative_by_name('fglrx', ignore_pattern='-updates')
         if not fglrx_alternative:
@@ -104,30 +117,39 @@ class FglrxDriver(XorgDriverHandler):
 
     def enabled(self):
         # See if fglrx is the current alternative
-        target_alternative = self._alternatives.get_alternative_by_name('fglrx')
+        target_alternatives = [alt for alt in
+                               self._alternatives.list_alternatives()
+                               if alt.split('/')[-2] in ('pxpress', 'fglrx')]
         current_alternative = self._alternatives.get_current_alternative()
-        other_target_alternative = self._other_alternatives.get_alternative_by_name('fglrx')
+        other_target_alternatives = [alt for alt in
+                                    self._other_alternatives.list_alternatives()
+                                    if alt.split('/')[-2] in ('pxpress', 'fglrx')]
         other_current_alternative = self._other_alternatives.get_current_alternative()
 
         logging.debug('fglrx.enabled(%s): target_alt %s current_alt %s other target alt %s other current alt %s',
-                self.module, target_alternative, current_alternative,
-                other_target_alternative, other_current_alternative)
+                self.module, target_alternatives, current_alternative,
+                other_target_alternatives, other_current_alternative)
 
         if current_alternative is None:
             logging.debug('current alternative of %s is None, not enabled', self.module)
             return False
-        if current_alternative != target_alternative or \
-           other_current_alternative != other_target_alternative:
+        if current_alternative not in target_alternatives or \
+           other_current_alternative not in other_target_alternatives:
             logging.debug('%s is not the alternative in use', self.module)
             return False
 
-        return XorgDriverHandler.enabled(self)
+        if self.has_hybrid_graphics:
+            # Do not touch xorg.conf on hybrid graphics
+            return KernelModuleHandler.enabled(self)
+        else:
+            return XorgDriverHandler.enabled(self)
 
     def disable(self):
-        # make sure that fglrx-kernel-source is removed too
-        XorgDriverHandler.disable(self)
-        #kernel_source = 'fglrx-kernel-source'
-        #self.backend.remove_package(kernel_source)
+        if self.has_hybrid_graphics:
+            # Do not touch xorg.conf on hybrid graphics
+            KernelModuleHandler.disable(self)
+        else:
+            XorgDriverHandler.disable(self)
 
         # Set the alternative back to open drivers
         open_drivers = self._alternatives.get_open_drivers_alternative()
@@ -161,6 +183,85 @@ class FglrxDriver(XorgDriverHandler):
 
         return True
 
+
+class FglrxDriverHybrid(FglrxDriver):
+    '''Abstract base class for Fglrx drivers which support Hybrid graphics.'''
+
+    def __init__(self, backend, package=None):
+        FglrxDriver.__init__(self, backend, package)
+        self.hybrid_gfx_pkg = 'fglrx-pxpress'
+
+    def hybrid_available(self):
+        '''See whether Hybrid Graphics should be enabled or not'''
+        # Do not provide a driver if Hybrid graphics is available but
+        # unsupported (we need at least the lts-raring stack)
+        #if self.has_hybrid_graphics and not self.supports_hybrid_graphics:
+        #    return False
+
+        # Check that the extra package to enable Hybrid graphics is available
+        if not OSLib.inst.package_available(self.hybrid_gfx_pkg):
+            return False
+
+        return True
+
+    def available(self):
+        # we don't offer this driver in a life CD environment, as we will run
+        # out of RAM trying to download and install all the packages in the RAM
+        # disk.
+        if os.path.isdir('/rofs'):
+            logging.debug('Disabling fglrx driver on live system')
+            return False
+
+        # See if it's all ready for Hybrid Graphics
+        if self.has_hybrid_graphics and not self.hybrid_available():
+            return False
+
+        logging.debug('fglrx.available: falling back to default')
+        return XorgDriverHandler.available(self)
+
+    def enable(self):
+        # First ensure that the package for Hybrid Graphics is
+        # installed, if the system supports it
+        if self.has_hybrid_graphics:
+            try:
+                self.backend.install_package(self.hybrid_gfx_pkg)
+            except (ValueError, SystemError):
+                # Package not available
+                logging.error('%s: Unable to install the %s package. '
+                              'Hybrid graphics won\'t work.',
+                        self.id(), self.hybrid_gfx_pkg)
+                return
+
+        FglrxDriver.enable(self)
+
+    def enabled(self):
+        # Check that the extra package to enable Hybrid graphics is
+        # installed
+        if (self.has_hybrid_graphics and
+            not OSLib.inst.package_installed(self.hybrid_gfx_pkg)):
+            return False
+
+        return FglrxDriver.enabled(self)
+
+    def enable_config_hook(self):
+        # Do not touch xorg.conf
+        pass
+
+    def enables_composite(self):
+        '''Return whether this driver supports the composite extension.'''
+        return True
+
+    def disable(self):
+        # Try to remove the package for Hybrid Graphics if any
+        if self.has_hybrid_graphics:
+            try:
+                self.backend.remove_package(self.hybrid_gfx_pkg)
+            except (ValueError, SystemError):
+                pass
+
+        FglrxDriver.disable(self)
+
+
 class FglrxDriverUpdate(FglrxDriver):
     def __init__(self, backend):
         FglrxDriver.__init__(self, backend, 'fglrx-updates')
@@ -168,3 +269,12 @@ class FglrxDriverUpdate(FglrxDriver):
 class FglrxDriverExperimental9(FglrxDriver):
     def __init__(self, backend):
         FglrxDriver.__init__(self, backend, 'fglrx-experimental-9')
+
+class FglrxDriverExperimental12(FglrxDriver):
+    def __init__(self, backend):
+        FglrxDriver.__init__(self, backend, 'fglrx-experimental-12')
+
+class FglrxDriverExperimental13(FglrxDriverHybrid):
+    def __init__(self, backend):
+        FglrxDriverHybrid.__init__(self, backend, 'fglrx-experimental-13')
+
