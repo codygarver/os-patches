@@ -41,3 +41,4 @@ git_no_preferred_mode_in_clone.patch
 git_unmute_sound_event.patch
 git_update_keyring_password.patch
 remove-manual-proxy-in-auto.patch
+use_rfkill_airplane_mode.patch
