@@ -52,7 +52,7 @@ Index: b/panels/network/cc-network-panel.c
 +                g_clear_object (&priv->rfkill);
 +        }
 +        if (priv->killswitches != NULL) {
-+                g_hash_table_destroy (&priv->killswitches);
++                g_hash_table_destroy (priv->killswitches);
 +                priv->killswitches = NULL;
 +        }
 +        priv->rfkill_switch = NULL;
