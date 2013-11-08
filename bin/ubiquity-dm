@@ -432,6 +432,8 @@ EndSection
                 wm_cmd = ['gnome-shell', '--sm-disable', '--mode=ubiquity']
             elif osextras.find_on_path('metacity'):
                 wm_cmd = ['metacity', '--sm-disable']
+            elif osextras.find_on_path('gala'):
+                wm_cmd = ['gala', '--sm-disable']
             elif osextras.find_on_path('xfwm4'):
                 wm_cmd = ['xfwm4', '--compositor=off']
             elif osextras.find_on_path('matchbox-window-manager'):
