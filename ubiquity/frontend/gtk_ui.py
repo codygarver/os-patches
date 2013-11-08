@@ -907,7 +907,7 @@ class Wizard(BaseFrontend):
             '-f', '/var/log/syslog', '-q',
         ]
         self.vte.fork_command_full(0, None, tail_cmd, None, 0, None, None)
-        self.vte.set_font_from_string("Ubuntu Mono 8")
+        self.vte.set_font_from_string("Droid Sans Mono 10")
         self.vte.show()
         # FIXME shrink the window horizontally instead of locking the window
         # size.
