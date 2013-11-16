@@ -54,7 +54,7 @@ endif
 
 ifeq (yes,$(shell dpkg-vendor --derives-from Ubuntu && echo yes))
 DEFAULT_CMDLINE := quiet splash
-DEFAULT_TIMEOUT := 10
+DEFAULT_TIMEOUT := 5
 DEFAULT_HIDDEN_TIMEOUT := 0
 DEFAULT_HIDDEN_TIMEOUT_BOOL := true
 confflags += \
