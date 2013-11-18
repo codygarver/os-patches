@@ -1,7 +1,4 @@
-NAME="elementary OS"
-VERSION="0.3 Isis"
-ID="elementary OS"
-ID_LIKE=ubuntu
-PRETTY_NAME="elementary OS Isis"
-VERSION_ID="0.3"
-
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=14.04
+DISTRIB_CODENAME=trusty
+DISTRIB_DESCRIPTION="Ubuntu Trusty Tahr (development branch)"
