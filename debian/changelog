@@ -1,3 +1,10 @@
+software-center (5.2.10) precise; urgency=low
+
+  * debian/patches/local.patch:
+    - Cannot install deb files without network connection (lp: #926763)
+
+ -- Ritesh Khadgaray <ritesh@canonical.com>  Fri, 15 Nov 2013 14:26:56 -0800
+
 software-center (5.2.9) precise-proposed; urgency=low
 
   [ Brian Murray ]
