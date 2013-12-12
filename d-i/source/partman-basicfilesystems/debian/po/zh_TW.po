@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-basicfilesystems@packages.debian.org\n"
-"POT-Creation-Date: 2010-08-20 22:02+0200\n"
+"POT-Creation-Date: 2013-11-29 12:07+0000\n"
 "PO-Revision-Date: 2008-08-09 00:35+0800\n"
 "Last-Translator: Tetralet <tetralet@gmail.com>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -604,6 +604,17 @@ msgstr "noatime - 在存取時不更新 inode 的存取時間。"
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
 #: ../partman-basicfilesystems.templates:43001
+#, fuzzy
+#| msgid "noatime - do not update inode access times at each access"
+msgid "nodiratime - do not update directory inode access times"
+msgstr "noatime - 在存取時不更新 inode 的存取時間。"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:44001
 msgid "relatime - update inode access times relative to modify time"
 msgstr "relatime - 以相對於修改時間來更新 inode 的存取時間"
 
@@ -612,7 +623,7 @@ msgstr "relatime - 以相對於修改時間來更新 inode 的存取時間"
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:44001
+#: ../partman-basicfilesystems.templates:45001
 msgid "nodev - do not support character or block special devices"
 msgstr "nodev - 不支援字元或區塊等特殊裝置。"
 
@@ -621,7 +632,7 @@ msgstr "nodev - 不支援字元或區塊等特殊裝置。"
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:45001
+#: ../partman-basicfilesystems.templates:46001
 msgid "nosuid - ignore set-user-identifier or set-group-identifier bits"
 msgstr ""
 "nosuid - 忽略 set-user-identifier (suid) 或 set-group-identifier (sgid) 位元"
@@ -631,7 +642,7 @@ msgstr ""
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:46001
+#: ../partman-basicfilesystems.templates:47001
 msgid "noexec - do not allow execution of any binaries"
 msgstr "noexec - 禁止執行任何二進位檔案。"
 
@@ -640,7 +651,7 @@ msgstr "noexec - 禁止執行任何二進位檔案。"
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:47001
+#: ../partman-basicfilesystems.templates:48001
 msgid "ro - mount the file system read-only"
 msgstr "ro - 以唯讀方式掛載該檔案系統。"
 
@@ -649,7 +660,7 @@ msgstr "ro - 以唯讀方式掛載該檔案系統。"
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:48001
+#: ../partman-basicfilesystems.templates:49001
 msgid "sync - all input/output activities occur synchronously"
 msgstr "sync - 所有 輸入/輸出 動作都將同步執行。"
 
@@ -658,7 +669,7 @@ msgstr "sync - 所有 輸入/輸出 動作都將同步執行。"
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:49001
+#: ../partman-basicfilesystems.templates:50001
 msgid "usrquota - user disk quota accounting enabled"
 msgstr "usrquota - 啟用 使用者 的磁碟配額"
 
@@ -667,7 +678,7 @@ msgstr "usrquota - 啟用 使用者 的磁碟配額"
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:50001
+#: ../partman-basicfilesystems.templates:51001
 msgid "grpquota - group disk quota accounting enabled"
 msgstr "grpquota - 啟用 群組 的磁碟配額"
 
@@ -676,7 +687,7 @@ msgstr "grpquota - 啟用 群組 的磁碟配額"
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:51001
+#: ../partman-basicfilesystems.templates:52001
 msgid "user_xattr - support user extended attributes"
 msgstr "user_xattr - 支援使用者擴充屬性"
 
@@ -685,7 +696,7 @@ msgstr "user_xattr - 支援使用者擴充屬性"
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:52001
+#: ../partman-basicfilesystems.templates:53001
 msgid "quiet - changing owner and permissions does not return errors"
 msgstr "quiet - 在改變擁有者和權限時不回應任何錯誤訊息。"
 
@@ -694,16 +705,25 @@ msgstr "quiet - 在改變擁有者和權限時不回應任何錯誤訊息。"
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:53001
+#: ../partman-basicfilesystems.templates:54001
 msgid "notail - disable packing of files into the file system tree"
 msgstr "notail - 不要將檔案合併儲存至檔案系統樹狀結構。"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:55001
+msgid "discard - trim freed blocks from underlying block device"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl4:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:54001
+#: ../partman-basicfilesystems.templates:56001
 msgid "acls - support POSIX.1e Access Control List"
 msgstr "acls - 支援 POSIX.1e 存取控管表"
 
@@ -712,6 +732,6 @@ msgstr "acls - 支援 POSIX.1e 存取控管表"
 #. :sl4:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:55001
+#: ../partman-basicfilesystems.templates:57001
 msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
 msgstr "shortnames - 使用舊式 MS-DOS 8.3 格式的檔案名稱"

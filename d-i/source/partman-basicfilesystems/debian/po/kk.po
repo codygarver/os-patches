@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-basicfilesystems@packages.debian.org\n"
-"POT-Creation-Date: 2010-08-20 22:02+0200\n"
+"POT-Creation-Date: 2013-11-29 12:07+0000\n"
 "PO-Revision-Date: 2010-09-30 13:44+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
@@ -624,6 +624,17 @@ msgstr "noatime - inode қатынау санын бірден жаңартпа�
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
 #: ../partman-basicfilesystems.templates:43001
+#, fuzzy
+#| msgid "noatime - do not update inode access times at each access"
+msgid "nodiratime - do not update directory inode access times"
+msgstr "noatime - inode қатынау санын бірден жаңартпау"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:44001
 msgid "relatime - update inode access times relative to modify time"
 msgstr "relatime - indoe қатынау санын өзгерту уақытына қатысты жаңарту"
 
@@ -632,7 +643,7 @@ msgstr "relatime - indoe қатынау санын өзгерту уақытын
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:44001
+#: ../partman-basicfilesystems.templates:45001
 msgid "nodev - do not support character or block special devices"
 msgstr "nodev - таңбалық не арнайы құрылғыларды қолдамау"
 
@@ -641,7 +652,7 @@ msgstr "nodev - таңбалық не арнайы құрылғыларды қо
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:45001
+#: ../partman-basicfilesystems.templates:46001
 msgid "nosuid - ignore set-user-identifier or set-group-identifier bits"
 msgstr "nosuid - SUID және SGID биттерін елемеу"
 
@@ -650,7 +661,7 @@ msgstr "nosuid - SUID және SGID биттерін елемеу"
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:46001
+#: ../partman-basicfilesystems.templates:47001
 msgid "noexec - do not allow execution of any binaries"
 msgstr "noexec - ешбір бағдарламаның орындалуын болдырмау"
 
@@ -659,7 +670,7 @@ msgstr "noexec - ешбір бағдарламаның орындалуын бо
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:47001
+#: ../partman-basicfilesystems.templates:48001
 msgid "ro - mount the file system read-only"
 msgstr "ro - файлдық жүйені 'тек оқуға' тіркеу"
 
@@ -668,7 +679,7 @@ msgstr "ro - файлдық жүйені 'тек оқуға' тіркеу"
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:48001
+#: ../partman-basicfilesystems.templates:49001
 msgid "sync - all input/output activities occur synchronously"
 msgstr "sync - барлық енгізу-шығару процестері синхронды түрде іске асады"
 
@@ -677,7 +688,7 @@ msgstr "sync - барлық енгізу-шығару процестері си�
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:49001
+#: ../partman-basicfilesystems.templates:50001
 msgid "usrquota - user disk quota accounting enabled"
 msgstr "usrquota - пайдаланушылардың дискілік квотасын есептеуді қосу"
 
@@ -686,7 +697,7 @@ msgstr "usrquota - пайдаланушылардың дискілік квот�
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:50001
+#: ../partman-basicfilesystems.templates:51001
 msgid "grpquota - group disk quota accounting enabled"
 msgstr "grpquota - топтардың дискілік квотасын есептеуге рұқсат беру"
 
@@ -695,7 +706,7 @@ msgstr "grpquota - топтардың дискілік квотасын есеп
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:51001
+#: ../partman-basicfilesystems.templates:52001
 msgid "user_xattr - support user extended attributes"
 msgstr "user_xattr - пайдаланушының кеңейтілген атрибуттарын қосу"
 
@@ -704,7 +715,7 @@ msgstr "user_xattr - пайдаланушының кеңейтілген атр�
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:52001
+#: ../partman-basicfilesystems.templates:53001
 msgid "quiet - changing owner and permissions does not return errors"
 msgstr "quiet – иесі мен оның құқықтарын өзгерту қате қайтармайды"
 
@@ -713,16 +724,25 @@ msgstr "quiet – иесі мен оның құқықтарын өзгерту �
 #. :sl2:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:53001
+#: ../partman-basicfilesystems.templates:54001
 msgid "notail - disable packing of files into the file system tree"
 msgstr "notail - файлдарды файлдық жүйенің ағашына қысуға тыйым салу"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:55001
+msgid "discard - trim freed blocks from underlying block device"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl4:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:54001
+#: ../partman-basicfilesystems.templates:56001
 msgid "acls - support POSIX.1e Access Control List"
 msgstr "acls - POSIX.1e Access Control List қолдау"
 
@@ -731,6 +751,6 @@ msgstr "acls - POSIX.1e Access Control List қолдау"
 #. :sl4:
 #. Note to translators: Please keep your translations of this string below
 #. a 65 columns limit (which means 65 characters in single-byte languages)
-#: ../partman-basicfilesystems.templates:55001
+#: ../partman-basicfilesystems.templates:57001
 msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
 msgstr "shortnames - тек ескі MS-DOS 8.3 түріндегі файлдар аттарын қолдану"

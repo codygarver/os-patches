@@ -1,3 +1,21 @@
+ubiquity (2.10.28) precise; urgency=low
+
+  * Automatic update of included source packages: partman-
+    basicfilesystems 71ubuntu3.4. (LP: #978032)
+
+ -- Dmitrijs Ledkovs <xnox@ubuntu.com>  Tue, 03 Dec 2013 18:04:05 +0000
+
+ubiquity (2.10.27) precise; urgency=low
+
+  * Automatic update of included source packages: netcfg 1.68ubuntu14.1
+    (LP: #901700), partman-auto 101ubuntu2.2 (LP: #1197766, #1065281),
+    partman-base 153ubuntu6 (LP: #1065281), partman-basicfilesystems
+    71ubuntu3.3 (LP: #978032, #1215458), partman-btrfs 8ubuntu1.1 (LP:
+    #978032), partman-efi 25ubuntu1.2 (LP: #1065281), partman-ext3
+    67ubuntu1.1 (LP: #978032).
+
+ -- Dmitrijs Ledkovs <xnox@ubuntu.com>  Fri, 29 Nov 2013 10:32:25 +0000
+
 ubiquity (2.10.26) precise-proposed; urgency=low
 
   * Automatic update of included source packages: base-installer

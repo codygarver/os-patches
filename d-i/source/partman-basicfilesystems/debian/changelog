@@ -1,3 +1,24 @@
+partman-basicfilesystems (71ubuntu3.4) precise; urgency=low
+
+  * Make nodiratime and discard mount options translatable (closes: #725371,
+    LP: #978032).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 29 Nov 2013 12:08:27 +0000
+
+partman-basicfilesystems (71ubuntu3.3) precise; urgency=low
+
+  * Add nodiratime option for ext2, and noatime, nodiratime, relatime, and
+    discard options for fat16 and fat32 (see #722598; LP: #978032).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Oct 2013 10:54:50 +0100
+
+partman-basicfilesystems (71ubuntu3.2) precise; urgency=low
+
+  * Always use mkfs.ext2 to create ext2 filesystems, since libparted's ext2
+    code is deprecated and can't handle large sector sizes (LP: #1215458).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 12 Sep 2013 13:32:09 +0100
+
 partman-basicfilesystems (71ubuntu3.1) precise; urgency=low
 
   * Use mkdosfs to create FAT filesystems, since libparted cannot handle

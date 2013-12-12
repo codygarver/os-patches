@@ -1,3 +1,10 @@
+partman-base (153ubuntu6) precise-proposed; urgency=low
+
+  * Use the device's logical sector size throughout rather than
+    PED_SECTOR_SIZE_DEFAULT (LP: #1065281).
+
+ -- James M Leddy <james.leddy@canonical.com>  Fri, 08 Nov 2013 17:57:33 +0000
+
 partman-base (153ubuntu5) precise-proposed; urgency=low
 
   * Permit non-cylinder alignment again on GPT (closes: #674894,

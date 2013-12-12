@@ -1,3 +1,11 @@
+netcfg (1.68ubuntu14.1) precise; urgency=low
+
+  [ Philipp Kern ]
+  * netcfg.c (main): Remove a local definition of hostname. 
+    (Closes: #690330, LP: #901700)
+
+ -- Chris J Arges <chris.j.arges@ubuntu.com>  Tue, 19 Nov 2013 09:45:02 -0600
+
 netcfg (1.68ubuntu14) precise; urgency=low
 
   * Fix detection of empty domains when writing to /etc/hosts in the case

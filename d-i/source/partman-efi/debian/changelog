@@ -1,3 +1,11 @@
+partman-efi (25ubuntu1.2) precise; urgency=low
+
+  * Pass "-s 1" to mkdosfs if the logical sector size is not equal to 512
+    bytes, since mkdosfs has trouble with cluster calculations otherwise
+    (LP: #1065281).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Sep 2013 14:00:33 +0100
+
 partman-efi (25ubuntu1.1) precise; urgency=low
 
   * Use mkdosfs to create FAT filesystems, since libparted cannot handle

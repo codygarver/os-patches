@@ -1,3 +1,11 @@
+partman-ext3 (67ubuntu1.1) precise; urgency=low
+
+  * Backport from Debian (Stephen Gran):
+    - Allow "discard" and "nodiratime" options for ext4 (closes: #722598,
+      LP: #978032).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Oct 2013 10:49:22 +0100
+
 partman-ext3 (67ubuntu1) precise; urgency=low
 
   * Resynchronise with Debian.  Remaining changes:

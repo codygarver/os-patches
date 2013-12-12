@@ -1,3 +1,9 @@
+partman-btrfs (8ubuntu1.1) precise; urgency=low
+
+  * Add nodiratime and discard mount options (see #722598; LP: #978032).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Oct 2013 10:57:25 +0100
+
 partman-btrfs (8ubuntu1) precise; urgency=low
 
   * Resynchronise with Debian.  Remaining changes:
