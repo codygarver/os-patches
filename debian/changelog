@@ -1,3 +1,13 @@
+qt4-x11 (4:4.8.1-0ubuntu4.5) precise-security; urgency=low
+
+  * SECURITY UPDATE: [XML Entity Expansion Denial of Service] (LP: #1259577).
+    - Add CVE-2013-4549.diff
+    - add limit in src/xml/sax/qxml.cpp
+    - http://lists.qt-project.org/pipermail/announce/2013-December/000036.html
+    - CVE-2013-4549
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 10 Dec 2013 22:49:13 +0000
+
 qt4-x11 (4:4.8.1-0ubuntu4.4) precise-security; urgency=low
 
   * SECURITY UPDATE: information disclosure via MITM redirect
