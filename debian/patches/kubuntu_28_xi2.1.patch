@@ -100,7 +100,7 @@
 +SOURCES = xinput2.cpp
 --- a/configure
 +++ b/configure
-@@ -796,6 +796,7 @@ CFG_DECORATION_AVAILABLE="styled windows
+@@ -796,6 +796,7 @@
  CFG_DECORATION_ON="${CFG_DECORATION_AVAILABLE}" # all on by default
  CFG_DECORATION_PLUGIN_AVAILABLE=
  CFG_DECORATION_PLUGIN=
@@ -108,7 +108,7 @@
  CFG_XINPUT=runtime
  CFG_XKB=auto
  CFG_NIS=auto
-@@ -1091,7 +1092,7 @@ while [ "$#" -gt 0 ]; do
+@@ -1091,7 +1092,7 @@
          VAL=no
          ;;
      #Qt style yes options
@@ -117,7 +117,7 @@
          VAR=`echo $1 | sed "s,^-\(.*\),\1,"`
          VAL=yes
          ;;
-@@ -1768,6 +1769,13 @@ while [ "$#" -gt 0 ]; do
+@@ -1768,6 +1769,13 @@
              UNKNOWN_OPT=yes
          fi
          ;;
@@ -131,7 +131,7 @@
      xinput)
          if [ "$VAL" = "yes" ] || [ "$VAL" = "no" ] || [ "$VAL" = "runtime" ]; then
              CFG_XINPUT="$VAL"
-@@ -4197,6 +4205,13 @@ if [ "$PLATFORM_X11" = "yes" ]; then
+@@ -4197,6 +4205,13 @@
          XMY="*"
          XMN=" "
      fi
@@ -145,7 +145,7 @@
      if [ "$CFG_XINPUT" = "no" ]; then
          XIY=" "
          XIN="*"
-@@ -4301,7 +4316,10 @@ Qt/X11 only:
+@@ -4301,7 +4316,10 @@
                           Requires fontconfig/fontconfig.h, libfontconfig,
                           freetype.h and libfreetype.
  
@@ -157,7 +157,7 @@
   $XIY  -xinput ............ Compile Xinput support. This also enabled tablet support
                           which requires IRIX with wacom.h and libXi or
                           XFree86 with X11/extensions/XInput.h and libXi.
-@@ -6210,7 +6228,22 @@ if [ "$PLATFORM_X11" = "yes" ]; then
+@@ -6210,7 +6228,22 @@
  	fi
      fi
  
@@ -181,7 +181,7 @@
      if [ "$CFG_XINPUT" != "no" ]; then
          if "$unixtests/compile.test" "$XQMAKESPEC" "$QMAKE_CONFIG" $OPT_VERBOSE "$relpath" "$outpath" config.tests/x11/xinput "XInput" $L_FLAGS $I_FLAGS $l_FLAGS $X11TESTS_FLAGS; then
  	    if [ "$CFG_XINPUT" != "runtime" ]; then
-@@ -7434,9 +7467,12 @@ if [ "$PLATFORM_X11" = "yes" ]; then
+@@ -7434,9 +7467,12 @@
      if [ "$CFG_FONTCONFIG" = "yes" ]; then
          QT_CONFIG="$QT_CONFIG fontconfig"
      fi
@@ -195,7 +195,7 @@
      if [ "$CFG_XINPUT" = "yes" ]; then
          QT_CONFIG="$QT_CONFIG xinput tablet"
      fi
-@@ -8341,6 +8377,7 @@ if [ "$XPLATFORM_SYMBIAN" = "no" ]; then
+@@ -8343,6 +8379,7 @@
      [ "$CFG_XVIDEO" = "no" ]     && QCONFIG_FLAGS="$QCONFIG_FLAGS QT_NO_XVIDEO"
      [ "$CFG_XSYNC" = "no" ]     && QCONFIG_FLAGS="$QCONFIG_FLAGS QT_NO_XSYNC"
      [ "$CFG_XINPUT" = "no" ]     && QCONFIG_FLAGS="$QCONFIG_FLAGS QT_NO_XINPUT QT_NO_TABLET"
@@ -203,7 +203,7 @@
  
      [ "$CFG_XCURSOR" = "runtime" ]   && QCONFIG_FLAGS="$QCONFIG_FLAGS QT_RUNTIME_XCURSOR"
      [ "$CFG_XINERAMA" = "runtime" ]  && QCONFIG_FLAGS="$QCONFIG_FLAGS QT_RUNTIME_XINERAMA"
-@@ -8904,6 +8941,7 @@ if [ "$PLATFORM_X11" = "yes" ]; then
+@@ -8906,6 +8943,7 @@
      echo "Xfixes support ......... $CFG_XFIXES"
      echo "Xrandr support ......... $CFG_XRANDR"
      echo "Xrender support ........ $CFG_XRENDER"
@@ -213,7 +213,7 @@
      echo "FontConfig support ..... $CFG_FONTCONFIG"
 --- a/examples/touch/fingerpaint/scribblearea.cpp
 +++ b/examples/touch/fingerpaint/scribblearea.cpp
-@@ -186,7 +186,9 @@ bool ScribbleArea::event(QEvent *event)
+@@ -186,7 +186,9 @@
                      QRectF rect = touchPoint.rect();
                      if (rect.isEmpty()) {
                          qreal diameter = qreal(50) * touchPoint.pressure();
@@ -225,7 +225,7 @@
                      QPainter painter(&image);
 --- a/src/gui/kernel/kernel.pri
 +++ b/src/gui/kernel/kernel.pri
-@@ -140,6 +140,7 @@ symbian {
+@@ -140,6 +140,7 @@
  unix:x11 {
  	INCLUDEPATH += ../3rdparty/xorg
  	HEADERS += \
@@ -235,7 +235,7 @@
          kernel/qkde_p.h
 --- a/src/gui/kernel/qapplication_p.h
 +++ b/src/gui/kernel/qapplication_p.h
-@@ -636,6 +636,35 @@ public:
+@@ -638,6 +638,35 @@
      bool useTranslucentEGLSurfaces;
  #endif
  
@@ -281,7 +281,7 @@
  
  #if !defined (QT_NO_TABLET)
  extern "C" {
-@@ -125,9 +126,6 @@ extern "C" {
+@@ -125,9 +126,6 @@
  
  #define XK_MISCELLANY
  #include <X11/keysymdef.h>
@@ -291,7 +291,7 @@
  
  #include <stdlib.h>
  #include <string.h>
-@@ -326,6 +324,13 @@ static const char * x11_atomnames = {
+@@ -326,6 +324,13 @@
      // Tablet
      "STYLUS\0"
      "ERASER\0"
@@ -305,7 +305,7 @@
  };
  
  Q_GUI_EXPORT QX11Data *qt_x11Data = 0;
-@@ -575,6 +580,10 @@ public:
+@@ -575,6 +580,10 @@
  #endif
      bool translatePropertyEvent(const XEvent *);
  
@@ -316,7 +316,7 @@
      void doDeferredMap()
      {
          Q_ASSERT(testAttribute(Qt::WA_WState_Created));
-@@ -696,7 +705,7 @@ static int qt_x_errhandler(Display *dpy,
+@@ -696,7 +705,7 @@
  
      default:
  #if !defined(QT_NO_XINPUT)
@@ -325,7 +325,7 @@
              && err->error_code == (X11->xinput_errorbase + XI_BadDevice)
              && err->minor_code == 3 /* X_OpenDevice */) {
              return 0;
-@@ -727,7 +736,7 @@ static int qt_x_errhandler(Display *dpy,
+@@ -727,7 +736,7 @@
              extensionName = "RENDER";
          else if (err->request_code == X11->xrandr_major)
              extensionName = "RANDR";
@@ -334,7 +334,7 @@
              extensionName = "XInputExtension";
          else if (err->request_code == X11->mitshm_major)
              extensionName = "MIT-SHM";
-@@ -1681,9 +1690,14 @@ void qt_init(QApplicationPrivate *priv,
+@@ -1681,9 +1690,14 @@
  
      // XInputExtension
      X11->use_xinput = false;
@@ -350,7 +350,7 @@
  
      X11->use_xkb = false;
      X11->xkb_major = 0;
-@@ -2154,14 +2168,26 @@ void qt_init(QApplicationPrivate *priv,
+@@ -2159,14 +2173,28 @@
  #endif // QT_RUNTIME_XINERAMA
  #endif // QT_NO_XINERAMA
  
@@ -360,10 +360,12 @@
 +                                          &X11->xinput_eventbase, &X11->xinput_errorbase);
 +        if (X11->use_xinput2) {
 +            // we want XInput2
-+            int ximajor = 2, ximinor = 1;
++            int ximajor = 2, ximinor = 2;
 +            if (XIQueryVersion(X11->display, &ximajor, &ximinor) == BadRequest) {
-+                // XInput2 not available
-+                X11->use_xinput2 = false;
++                ximajor = 2, ximinor = 1;
++                if (XIQueryVersion(X11->display, &ximajor, &ximinor) == BadRequest)
++                    // XInput2 not available
++                    X11->use_xinput2 = false;
 +            }
 +        }
 +#endif
@@ -379,7 +381,7 @@
                                            &X11->xinput_eventbase, &X11->xinput_errorbase);
          if (X11->use_xinput) {
              X11->ptrXCloseDevice = XINPUT_LOAD(XCloseDevice);
-@@ -3224,6 +3250,10 @@ int QApplication::x11ProcessEvent(XEvent
+@@ -3229,6 +3257,10 @@
      Q_D(QApplication);
      QScopedLoopLevelCounter loopLevelCounter(d->threadData);
  
@@ -390,7 +392,7 @@
  #ifdef ALIEN_DEBUG
      //qDebug() << "QApplication::x11ProcessEvent:" << event->type;
  #endif
-@@ -3254,6 +3284,16 @@ int QApplication::x11ProcessEvent(XEvent
+@@ -3259,6 +3291,16 @@
      case SelectionClear:
          X11->time = event->xselectionclear.time;
          break;
@@ -407,7 +409,7 @@
      default:
          break;
      }
-@@ -3267,7 +3307,43 @@ int QApplication::x11ProcessEvent(XEvent
+@@ -3272,7 +3314,43 @@
      }
  #endif
  
@@ -452,7 +454,7 @@
  
      if (wPRmapper) {                                // just did a widget reparent?
          if (widget == 0) {                        // not in std widget mapper
-@@ -3279,6 +3355,15 @@ int QApplication::x11ProcessEvent(XEvent
+@@ -3284,6 +3362,15 @@
              case XKeyRelease:
                  widget = qPRFindWidget(event->xany.window);
                  break;
@@ -468,7 +470,7 @@
              }
          }
          else if (widget->testAttribute(Qt::WA_WState_Reparented))
-@@ -3913,6 +3998,13 @@ int QApplication::x11ProcessEvent(XEvent
+@@ -3918,6 +4005,13 @@
          }
          break;
  
@@ -482,7 +484,7 @@
      default:
          break;
      }
-@@ -5138,6 +5230,191 @@ bool QETWidget::translatePropertyEvent(c
+@@ -5143,6 +5237,191 @@
      return true;
  }
  
@@ -674,7 +676,7 @@
  
  //
  // Paint event translation
-@@ -6285,11 +6562,77 @@ void QApplicationPrivate::_q_readRX71Mul
+@@ -6290,11 +6569,77 @@
  
  #else // !QT_RX71_MULTITOUCH
  
@@ -754,7 +756,7 @@
  QT_END_NAMESPACE
 --- a/src/gui/kernel/qevent.h
 +++ b/src/gui/kernel/qevent.h
-@@ -800,6 +800,7 @@ public:
+@@ -800,6 +800,7 @@
          QTouchEventTouchPointPrivate *d;
          friend class QApplication;
          friend class QApplicationPrivate;
@@ -785,7 +787,7 @@
  #endif // QT_NO_TABLET
  
  
-@@ -435,11 +437,16 @@ struct QX11Data
+@@ -438,11 +440,16 @@
      bool use_mitshm_pixmaps;
      int mitshm_major;
  
@@ -804,7 +806,7 @@
  
      // for XKEYBOARD support
      bool use_xkb;
-@@ -686,6 +693,12 @@ struct QX11Data
+@@ -689,6 +696,12 @@
          XTabletStylus,
          XTabletEraser,
  
@@ -819,7 +821,7 @@
          _QT_SETTINGS_TIMESTAMP = NPredefinedAtoms,
 --- a/src/gui/kernel/qwidget.cpp
 +++ b/src/gui/kernel/qwidget.cpp
-@@ -10969,7 +10969,7 @@ void QWidget::setAttribute(Qt::WidgetAtt
+@@ -10970,7 +10970,7 @@
  #endif
          break;
      case Qt::WA_AcceptTouchEvents:
@@ -830,7 +832,7 @@
  #endif
 --- a/src/gui/kernel/qwidget_p.h
 +++ b/src/gui/kernel/qwidget_p.h
-@@ -789,6 +789,7 @@ public:
+@@ -789,6 +789,7 @@
      void updateX11AcceptFocus();
      QPoint mapToGlobal(const QPoint &pos) const;
      QPoint mapFromGlobal(const QPoint &pos) const;
@@ -840,7 +842,7 @@
  #ifndef QT_NO_GESTURES
 --- a/src/gui/kernel/qwidget_x11.cpp
 +++ b/src/gui/kernel/qwidget_x11.cpp
-@@ -878,7 +878,13 @@ void QWidgetPrivate::create_sys(WId wind
+@@ -878,7 +878,13 @@
  //         else
          XSelectInput(dpy, id, stdDesktopEventMask);
      } else if (q->internalWinId()) {
@@ -855,7 +857,7 @@
  #if !defined (QT_NO_TABLET)
          QTabletDeviceDataList *tablet_list = qt_tablet_devices();
          if (X11->ptrXSelectExtensionEvent) {
-@@ -954,6 +960,9 @@ void QWidgetPrivate::create_sys(WId wind
+@@ -954,6 +960,9 @@
              surface->flush(q, q->rect(), q->mapTo(surface->window(), QPoint()));
      }
  
@@ -865,7 +867,7 @@
  #ifdef ALIEN_DEBUG
      qDebug() << "QWidgetPrivate::create_sys END:" << q;
  #endif
-@@ -3147,4 +3156,32 @@ void QWidgetPrivate::updateX11AcceptFocu
+@@ -3147,4 +3156,32 @@
          XFree((char *)h);
  }
  
