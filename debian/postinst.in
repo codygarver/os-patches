@@ -133,7 +133,7 @@ if [ "$1" = "configure" ] && [ "$2" != "" ]; then
     if grep -q "$md5" /usr/share/base-files/profile.md5sums; then
       if ! cmp -s /usr/share/base-files/profile /etc/profile; then
         cp -p /usr/share/base-files/profile /etc/profile
-        echo Updating unmodified /etc/profile to current default.
+        echo Updating /etc/profile to current default.
       fi
     fi
   fi

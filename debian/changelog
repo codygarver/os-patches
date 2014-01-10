@@ -1,3 +1,60 @@
+base-files (7.2ubuntu1) trusty; urgency=medium
+
+  * Merge with Debian; remaining changes:
+    - Branding changes.
+    - Add /etc/lsb-release file.
+    - Add lsb-release-udeb package.
+    - Various bashrc extensions.
+    - Do not install /usr/local dirs with staff group writeability, as there
+      are cases where somebody can become any user but root (like NFS).
+    - Update the motd upgrade handling to know about /etc/motd.tail.
+    - Add default /etc/networks file.
+    - Added information about the docs web page.
+    - Restore order line in /etc/host.conf with a comment.
+    - Add update-motd scripts.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 06 Jan 2014 15:16:41 +0100
+
+base-files (7.2) unstable; urgency=medium
+
+  * Changed issue, issue.net, debian_version and os-release to read "jessie/sid",
+    and dropped VERSION and VERSION_ID from os-release.
+
+ -- Santiago Vila <sanvila@debian.org>  Sun, 05 May 2013 18:19:00 +0200
+
+base-files (7.1) unstable; urgency=low
+
+  * Added Multi-Arch: foreign. This is needed even if base-files is
+    "Essential: yes" because there are quite a number of packages
+    having versioned dependencies on it. Closes: #695863.
+
+ -- Santiago Vila <sanvila@debian.org>  Fri, 14 Dec 2012 13:55:36 +0100
+
+base-files (7.0) unstable; urgency=low
+
+  * Oops. Even if the Breaks on sendfile does not help APT to decide about
+    the configuration order, removing the breaks is wrong, because then it is
+    possible to upgrade base-files and not sendfile, which would effectively
+    break sendfile. Readded Breaks on sendfile.
+
+ -- Santiago Vila <sanvila@debian.org>  Wed, 12 Dec 2012 13:05:12 +0100
+
+base-files (7) unstable; urgency=low
+
+  * Added 89126d8bba3325594e1539bcc97847f3 to the list of /etc/profile
+    md5sums which are ok to be replaced by the current default version to
+    help sendfile to fix its /etc/profile modification bug in a single
+    upgrade (instead of waiting for the next point release). Closes: #689835.
+    Drop "unmodified" word in postinst, as it may not always be true.
+  * Dropped versioned Breaks on sendfile, as it had no effect.
+  * Changed debian_version, issue, issue.net and os-release to read "7.0".
+    Added also "(wheezy)" in VERSION and PRETTY_NAME.
+  * Added VERSION and VERSION_ID to /etc/os-release, for release as stable.
+    Please remember: Applications should not rely on these fields to be set.
+  * Updated README (wheezy -> jessie).
+
+ -- Santiago Vila <sanvila@debian.org>  Wed, 12 Dec 2012 12:55:00 +0100
+
 base-files (6.12ubuntu5) trusty; urgency=low
 
   * /etc/issue{,.net}, /etc/lsb-release, /etc/os-release: Welcome to Trusty!
