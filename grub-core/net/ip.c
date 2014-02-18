@@ -38,7 +38,7 @@ struct iphdr {
   grub_uint16_t chksum;
   grub_uint32_t src;
   grub_uint32_t dest;
-} __attribute__ ((packed)) ;
+} GRUB_PACKED ;
 
 enum
 {
@@ -56,7 +56,7 @@ struct ip6hdr {
   grub_uint8_t ttl;
   ip6addr src;
   ip6addr dest;
-} __attribute__ ((packed)) ;
+} GRUB_PACKED ;
 
 static int
 cmp (const void *a__, const void *b__)
@@ -403,7 +403,7 @@ grub_net_recv_ip4_packets (struct grub_net_buff *nb,
 					    * sizeof (grub_uint32_t)))
     {
       grub_dprintf ("net", "IP packet too short: %" PRIdGRUB_SSIZE "\n",
-		    (nb->tail - nb->data));
+		    (grub_ssize_t) (nb->tail - nb->data));
       grub_netbuff_free (nb);
       return GRUB_ERR_NONE;
     }
@@ -654,7 +654,7 @@ grub_net_recv_ip6_packets (struct grub_net_buff *nb,
   if (nb->tail - nb->data < (grub_ssize_t) sizeof (*iph))
     {
       grub_dprintf ("net", "IP packet too short: %" PRIdGRUB_SSIZE "\n",
-		    nb->tail - nb->data);
+		    (grub_ssize_t) (nb->tail - nb->data));
       grub_netbuff_free (nb);
       return GRUB_ERR_NONE;
     }

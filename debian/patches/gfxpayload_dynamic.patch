@@ -1,17 +1,30 @@
-Description: Add configure option to enable gfxpayload=keep dynamically
- Set GRUB_GFXPAYLOAD_LINUX=keep unless it's known to be unsupported on the
- current hardware.  See
- https://blueprints.launchpad.net/ubuntu/+spec/packageselection-foundations-n-grub2-boot-framebuffer.
-Author: Evan Broder <evan@ebroder.net>
+From bda2afd2546d6fb505afdd6406a668e6fc9a735e Mon Sep 17 00:00:00 2001
+From: Evan Broder <evan@ebroder.net>
+Date: Mon, 13 Jan 2014 12:13:29 +0000
+Subject: Add configure option to enable gfxpayload=keep dynamically
+
+Set GRUB_GFXPAYLOAD_LINUX=keep unless it's known to be unsupported on
+the current hardware.  See
+https://blueprints.launchpad.net/ubuntu/+spec/packageselection-foundations-n-grub2-boot-framebuffer.
+
 Author: Colin Watson <cjwatson@ubuntu.com>
 Forwarded: no
-Last-Update: 2013-11-13
+Last-Update: 2013-12-25
 
-Index: b/configure.ac
-===================================================================
+Patch-Name: gfxpayload_dynamic.patch
+---
+ configure.ac                         |  11 +++
+ grub-core/Makefile.core.def          |   9 +++
+ grub-core/commands/i386/pc/hwmatch.c | 146 +++++++++++++++++++++++++++++++++++
+ util/grub.d/10_linux.in              |  37 ++++++++-
+ 4 files changed, 200 insertions(+), 3 deletions(-)
+ create mode 100644 grub-core/commands/i386/pc/hwmatch.c
+
+diff --git a/configure.ac b/configure.ac
+index 2a7e410..7f26de6 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -1109,6 +1109,17 @@
+@@ -1605,6 +1605,17 @@ else
  fi
  AC_SUBST([QUICK_BOOT])
  
@@ -29,18 +42,18 @@ Index: b/configure.ac
  LIBS=""
  
  AC_SUBST([FONT_SOURCE])
-Index: b/grub-core/Makefile.core.def
-===================================================================
+diff --git a/grub-core/Makefile.core.def b/grub-core/Makefile.core.def
+index 8fed2fb..27988ad 100644
 --- a/grub-core/Makefile.core.def
 +++ b/grub-core/Makefile.core.def
-@@ -704,6 +704,15 @@
+@@ -897,6 +897,15 @@ module = {
  };
  
  module = {
 +  name = hwmatch;
 +  i386_pc = commands/i386/pc/hwmatch.c;
 +  enable = i386_pc;
-+  ldadd = libgnulib.a;
++  common = gnulib/regex.c;
 +  cflags = '$(CFLAGS_POSIX) $(CFLAGS_GNULIB)';
 +  cppflags = '$(CPPFLAGS_POSIX) $(CPPFLAGS_GNULIB)';
 +};
@@ -49,11 +62,12 @@ Index: b/grub-core/Makefile.core.def
    name = keystatus;
    common = commands/keystatus.c;
  };
-Index: b/grub-core/commands/i386/pc/hwmatch.c
-===================================================================
+diff --git a/grub-core/commands/i386/pc/hwmatch.c b/grub-core/commands/i386/pc/hwmatch.c
+new file mode 100644
+index 0000000..c9f7c9f
 --- /dev/null
 +++ b/grub-core/commands/i386/pc/hwmatch.c
-@@ -0,0 +1,141 @@
+@@ -0,0 +1,146 @@
 +/* hwmatch.c - Match hardware against a whitelist/blacklist.  */
 +/*
 + *  GRUB  --  GRand Unified Bootloader
@@ -85,99 +99,104 @@ Index: b/grub-core/commands/i386/pc/hwmatch.c
 +
 +GRUB_MOD_LICENSE ("GPLv3+");
 +
++/* Context for grub_cmd_hwmatch.  */
++struct hwmatch_ctx
++{
++  grub_file_t matches_file;
++  int class_match;
++  int match;
++};
++
++/* Helper for grub_cmd_hwmatch.  */
++static int
++hwmatch_iter (grub_pci_device_t dev, grub_pci_id_t pciid, void *data)
++{
++  struct hwmatch_ctx *ctx = data;
++  grub_pci_address_t addr;
++  grub_uint32_t class, baseclass, vendor, device;
++  grub_pci_id_t subpciid;
++  grub_uint32_t subvendor, subdevice, subclass;
++  char *id, *line;
++
++  addr = grub_pci_make_address (dev, GRUB_PCI_REG_CLASS);
++  class = grub_pci_read (addr);
++  baseclass = class >> 24;
++
++  if (ctx->class_match != baseclass)
++    return 0;
++
++  vendor = pciid & 0xffff;
++  device = pciid >> 16;
++
++  addr = grub_pci_make_address (dev, GRUB_PCI_REG_SUBVENDOR);
++  subpciid = grub_pci_read (addr);
++
++  subclass = (class >> 16) & 0xff;
++  subvendor = subpciid & 0xffff;
++  subdevice = subpciid >> 16;
++
++  id = grub_xasprintf ("v%04xd%04xsv%04xsd%04xbc%02xsc%02x",
++		       vendor, device, subvendor, subdevice,
++		       baseclass, subclass);
++
++  grub_file_seek (ctx->matches_file, 0);
++  while ((line = grub_file_getline (ctx->matches_file)) != NULL)
++    {
++      char *anchored_line;
++      regex_t regex;
++      int ret;
++
++      if (! *line || *line == '#')
++	{
++	  grub_free (line);
++	  continue;
++	}
++
++      anchored_line = grub_xasprintf ("^%s$", line);
++      ret = regcomp (&regex, anchored_line, REG_EXTENDED | REG_NOSUB);
++      grub_free (anchored_line);
++      if (ret)
++	{
++	  grub_free (line);
++	  continue;
++	}
++
++      ret = regexec (&regex, id, 0, NULL, 0);
++      regfree (&regex);
++      grub_free (line);
++      if (! ret)
++	{
++	  ctx->match = 1;
++	  return 1;
++	}
++    }
++
++  return 0;
++}
++
 +static grub_err_t
 +grub_cmd_hwmatch (grub_command_t cmd __attribute__ ((unused)),
 +		  int argc, char **args)
 +{
-+  grub_file_t matches_file;
-+  int class_match;
-+  int match = 0;
++  struct hwmatch_ctx ctx = { .match = 0 };
 +  char *match_str;
-+
-+  auto int NESTED_FUNC_ATTR hwmatch_iter (grub_pci_device_t dev,
-+					  grub_pci_id_t pciid);
-+
-+  int NESTED_FUNC_ATTR hwmatch_iter (grub_pci_device_t dev,
-+				     grub_pci_id_t pciid)
-+  {
-+    grub_pci_address_t addr;
-+    grub_uint32_t class, baseclass, vendor, device;
-+    grub_pci_id_t subpciid;
-+    grub_uint32_t subvendor, subdevice, subclass;
-+    char *id, *line;
-+
-+    addr = grub_pci_make_address (dev, GRUB_PCI_REG_CLASS);
-+    class = grub_pci_read (addr);
-+    baseclass = class >> 24;
-+
-+    if (class_match != baseclass)
-+      return 0;
-+
-+    vendor = pciid & 0xffff;
-+    device = pciid >> 16;
-+
-+    addr = grub_pci_make_address (dev, GRUB_PCI_REG_SUBVENDOR);
-+    subpciid = grub_pci_read (addr);
-+
-+    subclass = (class >> 16) & 0xff;
-+    subvendor = subpciid & 0xffff;
-+    subdevice = subpciid >> 16;
-+
-+    id = grub_xasprintf ("v%04xd%04xsv%04xsd%04xbc%02xsc%02x",
-+			 vendor, device, subvendor, subdevice,
-+			 baseclass, subclass);
-+
-+    grub_file_seek (matches_file, 0);
-+    while ((line = grub_file_getline (matches_file)) != NULL)
-+      {
-+	char *anchored_line;
-+	regex_t regex;
-+	int ret;
-+
-+	if (! *line || *line == '#')
-+	  {
-+	    grub_free (line);
-+	    continue;
-+	  }
-+
-+	anchored_line = grub_xasprintf ("^%s$", line);
-+	ret = regcomp (&regex, anchored_line, REG_EXTENDED | REG_NOSUB);
-+	grub_free (anchored_line);
-+	if (ret)
-+	  {
-+	    grub_free (line);
-+	    continue;
-+	  }
-+
-+	ret = regexec (&regex, id, 0, NULL, 0);
-+	regfree (&regex);
-+	grub_free (line);
-+	if (! ret)
-+	  {
-+	    match = 1;
-+	    return 1;
-+	  }
-+      }
-+
-+    return 0;
-+  }
 +
 +  if (argc < 2)
 +    return grub_error (GRUB_ERR_BAD_ARGUMENT, "list file and class required");
 +
-+  matches_file = grub_file_open (args[0]);
-+  if (! matches_file)
++  ctx.matches_file = grub_file_open (args[0]);
++  if (! ctx.matches_file)
 +    return grub_errno;
 +
-+  class_match = grub_strtol (args[1], 0, 10);
++  ctx.class_match = grub_strtol (args[1], 0, 10);
 +
-+  grub_pci_iterate (hwmatch_iter);
++  grub_pci_iterate (hwmatch_iter, &ctx);
 +
-+  match_str = grub_xasprintf ("%d", match);
++  match_str = grub_xasprintf ("%d", ctx.match);
 +  grub_env_set ("match", match_str);
 +  grub_free (match_str);
 +
-+  grub_file_close (matches_file);
++  grub_file_close (ctx.matches_file);
 +
 +  return GRUB_ERR_NONE;
 +}
@@ -195,11 +214,11 @@ Index: b/grub-core/commands/i386/pc/hwmatch.c
 +{
 +  grub_unregister_command (cmd);
 +}
-Index: b/util/grub.d/10_linux.in
-===================================================================
+diff --git a/util/grub.d/10_linux.in b/util/grub.d/10_linux.in
+index aa2c369..41f83ca 100644
 --- a/util/grub.d/10_linux.in
 +++ b/util/grub.d/10_linux.in
-@@ -23,6 +23,7 @@
+@@ -23,6 +23,7 @@ datarootdir="@datarootdir@"
  ubuntu_recovery="@UBUNTU_RECOVERY@"
  quiet_boot="@QUIET_BOOT@"
  quick_boot="@QUICK_BOOT@"
@@ -207,7 +226,7 @@ Index: b/util/grub.d/10_linux.in
  
  . "@datadir@/@PACKAGE@/grub-mkconfig_lib"
  
-@@ -139,9 +140,10 @@
+@@ -133,9 +134,10 @@ linux_entry ()
        if [ "x$GRUB_GFXPAYLOAD_LINUX" != xtext ]; then
  	  echo "	load_video" | sed "s/^/$submenu_indentation/"
        fi
@@ -221,7 +240,7 @@ Index: b/util/grub.d/10_linux.in
    fi
  
    echo "	insmod gzio" | sed "s/^/$submenu_indentation/"
-@@ -214,6 +216,35 @@
+@@ -208,6 +210,35 @@ prepare_root_cache=
  boot_device_id=
  title_correction_code=
  

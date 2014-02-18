@@ -139,6 +139,7 @@ struct grub_net_card
     {
       struct grub_efi_simple_network *efi_net;
       grub_efi_handle_t efi_handle;
+      grub_size_t last_pkt_size;
     };
 #endif
     void *data;
@@ -155,6 +156,14 @@ typedef enum grub_network_level_protocol_id
   GRUB_NET_NETWORK_LEVEL_PROTOCOL_IPV6
 } grub_network_level_protocol_id_t;
 
+typedef enum
+{
+  DNS_OPTION_IPV4,
+  DNS_OPTION_IPV6,
+  DNS_OPTION_PREFER_IPV4,
+  DNS_OPTION_PREFER_IPV6
+} grub_dns_option_t;
+
 typedef struct grub_net_network_level_address
 {
   grub_network_level_protocol_id_t type;
@@ -163,6 +172,7 @@ typedef struct grub_net_network_level_address
     grub_uint32_t ipv4;
     grub_uint64_t ipv6[2];
   };
+  grub_dns_option_t option;
 } grub_net_network_level_address_t;
 
 typedef struct grub_net_network_level_netaddress
@@ -406,7 +416,7 @@ struct grub_net_bootp_packet
   char server_name[64];
   char boot_file[128];
   grub_uint8_t vendor[0];
-} __attribute__ ((packed));
+} GRUB_PACKED;
 
 #define	GRUB_NET_BOOTP_RFC1048_MAGIC_0	0x63
 #define	GRUB_NET_BOOTP_RFC1048_MAGIC_1	0x82
