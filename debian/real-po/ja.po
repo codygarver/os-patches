@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: ubiquity@packages.debian.org\n"
 "POT-Creation-Date: 2012-03-09 12:10-0500\n"
-"PO-Revision-Date: 2012-04-06 04:11+0000\n"
+"PO-Revision-Date: 2012-11-22 11:16+0000\n"
 "Last-Translator: Shushi Kurose <md81bird@hitaki.net>\n"
 "Language-Team: Debian L10n Japanese <debian-l10n-japanese@lists.debian.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:01+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:01+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
@@ -118,7 +118,7 @@ msgid ""
 "href=\"update\">update this installer</a>."
 msgstr ""
 "お望みならば <a href=\"release-notes\">リリースノート</a> をご覧ください。<a "
-"href=\"update\">このインストーラをアップデート</a> することもできます。"
+"href=\"update\">このインストーラーをアップデート</a> することもできます。"
 
 #. Type: text
 #. Description
@@ -132,8 +132,8 @@ msgstr ""
 #: ../ubiquity.templates:15001
 msgid "You may wish to <a href=\"update\">update this installer</a>."
 msgstr ""
-"お望みならば <a href=\"update\">このインストーラをアップデート</a> してくださ"
-"い。"
+"お望みならば <a href=\"update\">このインストーラーをアップデート</a> してくだ"
+"さい。"
 
 #. Type: text
 #. Description
@@ -563,7 +563,7 @@ msgstr "今すぐシャットダウン"
 #. Description
 #: ../ubiquity.templates:80001 ../ubiquity.templates:81001
 msgid "Installer crashed"
-msgstr "インストーラがクラッシュしました"
+msgstr "インストーラーがクラッシュしました"
 
 #. Type: text
 #. Description
@@ -857,8 +857,8 @@ msgid ""
 "complete on the target partition.  Please run the installer again and select "
 "a larger partition to install into."
 msgstr ""
-"インストールに必要なハードディスクの空き容量が不足しています。インストーラを"
-"立ち上げ直し、充分な空き容量を持ったパーティションを選択してください。"
+"インストールに必要なハードディスクの空き容量が不足しています。インストーラー"
+"を起動し直して、充分な空き容量を持ったパーティションを選択してください。"
 
 #. Type: error
 #. Description
@@ -1086,11 +1086,11 @@ msgid ""
 msgstr ""
 "このエラーは、古いインストールイメージを使用したか、上記のパッケージのバグに"
 "よって発生した可能性があります。より詳細な情報は、/var/log/syslog を確認して"
-"ください。インストーラはインストールを続行しますが、この先で失敗する可能性が"
-"あり、インストール済みのPCから他のパッケージ（上記のパッケージもおそらく含ま"
-"れます）のインストールや削除ができなくなる可能性があります。まず最新のインス"
-"トールイメージを探した上で、それでも失敗するなら問題点を製造元に報告してくだ"
-"さい。"
+"ください。インストーラーはインストールを続行しますが、この先で失敗する可能性"
+"があり、インストール済みのPCから他のパッケージ（上記のパッケージもおそらく含"
+"まれます）のインストールや削除ができなくなる可能性があります。まず最新のイン"
+"ストールイメージを探した上で、それでも失敗するなら問題点を製造元に報告してく"
+"ださい。"
 
 #. Type: error
 #. Description
@@ -1207,9 +1207,9 @@ msgid ""
 "The installer needs to commit changes to partition tables, but cannot do so "
 "because partitions on the following mount points could not be unmounted:"
 msgstr ""
-"インストーラは、パーティションテーブルへの変更を反映する必要がありますが、以"
-"下のマウントポイントのパーティションがアンマウントされていない為に実行できま"
-"せん:"
+"インストーラーは、パーティションテーブルへの変更を反映する必要がありますが、"
+"以下のマウントポイントのパーティションがアンマウントされていないため実行でき"
+"ません:"
 
 #. Type: boolean
 #. Description
@@ -1223,8 +1223,7 @@ msgstr ""
 #: ../ubiquity.templates:169001
 msgid "Would you like the installer to try to unmount these partitions again?"
 msgstr ""
-"再度、インストーラによるこれらのパーティションのアンマウントを実行してよいで"
-"すか?"
+"インストーラーがこれらのパーティションを再度アンマウントしてみても良いですか?"
 
 #. Type: boolean
 #. Description
@@ -1324,7 +1323,7 @@ msgstr "インストール処理"
 #. Description
 #: ../ubiquity.templates:190001
 msgid "Checking for installer updates"
-msgstr "インストーラのアップデートを確認しています"
+msgstr "インストーラーのアップデートを確認しています"
 
 #. Type: text
 #. Description
@@ -1360,13 +1359,13 @@ msgstr "アップデートをインストールしています"
 #. Description
 #: ../ubiquity.templates:196001
 msgid "Error updating installer"
-msgstr "アップデートインストーラのエラー"
+msgstr "アップデートインストーラーのエラー"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:196001
 msgid "The installer encountered an error while trying to update itself:"
-msgstr "インストーラのアップデートを行う間にエラーが発生しました:"
+msgstr "インストーラーのアップデートを行う間にエラーが発生しました:"
 
 #. Type: text
 #. Description
@@ -1417,14 +1416,14 @@ msgid ""
 "The installer encountered an unrecoverable error.  A desktop session will "
 "now be run so that you may investigate the problem or try installing again."
 msgstr ""
-"インストーラに回復不能なエラーが発生しました。問題を調査したり、再度インス"
+"インストーラーに回復不能なエラーが発生しました。問題を調査したり、再度インス"
 "トールを試すことができるようデスクトップセッションを実行したままにします。"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:202001
 msgid "The installer encountered an unrecoverable error and will now reboot."
-msgstr "インストーラに回復不能なエラーが発生しました。再起動します。"
+msgstr "インストーラーに回復不能なエラーが発生しました。再起動します。"
 
 #. Type: text
 #. Description

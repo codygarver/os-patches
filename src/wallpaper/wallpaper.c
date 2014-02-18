@@ -85,11 +85,35 @@ int main (int argc, char** argv) {
 		c = cairo_create (surface);
 		for (monitor = 0; monitor < gdk_screen_get_n_monitors (screen); monitor++) {
 			gdk_screen_get_monitor_geometry (screen, monitor, &monitor_geometry);
-			GdkPixbuf *pixbuf = gdk_pixbuf_scale_simple (background_pixbuf,
-				monitor_geometry.width, monitor_geometry.height,
-				GDK_INTERP_BILINEAR);
+			int img_w = gdk_pixbuf_get_width(background_pixbuf);
+			int img_h = gdk_pixbuf_get_height(background_pixbuf);
+			float monitor_aspect_ratio = (float) monitor_geometry.width / monitor_geometry.height;
+			float img_aspect_ratio = (float) img_w / img_h;
+			GdkPixbuf *subpixbuf = NULL;
+
+            /* Crop image to fit the aspect ratio of monitor */
+			if (monitor_aspect_ratio > img_aspect_ratio) {
+				/* cut areas in upper and bottom edge */
+				int cut_h = img_h - img_w / monitor_aspect_ratio;
+				subpixbuf = gdk_pixbuf_new_subpixbuf (background_pixbuf, 0, cut_h/2, img_w, img_h-cut_h);
+			} else if (monitor_aspect_ratio < img_aspect_ratio) {
+				/* cut areas in left and right edge */
+				int cut_w = img_w - img_h * monitor_aspect_ratio;
+				subpixbuf = gdk_pixbuf_new_subpixbuf (background_pixbuf, cut_w/2, 0, img_w-cut_w, img_h);
+			}
+			GdkPixbuf *pixbuf;
+			if (subpixbuf != NULL) 
+				pixbuf = gdk_pixbuf_scale_simple (subpixbuf, 
+					monitor_geometry.width, monitor_geometry.height,
+					GDK_INTERP_BILINEAR);
+			else 
+				pixbuf = gdk_pixbuf_scale_simple (background_pixbuf,
+					monitor_geometry.width, monitor_geometry.height,
+					GDK_INTERP_BILINEAR);
 			gdk_cairo_set_source_pixbuf (c, pixbuf, monitor_geometry.x, monitor_geometry.y);
 			g_object_unref (pixbuf);
+			if (subpixbuf) 
+				g_object_unref (subpixbuf);
 			cairo_paint (c);
 		}
 		cairo_destroy (c);

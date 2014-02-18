@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:01+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:01+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
@@ -166,7 +166,7 @@ msgstr "ព្រមាន"
 #. Description
 #: ../ubiquity.templates:19001
 msgid "Where are you?"
-msgstr "អ្នក​រស់​នៅ​ឯណា ?"
+msgstr "តើ​អ្នក​នៅ​ឯណា?"
 
 #. Type: text
 #. Description
@@ -636,7 +636,7 @@ msgstr "ចំណុច​ម៉ោន"
 #. A column heading in the partitioner.
 #: ../ubiquity.templates:92001
 msgid "Format?"
-msgstr "ធ្វើ​ទ្រង់​ទ្រាយ ?"
+msgstr "លុប?"
 
 #. Type: text
 #. Description
@@ -703,7 +703,7 @@ msgstr "ចម្បង"
 #. Description
 #: ../ubiquity.templates:102001
 msgid "Logical"
-msgstr "សម"
+msgstr "ឡូជីខល"
 
 #. Type: text
 #. Description
@@ -1118,8 +1118,8 @@ msgid ""
 "continue, but the network configuration will have to be set up again in the "
 "installed system."
 msgstr ""
-"កំហុស​បាន​កើត​ឡើង​ ខណៈ​ពេល​កំពុង​ចម្លង​ការកំណត់​បណ្តាញ​ ។ ការ​ដំឡើង​នឹង​បន្ត ប៉ុន្តែ​ការកំណត់​រចនា​សម្ព័ន្ធ​បណ្តាញ​"
-"នឹង​ត្រូវ​បាន​រៀប​ចំ​ម្តង​ទៀត​នៅ​ក្នុង​ប្រព័ន្ធ​ដែល​បាន​ដំឡើង​ ។"
+"កំហុស​បាន​កើត​ឡើង​ ខណៈ​ពេល​កំពុង​ចម្លង​ការកំណត់​បណ្ដាញ​ ។ ការ​ដំឡើង​នឹង​បន្ត ប៉ុន្តែ​ការកំណត់​រចនា​សម្ព័ន្ធ​បណ្ដាញ​"
+"នឹង​ត្រូវ​បាន​រៀប​ចំ​ម្ដង​ទៀត​នៅ​ក្នុង​ប្រព័ន្ធ​ដែល​បាន​ដំឡើង​ ។"
 
 #. Type: error
 #. Description
@@ -1439,7 +1439,7 @@ msgstr "បង្ហាញ​ពាក្យ​សម្ងាត់"
 #. Description
 #: ../ubiquity.templates:209001
 msgid "I don't want to connect to a wi-fi network right now"
-msgstr "ខ្ញុំ​មិន​ចង់​តភ្ជាប់​ទៅ​បណ្ដាញ​ឥតខ្សែ​ឥឡូវ​ទេ"
+msgstr "ខ្ញុំ​មិន​ចង់​តភ្ជាប់​ទៅ​បណ្ដាញ​ឥត​ខ្សែ​ឥឡូវ​នេះ​បាន​​ទេ"
 
 #. Type: text
 #. Description
@@ -1893,4 +1893,4 @@ msgstr ""
 #. Description
 #: ../oem-config.templates:2001
 msgid "Removing packages"
-msgstr "យក​កញ្ចប់​ចេញ"
+msgstr "លុប​កញ្ចប់​ចេញ"

@@ -2,21 +2,21 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2011.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: ubiquity@packages.debian.org\n"
 "POT-Creation-Date: 2012-03-09 12:10-0500\n"
-"PO-Revision-Date: 2012-04-09 17:33+0000\n"
-"Last-Translator: Rūdolfs Mazurs <Unknown>\n"
-"Language-Team: Latvian <locale@laka.lv>\n"
+"PO-Revision-Date: 2012-11-22 11:17+0000\n"
+"Last-Translator: Pēteris Krišjānis <pecisk@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:00+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:01+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
@@ -69,9 +69,9 @@ msgid ""
 "for this batch of systems. This name will be saved on the installed system "
 "and can be used to help with bug reports."
 msgstr ""
-"Jūs instalējat sistēmu ražotāja režīmā. Lūdzu, ievadiet unikālu vārdu šai "
-"sistēmu grupai. Šis vārds tiks saglabāts instalētajā sistēmā un noderēs, "
-"apstrādājot problēmu ziņojumus."
+"Jūs instalējat sistēmu ražotāja režīmā. Lūdzu, ievadiet unikālu nosaukumu "
+"šai sistēmu grupai. Šis nosaukums tiks saglabāts instalētajā sistēmā un "
+"noderēs, apstrādājot problēmu ziņojumus."
 
 #. Type: text
 #. Description
@@ -82,8 +82,8 @@ msgid ""
 "You can try ${RELEASE} without making any changes to your computer, directly "
 "from this ${MEDIUM}."
 msgstr ""
-"Jūs varat izmēģināt ${RELEASE}, neveicot izmaiņas datorā, izmantojot tikai "
-"${MEDIUM} tieši."
+"Jūs varat izmēģināt ${RELEASE}, neveicot izmaiņas datorā, bet izmantojot "
+"tikai ${MEDIUM}."
 
 #. Type: text
 #. Description
@@ -93,8 +93,8 @@ msgid ""
 "Or if you're ready, you can install ${RELEASE} alongside (or instead of) "
 "your current operating system.  This shouldn't take too long."
 msgstr ""
-"Vai arī, ja esat gatavs, varat instalēt ${RELEASE} blakus (vai aizvietojot) "
-"jūsu esošo operētājsistēmu.  Tam nevajadzētu aizņemt daudz laika."
+"Vai arī, ja esat gatavs, jūs varat instalēt ${RELEASE} līdztekus esošajai "
+"operētājsistēmai vai tās vietā.  Instalēšana neprasīs daudz laika."
 
 #. Type: text
 #. Description
@@ -125,13 +125,14 @@ msgstr ""
 #: ../ubiquity.templates:14001
 msgid "You may wish to read the <a href=\"release-notes\">release notes</a>."
 msgstr ""
-"Jūs varētu vēlēties izlasīt <a href=\"release-notes\">laidiena piezīmes</a>."
+"Ja vēlaties, varat izlasīt <a href=\"release-notes\">laidiena piezīmes</a>."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:15001
 msgid "You may wish to <a href=\"update\">update this installer</a>."
-msgstr "Jūs varētu vēlēties <a href=\"update\">atjaunināt šo instalatoru</a>."
+msgstr ""
+"Ja vēlaties, jūs varat <a href=\"update\">atjaunināt šo instalatoru</a>."
 
 #. Type: text
 #. Description
@@ -154,8 +155,8 @@ msgid ""
 "Be sure to <b>take a full backup of any valuable data</b> before running "
 "this program."
 msgstr ""
-"Instalēšanas procesa laikā jūsu cietā diska sadaļas var tikt dzēstas vai to "
-"izmērs - mainīts. Lūdzu, nodrošinieties ar <b>pilnu jums nozīmīgu datu "
+"Instalēšanas procesa laikā jūsu cietā diska nodalījumi var tikt dzēsti vai "
+"to izmērs — mainīts. Lūdzu, nodrošinieties ar <b>jums nozīmīgu datu pilnu "
 "rezerves kopiju</b> pirms šīs programmas palaišanas."
 
 #. Type: text
@@ -186,7 +187,7 @@ msgstr "Izvēlieties savas tastatūras izkārtojumu:"
 #. Description
 #: ../ubiquity.templates:22001
 msgid "Type here to test your keyboard"
-msgstr "Rakstiet šeit, lai pārbaudītu savu tastatūru"
+msgstr "Tastatūras pārbaudes nolūkos ievadiet šeit tekstu."
 
 #. Type: text
 #. Description
@@ -204,13 +205,13 @@ msgstr "Noteikt tastatūras izkārtojumu..."
 #. Description
 #: ../ubiquity.templates:25001
 msgid "Please press one of the following keys:"
-msgstr "Lūdzu, nospiediet vienu no sekojošiem taustiņiem:"
+msgstr "Lūdzu, nospiediet kādu no uzskaitītajiem taustiņiem:"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:26001
 msgid "Is the following key present on your keyboard?"
-msgstr "Vai sekojošais taustiņš ir atrodams uz jūsu tastatūras?"
+msgstr "Vai šis taustiņš atrodams uz jūsu tastatūras?"
 
 #. Type: text
 #. Description
@@ -228,13 +229,13 @@ msgstr "Izvēlieties bildi"
 #. Description
 #: ../ubiquity.templates:29001
 msgid "Take a photo:"
-msgstr "Uzņem fotogrāfiju:"
+msgstr "Uzņemiet fotogrāfiju:"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:30001
 msgid "Or choose an existing picture:"
-msgstr "Vai izvēlies jau esošu bildi:"
+msgstr "Vai izvēlieties jau esošu bildi:"
 
 #. Type: text
 #. Description
@@ -313,13 +314,13 @@ msgstr "Datora nosaukums:"
 #. Description
 #: ../ubiquity.templates:43001
 msgid "The name it uses when it talks to other computers."
-msgstr "Šo nosaukumu izmanto, sazinoties ar citiem datoriem."
+msgstr "Šo nosaukumu izmanto saziņā ar citiem datoriem."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:44001
 msgid "Must be between 1 and 63 characters long."
-msgstr "Garumam jābūt starp 1 un 63 rakstzīmēm."
+msgstr "Garums — no 1 līdz 63 rakstzīmēm."
 
 #. Type: text
 #. Description
@@ -391,7 +392,7 @@ msgstr "Pieslēgties automātiski"
 #. Description
 #: ../ubiquity.templates:56001
 msgid "Require my password to log in"
-msgstr "Pieprasīt manu paroli, lai pieteiktos sistēmā"
+msgstr "Pieprasīt manas paroles ievadi, lai pieteiktos sistēmā"
 
 #. Type: text
 #. Description
@@ -406,8 +407,8 @@ msgid ""
 "This picture will be associated with your user name and displayed alongside "
 "it at times."
 msgstr ""
-"Šis attēls tiks saistīts ar jūsu lietotāja vārdu un dažkārt tiks pie tā "
-"rādīts."
+"Šis attēls tiks saistīts ar jūsu lietotāja vārdu un dažkārt tiks parādīts  "
+"tam līdzās."
 
 #. Type: text
 #. Description
@@ -416,7 +417,7 @@ msgid ""
 "Select any accounts you would like to import.  The documents and settings "
 "for these accounts will be available after the install completes."
 msgstr ""
-"Izvēlieties kontus, kurus jūs vēlētos importēt. Pēc instalēšanas pabeigšanas "
+"Izvēlieties, kurus kontus jūs vēlētos importēt. Pēc instalēšanas pabeigšanas "
 "šo kontu dokumenti un uzstādījumi būs pieejami jaunajā sistēmā."
 
 #. Type: text
@@ -439,13 +440,13 @@ msgstr "Instalācijas tips"
 #. SIZE is a variable substituted into this string, and may be '100 GB'
 #: ../ubiquity.templates:61001
 msgid "Files (${SIZE})"
-msgstr "Faili (${SIZE})"
+msgstr "Datnes (${SIZE})"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:62001
 msgid "Prepare partitions"
-msgstr "Sadaļu sagatavošana"
+msgstr "Nodalījumu sagatavošana"
 
 #. Type: text
 #. Description
@@ -465,13 +466,13 @@ msgstr "Iziet no instalēšanas?"
 #. Description
 #: ../ubiquity.templates:65001
 msgid "Do you really want to quit the installation now?"
-msgstr "Vai tiešām vēlaties iziet no instalēšanas tagad?"
+msgstr "Vai tiešām tagad vēlaties iziet no instalēšanas?"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:66001
 msgid "Bootloader install failed"
-msgstr "Ielādētāja instalēšana neizdevās"
+msgstr "Ielādētāja instalēšana kļūmīga"
 
 #. Type: text
 #. Description
@@ -480,14 +481,14 @@ msgid ""
 "Sorry, an error occurred and it was not possible to install the bootloader "
 "at the specified location."
 msgstr ""
-"Parādījās kļūda un diemžēl līdz ar to nav iespējams instalēt ielādētāju "
+"Diemžēl parādījusies kļūda, tādēļ nav iespējams instalēt ielādētāju "
 "norādītajā vietā."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:68001
 msgid "Choose a different device to install the bootloader on:"
-msgstr "Izvēlieties citu ierīci, kurā instalēt ielādētāju:"
+msgstr "Ielādētāja instalēšanai izvēlieties citu ierīci."
 
 #. Type: text
 #. Description
@@ -514,13 +515,13 @@ msgstr "Atcelt instalēšanu."
 #. Description
 #: ../ubiquity.templates:72001
 msgid "This may leave your computer unable to boot."
-msgstr "Tas varētu padarīt jūsu datoru nespējīgu ielādēt operētājsistēmas."
+msgstr "Pastāv iespēja, ka dators nevarēs ielādēt operētājsistēmu."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:73001
 msgid "How would you like to proceed?"
-msgstr "Ko jūs vēlētos darīt šajā sakarā?"
+msgstr "Kā vēlaties turpināt?"
 
 #. Type: text
 #. Description
@@ -558,7 +559,7 @@ msgstr "Izslēgt tagad"
 #. Description
 #: ../ubiquity.templates:80001 ../ubiquity.templates:81001
 msgid "Installer crashed"
-msgstr "Instalatora avārija"
+msgstr "Instalators avarējis."
 
 #. Type: text
 #. Description
@@ -580,7 +581,7 @@ msgstr ""
 #. An action, displayed on a button or as a menu item.
 #: ../ubiquity.templates:83001
 msgid "New Partition Table..."
-msgstr "Jauna diska sadaļu tabula..."
+msgstr "Jauna diska nodalījumu tabula..."
 
 #. Type: text
 #. Description
@@ -614,7 +615,7 @@ msgstr "Atgriezt"
 #. Description
 #: ../ubiquity.templates:88001
 msgid "Recalculating partitions..."
-msgstr "Pārskaitļo sadaļu izkārtojumu..."
+msgstr "Pārskaitļo nodalījumu izkārtojumu..."
 
 #. Type: text
 #. Description
@@ -678,7 +679,7 @@ msgstr "nav zināms"
 #. Description
 #: ../ubiquity.templates:97001
 msgid "Create partition"
-msgstr "Izveidot sadaļu"
+msgstr "Izveidot nodalījumu"
 
 #. Type: text
 #. Description
@@ -686,7 +687,7 @@ msgstr "Izveidot sadaļu"
 #. Description
 #: ../ubiquity.templates:98001 ../ubiquity.templates:105001
 msgid "New partition size in megabytes (1000000 bytes):"
-msgstr "Jaunās sadaļas izmērs megabaitos (1000000 baiti):"
+msgstr "Jaunā nodalījuma izmērs megabaitos (1000000 baiti):"
 
 #. Type: text
 #. Description
@@ -716,13 +717,13 @@ msgstr "Loģiskā"
 #. Description
 #: ../ubiquity.templates:103001
 msgid "Edit partition"
-msgstr "Labot sadaļu"
+msgstr "Rediģēt nodalījumu"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:104001
 msgid "Edit a partition"
-msgstr "Labot sadaļu"
+msgstr "Rediģēt nodalījumu"
 
 #. Type: text
 #. Description
@@ -739,9 +740,9 @@ msgid ""
 "until you restart the computer, any changes you make or documents you save "
 "will not be preserved."
 msgstr ""
-"Instalēšana pabeigta. Jūs varat turpināt testēt ${RELEASE}, bet, kamēr "
-"nepārstartēsiet datoru, veiktās izmaiņas vai saglabātie dokumenti netiks "
-"saglabāti."
+"Instalēšana pabeigta. ${RELEASE} testēšanu jūs varat turpināt, bet līdz "
+"datora pārstartēšanai jūsu veiktās izmaiņas vai saglabātie dokumenti netiks "
+"paturēti."
 
 #. Type: text
 #. Description
@@ -788,7 +789,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:114001
 msgid "Verifying the installation configuration..."
-msgstr "Pārbauda intalācijas konfigurāciju..."
+msgstr "Pārbauda instalācijas konfigurāciju..."
 
 #. Type: title
 #. Description
@@ -806,13 +807,13 @@ msgstr "Meklē distributīvu kopēšanai..."
 #. Description
 #: ../ubiquity.templates:118001
 msgid "Copying files..."
-msgstr "Kopē failus..."
+msgstr "Kopē datnes..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:119001
 msgid "Almost finished copying files..."
-msgstr "Failu kopēšana ir gandrīz pabeigta..."
+msgstr "Datņu kopēšana ir gandrīz pabeigta..."
 
 #. Type: error
 #. Description
@@ -841,7 +842,7 @@ msgstr "Instalēšana neizdevās"
 #: ../ubiquity.templates:120001 ../ubiquity.templates:121001
 #: ../ubiquity.templates:122001 ../ubiquity.templates:123001
 msgid "The installer encountered an error copying files to the hard disk:"
-msgstr "Instalators saskārās ar kļūdu, kopējot failus cietajā diskā:"
+msgstr "Instalators saskārās ar kļūdu, kopējot datnes cietajā diskā:"
 
 #. Type: error
 #. Description
@@ -851,9 +852,9 @@ msgid ""
 "complete on the target partition.  Please run the installer again and select "
 "a larger partition to install into."
 msgstr ""
-"Nepietiek diska vietas, lai veiktu instalēšanu uz mērķa sadaļas. Lūdzu "
-"palaidiet instalatoru vēlreiz un izvēlieties lielāku mērķa sadaļu, kurā "
-"instalēt distribūciju."
+"Instalēšana uz mērķa nodalījumu nav iespējama diska vietas trūkuma dēļ. "
+"Lūdzu, palaidiet instalatoru vēlreiz un izvēlieties lielāku mērķa "
+"nodalījumu, kurā tiks instalēta distribūcija."
 
 #. Type: error
 #. Description
@@ -864,9 +865,9 @@ msgid ""
 "lens (cleaning kits are often available from electronics suppliers)."
 msgstr ""
 "Šādu situāciju bieži izraisa bojāts CD/DVD disks vai disku lasošais "
-"diskdzinis. Varētu palīdzēt diska tīrīšana, kā arī diska ierakstīšana zemākā "
-"ātrumā, vai arī diskdziņa lēcu tīrīšana (tīrīšanas komplekti ir bieži vien "
-"pieejami pie elektronisko preču pārdevējiem)."
+"diskdzinis. Iespējamie risinājumi — diska tīrīšana, diska ierakstīšana "
+"zemākā ātrumā, vai arī diskdziņa lēcu tīrīšana (tīrīšanas komplekti ir "
+"nopērkami elektronikas preču tirdzniecības vietās)."
 
 #. Type: error
 #. Description
@@ -877,8 +878,8 @@ msgid ""
 "cooler environment."
 msgstr ""
 "Šādu situāciju bieži izraisa bojāts cietais disks. Būtu vēlams pārbaudīt, "
-"vai cietais disks nav vecs un to nevajadzētu aizvietot, vai arī pārvietojiet "
-"sistēmu uz vēsāku vidi."
+"vai cietais disks nav vecs un aizstājams, vai arī pārvietot sistēmu uz "
+"vēsāku vidi."
 
 #. Type: error
 #. Description
@@ -897,17 +898,16 @@ msgid ""
 "replacement, or to move the system to a cooler environment."
 msgstr ""
 "Šādu situāciju bieži izraisa bojāts CD/DVD disks vai disku lasošais "
-"diskdzinis, vai arī bojāts cietais disks. Varētu palīdzēt diska tīrīšana, kā "
-"arī diska ierakstīšana zemākā ātrumā, vai arī diskdziņa lēcu tīrīšana "
-"(tīrīšanas komplekti ir bieži vien pieejami pie elektronisko preču "
-"pārdevējiem), kā arī cietā diska vecuma pārbaude, vai sistēmas pārvietošana "
-"uz vēsāku vidi."
+"diskdzinis. Iespējamie risinājumi — diska tīrīšana, diska ierakstīšana "
+"zemākā ātrumā, diskdziņa lēcu tīrīšana (tīrīšanas komplekti ir nopērkami "
+"elektronikas preču tirdzniecības vietās), cietā diska vecuma pārbaude, "
+"sistēmas pārvietošana uz vēsāku vidi."
 
 #. Type: select
 #. Description
 #: ../ubiquity.templates:124001
 msgid "The following file did not match its source copy on the CD/DVD:"
-msgstr "Šis fails neatbilst tā oriģinālam uz CD/DVD:"
+msgstr "Šī datne neatbilst tā oriģinālam uz CD/DVD:"
 
 #. Type: text
 #. Description
@@ -967,7 +967,7 @@ msgstr "Konfigurē aparatūru..."
 #. Description
 #: ../ubiquity.templates:134001
 msgid "Installing third-party software..."
-msgstr "Instalē trešās puses programmatūru..."
+msgstr "Instalē neatkarīgas izcelsmes programmatūru..."
 
 #. Type: text
 #. Description
@@ -1083,7 +1083,7 @@ msgid ""
 msgstr ""
 "Tā varētu gadīties, ja izmantojat vecu instalatora programmu, vai arī kādā "
 "no instalējamajām pakotnēm ir kļūda. Papildu informācija atrodama /var/log/"
-"syslog žurnāla failā. Instalators mēģinās tomēr turpināt, bet darba gaitā "
+"syslog žurnāla datnē. Instalators mēģinās tomēr turpināt, bet darba gaitā "
 "var rasties kļūmes un, iespējams, vairs neizdosies instalēt vai noņemt citas "
 "pakotnes. Vispirms vajadzētu pārbaudīt, vai nav pieejama jaunāka instalatora "
 "versija, un, ja tādas nav, nosūtīt kļūdas paziņojumu izplatītājam."
@@ -1092,19 +1092,19 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:150001
 msgid "Error while removing packages"
-msgstr "Kļūda, noņemot pakotnes"
+msgstr "Kļūda pakotņu noņemšanas laikā"
 
 #. Type: error
 #. Description
 #: ../ubiquity.templates:150001
 msgid "An error occurred while removing packages:"
-msgstr "Gadījās kļūda, noņemot pakotnes:"
+msgstr "Pakotņu noņemšanas laikā gadījusies kļūda"
 
 #. Type: error
 #. Description
 #: ../ubiquity.templates:151001
 msgid "Error migrating documents and settings"
-msgstr "Kļūda pārnesot dokumentus un iestatījumus"
+msgstr "Kļūda, pārnesot dokumentus un iestatījumus"
 
 #. Type: error
 #. Description
@@ -1115,8 +1115,8 @@ msgid ""
 "documents and settings you requested may not have been transferred to the "
 "installed system."
 msgstr ""
-"Gadījās kļūda pārnesot lietotāja datus. Papildu informācija atrodama /var/"
-"log/syslog žurnāla failā. Instalēšana turpināsies, bet daži vai visi "
+"Gadījās kļūda, pārnesot lietotāja datus. Papildu informācija atrodama /var/"
+"log/syslog žurnāla datnē. Instalēšana turpināsies, bet daži vai visi "
 "dokumenti un iestatījumi jūs pieprasījāt varētu nebūt pārnesti uz instalēto "
 "sistēmu."
 
@@ -1124,7 +1124,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:152001
 msgid "Error copying network configuration"
-msgstr "Kļūda kopējot tīkla konfigurāciju"
+msgstr "Kļūda tīkla konfigurācijas kopēšanas laikā"
 
 #. Type: error
 #. Description
@@ -1134,14 +1134,14 @@ msgid ""
 "continue, but the network configuration will have to be set up again in the "
 "installed system."
 msgstr ""
-"Gadījās kļūda kopējot tīkla iestatījumus. Instalēšana turpināsies, bet tīkla "
-"konfigurāciju vajadzēs iestatīt instalētajā sistēmā vēlreiz."
+"Kopējot tīkla iestatījumus, gadījusies kļūda. Instalēšana turpināsies, bet "
+"tīkla konfigurāciju vajadzēs iestatīt instalētajā sistēmā no jauna."
 
 #. Type: error
 #. Description
 #: ../ubiquity.templates:153001
 msgid "Error copying bluetooth configuration"
-msgstr "Kļūda, kopējot bluetooth konfigurāciju"
+msgstr "Kļūda bluetooth konfigurācijas kopēšanas laikā"
 
 #. Type: error
 #. Description
@@ -1158,7 +1158,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:154001
 msgid "Error restoring installed applications"
-msgstr "Kļūda, atjaunojot instalētās lietotnes"
+msgstr "Kļūda instalēto lietotņu atjaunošanas laikā"
 
 #. Type: error
 #. Description
@@ -1168,7 +1168,7 @@ msgid ""
 "installation will continue, but you may have to manually reinstall some "
 "applications after the computer reboots."
 msgstr ""
-"Gadījās kļūda, atjaunojot iepriekš instalētās lietotnes. Instalēšana "
+"Iepriekš instalēto lietotņu atjaunošanas laikā gadījusies kļūda. Instalēšana "
 "turpināsies, bet jums būs pašrocīgi jāinstalē dažas pakotnes pēc datora "
 "pārstartēšanās."
 
@@ -1176,7 +1176,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:158001
 msgid "Calculating files to skip copying..."
-msgstr "Aprēķina failus, kurus izlaist kopējot..."
+msgstr "Aprēķina kopēšanas laikā izlaižamās datnes..."
 
 #. Type: title
 #. Description
@@ -1194,7 +1194,7 @@ msgstr "Lejupielādē valodas pakotnes (atlikušais laiks ${TIME})..."
 #. Description
 #: ../ubiquity.templates:169001
 msgid "Failed to unmount partitions"
-msgstr "Kļūda, atmontējot sadaļas"
+msgstr "Kļūmīga nodalījumu atmontēšana"
 
 #. Type: boolean
 #. Description
@@ -1203,8 +1203,8 @@ msgid ""
 "The installer needs to commit changes to partition tables, but cannot do so "
 "because partitions on the following mount points could not be unmounted:"
 msgstr ""
-"Instalatoram jāsaglabā sadaļu tabulas izmaiņas, taču tas nav iespējams, jo "
-"šajās vietās piemontētās sadaļas neizdevās atmontēt:"
+"Instalatoram jāsaglabā izmaiņas nodalījumu tabulā, taču to nevar izdarīt, jo "
+"šajās vietās piemontētos nodalījumus neizdevās atmontēt:"
 
 #. Type: boolean
 #. Description
@@ -1218,7 +1218,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:169001
 msgid "Would you like the installer to try to unmount these partitions again?"
-msgstr "Vai vēlaties, lai instalators mēģinātu vēlreiz atmontēt sadaļas?"
+msgstr "Vai vēlaties, lai instalators mēģinātu vēlreiz atmontēt nodalījumus?"
 
 #. Type: boolean
 #. Description
@@ -1233,8 +1233,8 @@ msgid ""
 "Some of the partitions you created are too small.  Please make the following "
 "partitions at least this large:"
 msgstr ""
-"Dažas no jūsu izveidotajām sadaļām ir pārāk mazas. Lūdzu padariet sekojošas "
-"sadaļas kaut vai tik lielas:"
+"Daži no jūsu izveidotajiem nodalījumiem ir pārāk mazi. Lūdzu, palieliniet "
+"šos nodalījumus vismaz līdz norādītajam izmēram:"
 
 #. Type: boolean
 #. Description
@@ -1242,7 +1242,7 @@ msgstr ""
 msgid ""
 "If you do not go back to the partitioner and increase the size of these "
 "partitions, the installation may fail."
-msgstr "Instalēšana var neizdoties, ja nepalielināsiet sadaļu izmērus."
+msgstr "Instalēšana var būt kļūmīga, ja nepalielināsiet nodalījumu izmērus."
 
 #. Type: text
 #. Description
@@ -1334,13 +1334,13 @@ msgstr "Atjaunina informāciju par pakotnēm"
 #. Description
 #: ../ubiquity.templates:193001
 msgid "File ${INDEX} of ${TOTAL} at ${SPEED}/s"
-msgstr "Fails ${INDEX} no ${TOTAL}, ātrums ${SPEED}/s"
+msgstr "Datne ${INDEX} no ${TOTAL}, ātrums ${SPEED}/s"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:194001
 msgid "File ${INDEX} of ${TOTAL}"
-msgstr "Fails ${INDEX} no ${TOTAL}"
+msgstr "Datne ${INDEX} no ${TOTAL}"
 
 #. Type: text
 #. Description
@@ -1358,7 +1358,7 @@ msgstr "Klūda atjauninot instalatoru"
 #. Description
 #: ../ubiquity.templates:196001
 msgid "The installer encountered an error while trying to update itself:"
-msgstr "Instalatoram gadījās kļūda mēģinot atjaunināt sevi:"
+msgstr "Atjaunošanās mēģinājuma laikā instalatoram gadījusies kļūda:"
 
 #. Type: text
 #. Description
@@ -1400,7 +1400,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:201001 ../ubiquity.templates:202001
 msgid "Installation failed"
-msgstr "Instalēšana neizdevās"
+msgstr "Instalācija kļūmīga"
 
 #. Type: text
 #. Description
@@ -1495,8 +1495,8 @@ msgid ""
 "<small>%d smaller partitions are hidden, use the <a href=\"\">advanced "
 "partitioning tool</a> for more control</small>"
 msgstr ""
-"<small>%d mazākas sadaļas ir paslēptas, lietojiet <a href=\"\">lietpratēju "
-"dalīšanas rīku</a>, lai iegūtu vairāk kontroles</small>"
+"<small>%d mazāki nodalījumi ir paslēpti; lietojiet <a href=\"\">lietpratēju "
+"dalīšanas rīku</a>, lai izmantotu papildu iespējas</small>"
 
 #. Type: text
 #. Description
@@ -1505,8 +1505,8 @@ msgid ""
 "<small>1 smaller partition is hidden, use the <a href=\"\">advanced "
 "partitioning tool</a> for more control</small>"
 msgstr ""
-"<small>1 mazāka sadaļas ir paslēpta, lietojiet <a href=\"\">lietpratēju "
-"dalīšanas rīku</a>, lai iegūtu vairāk kontroles</small>"
+"<small>1 mazāks nodalījums ir paslēpts; lietojiet <a href=\"\">lietpratēju "
+"dalīšanas rīku</a>, lai izmantotu papildu iespējas</small>"
 
 #. Type: text
 #. Description
@@ -1516,8 +1516,8 @@ msgid ""
 "%d partitions will be deleted, use the <a href=\"\">advanced partitioning "
 "tool</a> for more control"
 msgstr ""
-"%d sadaļas tiks dzēstas. Izmantojiet <a href=\"\">paplašināto dalīšanas "
-"rīku</a>, lai izmantotu papildus iespējas"
+"%d nodalījumi tiks dzēsti. Izmantojiet <a href=\"\">paplašināto dalīšanas "
+"rīku</a>, lai izmantotu papildu iespējas"
 
 #. Type: text
 #. Description
@@ -1526,20 +1526,20 @@ msgid ""
 "1 partition will be deleted, use the <a href=\"\">advanced partitioning "
 "tool</a> for more control"
 msgstr ""
-"1 sadaļa tiks dzēsta. Izmantojiet <a href=\"\">paplašināto dalīšanas rīku</"
-"a>, lai izmantotu papildus iespējas"
+"1 nodalījums tiks dzēsts. Izmantojiet <a href=\"\">paplašināto dalīšanas "
+"rīku</a>, lai izmantotu papildu iespējas"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:221001
 msgid "Split Largest Partition"
-msgstr "Sadalīt lielāko sadaļu"
+msgstr "Sadalīt lielāko nodalījumu"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:223001
 msgid "For best results, please ensure that this computer:"
-msgstr "Vislabāk izdosies, ja datoram izpildīsies šie nosacījumi:"
+msgstr "Vislabākie rezultāti sagaidāmi, ja datoram izpildīsies šie nosacījumi:"
 
 #. Type: text
 #. Description
@@ -1589,13 +1589,13 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:229001
 msgid "Install this third-party software"
-msgstr "Instalēt trešās puses programmatūru"
+msgstr "Instalēt neatkarīgas izcelsmes programmatūru"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:230001
 msgid "Download updates while installing"
-msgstr "Lejupielādēt atjauninājumus instalēšanas laikā"
+msgstr "Instalēšanas laikā lejupielādēt atjauninājumus"
 
 #. Type: text
 #. Description
@@ -1613,7 +1613,7 @@ msgstr "Variants:"
 #. Description
 #: ../ubiquity.templates:236001
 msgid "Below is an image of your current layout:"
-msgstr "Zemāk ir redzams pašreizējā izkārtojuma attēls:"
+msgstr "Zemāk sniegts pašreizējā izkārtojuma attēls:"
 
 #. Type: text
 #. Description
@@ -1623,9 +1623,9 @@ msgid ""
 "conventions for your country, fetch updates from sites close to you, and set "
 "the clock to the correct local time."
 msgstr ""
-"Izvēlieties jūsu atrašanās vietu, lai sistēma atbilstoši jūsu valstij varētu "
-"parādīt piemērotākos datus, iegūt atjauninājumus no serveriem kuri ir tuvu "
-"jums, un iestatīt pareizu pulksteņlaiku atbilstoši vietējam laikam."
+"Izvēlieties jūsu atrašanās vietu, lai sistēma varētu parādīt valstij "
+"nozīmīgākos datus, iegūt atjauninājumus no tuvākiem serveriem un iestatīt "
+"pareizu pulksteņlaiku atbilstoši vietējam laikam."
 
 #. Type: text
 #. Description
@@ -1651,7 +1651,7 @@ msgstr "[rakstiet šeit, lai mainītu]"
 #. DISTRO is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:243001
 msgid "Replace ${OS} with ${DISTRO}"
-msgstr "Aizvietot ${OS} ar ${DISTRO}"
+msgstr "Aizstāt ${OS} ar ${DISTRO}"
 
 #. Type: text
 #. Description
@@ -1661,8 +1661,8 @@ msgid ""
 "<span foreground=\"darkred\">Warning:</span> This will delete all of your "
 "${OS} programs, documents, photos, music, and any other files."
 msgstr ""
-"<span foreground=\"darkred\">Brīdinājums:</span> Tas dzēsīs visas jūsu ${OS} "
-"programmas, dokumentus, fotogrāfijas, mūziku, un jebkurus citus failus."
+"<span foreground=\"darkred\">Brīdinājums:</span> tas dzēsīs visas jūsu ${OS} "
+"programmas, dokumentus, fotogrāfijas, mūziku, un jebkuras citas datnes."
 
 #. Type: text
 #. Description
@@ -1670,7 +1670,7 @@ msgstr ""
 #. OS is a variable substituted into this string, and may be 'Windows 7'
 #: ../ubiquity.templates:244001
 msgid "Install ${DISTRO} alongside ${OS}"
-msgstr "Instalēt ${DISTRO} blakus ${OS}"
+msgstr "Instalēt ${DISTRO} līdztekus ${OS}"
 
 #. Type: text
 #. Description
@@ -1686,7 +1686,7 @@ msgid ""
 "Documents, music, and other personal files will be kept. You can choose "
 "which operating system you want each time the computer starts up."
 msgstr ""
-"Dokumenti, mūzika un citi personīgie faili tiks paturēti. Jūs varat "
+"Dokumenti, mūzika un citas personīgās datnes tiks paturētas. Jūs varat "
 "izvēlēties, kuru operētājsistēmu vēlaties lietot katru reizi, kad dators "
 "tiek ieslēgts."
 
@@ -1712,7 +1712,7 @@ msgid ""
 "You can create or resize partitions yourself, or choose multiple partitions "
 "for ${DISTRO}."
 msgstr ""
-"Jūs varat pats mainīt sadaļu izmēru, vai izvēlēties vairākas sadaļās "
+"Jūs varat pats mainīt nodalījumu izmēru, vai izvēlēties vairākus nodalījumus "
 "distribūcijai ${DISTRO}."
 
 #. Type: text
@@ -1730,9 +1730,9 @@ msgid ""
 "<span foreground=\"darkred\">Warning:</span> This will delete all your "
 "${CURDISTRO} programs, documents, photos, music, and any other files."
 msgstr ""
-"<span foreground=\"darkred\">Brīdinājums:</span> Tas dzēsīs visas jūsu "
-"${CURDISTRO} programmas, dokumentus, fotogrāfijas, mūziku, un jebkurus citus "
-"failus."
+"<span foreground=\"darkred\">Brīdinājums:</span> tas dzēsīs visas jūsu "
+"${CURDISTRO} programmas, dokumentus, fotogrāfijas, mūziku un jebkuras citas "
+"datnes."
 
 #. Type: text
 #. Description
@@ -1751,7 +1751,7 @@ msgid ""
 "Documents, music, and other personal files will be kept. Installed software "
 "will be kept where possible. System-wide settings will be cleared."
 msgstr ""
-"Dokumenti, mūzika un citi personīgie faili tiks paturēti. Instalētā "
+"Dokumenti, mūzika un citas personīgās datnes tiks paturētas. Instalētā "
 "programmatūra, kur tas ir iespējams, tiks paturēta. Sistēmas iestatījumi "
 "netiks paturēti."
 
@@ -1762,7 +1762,7 @@ msgstr ""
 #. CURDISTRO is a variable substituted into this string, and may be 'Ubuntu 10.10'
 #: ../ubiquity.templates:249001
 msgid "Install ${DISTRO} ${VER} alongside ${CURDISTRO}"
-msgstr "Instalēt ${DISTRO} ${VER} blakus ${CURDISTRO}"
+msgstr "Instalēt ${DISTRO} ${VER} līdztekus ${CURDISTRO}"
 
 #. Type: text
 #. Description
@@ -1781,8 +1781,8 @@ msgid ""
 "<span foreground=\"darkred\">Warning:</span> This will delete any files on "
 "the disk."
 msgstr ""
-"<span foreground=\"darkred\">Brīdinājums:</span> Tiks dzēsti visi faili uz "
-"diska."
+"<span foreground=\"darkred\">Brīdinājums:</span> tiks dzēstas visas datnes "
+"uz diska."
 
 #. Type: text
 #. Description
@@ -1800,8 +1800,8 @@ msgid ""
 "programs, documents, photos, music, and other files in both ${OS} and "
 "${CURDISTRO}."
 msgstr ""
-"<span foreground=\"darkred\">Brīdinājums:</span> Tas dzēsīs visas jūsu "
-"programmas, dokumentus, fotogrāfijas, mūziku, un jebkurus citus failus gan "
+"<span foreground=\"darkred\">Brīdinājums:</span> tas dzēsīs visas jūsu "
+"programmas, dokumentus, fotogrāfijas, mūziku, un jebkuras citas datnes gan "
 "${OS}, gan ${CURDISTRO}."
 
 #. Type: text
@@ -1819,8 +1819,8 @@ msgid ""
 "programs, documents, photos, music, and any other files in all operating "
 "systems."
 msgstr ""
-"<span foreground=\"darkred\">Brīdinājums:</span> Tas dzēsīs visas jūsu "
-"programmas, dokumentus, fotogrāfijas, mūziku, un jebkurus citus failus visās "
+"<span foreground=\"darkred\">Brīdinājums:</span> tas dzēsīs visas jūsu "
+"programmas, dokumentus, fotogrāfijas, mūziku, un jebkuras citas datnes visās "
 "operētājsistēmās."
 
 #. Type: text
@@ -1828,7 +1828,7 @@ msgstr ""
 #. DISTRO is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:254001
 msgid "Install ${DISTRO} alongside them"
-msgstr "Instalēt ${DISTRO} tām blakus"
+msgstr "Instalēt ${DISTRO} tām līdzās"
 
 #. Type: text
 #. Description
@@ -1868,7 +1868,7 @@ msgstr "Uz šī datora nav atrastas operētājsistēmas. Ko vēlaties darīt?"
 #. Info message displayed when running in OEM mode
 #: ../oem-config-check.templates:2001
 msgid "OEM mode (for manufacturers only)"
-msgstr "OEM režīms (tikai izgatavotājiem)"
+msgstr "OEM režīms (tikai ražotājiem)"
 
 #. Type: text
 #. Description
@@ -1916,10 +1916,10 @@ msgid ""
 "prepare'. This will cause the system to delete the temporary 'oem' user and "
 "ask the end user various configuration questions the next time it boots."
 msgstr ""
-"Kad sistēma ir nokonfigurēta pēc jūsu patikšanas, palaidiet 'oem-config-"
+"Kad sistēma ir nokonfigurēta pēc jūsu patikas, palaidiet 'oem-config-"
 "prepare'. Tas liks sistēmai izdzēst pagaidu lietotāju 'oem' un gala "
-"lietotājam uzdos vairākus konfigurācijas jautājumus nākamajā sistēmas "
-"ielādes reizē."
+"lietotājam uzdos vairākus jautājumus par konfigurāciju nākamreiz sistēmas "
+"ielādes laikā."
 
 #. Type: text
 #. Description

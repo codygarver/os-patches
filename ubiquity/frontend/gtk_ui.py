@@ -253,6 +253,9 @@ class Wizard(BaseFrontend):
         provider.load_from_data(
             '''GtkProgressBar {
               -GtkProgressBar-min-horizontal-bar-height : 10
+              }
+               GtkPaned {
+              -GtkPaned-handle-size: 10;
               }''')
 
         Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(),

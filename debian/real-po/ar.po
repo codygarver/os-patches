@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:01+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:01+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
@@ -709,7 +709,7 @@ msgstr "حرر القسم"
 #. Description
 #: ../ubiquity.templates:104001
 msgid "Edit a partition"
-msgstr "حرر القسم"
+msgstr "حرر قسما"
 
 #. Type: text
 #. Description
@@ -767,8 +767,8 @@ msgid ""
 "Installation is complete. You need to restart the computer in order to use "
 "the new installation."
 msgstr ""
-"اكتملت عملية التثبيت. عليك إعادة تشغيل النظام لكي تتمكن من استخدام النظام "
-"الجديد."
+"اكتملت عملية التثبيت. ينبغي عليك إعادة تشغيل النظام لكي تتمكن من استخدام "
+"التثبيت الجديد."
 
 #. Type: text
 #. Description

@@ -15,14 +15,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:00+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:00+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:3001
 msgid "Connecting..."
-msgstr ""
+msgstr "जुळवत आहे..."
 
 #. Type: text
 #. Description
@@ -51,13 +51,13 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:7001 ../ubiquity.templates:187001
 msgid "Install"
-msgstr "स्थापना करा"
+msgstr "प्रतिष्ठापीत करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:8001
 msgid "Install (OEM mode, for manufacturers only)"
-msgstr "स्थापना (OEM प्रणाली, निर्मात्यांसाठी फक्त)"
+msgstr "प्रतिष्ठापना (OEM प्रणाली, निर्मात्यांसाठी फक्त)"
 
 #. Type: text
 #. Description
@@ -67,6 +67,9 @@ msgid ""
 "for this batch of systems. This name will be saved on the installed system "
 "and can be used to help with bug reports."
 msgstr ""
+"आपण प्रणाली निर्माता मोड मध्ये स्थापना करत आहोत. प्रणालीचे ह्या बैच साठी एक अद्वितीय "
+"नाव दाखल करा. हे नाव स्थापना केलेल्या प्रणाली वर रक्षित केलेलं जाईल आणि त्रुटी अहवालाच्या "
+"सोबत मदतीसाठी वापरण्यात येईल."
 
 #. Type: text
 #. Description
@@ -77,6 +80,8 @@ msgid ""
 "You can try ${RELEASE} without making any changes to your computer, directly "
 "from this ${MEDIUM}."
 msgstr ""
+"आपल्या कॉम्पुटर वर काहीही बदल न करता, ${MEDIUM} ह्याच्या सहाय्याने  तुम्ही ${RELEASE} "
+"वापरून पाहू शकता,"
 
 #. Type: text
 #. Description
@@ -86,20 +91,22 @@ msgid ""
 "Or if you're ready, you can install ${RELEASE} alongside (or instead of) "
 "your current operating system.  This shouldn't take too long."
 msgstr ""
+"किंवा जर आपण तयार असाल, तर आपण ${RELEASE} ह्याची स्थापना आपल्या सध्याच्या ऑपरेटिंग "
+"सिस्टम सोबत (किंवा शिवाय) करू शकता. हे जास्त वेळ नाही घेणार."
 
 #. Type: text
 #. Description
 #. RELEASE is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:11001
 msgid "Try ${RELEASE}"
-msgstr ""
+msgstr "${RELEASE} वापरुन पहा."
 
 #. Type: text
 #. Description
 #. RELEASE is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:12001
 msgid "Install ${RELEASE}"
-msgstr ""
+msgstr "${RELEASE} प्रतिष्ठापीत करा."
 
 #. Type: text
 #. Description
@@ -113,13 +120,13 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:14001
 msgid "You may wish to read the <a href=\"release-notes\">release notes</a>."
-msgstr ""
+msgstr "आपली इच्छा असेल तर <a href=\"release-notes\">रिलीज नोटस </a> वाचू शकता."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:15001
 msgid "You may wish to <a href=\"update\">update this installer</a>."
-msgstr ""
+msgstr "आपली इच्छा असेल तर <a href=\"update\">installer अपडेट </a> करू शकता."
 
 #. Type: text
 #. Description
@@ -169,13 +176,13 @@ msgstr "आपल्या कळफलक(keyboard) मांडणीची �
 #. Description
 #: ../ubiquity.templates:22001
 msgid "Type here to test your keyboard"
-msgstr ""
+msgstr "आपले कळफलक चे परीक्षण साठी इथे टंकलेखन करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:23001
 msgid "Detect Keyboard Layout"
-msgstr ""
+msgstr "कळफलक मांडणीचा शोध"
 
 #. Type: text
 #. Description
@@ -187,13 +194,13 @@ msgstr "कळफलक मांडणीचा शोध ......"
 #. Description
 #: ../ubiquity.templates:25001
 msgid "Please press one of the following keys:"
-msgstr ""
+msgstr "कृपया पुढे दिलेल्या कळापैकी कोणतीही एक कळ दाबून पहा."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:26001
 msgid "Is the following key present on your keyboard?"
-msgstr ""
+msgstr "पुढे दिलेली कळ तुमच्या कळफलकावर आहे का?"
 
 #. Type: text
 #. Description
@@ -205,25 +212,25 @@ msgstr "आपण कोण आहात?"
 #. Description
 #: ../ubiquity.templates:28001
 msgid "Choose a picture"
-msgstr ""
+msgstr "चित्राची निवड करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:29001
 msgid "Take a photo:"
-msgstr ""
+msgstr "फोटो काढा :"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:30001
 msgid "Or choose an existing picture:"
-msgstr ""
+msgstr "किंवा अस्तित्वात असलेले चित्र वापरा :"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:31001
 msgid "Take Photo"
-msgstr ""
+msgstr "फोटो काढा"
 
 #. Type: text
 #. Description
@@ -241,7 +248,7 @@ msgstr "आपले नाव:"
 #. Description
 #: ../ubiquity.templates:34001
 msgid "Pick a username:"
-msgstr ""
+msgstr "वापरकर्ता नावाची (username)  निवड करा:"
 
 #. Type: text
 #. Description
@@ -265,37 +272,37 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:38001
 msgid "Choose a password:"
-msgstr ""
+msgstr "एका संकेतशब्दाची निवड करा :"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:39001
 msgid "Password"
-msgstr ""
+msgstr "संकेतशब्द"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:40001
 msgid "Confirm password"
-msgstr ""
+msgstr "संकेतशब्दाची पुष्टी करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:41001
 msgid "Confirm your password:"
-msgstr ""
+msgstr "आपल्या संकेतशब्दाची पुष्टी करा :"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:42001
 msgid "Your computer's name:"
-msgstr ""
+msgstr "आपल्या संगणकाचे नाव :"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:43001
 msgid "The name it uses when it talks to other computers."
-msgstr ""
+msgstr "जेंव्हा हा अन्य संगणका सोबत बोलतो तेंव्हा हे नाव वापरतो."
 
 #. Type: text
 #. Description
@@ -325,61 +332,61 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:48001
 msgid "You are running in debugging mode. Do not use a valuable password!"
-msgstr ""
+msgstr "तुम्ही घोडचूकनिवारण पद्धतीत वावरत आहात. तुमचा मौल्यवान संकेतशब्द वापरू नका !"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:49001
 msgid "Passwords do not match"
-msgstr ""
+msgstr "संकेतशब्द जुळत नाही"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:50001
 msgid "Short password"
-msgstr ""
+msgstr "संकेतशब्द दर्शवा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:51001
 msgid "Weak password"
-msgstr ""
+msgstr "दुर्बल संकेतशब्द"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:52001
 msgid "Fair password"
-msgstr ""
+msgstr "ठीक संकेतशब्द"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:53001
 msgid "Good password"
-msgstr ""
+msgstr "चांगला संकेतशब्द"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:54001
 msgid "Strong password"
-msgstr ""
+msgstr "सशक्त संकेतशब्द"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:55001
 msgid "Log in automatically"
-msgstr ""
+msgstr "स्वयंचलितरित्या प्रवेश करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:56001
 msgid "Require my password to log in"
-msgstr ""
+msgstr "प्रवेश करण्याकरिता संकेतशब्द आवश्यक आहे"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:57001
 msgid "Encrypt my home folder"
-msgstr ""
+msgstr "माझी मुख्य संचयीका कुटलिपीबद्ध करा"
 
 #. Type: text
 #. Description
@@ -409,14 +416,14 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:60001
 msgid "Installation type"
-msgstr ""
+msgstr "प्रतिष्ठापन प्रकार"
 
 #. Type: text
 #. Description
 #. SIZE is a variable substituted into this string, and may be '100 GB'
 #: ../ubiquity.templates:61001
 msgid "Files (${SIZE})"
-msgstr ""
+msgstr "फाईल्स (${SIZE})"
 
 #. Type: text
 #. Description
@@ -436,19 +443,19 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:64001
 msgid "Quit the installation?"
-msgstr ""
+msgstr "प्रतिष्ठापनेतुन बाहेर पडायचे का?"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:65001
 msgid "Do you really want to quit the installation now?"
-msgstr ""
+msgstr "तुम्हाला खरोखरच आता प्रतिष्ठापनेतुन बाहेर पडायचे का?"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:66001
 msgid "Bootloader install failed"
-msgstr ""
+msgstr "बूटलोडर प्रतिष्ठापना अपयशी"
 
 #. Type: text
 #. Description
@@ -468,7 +475,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:69001
 msgid "Continue without a bootloader."
-msgstr ""
+msgstr "बूटलोडर शिवाय पुढे जा."
 
 #. Type: text
 #. Description
@@ -482,7 +489,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:71001
 msgid "Cancel the installation."
-msgstr ""
+msgstr "प्रतिष्ठापना रद्द करा."
 
 #. Type: text
 #. Description
@@ -500,31 +507,31 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:74001
 msgid "Skip"
-msgstr ""
+msgstr "पुढे जा"
 
 #. Type: title
 #. Description
 #: ../ubiquity.templates:75001
 msgid "Installation Complete"
-msgstr ""
+msgstr "प्रतिष्ठापना पूर्ण"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:76001
 msgid "Continue Testing"
-msgstr ""
+msgstr "चाचणी चालू ठेवा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:77001
 msgid "Restart Now"
-msgstr ""
+msgstr "पुन्हा सुरु करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:78001
 msgid "Shutdown Now"
-msgstr ""
+msgstr "बंद करा"
 
 #. Type: text
 #. Description
@@ -532,7 +539,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:80001 ../ubiquity.templates:81001
 msgid "Installer crashed"
-msgstr ""
+msgstr "प्रतिष्ठापक क्रॅश झाले"
 
 #. Type: text
 #. Description
@@ -550,48 +557,48 @@ msgstr ""
 #. An action, displayed on a button or as a menu item.
 #: ../ubiquity.templates:83001
 msgid "New Partition Table..."
-msgstr ""
+msgstr "नवीन विभाजन कोष्टक..."
 
 #. Type: text
 #. Description
 #. An action, displayed on a button or as a menu item.
 #: ../ubiquity.templates:84001
 msgid "Add..."
-msgstr ""
+msgstr "जोडा..."
 
 #. Type: text
 #. Description
 #. An action, displayed on a button or as a menu item.
 #: ../ubiquity.templates:85001
 msgid "Change..."
-msgstr ""
+msgstr "बदला..."
 
 #. Type: text
 #. Description
 #. An action, displayed on a button or as a menu item.
 #: ../ubiquity.templates:86001
 msgid "Delete"
-msgstr ""
+msgstr "काढून टाका"
 
 #. Type: text
 #. Description
 #. An action, displayed on a button or as a menu item.
 #: ../ubiquity.templates:87001
 msgid "Revert"
-msgstr ""
+msgstr "पूर्ववत करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:88001
 msgid "Recalculating partitions..."
-msgstr ""
+msgstr "विभाजनाची गणना करत आहे..."
 
 #. Type: text
 #. Description
 #. A column heading in the partitioner.
 #: ../ubiquity.templates:89001
 msgid "Device"
-msgstr ""
+msgstr "साधन"
 
 #. Type: text
 #. Description
@@ -599,28 +606,28 @@ msgstr ""
 #. used (ext2, swap, etc.).
 #: ../ubiquity.templates:90001
 msgid "Type"
-msgstr ""
+msgstr "प्रकार"
 
 #. Type: text
 #. Description
 #. A column heading in the partitioner.
 #: ../ubiquity.templates:91001
 msgid "Mount point"
-msgstr ""
+msgstr "आरोहण बींदू"
 
 #. Type: text
 #. Description
 #. A column heading in the partitioner.
 #: ../ubiquity.templates:92001
 msgid "Format?"
-msgstr ""
+msgstr "स्वरूप?"
 
 #. Type: text
 #. Description
 #. A column heading in the partitioner.
 #: ../ubiquity.templates:93001
 msgid "Size"
-msgstr ""
+msgstr "आकार"
 
 #. Type: text
 #. Description
@@ -628,27 +635,27 @@ msgstr ""
 #. this partition is used by data.
 #: ../ubiquity.templates:94001
 msgid "Used"
-msgstr ""
+msgstr "वापरलेले"
 
 #. Type: text
 #. Description
 #. Indicates unpartitioned free space on a disk.
 #: ../ubiquity.templates:95001
 msgid "free space"
-msgstr ""
+msgstr "मोकळी जागा"
 
 #. Type: text
 #. Description
 #. Indicates that we do not know how much space is used on this partition.
 #: ../ubiquity.templates:96001
 msgid "unknown"
-msgstr ""
+msgstr "अपरिचीत"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:97001
 msgid "Create partition"
-msgstr ""
+msgstr "विभाजन निर्माण करा"
 
 #. Type: text
 #. Description
@@ -686,19 +693,19 @@ msgstr "तार्किक"
 #. Description
 #: ../ubiquity.templates:103001
 msgid "Edit partition"
-msgstr ""
+msgstr "विभाजन संपादन"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:104001
 msgid "Edit a partition"
-msgstr ""
+msgstr "विभाजन संपादन करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:106001
 msgid "Boot loader"
-msgstr ""
+msgstr "बूट लोडर"
 
 #. Type: text
 #. Description
@@ -732,14 +739,14 @@ msgstr "पुढे"
 #. Translators, this text will appear on a button, so KEEP IT SHORT
 #: ../ubiquity.templates:110001
 msgid "Connect"
-msgstr ""
+msgstr "जोडा"
 
 #. Type: text
 #. Description
 #. Translators, this text will appear on a button, so KEEP IT SHORT
 #: ../ubiquity.templates:111001
 msgid "Stop"
-msgstr ""
+msgstr "थांबा"
 
 #. Type: text
 #. Description
@@ -753,13 +760,13 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:114001
 msgid "Verifying the installation configuration..."
-msgstr ""
+msgstr "प्रतिष्ठापना संयोजना तपासत आहे..."
 
 #. Type: title
 #. Description
 #: ../ubiquity.templates:115001
 msgid "Installing system"
-msgstr ""
+msgstr "प्रणाली प्रतिष्ठापन करत आहे"
 
 #. Type: text
 #. Description
@@ -771,13 +778,13 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:118001
 msgid "Copying files..."
-msgstr "धारण्यांची नक्कल करत आहे"
+msgstr "फाईल्सची प्रत करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:119001
 msgid "Almost finished copying files..."
-msgstr ""
+msgstr "फाईल्सची प्रत करणे जवळजवळ पूर्ण होत आले आहे..."
 
 #. Type: error
 #. Description
@@ -793,7 +800,7 @@ msgstr ""
 #: ../ubiquity.templates:122001 ../ubiquity.templates:123001
 #: ../ubiquity.templates:124001
 msgid "Installation Failed"
-msgstr ""
+msgstr "प्रतिष्ठापन अपयशी"
 
 #. Type: error
 #. Description
@@ -868,37 +875,37 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:126001
 msgid "Configuring target system..."
-msgstr ""
+msgstr "लक्ष्य प्रणाली संयोजीत करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:127001
 msgid "Configuring system locales..."
-msgstr ""
+msgstr "प्रणाली स्थानीय संयोजीत करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:128001
 msgid "Configuring apt..."
-msgstr ""
+msgstr "एप्ट संयोजीत करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:129001
 msgid "Configuring time zone..."
-msgstr ""
+msgstr "वेळ क्षेत्र संयोजीत करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:130001
 msgid "Configuring keyboard..."
-msgstr ""
+msgstr "कळफलक संयोजीत करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:131001
 msgid "Creating user..."
-msgstr ""
+msgstr "वापरकर्ता निर्माण करत आहे..."
 
 #. Type: text
 #. Description
@@ -910,103 +917,103 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:133001
 msgid "Configuring hardware..."
-msgstr ""
+msgstr "हार्डवेअर संयोजीत करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:134001
 msgid "Installing third-party software..."
-msgstr ""
+msgstr "तृतिय पक्ष सॉफ्टवेयर प्रतिष्ठापन करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:135001
 msgid "Configuring network..."
-msgstr ""
+msgstr "संजाळ संयोजीत करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:136001
 msgid "Configuring boot loader..."
-msgstr ""
+msgstr "बूट लोडर संयोजीत करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:137001
 msgid "Saving installed packages..."
-msgstr ""
+msgstr "प्रतिष्ठापन झालेले पॅकेजेस साठवत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:138001
 msgid "Restoring previously installed packages..."
-msgstr ""
+msgstr "पूर्वी प्रतिष्ठापन झालेले पॅकेजेस पुन्हस्थापित करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:139001
 msgid "Installing additional packages..."
-msgstr ""
+msgstr "अधिक पॅकेजेस प्रतिष्ठापन करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:140001
 msgid "Checking for packages to install..."
-msgstr ""
+msgstr "प्रतिष्ठापीत करण्यायोग्य पॅकेजेस तपासत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:141001
 msgid "Removing extra packages..."
-msgstr ""
+msgstr "अतिरिक्त पॅकेजेस काढून टाकत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:142001
 msgid "Checking for packages to remove..."
-msgstr ""
+msgstr "काढून टाकण्याचे पॅकेजेस तपासत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:143001
 msgid "Downloading packages (${TIME} remaining)..."
-msgstr ""
+msgstr "पॅकेजेस डाउनलोड करत आहे (${TIME} शिल्लक)..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:144001
 msgid "Downloading package lists..."
-msgstr ""
+msgstr "पॅकेज याद्या डाउनलोड करत आहे..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:145001
 msgid "Downloading package lists (${TIME} remaining)..."
-msgstr ""
+msgstr "पॅकेज याद्या डाउनलोड करत आहे (${TIME} शिल्लक)..."
 
 #. Type: error
 #. Description
 #: ../ubiquity.templates:147001
 msgid "Error installing ${PACKAGE}"
-msgstr ""
+msgstr "${PACKAGE} या पॅकेजची प्रतिष्ठापना करताना त्रुटी"
 
 #. Type: error
 #. Description
 #: ../ubiquity.templates:148001
 msgid "Error removing ${PACKAGE}"
-msgstr ""
+msgstr "${PACKAGE} हे पॅकेज काढून टाकताना त्रुटी"
 
 #. Type: error
 #. Description
 #: ../ubiquity.templates:149001
 msgid "Error while installing packages"
-msgstr ""
+msgstr "पॅकेजेस प्रतिष्ठापन करताना त्रुटी"
 
 #. Type: error
 #. Description
 #: ../ubiquity.templates:149001
 msgid "An error occurred while installing packages:"
-msgstr ""
+msgstr "पॅकेजेस प्रतिष्ठापन करताना त्रुटी आढळली :"
 
 #. Type: error
 #. Description
@@ -1014,7 +1021,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:149001 ../ubiquity.templates:150001
 msgid "The following packages are in a broken state:"
-msgstr ""
+msgstr "पुढील पॅकेजेस तुटलेल्या स्थितीत आहेत :"
 
 #. Type: error
 #. Description
@@ -1035,13 +1042,13 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:150001
 msgid "Error while removing packages"
-msgstr ""
+msgstr "पॅकेजेस काढून टाकताना त्रुटी"
 
 #. Type: error
 #. Description
 #: ../ubiquity.templates:150001
 msgid "An error occurred while removing packages:"
-msgstr ""
+msgstr "पॅकेजेस काढून टाकताना त्रुटी आढळली :"
 
 #. Type: error
 #. Description
@@ -1063,7 +1070,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:152001
 msgid "Error copying network configuration"
-msgstr ""
+msgstr "संजाळ संयोजना प्रत करताना त्रुटी"
 
 #. Type: error
 #. Description
@@ -1078,7 +1085,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:153001
 msgid "Error copying bluetooth configuration"
-msgstr ""
+msgstr "ब्लुटूथ संयोजना प्रत करताना त्रुटी"
 
 #. Type: error
 #. Description
@@ -1093,7 +1100,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:154001
 msgid "Error restoring installed applications"
-msgstr ""
+msgstr "प्रतिष्ठापीत केलेले अनुप्रयोग पुन्हस्थापित करताना त्रुटी"
 
 #. Type: error
 #. Description
@@ -1108,19 +1115,19 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:158001
 msgid "Calculating files to skip copying..."
-msgstr ""
+msgstr "प्रत करताना सोडायच्या फाईल्सची गणना करत आहे..."
 
 #. Type: title
 #. Description
 #: ../ubiquity.templates:159001
 msgid "Installing language packs"
-msgstr ""
+msgstr "भाषा पॅकेजेसचे प्रतिष्ठापन करत आहे"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:160001
 msgid "Downloading language packs (${TIME} remaining)..."
-msgstr ""
+msgstr "भाषा पॅकेजेस डाउनलोड करत आहे (${TIME} शिल्लक)..."
 
 #. Type: boolean
 #. Description
@@ -1174,7 +1181,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:177001
 msgid "System Configuration"
-msgstr ""
+msgstr "प्रणाली संयोजना"
 
 #. Type: text
 #. Description
@@ -1188,97 +1195,97 @@ msgstr "सुस्वागतम्"
 #. Description
 #: ../ubiquity.templates:179001
 msgid "Network configuration"
-msgstr ""
+msgstr "संजाळ संयोजना"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:180001
 msgid "Software selection"
-msgstr ""
+msgstr "सॉफ्टवेयर निवड"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:181001
 msgid "Language"
-msgstr ""
+msgstr "भाषा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:182001
 msgid "Prepare"
-msgstr ""
+msgstr "तयार करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:183001
 msgid "Timezone"
-msgstr ""
+msgstr "वेळक्षेत्र"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:184001
 msgid "Keyboard"
-msgstr ""
+msgstr "कळफलक"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:185001
 msgid "Disk Setup"
-msgstr ""
+msgstr "डिस्क संयोजना"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:186001
 msgid "User Info"
-msgstr ""
+msgstr "वापरकर्ता माहिती"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:188001
 msgid "installation process"
-msgstr ""
+msgstr "प्रतिष्ठापन प्रक्रिया"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:190001
 msgid "Checking for installer updates"
-msgstr ""
+msgstr "प्रतिष्ठापक अद्ययावत तपास करत आहे"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:191001
 msgid "Reading package information"
-msgstr ""
+msgstr "पॅकेज माहिती वाचत आहे"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:192001
 msgid "Updating package information"
-msgstr ""
+msgstr "पॅकेज माहिती अद्ययावत करत आहे"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:193001
 msgid "File ${INDEX} of ${TOTAL} at ${SPEED}/s"
-msgstr ""
+msgstr "फाईल ${INDEX} / ${TOTAL} वेग ${SPEED}/s"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:194001
 msgid "File ${INDEX} of ${TOTAL}"
-msgstr ""
+msgstr "फाईल ${INDEX} / ${TOTAL}"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:195001
 msgid "Installing update"
-msgstr ""
+msgstr "अद्ययावत प्रतिष्ठापन करत आहे"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:196001
 msgid "Error updating installer"
-msgstr ""
+msgstr "प्रतिष्ठापक अद्ययावत करताना त्रुटी"
 
 #. Type: text
 #. Description
@@ -1291,14 +1298,14 @@ msgstr ""
 #. Translated acronym for Universal Serial Bus.
 #: ../ubiquity.templates:197001
 msgid "USB disk"
-msgstr ""
+msgstr "युएसबी डिस्क"
 
 #. Type: text
 #. Description
 #. Translated acronym for Compact Disc.
 #: ../ubiquity.templates:198001
 msgid "CD"
-msgstr ""
+msgstr "सीडी"
 
 #. Type: text
 #. Description
@@ -1322,7 +1329,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:201001 ../ubiquity.templates:202001
 msgid "Installation failed"
-msgstr ""
+msgstr "प्रतिष्ठापन अपयशी"
 
 #. Type: text
 #. Description
@@ -1343,13 +1350,13 @@ msgstr ""
 #. RELEASE is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:204001
 msgid "Preparing to install ${RELEASE}"
-msgstr ""
+msgstr "प्रतिष्ठापनास तयार करत आहे ${RELEASE}"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:205001
 msgid "Wireless"
-msgstr ""
+msgstr "वायरलेस"
 
 #. Type: text
 #. Description
@@ -1364,13 +1371,13 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:207001
 msgid "Password:"
-msgstr ""
+msgstr "गुप्तशब्द :"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:208001
 msgid "Display password"
-msgstr ""
+msgstr "गुप्तशब्द दर्शवा"
 
 #. Type: text
 #. Description
@@ -1382,13 +1389,13 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:210001
 msgid "Connect to this network"
-msgstr ""
+msgstr "या संजाळाशी जुळवणी करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:214001
 msgid "Select drive:"
-msgstr ""
+msgstr "ड्राइव्ह निवडा :"
 
 #. Type: text
 #. Description
@@ -1400,7 +1407,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:216001
 msgid "The entire disk will be used:"
-msgstr ""
+msgstr "पूर्ण डिस्क वापरली जाईल :"
 
 #. Type: text
 #. Description
@@ -1440,7 +1447,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:221001
 msgid "Split Largest Partition"
-msgstr ""
+msgstr "सर्वात मोठे विभाजन तोडा"
 
 #. Type: text
 #. Description
@@ -1465,7 +1472,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:226001
 msgid "is connected to the Internet"
-msgstr ""
+msgstr "महाजाळाशी जुळवणी स्थापीत केलेली आहे"
 
 #. Type: text
 #. Description
@@ -1490,25 +1497,25 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:229001
 msgid "Install this third-party software"
-msgstr ""
+msgstr "हे तृतिय पक्ष सॉफ्टवेअर प्रतिष्ठापना करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:230001
 msgid "Download updates while installing"
-msgstr ""
+msgstr "प्रतिष्ठापन करताना अद्ययावत सॉफ्टवेअर डाउनलोड करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:234001
 msgid "Layout:"
-msgstr ""
+msgstr "रचना :"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:235001
 msgid "Variant:"
-msgstr ""
+msgstr "प्रकार :"
 
 #. Type: text
 #. Description
@@ -1529,19 +1536,19 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:238001
 msgid "Time Zone:"
-msgstr ""
+msgstr "वेळ क्षेत्र :"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:239001
 msgid "Region:"
-msgstr ""
+msgstr "विभाग :"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:240001
 msgid "[type here to change]"
-msgstr ""
+msgstr "[बदल करण्याकरिता येथे टाइप करा]"
 
 #. Type: text
 #. Description
@@ -1549,7 +1556,7 @@ msgstr ""
 #. DISTRO is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:243001
 msgid "Replace ${OS} with ${DISTRO}"
-msgstr ""
+msgstr "${OS} हे ${DISTRO} या सह बदला"
 
 #. Type: text
 #. Description
@@ -1566,7 +1573,7 @@ msgstr ""
 #. OS is a variable substituted into this string, and may be 'Windows 7'
 #: ../ubiquity.templates:244001
 msgid "Install ${DISTRO} alongside ${OS}"
-msgstr ""
+msgstr "${DISTRO} हे ${OS} या बरोबर प्रतिष्ठापीत करा"
 
 #. Type: text
 #. Description
@@ -1589,13 +1596,13 @@ msgstr ""
 #. OS is a variable substituted into this string, and may be 'Windows 7'
 #: ../ubiquity.templates:245001
 msgid "Install ${DISTRO} inside ${OS}"
-msgstr ""
+msgstr "${DISTRO} हे ${OS} याच्या आत प्रतिष्ठापीत करा"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:246001
 msgid "Something else"
-msgstr ""
+msgstr "इतर काहीतरी"
 
 #. Type: text
 #. Description
@@ -1611,7 +1618,7 @@ msgstr ""
 #. CURDISTRO is a variable substituted into this string, and may be 'Ubuntu 10.10'
 #: ../ubiquity.templates:247001
 msgid "Erase ${CURDISTRO} and reinstall"
-msgstr ""
+msgstr "${CURDISTRO} हे खोडा व पुन्हस्थापित करा"
 
 #. Type: text
 #. Description
@@ -1628,7 +1635,7 @@ msgstr ""
 #. VER is a variable substituted into this string, and may be '11.04'
 #: ../ubiquity.templates:248001
 msgid "Upgrade ${CURDISTRO} to ${VER}"
-msgstr ""
+msgstr "${CURDISTRO} हे ${VER} यावर अद्ययावत करा"
 
 #. Type: text
 #. Description
@@ -1647,7 +1654,7 @@ msgstr ""
 #. CURDISTRO is a variable substituted into this string, and may be 'Ubuntu 10.10'
 #: ../ubiquity.templates:249001
 msgid "Install ${DISTRO} ${VER} alongside ${CURDISTRO}"
-msgstr ""
+msgstr "${DISTRO} ${VER} हे ${CURDISTRO} या बरोबर प्रतिष्ठापीत करा"
 
 #. Type: text
 #. Description
@@ -1657,7 +1664,7 @@ msgstr ""
 #. DISTRO is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:250001 ../ubiquity.templates:253001
 msgid "Erase disk and install ${DISTRO}"
-msgstr ""
+msgstr "डिस्क खोडा व ${DISTRO} हे प्रतिष्ठापीत करा"
 
 #. Type: text
 #. Description
@@ -1671,7 +1678,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:251001
 msgid "Erase everything and reinstall"
-msgstr ""
+msgstr "सर्व खोडा व पुन्हस्थापित करा"
 
 #. Type: text
 #. Description
@@ -1689,7 +1696,7 @@ msgstr ""
 #. CURDISTRO is a variable substituted into this string, and may be 'Ubuntu 10.10'
 #: ../ubiquity.templates:252001
 msgid "Reinstall ${CURDISTRO}"
-msgstr ""
+msgstr "${CURDISTRO} हे पुन्हस्थापित करा"
 
 #. Type: text
 #. Description
@@ -1705,7 +1712,7 @@ msgstr ""
 #. DISTRO is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:254001
 msgid "Install ${DISTRO} alongside them"
-msgstr ""
+msgstr "${DISTRO} हे त्यांच्या बरोबर प्रतिष्ठापीत करा"
 
 #. Type: text
 #. Description
@@ -1794,4 +1801,4 @@ msgstr ""
 #. Description
 #: ../oem-config.templates:2001
 msgid "Removing packages"
-msgstr ""
+msgstr "पॅकेजेस काढून टाकत आहे"

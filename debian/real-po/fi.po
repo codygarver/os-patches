@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:01+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:00+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
@@ -27,7 +27,7 @@ msgstr "Yhdistetään..."
 #. Description
 #: ../ubiquity.templates:4001
 msgid "Restart to Continue"
-msgstr "Käynnistä uudelleen jatkaaksesi"
+msgstr "Jatka käynnistämällä tietokone uudelleen"
 
 #. Type: text
 #. Description
@@ -1588,7 +1588,7 @@ msgid ""
 "Fluendo MP3 plugin includes MPEG Layer-3 audio decoding technology licensed "
 "from Fraunhofer IIS and Technicolor SA."
 msgstr ""
-"Fluendon MP3 -lisäosa sisältää Fraunhofer IIS:n ja Technicolor SA:n "
+"Fluendon MP3-lisäosa sisältää Fraunhofer IIS:n ja Technicolor SA:n "
 "lisensoimaa teknologiaa, jota käytetään MP3-tiedostojen toistamiseen."
 
 #. Type: text
@@ -1875,8 +1875,8 @@ msgid ""
 "This computer currently has no detected operating systems. What would you "
 "like to do?"
 msgstr ""
-"Tässä tietokoneessa ei tällä hetkellä ole havaittuja asennettuja "
-"käyttöjärjestelmiä. Mitä haluat tehdä?"
+"Tässä tietokoneessa ei havaittu asennettuja käyttöjärjestelmiä. Mitä haluat "
+"tehdä?"
 
 #. Type: title
 #. Description

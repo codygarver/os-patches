@@ -1,3 +1,26 @@
+ubiquity (2.10.29) precise; urgency=low
+
+  [ Dimitri John Ledkov ]
+  * Show labels in automatic side-by-side installation. Fixed by removing
+    all cairo styling from partition boxes in automatic partitioning,
+    instead use simple bg styling. (LP: #947107, #1240532)
+  * Automatic update of included source packages: grub-installer
+    1.68ubuntu5.3.
+
+  [ Brian Murray ]
+  * Use the apt cache with with so that we close the cache when we are done
+    with it. (LP: #1051935)
+  
+  [ Hao-Ran Liu (Joseph Liu) ]
+  * src/wallpaper/wallpaper.c: Cropping wallpaper image instead of
+    stretching it if image's aspect ratio doesn't match monitor's aspect
+    ratio (LP: #1207249)
+
+  [ Colin Watson ]
+  * Update translations from Launchpad.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Wed, 22 Jan 2014 14:35:56 +0000
+
 ubiquity (2.10.28) precise; urgency=low
 
   * Automatic update of included source packages: partman-

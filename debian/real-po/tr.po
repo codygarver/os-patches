@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: ubiquity@packages.debian.org\n"
 "POT-Creation-Date: 2012-03-09 12:10-0500\n"
-"PO-Revision-Date: 2012-03-13 15:07+0000\n"
-"Last-Translator: Şâkir Aşçı <Unknown>\n"
+"PO-Revision-Date: 2012-11-22 11:17+0000\n"
+"Last-Translator: Yiğit Ateş <Unknown>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:01+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:01+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
@@ -81,7 +81,7 @@ msgid ""
 "You can try ${RELEASE} without making any changes to your computer, directly "
 "from this ${MEDIUM}."
 msgstr ""
-"${RELEASE}'yu; bilgisayarınızda hiçbir değişiklik yapmadan, doğrudan "
+"${RELEASE}'yu, bilgisayarınızda hiçbir değişiklik yapmadan; doğrudan "
 "${MEDIUM} üzerinden deneyebilirsiniz."
 
 #. Type: text
@@ -92,22 +92,22 @@ msgid ""
 "Or if you're ready, you can install ${RELEASE} alongside (or instead of) "
 "your current operating system.  This shouldn't take too long."
 msgstr ""
-"Veya hazırsanız, mevcut işletim sisteminizin yanına (veya yerine) ${RELEASE} "
-"yükleyebilirsiniz. Bu işlem normalde çok uzun sürmez."
+"Veya hazırsanız, mevcut işletim sisteminizin yanına (veya yerine) "
+"${RELEASE}'yu yükleyebilirsiniz. Bu işlem çok uzun sürmemelidir."
 
 #. Type: text
 #. Description
 #. RELEASE is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:11001
 msgid "Try ${RELEASE}"
-msgstr "${RELEASE} Dene"
+msgstr "${RELEASE}'yu Dene"
 
 #. Type: text
 #. Description
 #. RELEASE is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:12001
 msgid "Install ${RELEASE}"
-msgstr "${RELEASE} Kur"
+msgstr "${RELEASE}'yu Kur"
 
 #. Type: text
 #. Description
@@ -116,8 +116,8 @@ msgid ""
 "You may wish to read the <a href=\"release-notes\">release notes</a> or <a "
 "href=\"update\">update this installer</a>."
 msgstr ""
-"<a href=\"release-notes\">Sürüm notlarını okumak </a> ya da  <a href=\"update"
-"\">yükleme arasını güncellemek</a> isteyebilirsiniz."
+"<a href=\"release-notes\">Sürüm notlarını okumak</a> veya <a href=\"update"
+"\">bu kurulum aracını güncelleştirmek</a> isteyebilirsiniz."
 
 #. Type: text
 #. Description
@@ -131,8 +131,7 @@ msgstr ""
 #: ../ubiquity.templates:15001
 msgid "You may wish to <a href=\"update\">update this installer</a>."
 msgstr ""
-"<a href=\"update\">Yükleme aracını güncelleştirme</a> bağlantsını okumak "
-"isteyebilirsiniz."
+"<a href=\"update\">Bu yükleme aracını güncelleştirmek</a> isteyebilirsiniz."
 
 #. Type: text
 #. Description
@@ -157,8 +156,8 @@ msgid ""
 "this program."
 msgstr ""
 "Bu kurulum süreci, sabit diskinizin bölümlerini yeniden boyutlandırabilir "
-"veya silebilir. Bu programı çalıştırmadan önce<b>tüm değerli verilerinizi "
-"yedeklediğinize</b> emin olun."
+"veya silebilir. Bu programı çalıştırmadan önce <b>tüm değerli verilerinizi "
+"yedeklediğinizden</b> emin olun."
 
 #. Type: text
 #. Description
@@ -212,7 +211,7 @@ msgstr "Lütfen aşağıdaki tuşlardan birine basın:"
 #. Description
 #: ../ubiquity.templates:26001
 msgid "Is the following key present on your keyboard?"
-msgstr "Aşağıdaki tuş, klavyeniz üzerinde gösteriliyor mu?"
+msgstr "Aşağıdaki tuş, klavyeniz üzerinde bulunuyor mu?"
 
 #. Type: text
 #. Description
@@ -266,7 +265,7 @@ msgstr "Bir kullanıcı adı seçin:"
 #. Description
 #: ../ubiquity.templates:35001
 msgid "Username"
-msgstr "Kullanıcı adı"
+msgstr "Kullanıcı Adı"
 
 #. Type: text
 #. Description
@@ -428,8 +427,8 @@ msgid ""
 "If you do not wish to import any accounts, select nothing and go to the next "
 "page."
 msgstr ""
-"Herhangi bir hesap içe aktarmak istemiyorsanız, bir seçim yapmadan sonraki "
-"sayfaya geçiniz."
+"Herhangi bir hesap içe aktarmak istemiyorsanız, bir seçim yapmadan bir "
+"sonraki sayfaya geçin."
 
 #. Type: text
 #. Description
@@ -539,7 +538,7 @@ msgstr "Kurulum Tamamlandı"
 #. Description
 #: ../ubiquity.templates:76001
 msgid "Continue Testing"
-msgstr "Denemeyi Sürdür"
+msgstr "Sınamayı Sürdür"
 
 #. Type: text
 #. Description
@@ -1205,9 +1204,9 @@ msgid ""
 "The installer needs to commit changes to partition tables, but cannot do so "
 "because partitions on the following mount points could not be unmounted:"
 msgstr ""
-"Kurulum programının, değişiklikleri bölümleme tablosuna işlemesi gerekiyor; "
-"ancak şu bağlama noktalarındaki bölümler dosya sisteminden ayırılamadığı "
-"için değişiklikler bölümleme tablosuna işlenemiyor:"
+"Kurulum programının, değişiklikleri bölümleme tablosuna işlemesi gerekiyor "
+"ancak bunu yapamıyor; çünkü şu bağlama noktalarındaki bölümler dosya "
+"sisteminden ayırılamıyor:"
 
 #. Type: boolean
 #. Description
@@ -1260,7 +1259,7 @@ msgstr "Sistem Yapılandırması"
 #. Description
 #: ../ubiquity.templates:178001 ../ubiquity.templates:241001
 msgid "Welcome"
-msgstr "Hoşgeldiniz"
+msgstr "Hoş Geldiniz"
 
 #. Type: text
 #. Description
@@ -1290,7 +1289,7 @@ msgstr "Hazırla"
 #. Description
 #: ../ubiquity.templates:183001
 msgid "Timezone"
-msgstr "Zaman dilimi"
+msgstr "Zaman Dilimi"
 
 #. Type: text
 #. Description
@@ -1332,7 +1331,7 @@ msgstr "Paket bilgisi okunuyor"
 #. Description
 #: ../ubiquity.templates:192001
 msgid "Updating package information"
-msgstr "Paket bilgisi güncelleştiriliyor"
+msgstr "Paket bilgisi güncelleniyor"
 
 #. Type: text
 #. Description
@@ -1362,7 +1361,7 @@ msgstr "Yükleyici güncelleştirme hatası"
 #. Description
 #: ../ubiquity.templates:196001
 msgid "The installer encountered an error while trying to update itself:"
-msgstr "Yükleyici kendini güncelleştirirken bir hatayla karşılaştı:"
+msgstr "Yükleyici kendini güncellerken bir hatayla karşılaştı:"
 
 #. Type: text
 #. Description
@@ -1429,7 +1428,7 @@ msgstr ""
 #. RELEASE is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:204001
 msgid "Preparing to install ${RELEASE}"
-msgstr "${RELEASE} kurulumu için hazırlanılıyor"
+msgstr "${RELEASE} kurulumu için hazırlanıyor"
 
 #. Type: text
 #. Description
@@ -1839,7 +1838,7 @@ msgstr "${DISTRO}'yu diğer işletim sistemlerinin yanına yükle"
 #: ../ubiquity.templates:255001
 msgid "This computer currently has ${OS} on it. What would you like to do?"
 msgstr ""
-"Bu bilgisayarda, şu anda ${OS} işletim sistemi var. Ne yapmak isterdiniz?"
+"Bu bilgisayarda, şu anda ${OS} işletim sistemi var. Ne yapmak istersiniz?"
 
 #. Type: text
 #. Description
@@ -1851,7 +1850,7 @@ msgid ""
 "do?"
 msgstr ""
 "Bu bilgisayarda, şu anda ${OS1} ve ${OS2} işletim sistemleri var. Ne yapmak "
-"isterdiniz?"
+"istersiniz?"
 
 #. Type: text
 #. Description
@@ -1861,7 +1860,7 @@ msgid ""
 "like to do?"
 msgstr ""
 "Bu bilgisayarda, şu anda çok sayıda işletim sistemi kurulu. Ne yapmak "
-"isterdiniz?"
+"istersiniz?"
 
 #. Type: text
 #. Description
@@ -1870,7 +1869,7 @@ msgid ""
 "This computer currently has no detected operating systems. What would you "
 "like to do?"
 msgstr ""
-"Bu bilgisayarda belirlenen bir işletim sistemi yok. Ne yapmak isterdiniz?"
+"Bu bilgisayarda belirlenen bir işletim sistemi yok. Ne yapmak istersiniz?"
 
 #. Type: title
 #. Description

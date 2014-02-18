@@ -14,14 +14,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:00+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:01+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:3001
 msgid "Connecting..."
-msgstr ""
+msgstr "જોડાણ થઈ રહ્યુ છે"
 
 #. Type: text
 #. Description
@@ -50,7 +50,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:7001 ../ubiquity.templates:187001
 msgid "Install"
-msgstr "સ્થાપન કરો"
+msgstr "સ્થાપિત કરો"
 
 #. Type: text
 #. Description
@@ -100,7 +100,7 @@ msgstr ""
 #. RELEASE is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:12001
 msgid "Install ${RELEASE}"
-msgstr ""
+msgstr "${RELEASE} ને સ્થાપિત કરો"
 
 #. Type: text
 #. Description

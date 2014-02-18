@@ -7,21 +7,21 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: ubiquity@packages.debian.org\n"
 "POT-Creation-Date: 2012-03-09 12:10-0500\n"
-"PO-Revision-Date: 2012-03-16 23:47+0000\n"
-"Last-Translator: Carlos Manuel <Unknown>\n"
+"PO-Revision-Date: 2012-08-16 08:34+0000\n"
+"Last-Translator: Almufadado <Unknown>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:00+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:01+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:3001
 msgid "Connecting..."
-msgstr "A estabelecer ligação..."
+msgstr "A ligar..."
 
 #. Type: text
 #. Description
@@ -42,8 +42,8 @@ msgid ""
 "Too smart for us? Get your hands dirty with some advanced partitioning "
 "options."
 msgstr ""
-"Demasiado inteligente? Aventure-se com algumas opções avançadas de "
-"particionamento."
+"Demasiado inteligente para nós? Ponha as mãos na massa com as opções "
+"avançadas de particionamento."
 
 #. Type: text
 #. Description
@@ -68,9 +68,9 @@ msgid ""
 "for this batch of systems. This name will be saved on the installed system "
 "and can be used to help with bug reports."
 msgstr ""
-"Está a instalar em modo de fabricante. Por favor introduza um nome único "
-"para este conjunto de sistemas. Este nome ficará guardado no sistema "
-"instalado e pode ser utilizado para ajudar nos relatórios de erros."
+"Está a instalar o sistema em modo de fabricante. Por favor introduza um nome "
+"único para este conjunto de sistemas. Este nome será guardado no sistema "
+"instalado e será utilizado para ajudar nos relatórios de erros."
 
 #. Type: text
 #. Description
@@ -159,7 +159,7 @@ msgid ""
 "this program."
 msgstr ""
 "O processo de instalação pode redimensionar ou apagar partições no seu disco "
-"rígido. <b>Faça um backup integral de todos os dados importantes</b> antes "
+"rígido. <b>Faça uma cópia integral de todos os dados importantes</b> antes "
 "de correr este programa."
 
 #. Type: text
@@ -178,7 +178,7 @@ msgstr "Qual é a sua localização?"
 #. Description
 #: ../ubiquity.templates:20001
 msgid "Keyboard layout"
-msgstr "Disposição do teclado"
+msgstr "Disposição de teclado"
 
 #. Type: text
 #. Description
@@ -214,7 +214,7 @@ msgstr "Por favor, prima uma das seguintes teclas:"
 #. Description
 #: ../ubiquity.templates:26001
 msgid "Is the following key present on your keyboard?"
-msgstr "A tecla pedida está presente no seu teclado?"
+msgstr "A seguinte tecla está disponível no seu teclado?"
 
 #. Type: text
 #. Description
@@ -232,13 +232,13 @@ msgstr "Escolha uma imagem"
 #. Description
 #: ../ubiquity.templates:29001
 msgid "Take a photo:"
-msgstr "Tirar uma fotografia:"
+msgstr "Tire uma fotografia:"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:30001
 msgid "Or choose an existing picture:"
-msgstr "Ou escolher uma fotografia existente:"
+msgstr "Ou escolha uma imagem disponível:"
 
 #. Type: text
 #. Description
@@ -268,7 +268,7 @@ msgstr "Escolha um nome de utilizador:"
 #. Description
 #: ../ubiquity.templates:35001
 msgid "Username"
-msgstr "Nome do Utilizador"
+msgstr "Utilizador"
 
 #. Type: text
 #. Description
@@ -299,13 +299,13 @@ msgstr "Palavra-passe"
 #. Description
 #: ../ubiquity.templates:40001
 msgid "Confirm password"
-msgstr "Confirme a palavra-passe"
+msgstr "Confirme a senha"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:41001
 msgid "Confirm your password:"
-msgstr "Confirme a sua Palavra-passe:"
+msgstr "Confirme a sua senha:"
 
 #. Type: text
 #. Description
@@ -375,19 +375,19 @@ msgstr "Palavra-passe fraca"
 #. Description
 #: ../ubiquity.templates:52001
 msgid "Fair password"
-msgstr "Palavra-passe razoável"
+msgstr "Senha razoável"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:53001
 msgid "Good password"
-msgstr "Palavra-passe boa"
+msgstr "Senha boa"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:54001
 msgid "Strong password"
-msgstr "Palavra-passe forte"
+msgstr "Senha forte"
 
 #. Type: text
 #. Description
@@ -405,7 +405,7 @@ msgstr "Pedir a minha palavra-passe para iniciar sessão"
 #. Description
 #: ../ubiquity.templates:57001
 msgid "Encrypt my home folder"
-msgstr "Encriptar a minha Pasta Pessoal (home)"
+msgstr "Encriptar a minha Pasta Pessoal"
 
 #. Type: text
 #. Description
@@ -414,8 +414,8 @@ msgid ""
 "This picture will be associated with your user name and displayed alongside "
 "it at times."
 msgstr ""
-"Esta imagem estará associada ao seu nome de utilizador e exibida junto com "
-"ele todas as vezes."
+"Esta imagem será associada ao seu nome de utilizador e exibida ao seu lado "
+"algumas vezes."
 
 #. Type: text
 #. Description
@@ -542,7 +542,7 @@ msgstr "Ignorar"
 #. Description
 #: ../ubiquity.templates:75001
 msgid "Installation Complete"
-msgstr "Instalação Completa"
+msgstr "Instalação Concluída"
 
 #. Type: text
 #. Description
@@ -568,7 +568,7 @@ msgstr "Encerrar Agora"
 #. Description
 #: ../ubiquity.templates:80001 ../ubiquity.templates:81001
 msgid "Installer crashed"
-msgstr "Ocorreu um erro fatal durante a instalação"
+msgstr "Ocorreu um erro com o instalador"
 
 #. Type: text
 #. Description
@@ -580,11 +580,12 @@ msgid ""
 "details will be sent to our bug tracker and a developer  will attend to the "
 "problem as soon as possible."
 msgstr ""
-"Lamentamos, mas o instalador encerrou. Depois de fechar esta janela, terá a "
-"possibilidade de enviar um relatório de erro utilizando a ferramenta "
-"integrada de relatórios de erros. Isto irá coletar informações sobre seu "
-"sistema e seu processo de instalação. Os detalhes serão enviados para nosso "
-"sistema e um gestor irá atender o problema o mais rapidamente possível."
+"Lamentamos, mas o instalador encerrou abruptamente. Depois de fechar esta "
+"janela, terá a possibilidade de enviar um relatório de erro, utilizando a "
+"ferramenta integrada de relatórios de erros. Isto irá colectar informações "
+"sobre o seu sistema e o processo de instalação. Os detalhes serão enviados "
+"para o nosso sistema e um gestor irá atender o problema o mais rapidamente "
+"possível."
 
 #. Type: text
 #. Description
@@ -1457,9 +1458,9 @@ msgid ""
 "party software, download updates, automatically detect your timezone, and "
 "install full support for your language."
 msgstr ""
-"Conectar este computador a uma rede sem fio permite-lhe instalar um software "
-"de terceiros, transferir atualizações, detetar automaticamente o seu fuso "
-"horário, e instalar o suporte completo para o seu idioma."
+"Ligar este computador a uma rede sem fios permite-lhe instalar software de "
+"terceiros, transferir actualizações, detectar automaticamente o seu fuso "
+"horário e instalar o suporte completo para o seu idioma."
 
 #. Type: text
 #. Description

@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: ubiquity@packages.debian.org\n"
 "POT-Creation-Date: 2012-03-09 12:10-0500\n"
-"PO-Revision-Date: 2012-04-10 18:14+0000\n"
-"Last-Translator: Mathias Bynke <Unknown>\n"
+"PO-Revision-Date: 2012-11-22 11:19+0000\n"
+"Last-Translator: Bjørn Harald Vikhagen <Unknown>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:01+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:00+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
@@ -56,7 +56,7 @@ msgstr "Installer"
 #. Description
 #: ../ubiquity.templates:8001
 msgid "Install (OEM mode, for manufacturers only)"
-msgstr "Installer (OEM modus, for maskinprodusenter)"
+msgstr "Installer (OEM-modus, for maskinprodusenter)"
 
 #. Type: text
 #. Description
@@ -1141,7 +1141,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:153001
 msgid "Error copying bluetooth configuration"
-msgstr ""
+msgstr "Feil ved kopiering av bluetooth-konfigurasjon"
 
 #. Type: error
 #. Description
@@ -1151,6 +1151,9 @@ msgid ""
 "will continue, but the bluetooth configuration will have to be set up again "
 "in the installed system."
 msgstr ""
+"En feil oppstod under kopieringen av innstillingene for blåtann. "
+"Installasjonen vil fortsette, men blåtanninnstillingene må settes opp på "
+"nytt etter installasjonen."
 
 #. Type: error
 #. Description
@@ -1586,6 +1589,8 @@ msgid ""
 "Fluendo MP3 plugin includes MPEG Layer-3 audio decoding technology licensed "
 "from Fraunhofer IIS and Technicolor SA."
 msgstr ""
+"Fluendo MP3-utvidelsen inneholder lyddekodingsteknologien MPEG Layer-3, "
+"lisensiert fra Fraunhofer IIS og Technicolor SA."
 
 #. Type: text
 #. Description
@@ -1671,7 +1676,7 @@ msgstr ""
 #. OS is a variable substituted into this string, and may be 'Windows 7'
 #: ../ubiquity.templates:244001
 msgid "Install ${DISTRO} alongside ${OS}"
-msgstr "Installer ${DISTRO}ved siden av ${OS}"
+msgstr "Installer ${DISTRO} ved siden av ${OS}"
 
 #. Type: text
 #. Description
@@ -1888,7 +1893,7 @@ msgstr "Gjør klart for OEM-konfigurasjon"
 #. finish-install progress bar item
 #: ../oem-config-udeb.templates:2001
 msgid "Preparing for OEM configuration..."
-msgstr "Gjør klart for OEM-konfigurasjon ..."
+msgstr "Gjør klart for OEM-konfigurasjon …"
 
 #. Type: text
 #. Description
@@ -1905,10 +1910,10 @@ msgid ""
 "administrative privileges using 'sudo'. You will then be able to make any "
 "additional modifications you require to the system."
 msgstr ""
-"Når du starter opp det nye systemet vil du kunne logge inn som brukeren "
-"'oem' med passordet du satte i under installasjonen. Denne brukeren har også "
-"administrative rettigheter via 'sudo'. Du kan da gjøre de endringene du "
-"ønsker i systemet."
+"Når du starter opp det nye systemet, vil du kunne logge inn som brukeren "
+"­«oem» med passordet du valgte under installasjonen. Denne brukeren har også "
+"administrative rettigheter via «sudo». Du kan da gjøre eventuelle endringer "
+"på systemet."
 
 #. Type: text
 #. Description

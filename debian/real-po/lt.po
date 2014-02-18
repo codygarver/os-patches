@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: ubiquity@packages.debian.org\n"
 "POT-Creation-Date: 2012-03-09 12:10-0500\n"
-"PO-Revision-Date: 2012-03-13 18:46+0000\n"
-"Last-Translator: Aurimas Fišeras <Unknown>\n"
+"PO-Revision-Date: 2013-04-17 08:05+0000\n"
+"Last-Translator: Mantas Kriaučiūnas <mantas@akl.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:01+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:00+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
@@ -68,9 +68,9 @@ msgid ""
 "for this batch of systems. This name will be saved on the installed system "
 "and can be used to help with bug reports."
 msgstr ""
-"Jūs diegiate sistemos platintojo būdu. Prašome įvesti unikalų pavadinimą "
-"šiai kompiuterių grupei. Šis pavadinimas bus išsaugotas įdiegtoje sistemoje "
-"ir gali padėti pranešant apie klaidas."
+"Diegiate sistemos platintojo būdu. Įveskite unikalų pavadinimą šiai "
+"kompiuterių grupei. Šis pavadinimas bus išsaugotas įdiegtoje sistemoje ir "
+"gali padėti pranešant apie klaidas."
 
 #. Type: text
 #. Description
@@ -170,7 +170,7 @@ msgstr "Dėmesio"
 #. Description
 #: ../ubiquity.templates:19001
 msgid "Where are you?"
-msgstr "Kur jūs esate?"
+msgstr "Kur esate?"
 
 #. Type: text
 #. Description
@@ -212,7 +212,7 @@ msgstr "Prašome paspausti vieną iš šių klavišų:"
 #. Description
 #: ../ubiquity.templates:26001
 msgid "Is the following key present on your keyboard?"
-msgstr "Ar šis klavišas yra jūsų klaviatūroje?"
+msgstr "Ar šis klavišas yra klaviatūroje?"
 
 #. Type: text
 #. Description
@@ -345,9 +345,7 @@ msgstr "Negali prasidėti ar baigtis tašku ar turėti seką „..“."
 #. Description
 #: ../ubiquity.templates:48001
 msgid "You are running in debugging mode. Do not use a valuable password!"
-msgstr ""
-"Naudojate klaidų paieškos ir taisymo režimą. Nenaudokite vertingo "
-"slaptažodžio!"
+msgstr "Naudojate derinimo veikseną. Nenaudokite vertingo slaptažodžio!"
 
 #. Type: text
 #. Description
@@ -410,8 +408,8 @@ msgid ""
 "This picture will be associated with your user name and displayed alongside "
 "it at times."
 msgstr ""
-"Šis paveiksliukas bus susietas su jūsų naudotojo vardu ir kartais bus "
-"rodomas šalia."
+"Šis paveiksliukas bus susietas su naudotojo vardu ir kartais bus rodomas "
+"šalia."
 
 #. Type: text
 #. Description
@@ -520,8 +518,7 @@ msgstr "Nutraukti diegimą."
 #. Description
 #: ../ubiquity.templates:72001
 msgid "This may leave your computer unable to boot."
-msgstr ""
-"Dėl to Jūsų kompiuteryje gali nebeveikti operacinių sistemų paleidimas."
+msgstr "Dėl to kompiuteryje gali nebeveikti operacinių sistemų paleidimas."
 
 #. Type: text
 #. Description
@@ -747,10 +744,9 @@ msgid ""
 "until you restart the computer, any changes you make or documents you save "
 "will not be preserved."
 msgstr ""
-"Įdiegimas baigtas. Galite toliau naudotis dabar veikiančia ${RELEASE} "
-"sistema, tačiau kol nepaleisite kompiuterio iš naujo, visi jūsų padaryti "
-"pakeitimai, sukurti ar atsiųsti dokumentai arba kiti failai, nebus išsaugoti "
-"kompiuteryje."
+"Įdiegimas baigtas. Galite toliau testuoti ${RELEASE}, tačiau kol nepaleisite "
+"kompiuterio iš naujo, visi padaryti pakeitimai, sukurti ar atsiųsti "
+"dokumentai bei kiti failai, nebus išsaugoti kompiuteryje."
 
 #. Type: text
 #. Description
@@ -809,7 +805,7 @@ msgstr "Įdiegiama sistema"
 #. Description
 #: ../ubiquity.templates:116001
 msgid "Finding the distribution to copy..."
-msgstr "Ieškoma distribucija kopijavimui..."
+msgstr "Ieškomas distributyvas kopijavimui..."
 
 #. Type: text
 #. Description
@@ -1090,13 +1086,13 @@ msgid ""
 "versions of your installer image, or failing that report the problem to your "
 "distributor."
 msgstr ""
-"Tai gali būti dėl to, kad naudojamas senas diegimo programos 'atvaizdis', "
-"arba dėl klaidos kažkuriame iš aukščiau išvardintų programų paketų. "
-"Detalesnę informaciją galima rasti /var/log/syslog. Įdiegiklis vistiek "
-"bandys tęsti, bet jam gali nepavykti vėlesnėje stadijoje, tada tikriausiai "
-"negalės įdiegti arba pašalinti kitų programų paketų (galbūt ir pačio savęs) "
-"iš įdiegtos sistemos. Jums reiktų naudoti naujesnę įdiegimo programą arba "
-"nusiųsti problemos aprašymą ir ataskaitą jūsų operacinės sistemos gamintojui."
+"Tai gali būti dėl to, kad naudojamas senas įdiegiklio atvaizdis, arba dėl "
+"klaidos kažkuriame iš aukščiau išvardintų programų paketų. Detalesnę "
+"informaciją galima rasti /var/log/syslog. Įdiegiklis vis tiek bandys tęsti, "
+"bet jam gali nepavykti vėlesnėje stadijoje, tada tikriausiai negalės įdiegti "
+"arba pašalinti kitų programų paketų (galbūt ir pačio savęs) iš įdiegtos "
+"sistemos. Reiktų naudoti naujesnę įdiegimo programą arba nusiųsti problemos "
+"aprašymą ir ataskaitą jūsų operacinės sistemos gamintojui."
 
 #. Type: error
 #. Description
@@ -1244,8 +1240,8 @@ msgid ""
 "Some of the partitions you created are too small.  Please make the following "
 "partitions at least this large:"
 msgstr ""
-"Kai kurie jūsų sukurti skirsniai yra per maži. Prašome padaryti šiuos "
-"skirsnius bent jau tokio dydžio:"
+"Kai kurie sukurti skirsniai yra per maži. Prašome padaryti šiuos skirsnius "
+"bent jau tokio dydžio:"
 
 #. Type: boolean
 #. Description
@@ -1454,10 +1450,9 @@ msgid ""
 "party software, download updates, automatically detect your timezone, and "
 "install full support for your language."
 msgstr ""
-"Prijungus šį kompiuterį pre belaidžio (wi-fi) ar laidinio tinklo įdiegimo "
-"metu galėsite įdiegti papildomą programinę įrangą, atnaujinimus, pilną "
-"parinktos kalbos palaikymą (vertimus, žodynus, šriftus) bei automatiškai "
-"aptikti Jūsų laiko juostą."
+"Šio kompiuterio prijungimas prie belaidžio tinklo leis įdiegti kitų "
+"gamintojų programinę įrangą, atsiųsti atnaujinimus, automatiškai aptikti "
+"laiko juostą ir įdiegti pilną parinktos kalbos palaikymą."
 
 #. Type: text
 #. Description
@@ -1562,7 +1557,7 @@ msgstr "Prašome įsitikinti, kad šis kompiuteris:"
 #. SIZE is a variable substituted into this string, and may be '3.7 GB'
 #: ../ubiquity.templates:224001
 msgid "has at least ${SIZE} available drive space"
-msgstr "turi nemažiau nei ${SIZE} laisvos vietos"
+msgstr "turi bent ${SIZE} laisvos vietos"
 
 #. Type: text
 #. Description
@@ -1599,14 +1594,14 @@ msgid ""
 "Fluendo MP3 plugin includes MPEG Layer-3 audio decoding technology licensed "
 "from Fraunhofer IIS and Technicolor SA."
 msgstr ""
-"Fluendo MP3 papildinys apima MPEG Layer-3 garso dekodavimo technologiją "
-"licencijuotą iš Fraunhofer IIS ir Technicolor SA."
+"Garso ir vaizdo papildiniai. Fluendo MP3 papildinys turi MPEG Layer-3 garso "
+"dekodavimo technologiją licencijuotą iš Fraunhofer IIS ir Technicolor SA."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:229001
 msgid "Install this third-party software"
-msgstr "Įdiegti šią trečiųjų šalių programinę įrangą"
+msgstr "Įdiegti šią kitų gamintojų programinę įrangą"
 
 #. Type: text
 #. Description
@@ -1630,7 +1625,7 @@ msgstr "Variantas:"
 #. Description
 #: ../ubiquity.templates:236001
 msgid "Below is an image of your current layout:"
-msgstr "Žemiau yra jūsų dabartinio klaviatūros išdėstymo atvaizdis:"
+msgstr "Žemiau yra dabartinio klaviatūros išdėstymo paveikslas:"
 
 #. Type: text
 #. Description
@@ -1678,9 +1673,9 @@ msgid ""
 "<span foreground=\"darkred\">Warning:</span> This will delete all of your "
 "${OS} programs, documents, photos, music, and any other files."
 msgstr ""
-"<span foreground=\"darkred\">Įspėjimas:</span> Bus ištrinti visi operacinės "
-"sistemos ${OS} skirsnyje esantys Jūsų dokumentai, nuotraukos, programos, "
-"filmai bei kiti failai."
+"<span foreground=\"darkred\">Dėmėsio:</span> Bus pašalinti visi operacinėje "
+"sistemoje ${OS} esantys dokumentai, nuotraukos, muzika, programos bei kiti "
+"failai."
 
 #. Type: text
 #. Description
@@ -1704,9 +1699,9 @@ msgid ""
 "Documents, music, and other personal files will be kept. You can choose "
 "which operating system you want each time the computer starts up."
 msgstr ""
-"Dokumentai, nuotraukos, filmai ir kiti Jūsų asmeniniai failai nebus "
-"pašalinti. Įjungę kompiuterį galėsite pasirinkti kuria operacine sistema "
-"norėsite naudotis tuo metu."
+"Dokumentai, nuotraukos ir kiti asmeniniai failai nebus pašalinti. Įjungę "
+"kompiuterį galėsite pasirinkti, kuria operacine sistema norėsite naudotis "
+"tuo metu."
 
 #. Type: text
 #. Description
@@ -1730,8 +1725,8 @@ msgid ""
 "You can create or resize partitions yourself, or choose multiple partitions "
 "for ${DISTRO}."
 msgstr ""
-"Jūs pats galite kurti skirsnius, keisti jų dydį ar pasirinkti kelis "
-"skirsnius, norimus naudoti su ${DISTRO}."
+"Galite kurti skirsnius, keisti jų dydį ar pasirinkti kelis skirsnius "
+"naudojimui su ${DISTRO}."
 
 #. Type: text
 #. Description
@@ -1748,8 +1743,9 @@ msgid ""
 "<span foreground=\"darkred\">Warning:</span> This will delete all your "
 "${CURDISTRO} programs, documents, photos, music, and any other files."
 msgstr ""
-"<span foreground=\"darkred\">Dėmesio:</span> Bus pašalintos visos jūsų "
-"${CURDISTRO} programos, dokumentai, nuotraukos, muzika bei visi kiti failai."
+"<span foreground=\"darkred\">Dėmesio:</span> Bus pašalintos visos "
+"${CURDISTRO} sistemoje esančios programos, dokumentai, nuotraukos, muzika "
+"bei visi kiti failai."
 
 #. Type: text
 #. Description
@@ -1789,7 +1785,7 @@ msgstr "Įdiegti ${DISTRO} ${VER} šalia ${CURDISTRO}"
 #. DISTRO is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:250001 ../ubiquity.templates:253001
 msgid "Erase disk and install ${DISTRO}"
-msgstr "Išvalyti diską ir įdiegti ${DISTRO}"
+msgstr "Ištrinti viską pasirinktame diske ir įdiegti ${DISTRO}"
 
 #. Type: text
 #. Description
@@ -1817,9 +1813,8 @@ msgid ""
 "programs, documents, photos, music, and other files in both ${OS} and "
 "${CURDISTRO}."
 msgstr ""
-"<span foreground=\"darkred\">Dėmesio:</span> Bus pašalintos visos jūsų "
-"programos, dokumentai, nuotraukos, muzika bei visi kiti ${OS} ir "
-"${CURDISTRO} failai."
+"<span foreground=\"darkred\">Dėmesio:</span> Bus pašalintos visos programos, "
+"dokumentai, nuotraukos, muzika bei visi kiti ${OS} ir ${CURDISTRO} failai."
 
 #. Type: text
 #. Description
@@ -1836,9 +1831,9 @@ msgid ""
 "programs, documents, photos, music, and any other files in all operating "
 "systems."
 msgstr ""
-"<span foreground=\"darkred\">Įspėjimas:</span> Bus ištrinti visi Jūsų "
-"dokumentai, nuotraukos, programos, filmai bei kiti failai, esantys "
-"pasirinktoje laikmenoje."
+"<span foreground=\"darkred\">Įspėjimas:</span> Bus pašalintos visos "
+"programos, dokumentai, nuotraukos, muzika bei visi kiti visų operacinių "
+"sistemų failai."
 
 #. Type: text
 #. Description

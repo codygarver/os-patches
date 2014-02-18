@@ -1,3 +1,9 @@
+grub-installer (1.68ubuntu5.3) precise; urgency=low
+
+  * Handle FusionIO devices, based on work by Igor Sharovar (LP: #1237519).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 05 Dec 2013 17:15:06 +0000
+
 grub-installer (1.68ubuntu5.2) precise-proposed; urgency=low
 
   * Always use grub-efi-amd64-signed on 64bit UEFI systems instead of

@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: ubiquity@packages.debian.org\n"
 "POT-Creation-Date: 2012-03-09 12:10-0500\n"
-"PO-Revision-Date: 2012-03-12 07:57+0000\n"
+"PO-Revision-Date: 2012-06-14 12:21+0000\n"
 "Last-Translator: Hendrik Knackstedt <Unknown>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:01+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:00+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
@@ -27,13 +27,13 @@ msgstr "Verbindungsaufbau …"
 #. Description
 #: ../ubiquity.templates:4001
 msgid "Restart to Continue"
-msgstr "Neu starten, um fortzusetzen"
+msgstr "Neustarten, um fortzufahren"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:5001
 msgid "Manual configuration (advanced)"
-msgstr "Manuelle Konfiguration (fortgeschritten)"
+msgstr "Manuelle Konfiguration (für Fortgeschrittene)"
 
 #. Type: text
 #. Description
@@ -336,14 +336,14 @@ msgstr "Es darf nur Buchstaben, Zahlen, Bindestriche und Punkte enthalten."
 #. Description
 #: ../ubiquity.templates:46001
 msgid "May not start or end with a hyphen."
-msgstr "Es darf nicht mit einem Bindestrich beginnen."
+msgstr "Darf nicht mit einem Bindestrich beginnen oder aufhören."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:47001
 msgid "May not start or end with a dot, or contain the sequence \"..\"."
 msgstr ""
-"Es darf nicht mit einem Punkt beginnen oder aufhören oder die Abfolge »..« "
+"Darf nicht mit einem Punkt beginnen oder aufhören oder die Abfolge »..« "
 "enthalten."
 
 #. Type: text
@@ -800,7 +800,7 @@ msgid ""
 "the new installation."
 msgstr ""
 "Die Installation ist abgeschlossen. Sie müssen jetzt den Rechner neu "
-"starten, um die neue Installation zu benutzen."
+"starten, um das System zu benutzen."
 
 #. Type: text
 #. Description
@@ -1624,9 +1624,9 @@ msgid ""
 "Fluendo MP3 plugin includes MPEG Layer-3 audio decoding technology licensed "
 "from Fraunhofer IIS and Technicolor SA."
 msgstr ""
-"Die MP3-Erweiterung von Fluendo enthält »MPEG Layer-3«-"
-"Audiodekodierungstechnologien, die vom Frauenhofer IIS und von Technicolor "
-"SA lizenziert sind."
+"Die MP3-Erweiterung von Fluendo enthält »MPEG Layer-3«-Audio-"
+"Dekodierungstechnologien, die vom Fraunhofer IIS und von Technicolor SA "
+"lizenziert sind."
 
 #. Type: text
 #. Description

@@ -9,21 +9,21 @@ msgstr ""
 "Project-Id-Version: ubiquity\n"
 "Report-Msgid-Bugs-To: ubiquity@packages.debian.org\n"
 "POT-Creation-Date: 2012-03-09 12:10-0500\n"
-"PO-Revision-Date: 2011-09-16 11:09+0000\n"
-"Last-Translator: පසිඳු කාවින්ද <Unknown>\n"
+"PO-Revision-Date: 2012-05-07 02:57+0000\n"
+"Last-Translator: පසිඳු කාවින්ද <pkavinda@gmail.com>\n"
 "Language-Team: Sinhala <info@hanthana.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:00+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:01+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:3001
 msgid "Connecting..."
-msgstr ""
+msgstr "සම්බන්ධ වෙමින්..."
 
 #. Type: text
 #. Description
@@ -140,6 +140,8 @@ msgid ""
 "a final release; that will come with the final release of ${RELEASE} in "
 "April 2012."
 msgstr ""
+"මෙය ${RELEASE} සජීවී ${MEDIUM} ස්ථාපකයේ පෙර නිකුතුවකි. එනිසා අවසන් නිකුතුව මෙය නොවේ; එය "
+"${RELEASE} අවසන් නිකුතුවත් සමඟ 2012 අප්‍රේල් හිදී එයි."
 
 #. Type: text
 #. Description
@@ -222,19 +224,19 @@ msgstr "පින්තූරයක් තෝරන්න"
 #. Description
 #: ../ubiquity.templates:29001
 msgid "Take a photo:"
-msgstr ""
+msgstr "පින්තුරයක් ගන්න:"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:30001
 msgid "Or choose an existing picture:"
-msgstr ""
+msgstr "හෝ තිබෙන පින්තුරයක් තෝරාගන්න:"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:31001
 msgid "Take Photo"
-msgstr ""
+msgstr "පින්තුරයක් ගන්න"
 
 #. Type: text
 #. Description
@@ -264,13 +266,13 @@ msgstr "පරිශීලක නාමය"
 #. Description
 #: ../ubiquity.templates:36001
 msgid "Must start with a lower-case letter."
-msgstr ""
+msgstr "කුඩා අකුරකින් ආරම්භ විය යුතුය."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:37001
 msgid "May only contain lower-case letters, digits, hyphens, and underscores."
-msgstr ""
+msgstr "කුඩා ප්‍රමාණයේ අකුරු, සංඛ්‍යාංක, සමාස විහ්න, සහ යටි ඉරි පමණක් අඩංගු විය යුතුය."
 
 #. Type: text
 #. Description
@@ -312,25 +314,25 @@ msgstr "වෙනත් පරිගණක වෙත අමතන විට භ�
 #. Description
 #: ../ubiquity.templates:44001
 msgid "Must be between 1 and 63 characters long."
-msgstr ""
+msgstr "1 ත් 63 අතර අක්ෂර ගණනකින් යුක්ත විය යුතුය."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:45001
 msgid "May only contain letters, digits, hyphens, and dots."
-msgstr ""
+msgstr "අකුරු, සංඛ්‍යාංක, සමාස විහ්න, සහ තිත් පමණක් අඩංගු විය යුතුය."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:46001
 msgid "May not start or end with a hyphen."
-msgstr ""
+msgstr "සමාස විහ්නයක් සමඟ ආරම්භ හෝ අවසාන නොවිය යුතුය."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:47001
 msgid "May not start or end with a dot, or contain the sequence \"..\"."
-msgstr ""
+msgstr "තිතක් සමඟ ආරම්භ හෝ අවසාන නොවිය යුතු අතර \"..\" අන්වය අඩංගු නොවිය යුතුය."
 
 #. Type: text
 #. Description
@@ -399,6 +401,7 @@ msgid ""
 "This picture will be associated with your user name and displayed alongside "
 "it at times."
 msgstr ""
+"මෙම පින්තුරය ඔබේ පරිශීලක නාමය සමඟ හවුල් වනු ඇති අතර වේලාවකදී එය පැත්තකින් ප්‍රදර්ශනය වේ."
 
 #. Type: text
 #. Description
@@ -558,6 +561,10 @@ msgid ""
 "details will be sent to our bug tracker and a developer  will attend to the "
 "problem as soon as possible."
 msgstr ""
+"අපට කණගාටුයි; ස්ථාපකය බිද වැටුනා. ඔබ මෙම කවුළුව වසා දැම්මට පසුව, අන්තර්ගත දෝෂ වාර්තාකිරීමේ "
+"මෙවලම මගින් දෝෂ වාර්තාවක් ගොනු කිරීමට අපි ඔබට ඉඩ දෙනවා. මෙමගින් ඔබේ පද්ධතියේ සහ ස්ථාපන "
+"ක්‍රියාවලියේ තොරතුරු එකතු කර ගනියි. එම තොරතුරු අපගේ දෝෂ අල්ලනය වෙත යවනු ලබන අතර සංවර්ධකයා "
+"හැකි විගස එම ගැටලුව ගැන බලා ගනු ඇත."
 
 #. Type: text
 #. Description
@@ -1116,7 +1123,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:153001
 msgid "Error copying bluetooth configuration"
-msgstr ""
+msgstr "බ්ලුටූත් වින්‍යාසගතකෙරුම පිටපත් කිරීමේ දෝෂය"
 
 #. Type: error
 #. Description
@@ -1126,6 +1133,8 @@ msgid ""
 "will continue, but the bluetooth configuration will have to be set up again "
 "in the installed system."
 msgstr ""
+"බ්ලුටූත් සැකසුම් පිටපත් කරන අතරතුරදී දෝෂයක් හට ගැනුණි.  ස්ථාපනය දිගටම යයි, නමුත් ස්ථාපිත පද්ධතිය "
+"තුල බ්ලුටූත් වින්‍යාසගතකෙරුම නැවත වරක් සැකසීමට සිදුවේ."
 
 #. Type: error
 #. Description
@@ -1409,30 +1418,33 @@ msgid ""
 "party software, download updates, automatically detect your timezone, and "
 "install full support for your language."
 msgstr ""
+"මෙම පරිගණකය වයි-ෆයි ජාලයකට සම්බන්ධ කිරීමෙන් ඔබ හට තුන්වන-පාර්ශවයේ මෘදුකාංග ස්ථාපනය කිරීම, "
+"යාවත්කාලීන බාගත කිරීම, ස්වයංක්‍රීයව ඔබේ වේලා කලාපය හදුනා ගැනීම, සහ ඔබේ භාෂාව සඳහා "
+"සම්පූර්ණ සහය ස්ථාපනය කිරීමට ඉඩ ලබා දේ."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:207001
 msgid "Password:"
-msgstr ""
+msgstr "මුරපදය:"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:208001
 msgid "Display password"
-msgstr ""
+msgstr "මුරපදය පෙන්වන්න"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:209001
 msgid "I don't want to connect to a wi-fi network right now"
-msgstr ""
+msgstr "මට දැන් වයි-ෆයි ජාලයකට සම්බන්ධ වීමට අවශ්‍ය නැහැ"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:210001
 msgid "Connect to this network"
-msgstr ""
+msgstr "මෙම ජාලය වෙත සම්බන්ධ වන්න"
 
 #. Type: text
 #. Description
@@ -1460,6 +1472,8 @@ msgid ""
 "<small>%d smaller partitions are hidden, use the <a href=\"\">advanced "
 "partitioning tool</a> for more control</small>"
 msgstr ""
+"<small>කුඩා විභාජක %d ක් සඟවා ඇත, වැඩිදුර හැසිරවීම සඳහා  <a href=\"\">උසස් කොටස්කර "
+"මෙවලම</a> භාවිතා කරන්න</small>"
 
 #. Type: text
 #. Description
@@ -1468,6 +1482,8 @@ msgid ""
 "<small>1 smaller partition is hidden, use the <a href=\"\">advanced "
 "partitioning tool</a> for more control</small>"
 msgstr ""
+"<small>කුඩා විභාජක 1 ක් සඟවා ඇත, වැඩිදුර හැසිරවීම සඳහා  <a href=\"\">උසස් කොටස්කර "
+"මෙවලම</a> භාවිතා කරන්න</small>"
 
 #. Type: text
 #. Description
@@ -1542,6 +1558,8 @@ msgid ""
 "Fluendo MP3 plugin includes MPEG Layer-3 audio decoding technology licensed "
 "from Fraunhofer IIS and Technicolor SA."
 msgstr ""
+"fප්‍රෝන්හොfපර් IIS සහ ටෙක්නිකලර් SA ගෙන් බලපත්‍ර සහිතව ෆ්ලුවේන්ඩෝ MP3 ප්ලගිනය සතුව MPEG "
+"Layer-3 ශ්‍රව්‍ය විසංකේතීකරණ තාක්ෂණය අඩංගුය."
 
 #. Type: text
 #. Description

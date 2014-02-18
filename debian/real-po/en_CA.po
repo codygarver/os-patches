@@ -15,14 +15,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:01+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:01+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:3001
 msgid "Connecting..."
-msgstr ""
+msgstr "Connecting..."
 
 #. Type: text
 #. Description
@@ -225,19 +225,19 @@ msgstr "Choose a picture"
 #. Description
 #: ../ubiquity.templates:29001
 msgid "Take a photo:"
-msgstr ""
+msgstr "Take a photo:"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:30001
 msgid "Or choose an existing picture:"
-msgstr ""
+msgstr "Or choose an existing picture:"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:31001
 msgid "Take Photo"
-msgstr ""
+msgstr "Take Photo"
 
 #. Type: text
 #. Description
@@ -267,13 +267,13 @@ msgstr "Username"
 #. Description
 #: ../ubiquity.templates:36001
 msgid "Must start with a lower-case letter."
-msgstr ""
+msgstr "Must start with a lower-case letter."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:37001
 msgid "May only contain lower-case letters, digits, hyphens, and underscores."
-msgstr ""
+msgstr "May only contain lower-case letters, digits, hyphens, and underscores."
 
 #. Type: text
 #. Description
@@ -315,25 +315,25 @@ msgstr "The name it uses when it talks to other computers."
 #. Description
 #: ../ubiquity.templates:44001
 msgid "Must be between 1 and 63 characters long."
-msgstr ""
+msgstr "Must be between 1 and 63 characters long."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:45001
 msgid "May only contain letters, digits, hyphens, and dots."
-msgstr ""
+msgstr "May only contain letters, digits, hyphens, and dots."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:46001
 msgid "May not start or end with a hyphen."
-msgstr ""
+msgstr "May not start or end with a hyphen."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:47001
 msgid "May not start or end with a dot, or contain the sequence \"..\"."
-msgstr ""
+msgstr "May not start or end with a dot, or contain the sequence \"..\"."
 
 #. Type: text
 #. Description
@@ -402,6 +402,8 @@ msgid ""
 "This picture will be associated with your user name and displayed alongside "
 "it at times."
 msgstr ""
+"This picture will be associated with your user name and displayed alongside "
+"it at times."
 
 #. Type: text
 #. Description
@@ -427,14 +429,14 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:60001
 msgid "Installation type"
-msgstr ""
+msgstr "Installation type"
 
 #. Type: text
 #. Description
 #. SIZE is a variable substituted into this string, and may be '100 GB'
 #: ../ubiquity.templates:61001
 msgid "Files (${SIZE})"
-msgstr ""
+msgstr "Files (${SIZE})"
 
 #. Type: text
 #. Description
@@ -545,7 +547,7 @@ msgstr "Restart Now"
 #. Description
 #: ../ubiquity.templates:78001
 msgid "Shutdown Now"
-msgstr ""
+msgstr "Shutdown Now"
 
 #. Type: text
 #. Description
@@ -756,14 +758,14 @@ msgstr "Continue"
 #. Translators, this text will appear on a button, so KEEP IT SHORT
 #: ../ubiquity.templates:110001
 msgid "Connect"
-msgstr ""
+msgstr "Connect"
 
 #. Type: text
 #. Description
 #. Translators, this text will appear on a button, so KEEP IT SHORT
 #: ../ubiquity.templates:111001
 msgid "Stop"
-msgstr ""
+msgstr "Stop"
 
 #. Type: text
 #. Description
@@ -956,7 +958,7 @@ msgstr "Configuring hardware..."
 #. Description
 #: ../ubiquity.templates:134001
 msgid "Installing third-party software..."
-msgstr ""
+msgstr "Installing third-party software..."
 
 #. Type: text
 #. Description
@@ -974,13 +976,13 @@ msgstr "Configuring boot loader..."
 #. Description
 #: ../ubiquity.templates:137001
 msgid "Saving installed packages..."
-msgstr ""
+msgstr "Saving installed packages..."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:138001
 msgid "Restoring previously installed packages..."
-msgstr ""
+msgstr "Restoring previously installed packages..."
 
 #. Type: text
 #. Description
@@ -1132,7 +1134,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:153001
 msgid "Error copying bluetooth configuration"
-msgstr ""
+msgstr "Error copying bluetooth configuration"
 
 #. Type: error
 #. Description
@@ -1142,12 +1144,15 @@ msgid ""
 "will continue, but the bluetooth configuration will have to be set up again "
 "in the installed system."
 msgstr ""
+"An error occurred while copying the bluetooth settings. The installation "
+"will continue, but the bluetooth configuration will have to be set up again "
+"in the installed system."
 
 #. Type: error
 #. Description
 #: ../ubiquity.templates:154001
 msgid "Error restoring installed applications"
-msgstr ""
+msgstr "Error restoring installed applications"
 
 #. Type: error
 #. Description
@@ -1157,6 +1162,9 @@ msgid ""
 "installation will continue, but you may have to manually reinstall some "
 "applications after the computer reboots."
 msgstr ""
+"An error occurred while restoring previously-installed applications. The "
+"installation will continue, but you may have to manually reinstall some "
+"applications after the computer reboots."
 
 #. Type: text
 #. Description
@@ -1425,30 +1433,33 @@ msgid ""
 "party software, download updates, automatically detect your timezone, and "
 "install full support for your language."
 msgstr ""
+"Connecting this computer to a wi-fi network allows you to install third-"
+"party software, download updates, automatically detect your timezone, and "
+"install full support for your language."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:207001
 msgid "Password:"
-msgstr ""
+msgstr "Password:"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:208001
 msgid "Display password"
-msgstr ""
+msgstr "Display password"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:209001
 msgid "I don't want to connect to a wi-fi network right now"
-msgstr ""
+msgstr "I don't want to connect to a wi-fi network right now"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:210001
 msgid "Connect to this network"
-msgstr ""
+msgstr "Connect to this network"
 
 #. Type: text
 #. Description
@@ -1460,7 +1471,9 @@ msgstr "Select drive:"
 #. Description
 #: ../ubiquity.templates:215001
 msgid "Allocate drive space by dragging the divider below:"
-msgstr "Allocate drive space by dragging the divider below:"
+msgstr ""
+"Allocate drive space by dragging the divider below. The new OS partition "
+"you're making is on the right:"
 
 #. Type: text
 #. Description
@@ -1476,6 +1489,8 @@ msgid ""
 "<small>%d smaller partitions are hidden, use the <a href=\"\">advanced "
 "partitioning tool</a> for more control</small>"
 msgstr ""
+"<small>%d smaller partitions are hidden, use the <a href=\"\">advanced "
+"partitioning tool</a> for more control</small>"
 
 #. Type: text
 #. Description
@@ -1484,6 +1499,8 @@ msgid ""
 "<small>1 smaller partition is hidden, use the <a href=\"\">advanced "
 "partitioning tool</a> for more control</small>"
 msgstr ""
+"<small>1 smaller partition is hidden, use the <a href=\"\">advanced "
+"partitioning tool</a> for more control</small>"
 
 #. Type: text
 #. Description
@@ -1559,6 +1576,8 @@ msgid ""
 "Fluendo MP3 plugin includes MPEG Layer-3 audio decoding technology licensed "
 "from Fraunhofer IIS and Technicolor SA."
 msgstr ""
+"Fluendo MP3 plugin includes MPEG Layer-3 audio decoding technology licensed "
+"from Fraunhofer IIS and Technicolor SA."
 
 #. Type: text
 #. Description
@@ -1618,7 +1637,7 @@ msgstr "Region:"
 #. Description
 #: ../ubiquity.templates:240001
 msgid "[type here to change]"
-msgstr ""
+msgstr "[type here to change]"
 
 #. Type: text
 #. Description
@@ -1626,7 +1645,7 @@ msgstr ""
 #. DISTRO is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:243001
 msgid "Replace ${OS} with ${DISTRO}"
-msgstr ""
+msgstr "Replace ${OS} with ${DISTRO}"
 
 #. Type: text
 #. Description
@@ -1636,6 +1655,8 @@ msgid ""
 "<span foreground=\"darkred\">Warning:</span> This will delete all of your "
 "${OS} programs, documents, photos, music, and any other files."
 msgstr ""
+"<span foreground=\"darkred\">Warning:</span> This will delete all of your "
+"${OS} programs, documents, photos, music, and any other files."
 
 #. Type: text
 #. Description
@@ -1643,7 +1664,7 @@ msgstr ""
 #. OS is a variable substituted into this string, and may be 'Windows 7'
 #: ../ubiquity.templates:244001
 msgid "Install ${DISTRO} alongside ${OS}"
-msgstr ""
+msgstr "Install ${DISTRO} alongside ${OS}"
 
 #. Type: text
 #. Description
@@ -1659,6 +1680,8 @@ msgid ""
 "Documents, music, and other personal files will be kept. You can choose "
 "which operating system you want each time the computer starts up."
 msgstr ""
+"Documents, music, and other personal files will be kept. You can choose "
+"which operating system you want each time the computer starts up."
 
 #. Type: text
 #. Description
@@ -1666,13 +1689,13 @@ msgstr ""
 #. OS is a variable substituted into this string, and may be 'Windows 7'
 #: ../ubiquity.templates:245001
 msgid "Install ${DISTRO} inside ${OS}"
-msgstr ""
+msgstr "Install ${DISTRO} inside ${OS}"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:246001
 msgid "Something else"
-msgstr ""
+msgstr "Something else"
 
 #. Type: text
 #. Description
@@ -1682,13 +1705,15 @@ msgid ""
 "You can create or resize partitions yourself, or choose multiple partitions "
 "for ${DISTRO}."
 msgstr ""
+"You can create or resize partitions yourself, or choose multiple partitions "
+"for ${DISTRO}."
 
 #. Type: text
 #. Description
 #. CURDISTRO is a variable substituted into this string, and may be 'Ubuntu 10.10'
 #: ../ubiquity.templates:247001
 msgid "Erase ${CURDISTRO} and reinstall"
-msgstr ""
+msgstr "Erase ${CURDISTRO} and reinstall"
 
 #. Type: text
 #. Description
@@ -1698,6 +1723,8 @@ msgid ""
 "<span foreground=\"darkred\">Warning:</span> This will delete all your "
 "${CURDISTRO} programs, documents, photos, music, and any other files."
 msgstr ""
+"<span foreground=\"darkred\">Warning:</span> This will delete all your "
+"${CURDISTRO} programs, documents, photos, music, and any other files."
 
 #. Type: text
 #. Description
@@ -1705,7 +1732,7 @@ msgstr ""
 #. VER is a variable substituted into this string, and may be '11.04'
 #: ../ubiquity.templates:248001
 msgid "Upgrade ${CURDISTRO} to ${VER}"
-msgstr ""
+msgstr "Upgrade ${CURDISTRO} to ${VER}"
 
 #. Type: text
 #. Description
@@ -1716,6 +1743,8 @@ msgid ""
 "Documents, music, and other personal files will be kept. Installed software "
 "will be kept where possible. System-wide settings will be cleared."
 msgstr ""
+"Documents, music, and other personal files will be kept. Installed software "
+"will be kept where possible. System-wide settings will be cleared."
 
 #. Type: text
 #. Description
@@ -1724,7 +1753,7 @@ msgstr ""
 #. CURDISTRO is a variable substituted into this string, and may be 'Ubuntu 10.10'
 #: ../ubiquity.templates:249001
 msgid "Install ${DISTRO} ${VER} alongside ${CURDISTRO}"
-msgstr ""
+msgstr "Install ${DISTRO} ${VER} alongside ${CURDISTRO}"
 
 #. Type: text
 #. Description
@@ -1734,7 +1763,7 @@ msgstr ""
 #. DISTRO is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:250001 ../ubiquity.templates:253001
 msgid "Erase disk and install ${DISTRO}"
-msgstr ""
+msgstr "Erase disk and install ${DISTRO}"
 
 #. Type: text
 #. Description
@@ -1743,12 +1772,14 @@ msgid ""
 "<span foreground=\"darkred\">Warning:</span> This will delete any files on "
 "the disk."
 msgstr ""
+"<span foreground=\"darkred\">Warning:</span> This will delete any files on "
+"the disk."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:251001
 msgid "Erase everything and reinstall"
-msgstr ""
+msgstr "Erase everything and reinstall"
 
 #. Type: text
 #. Description
@@ -1760,13 +1791,16 @@ msgid ""
 "programs, documents, photos, music, and other files in both ${OS} and "
 "${CURDISTRO}."
 msgstr ""
+"<span foreground=\"darkred\">Warning:</span> This will delete all your "
+"programs, documents, photos, music, and other files in both ${OS} and "
+"${CURDISTRO}."
 
 #. Type: text
 #. Description
 #. CURDISTRO is a variable substituted into this string, and may be 'Ubuntu 10.10'
 #: ../ubiquity.templates:252001
 msgid "Reinstall ${CURDISTRO}"
-msgstr ""
+msgstr "Reinstall ${CURDISTRO}"
 
 #. Type: text
 #. Description
@@ -1776,20 +1810,23 @@ msgid ""
 "programs, documents, photos, music, and any other files in all operating "
 "systems."
 msgstr ""
+"<span foreground=\"darkred\">Warning:</span> This will delete all your "
+"programs, documents, photos, music, and any other files in all operating "
+"systems."
 
 #. Type: text
 #. Description
 #. DISTRO is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:254001
 msgid "Install ${DISTRO} alongside them"
-msgstr ""
+msgstr "Install ${DISTRO} alongside them"
 
 #. Type: text
 #. Description
 #. OS is a variable substituted into this string, and may be 'Windows 7'
 #: ../ubiquity.templates:255001
 msgid "This computer currently has ${OS} on it. What would you like to do?"
-msgstr ""
+msgstr "This computer currently has ${OS} on it. What would you like to do?"
 
 #. Type: text
 #. Description
@@ -1800,6 +1837,8 @@ msgid ""
 "This computer currently has ${OS1} and ${OS2} on it. What would you like to "
 "do?"
 msgstr ""
+"This computer currently has ${OS1} and ${OS2} on it. What would you like to "
+"do?"
 
 #. Type: text
 #. Description
@@ -1808,6 +1847,8 @@ msgid ""
 "This computer currently has multiple operating systems on it. What would you "
 "like to do?"
 msgstr ""
+"This computer currently has multiple operating systems on it. What would you "
+"like to do?"
 
 #. Type: text
 #. Description
@@ -1816,6 +1857,8 @@ msgid ""
 "This computer currently has no detected operating systems. What would you "
 "like to do?"
 msgstr ""
+"This computer currently has no detected operating systems. What would you "
+"like to do?"
 
 #. Type: title
 #. Description

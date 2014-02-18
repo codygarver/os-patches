@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-10 19:00+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2014-01-22 12:00+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #. Type: text
 #. Description
@@ -27,7 +27,7 @@ msgstr "Pripája sa..."
 #. Description
 #: ../ubiquity.templates:4001
 msgid "Restart to Continue"
-msgstr "Pokračujte po reštarte"
+msgstr "Pokračujte po reštartovaní"
 
 #. Type: text
 #. Description
@@ -52,7 +52,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:7001 ../ubiquity.templates:187001
 msgid "Install"
-msgstr "Inštalovať"
+msgstr "Inštalácia"
 
 #. Type: text
 #. Description
@@ -81,8 +81,8 @@ msgid ""
 "You can try ${RELEASE} without making any changes to your computer, directly "
 "from this ${MEDIUM}."
 msgstr ""
-"${RELEASE} môžete skúsiť bez akýchkoľvek zmien na svojom počítači, priamo z "
-"tohto ${MEDIUM}."
+"${RELEASE} si môžete vyskúšať bez vykonania akýchkoľvek zmien na svojom "
+"počítači priamo z tohto ${MEDIUM}."
 
 #. Type: text
 #. Description
@@ -116,14 +116,14 @@ msgid ""
 "You may wish to read the <a href=\"release-notes\">release notes</a> or <a "
 "href=\"update\">update this installer</a>."
 msgstr ""
-"Môžete si prečítať <a href=\"release-notes\">Poznámky k vydaniu</a> alebo <a "
+"Môžete si prečítať <a href=\"release-notes\">poznámky k vydaniu</a> alebo <a "
 "href=\"update\">aktualizovať tento inštalátor</a>."
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:14001
 msgid "You may wish to read the <a href=\"release-notes\">release notes</a>."
-msgstr "Môžete si prečítať <a href=\"release-notes\">Poznámky k vydaniu</a>."
+msgstr "Môžete si prečítať <a href=\"release-notes\">poznámky k vydaniu</a>."
 
 #. Type: text
 #. Description
@@ -178,7 +178,7 @@ msgstr "Rozloženie klávesnice"
 #. Description
 #: ../ubiquity.templates:21001
 msgid "Choose your keyboard layout:"
-msgstr "Vyberte rozloženie svojej klávesnice:"
+msgstr "Vyberte rozloženie vašej klávesnice:"
 
 #. Type: text
 #. Description
@@ -457,13 +457,13 @@ msgstr "Na_inštalovať teraz"
 #. Description
 #: ../ubiquity.templates:64001
 msgid "Quit the installation?"
-msgstr "Ukončiť inštaláciu?"
+msgstr "Ukončenie inštalácie"
 
 #. Type: text
 #. Description
 #: ../ubiquity.templates:65001
 msgid "Do you really want to quit the installation now?"
-msgstr "Chcete skutočne ukončiť inštaláciu?"
+msgstr "Naozaj chcete ukončiť inštaláciu teraz?"
 
 #. Type: text
 #. Description
@@ -1224,7 +1224,7 @@ msgstr "Chcete, aby sa inštalátor opäť pokúsil tieto oblasti odpojiť?"
 #. Description
 #: ../ubiquity.templates:176001
 msgid "Do you want to return to the partitioner?"
-msgstr "Chcete sa vrátiť do menu rozdeľovania?"
+msgstr "Chcete sa vrátiť do ponuky rozdeľovania?"
 
 #. Type: boolean
 #. Description
@@ -1243,7 +1243,7 @@ msgid ""
 "If you do not go back to the partitioner and increase the size of these "
 "partitions, the installation may fail."
 msgstr ""
-"Ak sa nevrátite späť do menu rozdeľovania a nezväčšíte tieto oblasti, "
+"Ak sa nevrátite späť do ponuky rozdeľovania a nezväčšíte tieto oblasti, "
 "inštalácia môže zlyhať."
 
 #. Type: text
@@ -1425,7 +1425,7 @@ msgstr "Inštalátor zistil neopraviteľnú chybu a vykoná reštart."
 #. RELEASE is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:204001
 msgid "Preparing to install ${RELEASE}"
-msgstr "Pripravuje sa inštalácia ${RELEASE}"
+msgstr "Príprava inštalácie ${RELEASE}"
 
 #. Type: text
 #. Description
@@ -1589,7 +1589,7 @@ msgstr ""
 #. Description
 #: ../ubiquity.templates:229001
 msgid "Install this third-party software"
-msgstr "Nainštalovať tento softvér od tretích strán"
+msgstr "Nainštalovať softvér od tretích strán"
 
 #. Type: text
 #. Description
@@ -1651,7 +1651,7 @@ msgstr "[zmeníte písaním sem]"
 #. DISTRO is a variable substituted into this string, and may be 'Ubuntu'
 #: ../ubiquity.templates:243001
 msgid "Replace ${OS} with ${DISTRO}"
-msgstr "Nahradiť ${OS} za ${DISTRO}"
+msgstr "Nahradiť ${OS} s ${DISTRO}"
 
 #. Type: text
 #. Description
