@@ -218,8 +218,7 @@ class HybridDectionTest(unittest.TestCase):
                             fake_inst_func=is_installed,
                             fake_apt_cache=cache)
 
-            # We DO NOT treat AMD+AMD as Hybrid Graphics
-            self.assertFalse(pxpress_noconf.has_hybrid_graphics)
+            self.assert_(pxpress_noconf.has_hybrid_graphics)
             self.assert_(pxpress_noconf.supports_hybrid_graphics)
 
         finally:
@@ -332,8 +331,7 @@ class HybridDectionTest(unittest.TestCase):
                             fake_inst_func=is_installed,
                             fake_apt_cache=cache)
 
-            # We DO NOT treat AMD+AMD as Hybrid Graphics
-            self.assertFalse(pxpress_noconf.has_hybrid_graphics)
+            self.assert_(pxpress_noconf.has_hybrid_graphics)
             self.assertFalse(pxpress_noconf.supports_hybrid_graphics)
 
         finally:
@@ -447,8 +445,7 @@ class HybridDectionTest(unittest.TestCase):
                             fake_inst_func=is_installed,
                             fake_apt_cache=cache)
 
-            # We DO NOT treat AMD+AMD as Hybrid Graphics
-            self.assertFalse(pxpress_noconf.has_hybrid_graphics)
+            self.assert_(pxpress_noconf.has_hybrid_graphics)
             self.assertFalse(pxpress_noconf.supports_hybrid_graphics)
 
         finally:
@@ -576,8 +573,7 @@ class HybridDectionTest(unittest.TestCase):
                             fake_inst_func=is_installed,
                             fake_apt_cache=cache)
 
-            # We DO NOT treat AMD+AMD as Hybrid Graphics
-            self.assertFalse(pxpress_noconf.has_hybrid_graphics)
+            self.assert_(pxpress_noconf.has_hybrid_graphics)
             self.assert_(pxpress_noconf.supports_hybrid_graphics)
 
         finally:

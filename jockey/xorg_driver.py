@@ -278,7 +278,8 @@ class XorgDriverHandler(KernelModuleHandler):
 
         return (len(cards) > 1 and
                 (intel in cards and nvidia in cards) or
-                (intel in cards and amd in cards))
+                (intel in cards and amd in cards) or
+                (cards.count(amd) > 1))
 
     def _supports_hybrid_gfx(self, fake_kernel=None,
                              fake_xabi=None,
