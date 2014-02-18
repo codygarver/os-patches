@@ -1,3 +1,11 @@
+python-apt (0.8.3ubuntu7.2) precise; urgency=medium
+
+  * Cherry-pick fixes from 0.8.8ubuntu1 to close apt.Cache and free
+    file-descriptors. (LP: #1051935).
+  * Update list of mirrors from launchpad, using pre-build.sh hook.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Fri, 24 Jan 2014 12:19:45 +0000
+
 python-apt (0.8.3ubuntu7.1) precise-proposed; urgency=low
 
   * Make python{,3}-apt{,-dbg} Multi-Arch: allowed. LP: #1130709.
