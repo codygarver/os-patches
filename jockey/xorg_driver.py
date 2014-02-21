@@ -153,6 +153,26 @@ class XorgDriverHandler(KernelModuleHandler):
                         self.module, self.package, self.xorg_driver)
                 return False
 
+            # Do not install drivers which don't support Saucy's
+            # backported xserver for precise if the new X stack is
+            # already installed
+            s_lts_xserver_installed = OSLib.inst.saucy_xserver_installed()
+            s_lts_xserver_supported = OSLib.inst.saucy_xserver_supported(self.package)
+            if s_lts_xserver_installed and not s_lts_xserver_supported:
+                logging.debug('XorgDriverHandler(%s, %s, %s): Disabling as package is not compatible with S-LTS X.org',
+                        self.module, self.package, self.xorg_driver)
+                return False
+
+            # Do not install drivers which don't support Trusty's
+            # backported xserver for precise if the new X stack is
+            # already installed
+            t_lts_xserver_installed = OSLib.inst.trusty_xserver_installed()
+            t_lts_xserver_supported = OSLib.inst.trusty_xserver_supported(self.package)
+            if t_lts_xserver_installed and not t_lts_xserver_supported:
+                logging.debug('XorgDriverHandler(%s, %s, %s): Disabling as package is not compatible with T-LTS X.org',
+                        self.module, self.package, self.xorg_driver)
+                return False
+
         return KernelModuleHandler.available(self)
 
     def enabled(self):
@@ -310,6 +330,8 @@ class XorgDriverHandler(KernelModuleHandler):
                                   fake_apt_cache)
         lts_saucy = is_installed('linux-image-generic-lts-saucy',
                                   fake_apt_cache)
+        lts_trusty = is_installed('linux-image-generic-lts-trusty',
+                                  fake_apt_cache)
 
         # Get the xserver ABI
         x_abi = (fake_xabi and int(fake_xabi) or
@@ -322,15 +344,17 @@ class XorgDriverHandler(KernelModuleHandler):
 
         logging.debug('linux-lts-raring installed: %s\n'
                       'linux-lts-saucy installed: %s\n'
+                      'linux-lts-trusty installed: %s\n'
                       'linux minor version: %d\n'
                       'xserver ABI: %d\n'
                       'xserver-lts-quantal: %s'% (lts_raring,
                                                     lts_saucy,
+                                                    lts_trusty,
                                                     minor,
                                                     x_abi,
                                                     x_lts_quantal))
         # X ABI 13 is not too strict a requirement
-        return ((lts_raring or lts_saucy or minor >= 9) and
+        return ((lts_raring or lts_saucy or lts_trusty or minor >= 9) and
                 (x_abi >= 13 and not x_lts_quantal))
 
     def enable(self):

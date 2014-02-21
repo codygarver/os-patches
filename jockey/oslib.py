@@ -138,6 +138,8 @@ class OSLib:
         self._current_xorg_video_abi = None
         self._quantal_xserver = 'xserver-xorg-core-lts-quantal'
         self._raring_xserver = 'xserver-xorg-core-lts-raring'
+        self._saucy_xserver = 'xserver-xorg-core-lts-saucy'
+        self._trusty_xserver = 'xserver-xorg-core-lts-trusty'
 
     # 
     # The following package related functions use PackageKit; if that does not
@@ -847,6 +849,10 @@ class OSLib:
             suffix = '-lts-quantal'
         elif self.raring_xserver_installed():
             suffix = '-lts-raring'
+        elif self.saucy_xserver_installed():
+            suffix = '-lts-saucy'
+        elif self.trusty_xserver_installed():
+            suffix = '-lts-trusty'
         binary_name = '%s%s' % (binary_name, suffix)
         if not self._current_xorg_video_abi:
             dpkg = subprocess.Popen(['dpkg', '-s', binary_name],
@@ -922,6 +928,42 @@ class OSLib:
             if m:
                 for dep in m.group(1).split(','):
                     if not dep.strip().__contains__(self._raring_xserver):
+                        continue
+                    return True
+        return False
+
+    def saucy_xserver_installed(self):
+        '''Return whether saucy's backported xserver is installed'''
+        return self.package_installed(self._saucy_xserver)
+
+    def saucy_xserver_supported(self, package):
+        '''Return whether the package supports saucy's backported xserver'''
+        process = subprocess.Popen(['apt-cache', 'show', package],
+                                    stdout=subprocess.PIPE)
+        out = process.communicate()[0]
+        if process.returncode == 0:
+            m = re.search('^Depends: (.*)$', out, re.M)
+            if m:
+                for dep in m.group(1).split(','):
+                    if not dep.strip().__contains__(self._saucy_xserver):
+                        continue
+                    return True
+        return False
+
+    def trusty_xserver_installed(self):
+        '''Return whether trusty's backported xserver is installed'''
+        return self.package_installed(self._trusty_xserver)
+
+    def trusty_xserver_supported(self, package):
+        '''Return whether the package supports trusty's backported xserver'''
+        process = subprocess.Popen(['apt-cache', 'show', package],
+                                    stdout=subprocess.PIPE)
+        out = process.communicate()[0]
+        if process.returncode == 0:
+            m = re.search('^Depends: (.*)$', out, re.M)
+            if m:
+                for dep in m.group(1).split(','):
+                    if not dep.strip().__contains__(self._trusty_xserver):
                         continue
                     return True
         return False

@@ -1,3 +1,15 @@
+jockey (0.9.7-0ubuntu7.14) precise-proposed; urgency=low
+
+  * jockey/oslib.py, jockey/xorg_driver.py:
+    - Add code to fully enable hybrid graphics when using
+      Saucy's LTS stack, and the future Trusty stack
+      (LP: #1279229).
+  * tests/hybridgraphics.py:
+    - Add tests which simulate the availability of Saucy's
+      and Trusty's backported stacks.
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 12 Feb 2014 11:15:25 +0100
+
 jockey (0.9.7-0ubuntu7.13) precise-proposed; urgency=low
 
   * jockey/xorg_driver.py, tests/hybridgraphics.py:
