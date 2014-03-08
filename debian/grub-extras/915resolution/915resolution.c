@@ -70,7 +70,7 @@ GRUB_MOD_LICENSE ("GPLv3+");
 #define malloc					grub_malloc
 #define free					grub_free
 #define strcmp					grub_strcmp
-#define fprintf(stream,template,args...)	grub_printf(template, ## args)
+#define fprintf(stream, ...)			grub_printf(__VA_ARGS__)
 #define strtol(x,y,z)				grub_strtoul(x,y,z)
 #define atoi(x)					grub_strtoul(x,NULL,10)
 #define assert(x)				
@@ -110,12 +110,14 @@ typedef unsigned int cardinal;
 
 typedef enum {
     CT_UNKWN, CT_830, CT_845G, CT_855GM, CT_865G, CT_915G, CT_915GM, CT_945G, CT_945GM, CT_945GME,
-    CT_946GZ, CT_G965, CT_Q965, CT_965GM, CT_G33, CT_Q33, CT_Q35, CT_500GMA
+    CT_946GZ, CT_G965, CT_Q965, CT_965GM, CT_G33, CT_Q33, CT_Q35, CT_500GMA,
+    CT_GM45,  CT_GMA3150, CT_HD3000
 } chipset_type;
 
 const char *const chipset_type_names[] = {
     "UNKNOWN", "830",  "845G", "855GM", "865G", "915G", "915GM", "945G", "945GM", "945GME",
-    "946GZ",   "G965", "Q965", "965GM", "G33", "Q33", "Q35", "500GMA"
+    "946GZ",   "G965", "Q965", "965GM", "G33", "Q33", "Q35", "500GMA",
+    "GM45",    "GMA3150", "HD3000"
 };
 
 typedef enum {
@@ -292,6 +294,30 @@ static chipset_type get_chipset(cardinal id) {
     case 0x81008086:
       type = CT_500GMA;
       break;
+
+    case 0xa0008086:
+        type = CT_GMA3150;
+        break;
+
+    case 0xa0108086:
+        type = CT_GMA3150;
+        break;
+
+    case 0x01048086:
+        type = CT_HD3000;
+        break;
+
+    case 0x2a408086:
+        type = CT_GM45;
+        break;
+
+    case 0x2a018086:
+        type = CT_965GM;
+        break;
+
+    case 0x2a028086:
+        type = CT_965GM;
+        break;
 
     default:
         type = CT_UNKWN;
@@ -531,6 +557,9 @@ static void unlock_vbios(vbios_map * map) {
     case CT_Q35:
     case CT_Q33:
     case CT_500GMA:
+    case CT_GM45:
+    case CT_GMA3150:
+    case CT_HD3000:
         outl(0x80000090, 0xcf8);
         map->b1 = inb(0xcfd);
         map->b2 = inb(0xcfe);
@@ -577,6 +606,9 @@ static void relock_vbios(vbios_map * map) {
     case CT_Q35:
     case CT_Q33:
     case CT_500GMA:
+    case CT_GM45:
+    case CT_GMA3150:
+    case CT_HD3000:
         outl(0x80000090, 0xcf8);
         outb(map->b1, 0xcfd);
         outb(map->b2, 0xcfe);
@@ -776,14 +808,26 @@ static void display_map_info(vbios_map * map) {
 }
 
 
-static int parse_args(cardinal argc, char *argv[], chipset_type *forced_chipset, cardinal *list, cardinal *mode, cardinal *x, cardinal *y, cardinal *bp, cardinal *raw, cardinal *htotal, cardinal *vtotal) {
+static int parse_args(cardinal argc, char *argv[], chipset_type *forced_chipset,
+		      cardinal *list, cardinal *mode, cardinal *x, cardinal *y,
+		      cardinal *bp, cardinal *raw, cardinal *htotal,
+		      cardinal *vtotal, cardinal *quiet) {
     cardinal index = 0;
 
     *list = *mode = *x = *y = *raw = *htotal = *vtotal = 0;
     *bp = 0;
+    *quiet = 0;
 
     *forced_chipset = CT_UNKWN;
-    
+
+    if ((argc > index) && !strcmp(argv[index], "-q")) {
+        *quiet = 1;
+        index++;
+
+        if(argc<=index) {
+            return 0;
+        }
+    }    
 
     if ((argc > index) && !strcmp(argv[index], "-c")) {
         index++;
@@ -840,6 +884,15 @@ static int parse_args(cardinal argc, char *argv[], chipset_type *forced_chipset,
 	else if (!strcmp(argv[index], "500GMA")) {
 	    *forced_chipset = CT_500GMA;
 	}
+        else if (!strcmp(argv[index], "GM45")) {
+            *forced_chipset = CT_GM45;
+        }
+        else if (!strcmp(argv[index], "GMA3150")) {
+            *forced_chipset = CT_GMA3150;
+        }
+        else if (!strcmp(argv[index], "HD3000")) {
+            *forced_chipset = CT_HD3000;
+        }
         else {
             *forced_chipset = CT_UNKWN;
         }
@@ -903,10 +956,11 @@ static int parse_args(cardinal argc, char *argv[], chipset_type *forced_chipset,
 }
 
 static void usage(void) {
-    printf("Usage: 915resolution [-c chipset] [-l] [mode X Y] [bits/pixel] [htotal] [vtotal]\n");
+    printf("Usage: 915resolution [-q] [-c chipset] [-l] [mode X Y] [bits/pixel] [htotal] [vtotal]\n");
     printf("  Set the resolution to XxY for a video mode\n");
     printf("  Bits per pixel are optional.  htotal/vtotal settings are additionally optional.\n");
     printf("  Options:\n");
+    printf("    -q don't show any normal messages\n");
     printf("    -c force chipset type (THIS IS USED FOR DEBUG PURPOSES)\n");
     printf("    -l display the modes found in the video BIOS\n");
     printf("    -r display the modes found in the video BIOS in raw mode (THIS IS USED FOR DEBUG PURPOSES)\n");
@@ -916,19 +970,27 @@ static int main_915 (int argc, char *argv[])
 {
     vbios_map * map;
     cardinal list, mode, x, y, bp, raw, htotal, vtotal;
+    cardinal quiet;
     chipset_type forced_chipset;
     
-    printf("Intel 800/900 Series VBIOS Hack : version %s\n\n", RES915_VERSION);
-
-    if (parse_args(argc, argv, &forced_chipset, &list, &mode, &x, &y, &bp, &raw, &htotal, &vtotal) == -1) {
+    if (parse_args(argc, argv, &forced_chipset, &list, &mode,
+		   &x, &y, &bp, &raw, &htotal, &vtotal, &quiet) == -1) {
+        printf("Intel 800/900 Series VBIOS Hack : version %s\n\n",
+	       RES915_VERSION);
         usage();
         return 2;
     }
 
-    map = open_vbios(forced_chipset);
-    display_map_info(map);
+    if (!quiet)
+      printf("Intel 800/900 Series VBIOS Hack : version %s\n\n",
+	     RES915_VERSION);
 
-    printf("\n");
+    map = open_vbios(forced_chipset);
+    if (!quiet)
+      {
+	display_map_info(map);
+	printf("\n");
+      }
 
     if (list) {
         list_modes(map, raw);

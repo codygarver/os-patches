@@ -1,13 +1,21 @@
-Description: Generate configuration for signed UEFI kernels if available
-Author: Colin Watson <cjwatson@ubuntu.com>
-Forwarded: no
-Last-Update: 2013-11-13
+From d17e028ba932b3583e36074e62fa1a1bf1b24bd1 Mon Sep 17 00:00:00 2001
+From: Colin Watson <cjwatson@ubuntu.com>
+Date: Mon, 13 Jan 2014 12:13:21 +0000
+Subject: Generate configuration for signed UEFI kernels if available
 
-Index: b/util/grub.d/10_linux.in
-===================================================================
+Forwarded: no
+Last-Update: 2013-12-25
+
+Patch-Name: mkconfig_signed_kernel.patch
+---
+ util/grub.d/10_linux.in | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+
+diff --git a/util/grub.d/10_linux.in b/util/grub.d/10_linux.in
+index d343263..1b55116 100644
 --- a/util/grub.d/10_linux.in
 +++ b/util/grub.d/10_linux.in
-@@ -155,8 +155,16 @@
+@@ -149,8 +149,16 @@ linux_entry ()
    message="$(gettext_printf "Loading Linux %s ..." ${version})"
    sed "s/^/$submenu_indentation/" << EOF
  	echo	'$(echo "$message" | grub_quote)'
@@ -24,8 +32,8 @@ Index: b/util/grub.d/10_linux.in
    if test -n "${initrd}" ; then
      # TRANSLATORS: ramdisk isn't identifier. Should be translated.
      message="$(gettext_printf "Loading initial ramdisk ...")"
-@@ -202,6 +210,13 @@
- is_first_entry=true
+@@ -196,6 +204,13 @@ submenu_indentation=""
+ is_top_level=true
  while [ "x$list" != "x" ] ; do
    linux=`version_find_latest $list`
 +  case $linux in
