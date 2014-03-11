@@ -1,3 +1,15 @@
+lsb (4.1+Debian11ubuntu6) trusty; urgency=medium
+
+  * Don't hardcode pyshared in the install files.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sun, 23 Feb 2014 17:06:48 +0100
+
+lsb (4.1+Debian11ubuntu5) trusty; urgency=medium
+
+  * Rebuild to drop files installed into /usr/share/pyshared.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sun, 23 Feb 2014 13:48:36 +0000
+
 lsb (4.1+Debian11ubuntu4) saucy; urgency=low
 
   * Allow lsb-printing to depend on cups-filters | ghostscript-cups.
