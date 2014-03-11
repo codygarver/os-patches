@@ -40,6 +40,7 @@ binary-arch: build
 		> debian/tmp/DEBIAN/postinst
 	chmod 755 debian/tmp/DEBIAN/postinst
 	install -p -m 755 debian/preinst debian/tmp/DEBIAN/preinst
+	install -p -m 755 debian/postrm debian/tmp/DEBIAN/postrm
 	cd debian && install -m 644 conffiles tmp/DEBIAN
 	cd debian/tmp && install -d `cat ../directory-list`
 	install -p -m 644 share/* debian/tmp/usr/share/base-files
@@ -73,7 +74,7 @@ endif
 	cd debian/tmp && chmod 2775 `cat ../2775-dirs`
 	cd debian/tmp && chmod 700 root
 	dpkg-gencontrol -pbase-files
-	dpkg --build debian/tmp ..
+	dpkg-deb --build -Zgzip debian/tmp ..
 
 binary-indep: build
 	rm -rf debian/lsb-release-udeb
@@ -86,7 +87,7 @@ binary-indep: build
 		-isp -fdebian/files~
 	dpkg-distaddfile lsb-release-udeb_$(DEBVERSION)_all.udeb \
 		debian-installer extra
-	dpkg --build debian/lsb-release-udeb \
+	dpkg-deb --build debian/lsb-release-udeb \
 		../lsb-release-udeb_$(DEBVERSION)_all.udeb
 
 binary: binary-indep binary-arch

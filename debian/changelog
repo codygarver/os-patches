@@ -1,3 +1,24 @@
+base-files (7.2ubuntu4) trusty; urgency=medium
+
+  * Build base-files.deb with -Zgzip since it's in the debootstrap set.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Thu, 27 Feb 2014 11:22:33 -0700
+
+base-files (7.2ubuntu3) trusty; urgency=medium
+
+  * Don't forget to manually install the debian/postrm file in the package...
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 19 Feb 2014 19:40:00 -0800
+
+base-files (7.2ubuntu2) trusty; urgency=medium
+
+  * Drop Ubuntu-specific upgrade handling from lucid, related to update-motd.
+  * debian/{postinst.in,preinst,postrm}: remove /etc/update-motd.d/99-footer,
+    no longer needed with current Debian update-motd.d handling.
+  * Fix yet another lintian error about non-conffiles in /etc.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 20 Feb 2014 03:29:31 +0000
+
 base-files (7.2ubuntu1) trusty; urgency=medium
 
   * Merge with Debian; remaining changes:
