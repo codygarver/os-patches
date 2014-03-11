@@ -157,6 +157,9 @@ class Wizard(BaseFrontend):
         # Ubiquity uses the default Windows-95-like palette when running as a
         # DM.
         os.environ["QT_PLATFORM_PLUGIN"] = "kde"
+        # For above settings to apply automatically we need to indicate that we
+        # are inside a full KDE session.
+        os.environ["KDE_FULL_SESSION"] = "TRUE"
 
         self.app = QtGui.QApplication([])
         # The "hicolor" icon theme gets picked when Ubiquity is running as a
@@ -177,8 +180,11 @@ class Wizard(BaseFrontend):
         self.ui.content_widget.setVisible(False)
 
         if 'UBIQUITY_GREETER' in os.environ:
-            self.ui.setWindowState(
-                self.ui.windowState() ^ QtCore.Qt.WindowFullScreen)
+            self.ui.setWindowFlags(
+                QtCore.Qt.Dialog
+                | QtCore.Qt.CustomizeWindowHint
+                | QtCore.Qt.WindowTitleHint
+                )
 
         self.ui.setWizard(self)
 

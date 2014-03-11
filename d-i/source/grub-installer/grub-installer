@@ -170,7 +170,7 @@ hurd_convert () {
 # This should probably be rewritten using udevadm or similar.
 device_to_disk () {
 	echo "$1" | \
-		sed 's:\(/dev/\(cciss\|ida\|rs\)/c[0-9]d[0-9][0-9]*\|/dev/mmcblk[0-9]\|/dev/\(ad\|da\)[0-9]\+\|/dev/[hs]d[0-9]\+\|/dev/[a-z]\+\).*:\1:'
+		sed 's:\(/dev/\(cciss\|ida\|rs\)/c[0-9]d[0-9][0-9]*\|/dev/mmcblk[0-9]\|/dev/nvme[0-9]n[0-9]\|/dev/\(ad\|da\)[0-9]\+\|/dev/[hs]d[0-9]\+\|/dev/[a-z]\+\).*:\1:'
 }
 
 # Run update-grub in $ROOT
@@ -324,7 +324,7 @@ case $prefix in
     /dev/loop)
 	disc_offered_devfs="$bootfs"
 	;;
-    /dev/[hsv]d[a-z0-9]|/dev/xvd[a-z]|/dev/cciss/c[0-9]d[0-9]*|/dev/ida/c[0-9]d[0-9]*|/dev/rs/c[0-9]d[0-9]*|/dev/mmcblk[0-9]|/dev/ad[0-9]*|/dev/da[0-9]*)
+    /dev/[hsv]d[a-z0-9]|/dev/xvd[a-z]|/dev/cciss/c[0-9]d[0-9]*|/dev/ida/c[0-9]d[0-9]*|/dev/rs/c[0-9]d[0-9]*|/dev/mmcblk[0-9]|/dev/ad[0-9]*|/dev/da[0-9]*|/dev/fio[a-z]|/dev/nvme[0-9]n[0-9])
 	disc_offered_devfs="$prefix"
 	;;
     *)
@@ -446,6 +446,9 @@ case $ARCH in
     powerpc/*)
 	grub_package="grub-ieee1275"
 	experimental_arch
+	;;
+    ppc64el/*)
+	grub_package="grub-ieee1275"
 	;;
     mipsel/loongson-2f)
 	grub_package="grub-yeeloong"
@@ -715,7 +718,7 @@ case $ARCH:$grub_package in
 			  sed 's:\(/dev/\(cciss\|ida\|rs\)/c[0-9]d[0-9][0-9]*\|/dev/mmcblk[0-9]\|/dev/\(ad\|da\)[0-9]\+\|/dev/[a-z]\+\).*:\1:')
 			disks="${disks:+$disks }$prefix"
 			case $prefix in
-			    /dev/[hsv]d[a-z]|/dev/xvd[a-z]|/dev/cciss/c[0-9]d[0-9]*|/dev/ida/c[0-9]d[0-9]*|/dev/rs/c[0-9]d[0-9]*|/dev/mmcblk[0-9]|/dev/ad[0-9]*|/dev/da[0-9]*)
+			    /dev/[hsv]d[a-z]|/dev/xvd[a-z]|/dev/cciss/c[0-9]d[0-9]*|/dev/ida/c[0-9]d[0-9]*|/dev/rs/c[0-9]d[0-9]*|/dev/mmcblk[0-9]|/dev/ad[0-9]*|/dev/da[0-9]*|/dev/fio[a-z]|/dev/nvme[0-9]n[0-9])
 				if [ "$prefix" != "$frdisk_one" ]; then
 					use_disks=1
 				fi
@@ -732,6 +735,10 @@ case $ARCH:$grub_package in
 		default_bootdev="$frdev"
 		db_set grub-installer/bootdev "$default_bootdev"
 	fi
+	;;
+    ppc64el/*:grub-ieee1275)
+	bootdev="$(/usr/lib/grub-installer/prep-bootdev)"
+	state=3
 	;;
     *)
 	# No need for install device selection on other platforms.
@@ -865,7 +872,7 @@ if [ -z "$frdisk" ] || [ "$grub_version" = grub2 ]; then
 
 		CODE=0
 		case $ARCH:$grub_package in
-		    *:grub|*:grub-pc|sparc:grub-ieee1275)
+		    *:grub|*:grub-pc|sparc:grub-ieee1275|ppc64el/*:grub-ieee1275)
 			info "Running $chroot $ROOT grub-install $grub_install_params \"$bootdev\""
 			log-output -t grub-installer $chroot $ROOT grub-install $grub_install_params "$bootdev" || CODE=$?
 			;;
@@ -878,7 +885,7 @@ if [ -z "$frdisk" ] || [ "$grub_version" = grub2 ]; then
 			info "grub-install ran successfully"
 		else
 			case $ARCH:$grub_package in
-			    *:grub|*:grub-pc|sparc:grub-ieee1275)
+			    *:grub|*:grub-pc|sparc:grub-ieee1275|ppc64el/*:grub-ieee1275)
 				error "Running 'grub-install $grub_install_params \"$bootdev\"' failed."
 				;;
 			    *)
@@ -934,7 +941,7 @@ split_device () {
 	disk=
 	part=
 	case $1 in
-		/dev/[vhs]d[a-z]*)
+		/dev/[vhs]d[a-z]*|/dev/fio[a-z]*)
 			disk="$(echo "$1" | sed 's,\(/dev/[a-z]\+\).*,\1,')"
 			part="$(echo "$1" | sed 's,/dev/[a-z]\+\(.*\),\1,')"
 			;;
@@ -946,6 +953,11 @@ split_device () {
 		/dev/mmcblk*)
 			disk="$(echo "$1" | sed 's,\(/dev/mmcblk[0-9]\+\).*,\1,')"
 			part="$(echo "$1" | sed 's,/dev/mmcblk[0-9]\+p\([0-9]\+\),\1,')"
+			[ "$part" != "$1" ] || part=
+			;;
+		/dev/nvme*n*)
+			disk="$(echo "$1" | sed 's,\(/dev/nvme[0-9]\+n[0-9]\+\).*,\1,')"
+			part="$(echo "$1" | sed 's,/dev/nvme[0-9]\+n[0-9]\+p\([0-9]\+\),\1,')"
 			[ "$part" != "$1" ] || part=
 			;;
 	esac
