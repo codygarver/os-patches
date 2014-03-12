@@ -192,7 +192,7 @@ def compare_release(x, y):
     warnings.warn('compare_release(x,y) is deprecated; please use the release_index(x) as key for sort() instead.', DeprecationWarning, stacklevel=2)
     suite_x_i = release_index(x)
     suite_y_i = release_index(y)
-    
+
     try:
         return suite_x_i - suite_y_i
     except TypeError:
@@ -200,7 +200,7 @@ def compare_release(x, y):
 
 def parse_apt_policy():
     data = []
-    
+
     C_env = os.environ.copy(); C_env['LC_ALL'] = 'C'
     policy = subprocess.Popen(['apt-cache','policy'],
                               env=C_env,
@@ -239,7 +239,7 @@ def guess_release_from_apt(origin='Debian', component='main',
     # Check again to make sure we didn't wipe out all of the releases
     if not releases:
         return None
-    
+
     releases.sort(key=lambda tuple: tuple[0],reverse=True)
 
     # We've sorted the list by descending priority, so the first entry should
@@ -292,7 +292,7 @@ def guess_debian_release():
         except IOError as msg:
             print('Unable to open ' + etc_debian_version + ':', str(msg), file=sys.stderr)
             release = 'unknown'
-            
+
         if not release[0:1].isalpha():
             # /etc/debian_version should be numeric
             codename = lookup_codename(release, 'n/a')
@@ -342,12 +342,15 @@ def guess_debian_release():
     return distinfo
 
 # Whatever is guessed above can be overridden in /etc/lsb-release
-def get_lsb_information():
+def get_lsb_information(upstream=False):
     distinfo = {}
     etc_lsb_release = os.environ.get('LSB_ETC_LSB_RELEASE','/etc/lsb-release')
-    if os.path.exists(etc_lsb_release):
+    path='/etc/lsb-release'
+    if upstream:
+        path='/etc/upstream-release/lsb-release'
+    if os.path.exists(path):
         try:
-            with open(etc_lsb_release) as lsb_release_file:
+            with open(path) as lsb_release_file:
                 for line in lsb_release_file:
                     line = line.strip()
                     if not line:
@@ -363,12 +366,12 @@ def get_lsb_information():
                         if arg: # Ignore empty arguments
                             distinfo[var] = arg.strip()
         except IOError as msg:
-            print('Unable to open ' + etc_lsb_release + ':', str(msg), file=sys.stderr)
-            
+            print('Unable to open ' + path + ':', str(msg), file=sys.stderr)
+
     return distinfo
 
-def get_distro_information():
-    lsbinfo = get_lsb_information()
+def get_distro_information(upstream=False):
+    lsbinfo = get_lsb_information(upstream)
     # OS is only used inside guess_debian_release anyway
     for key in ('ID', 'RELEASE', 'CODENAME', 'DESCRIPTION',):
         if key not in lsbinfo:
