@@ -1,0 +1,3 @@
+00_bzr-no-network-local-debs.patch
+01_bzr-typeerror.patch
+02_bzr-drop-distroseries.patch
