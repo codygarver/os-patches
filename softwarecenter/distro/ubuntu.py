@@ -44,11 +44,7 @@ class Ubuntu(Debian):
     ]
 
     # metapackages
-    IMPORTANT_METAPACKAGES = (
-        "ubuntu-standard",
-        "ubuntu-minimal",
-        "ubuntu-desktop",
-        "kubuntu-desktop")
+    IMPORTANT_METAPACKAGES = ("elementary-desktop")
 
     # screenshot handling
     SCREENSHOT_THUMB_URL = ("http://screenshots.ubuntu.com/"
@@ -75,17 +71,17 @@ class Ubuntu(Debian):
     REVIEW_STATS_URL = REVIEWS_SERVER + "/review-stats"
 
     # Starting point for Ubuntu app developers
-    DEVELOPER_URL = "http://developer.ubuntu.com/"
+    DEVELOPER_URL = "http://elementaryos.org/developer"
 
     def get_app_name(self):
-        return _("Ubuntu Software Center")
+        return _("Software Center")
 
     def get_app_id(self):
         return "ubuntu-software-center"
 
     def get_app_description(self):
         return _("Lets you choose from thousands of applications available "
-                 "for Ubuntu.")
+                 "for elementary OS.")
 
     def get_distro_channel_name(self):
         """ The name in the Release file """
@@ -93,7 +89,7 @@ class Ubuntu(Debian):
 
     def get_distro_channel_description(self):
         """ The description of the main distro channel """
-        return _("Provided by Ubuntu")
+        return _("Provided by elementary")
 
     def get_removal_warning_text(self, cache, pkg, appname, depends):
         primary = _("To remove %s, these items must be removed "
@@ -103,7 +99,7 @@ class Ubuntu(Debian):
         # alter it if an important meta-package is affected
         for m in self.IMPORTANT_METAPACKAGES:
             if m in depends:
-                primary = _("%s is a core item in Ubuntu. "
+                primary = _("%s is a core item in elementary OS. "
                             "Removing it may cause future upgrades "
                             "to be incomplete. Are you sure you want to "
                             "continue?") % appname
@@ -214,7 +210,7 @@ class Ubuntu(Debian):
                     return _("Canonical does no longer provide "
                              "updates for %s in Ubuntu %s. "
                              "Updates may be available in a newer version of "
-                             "Ubuntu.") % (appname, self.get_distro_release())
+                             "elementary OS.") % (appname, self.get_distro_release())
                 else:
                     d = {'appname': appname,
                          'support_end_month_str': support_end_month_str,
@@ -225,9 +221,9 @@ class Ubuntu(Debian):
             elif component == "restricted":
                 if support_ended:
                     return _("Canonical does no longer provide "
-                             "updates for %s in Ubuntu %s. "
+                             "updates for %s in elementary OS %s. "
                              "Updates may be available in a newer version of "
-                             "Ubuntu.") % (appname, self.get_distro_release())
+                             "elementary OS.") % (appname, self.get_distro_release())
                 else:
                     d = {'appname': appname,
                          'support_end_month_str': support_end_month_str,
@@ -251,7 +247,7 @@ class Ubuntu(Debian):
         elif component == "universe" or component == "multiverse":
             return _("Canonical does not provide updates for %s. "
                      "Some updates may be provided by the "
-                     "Ubuntu community.") % appname
+                     "elementary OS community.") % appname
         #return (_("Application %s has an unknown maintenance status.") %
         #    appname)
 

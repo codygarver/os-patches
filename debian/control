@@ -30,7 +30,6 @@ Depends: ${python:Depends},
          app-install-data (>= 0.4.0),
          aptdaemon (>= 0.40),
          software-center-aptdaemon-plugins,
-         humanity-icon-theme,
          gir1.2-glib-2.0 (>= 1.31),
          gir1.2-gtk-3.0,
          gir1.2-gmenu-3.0 (>= 3.1.5),
@@ -54,22 +53,21 @@ Depends: ${python:Depends},
          python-oneconf (>= 0.3) | oneconf (<< 0.3),
          python-debtagshw,
          ubuntu-extras-keyring
-Recommends: lsb-release, 
-            apt-xapian-index (>= 0.38ubuntu1), 
-            update-notifier, 
+Recommends: lsb-release,
+            apt-xapian-index (>= 0.38ubuntu1),
+            update-notifier,
             software-properties-gtk,
-            sessioninstaller, 
+            sessioninstaller,
             xz-utils (>= 5.1.1alpha+20120614-1)
 Conflicts: gnome-app-install (<< 1)
 Replaces: gnome-app-install
 Provides: gnome-app-install
 Description: Utility for browsing, installing, and removing software
- Ubuntu Software Center lets you browse and install thousands of 
- free and paid applications available for Ubuntu. You can view available 
- software by category, or search quickly by name or description. 
+ Ubuntu Software Center lets you browse and install thousands of
+ free and paid applications available for Ubuntu. You can view available
+ software by category, or search quickly by name or description.
  You can also examine the software already installed, and remove items
  you no longer need.
  .
  To install or remove software using USC, you need administrator access
  on the computer.
-
