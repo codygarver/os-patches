@@ -314,10 +314,10 @@ class TestLSBRelease(unittest.TestCase):
 		os.environ.pop('TEST_APT_CACHE_UNSTABLE')
 
 	def test_get_lsb_information(self):
-        pass
+		pass
 
 	def test_get_distro_information(self):
-        pass
+		pass
 
 if __name__ == '__main__':
 	unittest.main()
