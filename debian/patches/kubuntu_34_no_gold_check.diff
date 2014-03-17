@@ -1,0 +1,25 @@
+Description: disable gold linker check
+ On some archs /usr/bin/ld.gold exists in the form of a wrapper despite
+ binutils-gold not being installed.
+ Disable the check to fix FTBFS. (We aren't using gold anyways)
+Author: Jonathan Thomas <echidnaman@kubuntu.org> 
+Forwarded: no
+
+Index: qt4-x11-4.8.2/src/3rdparty/webkit/Source/common.pri
+===================================================================
+--- qt4-x11-4.8.2.orig/src/3rdparty/webkit/Source/common.pri	2012-04-26 15:46:21.000000000 -0400
++++ qt4-x11-4.8.2/src/3rdparty/webkit/Source/common.pri	2012-05-29 20:19:49.911632666 -0400
+@@ -3,13 +3,6 @@
+ contains(JAVASCRIPTCORE_JIT,yes): DEFINES+=ENABLE_JIT=1
+ contains(JAVASCRIPTCORE_JIT,no): DEFINES+=ENABLE_JIT=0
+ 
+-linux-g++ {
+-isEmpty($$(SBOX_DPKG_INST_ARCH)):exists(/usr/bin/ld.gold) {
+-    message(Using gold linker)
+-    QMAKE_LFLAGS+=-fuse-ld=gold
+-}
+-}
+-
+ # We use this flag on production branches
+ # See https://bugs.webkit.org/show_bug.cgi?id=60824
+ CONFIG += production

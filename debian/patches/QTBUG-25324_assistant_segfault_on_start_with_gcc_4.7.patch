@@ -1,0 +1,22 @@
+Description: fixes segfault on Assistant's startup
+ This patch calls the static method QApplication::allWidgets()
+ intead of storing them first.
+Author: Than Ngo <than@redhat.com>
+Origin: https://bugreports.qt-project.org/browse/QTBUG-25324
+Bug: https://bugreports.qt-project.org/browse/QTBUG-25324
+Bug-Debian: http://bugs.debian.org/679874
+Forwarded: not-needed
+Last-Update: 2012-06-20
+
+--- a/tools/assistant/tools/assistant/mainwindow.cpp
++++ b/tools/assistant/tools/assistant/mainwindow.cpp
+@@ -945,8 +945,7 @@ void MainWindow::updateApplicationFont()
+     if (helpEngine.usesAppFont())
+         font = helpEngine.appFont();
+ 
+-    const QWidgetList &widgets = qApp->allWidgets();
+-    foreach (QWidget* widget, widgets)
++    foreach (QWidget* widget, QApplication::allWidgets())
+         widget->setFont(font);
+ }
+ 

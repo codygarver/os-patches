@@ -1,0 +1,30 @@
+--- a/configure
++++ b/configure
+@@ -291,6 +291,9 @@
+ 	powerpc)
+ 		UNAME_MACHINE="ppc"
+ 	;;
++	ppc64el)
++		UNAME_MACHINE="ppc64le"
++	;;
+ 	*)
+ 		UNAME_MACHINE="$DPKG_ARCH"
+ 	;;
+@@ -2856,7 +2859,7 @@
+             *86)
+                 PLATFORM=qws/linux-x86-g++
+                 ;;
+-            *86_64)
++            *64*)
+                 PLATFORM=qws/linux-x86_64-g++
+                 ;;
+             aarch64)
+@@ -3283,7 +3286,7 @@
+         fi
+         CFG_HOST_ARCH=powerpc
+         ;;
+-    *:*:ppc64)
++    *:*:ppc64*)
+         if [ "$OPT_VERBOSE" = "yes" ]; then
+             echo "    64-bit PowerPC (powerpc)"
+         fi

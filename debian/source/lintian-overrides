@@ -1,0 +1,2 @@
+# libqt4-webkit-dbg is a transitional package for libqtwebkit-dbg
+qt4-x11 source: dbg-package-missing-depends libqt4-webkit-dbg

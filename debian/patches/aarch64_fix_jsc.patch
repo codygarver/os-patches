@@ -1,0 +1,30 @@
+Description: Fix JavaScriptCore to not segfault everywhere on aarch64.
+ The __aarch64__ check was inside the __arm__ check, so it was never
+ reached on aarch64.
+Author: William Grant <wgrant@ubuntu.com>
+
+--- a/src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h
++++ b/src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h
+@@ -238,11 +238,6 @@
+ 
+ #endif
+ 
+-/* CPU(AARCH64) - AArch64 */
+-#if defined(__aarch64__)
+-#define WTF_CPU_AARCH64 1
+-#endif
+-
+ #define WTF_ARM_ARCH_AT_LEAST(N) (CPU(ARM) && WTF_ARM_ARCH_VERSION >= N)
+ 
+ /* Set WTF_ARM_ARCH_VERSION */
+@@ -321,6 +316,10 @@
+ #define WTF_CPU_ARMV5_OR_LOWER 1
+ #endif
+ 
++/* CPU(AARCH64) - AArch64 */
++#if defined(__aarch64__)
++#define WTF_CPU_AARCH64 1
++#endif
+ 
+ /* CPU(ARM_TRADITIONAL) - Thumb2 is not available, only traditional ARM (v4 or greater) */
+ /* CPU(ARM_THUMB2) - Thumb2 instruction set is available */

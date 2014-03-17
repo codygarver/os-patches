@@ -1,0 +1,29 @@
+Description: Fix aarch64 atomic test and set to set the right value.
+ QBasicAtomicInt::testAndSetRelaxed and
+ QBasicAtomicPointer<T>::testAndSetRelaxed would previously set the
+ target to a local stack frame pointer to the new value, rather than to
+ the new value itself.
+Author: William Grant <wgrant@ubuntu.com>
+
+Index: qt4-x11-4.8.4+dfsg/src/corelib/arch/qatomic_aarch64.h
+===================================================================
+--- qt4-x11-4.8.4+dfsg.orig/src/corelib/arch/qatomic_aarch64.h	2013-10-13 22:23:58.000000000 +1100
++++ qt4-x11-4.8.4+dfsg/src/corelib/arch/qatomic_aarch64.h	2013-10-13 22:24:56.810788571 +1100
+@@ -135,7 +135,7 @@
+     bool val;
+ 
+     Q_COMPILER_MEMORY_BARRIER;
+-    val =  __atomic_compare_exchange_n (&_q_value, &expectedValue, &newValue,
++    val =  __atomic_compare_exchange_n (&_q_value, &expectedValue, newValue,
+ 					false, __ATOMIC_RELAXED, __ATOMIC_RELAXED);
+     Q_COMPILER_MEMORY_BARRIER;
+     return val;
+@@ -164,7 +164,7 @@
+ {
+     bool val;
+     Q_COMPILER_MEMORY_BARRIER;
+-    val =  __atomic_compare_exchange_n (&_q_value, &expectedValue, &newValue,
++    val =  __atomic_compare_exchange_n (&_q_value, &expectedValue, newValue,
+ 					false, __ATOMIC_RELAXED, __ATOMIC_RELAXED);
+     Q_COMPILER_MEMORY_BARRIER;
+     return val;
