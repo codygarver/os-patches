@@ -1,3 +1,15 @@
+grub2 (2.02~beta2-7) experimental; urgency=medium
+
+  * Fix shift-held-down test not to clear other modifier key states
+    (LP: #843804).
+  * Explicitly pass an appropriate --target to grub-install in the postinst
+    (suggested by Jordan Uggla).
+  * Backport from upstream:
+    - Use bootaa64.efi instead of bootaarch64.efi on arm64 to comply with
+      EFI specification.  Also use grubaa64.efi for consistency.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 10 Mar 2014 13:39:33 +0000
+
 grub2 (2.02~beta2-6) experimental; urgency=medium
 
   * Install bootinfo.txt and grub.chrp into grub-ieee1275-bin on powerpc and
