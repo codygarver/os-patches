@@ -1,0 +1,39 @@
+diff -Nur xdg-user-dirs-precise/user-dirs.defaults xdg-user-dirs-precise.new/user-dirs.defaults
+--- xdg-user-dirs-precise/user-dirs.defaults	2012-10-07 18:34:51.115267000 +0100
++++ xdg-user-dirs-precise.new/user-dirs.defaults	2012-10-07 18:35:17.717656363 +0100
+@@ -2,7 +2,6 @@
+ #
+ # The values are relative pathnames from the home directory and
+ # will be translated on a per-path-element basis into the users locale
+-DESKTOP=Desktop
+ DOWNLOAD=Downloads
+ TEMPLATES=Templates
+ PUBLICSHARE=Public
+diff -Nur xdg-user-dirs-precise/xdg-user-dir-lookup.c xdg-user-dirs-precise.new/xdg-user-dir-lookup.c
+--- xdg-user-dirs-precise/xdg-user-dir-lookup.c	2012-10-07 18:34:51.115267000 +0100
++++ xdg-user-dirs-precise.new/xdg-user-dir-lookup.c	2012-10-07 18:36:19.713654776 +0100
+@@ -204,12 +204,11 @@
+   /* Special case desktop for historical compatibility */
+   if (strcmp (type, "DESKTOP") == 0)
+     {
+-      user_dir = (char*) malloc (strlen (home_dir) + strlen ("/Desktop") + 1);
++      user_dir = (char*) malloc (strlen (home_dir) + 1);
+       if (user_dir == NULL)
+         return NULL;
+ 
+       strcpy (user_dir, home_dir);
+-      strcat (user_dir, "/Desktop");
+       return user_dir;
+     }
+   
+diff -Nur xdg-user-dirs-precise/xdg-user-dirs-update.c xdg-user-dirs-precise.new/xdg-user-dirs-update.c
+--- xdg-user-dirs-precise/xdg-user-dirs-update.c	2012-10-07 18:34:51.115267000 +0100
++++ xdg-user-dirs-precise.new/xdg-user-dirs-update.c	2012-10-07 18:35:51.637655494 +0100
+@@ -22,7 +22,6 @@
+ } Directory;
+ 
+ Directory backwards_compat_dirs[] = {
+-  { "DESKTOP", "Desktop" },
+   { "TEMPLATES", "Templates" },
+   { "PUBLICSHARE", "Public" },
+   { NULL}
