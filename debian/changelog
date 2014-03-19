@@ -1,3 +1,10 @@
+casper (1.339) trusty; urgency=medium
+
+  * scripts/casper: Fix for new udev that doesn't have by-path.
+    Original patch from http://goo.gl/R76aKl (LP: #1293811)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Wed, 19 Mar 2014 09:22:38 -0500
+
 casper (1.338) trusty; urgency=medium
 
   * scripts/casper-bottom/30accessibility: If the user boots to the desktop,
