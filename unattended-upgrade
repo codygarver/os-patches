@@ -52,8 +52,8 @@ from gettext import gettext as _
 REBOOT_REQUIRED_FILE = "/var/run/reboot-required"
 MAIL_BINARY = "/usr/bin/mail"
 SENDMAIL_BINARY = "/usr/sbin/sendmail"
-DISTRO_CODENAME = lsb_release.get_distro_information()['CODENAME']
-DISTRO_ID = lsb_release.get_distro_information()['ID']
+DISTRO_CODENAME = lsb_release.get_distro_information(upstream=True)['CODENAME']
+DISTRO_ID = lsb_release.get_distro_information(upstream=True)['ID']
 
 # progress information is written here
 PROGRESS_LOG="/var/run/unattended-upgrades.progress"
