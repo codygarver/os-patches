@@ -1,3 +1,10 @@
+update-manager (1:0.156.14.12) precise-proposed; urgency=medium
+
+  * debian/source_update-manager.py: create a DuplicateSignature by
+    replacing the tmpdir name in the Traceback (LP: #1289580)
+
+ -- Brian Murray <brian@ubuntu.com>  Mon, 10 Mar 2014 10:40:57 -0700
+
 update-manager (1:0.156.14.11) precise-proposed; urgency=low
 
   * DistUpgradeApport.py: don't use a '/' as a key name in the apport report

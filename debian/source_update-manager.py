@@ -12,6 +12,16 @@ from apport.hookutils import (
 
 def add_info(report, ui):
 
+    problem_type = report.get("ProblemType", None)
+    if problem_type == 'Crash':
+        tmpdir = re.compile('update-manager-\w+')
+        tb = report.get("Traceback", None)
+        if tb:
+            dupe_sig = ''
+            for line in tb.splitlines():
+                scrub_line = tmpdir.sub('update-manager-tmpdir', line)
+                dupe_sig += scrub_line + '\n'
+            report["DuplicateSignature"] = dupe_sig
     try:
         attach_gsettings_package(report, 'update-manager')
     except:
