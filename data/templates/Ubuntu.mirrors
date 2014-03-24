@@ -46,7 +46,6 @@ http://mirror.unesp.br/ubuntu/
 http://sft.if.usp.br/ubuntu/
 http://ubuntu-archive.locaweb.com.br/ubuntu/
 http://ubuntu.c3sl.ufpr.br/ubuntu/
-http://ubuntu.laps.ufpa.br/ubuntu/
 http://ubuntu.mirror.pop-sc.rnp.br/ubuntu/
 http://ubuntu.ufes.br/ubuntu-archive/
 http://www.las.ic.unicamp.br/pub/ubuntu/
@@ -79,6 +78,7 @@ http://mirror.uchile.cl/ubuntu/
 http://linux.xjtuns.cn/ubuntu/
 http://mirror.bjtu.edu.cn/ubuntu/
 http://mirror.lupaworld.com/ubuntu/
+http://mirror.lzu.edu.cn/ubuntu/
 http://mirror.neu.edu.cn/ubuntu/
 http://mirror.skyshe.com/ubuntu/
 http://mirrors.163.com/ubuntu/
@@ -152,6 +152,7 @@ http://ftp.caliu.cat/pub/distribucions/ubuntu/archive/
 http://ftp.dat.etsit.upm.es/ubuntu/
 http://ftp.udc.es/ubuntu/
 http://softlibre.unizar.es/ubuntu/archive/
+http://sunsite.rediris.es/mirror/ubuntu-archive/
 http://ubuntu.cica.es/ubuntu/
 http://ubuntu.grn.cat/ubuntu/
 http://ubuntu.uc3m.es/ubuntu/
@@ -266,6 +267,8 @@ http://kr.archive.ubuntu.com/ubuntu/
 http://mirror.premi.st/ubuntu/
 #LOC:KZ
 http://mirror.neolabs.kz/ubuntu/
+#LOC:LK
+http://mirror.learn.ac.lk/ubuntu/
 #LOC:LT
 http://ftp.litnet.lt/ubuntu/
 http://mirror.soften.ktu.lt/ubuntu/
@@ -363,7 +366,6 @@ http://linux.psu.ru/ubuntu/
 http://linux.vlz.su/ubuntu/
 http://mirror.beget.ru/ubuntu/
 http://mirror.corbina.net/ubuntu/
-http://mirror.logol.ru/ubuntu/
 http://mirror.rol.ru/ubuntu/
 http://mirror.timeweb.ru/ubuntu/
 http://mirror.yandex.ru/ubuntu/
@@ -376,7 +378,6 @@ http://ftp.availo.se/ubuntu/
 http://ftp.ds.karen.hj.se/ubuntu/
 http://ftp.lysator.liu.se/ubuntu/
 http://ftp.sunet.se/pub/os/Linux/distributions/ubuntu/ubuntu/
-http://mirror.quickvz.com/ubuntu/
 http://mirrors.se.eu.kernel.org/ubuntu/
 http://ubuntu.cybercomhosting.com/ubuntu/
 http://ubuntu.mirror.su.se/ubuntu/
@@ -470,6 +471,7 @@ http://mirrors.arpnetworks.com/Ubuntu/
 http://mirrors.bloomu.edu/ubuntu/
 http://mirrors.cat.pdx.edu/ubuntu/
 http://mirrors.ccs.neu.edu/ubuntu/
+http://mirrors.easynews.com/linux/ubuntu/
 http://mirrors.einstein.yu.edu/ubuntu/archive/
 http://mirrors.gigenet.com/ubuntuarchive/
 http://mirrors.liquidweb.com/ubuntu/
@@ -495,7 +497,6 @@ http://www.gtlib.gatech.edu/pub/ubuntu/
 http://www.lug.bu.edu/mirror/ubuntu/
 #LOC:UZ
 http://ubuntu.snet.uz/ubuntu/
-http://ubuntu.uz/ubuntu/
 #LOC:VN
 http://mirror-fpt-telecom.fpt.net/ubuntu/
 http://mirror.nhanhoa.com/Ubuntu/archive/
