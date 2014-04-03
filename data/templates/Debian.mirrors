@@ -482,7 +482,6 @@ http://vlad-tepes.bofh.it/debian/
 ftp://dennou-h.gfd-dennou.org/debian/
 ftp://dennou-k.gfd-dennou.org/debian/
 ftp://dennou-q.gfd-dennou.org/debian/
-ftp://ftp.dti.ad.jp/pub/Linux/debian/
 ftp://ftp.jaist.ac.jp/debian/
 ftp://ftp.jp.debian.org/debian/
 ftp://ftp.nara.wide.ad.jp/debian/
@@ -490,7 +489,6 @@ ftp://ftp.riken.jp/Linux/debian/debian/
 http://dennou-h.gfd-dennou.org/debian/
 http://dennou-k.gfd-dennou.org/debian/
 http://dennou-q.gfd-dennou.org/debian/
-http://ftp.dti.ad.jp/pub/Linux/debian/
 http://ftp.jaist.ac.jp/debian/
 http://ftp.jp.debian.org/debian/
 http://ftp.nara.wide.ad.jp/debian/
@@ -654,7 +652,7 @@ ftp://debian.bsnet.se/debian/
 ftp://debian.lth.se/debian/
 ftp://ftp.acc.umu.se/debian/
 ftp://ftp.availo.se/debian/
-ftp://ftp.df.lth.se/debian/
+ftp://ftp.df.lth.se/pub/debian/
 ftp://ftp.ds.karen.hj.se/debian/
 ftp://ftp.se.debian.org/debian/
 ftp://ftp.sunet.se/pub/Linux/distributions/debian/
@@ -662,7 +660,7 @@ http://debian.bsnet.se/debian/
 http://debian.lth.se/debian/
 http://ftp.acc.umu.se/debian/
 http://ftp.availo.se/debian/
-http://ftp.df.lth.se/debian/
+http://ftp.df.lth.se/pub/debian/
 http://ftp.ds.karen.hj.se/debian/
 http://ftp.se.debian.org/debian/
 http://ftp.sunet.se/pub/Linux/distributions/debian/
@@ -717,7 +715,6 @@ http://russell.cs.bilgi.edu.tr/debian/
 ftp://debian.csie.nctu.edu.tw/debian/
 ftp://debian.csie.ntu.edu.tw/pub/debian/
 ftp://debian.nctu.edu.tw/debian/
-ftp://ftp.cse.yzu.edu.tw/pub/Linux/debian/debian/
 ftp://ftp.tku.edu.tw/debian/
 ftp://ftp.tw.debian.org/debian/
 ftp://opensource.nchc.org.tw/debian/
@@ -725,7 +722,6 @@ ftp://shadow.ind.ntou.edu.tw/debian/
 http://debian.csie.nctu.edu.tw/debian/
 http://debian.csie.ntu.edu.tw/debian/
 http://debian.nctu.edu.tw/debian/
-http://ftp.cse.yzu.edu.tw/pub/Linux/debian/debian/
 http://ftp.tku.edu.tw/debian/
 http://ftp.tw.debian.org/debian/
 http://opensource.nchc.org.tw/debian/
@@ -778,6 +774,7 @@ ftp://mirrors.advancedhosters.com/debian/
 ftp://mirrors.bloomu.edu/debian/
 ftp://mirrors.kernel.org/debian/
 ftp://mirrors.linux.iu.edu/linux/debian/
+ftp://mirrors.ocf.berkeley.edu/debian/
 ftp://mirrors.syringanetworks.net/debian/
 ftp://mirrors.tummy.com/debian/
 ftp://mirrors.usc.edu/pub/linux/distributions/debian/
@@ -829,6 +826,7 @@ http://mirrors.kernel.org/debian/
 http://mirrors.linux.iu.edu/linux/debian/
 http://mirrors.liquidweb.com/debian/
 http://mirrors.modwest.com/debian/
+http://mirrors.ocf.berkeley.edu/debian/
 http://mirrors.syringanetworks.net/debian/
 http://mirrors.tummy.com/debian/
 http://mirrors.usc.edu/pub/linux/distributions/debian/
