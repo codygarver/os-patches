@@ -1,3 +1,28 @@
+grub2 (2.02~beta2-8) unstable; urgency=medium
+
+  [ Colin Watson ]
+  * Backport from upstream:
+    - ieee1275: check for IBM pseries emulated machine.
+    - Fix partmap, cryptodisk, and abstraction handling in grub-mkconfig
+      (closes: #735935).
+    - btrfs: fix get_root key comparison failures due to endianness.
+  * Build-depend on automake (>= 1.10.1) to ensure that it meets configure's
+    requirements (LP: #1299041).
+  * When installing an image for use with UEFI Secure Boot, generate a
+    load.cfg even if there are no device abstractions in use (LP: #1298399).
+
+  [ Jon Severinsson ]
+  * Add Tanglu support, as in Debian except:
+    - Enable splash screen by default (as Ubuntu)
+    - Enable quiet and quick boot (as Ubuntu)
+    - Enable the grub-common init script (as Ubuntu)
+    - Enable dynamic gfxpayload (as Ubuntu)
+    - Enable vt handover (as Ubuntu)
+    - Use monochromatic theme by default (as Ubuntu)
+    - Use Tanglu GRUB wallpaper by default.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 31 Mar 2014 16:30:37 +0100
+
 grub2 (2.02~beta2-7) experimental; urgency=medium
 
   * Fix shift-held-down test not to clear other modifier key states
