@@ -173,7 +173,7 @@ class NetworkManagerTreeView(Gtk.TreeView):
         it = Gtk.IconTheme()
         default = Gtk.IconTheme.get_default()
         default = default.load_icon(Gtk.STOCK_MISSING_IMAGE, 22, 0)
-        it.set_custom_theme('ubuntu-mono-light')
+        it.set_custom_theme('elementary')
         self.icons = []
         for n in ['nm-signal-00',
                   'nm-signal-25',
