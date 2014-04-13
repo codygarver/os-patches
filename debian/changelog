@@ -1,3 +1,9 @@
+base-files (7.2ubuntu5) trusty; urgency=medium
+
+  * /etc/issue{,.net}, /etc/{lsb,os}-release: Prepare for 14.04 LTS release.
+
+ -- Matthias Klose <doko@ubuntu.com>  Thu, 10 Apr 2014 23:58:33 +0200
+
 base-files (7.2ubuntu4) trusty; urgency=medium
 
   * Build base-files.deb with -Zgzip since it's in the debootstrap set.
