@@ -1,6 +1,7 @@
-diff -Nur xdg-user-dirs-0.15/po/aa.po xdg-user-dirs-0.15.ubuntu/po/aa.po
---- xdg-user-dirs-0.15/po/aa.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/aa.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/aa.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/aa.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Afar translation for xdg-user-dirs
 +# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
@@ -18,8 +19,8 @@ diff -Nur xdg-user-dirs-0.15/po/aa.po xdg-user-dirs-0.15.ubuntu/po/aa.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -132,9 +133,10 @@ diff -Nur xdg-user-dirs-0.15/po/aa.po xdg-user-dirs-0.15.ubuntu/po/aa.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "vidiyo"
-diff -Nur xdg-user-dirs-0.15/po/ace.po xdg-user-dirs-0.15.ubuntu/po/ace.po
---- xdg-user-dirs-0.15/po/ace.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/ace.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/ace.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/ace.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Acehnese translation for xdg-user-dirs
 +# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
@@ -152,8 +154,8 @@ diff -Nur xdg-user-dirs-0.15/po/ace.po xdg-user-dirs-0.15.ubuntu/po/ace.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -266,9 +268,10 @@ diff -Nur xdg-user-dirs-0.15/po/ace.po xdg-user-dirs-0.15.ubuntu/po/ace.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "video"
-diff -Nur xdg-user-dirs-0.15/po/af.po xdg-user-dirs-0.15.ubuntu/po/af.po
---- xdg-user-dirs-0.15/po/af.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/af.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/af.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/af.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/af.po	2014-04-11 09:35:11.490988936 +0200
 @@ -1,22 +1,21 @@
  # Afrikaans translation of xdg-user-dirs
  # Copyright (C) 2007 Red Hat, Inc
@@ -295,8 +298,8 @@ diff -Nur xdg-user-dirs-0.15/po/af.po xdg-user-dirs-0.15.ubuntu/po/af.po
 -"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 -"X-Generator: Virtaal 0.5.3-rc1\n"
 -"X-Language: af_ZA\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -338,9 +341,10 @@ diff -Nur xdg-user-dirs-0.15/po/af.po xdg-user-dirs-0.15.ubuntu/po/af.po
  
  #: translate.c:14
  msgid "Templates"
-diff -Nur xdg-user-dirs-0.15/po/am.po xdg-user-dirs-0.15.ubuntu/po/am.po
---- xdg-user-dirs-0.15/po/am.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/am.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/am.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/am.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Amharic translation for xdg-user-dirs
 +# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -358,8 +362,8 @@ diff -Nur xdg-user-dirs-0.15/po/am.po xdg-user-dirs-0.15.ubuntu/po/am.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -472,9 +476,10 @@ diff -Nur xdg-user-dirs-0.15/po/am.po xdg-user-dirs-0.15.ubuntu/po/am.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "ቪዲዩስ"
-diff -Nur xdg-user-dirs-0.15/po/an.po xdg-user-dirs-0.15.ubuntu/po/an.po
---- xdg-user-dirs-0.15/po/an.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/an.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/an.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/an.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/an.po	2014-04-11 09:35:11.490988936 +0200
 @@ -1,20 +1,21 @@
 -# Aragonese translation for xdg-user-dirs.
 -# Copyright (C) 2010 xdg-user-dirs's COPYRIGHT HOLDER
@@ -504,14 +509,15 @@ diff -Nur xdg-user-dirs-0.15/po/an.po xdg-user-dirs-0.15.ubuntu/po/an.po
 -"Content-Type: text/plain; charset=utf-8\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/ar.po xdg-user-dirs-0.15.ubuntu/po/ar.po
---- xdg-user-dirs-0.15/po/ar.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ar.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/ar.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ar.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/ar.po	2014-04-11 09:35:11.490988936 +0200
 @@ -1,27 +1,25 @@
 -# translation of xdg-user-dirs.HEAD.po to Arabic
 +# SOME DESCRIPTIVE TITLE.
@@ -539,8 +545,8 @@ diff -Nur xdg-user-dirs-0.15/po/ar.po xdg-user-dirs-0.15.ubuntu/po/ar.po
 -"X-Generator: KBabel 1.11.4\n"
 -"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : "
 -"3\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -641,9 +647,10 @@ diff -Nur xdg-user-dirs-0.15/po/ar.po xdg-user-dirs-0.15.ubuntu/po/ar.po
  
  #: translate.c:15
  msgid "videos"
-diff -Nur xdg-user-dirs-0.15/po/ast.po xdg-user-dirs-0.15.ubuntu/po/ast.po
---- xdg-user-dirs-0.15/po/ast.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ast.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/ast.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ast.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/ast.po	2014-04-11 09:35:11.490988936 +0200
 @@ -1,22 +1,21 @@
  # Asturian translation for xdg-user-dirs
 -# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
@@ -672,8 +679,8 @@ diff -Nur xdg-user-dirs-0.15/po/ast.po xdg-user-dirs-0.15.ubuntu/po/ast.po
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Launchpad-Export-Date: 2008-12-21 18:56+0000\n"
 -"X-Generator: Launchpad (build Unknown)\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -711,9 +718,10 @@ diff -Nur xdg-user-dirs-0.15/po/ast.po xdg-user-dirs-0.15.ubuntu/po/ast.po
  msgid "videos"
 -msgstr "videos"
 +msgstr "vídeos"
-diff -Nur xdg-user-dirs-0.15/po/az.po xdg-user-dirs-0.15.ubuntu/po/az.po
---- xdg-user-dirs-0.15/po/az.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/az.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/az.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/az.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Azerbaijani translation for xdg-user-dirs
 +# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
@@ -731,8 +739,8 @@ diff -Nur xdg-user-dirs-0.15/po/az.po xdg-user-dirs-0.15.ubuntu/po/az.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -845,9 +853,10 @@ diff -Nur xdg-user-dirs-0.15/po/az.po xdg-user-dirs-0.15.ubuntu/po/az.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "videolar"
-diff -Nur xdg-user-dirs-0.15/po/be@latin.po xdg-user-dirs-0.15.ubuntu/po/be@latin.po
---- xdg-user-dirs-0.15/po/be@latin.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/be@latin.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/be@latin.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/be@latin.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/be@latin.po	2014-04-11 09:35:11.490988936 +0200
 @@ -7,15 +7,16 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs\n"
@@ -860,14 +869,14 @@ diff -Nur xdg-user-dirs-0.15/po/be@latin.po xdg-user-dirs-0.15.ubuntu/po/be@lati
 -"Language: \n"
 +"POT-Creation-Date: 2009-09-18 14:16+0200\n"
 +"PO-Revision-Date: 2009-10-06 03:12+0000\n"
-+"Last-Translator: booxter <Unknown>\n"
++"Last-Translator: Ihar Hrachyshka <Unknown>\n"
 +"Language-Team: Belarusian (Latin script) <translation-team-be-"
 +"latin@lists.sourceforge.net>\n"
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -888,9 +897,10 @@ diff -Nur xdg-user-dirs-0.15/po/be@latin.po xdg-user-dirs-0.15.ubuntu/po/be@lati
  
  #: translate.c:7
  msgid "Movies"
-diff -Nur xdg-user-dirs-0.15/po/be.po xdg-user-dirs-0.15.ubuntu/po/be.po
---- xdg-user-dirs-0.15/po/be.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/be.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/be.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/be.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/be.po	2014-04-11 09:35:11.490988936 +0200
 @@ -2,60 +2,60 @@
  # Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
  # This file is distributed under the same license as the xdg-user-dirs package.
@@ -913,8 +923,8 @@ diff -Nur xdg-user-dirs-0.15/po/be.po xdg-user-dirs-0.15.ubuntu/po/be.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -1016,32 +1026,45 @@ diff -Nur xdg-user-dirs-0.15/po/be.po xdg-user-dirs-0.15.ubuntu/po/be.po
  
  #: translate.c:15
  msgid "Videos"
-diff -Nur xdg-user-dirs-0.15/po/bg.po xdg-user-dirs-0.15.ubuntu/po/bg.po
---- xdg-user-dirs-0.15/po/bg.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/bg.po	2013-10-04 11:06:23.580545323 +0200
-@@ -7,15 +7,15 @@
+Index: xdg-user-dirs-0.15/po/bg.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/bg.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/bg.po	2014-04-11 09:35:11.490988936 +0200
+@@ -7,23 +7,23 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
  "Report-Msgid-Bugs-To: \n"
 -"POT-Creation-Date: 2013-06-27 10:18+0200\n"
 -"PO-Revision-Date: 2009-09-22 10:39+0300\n"
+-"Last-Translator: Alexander Shopov <ash@contact.bg>\n"
 +"POT-Creation-Date: 2009-09-18 14:16+0200\n"
-+"PO-Revision-Date: 2009-10-06 03:13+0000\n"
- "Last-Translator: Alexander Shopov <ash@contact.bg>\n"
++"PO-Revision-Date: 2014-02-01 22:20+0000\n"
++"Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
  "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 -"Language: bg\n"
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=2; plural=n != 1;\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/bn.po xdg-user-dirs-0.15.ubuntu/po/bn.po
---- xdg-user-dirs-0.15/po/bn.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/bn.po	2013-10-04 11:06:23.580545323 +0200
+-msgstr "Програми"
++msgstr "Приложения"
+ 
+ #: translate.c:2
+ msgid "applications"
+-msgstr "програми"
++msgstr "приложения"
+ 
+ #: translate.c:3
+ msgid "Desktop"
+Index: xdg-user-dirs-0.15/po/bn.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/bn.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Bengali translation for xdg-user-dirs
 +# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -1059,8 +1082,8 @@ diff -Nur xdg-user-dirs-0.15/po/bn.po xdg-user-dirs-0.15.ubuntu/po/bn.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -1173,9 +1196,10 @@ diff -Nur xdg-user-dirs-0.15/po/bn.po xdg-user-dirs-0.15.ubuntu/po/bn.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "ভিডিও"
-diff -Nur xdg-user-dirs-0.15/po/bo.po xdg-user-dirs-0.15.ubuntu/po/bo.po
---- xdg-user-dirs-0.15/po/bo.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/bo.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/bo.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/bo.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Tibetan translation for xdg-user-dirs
 +# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
@@ -1193,8 +1217,8 @@ diff -Nur xdg-user-dirs-0.15/po/bo.po xdg-user-dirs-0.15.ubuntu/po/bo.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -1307,9 +1331,10 @@ diff -Nur xdg-user-dirs-0.15/po/bo.po xdg-user-dirs-0.15.ubuntu/po/bo.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "བརྙན་རིས"
-diff -Nur xdg-user-dirs-0.15/po/br.po xdg-user-dirs-0.15.ubuntu/po/br.po
---- xdg-user-dirs-0.15/po/br.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/br.po	2013-10-04 11:06:23.580545323 +0200
+Index: xdg-user-dirs-0.15/po/br.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/br.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/br.po	2014-04-11 09:35:11.490988936 +0200
 @@ -1,23 +1,21 @@
 -# Breton translation for xdg-user-dirs.
 -# Copyright (C) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -1341,8 +1366,8 @@ diff -Nur xdg-user-dirs-0.15/po/br.po xdg-user-dirs-0.15.ubuntu/po/br.po
 -"X-Poedit-Language: breton\n"
 -"X-Poedit-Country: FRANCE\n"
 -"X-Poedit-SourceCharset: utf-8\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -1372,9 +1397,10 @@ diff -Nur xdg-user-dirs-0.15/po/br.po xdg-user-dirs-0.15.ubuntu/po/br.po
  
  #: translate.c:14
  msgid "Templates"
-diff -Nur xdg-user-dirs-0.15/po/bs.po xdg-user-dirs-0.15.ubuntu/po/bs.po
---- xdg-user-dirs-0.15/po/bs.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/bs.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/bs.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/bs.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Bosnian translation for xdg-user-dirs
 +# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
@@ -1392,8 +1418,8 @@ diff -Nur xdg-user-dirs-0.15/po/bs.po xdg-user-dirs-0.15.ubuntu/po/bs.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -1506,9 +1532,10 @@ diff -Nur xdg-user-dirs-0.15/po/bs.po xdg-user-dirs-0.15.ubuntu/po/bs.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "video"
-diff -Nur xdg-user-dirs-0.15/po/ca.po xdg-user-dirs-0.15.ubuntu/po/ca.po
---- xdg-user-dirs-0.15/po/ca.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ca.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/ca.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ca.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/ca.po	2014-04-11 09:35:11.490988936 +0200
 @@ -1,21 +1,22 @@
  # Catalan translations for xdg-user-dirs package
  # Traduccions al català del paquet «xdg-user-dirs».
@@ -1534,8 +1561,8 @@ diff -Nur xdg-user-dirs-0.15/po/ca.po xdg-user-dirs-0.15.ubuntu/po/ca.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -1548,9 +1575,10 @@ diff -Nur xdg-user-dirs-0.15/po/ca.po xdg-user-dirs-0.15.ubuntu/po/ca.po
  
  #: translate.c:6
  msgid "Downloads"
-diff -Nur xdg-user-dirs-0.15/po/ca@valencia.po xdg-user-dirs-0.15.ubuntu/po/ca@valencia.po
---- xdg-user-dirs-0.15/po/ca@valencia.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/ca@valencia.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/ca@valencia.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/ca@valencia.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,131 @@
 +# Catalan translations for xdg-user-dirs package
 +# Traduccions al català del paquet «xdg-user-dirs».
@@ -1569,8 +1597,8 @@ diff -Nur xdg-user-dirs-0.15/po/ca@valencia.po xdg-user-dirs-0.15.ubuntu/po/ca@v
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -1683,9 +1711,10 @@ diff -Nur xdg-user-dirs-0.15/po/ca@valencia.po xdg-user-dirs-0.15.ubuntu/po/ca@v
 +#: translate.c:15
 +msgid "videos"
 +msgstr "vídeos"
-diff -Nur xdg-user-dirs-0.15/po/chr.po xdg-user-dirs-0.15.ubuntu/po/chr.po
---- xdg-user-dirs-0.15/po/chr.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/chr.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/chr.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/chr.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Cherokee translation for xdg-user-dirs
 +# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
@@ -1703,8 +1732,8 @@ diff -Nur xdg-user-dirs-0.15/po/chr.po xdg-user-dirs-0.15.ubuntu/po/chr.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -1817,9 +1846,10 @@ diff -Nur xdg-user-dirs-0.15/po/chr.po xdg-user-dirs-0.15.ubuntu/po/chr.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "ᎤᎾᏛᏁᎶᏗ"
-diff -Nur xdg-user-dirs-0.15/po/ckb.po xdg-user-dirs-0.15.ubuntu/po/ckb.po
---- xdg-user-dirs-0.15/po/ckb.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/ckb.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/ckb.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/ckb.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Kurdish (Sorani) translation for xdg-user-dirs
 +# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
@@ -1837,8 +1867,8 @@ diff -Nur xdg-user-dirs-0.15/po/ckb.po xdg-user-dirs-0.15.ubuntu/po/ckb.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -1951,9 +1981,10 @@ diff -Nur xdg-user-dirs-0.15/po/ckb.po xdg-user-dirs-0.15.ubuntu/po/ckb.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "ڤیدیۆکان"
-diff -Nur xdg-user-dirs-0.15/po/crh.po xdg-user-dirs-0.15.ubuntu/po/crh.po
---- xdg-user-dirs-0.15/po/crh.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/crh.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/crh.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/crh.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/crh.po	2014-04-11 09:35:11.490988936 +0200
 @@ -7,17 +7,16 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
@@ -1973,14 +2004,15 @@ diff -Nur xdg-user-dirs-0.15/po/crh.po xdg-user-dirs-0.15.ubuntu/po/crh.po
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Generator: KBabel 1.11.4\n"
 -"Plural-Forms: nplurals=2; plural=n != 1;\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/csb.po xdg-user-dirs-0.15.ubuntu/po/csb.po
---- xdg-user-dirs-0.15/po/csb.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/csb.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/csb.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/csb.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Kashubian translation for xdg-user-dirs
 +# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -1998,8 +2030,8 @@ diff -Nur xdg-user-dirs-0.15/po/csb.po xdg-user-dirs-0.15.ubuntu/po/csb.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -2112,9 +2144,10 @@ diff -Nur xdg-user-dirs-0.15/po/csb.po xdg-user-dirs-0.15.ubuntu/po/csb.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "wideò"
-diff -Nur xdg-user-dirs-0.15/po/cs.po xdg-user-dirs-0.15.ubuntu/po/cs.po
---- xdg-user-dirs-0.15/po/cs.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/cs.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/cs.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/cs.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/cs.po	2014-04-11 09:35:11.490988936 +0200
 @@ -7,15 +7,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs-0.11-pre1\n"
@@ -2131,14 +2164,15 @@ diff -Nur xdg-user-dirs-0.15/po/cs.po xdg-user-dirs-0.15.ubuntu/po/cs.po
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/cv.po xdg-user-dirs-0.15.ubuntu/po/cv.po
---- xdg-user-dirs-0.15/po/cv.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/cv.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/cv.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/cv.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Chuvash translation for xdg-user-dirs
 +# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -2156,8 +2190,8 @@ diff -Nur xdg-user-dirs-0.15/po/cv.po xdg-user-dirs-0.15.ubuntu/po/cv.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -2270,9 +2304,10 @@ diff -Nur xdg-user-dirs-0.15/po/cv.po xdg-user-dirs-0.15.ubuntu/po/cv.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr ""
-diff -Nur xdg-user-dirs-0.15/po/cy.po xdg-user-dirs-0.15.ubuntu/po/cy.po
---- xdg-user-dirs-0.15/po/cy.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/cy.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/cy.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/cy.po	2014-04-11 09:35:11.490988936 +0200
 @@ -0,0 +1,130 @@
 +# Welsh translation for xdg-user-dirs
 +# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -2290,8 +2325,8 @@ diff -Nur xdg-user-dirs-0.15/po/cy.po xdg-user-dirs-0.15.ubuntu/po/cy.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -2404,9 +2439,10 @@ diff -Nur xdg-user-dirs-0.15/po/cy.po xdg-user-dirs-0.15.ubuntu/po/cy.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "fidiôau"
-diff -Nur xdg-user-dirs-0.15/po/da.po xdg-user-dirs-0.15.ubuntu/po/da.po
---- xdg-user-dirs-0.15/po/da.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/da.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/da.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/da.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/da.po	2014-04-11 09:35:11.494988936 +0200
 @@ -1,21 +1,20 @@
  # Danish translation of xdg-user-dirs.
  # This file is distributed under the same license as the xdg-user-dirs package.
@@ -2430,8 +2466,8 @@ diff -Nur xdg-user-dirs-0.15/po/da.po xdg-user-dirs-0.15.ubuntu/po/da.po
  "Content-Type: text/plain; charset=utf-8\n"
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -2449,9 +2485,10 @@ diff -Nur xdg-user-dirs-0.15/po/da.po xdg-user-dirs-0.15.ubuntu/po/da.po
  
  #: translate.c:7
  msgid "Movies"
-diff -Nur xdg-user-dirs-0.15/po/de.po xdg-user-dirs-0.15.ubuntu/po/de.po
---- xdg-user-dirs-0.15/po/de.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/de.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/de.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/de.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/de.po	2014-04-11 09:35:11.494988936 +0200
 @@ -1,22 +1,21 @@
  # German translations for xdg-user-dirs.
  # Copyright (C) 2007 Red Hat, Inc
@@ -2477,8 +2514,8 @@ diff -Nur xdg-user-dirs-0.15/po/de.po xdg-user-dirs-0.15.ubuntu/po/de.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=utf-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -2505,9 +2542,10 @@ diff -Nur xdg-user-dirs-0.15/po/de.po xdg-user-dirs-0.15.ubuntu/po/de.po
  
  #: translate.c:6
  msgid "Downloads"
-diff -Nur xdg-user-dirs-0.15/po/dv.po xdg-user-dirs-0.15.ubuntu/po/dv.po
---- xdg-user-dirs-0.15/po/dv.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/dv.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/dv.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/dv.po	2014-04-11 09:35:11.494988936 +0200
 @@ -0,0 +1,130 @@
 +# Divehi translation for xdg-user-dirs
 +# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -2525,8 +2563,8 @@ diff -Nur xdg-user-dirs-0.15/po/dv.po xdg-user-dirs-0.15.ubuntu/po/dv.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -2639,9 +2677,10 @@ diff -Nur xdg-user-dirs-0.15/po/dv.po xdg-user-dirs-0.15.ubuntu/po/dv.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "ވީޑިއޯޒް"
-diff -Nur xdg-user-dirs-0.15/po/el.po xdg-user-dirs-0.15.ubuntu/po/el.po
---- xdg-user-dirs-0.15/po/el.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/el.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/el.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/el.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/el.po	2014-04-11 09:35:11.494988936 +0200
 @@ -3,20 +3,20 @@
  # This file is distributed under the same license as the xdg-user-dirs package.
  # Nikos Charonitakis <nikosx@gmail.com>, 2007.
@@ -2664,14 +2703,15 @@ diff -Nur xdg-user-dirs-0.15/po/el.po xdg-user-dirs-0.15.ubuntu/po/el.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=utf-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/en_AU.po xdg-user-dirs-0.15.ubuntu/po/en_AU.po
---- xdg-user-dirs-0.15/po/en_AU.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/en_AU.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/en_AU.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/en_AU.po	2014-04-11 09:35:11.494988936 +0200
 @@ -0,0 +1,130 @@
 +# English (Australia) translation for xdg-user-dirs
 +# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -2689,8 +2729,8 @@ diff -Nur xdg-user-dirs-0.15/po/en_AU.po xdg-user-dirs-0.15.ubuntu/po/en_AU.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -2803,9 +2843,10 @@ diff -Nur xdg-user-dirs-0.15/po/en_AU.po xdg-user-dirs-0.15.ubuntu/po/en_AU.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "videos"
-diff -Nur xdg-user-dirs-0.15/po/en_CA.po xdg-user-dirs-0.15.ubuntu/po/en_CA.po
---- xdg-user-dirs-0.15/po/en_CA.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/en_CA.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/en_CA.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/en_CA.po	2014-04-11 09:35:11.494988936 +0200
 @@ -0,0 +1,130 @@
 +# English (Canada) translation for xdg-user-dirs
 +# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
@@ -2823,8 +2864,8 @@ diff -Nur xdg-user-dirs-0.15/po/en_CA.po xdg-user-dirs-0.15.ubuntu/po/en_CA.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -2937,9 +2978,10 @@ diff -Nur xdg-user-dirs-0.15/po/en_CA.po xdg-user-dirs-0.15.ubuntu/po/en_CA.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "videos"
-diff -Nur xdg-user-dirs-0.15/po/en_GB.po xdg-user-dirs-0.15.ubuntu/po/en_GB.po
---- xdg-user-dirs-0.15/po/en_GB.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/en_GB.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/en_GB.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/en_GB.po	2014-04-11 09:35:11.494988936 +0200
 @@ -0,0 +1,130 @@
 +# English (United Kingdom) translation for xdg-user-dirs
 +# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
@@ -2957,8 +2999,8 @@ diff -Nur xdg-user-dirs-0.15/po/en_GB.po xdg-user-dirs-0.15.ubuntu/po/en_GB.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -3071,9 +3113,10 @@ diff -Nur xdg-user-dirs-0.15/po/en_GB.po xdg-user-dirs-0.15.ubuntu/po/en_GB.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "videos"
-diff -Nur xdg-user-dirs-0.15/po/eo.po xdg-user-dirs-0.15.ubuntu/po/eo.po
---- xdg-user-dirs-0.15/po/eo.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/eo.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/eo.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/eo.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/eo.po	2014-04-11 09:35:11.494988936 +0200
 @@ -6,22 +6,23 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs-0.11-pre1\n"
@@ -3089,8 +3132,8 @@ diff -Nur xdg-user-dirs-0.15/po/eo.po xdg-user-dirs-0.15.ubuntu/po/eo.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -3225,9 +3268,10 @@ diff -Nur xdg-user-dirs-0.15/po/eo.po xdg-user-dirs-0.15.ubuntu/po/eo.po
  msgid "videos"
 -msgstr "videoj"
 +msgstr "videujo"
-diff -Nur xdg-user-dirs-0.15/po/es.po xdg-user-dirs-0.15.ubuntu/po/es.po
---- xdg-user-dirs-0.15/po/es.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/es.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/es.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/es.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/es.po	2014-04-11 09:35:11.494988936 +0200
 @@ -1,20 +1,20 @@
 -# Spanish translation for xdg-user-dirs-0.11-pre1.po
 +# Spanish translation for xdg-user-dirs.
@@ -3252,8 +3296,8 @@ diff -Nur xdg-user-dirs-0.15/po/es.po xdg-user-dirs-0.15.ubuntu/po/es.po
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -3271,9 +3315,10 @@ diff -Nur xdg-user-dirs-0.15/po/es.po xdg-user-dirs-0.15.ubuntu/po/es.po
  
  #: translate.c:6
  msgid "Downloads"
-diff -Nur xdg-user-dirs-0.15/po/et.po xdg-user-dirs-0.15.ubuntu/po/et.po
---- xdg-user-dirs-0.15/po/et.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/et.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/et.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/et.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/et.po	2014-04-11 09:35:11.494988936 +0200
 @@ -1,21 +1,22 @@
  # X Desktop Group kasutaja-spetsiifilised kaustad.
 -# Copyright (C) 2007-2010 Red Hat, Inc
@@ -3301,14 +3346,15 @@ diff -Nur xdg-user-dirs-0.15/po/et.po xdg-user-dirs-0.15.ubuntu/po/et.po
 -"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Type: text/plain; charset=utf-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/eu.po xdg-user-dirs-0.15.ubuntu/po/eu.po
---- xdg-user-dirs-0.15/po/eu.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/eu.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/eu.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/eu.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/eu.po	2014-04-11 09:35:11.494988936 +0200
 @@ -1,22 +1,20 @@
  # Translation of xdg-user-dirs to Basque.
 -# This file is distributed under the same license as the xdg-user-dirs package.
@@ -3334,8 +3380,8 @@ diff -Nur xdg-user-dirs-0.15/po/eu.po xdg-user-dirs-0.15.ubuntu/po/eu.po
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Generator: KBabel 1.11.4\n"
 -"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -3367,9 +3413,10 @@ diff -Nur xdg-user-dirs-0.15/po/eu.po xdg-user-dirs-0.15.ubuntu/po/eu.po
  
  #: translate.c:8
  msgid "Music"
-diff -Nur xdg-user-dirs-0.15/po/fa.po xdg-user-dirs-0.15.ubuntu/po/fa.po
---- xdg-user-dirs-0.15/po/fa.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/fa.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/fa.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/fa.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/fa.po	2014-04-11 09:35:11.494988936 +0200
 @@ -1,20 +1,21 @@
 -# Persian translation for xdg-user-dirs.
 -# Copyright (C) 2010 Free Software Foundation, Inc.
@@ -3397,8 +3444,8 @@ diff -Nur xdg-user-dirs-0.15/po/fa.po xdg-user-dirs-0.15.ubuntu/po/fa.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -3498,9 +3545,10 @@ diff -Nur xdg-user-dirs-0.15/po/fa.po xdg-user-dirs-0.15.ubuntu/po/fa.po
  
  #: translate.c:15
  msgid "Videos"
-diff -Nur xdg-user-dirs-0.15/po/fi.po xdg-user-dirs-0.15.ubuntu/po/fi.po
---- xdg-user-dirs-0.15/po/fi.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/fi.po	2013-10-04 11:06:23.584545323 +0200
+Index: xdg-user-dirs-0.15/po/fi.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/fi.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/fi.po	2014-04-11 09:35:11.494988936 +0200
 @@ -1,23 +1,21 @@
  # Finnish translation of xdg-user-dirs
 -# Copyright © 2009 Red Hat, Inc
@@ -3528,8 +3576,8 @@ diff -Nur xdg-user-dirs-0.15/po/fi.po xdg-user-dirs-0.15.ubuntu/po/fi.po
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Generator: KBabel 1.11.4\n"
 -"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -3547,9 +3595,10 @@ diff -Nur xdg-user-dirs-0.15/po/fi.po xdg-user-dirs-0.15.ubuntu/po/fi.po
  
  #: translate.c:6
  msgid "Downloads"
-diff -Nur xdg-user-dirs-0.15/po/fo.po xdg-user-dirs-0.15.ubuntu/po/fo.po
---- xdg-user-dirs-0.15/po/fo.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/fo.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/fo.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/fo.po	2014-04-11 09:35:11.494988936 +0200
 @@ -0,0 +1,130 @@
 +# Faroese translation for xdg-user-dirs
 +# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
@@ -3567,8 +3616,8 @@ diff -Nur xdg-user-dirs-0.15/po/fo.po xdg-user-dirs-0.15.ubuntu/po/fo.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -3681,9 +3730,10 @@ diff -Nur xdg-user-dirs-0.15/po/fo.po xdg-user-dirs-0.15.ubuntu/po/fo.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "sjónarbond"
-diff -Nur xdg-user-dirs-0.15/po/fr.po xdg-user-dirs-0.15.ubuntu/po/fr.po
---- xdg-user-dirs-0.15/po/fr.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/fr.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/fr.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/fr.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/fr.po	2014-04-11 09:35:11.494988936 +0200
 @@ -8,14 +8,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
@@ -3698,14 +3748,15 @@ diff -Nur xdg-user-dirs-0.15/po/fr.po xdg-user-dirs-0.15.ubuntu/po/fr.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/fy.po xdg-user-dirs-0.15.ubuntu/po/fy.po
---- xdg-user-dirs-0.15/po/fy.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/fy.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/fy.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/fy.po	2014-04-11 09:35:11.494988936 +0200
 @@ -0,0 +1,130 @@
 +# Frisian translation for xdg-user-dirs
 +# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
@@ -3723,8 +3774,8 @@ diff -Nur xdg-user-dirs-0.15/po/fy.po xdg-user-dirs-0.15.ubuntu/po/fy.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -3837,9 +3888,10 @@ diff -Nur xdg-user-dirs-0.15/po/fy.po xdg-user-dirs-0.15.ubuntu/po/fy.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "fideo's"
-diff -Nur xdg-user-dirs-0.15/po/ga.po xdg-user-dirs-0.15.ubuntu/po/ga.po
---- xdg-user-dirs-0.15/po/ga.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ga.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/ga.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ga.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/ga.po	2014-04-11 09:35:11.494988936 +0200
 @@ -7,16 +7,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs HEAD\n"
@@ -3857,8 +3909,8 @@ diff -Nur xdg-user-dirs-0.15/po/ga.po xdg-user-dirs-0.15.ubuntu/po/ga.po
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=5; plural=n==1 ? 0 : (n%10==1 || n%10==2) ? 1 : (n"
 -"%10>=3 && n%10<= 6) ? 2 : ((n%10>=7 && n%10<=9) || n==10) ? 3 : 4;\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -3879,9 +3931,10 @@ diff -Nur xdg-user-dirs-0.15/po/ga.po xdg-user-dirs-0.15.ubuntu/po/ga.po
  
  #: translate.c:7
  msgid "Movies"
-diff -Nur xdg-user-dirs-0.15/po/gd.po xdg-user-dirs-0.15.ubuntu/po/gd.po
---- xdg-user-dirs-0.15/po/gd.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/gd.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/gd.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/gd.po	2014-04-11 09:35:11.494988936 +0200
 @@ -0,0 +1,130 @@
 +# Gaelic; Scottish translation for xdg-user-dirs
 +# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
@@ -3899,8 +3952,8 @@ diff -Nur xdg-user-dirs-0.15/po/gd.po xdg-user-dirs-0.15.ubuntu/po/gd.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -4013,9 +4066,10 @@ diff -Nur xdg-user-dirs-0.15/po/gd.po xdg-user-dirs-0.15.ubuntu/po/gd.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "videothan"
-diff -Nur xdg-user-dirs-0.15/po/gl.po xdg-user-dirs-0.15.ubuntu/po/gl.po
---- xdg-user-dirs-0.15/po/gl.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/gl.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/gl.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/gl.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/gl.po	2014-04-11 09:35:11.494988936 +0200
 @@ -2,22 +2,20 @@
  # Copyright (C) 2008 Red Hat, Inc
  # This file is distributed under the same license as the xdg-user-dirs package.
@@ -4040,8 +4094,8 @@ diff -Nur xdg-user-dirs-0.15/po/gl.po xdg-user-dirs-0.15.ubuntu/po/gl.po
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -4068,9 +4122,10 @@ diff -Nur xdg-user-dirs-0.15/po/gl.po xdg-user-dirs-0.15.ubuntu/po/gl.po
  
  #: translate.c:14
  msgid "Templates"
-diff -Nur xdg-user-dirs-0.15/po/he.po xdg-user-dirs-0.15.ubuntu/po/he.po
---- xdg-user-dirs-0.15/po/he.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/he.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/he.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/he.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/he.po	2014-04-11 09:35:11.494988936 +0200
 @@ -6,14 +6,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs\n"
@@ -4086,8 +4141,8 @@ diff -Nur xdg-user-dirs-0.15/po/he.po xdg-user-dirs-0.15.ubuntu/po/he.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -4167,9 +4222,10 @@ diff -Nur xdg-user-dirs-0.15/po/he.po xdg-user-dirs-0.15.ubuntu/po/he.po
  msgid "videos"
 -msgstr "וידאו"
 +msgstr "סרטונים"
-diff -Nur xdg-user-dirs-0.15/po/hi.po xdg-user-dirs-0.15.ubuntu/po/hi.po
---- xdg-user-dirs-0.15/po/hi.po	2013-06-27 10:22:26.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/hi.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/hi.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/hi.po	2013-06-27 10:22:26.000000000 +0200
++++ xdg-user-dirs-0.15/po/hi.po	2014-04-11 09:35:11.494988936 +0200
 @@ -1,24 +1,21 @@
 -# translation of xdg-user-dirs-0.11-pre1.po to Hindi
 -# Copyright (C) 2010 Red Hat, Inc
@@ -4201,8 +4257,8 @@ diff -Nur xdg-user-dirs-0.15/po/hi.po xdg-user-dirs-0.15.ubuntu/po/hi.po
 -"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 -"\n"
 -"\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -4278,9 +4334,10 @@ diff -Nur xdg-user-dirs-0.15/po/hi.po xdg-user-dirs-0.15.ubuntu/po/hi.po
  
  #: translate.c:15
  msgid "Videos"
-diff -Nur xdg-user-dirs-0.15/po/hr.po xdg-user-dirs-0.15.ubuntu/po/hr.po
---- xdg-user-dirs-0.15/po/hr.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/hr.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/hr.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/hr.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/hr.po	2014-04-11 09:35:11.494988936 +0200
 @@ -1,22 +1,21 @@
 -# Translation of xdg-user-dirs to Croatian.
 -# Copyright © 2012 Red Hat, Inc
@@ -4310,8 +4367,8 @@ diff -Nur xdg-user-dirs-0.15/po/hr.po xdg-user-dirs-0.15.ubuntu/po/hr.po
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 -"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -4340,9 +4397,10 @@ diff -Nur xdg-user-dirs-0.15/po/hr.po xdg-user-dirs-0.15.ubuntu/po/hr.po
  msgid "videos"
 -msgstr "videozapisi"
 +msgstr "snimke"
-diff -Nur xdg-user-dirs-0.15/po/ht.po xdg-user-dirs-0.15.ubuntu/po/ht.po
---- xdg-user-dirs-0.15/po/ht.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/ht.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/ht.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/ht.po	2014-04-11 09:35:11.494988936 +0200
 @@ -0,0 +1,130 @@
 +# Haitian; Haitian Creole translation for xdg-user-dirs
 +# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
@@ -4360,8 +4418,8 @@ diff -Nur xdg-user-dirs-0.15/po/ht.po xdg-user-dirs-0.15.ubuntu/po/ht.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -4474,18 +4532,20 @@ diff -Nur xdg-user-dirs-0.15/po/ht.po xdg-user-dirs-0.15.ubuntu/po/ht.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "videyo"
-diff -Nur xdg-user-dirs-0.15/po/hu.po xdg-user-dirs-0.15.ubuntu/po/hu.po
---- xdg-user-dirs-0.15/po/hu.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/hu.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/hu.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/hu.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/hu.po	2014-04-11 09:35:11.494988936 +0200
 @@ -8,16 +8,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
  "Report-Msgid-Bugs-To: \n"
 -"POT-Creation-Date: 2013-06-27 10:18+0200\n"
 -"PO-Revision-Date: 2009-09-19 11:28+0200\n"
+-"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 +"POT-Creation-Date: 2009-09-18 14:16+0200\n"
 +"PO-Revision-Date: 2009-10-06 03:13+0000\n"
- "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
++"Last-Translator: Gabor Kelemen <kelemeng@openscope.org>\n"
  "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 -"Language: hu\n"
  "MIME-Version: 1.0\n"
@@ -4493,14 +4553,15 @@ diff -Nur xdg-user-dirs-0.15/po/hu.po xdg-user-dirs-0.15.ubuntu/po/hu.po
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Generator: KBabel 1.11.4\n"
 -"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/hy.po xdg-user-dirs-0.15.ubuntu/po/hy.po
---- xdg-user-dirs-0.15/po/hy.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/hy.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/hy.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/hy.po	2014-04-11 09:35:11.494988936 +0200
 @@ -0,0 +1,130 @@
 +# Armenian translation for xdg-user-dirs
 +# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
@@ -4518,8 +4579,8 @@ diff -Nur xdg-user-dirs-0.15/po/hy.po xdg-user-dirs-0.15.ubuntu/po/hy.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -4632,9 +4693,10 @@ diff -Nur xdg-user-dirs-0.15/po/hy.po xdg-user-dirs-0.15.ubuntu/po/hy.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "տեսագրեր"
-diff -Nur xdg-user-dirs-0.15/po/id.po xdg-user-dirs-0.15.ubuntu/po/id.po
---- xdg-user-dirs-0.15/po/id.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/id.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/id.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/id.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/id.po	2014-04-11 09:35:11.494988936 +0200
 @@ -7,14 +7,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
@@ -4650,8 +4712,8 @@ diff -Nur xdg-user-dirs-0.15/po/id.po xdg-user-dirs-0.15.ubuntu/po/id.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -4669,9 +4731,10 @@ diff -Nur xdg-user-dirs-0.15/po/id.po xdg-user-dirs-0.15.ubuntu/po/id.po
  
  #: translate.c:4
  msgid "Documents"
-diff -Nur xdg-user-dirs-0.15/po/is.po xdg-user-dirs-0.15.ubuntu/po/is.po
---- xdg-user-dirs-0.15/po/is.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/is.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/is.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/is.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/is.po	2014-04-11 09:35:11.498988936 +0200
 @@ -1,21 +1,21 @@
 -# translation of xdg-user-dirs-0.14.po to Icelandic
 -# Copyright (C) 2009 Free Software Foundation
@@ -4699,8 +4762,8 @@ diff -Nur xdg-user-dirs-0.15/po/is.po xdg-user-dirs-0.15.ubuntu/po/is.po
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Generator: KBabel 1.11.4\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -4753,9 +4816,10 @@ diff -Nur xdg-user-dirs-0.15/po/is.po xdg-user-dirs-0.15.ubuntu/po/is.po
  msgid "videos"
 -msgstr "vídeó"
 +msgstr "myndbönd"
-diff -Nur xdg-user-dirs-0.15/po/it.po xdg-user-dirs-0.15.ubuntu/po/it.po
---- xdg-user-dirs-0.15/po/it.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/it.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/it.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/it.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/it.po	2014-04-11 09:35:11.498988936 +0200
 @@ -8,14 +8,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
@@ -4771,14 +4835,15 @@ diff -Nur xdg-user-dirs-0.15/po/it.po xdg-user-dirs-0.15.ubuntu/po/it.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/ja.po xdg-user-dirs-0.15.ubuntu/po/ja.po
---- xdg-user-dirs-0.15/po/ja.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ja.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/ja.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ja.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/ja.po	2014-04-11 09:35:11.498988936 +0200
 @@ -1,20 +1,20 @@
  # Japanese translation of xdg-user-dirs.
  # Copyright (C) 2007 Google, Inc.
@@ -4801,8 +4866,8 @@ diff -Nur xdg-user-dirs-0.15/po/ja.po xdg-user-dirs-0.15.ubuntu/po/ja.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -4850,9 +4915,10 @@ diff -Nur xdg-user-dirs-0.15/po/ja.po xdg-user-dirs-0.15.ubuntu/po/ja.po
  
  #: translate.c:11
  msgid "Projects"
-diff -Nur xdg-user-dirs-0.15/po/jv.po xdg-user-dirs-0.15.ubuntu/po/jv.po
---- xdg-user-dirs-0.15/po/jv.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/jv.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/jv.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/jv.po	2014-04-11 09:35:11.498988936 +0200
 @@ -0,0 +1,130 @@
 +# Javanese translation for xdg-user-dirs
 +# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -4870,8 +4936,8 @@ diff -Nur xdg-user-dirs-0.15/po/jv.po xdg-user-dirs-0.15.ubuntu/po/jv.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -4984,9 +5050,10 @@ diff -Nur xdg-user-dirs-0.15/po/jv.po xdg-user-dirs-0.15.ubuntu/po/jv.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "video"
-diff -Nur xdg-user-dirs-0.15/po/ka.po xdg-user-dirs-0.15.ubuntu/po/ka.po
---- xdg-user-dirs-0.15/po/ka.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/ka.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/ka.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/ka.po	2014-04-11 09:35:11.498988936 +0200
 @@ -0,0 +1,133 @@
 +# translation of po_xdg-user-dirs-ka.po to Georgian
 +# Georgian translation for xdg-user-dirs
@@ -5007,8 +5074,8 @@ diff -Nur xdg-user-dirs-0.15/po/ka.po xdg-user-dirs-0.15.ubuntu/po/ka.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -5121,9 +5188,10 @@ diff -Nur xdg-user-dirs-0.15/po/ka.po xdg-user-dirs-0.15.ubuntu/po/ka.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "ვიდეო"
-diff -Nur xdg-user-dirs-0.15/po/kk.po xdg-user-dirs-0.15.ubuntu/po/kk.po
---- xdg-user-dirs-0.15/po/kk.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/kk.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/kk.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/kk.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/kk.po	2014-04-11 09:35:11.498988936 +0200
 @@ -1,31 +1,29 @@
  # Kazakh translation for xdg-user-dirs
 -# Copyright (C) 2010 HZ
@@ -5154,8 +5222,8 @@ diff -Nur xdg-user-dirs-0.15/po/kk.po xdg-user-dirs-0.15.ubuntu/po/kk.po
 -"Plural-Forms: nplurals=1; plural=0\n"
 -"X-Poedit-Language: Kazakh\n"
 -"X-Poedit-Country: KAZAKHSTAN\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -5232,9 +5300,10 @@ diff -Nur xdg-user-dirs-0.15/po/kk.po xdg-user-dirs-0.15.ubuntu/po/kk.po
  msgid "videos"
 -msgstr "видеолар"
 +msgstr "видео"
-diff -Nur xdg-user-dirs-0.15/po/km.po xdg-user-dirs-0.15.ubuntu/po/km.po
---- xdg-user-dirs-0.15/po/km.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/km.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/km.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/km.po	2014-04-11 09:35:11.498988936 +0200
 @@ -0,0 +1,130 @@
 +# Khmer translation for xdg-user-dirs
 +# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
@@ -5251,8 +5320,8 @@ diff -Nur xdg-user-dirs-0.15/po/km.po xdg-user-dirs-0.15.ubuntu/po/km.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +"X-Language: km-KH\n"
 +
 +#: translate.c:2
@@ -5366,9 +5435,10 @@ diff -Nur xdg-user-dirs-0.15/po/km.po xdg-user-dirs-0.15.ubuntu/po/km.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "វីដេអូ"
-diff -Nur xdg-user-dirs-0.15/po/kn.po xdg-user-dirs-0.15.ubuntu/po/kn.po
---- xdg-user-dirs-0.15/po/kn.po	2013-06-27 10:18:29.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/kn.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/kn.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/kn.po	2013-06-27 10:18:29.000000000 +0200
++++ xdg-user-dirs-0.15/po/kn.po	2014-04-11 09:35:11.498988936 +0200
 @@ -1,24 +1,22 @@
  # Swatantra Kannada Localisation Initiative translation of xdg-user-dirs
  # Copyright (C) 2008 THE xdg-user-dirs.HEAD.po'S Swatantra.org
@@ -5395,8 +5465,8 @@ diff -Nur xdg-user-dirs-0.15/po/kn.po xdg-user-dirs-0.15.ubuntu/po/kn.po
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=2; plural=n != 1;\n"
 -"X-Generator: Lokalize 1.5\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -5428,9 +5498,10 @@ diff -Nur xdg-user-dirs-0.15/po/kn.po xdg-user-dirs-0.15.ubuntu/po/kn.po
  
  #  48x48/emblems/emblem-pictures.icon.in.h:1
  #: translate.c:10
-diff -Nur xdg-user-dirs-0.15/po/ko.po xdg-user-dirs-0.15.ubuntu/po/ko.po
---- xdg-user-dirs-0.15/po/ko.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ko.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/ko.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ko.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/ko.po	2014-04-11 09:35:11.498988936 +0200
 @@ -2,20 +2,19 @@
  # Copyright (C) 2007 Google, Inc.
  # This file is distributed under the same license as the xdg-user-dirs package.
@@ -5453,8 +5524,8 @@ diff -Nur xdg-user-dirs-0.15/po/ko.po xdg-user-dirs-0.15.ubuntu/po/ko.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -5472,9 +5543,10 @@ diff -Nur xdg-user-dirs-0.15/po/ko.po xdg-user-dirs-0.15.ubuntu/po/ko.po
  
  #: translate.c:15
  msgid "Videos"
-diff -Nur xdg-user-dirs-0.15/po/ku.po xdg-user-dirs-0.15.ubuntu/po/ku.po
---- xdg-user-dirs-0.15/po/ku.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ku.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/ku.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ku.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/ku.po	2014-04-11 09:35:11.498988936 +0200
 @@ -7,17 +7,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs\n"
@@ -5493,8 +5565,8 @@ diff -Nur xdg-user-dirs-0.15/po/ku.po xdg-user-dirs-0.15.ubuntu/po/ku.po
 -"X-Launchpad-Export-Date: 2007-10-13 10:58+0000\n"
 -"X-Generator: KBabel 1.11.4\n"
 -"Plural-Forms: nplurals=2; plural= n != 1\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -5511,9 +5583,10 @@ diff -Nur xdg-user-dirs-0.15/po/ku.po xdg-user-dirs-0.15.ubuntu/po/ku.po
  msgid "downloads"
  msgstr "daxistin"
  
-diff -Nur xdg-user-dirs-0.15/po/kw.po xdg-user-dirs-0.15.ubuntu/po/kw.po
---- xdg-user-dirs-0.15/po/kw.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/kw.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/kw.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/kw.po	2014-04-11 09:35:11.498988936 +0200
 @@ -0,0 +1,130 @@
 +# Cornish translation for xdg-user-dirs
 +# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
@@ -5531,8 +5604,8 @@ diff -Nur xdg-user-dirs-0.15/po/kw.po xdg-user-dirs-0.15.ubuntu/po/kw.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -5645,9 +5718,10 @@ diff -Nur xdg-user-dirs-0.15/po/kw.po xdg-user-dirs-0.15.ubuntu/po/kw.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "videos"
-diff -Nur xdg-user-dirs-0.15/po/ky.po xdg-user-dirs-0.15.ubuntu/po/ky.po
---- xdg-user-dirs-0.15/po/ky.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ky.po	2013-10-04 11:06:23.588545323 +0200
+Index: xdg-user-dirs-0.15/po/ky.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ky.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/ky.po	2014-04-11 09:35:11.498988936 +0200
 @@ -1,24 +1,21 @@
 -# SOME DESCRIPTIVE TITLE.
 -# Copyright (C) 2013 Red Hat, Inc
@@ -5679,8 +5753,8 @@ diff -Nur xdg-user-dirs-0.15/po/ky.po xdg-user-dirs-0.15.ubuntu/po/ky.po
 -"X-Poedit-Language: Kyrgyz\n"
 -"X-Poedit-Country: KYRGYZSTAN\n"
 -"X-Poedit-SourceCharset: utf-8\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -5722,9 +5796,10 @@ diff -Nur xdg-user-dirs-0.15/po/ky.po xdg-user-dirs-0.15.ubuntu/po/ky.po
  
  #: translate.c:15
  msgid "Videos"
-diff -Nur xdg-user-dirs-0.15/po/LINGUAS xdg-user-dirs-0.15.ubuntu/po/LINGUAS
---- xdg-user-dirs-0.15/po/LINGUAS	2013-06-26 17:38:46.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/LINGUAS	2013-10-04 11:08:14.964549032 +0200
+Index: xdg-user-dirs-0.15/po/LINGUAS
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/LINGUAS	2013-06-26 17:38:46.000000000 +0200
++++ xdg-user-dirs-0.15/po/LINGUAS	2014-04-11 09:26:50.000000000 +0200
 @@ -1,73 +1,113 @@
  # please keep this list sorted alphabetically
  #
@@ -5842,9 +5917,10 @@ diff -Nur xdg-user-dirs-0.15/po/LINGUAS xdg-user-dirs-0.15.ubuntu/po/LINGUAS
  vi
  zh_CN
  zh_HK
-diff -Nur xdg-user-dirs-0.15/po/lt.po xdg-user-dirs-0.15.ubuntu/po/lt.po
---- xdg-user-dirs-0.15/po/lt.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/lt.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/lt.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/lt.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/lt.po	2014-04-11 09:35:11.498988936 +0200
 @@ -1,22 +1,20 @@
  # Lithuanian translation of xdg-user-dirs.
  # This file is distributed under the same license as the xdg-user-dirs package.
@@ -5870,14 +5946,15 @@ diff -Nur xdg-user-dirs-0.15/po/lt.po xdg-user-dirs-0.15.ubuntu/po/lt.po
 -"X-Generator: KBabel 1.11.4\n"
 -"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 -"%100<10 || n%100>=20) ? 1 : 2);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/lv.po xdg-user-dirs-0.15.ubuntu/po/lv.po
---- xdg-user-dirs-0.15/po/lv.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/lv.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/lv.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/lv.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/lv.po	2014-04-11 09:35:11.498988936 +0200
 @@ -2,22 +2,19 @@
  # This file is distributed under the same license as the xdg-user-dirs package.
  #
@@ -5902,14 +5979,15 @@ diff -Nur xdg-user-dirs-0.15/po/lv.po xdg-user-dirs-0.15.ubuntu/po/lv.po
 -"X-Generator: Lokalize 1.0\n"
 -"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 -"2);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/mi.po xdg-user-dirs-0.15.ubuntu/po/mi.po
---- xdg-user-dirs-0.15/po/mi.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/mi.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/mi.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/mi.po	2014-04-11 09:35:11.498988936 +0200
 @@ -0,0 +1,130 @@
 +# Maori translation for xdg-user-dirs
 +# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
@@ -5927,8 +6005,8 @@ diff -Nur xdg-user-dirs-0.15/po/mi.po xdg-user-dirs-0.15.ubuntu/po/mi.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -6041,9 +6119,10 @@ diff -Nur xdg-user-dirs-0.15/po/mi.po xdg-user-dirs-0.15.ubuntu/po/mi.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "rīpene whakaata"
-diff -Nur xdg-user-dirs-0.15/po/mk.po xdg-user-dirs-0.15.ubuntu/po/mk.po
---- xdg-user-dirs-0.15/po/mk.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/mk.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/mk.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/mk.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/mk.po	2014-04-11 09:35:11.498988936 +0200
 @@ -8,15 +8,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs\n"
@@ -6059,8 +6138,8 @@ diff -Nur xdg-user-dirs-0.15/po/mk.po xdg-user-dirs-0.15.ubuntu/po/mk.po
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Generator: KBabel 1.11.4\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -6081,9 +6160,10 @@ diff -Nur xdg-user-dirs-0.15/po/mk.po xdg-user-dirs-0.15.ubuntu/po/mk.po
  
  #: translate.c:7
  msgid "Movies"
-diff -Nur xdg-user-dirs-0.15/po/ml.po xdg-user-dirs-0.15.ubuntu/po/ml.po
---- xdg-user-dirs-0.15/po/ml.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ml.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/ml.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ml.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/ml.po	2014-04-11 09:35:11.498988936 +0200
 @@ -1,70 +1,69 @@
 -# Malayalam translation for xdg-user-dirs.
 -# Copyright (C) 2012 xdg-user-dirs's COPYRIGHT HOLDER
@@ -6113,8 +6193,8 @@ diff -Nur xdg-user-dirs-0.15/po/ml.po xdg-user-dirs-0.15.ubuntu/po/ml.po
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Generator: Lokalize 1.0\n"
 -"Plural-Forms: nplurals=2; plural=n != 1;\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -6254,9 +6334,10 @@ diff -Nur xdg-user-dirs-0.15/po/ml.po xdg-user-dirs-0.15.ubuntu/po/ml.po
  msgid "videos"
 -msgstr "വീഡിയോകള്‍"
 +msgstr "ചലചിത്രങ്ങള്‍"
-diff -Nur xdg-user-dirs-0.15/po/mr.po xdg-user-dirs-0.15.ubuntu/po/mr.po
---- xdg-user-dirs-0.15/po/mr.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/mr.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/mr.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/mr.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/mr.po	2014-04-11 09:35:11.498988936 +0200
 @@ -1,131 +1,130 @@
 -# translation of xdg-user-dirs-0.11-pre1.po to Marathi
 -# Copyright (C) 2010 Red Hat, Inc
@@ -6287,8 +6368,8 @@ diff -Nur xdg-user-dirs-0.15/po/mr.po xdg-user-dirs-0.15.ubuntu/po/mr.po
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Generator: KBabel 1.11.4\n"
 -"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -6429,9 +6510,10 @@ diff -Nur xdg-user-dirs-0.15/po/mr.po xdg-user-dirs-0.15.ubuntu/po/mr.po
  msgid "videos"
 -msgstr "व्हिडिओज्"
 +msgstr ""
-diff -Nur xdg-user-dirs-0.15/po/ms.po xdg-user-dirs-0.15.ubuntu/po/ms.po
---- xdg-user-dirs-0.15/po/ms.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/ms.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/ms.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/ms.po	2014-04-11 09:35:11.498988936 +0200
 @@ -0,0 +1,130 @@
 +# Malay translation for xdg-user-dirs
 +# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -6449,8 +6531,8 @@ diff -Nur xdg-user-dirs-0.15/po/ms.po xdg-user-dirs-0.15.ubuntu/po/ms.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -6563,9 +6645,10 @@ diff -Nur xdg-user-dirs-0.15/po/ms.po xdg-user-dirs-0.15.ubuntu/po/ms.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "video"
-diff -Nur xdg-user-dirs-0.15/po/my.po xdg-user-dirs-0.15.ubuntu/po/my.po
---- xdg-user-dirs-0.15/po/my.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/my.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/my.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/my.po	2014-04-11 09:35:11.498988936 +0200
 @@ -0,0 +1,130 @@
 +# Burmese translation for xdg-user-dirs
 +# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
@@ -6583,8 +6666,8 @@ diff -Nur xdg-user-dirs-0.15/po/my.po xdg-user-dirs-0.15.ubuntu/po/my.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -6697,9 +6780,10 @@ diff -Nur xdg-user-dirs-0.15/po/my.po xdg-user-dirs-0.15.ubuntu/po/my.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "ဗွီဒီယို"
-diff -Nur xdg-user-dirs-0.15/po/nb.po xdg-user-dirs-0.15.ubuntu/po/nb.po
---- xdg-user-dirs-0.15/po/nb.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/nb.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/nb.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/nb.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/nb.po	2014-04-11 09:35:11.498988936 +0200
 @@ -3,23 +3,19 @@
  # This file is distributed under the same license as the xdg-user-dirs package.
  #
@@ -6726,14 +6810,15 @@ diff -Nur xdg-user-dirs-0.15/po/nb.po xdg-user-dirs-0.15.ubuntu/po/nb.po
 -"X-Generator: KBabel 1.11.4\n"
 -"X-Poedit-Language: Norwegian Bokmal\n"
 -"X-Poedit-Country: NORWAY\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/ne.po xdg-user-dirs-0.15.ubuntu/po/ne.po
---- xdg-user-dirs-0.15/po/ne.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/ne.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/ne.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/ne.po	2014-04-11 09:35:11.498988936 +0200
 @@ -0,0 +1,130 @@
 +# Nepali translation for xdg-user-dirs
 +# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
@@ -6751,8 +6836,8 @@ diff -Nur xdg-user-dirs-0.15/po/ne.po xdg-user-dirs-0.15.ubuntu/po/ne.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -6865,9 +6950,10 @@ diff -Nur xdg-user-dirs-0.15/po/ne.po xdg-user-dirs-0.15.ubuntu/po/ne.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "चलदृष्यहरू"
-diff -Nur xdg-user-dirs-0.15/po/nl.po xdg-user-dirs-0.15.ubuntu/po/nl.po
---- xdg-user-dirs-0.15/po/nl.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/nl.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/nl.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/nl.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/nl.po	2014-04-11 09:35:11.498988936 +0200
 @@ -7,14 +7,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs-0.11-pre1\n"
@@ -6882,14 +6968,15 @@ diff -Nur xdg-user-dirs-0.15/po/nl.po xdg-user-dirs-0.15.ubuntu/po/nl.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/nn.po xdg-user-dirs-0.15.ubuntu/po/nn.po
---- xdg-user-dirs-0.15/po/nn.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/nn.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/nn.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/nn.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/nn.po	2014-04-11 09:35:11.502988935 +0200
 @@ -7,16 +7,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs\n"
@@ -6907,8 +6994,8 @@ diff -Nur xdg-user-dirs-0.15/po/nn.po xdg-user-dirs-0.15.ubuntu/po/nn.po
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 -"X-Generator: KBabel 1.11.4\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -6940,9 +7027,10 @@ diff -Nur xdg-user-dirs-0.15/po/nn.po xdg-user-dirs-0.15.ubuntu/po/nn.po
  msgid "videos"
 -msgstr "videoklipp"
 +msgstr "videoar"
-diff -Nur xdg-user-dirs-0.15/po/oc.po xdg-user-dirs-0.15.ubuntu/po/oc.po
---- xdg-user-dirs-0.15/po/oc.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/oc.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/oc.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/oc.po	2014-04-11 09:35:11.502988935 +0200
 @@ -0,0 +1,130 @@
 +# Occitan (post 1500) translation for xdg-user-dirs
 +# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
@@ -6960,8 +7048,8 @@ diff -Nur xdg-user-dirs-0.15/po/oc.po xdg-user-dirs-0.15.ubuntu/po/oc.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -7074,9 +7162,10 @@ diff -Nur xdg-user-dirs-0.15/po/oc.po xdg-user-dirs-0.15.ubuntu/po/oc.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "vidèos"
-diff -Nur xdg-user-dirs-0.15/po/om.po xdg-user-dirs-0.15.ubuntu/po/om.po
---- xdg-user-dirs-0.15/po/om.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/om.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/om.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/om.po	2014-04-11 09:35:11.502988935 +0200
 @@ -0,0 +1,130 @@
 +# Oromo translation for xdg-user-dirs
 +# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -7094,8 +7183,8 @@ diff -Nur xdg-user-dirs-0.15/po/om.po xdg-user-dirs-0.15.ubuntu/po/om.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -7208,9 +7297,10 @@ diff -Nur xdg-user-dirs-0.15/po/om.po xdg-user-dirs-0.15.ubuntu/po/om.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "viidiyoowwan"
-diff -Nur xdg-user-dirs-0.15/po/pa.po xdg-user-dirs-0.15.ubuntu/po/pa.po
---- xdg-user-dirs-0.15/po/pa.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/pa.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/pa.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/pa.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/pa.po	2014-04-11 09:35:11.502988935 +0200
 @@ -7,28 +7,27 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs\n"
@@ -7227,8 +7317,8 @@ diff -Nur xdg-user-dirs-0.15/po/pa.po xdg-user-dirs-0.15.ubuntu/po/pa.po
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Generator: KBabel 1.11.4\n"
 -"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -7358,9 +7448,10 @@ diff -Nur xdg-user-dirs-0.15/po/pa.po xdg-user-dirs-0.15.ubuntu/po/pa.po
  
  #: translate.c:15
  msgid "videos"
-diff -Nur xdg-user-dirs-0.15/po/pl.po xdg-user-dirs-0.15.ubuntu/po/pl.po
---- xdg-user-dirs-0.15/po/pl.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/pl.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/pl.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/pl.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/pl.po	2014-04-11 09:35:11.502988935 +0200
 @@ -7,16 +7,17 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
@@ -7377,16 +7468,17 @@ diff -Nur xdg-user-dirs-0.15/po/pl.po xdg-user-dirs-0.15.ubuntu/po/pl.po
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Poedit-Language: Polish\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  "X-Poedit-Country: Poland\n"
 +"X-Poedit-Language: Polish\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/ps.po xdg-user-dirs-0.15.ubuntu/po/ps.po
---- xdg-user-dirs-0.15/po/ps.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ps.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/ps.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ps.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/ps.po	2014-04-11 09:35:11.502988935 +0200
 @@ -6,16 +6,17 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs-0.10\n"
@@ -7402,8 +7494,8 @@ diff -Nur xdg-user-dirs-0.15/po/ps.po xdg-user-dirs-0.15.ubuntu/po/ps.po
  "Content-Type: text/plain; charset=utf-8\n"
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Poedit-Language: Pashto, Pushto\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  "X-Poedit-Country: AFGHANISTAN\n"
 +"X-Poedit-Language: Pashto, Pushto\n"
  
@@ -7426,9 +7518,10 @@ diff -Nur xdg-user-dirs-0.15/po/ps.po xdg-user-dirs-0.15.ubuntu/po/ps.po
  
  #: translate.c:7
  msgid "Movies"
-diff -Nur xdg-user-dirs-0.15/po/pt_BR.po xdg-user-dirs-0.15.ubuntu/po/pt_BR.po
---- xdg-user-dirs-0.15/po/pt_BR.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/pt_BR.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/pt_BR.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/pt_BR.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/pt_BR.po	2014-04-11 09:35:11.502988935 +0200
 @@ -2,20 +2,21 @@
  # This file is distributed under the same license as the xdg-user-dirs package.
  # Based on the translation by Duarte Loreto <happyguy_pt@hotmail.com>.
@@ -7452,8 +7545,8 @@ diff -Nur xdg-user-dirs-0.15/po/pt_BR.po xdg-user-dirs-0.15.ubuntu/po/pt_BR.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -7466,9 +7559,10 @@ diff -Nur xdg-user-dirs-0.15/po/pt_BR.po xdg-user-dirs-0.15.ubuntu/po/pt_BR.po
  
  #: translate.c:3
  msgid "desktop"
-diff -Nur xdg-user-dirs-0.15/po/pt.po xdg-user-dirs-0.15.ubuntu/po/pt.po
---- xdg-user-dirs-0.15/po/pt.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/pt.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/pt.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/pt.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/pt.po	2014-04-11 09:35:11.502988935 +0200
 @@ -4,18 +4,17 @@
  #
  msgid ""
@@ -7489,8 +7583,8 @@ diff -Nur xdg-user-dirs-0.15/po/pt.po xdg-user-dirs-0.15.ubuntu/po/pt.po
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Poedit-Language: Portuguese\n"
 -"X-Poedit-Country: PORTUGAL\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -7517,9 +7611,10 @@ diff -Nur xdg-user-dirs-0.15/po/pt.po xdg-user-dirs-0.15.ubuntu/po/pt.po
  
  #: translate.c:6
  msgid "Downloads"
-diff -Nur xdg-user-dirs-0.15/po/ro.po xdg-user-dirs-0.15.ubuntu/po/ro.po
---- xdg-user-dirs-0.15/po/ro.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ro.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/ro.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ro.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/ro.po	2014-04-11 09:35:11.502988935 +0200
 @@ -7,14 +7,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
@@ -7534,14 +7629,15 @@ diff -Nur xdg-user-dirs-0.15/po/ro.po xdg-user-dirs-0.15.ubuntu/po/ro.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/ru.po xdg-user-dirs-0.15.ubuntu/po/ru.po
---- xdg-user-dirs-0.15/po/ru.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ru.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/ru.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ru.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/ru.po	2014-04-11 09:35:11.502988935 +0200
 @@ -1,24 +1,20 @@
 -# translation of xdg-user-dirs-0.11-pre1.ru.po to Russian
  # Russian translation for xdg-user-dirs.
@@ -7568,8 +7664,8 @@ diff -Nur xdg-user-dirs-0.15/po/ru.po xdg-user-dirs-0.15.ubuntu/po/ru.po
 -"X-Generator: Lokalize 1.0\n"
 -"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 -"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -7587,9 +7683,10 @@ diff -Nur xdg-user-dirs-0.15/po/ru.po xdg-user-dirs-0.15.ubuntu/po/ru.po
  
  #: translate.c:6
  msgid "Downloads"
-diff -Nur xdg-user-dirs-0.15/po/sd.po xdg-user-dirs-0.15.ubuntu/po/sd.po
---- xdg-user-dirs-0.15/po/sd.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/sd.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/sd.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/sd.po	2014-04-11 09:35:11.502988935 +0200
 @@ -0,0 +1,130 @@
 +# Sindhi translation for xdg-user-dirs
 +# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
@@ -7607,8 +7704,8 @@ diff -Nur xdg-user-dirs-0.15/po/sd.po xdg-user-dirs-0.15.ubuntu/po/sd.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -7721,9 +7818,10 @@ diff -Nur xdg-user-dirs-0.15/po/sd.po xdg-user-dirs-0.15.ubuntu/po/sd.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "وڊيو"
-diff -Nur xdg-user-dirs-0.15/po/se.po xdg-user-dirs-0.15.ubuntu/po/se.po
---- xdg-user-dirs-0.15/po/se.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/se.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/se.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/se.po	2014-04-11 09:35:11.502988935 +0200
 @@ -0,0 +1,130 @@
 +# Northern Sami translation for xdg-user-dirs
 +# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
@@ -7741,8 +7839,8 @@ diff -Nur xdg-user-dirs-0.15/po/se.po xdg-user-dirs-0.15.ubuntu/po/se.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -7855,9 +7953,10 @@ diff -Nur xdg-user-dirs-0.15/po/se.po xdg-user-dirs-0.15.ubuntu/po/se.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr ""
-diff -Nur xdg-user-dirs-0.15/po/shn.po xdg-user-dirs-0.15.ubuntu/po/shn.po
---- xdg-user-dirs-0.15/po/shn.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/shn.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/shn.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/shn.po	2014-04-11 09:35:11.502988935 +0200
 @@ -0,0 +1,130 @@
 +# Shan translation for xdg-user-dirs
 +# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
@@ -7875,8 +7974,8 @@ diff -Nur xdg-user-dirs-0.15/po/shn.po xdg-user-dirs-0.15.ubuntu/po/shn.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -7989,9 +8088,10 @@ diff -Nur xdg-user-dirs-0.15/po/shn.po xdg-user-dirs-0.15.ubuntu/po/shn.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "ငဝ်းတူင့်"
-diff -Nur xdg-user-dirs-0.15/po/si.po xdg-user-dirs-0.15.ubuntu/po/si.po
---- xdg-user-dirs-0.15/po/si.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/si.po	2013-10-04 11:06:23.592545323 +0200
+Index: xdg-user-dirs-0.15/po/si.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/si.po	2014-04-11 09:35:11.502988935 +0200
 @@ -0,0 +1,130 @@
 +# Sinhalese translation for xdg-user-dirs
 +# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
@@ -8009,8 +8109,8 @@ diff -Nur xdg-user-dirs-0.15/po/si.po xdg-user-dirs-0.15.ubuntu/po/si.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -8123,9 +8223,10 @@ diff -Nur xdg-user-dirs-0.15/po/si.po xdg-user-dirs-0.15.ubuntu/po/si.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "වීඩියෝ"
-diff -Nur xdg-user-dirs-0.15/po/sk.po xdg-user-dirs-0.15.ubuntu/po/sk.po
---- xdg-user-dirs-0.15/po/sk.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/sk.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/sk.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/sk.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/sk.po	2014-04-11 09:35:11.502988935 +0200
 @@ -1,21 +1,22 @@
  # Slovak translation of xdg-user-dirs.
 -# Copyright (C) 2007, 2011 Red Hat, Inc 
@@ -8152,14 +8253,15 @@ diff -Nur xdg-user-dirs-0.15/po/sk.po xdg-user-dirs-0.15.ubuntu/po/sk.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/sl.po xdg-user-dirs-0.15.ubuntu/po/sl.po
---- xdg-user-dirs-0.15/po/sl.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/sl.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/sl.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/sl.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/sl.po	2014-04-11 09:35:11.502988935 +0200
 @@ -1,23 +1,20 @@
 -# Slovenian translation of xdg-user-dirs.
 -# Copyright (C) 2009 - 2012 Free Software Foundation, Inc.
@@ -8189,8 +8291,8 @@ diff -Nur xdg-user-dirs-0.15/po/sl.po xdg-user-dirs-0.15.ubuntu/po/sl.po
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 -"%100==4 ? 3 : 0);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -8208,9 +8310,10 @@ diff -Nur xdg-user-dirs-0.15/po/sl.po xdg-user-dirs-0.15.ubuntu/po/sl.po
  
  #: translate.c:6
  msgid "Downloads"
-diff -Nur xdg-user-dirs-0.15/po/sq.po xdg-user-dirs-0.15.ubuntu/po/sq.po
---- xdg-user-dirs-0.15/po/sq.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/sq.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/sq.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/sq.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/sq.po	2014-04-11 09:35:11.502988935 +0200
 @@ -8,15 +8,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs HEAD\n"
@@ -8227,8 +8330,8 @@ diff -Nur xdg-user-dirs-0.15/po/sq.po xdg-user-dirs-0.15.ubuntu/po/sq.po
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -8262,9 +8365,10 @@ diff -Nur xdg-user-dirs-0.15/po/sq.po xdg-user-dirs-0.15.ubuntu/po/sq.po
  
  #: translate.c:13
  msgid "share"
-diff -Nur xdg-user-dirs-0.15/po/sr@Latn.po xdg-user-dirs-0.15.ubuntu/po/sr@Latn.po
---- xdg-user-dirs-0.15/po/sr@Latn.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/sr@Latn.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/sr@Latn.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/sr@Latn.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/sr@Latn.po	2014-04-11 09:35:11.502988935 +0200
 @@ -9,16 +9,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs\n"
@@ -8282,8 +8386,8 @@ diff -Nur xdg-user-dirs-0.15/po/sr@Latn.po xdg-user-dirs-0.15.ubuntu/po/sr@Latn.
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=3;    plural=n%10==1 && n%100!=11 ? 0 :    n%10>=2 && "
 -"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -8304,9 +8408,10 @@ diff -Nur xdg-user-dirs-0.15/po/sr@Latn.po xdg-user-dirs-0.15.ubuntu/po/sr@Latn.
  
  #: translate.c:7
  msgid "Movies"
-diff -Nur xdg-user-dirs-0.15/po/sr.po xdg-user-dirs-0.15.ubuntu/po/sr.po
---- xdg-user-dirs-0.15/po/sr.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/sr.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/sr.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/sr.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/sr.po	2014-04-11 09:35:11.502988935 +0200
 @@ -1,21 +1,21 @@
  # Serbian translation of xdg-user-dirs.
  # This file is distributed under the same license as the xdg-user-dirs package.
@@ -8331,8 +8436,8 @@ diff -Nur xdg-user-dirs-0.15/po/sr.po xdg-user-dirs-0.15.ubuntu/po/sr.po
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=3;    plural=n%10==1 && n%100!=11 ? 0 :    n%10>=2 && "
 -"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +"Language: Serbian (sr)\n"
  
  #: translate.c:2
@@ -8377,9 +8482,10 @@ diff -Nur xdg-user-dirs-0.15/po/sr.po xdg-user-dirs-0.15.ubuntu/po/sr.po
  
  #: translate.c:7
  msgid "Movies"
-diff -Nur xdg-user-dirs-0.15/po/sv.po xdg-user-dirs-0.15.ubuntu/po/sv.po
---- xdg-user-dirs-0.15/po/sv.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/sv.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/sv.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/sv.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/sv.po	2014-04-11 09:35:11.502988935 +0200
 @@ -8,14 +8,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
@@ -8395,14 +8501,15 @@ diff -Nur xdg-user-dirs-0.15/po/sv.po xdg-user-dirs-0.15.ubuntu/po/sv.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/sw.po xdg-user-dirs-0.15.ubuntu/po/sw.po
---- xdg-user-dirs-0.15/po/sw.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/sw.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/sw.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/sw.po	2014-04-11 09:35:11.502988935 +0200
 @@ -0,0 +1,130 @@
 +# Swahili translation for xdg-user-dirs
 +# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
@@ -8420,8 +8527,8 @@ diff -Nur xdg-user-dirs-0.15/po/sw.po xdg-user-dirs-0.15.ubuntu/po/sw.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -8534,9 +8641,10 @@ diff -Nur xdg-user-dirs-0.15/po/sw.po xdg-user-dirs-0.15.ubuntu/po/sw.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "video"
-diff -Nur xdg-user-dirs-0.15/po/ta_LK.po xdg-user-dirs-0.15.ubuntu/po/ta_LK.po
---- xdg-user-dirs-0.15/po/ta_LK.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/ta_LK.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/ta_LK.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/ta_LK.po	2014-04-11 09:35:11.502988935 +0200
 @@ -0,0 +1,130 @@
 +# Tamil (Sri-Lanka) translation for xdg-user-dirs
 +# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
@@ -8554,8 +8662,8 @@ diff -Nur xdg-user-dirs-0.15/po/ta_LK.po xdg-user-dirs-0.15.ubuntu/po/ta_LK.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -8668,9 +8776,10 @@ diff -Nur xdg-user-dirs-0.15/po/ta_LK.po xdg-user-dirs-0.15.ubuntu/po/ta_LK.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "ஓளிக்கோப்புகள்"
-diff -Nur xdg-user-dirs-0.15/po/ta.po xdg-user-dirs-0.15.ubuntu/po/ta.po
---- xdg-user-dirs-0.15/po/ta.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/ta.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/ta.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/ta.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/ta.po	2014-04-11 09:35:11.502988935 +0200
 @@ -1,29 +1,29 @@
 -# translation of xdg-user-dirs (ta.po) to Tamil
 +# Tamil translation for xdg-user-dirs
@@ -8699,8 +8808,8 @@ diff -Nur xdg-user-dirs-0.15/po/ta.po xdg-user-dirs-0.15.ubuntu/po/ta.po
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Generator: Lokalize 1.0\n"
 -"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -8787,9 +8896,10 @@ diff -Nur xdg-user-dirs-0.15/po/ta.po xdg-user-dirs-0.15.ubuntu/po/ta.po
  msgid "videos"
 -msgstr "வீடியோக்கள்"
 +msgstr "நிகழ்படங்கள்"
-diff -Nur xdg-user-dirs-0.15/po/te.po xdg-user-dirs-0.15.ubuntu/po/te.po
---- xdg-user-dirs-0.15/po/te.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/te.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/te.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/te.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/te.po	2014-04-11 09:35:11.502988935 +0200
 @@ -1,73 +1,69 @@
 -# Telugu translation for xdg-user-dirs.
 -# Copyright (C) 2010 xdg-user-dirs's COPYRIGHT HOLDER
@@ -8822,8 +8932,8 @@ diff -Nur xdg-user-dirs-0.15/po/te.po xdg-user-dirs-0.15.ubuntu/po/te.po
 -"\n"
 -"\n"
 -"\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -8935,9 +9045,10 @@ diff -Nur xdg-user-dirs-0.15/po/te.po xdg-user-dirs-0.15.ubuntu/po/te.po
  
  #: translate.c:15
  msgid "Videos"
-diff -Nur xdg-user-dirs-0.15/po/th.po xdg-user-dirs-0.15.ubuntu/po/th.po
---- xdg-user-dirs-0.15/po/th.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/th.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/th.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/th.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/th.po	2014-04-11 09:35:11.502988935 +0200
 @@ -1,23 +1,21 @@
 -# Thai translation for xdg-user-dirs.
 +# Thai translation of xdg-user-dirs.
@@ -8964,8 +9075,8 @@ diff -Nur xdg-user-dirs-0.15/po/th.po xdg-user-dirs-0.15.ubuntu/po/th.po
  "Content-Transfer-Encoding: 8bit\n"
 -"X-Poedit-Language: Thai\n"
 -"X-Poedit-Country: THAILAND\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -8983,9 +9094,10 @@ diff -Nur xdg-user-dirs-0.15/po/th.po xdg-user-dirs-0.15.ubuntu/po/th.po
  
  #: translate.c:12
  msgid "Public"
-diff -Nur xdg-user-dirs-0.15/po/tr.po xdg-user-dirs-0.15.ubuntu/po/tr.po
---- xdg-user-dirs-0.15/po/tr.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/tr.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/tr.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/tr.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/tr.po	2014-04-11 09:35:11.502988935 +0200
 @@ -7,14 +7,15 @@
  msgstr ""
  "Project-Id-Version: xdg-user-dirs\n"
@@ -9001,8 +9113,8 @@ diff -Nur xdg-user-dirs-0.15/po/tr.po xdg-user-dirs-0.15.ubuntu/po/tr.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=utf-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -9019,9 +9131,10 @@ diff -Nur xdg-user-dirs-0.15/po/tr.po xdg-user-dirs-0.15.ubuntu/po/tr.po
  msgid "downloads"
  msgstr "indirilenler"
  
-diff -Nur xdg-user-dirs-0.15/po/ug.po xdg-user-dirs-0.15.ubuntu/po/ug.po
---- xdg-user-dirs-0.15/po/ug.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/ug.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/ug.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/ug.po	2014-04-11 09:35:11.502988935 +0200
 @@ -0,0 +1,130 @@
 +# Uighur translation for xdg-user-dirs
 +# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
@@ -9039,8 +9152,8 @@ diff -Nur xdg-user-dirs-0.15/po/ug.po xdg-user-dirs-0.15.ubuntu/po/ug.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -9153,9 +9266,10 @@ diff -Nur xdg-user-dirs-0.15/po/ug.po xdg-user-dirs-0.15.ubuntu/po/ug.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr "سىنلار"
-diff -Nur xdg-user-dirs-0.15/po/uk.po xdg-user-dirs-0.15.ubuntu/po/uk.po
---- xdg-user-dirs-0.15/po/uk.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/uk.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/uk.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/uk.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/uk.po	2014-04-11 09:35:11.502988935 +0200
 @@ -1,25 +1,21 @@
  # Ukrainian translation ofr xdg-user-dirs.
  # Copyright (C) 2007 Free Desktop Foundation, Inc
@@ -9184,8 +9298,8 @@ diff -Nur xdg-user-dirs-0.15/po/uk.po xdg-user-dirs-0.15.ubuntu/po/uk.po
 -"X-Generator: Lokalize 1.5\n"
 -"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 -"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -9241,9 +9355,10 @@ diff -Nur xdg-user-dirs-0.15/po/uk.po xdg-user-dirs-0.15.ubuntu/po/uk.po
  
  #: translate.c:14
  msgid "Templates"
-diff -Nur xdg-user-dirs-0.15/po/ur.po xdg-user-dirs-0.15.ubuntu/po/ur.po
---- xdg-user-dirs-0.15/po/ur.po	1970-01-01 01:00:00.000000000 +0100
-+++ xdg-user-dirs-0.15.ubuntu/po/ur.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/ur.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/ur.po	2014-04-11 09:35:11.502988935 +0200
 @@ -0,0 +1,130 @@
 +# Urdu translation for xdg-user-dirs
 +# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
@@ -9261,8 +9376,8 @@ diff -Nur xdg-user-dirs-0.15/po/ur.po xdg-user-dirs-0.15.ubuntu/po/ur.po
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
 +
 +#: translate.c:2
 +msgid "Applications"
@@ -9375,9 +9490,10 @@ diff -Nur xdg-user-dirs-0.15/po/ur.po xdg-user-dirs-0.15.ubuntu/po/ur.po
 +#: translate.c:15
 +msgid "videos"
 +msgstr ""
-diff -Nur xdg-user-dirs-0.15/po/vi.po xdg-user-dirs-0.15.ubuntu/po/vi.po
---- xdg-user-dirs-0.15/po/vi.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/vi.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/vi.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/vi.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/vi.po	2014-04-11 09:35:11.502988935 +0200
 @@ -1,22 +1,21 @@
  # Vietnamese translation for XDG User Dirs.
 -# Copyright © 2010 Free Software Foundation, Inc.
@@ -9403,14 +9519,15 @@ diff -Nur xdg-user-dirs-0.15/po/vi.po xdg-user-dirs-0.15.ubuntu/po/vi.po
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=1; plural=0;\n"
 -"X-Generator: LocFactoryEditor 1.8\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
-diff -Nur xdg-user-dirs-0.15/po/zh_CN.po xdg-user-dirs-0.15.ubuntu/po/zh_CN.po
---- xdg-user-dirs-0.15/po/zh_CN.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/zh_CN.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/zh_CN.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/zh_CN.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/zh_CN.po	2014-04-11 09:35:11.502988935 +0200
 @@ -1,21 +1,23 @@
  # Simplified Chinese translation for xdg-user-dirs.
 -# Copyright (C) 2009, 2010 Free Software Foundation, Inc.
@@ -9438,8 +9555,8 @@ diff -Nur xdg-user-dirs-0.15/po/zh_CN.po xdg-user-dirs-0.15.ubuntu/po/zh_CN.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -9457,9 +9574,10 @@ diff -Nur xdg-user-dirs-0.15/po/zh_CN.po xdg-user-dirs-0.15.ubuntu/po/zh_CN.po
  
  #: translate.c:13
  msgid "Share"
-diff -Nur xdg-user-dirs-0.15/po/zh_HK.po xdg-user-dirs-0.15.ubuntu/po/zh_HK.po
---- xdg-user-dirs-0.15/po/zh_HK.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/zh_HK.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/zh_HK.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/zh_HK.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/zh_HK.po	2014-04-11 09:35:11.502988935 +0200
 @@ -4,16 +4,17 @@
  #
  msgid ""
@@ -9478,8 +9596,8 @@ diff -Nur xdg-user-dirs-0.15/po/zh_HK.po xdg-user-dirs-0.15.ubuntu/po/zh_HK.po
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -9510,9 +9628,10 @@ diff -Nur xdg-user-dirs-0.15/po/zh_HK.po xdg-user-dirs-0.15.ubuntu/po/zh_HK.po
  
  #: translate.c:14
  msgid "Templates"
-diff -Nur xdg-user-dirs-0.15/po/zh_TW.po xdg-user-dirs-0.15.ubuntu/po/zh_TW.po
---- xdg-user-dirs-0.15/po/zh_TW.po	2013-06-27 10:22:27.000000000 +0200
-+++ xdg-user-dirs-0.15.ubuntu/po/zh_TW.po	2013-10-04 11:06:23.596545324 +0200
+Index: xdg-user-dirs-0.15/po/zh_TW.po
+===================================================================
+--- xdg-user-dirs-0.15.orig/po/zh_TW.po	2013-06-27 10:22:27.000000000 +0200
++++ xdg-user-dirs-0.15/po/zh_TW.po	2014-04-11 09:35:11.502988935 +0200
 @@ -1,22 +1,20 @@
 -# Traditional Chinese Messages for the xdg-user-dirs.
 -# Copyright (C) 2010 Free Software Foundation, Inc.
@@ -9539,8 +9658,8 @@ diff -Nur xdg-user-dirs-0.15/po/zh_TW.po xdg-user-dirs-0.15.ubuntu/po/zh_TW.po
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
 -"Plural-Forms: nplurals=1; plural=0;\n"
-+"X-Launchpad-Export-Date: 2013-10-04 08:37+0000\n"
-+"X-Generator: Launchpad (build 16791)\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
  
  #: translate.c:2
  msgid "Applications"
@@ -9558,3 +9677,139 @@ diff -Nur xdg-user-dirs-0.15/po/zh_TW.po xdg-user-dirs-0.15.ubuntu/po/zh_TW.po
  
  #: translate.c:14
  msgid "Templates"
+Index: xdg-user-dirs-0.15/po/tg.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ xdg-user-dirs-0.15/po/tg.po	2014-04-11 09:35:11.502988935 +0200
+@@ -0,0 +1,131 @@
++# Tajik translation for xdg-user-dirs
++# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
++# This file is distributed under the same license as the xdg-user-dirs package.
++# Victor Ibragimov <victor.ibragimov@gmail.com>, 2014.
++#
++msgid ""
++msgstr ""
++"Project-Id-Version: xdg-user-dirs\n"
++"Report-Msgid-Bugs-To: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
++"POT-Creation-Date: 2009-09-18 14:16+0200\n"
++"PO-Revision-Date: 2014-02-08 06:15+0000\n"
++"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
++"Language-Team: Tajik <tg@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Launchpad-Export-Date: 2014-04-11 07:24+0000\n"
++"X-Generator: Launchpad (build 16976)\n"
++"Language: tg\n"
++
++#: translate.c:2
++msgid "Applications"
++msgstr "Барномаҳо"
++
++#: translate.c:2
++msgid "applications"
++msgstr "барномаҳо"
++
++#: translate.c:3
++msgid "Desktop"
++msgstr "Мизи корӣ"
++
++#: translate.c:3
++msgid "desktop"
++msgstr "мизи корӣ"
++
++#: translate.c:4
++msgid "Documents"
++msgstr "Ҳуҷҷатҳо"
++
++#: translate.c:4
++msgid "documents"
++msgstr "ҳуҷҷатҳо"
++
++#: translate.c:5
++msgid "Download"
++msgstr "Боргирӣ"
++
++#: translate.c:5
++msgid "download"
++msgstr "боргирӣ"
++
++#: translate.c:6
++msgid "Downloads"
++msgstr "Боргириҳо"
++
++#: translate.c:6
++msgid "downloads"
++msgstr "боргириҳо"
++
++#: translate.c:7
++msgid "Movies"
++msgstr "Филмҳо"
++
++#: translate.c:7
++msgid "movies"
++msgstr "филмҳо"
++
++#: translate.c:8
++msgid "Music"
++msgstr "Мусиқӣ"
++
++#: translate.c:8
++msgid "music"
++msgstr "мусиқӣ"
++
++#: translate.c:9
++msgid "Photos"
++msgstr "Суратҳо"
++
++#: translate.c:9
++msgid "photos"
++msgstr "суратҳо"
++
++#: translate.c:10
++msgid "Pictures"
++msgstr "Тасвирҳо"
++
++#: translate.c:10
++msgid "pictures"
++msgstr "тасвирҳо"
++
++#: translate.c:11
++msgid "Projects"
++msgstr "Лоиҳаҳо"
++
++#: translate.c:11
++msgid "projects"
++msgstr "лоиҳаҳо"
++
++#: translate.c:12
++msgid "Public"
++msgstr "Ҷамъиятӣ"
++
++#: translate.c:12
++msgid "public"
++msgstr "ҷамъиятӣ"
++
++#: translate.c:13
++msgid "Share"
++msgstr "Мубодила"
++
++#: translate.c:13
++msgid "share"
++msgstr "мубодила"
++
++#: translate.c:14
++msgid "Templates"
++msgstr "Қолибҳо"
++
++#: translate.c:14
++msgid "templates"
++msgstr "қолибҳо"
++
++#: translate.c:15
++msgid "Videos"
++msgstr "Видеоҳо"
++
++#: translate.c:15
++msgid "videos"
++msgstr "видеоҳо"

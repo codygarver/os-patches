@@ -1,3 +1,10 @@
+xdg-user-dirs (0.15-1ubuntu3) trusty; urgency=medium
+
+  * debian/patches/launchpad_translation_export.patch:
+    - update translations from launchpad
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 11 Apr 2014 09:35:19 +0200
+
 xdg-user-dirs (0.15-1ubuntu2) saucy; urgency=low
 
   * debian/patches/launchpad_translation_export.patch:
