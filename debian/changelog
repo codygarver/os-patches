@@ -1,3 +1,9 @@
+casper (1.340) trusty; urgency=medium
+
+  * Remove 23etc_modules which does more harm than good (LP: #1296386)
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Wed, 09 Apr 2014 12:45:13 -0600
+
 casper (1.339) trusty; urgency=medium
 
   * scripts/casper: Fix for new udev that doesn't have by-path.
