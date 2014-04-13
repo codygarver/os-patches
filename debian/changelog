@@ -1,3 +1,15 @@
+software-center (13.10-0ubuntu4) trusty; urgency=low
+
+  [ Robert Ancell ]
+  * debian/patches/04_bzr_r3322_lp1281317.patch
+    - merge upstream rev3322 to fix LP: #1281317
+  
+  [ Michael Vogt ]
+  * debian/patches/05_lp225885.patch:
+    - cherry pick  lp:~mvo/software-center/lp1225885 to fix LP: #1225885
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 10 Apr 2014 18:21:54 +0200
+
 software-center (13.10-0ubuntu3) trusty; urgency=medium
 
   * debian/patches/03_bzr-save-settings.patch:
