@@ -1,3 +1,10 @@
+update-manager (1:0.156.14.13) precise-proposed; urgency=medium
+
+  * debian/source_update-manager.py: use root_command_output so that we can
+    collect apt-clone_system_state.tar.gz. (LP: #1274704)
+
+ -- Brian Murray <brian@ubuntu.com>  Fri, 11 Apr 2014 14:42:25 -0700
+
 update-manager (1:0.156.14.12) precise-proposed; urgency=medium
 
   * debian/source_update-manager.py: create a DuplicateSignature by
