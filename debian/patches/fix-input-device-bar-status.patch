@@ -1,0 +1,123 @@
+Index: gnome-control-center/panels/sound-nua/gvc-mixer-dialog.c
+===================================================================
+--- gnome-control-center.orig/panels/sound-nua/gvc-mixer-dialog.c	2014-04-01 18:27:58.040627755 +0800
++++ gnome-control-center/panels/sound-nua/gvc-mixer-dialog.c	2014-04-01 18:29:29.240036086 +0800
+@@ -721,7 +721,11 @@
+         model = gtk_tree_view_get_model (GTK_TREE_VIEW (dialog->priv->input_treeview));
+ 
+         if (gtk_tree_model_get_iter_first (model, &iter) == FALSE){
+-                g_warning ("The tree is empty => we have no devices so cannot set the active input");
++                /* When there are no device we need disable the input bar and set the original name */
++                gtk_label_set_label (GTK_LABEL(dialog->priv->selected_input_label),
++                                     _("Settings for the selected device"));
++                gtk_widget_set_sensitive (dialog->priv->input_bar, FALSE);
++                g_debug ("The tree is empty => we have no devices so cannot set the active input");
+                 return;        
+         }
+         
+@@ -850,7 +854,11 @@
+         model = gtk_tree_view_get_model (GTK_TREE_VIEW (dialog->priv->output_treeview));
+ 
+         if (gtk_tree_model_get_iter_first (model, &iter) == FALSE){
+-                g_warning ("The tree is empty => we have no devices in the tree => cannot set the active output");
++                /* When there are no device we need disable the output bar and set the original name */
++                gtk_label_set_label (GTK_LABEL(dialog->priv->selected_output_label),
++                                     _("Settings for the selected device"));
++                gtk_widget_set_sensitive (dialog->priv->output_bar, FALSE);
++                g_debug ("The tree is empty => we have no devices in the tree => cannot set the active output");
+                 return;        
+         }
+         
+@@ -1328,7 +1336,11 @@
+                          guint            id,
+                          GvcMixerDialog  *dialog)
+ {
++        gboolean          is_first_device;
++        GtkTreeModel     *model;
++        GtkTreeIter       iter;
+ 	GvcMixerUIDevice* out = NULL;
++
+ 	out = gvc_mixer_control_lookup_output_id (control, id);
+ 
+ 	if (out == NULL) {
+@@ -1336,7 +1348,12 @@
+ 		return;
+ 	}
+ 
++        model = gtk_tree_view_get_model (GTK_TREE_VIEW (dialog->priv->output_treeview));
++        is_first_device = !gtk_tree_model_get_iter_first (model, &iter);
++
+ 	add_output_ui_entry (dialog, out);
++        if (is_first_device)
++                active_output_update (dialog, out);
+ }
+ 
+ static void
+@@ -1374,14 +1391,25 @@
+                         guint            id,
+                         GvcMixerDialog  *dialog)
+ {
++        gboolean          is_first_device;
++        GtkTreeModel     *model;
++        GtkTreeIter       iter;
+ 	GvcMixerUIDevice* in = NULL;
++
+ 	in = gvc_mixer_control_lookup_input_id (control, id);
+ 
+ 	if (in == NULL) {
+ 		g_warning ("on_control_input_added - tried to fetch an input of id %u but got nothing", id);
+ 		return;
+ 	}
++
++        model = gtk_tree_view_get_model (GTK_TREE_VIEW (dialog->priv->input_treeview));
++        is_first_device = !gtk_tree_model_get_iter_first (model, &iter);
++
+ 	add_input_ui_entry (dialog, in);
++	/* update input bar when new input device added */
++        if (is_first_device)
++                active_input_update (dialog, in);
+ }
+ 
+ static void
+@@ -1390,6 +1418,7 @@
+                            GvcMixerDialog  *dialog)
+ {
+         GtkWidget    *bar;
++        gboolean      is_last_device;
+         gboolean      found;
+         GtkTreeIter   iter;
+         GtkTreeModel *model;
+@@ -1413,7 +1442,12 @@
+         if (found) {
+                 gtk_list_store_remove (GTK_LIST_STORE (model), &iter);
+         }
+-}     
++
++        /* Disable output bar when all output devices removed */
++        is_last_device = !gtk_tree_model_get_iter_first (model, &iter);
++        if (is_last_device)
++               active_output_update (dialog, out);
++}
+ 
+ 
+                  
+@@ -1424,6 +1458,7 @@
+ {
+         GtkWidget    *bar;
+         gboolean      found;
++        gboolean      is_last_device;
+         GtkTreeIter   iter;
+         GtkTreeModel *model;
+ 
+@@ -1446,6 +1481,11 @@
+         if (found) {
+                 gtk_list_store_remove (GTK_LIST_STORE (model), &iter);
+         }        
++
++        /* Disable input bar when all input devices removed */
++        is_last_device = !gtk_tree_model_get_iter_first (model, &iter);
++        if (is_last_device)
++                active_input_update (dialog, in);
+ }
+ 
+ static void

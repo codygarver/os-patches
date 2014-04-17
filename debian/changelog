@@ -1,3 +1,9 @@
+gnome-control-center (1:3.4.2-0ubuntu0.13.2) precise; urgency=medium
+
+  * Disable the input/output bar when no input/output devices (LP: #1291862)
+
+ -- Bin Li <bin.li@canonical.com>  Wed, 02 Apr 2014 10:52:39 +0200
+
 gnome-control-center (1:3.4.2-0ubuntu0.13.1) precise; urgency=low
 
   * Add 20 minutes and 2 hours options for the suspend time in system
