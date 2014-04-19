@@ -184,7 +184,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="quit_button">
-                <property name="label" translatable="yes">Continue using the live CD</property>
+                <property name="label" translatable="yes">Continue Using Live CD</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -200,7 +200,7 @@
             </child>
             <child>
               <object class="GtkButton" id="reboot_button">
-                <property name="label" translatable="yes">Restart now</property>
+                <property name="label" translatable="yes">Restart Now</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="has_focus">True</property>
@@ -218,7 +218,7 @@
             </child>
             <child>
               <object class="GtkButton" id="shutdown_button">
-                <property name="label" translatable="yes">Shutdown now</property>
+                <property name="label" translatable="yes">Shutdown Now</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -312,7 +312,6 @@
     <property name="title" translatable="yes">Install</property>
     <property name="modal">True</property>
     <property name="window_position">center-always</property>
-    <property name="decorated">False</property>
     <signal name="delete-event" handler="on_live_installer_delete_event" swapped="no"/>
     <signal name="realize" handler="set_window_hints" swapped="no"/>
     <child>
