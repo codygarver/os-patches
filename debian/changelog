@@ -1,3 +1,10 @@
+software-center (13.10-0ubuntu4.1) trusty-proposed; urgency=low
+
+  * debian/patches/06_lp1308354.patch:
+    - disable paste when the search entry is not visible (LP: 1308354)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 17 Apr 2014 15:43:28 +0200
+
 software-center (13.10-0ubuntu4) trusty; urgency=low
 
   [ Robert Ancell ]
