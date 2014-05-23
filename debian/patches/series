@@ -54,6 +54,7 @@ kubuntu_93_disable_overlay_scrollbars.diff
 kubuntu_94_xinput_valuators_fix.diff
 kubuntu_95_qt_disable_bounce.diff
 kubuntu_97_a11y_qt_and_qml_backport.diff
+kubuntu_98_a11y_fix_crash.diff
 kubuntu_31_unity_workarea_atom.diff
 kubuntu_33_shaped_drag.diff
 kubuntu_35_text_cursor_position.diff
