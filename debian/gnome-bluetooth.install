@@ -12,3 +12,4 @@ usr/lib/gnome-bluetooth/*.typelib
 usr/share/GConf/gsettings/
 usr/share/glib-2.0/schemas/
 debian/61-gnome-bluetooth-rfkill.rules lib/udev/rules.d/
+debian/gnome-bluetooth.contract usr/share/contractor/
