@@ -252,9 +252,6 @@ gdouble
 defaults_get_screen_dpi (Defaults* self);
 
 void
-defaults_refresh_bg_property (Defaults *self);
-
-void
 defaults_refresh_screen_dimension_properties (Defaults *self);
 
 void

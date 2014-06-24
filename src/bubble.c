@@ -676,12 +676,6 @@ _refresh_background (Bubble* self)
 	cairo_paint (cr);
 	cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
 
-	GdkRGBA color;
-	gchar* color_string = NULL;
-    color_string = defaults_get_bubble_bg_color (d);
-	gdk_rgba_parse (&color, color_string);
-    g_free (color_string);
-
 	// Apply color tweaks
 	NotifyHSVColor hsv_color;
 	gtk_rgb_to_hsv (color.red, color.green, color.blue,
@@ -712,16 +706,16 @@ _refresh_background (Bubble* self)
 		cairo_fill (cr);
 		cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
 		cairo_set_source_rgba (cr,
-				       color.red,
-				       color.green,
-				       color.blue,
+				       BUBBLE_BG_COLOR_R,
+				       BUBBLE_BG_COLOR_G,
+				       BUBBLE_BG_COLOR_B,
 				       BUBBLE_BG_COLOR_A);
 	}
 	else
 		cairo_set_source_rgb (cr,
-				       color.red,
-				       color.green,
-				       color.blue);
+				       BUBBLE_BG_COLOR_R,
+				       BUBBLE_BG_COLOR_G,
+				       BUBBLE_BG_COLOR_B);
 
 	draw_round_rect (
 		cr,
