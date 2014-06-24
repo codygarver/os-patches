@@ -676,6 +676,8 @@ _refresh_background (Bubble* self)
 	cairo_paint (cr);
 	cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
 
+	GdkRGBA color;
+
 	// Apply color tweaks
 	NotifyHSVColor hsv_color;
 	gtk_rgb_to_hsv (color.red, color.green, color.blue,
