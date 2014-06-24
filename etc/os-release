@@ -1,6 +1,6 @@
 NAME="elementary OS"
-VERSION="0.2 Luna"
+VERSION="0.2.1 Luna"
 ID="elementary OS"
 ID_LIKE=ubuntu
 PRETTY_NAME="elementary OS Luna"
-VERSION_ID="0.2"
+VERSION_ID="0.2.1"
