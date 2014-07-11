@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Abigail Brady <morwen@evilmagic.org>, Bastien Nocera <hadess@hadess.net>, 2005.
 #
+#: ../hwe-support-status:167
 msgid ""
 msgstr ""
 "Project-Id-Version: update-manager\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-14 00:52+0000\n"
+"Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
+"POT-Creation-Date: 2014-06-19 11:21+0200\n"
 "PO-Revision-Date: 2012-03-20 23:02+0000\n"
 "Last-Translator: Andi Chandler <Unknown>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,7 +35,7 @@ msgid "%.1f MB"
 msgstr "%.1f MB"
 
 #. TRANSLATORS: %s is a country
-#: ../DistUpgrade/distro.py:206 ../DistUpgrade/distro.py:434
+#: ../DistUpgrade/distro.py:211 ../DistUpgrade/distro.py:442
 #, python-format
 msgid "Server for %s"
 msgstr "Server for %s"
@@ -41,12 +43,12 @@ msgstr "Server for %s"
 #. More than one server is used. Since we don't handle this case
 #. in the user interface we set "custom servers" to true and
 #. append a list of all used servers
-#: ../DistUpgrade/distro.py:224 ../DistUpgrade/distro.py:230
-#: ../DistUpgrade/distro.py:246
+#: ../DistUpgrade/distro.py:229 ../DistUpgrade/distro.py:235
+#: ../DistUpgrade/distro.py:251
 msgid "Main server"
 msgstr "Main server"
 
-#: ../DistUpgrade/distro.py:250
+#: ../DistUpgrade/distro.py:255
 msgid "Custom servers"
 msgstr "Custom servers"
 
@@ -159,7 +161,7 @@ msgstr ""
 "'ubuntu-bug update-manager' in a terminal."
 
 #: ../DistUpgrade/DistUpgradeCache.py:697
-#: ../UpdateManager/UpdateManager.py:1035
+#: ../UpdateManager/UpdateManager.py:1037
 msgid "Could not calculate the upgrade"
 msgstr "Could not determine the upgrade"
 
@@ -230,11 +232,11 @@ msgstr ""
 msgid "Reading cache"
 msgstr "Reading cache"
 
-#: ../DistUpgrade/DistUpgradeController.py:210
+#: ../DistUpgrade/DistUpgradeController.py:209
 msgid "Unable to get exclusive lock"
 msgstr "Unable to get exclusive lock"
 
-#: ../DistUpgrade/DistUpgradeController.py:211
+#: ../DistUpgrade/DistUpgradeController.py:210
 msgid ""
 "This usually means that another package management application (like apt-get "
 "or aptitude) already running. Please close that application first."
@@ -242,11 +244,11 @@ msgstr ""
 "This usually means that another package management application (like apt-get "
 "or aptitude) is already running. Please close that application first."
 
-#: ../DistUpgrade/DistUpgradeController.py:244
+#: ../DistUpgrade/DistUpgradeController.py:243
 msgid "Upgrading over remote connection not supported"
 msgstr "Upgrading over remote connection not supported"
 
-#: ../DistUpgrade/DistUpgradeController.py:245
+#: ../DistUpgrade/DistUpgradeController.py:244
 msgid ""
 "You are running the upgrade over a remote ssh connection with a frontend "
 "that does not support this. Please try a text mode upgrade with 'do-release-"
@@ -260,11 +262,11 @@ msgstr ""
 "\n"
 "The upgrade will abort now. Please try without SSH."
 
-#: ../DistUpgrade/DistUpgradeController.py:259
+#: ../DistUpgrade/DistUpgradeController.py:258
 msgid "Continue running under SSH?"
 msgstr "Continue running under SSH?"
 
-#: ../DistUpgrade/DistUpgradeController.py:260
+#: ../DistUpgrade/DistUpgradeController.py:259
 #, python-format
 msgid ""
 "This session appears to be running under ssh. It is not recommended to "
@@ -281,11 +283,11 @@ msgstr ""
 "If you continue, an additional SSH daemon will be started at port '%s'.\n"
 "Do you want to continue?"
 
-#: ../DistUpgrade/DistUpgradeController.py:274
+#: ../DistUpgrade/DistUpgradeController.py:273
 msgid "Starting additional sshd"
 msgstr "Starting additional sshd"
 
-#: ../DistUpgrade/DistUpgradeController.py:275
+#: ../DistUpgrade/DistUpgradeController.py:274
 #, python-format
 msgid ""
 "To make recovery in case of failure easier, an additional sshd will be "
@@ -296,7 +298,7 @@ msgstr ""
 "started on port '%s'. If anything goes wrong with the running ssh you can "
 "still connect to the additional one.\n"
 
-#: ../DistUpgrade/DistUpgradeController.py:283
+#: ../DistUpgrade/DistUpgradeController.py:282
 #, python-format
 msgid ""
 "If you run a firewall, you may need to temporarily open this port. As this "
@@ -309,29 +311,29 @@ msgstr ""
 "with e.g.:\n"
 "'%s'"
 
-#: ../DistUpgrade/DistUpgradeController.py:355
-#: ../DistUpgrade/DistUpgradeController.py:400
+#: ../DistUpgrade/DistUpgradeController.py:354
+#: ../DistUpgrade/DistUpgradeController.py:399
 msgid "Can not upgrade"
 msgstr "Cannot upgrade"
 
-#: ../DistUpgrade/DistUpgradeController.py:356
+#: ../DistUpgrade/DistUpgradeController.py:355
 #, python-format
 msgid "An upgrade from '%s' to '%s' is not supported with this tool."
 msgstr "An upgrade from \"%s\" to \"%s\" is not supported with this tool."
 
-#: ../DistUpgrade/DistUpgradeController.py:365
+#: ../DistUpgrade/DistUpgradeController.py:364
 msgid "Sandbox setup failed"
 msgstr "Sandbox setup failed"
 
-#: ../DistUpgrade/DistUpgradeController.py:366
+#: ../DistUpgrade/DistUpgradeController.py:365
 msgid "It was not possible to create the sandbox environment."
 msgstr "It was not possible to create the sandbox environment."
 
-#: ../DistUpgrade/DistUpgradeController.py:372
+#: ../DistUpgrade/DistUpgradeController.py:371
 msgid "Sandbox mode"
 msgstr "Sandbox mode"
 
-#: ../DistUpgrade/DistUpgradeController.py:373
+#: ../DistUpgrade/DistUpgradeController.py:372
 #, python-format
 msgid ""
 "This upgrade is running in sandbox (test) mode. All changes are written to "
@@ -346,17 +348,17 @@ msgstr ""
 "*No* changes written to a system directory from now until the next reboot "
 "are permanent."
 
-#: ../DistUpgrade/DistUpgradeController.py:401
+#: ../DistUpgrade/DistUpgradeController.py:400
 msgid ""
 "Your python install is corrupted. Please fix the '/usr/bin/python' symlink."
 msgstr ""
 "Your python install is corrupted. Please fix the '/usr/bin/python' symlink."
 
-#: ../DistUpgrade/DistUpgradeController.py:427
+#: ../DistUpgrade/DistUpgradeController.py:426
 msgid "Package 'debsig-verify' is installed"
 msgstr "Package 'debsig-verify' is installed"
 
-#: ../DistUpgrade/DistUpgradeController.py:428
+#: ../DistUpgrade/DistUpgradeController.py:427
 msgid ""
 "The upgrade can not continue with that package installed.\n"
 "Please remove it with synaptic or 'apt-get remove debsig-verify' first and "
@@ -366,12 +368,12 @@ msgstr ""
 "Please remove it with synaptic or 'apt-get remove debsig-verify' first and "
 "run the upgrade again."
 
-#: ../DistUpgrade/DistUpgradeController.py:440
+#: ../DistUpgrade/DistUpgradeController.py:439
 #, python-format
 msgid "Can not write to '%s'"
 msgstr "Can not write to '%s'"
 
-#: ../DistUpgrade/DistUpgradeController.py:441
+#: ../DistUpgrade/DistUpgradeController.py:440
 #, python-format
 msgid ""
 "Its not possible to write to the system directory '%s' on your system. The "
@@ -382,11 +384,11 @@ msgstr ""
 "upgrade can not continue.\n"
 "Please make sure that the system directory is writable."
 
-#: ../DistUpgrade/DistUpgradeController.py:452
+#: ../DistUpgrade/DistUpgradeController.py:451
 msgid "Include latest updates from the Internet?"
 msgstr "Include latest updates from the Internet?"
 
-#: ../DistUpgrade/DistUpgradeController.py:453
+#: ../DistUpgrade/DistUpgradeController.py:452
 msgid ""
 "The upgrade system can use the internet to automatically download the latest "
 "updates and install them during the upgrade.  If you have a network "
@@ -406,16 +408,16 @@ msgstr ""
 "latest updates as soon as possible after upgrading.\n"
 "If you answer 'no' here, the network is not used at all."
 
-#: ../DistUpgrade/DistUpgradeController.py:673
+#: ../DistUpgrade/DistUpgradeController.py:672
 #, python-format
 msgid "disabled on upgrade to %s"
 msgstr "disabled on upgrade to %s"
 
-#: ../DistUpgrade/DistUpgradeController.py:700
+#: ../DistUpgrade/DistUpgradeController.py:699
 msgid "No valid mirror found"
 msgstr "No valid mirror found"
 
-#: ../DistUpgrade/DistUpgradeController.py:701
+#: ../DistUpgrade/DistUpgradeController.py:700
 #, python-format
 msgid ""
 "While scanning your repository information no mirror entry for the upgrade "
@@ -435,11 +437,11 @@ msgstr ""
 "If you select 'No' the upgrade will cancel."
 
 #. hm, still nothing useful ...
-#: ../DistUpgrade/DistUpgradeController.py:721
+#: ../DistUpgrade/DistUpgradeController.py:720
 msgid "Generate default sources?"
 msgstr "Generate default sources?"
 
-#: ../DistUpgrade/DistUpgradeController.py:722
+#: ../DistUpgrade/DistUpgradeController.py:721
 #, python-format
 msgid ""
 "After scanning your 'sources.list' no valid entry for '%s' was found.\n"
@@ -452,11 +454,11 @@ msgstr ""
 "Should default entries for '%s' be added? If you select 'No', the upgrade "
 "will cancel."
 
-#: ../DistUpgrade/DistUpgradeController.py:757
+#: ../DistUpgrade/DistUpgradeController.py:756
 msgid "Repository information invalid"
 msgstr "Repository information invalid"
 
-#: ../DistUpgrade/DistUpgradeController.py:758
+#: ../DistUpgrade/DistUpgradeController.py:757
 msgid ""
 "Upgrading the repository information resulted in a invalid file so a bug "
 "reporting process is being started."
@@ -464,11 +466,11 @@ msgstr ""
 "Upgrading the repository information resulted in an invalid file, so a bug "
 "reporting process is being started."
 
-#: ../DistUpgrade/DistUpgradeController.py:765
+#: ../DistUpgrade/DistUpgradeController.py:764
 msgid "Third party sources disabled"
 msgstr "Third party sources disabled"
 
-#: ../DistUpgrade/DistUpgradeController.py:766
+#: ../DistUpgrade/DistUpgradeController.py:765
 msgid ""
 "Some third party entries in your sources.list were disabled. You can re-"
 "enable them after the upgrade with the 'software-properties' tool or your "
@@ -478,13 +480,13 @@ msgstr ""
 "enable them after the upgrade with the 'software-properties' tool or your "
 "package manager."
 
-#: ../DistUpgrade/DistUpgradeController.py:806
+#: ../DistUpgrade/DistUpgradeController.py:805
 msgid "Package in inconsistent state"
 msgid_plural "Packages in inconsistent state"
 msgstr[0] "Package in inconsistent state"
 msgstr[1] "Packages in inconsistent state"
 
-#: ../DistUpgrade/DistUpgradeController.py:809
+#: ../DistUpgrade/DistUpgradeController.py:808
 #, python-format
 msgid ""
 "The package '%s' is in an inconsistent state and needs to be reinstalled, "
@@ -503,11 +505,11 @@ msgstr[1] ""
 "but no archive can be found for them. Please reinstall the packages manually "
 "or remove them from the system."
 
-#: ../DistUpgrade/DistUpgradeController.py:857
+#: ../DistUpgrade/DistUpgradeController.py:856
 msgid "Error during update"
 msgstr "Error during update"
 
-#: ../DistUpgrade/DistUpgradeController.py:858
+#: ../DistUpgrade/DistUpgradeController.py:857
 msgid ""
 "A problem occurred during the update. This is usually some sort of network "
 "problem, please check your network connection and retry."
@@ -516,12 +518,12 @@ msgstr ""
 "problem, please check your network connection and retry."
 
 #. print "on_button_install_clicked"
-#: ../DistUpgrade/DistUpgradeController.py:867
-#: ../UpdateManager/UpdateManager.py:758
+#: ../DistUpgrade/DistUpgradeController.py:866
+#: ../UpdateManager/UpdateManager.py:755
 msgid "Not enough free disk space"
 msgstr "Not enough free disk space"
 
-#: ../DistUpgrade/DistUpgradeController.py:868
+#: ../DistUpgrade/DistUpgradeController.py:867
 #, python-format
 msgid ""
 "The upgrade has aborted. The upgrade needs a total of %s free space on disk "
@@ -536,21 +538,21 @@ msgstr ""
 
 #. calc the dist-upgrade and see if the removals are ok/expected
 #. do the dist-upgrade
-#: ../DistUpgrade/DistUpgradeController.py:897
-#: ../DistUpgrade/DistUpgradeController.py:1664
+#: ../DistUpgrade/DistUpgradeController.py:896
+#: ../DistUpgrade/DistUpgradeController.py:1677
 msgid "Calculating the changes"
 msgstr "Calculating the changes"
 
 #. ask the user
-#: ../DistUpgrade/DistUpgradeController.py:929
+#: ../DistUpgrade/DistUpgradeController.py:928
 msgid "Do you want to start the upgrade?"
 msgstr "Do you want to start the upgrade?"
 
-#: ../DistUpgrade/DistUpgradeController.py:995
+#: ../DistUpgrade/DistUpgradeController.py:994
 msgid "Upgrade canceled"
 msgstr "Upgrade cancelled"
 
-#: ../DistUpgrade/DistUpgradeController.py:996
+#: ../DistUpgrade/DistUpgradeController.py:995
 msgid ""
 "The upgrade will cancel now and the original system state will be restored. "
 "You can resume the upgrade at a later time."
@@ -558,12 +560,12 @@ msgstr ""
 "The upgrade will cancel now and the original system state will be restored. "
 "You can resume the upgrade at a later time."
 
-#: ../DistUpgrade/DistUpgradeController.py:1002
-#: ../DistUpgrade/DistUpgradeController.py:1136
+#: ../DistUpgrade/DistUpgradeController.py:1001
+#: ../DistUpgrade/DistUpgradeController.py:1135
 msgid "Could not download the upgrades"
 msgstr "Could not download the upgrades"
 
-#: ../DistUpgrade/DistUpgradeController.py:1003
+#: ../DistUpgrade/DistUpgradeController.py:1002
 msgid ""
 "The upgrade has aborted. Please check your Internet connection or "
 "installation media and try again. All files downloaded so far have been kept."
@@ -573,27 +575,27 @@ msgstr ""
 
 #. FIXME: strings are not good, but we are in string freeze
 #. currently
-#: ../DistUpgrade/DistUpgradeController.py:1087
-#: ../DistUpgrade/DistUpgradeController.py:1124
-#: ../DistUpgrade/DistUpgradeController.py:1229
+#: ../DistUpgrade/DistUpgradeController.py:1086
+#: ../DistUpgrade/DistUpgradeController.py:1123
+#: ../DistUpgrade/DistUpgradeController.py:1228
 msgid "Error during commit"
 msgstr "Error during commit"
 
 #. generate a new cache
-#: ../DistUpgrade/DistUpgradeController.py:1089
-#: ../DistUpgrade/DistUpgradeController.py:1126
-#: ../DistUpgrade/DistUpgradeController.py:1268
+#: ../DistUpgrade/DistUpgradeController.py:1088
+#: ../DistUpgrade/DistUpgradeController.py:1125
+#: ../DistUpgrade/DistUpgradeController.py:1267
 msgid "Restoring original system state"
 msgstr "Restoring original system state"
 
-#: ../DistUpgrade/DistUpgradeController.py:1090
-#: ../DistUpgrade/DistUpgradeController.py:1105
-#: ../DistUpgrade/DistUpgradeController.py:1127
+#: ../DistUpgrade/DistUpgradeController.py:1089
+#: ../DistUpgrade/DistUpgradeController.py:1104
+#: ../DistUpgrade/DistUpgradeController.py:1126
 msgid "Could not install the upgrades"
 msgstr "Could not install the upgrades"
 
 #. invoke the frontend now and show a error message
-#: ../DistUpgrade/DistUpgradeController.py:1095
+#: ../DistUpgrade/DistUpgradeController.py:1094
 msgid ""
 "The upgrade has aborted. Your system could be in an unusable state. A "
 "recovery will run now (dpkg --configure -a)."
@@ -601,24 +603,24 @@ msgstr ""
 "The upgrade has aborted. Your system could be in an unusable state. A "
 "recovery will run now (dpkg --configure -a)."
 
-#: ../DistUpgrade/DistUpgradeController.py:1100
+#: ../DistUpgrade/DistUpgradeController.py:1099
 #, python-format
 msgid ""
 "\n"
 "\n"
-"Please report this bug in a browser at "
-"http://bugs.launchpad.net/ubuntu/+source/update-manager/+filebug and attach "
-"the files in /var/log/dist-upgrade/ to the bug report.\n"
+"Please report this bug in a browser at http://bugs.launchpad.net/ubuntu/"
+"+source/update-manager/+filebug and attach the files in /var/log/dist-"
+"upgrade/ to the bug report.\n"
 "%s"
 msgstr ""
 "\n"
 "\n"
-"Please report this bug in a browser at "
-"http://bugs.launchpad.net/ubuntu/+source/update-manager/+filebug and attach "
-"the files in /var/log/dist-upgrade/ to the bug report.\n"
+"Please report this bug in a browser at http://bugs.launchpad.net/ubuntu/"
+"+source/update-manager/+filebug and attach the files in /var/log/dist-"
+"upgrade/ to the bug report.\n"
 "%s"
 
-#: ../DistUpgrade/DistUpgradeController.py:1137
+#: ../DistUpgrade/DistUpgradeController.py:1136
 msgid ""
 "The upgrade has aborted. Please check your Internet connection or "
 "installation media and try again. "
@@ -626,20 +628,20 @@ msgstr ""
 "The upgrade has aborted. Please check your Internet connection or "
 "installation media and try again. "
 
-#: ../DistUpgrade/DistUpgradeController.py:1217
+#: ../DistUpgrade/DistUpgradeController.py:1216
 msgid "Remove obsolete packages?"
 msgstr "Remove obsolete packages?"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
+#: ../DistUpgrade/DistUpgradeController.py:1217
 #: ../DistUpgrade/DistUpgrade.ui.h:8
 msgid "_Keep"
 msgstr "_Keep"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
+#: ../DistUpgrade/DistUpgradeController.py:1217
 msgid "_Remove"
 msgstr "_Remove"
 
-#: ../DistUpgrade/DistUpgradeController.py:1230
+#: ../DistUpgrade/DistUpgradeController.py:1229
 msgid ""
 "A problem occurred during the clean-up. Please see the below message for "
 "more information. "
@@ -649,27 +651,27 @@ msgstr ""
 
 #. FIXME: instead of error out, fetch and install it
 #. here
-#: ../DistUpgrade/DistUpgradeController.py:1306
+#: ../DistUpgrade/DistUpgradeController.py:1305
 msgid "Required depends is not installed"
 msgstr "Required depends are not installed"
 
-#: ../DistUpgrade/DistUpgradeController.py:1307
+#: ../DistUpgrade/DistUpgradeController.py:1306
 #, python-format
 msgid "The required dependency '%s' is not installed. "
 msgstr "The required dependency '%s' is not installed. "
 
 #. sanity check (check for ubuntu-desktop, brokenCache etc)
 #. then open the cache (again)
-#: ../DistUpgrade/DistUpgradeController.py:1568
-#: ../DistUpgrade/DistUpgradeController.py:1633
+#: ../DistUpgrade/DistUpgradeController.py:1573
+#: ../DistUpgrade/DistUpgradeController.py:1638
 msgid "Checking package manager"
 msgstr "Checking package manager"
 
-#: ../DistUpgrade/DistUpgradeController.py:1573
+#: ../DistUpgrade/DistUpgradeController.py:1578
 msgid "Preparing the upgrade failed"
 msgstr "Preparing the upgrade failed"
 
-#: ../DistUpgrade/DistUpgradeController.py:1574
+#: ../DistUpgrade/DistUpgradeController.py:1579
 msgid ""
 "Preparing the system for the upgrade failed so a bug reporting process is "
 "being started."
@@ -677,11 +679,11 @@ msgstr ""
 "Preparing the system for the upgrade failed, so a bug reporting process is "
 "being started."
 
-#: ../DistUpgrade/DistUpgradeController.py:1588
+#: ../DistUpgrade/DistUpgradeController.py:1593
 msgid "Getting upgrade prerequisites failed"
 msgstr "Getting upgrade prerequisites failed"
 
-#: ../DistUpgrade/DistUpgradeController.py:1589
+#: ../DistUpgrade/DistUpgradeController.py:1594
 msgid ""
 "The system was unable to get the prerequisites for the upgrade. The upgrade "
 "will abort now and restore the original system state.\n"
@@ -693,66 +695,61 @@ msgstr ""
 "\n"
 "Additionally, a bug reporting process is being started."
 
-#: ../DistUpgrade/DistUpgradeController.py:1617
+#: ../DistUpgrade/DistUpgradeController.py:1622
 msgid "Updating repository information"
 msgstr "Updating repository information"
 
-#: ../DistUpgrade/DistUpgradeController.py:1624
+#: ../DistUpgrade/DistUpgradeController.py:1629
 msgid "Failed to add the cdrom"
 msgstr "Failed to add the CDROM"
 
-#: ../DistUpgrade/DistUpgradeController.py:1625
+#: ../DistUpgrade/DistUpgradeController.py:1630
 msgid "Sorry, adding the cdrom was not successful."
 msgstr "Sorry, adding the CDROM was not successful."
 
-#: ../DistUpgrade/DistUpgradeController.py:1653
+#: ../DistUpgrade/DistUpgradeController.py:1658
 msgid "Invalid package information"
 msgstr "Invalid package information"
 
-#: ../DistUpgrade/DistUpgradeController.py:1654
-#, python-format
-msgid ""
-"After your package information was updated the essential package '%s' can "
-"not be found anymore so a bug reporting process is being started."
+#: ../DistUpgrade/DistUpgradeController.py:1659
+msgid "After updating your package "
 msgstr ""
-"After your package information was updated, the essential package '%s' can "
-"not be found anymore, so a bug reporting process is being started."
 
-#: ../DistUpgrade/DistUpgradeController.py:1670
-#: ../DistUpgrade/DistUpgradeController.py:1723
+#: ../DistUpgrade/DistUpgradeController.py:1683
+#: ../DistUpgrade/DistUpgradeController.py:1736
 msgid "Fetching"
 msgstr "Fetching"
 
-#: ../DistUpgrade/DistUpgradeController.py:1676
-#: ../DistUpgrade/DistUpgradeController.py:1727
+#: ../DistUpgrade/DistUpgradeController.py:1689
+#: ../DistUpgrade/DistUpgradeController.py:1740
 msgid "Upgrading"
 msgstr "Upgrading"
 
 #. don't abort here, because it would restore the sources.list
-#: ../DistUpgrade/DistUpgradeController.py:1681
-#: ../DistUpgrade/DistUpgradeController.py:1729
-#: ../DistUpgrade/DistUpgradeController.py:1736
-#: ../DistUpgrade/DistUpgradeController.py:1747
+#: ../DistUpgrade/DistUpgradeController.py:1694
+#: ../DistUpgrade/DistUpgradeController.py:1742
+#: ../DistUpgrade/DistUpgradeController.py:1749
+#: ../DistUpgrade/DistUpgradeController.py:1760
 msgid "Upgrade complete"
 msgstr "Upgrade complete"
 
-#: ../DistUpgrade/DistUpgradeController.py:1682
-#: ../DistUpgrade/DistUpgradeController.py:1730
-#: ../DistUpgrade/DistUpgradeController.py:1737
+#: ../DistUpgrade/DistUpgradeController.py:1695
+#: ../DistUpgrade/DistUpgradeController.py:1743
+#: ../DistUpgrade/DistUpgradeController.py:1750
 msgid ""
 "The upgrade has completed but there were errors during the upgrade process."
 msgstr ""
 "The upgrade has completed but there were errors during the upgrade process."
 
-#: ../DistUpgrade/DistUpgradeController.py:1689
+#: ../DistUpgrade/DistUpgradeController.py:1702
 msgid "Searching for obsolete software"
 msgstr "Searching for obsolete software"
 
-#: ../DistUpgrade/DistUpgradeController.py:1698
+#: ../DistUpgrade/DistUpgradeController.py:1711
 msgid "System upgrade is complete."
 msgstr "System upgrade is complete."
 
-#: ../DistUpgrade/DistUpgradeController.py:1748
+#: ../DistUpgrade/DistUpgradeController.py:1761
 msgid "The partial upgrade was completed."
 msgstr "The partial upgrade was completed."
 
@@ -771,10 +768,8 @@ msgstr ""
 "upgrade again."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
-msgid ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
-msgstr ""
-"Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+msgid "Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+msgstr "Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
@@ -936,7 +931,7 @@ msgstr "Fetching file %li of %li at %sB/s"
 #: ../DistUpgrade/DistUpgradeViewGtk.py:149
 #: ../DistUpgrade/DistUpgradeViewGtk.py:295
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:152
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:301
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:307
 #: ../DistUpgrade/DistUpgradeViewKDE.py:221
 #: ../DistUpgrade/DistUpgradeViewKDE.py:365
 #, python-format
@@ -961,20 +956,20 @@ msgstr "Applying changes"
 
 #. we do not report followup errors from earlier failures
 #: ../DistUpgrade/DistUpgradeViewGtk.py:208
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:211
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:212
 #: ../DistUpgrade/DistUpgradeViewKDE.py:270
 msgid "dependency problems - leaving unconfigured"
 msgstr "dependency problems - leaving unconfigured"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:213
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:216
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:217
 #: ../DistUpgrade/DistUpgradeViewKDE.py:272
 #, python-format
 msgid "Could not install '%s'"
 msgstr "Could not install '%s'"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:214
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:217
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:218
 #: ../DistUpgrade/DistUpgradeViewKDE.py:273
 #, python-format
 msgid ""
@@ -986,7 +981,7 @@ msgstr ""
 
 #. self.expander.set_expanded(True)
 #: ../DistUpgrade/DistUpgradeViewGtk.py:231
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:234
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:235
 #: ../DistUpgrade/DistUpgradeViewKDE.py:294
 #, python-format
 msgid ""
@@ -997,7 +992,7 @@ msgstr ""
 "'%s'?"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:232
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:235
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:236
 #: ../DistUpgrade/DistUpgradeViewKDE.py:295
 msgid ""
 "You will lose any changes you have made to this configuration file if you "
@@ -1007,37 +1002,37 @@ msgstr ""
 "choose to replace it with a newer version."
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:250
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:253
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:254
 #: ../DistUpgrade/DistUpgradeViewKDE.py:317
 msgid "The 'diff' command was not found"
 msgstr "The 'diff' command was not found"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:463
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:469
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:475
 #: ../DistUpgrade/DistUpgradeViewText.py:90
 msgid "A fatal error occurred"
 msgstr "A fatal error occurred"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:464
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:470
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:476
 msgid ""
-"Please report this as a bug (if you haven't already) and include the files "
-"/var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
+"Please report this as a bug (if you haven't already) and include the files /"
+"var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
 "report. The upgrade has aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
-"Please report this as a bug (if you haven't already) and include the files "
-"/var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
+"Please report this as a bug (if you haven't already) and include the files /"
+"var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
 "report. The upgrade has aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:481
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:487
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:493
 msgid "Ctrl-c pressed"
 msgstr "Ctrl-C pressed"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:482
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:488
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:494
 msgid ""
 "This will abort the operation and may leave the system in a broken state. "
 "Are you sure you want to do that?"
@@ -1047,42 +1042,42 @@ msgstr ""
 
 #. append warning
 #: ../DistUpgrade/DistUpgradeViewGtk.py:630
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:621
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:627
 msgid "To prevent data loss close all open applications and documents."
 msgstr "To prevent data loss close all open applications and documents."
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:644
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:635
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:641
 #, python-format
 msgid "No longer supported by Canonical (%s)"
 msgstr "No longer supported by Canonical (%s)"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:645
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:636
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:642
 #, python-format
 msgid "<b>Downgrade (%s)</b>"
 msgstr "<b>Downgrade (%s)</b>"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:646
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:637
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:643
 #, python-format
 msgid "Remove (%s)"
 msgstr "Remove (%s)"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:647
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:638
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:644
 #, python-format
 msgid "No longer needed (%s)"
 msgstr "No longer needed (%s)"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:648
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:639
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:645
 #, python-format
 msgid "Install (%s)"
 msgstr "Install (%s)"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:649
-#: ../DistUpgrade/DistUpgradeViewGtk3.py:640
+#: ../DistUpgrade/DistUpgradeViewGtk3.py:646
 #, python-format
 msgid "Upgrade (%s)"
 msgstr "Upgrade (%s)"
@@ -1168,7 +1163,7 @@ msgid "<b><big>Restart the system to complete the upgrade</big></b>"
 msgstr "<b><big>Restart the system to complete the upgrade</big></b>"
 
 #: ../DistUpgrade/DistUpgradeViewKDE.py:802 ../DistUpgrade/DistUpgrade.ui.h:14
-#: ../data/gtkbuilder/UpdateManager.ui.h:26
+#: ../data/gtkbuilder/UpdateManager.ui.h:27
 msgid "_Restart Now"
 msgstr "_Restart Now"
 
@@ -1221,10 +1216,10 @@ msgstr[1] "%li seconds"
 #. information here if you shuffle %(str_days)s %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:80
 #, python-format
@@ -1235,10 +1230,10 @@ msgstr "%(str_days)s %(str_hours)s"
 #. information here if you shuffle %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:98
 #, python-format
@@ -1352,7 +1347,7 @@ msgid "Removing the packages can take several hours. "
 msgstr "Removing the packages can take several hours. "
 
 #. FIXME: this should go into DistUpgradeController
-#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:683
+#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:680
 msgid "The software on this computer is up to date."
 msgstr "The software on this computer is up to date."
 
@@ -1488,14 +1483,14 @@ msgstr "The error message is '%s'"
 
 #: ../DistUpgrade/DistUpgradeViewText.py:91
 msgid ""
-"Please report this as a bug and include the files /var/log/dist-"
-"upgrade/main.log and /var/log/dist-upgrade/apt.log in your report. The "
-"upgrade has aborted.\n"
+"Please report this as a bug and include the files /var/log/dist-upgrade/main."
+"log and /var/log/dist-upgrade/apt.log in your report. The upgrade has "
+"aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
-"Please report this as a bug and include the files /var/log/dist-"
-"upgrade/main.log and /var/log/dist-upgrade/apt.log in your report. The "
-"upgrade has aborted.\n"
+"Please report this as a bug and include the files /var/log/dist-upgrade/main."
+"log and /var/log/dist-upgrade/apt.log in your report. The upgrade has "
+"aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 
 #: ../DistUpgrade/DistUpgradeViewText.py:115
@@ -1680,6 +1675,7 @@ msgstr "Please check your internet connection."
 
 #: ../UpdateManager/DistUpgradeFetcherKDE.py:62
 #: ../UpdateManager/DistUpgradeFetcherKDE.py:85
+#: ../UpdateManager/UpdateManager.py:1257
 msgid "Upgrade"
 msgstr "Upgrade"
 
@@ -1723,11 +1719,11 @@ msgstr "Downloading file %(current)li of %(total)li with %(speed)s/s"
 msgid "Downloading file %(current)li of %(total)li"
 msgstr "Downloading file %(current)li of %(total)li"
 
-#: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
+#: ../UpdateManager/UpdateManager.py:105 ../do-release-upgrade:95
 msgid "Your Ubuntu release is not supported anymore."
 msgstr "Your Ubuntu release is not supported anymore."
 
-#: ../UpdateManager/UpdateManager.py:105
+#: ../UpdateManager/UpdateManager.py:106
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
 "upgrade to a later version of Ubuntu."
@@ -1735,77 +1731,77 @@ msgstr ""
 "You will not get any further security fixes or critical updates. Please "
 "upgrade to a later version of Ubuntu."
 
-#: ../UpdateManager/UpdateManager.py:113
+#: ../UpdateManager/UpdateManager.py:114
 msgid "Upgrade information"
 msgstr "Upgrade information"
 
-#: ../UpdateManager/UpdateManager.py:229
+#: ../UpdateManager/UpdateManager.py:231
 #: ../UpdateManagerText/UpdateManagerText.py:32
 msgid "Install"
 msgstr "Install"
 
-#: ../UpdateManager/UpdateManager.py:231
+#: ../UpdateManager/UpdateManager.py:233
 msgid "Name"
 msgstr "Name"
 
 #. upload_archive = version_match.group(2).strip()
-#: ../UpdateManager/UpdateManager.py:391
+#: ../UpdateManager/UpdateManager.py:393
 #, python-format
 msgid "Version %s: \n"
 msgstr "Version %s: \n"
 
-#: ../UpdateManager/UpdateManager.py:453
+#: ../UpdateManager/UpdateManager.py:450
 msgid ""
 "No network connection detected, you can not download changelog information."
 msgstr ""
 "No network connection detected, you can not download changelog information."
 
-#: ../UpdateManager/UpdateManager.py:461
+#: ../UpdateManager/UpdateManager.py:458
 msgid "Downloading list of changes..."
 msgstr "Downloading list of changes..."
 
-#: ../UpdateManager/UpdateManager.py:505
+#: ../UpdateManager/UpdateManager.py:502
 msgid "_Deselect All"
 msgstr "_Deselect All"
 
-#: ../UpdateManager/UpdateManager.py:511
+#: ../UpdateManager/UpdateManager.py:508
 msgid "Select _All"
 msgstr "Select _All"
 
-#: ../UpdateManager/UpdateManager.py:571
+#: ../UpdateManager/UpdateManager.py:568
 #, python-format
 msgid "%(count)s update has been selected."
 msgid_plural "%(count)s updates have been selected."
 msgstr[0] "%(count)s update has been selected."
 msgstr[1] "%(count)s updates have been selected."
 
-#: ../UpdateManager/UpdateManager.py:575
+#: ../UpdateManager/UpdateManager.py:572
 #, python-format
 msgid "%s will be downloaded."
 msgstr "%s will be downloaded."
 
-#: ../UpdateManager/UpdateManager.py:587
+#: ../UpdateManager/UpdateManager.py:584
 msgid "The update has already been downloaded, but not installed."
 msgid_plural "The updates have already been downloaded, but not installed."
 msgstr[0] "The update has already been downloaded, but not installed."
 msgstr[1] "The updates have already been downloaded, but not installed."
 
-#: ../UpdateManager/UpdateManager.py:592
+#: ../UpdateManager/UpdateManager.py:589
 msgid "There are no updates to install."
 msgstr "There are no updates to install."
 
 #. TRANSLATORS: this allows to switch the order of the count of
 #. updates and the download size string (if needed)
-#: ../UpdateManager/UpdateManager.py:598
+#: ../UpdateManager/UpdateManager.py:595
 #, python-format
 msgid "%(count_str)s %(download_str)s"
 msgstr "%(count_str)s %(download_str)s"
 
-#: ../UpdateManager/UpdateManager.py:605
+#: ../UpdateManager/UpdateManager.py:602
 msgid "Unknown download size."
 msgstr "Unknown download size."
 
-#: ../UpdateManager/UpdateManager.py:631
+#: ../UpdateManager/UpdateManager.py:628
 msgid ""
 "It is unknown when the package information was updated last. Please click "
 "the 'Check' button to update the information."
@@ -1813,7 +1809,7 @@ msgstr ""
 "It is unknown when the package information was updated last. Please click "
 "the 'Check' button to update the information."
 
-#: ../UpdateManager/UpdateManager.py:637
+#: ../UpdateManager/UpdateManager.py:634
 #, python-format
 msgid ""
 "The package information was last updated %(days_ago)s days ago.\n"
@@ -1822,15 +1818,14 @@ msgstr ""
 "The package information was last updated %(days_ago)s days ago.\n"
 "Press the 'Check' button below to check for new software updates."
 
-#: ../UpdateManager/UpdateManager.py:642
+#: ../UpdateManager/UpdateManager.py:639
 #, python-format
 msgid "The package information was last updated %(days_ago)s day ago."
-msgid_plural ""
-"The package information was last updated %(days_ago)s days ago."
+msgid_plural "The package information was last updated %(days_ago)s days ago."
 msgstr[0] "The package information was last updated %(days_ago)s day ago."
 msgstr[1] "The package information was last updated %(days_ago)s days ago."
 
-#: ../UpdateManager/UpdateManager.py:646
+#: ../UpdateManager/UpdateManager.py:643
 #, python-format
 msgid "The package information was last updated %(hours_ago)s hour ago."
 msgid_plural ""
@@ -1839,17 +1834,17 @@ msgstr[0] "The package information was last updated %(hours_ago)s hour ago."
 msgstr[1] "The package information was last updated %(hours_ago)s hours ago."
 
 #. TRANSLATORS: only in plural form, as %s minutes ago is one of 15, 30, 45 minutes ago
-#: ../UpdateManager/UpdateManager.py:651 ../UpdateManager/UpdateManager.py:653
-#: ../UpdateManager/UpdateManager.py:655
+#: ../UpdateManager/UpdateManager.py:648 ../UpdateManager/UpdateManager.py:650
+#: ../UpdateManager/UpdateManager.py:652
 #, python-format
 msgid "The package information was last updated about %s minutes ago."
 msgstr "The package information was last updated about %s minutes ago."
 
-#: ../UpdateManager/UpdateManager.py:657
+#: ../UpdateManager/UpdateManager.py:654
 msgid "The package information was just updated."
 msgstr "The package information was just updated."
 
-#: ../UpdateManager/UpdateManager.py:677
+#: ../UpdateManager/UpdateManager.py:674
 #: ../data/gtkbuilder/UpdateManager.ui.h:2
 msgid ""
 "Software updates correct errors, eliminate security vulnerabilities and "
@@ -1858,15 +1853,15 @@ msgstr ""
 "Software updates correct errors, eliminate security vulnerabilities and "
 "provide new features."
 
-#: ../UpdateManager/UpdateManager.py:696
+#: ../UpdateManager/UpdateManager.py:693
 msgid "Software updates may be available for your computer."
 msgstr "Software updates may be available for your computer."
 
-#: ../UpdateManager/UpdateManager.py:704
+#: ../UpdateManager/UpdateManager.py:701
 msgid "Welcome to Ubuntu"
 msgstr "Welcome to Ubuntu"
 
-#: ../UpdateManager/UpdateManager.py:705
+#: ../UpdateManager/UpdateManager.py:702
 msgid ""
 "These software updates have been issued since this version of Ubuntu was "
 "released."
@@ -1874,11 +1869,11 @@ msgstr ""
 "Since this version of Ubuntu was released, these software updates have been "
 "issued."
 
-#: ../UpdateManager/UpdateManager.py:708
+#: ../UpdateManager/UpdateManager.py:705
 msgid "Software updates are available for this computer."
 msgstr "Software updates are available for this computer."
 
-#: ../UpdateManager/UpdateManager.py:759
+#: ../UpdateManager/UpdateManager.py:756
 #, python-format
 msgid ""
 "The upgrade needs a total of %s free space on disk '%s'. Please free at "
@@ -1889,7 +1884,7 @@ msgstr ""
 "least an additional %s of disk space on '%s'. Empty your trash and remove "
 "temporary packages of former installations using 'sudo apt-get clean'."
 
-#: ../UpdateManager/UpdateManager.py:784
+#: ../UpdateManager/UpdateManager.py:781
 msgid ""
 "The computer needs to restart to finish installing updates. Please save your "
 "work before continuing."
@@ -1897,7 +1892,7 @@ msgstr ""
 "The computer needs to restart to finish installing updates. Please save your "
 "work before continuing."
 
-#: ../UpdateManager/UpdateManager.py:848
+#: ../UpdateManager/UpdateManager.py:845
 msgid "Reading package information"
 msgstr "Reading package information"
 
@@ -1909,11 +1904,11 @@ msgstr "Connecting..."
 msgid "You may not be able to check for updates or download new updates."
 msgstr "You may not be able to check for updates or download new updates."
 
-#: ../UpdateManager/UpdateManager.py:1004
+#: ../UpdateManager/UpdateManager.py:1008
 msgid "Could not initialize the package information"
 msgstr "Could not initialise the package information"
 
-#: ../UpdateManager/UpdateManager.py:1005
+#: ../UpdateManager/UpdateManager.py:1009
 msgid ""
 "An unresolvable problem occurred while initializing the package "
 "information.\n"
@@ -1927,7 +1922,7 @@ msgstr ""
 "Please report this bug for the 'update-manager' package and try to include "
 "the following error message:\n"
 
-#: ../UpdateManager/UpdateManager.py:1036
+#: ../UpdateManager/UpdateManager.py:1038
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade.\n"
 "\n"
@@ -1939,31 +1934,31 @@ msgstr ""
 "Please report this bug in the 'update-manager' package and try to include "
 "the following error message:"
 
-#: ../UpdateManager/UpdateManager.py:1061
+#: ../UpdateManager/UpdateManager.py:1063
 msgid " (New install)"
 msgstr " (New install)"
 
 #. TRANSLATORS: the b stands for Bytes
-#: ../UpdateManager/UpdateManager.py:1068
+#: ../UpdateManager/UpdateManager.py:1070
 #, python-format
 msgid "(Size: %s)"
 msgstr "(Size: %s)"
 
-#: ../UpdateManager/UpdateManager.py:1070
+#: ../UpdateManager/UpdateManager.py:1072
 #, python-format
 msgid "From version %(old_version)s to %(new_version)s"
 msgstr "From version %(old_version)s to %(new_version)s"
 
-#: ../UpdateManager/UpdateManager.py:1074
+#: ../UpdateManager/UpdateManager.py:1076
 #, python-format
 msgid "Version %s"
 msgstr "Version %s"
 
-#: ../UpdateManager/UpdateManager.py:1105 ../do-release-upgrade:107
+#: ../UpdateManager/UpdateManager.py:1110 ../do-release-upgrade:107
 msgid "Release upgrade not possible right now"
 msgstr "Release upgrade not possible right now"
 
-#: ../UpdateManager/UpdateManager.py:1106 ../do-release-upgrade:108
+#: ../UpdateManager/UpdateManager.py:1111 ../do-release-upgrade:108
 #, c-format, python-format
 msgid ""
 "The release upgrade can not be performed currently, please try again later. "
@@ -1972,21 +1967,21 @@ msgstr ""
 "The release upgrade cannot be performed currently, please try again later. "
 "The server reported: '%s'"
 
-#: ../UpdateManager/UpdateManager.py:1108 ../check-new-release-gtk:115
+#: ../UpdateManager/UpdateManager.py:1113 ../check-new-release-gtk:115
 msgid "Downloading the release upgrade tool"
 msgstr "Downloading the release upgrade tool"
 
-#: ../UpdateManager/UpdateManager.py:1115
+#: ../UpdateManager/UpdateManager.py:1120
 #, python-format
 msgid "<b>New Ubuntu release '%s' is available</b>"
 msgstr "<b>New Ubuntu release '%s' is available</b>"
 
 #. we assert a clean cache
-#: ../UpdateManager/UpdateManager.py:1154
+#: ../UpdateManager/UpdateManager.py:1159
 msgid "Software index is broken"
 msgstr "Software index is broken"
 
-#: ../UpdateManager/UpdateManager.py:1155
+#: ../UpdateManager/UpdateManager.py:1160
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -1996,6 +1991,17 @@ msgstr ""
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 
+#: ../UpdateManager/UpdateManager.py:1222
+#: ../UpdateManager/UpdateManager.py:1255
+#, fuzzy
+msgid "New hardware support is available"
+msgstr "New release '%s' available."
+
+#: ../UpdateManager/UpdateManager.py:1256
+#: ../UpdateManagerText/UpdateManagerText.py:31
+msgid "Cancel"
+msgstr "Cancel"
+
 #: ../UpdateManager/UnitySupport.py:57
 msgid "Check for Updates"
 msgstr "Check for Updates"
@@ -2003,10 +2009,6 @@ msgstr "Check for Updates"
 #: ../UpdateManager/UnitySupport.py:66
 msgid "Install All Available Updates"
 msgstr "Install All Available Updates"
-
-#: ../UpdateManagerText/UpdateManagerText.py:31
-msgid "Cancel"
-msgstr "Cancel"
 
 #: ../UpdateManagerText/UpdateManagerText.py:34
 msgid "Changelog"
@@ -2197,8 +2199,7 @@ msgstr "<big><b>Running on battery</b></big>"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:19
 msgid "Your system is running on battery. Are you sure you want to continue?"
-msgstr ""
-"Your system is running on battery. Are you sure you want to continue?"
+msgstr "Your system is running on battery. Are you sure you want to continue?"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:21
 msgid "_Upgrade"
@@ -2222,11 +2223,16 @@ msgstr "Starting Update Manager"
 msgid "U_pgrade"
 msgstr "U_pgrade"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:27
+#: ../data/gtkbuilder/UpdateManager.ui.h:26
+#, fuzzy
+msgid "I_nstall"
+msgstr "Install"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:28
 msgid "updates"
 msgstr "updates"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:28
+#: ../data/gtkbuilder/UpdateManager.ui.h:29
 msgid ""
 "You are connected via roaming and may be charged for the data consumed by "
 "this update."
@@ -2234,37 +2240,36 @@ msgstr ""
 "You are connected via roaming and may be charged for the data consumed by "
 "this update."
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:29
+#: ../data/gtkbuilder/UpdateManager.ui.h:30
 msgid "You are connected via a wireless modem."
 msgstr "You are connected via a wireless modem."
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:30
+#: ../data/gtkbuilder/UpdateManager.ui.h:31
 msgid "It’s safer to connect the computer to AC power before updating."
 msgstr "It’s safer to connect the computer to AC power before updating."
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:31
+#: ../data/gtkbuilder/UpdateManager.ui.h:32
 msgid "_Install Updates"
 msgstr "_Install Updates"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:32
+#: ../data/gtkbuilder/UpdateManager.ui.h:33
 msgid "Changes"
 msgstr "Changes"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:33
+#: ../data/gtkbuilder/UpdateManager.ui.h:34
 msgid "Description"
 msgstr "Description"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:34
+#: ../data/gtkbuilder/UpdateManager.ui.h:35
 msgid "Description of update"
 msgstr "Description of update"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:35
+#: ../data/gtkbuilder/UpdateManager.ui.h:36
 msgid "_Settings..."
 msgstr "_Settings..."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
-msgid ""
-"<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+msgid "<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
 msgstr ""
 "<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
 
@@ -2410,32 +2415,32 @@ msgstr "You have declined the upgrade to Ubuntu %s"
 msgid "Add debug output"
 msgstr "Add debug output"
 
-#: ../ubuntu-support-status:79
+#: ../ubuntu-support-status:81
 msgid "Show unsupported packages on this machine"
 msgstr "Show unsupported packages on this machine"
 
-#: ../ubuntu-support-status:82
+#: ../ubuntu-support-status:84
 msgid "Show supported packages on this machine"
 msgstr "Show supported packages on this machine"
 
-#: ../ubuntu-support-status:85
+#: ../ubuntu-support-status:87
 msgid "Show all packages with their status"
 msgstr "Show all packages with their status"
 
-#: ../ubuntu-support-status:88
+#: ../ubuntu-support-status:90
 msgid "Show all packages in a list"
 msgstr "Show all packages in a list"
 
-#: ../ubuntu-support-status:130
+#: ../ubuntu-support-status:132
 #, c-format
 msgid "Support status summary of '%s':"
 msgstr "Support status summary of '%s':"
 
-#: ../ubuntu-support-status:133
+#: ../ubuntu-support-status:135
 msgid "You have %(num)s packages (%(percent).1f%%) supported until %(time)s"
 msgstr "You have %(num)s packages (%(percent).1f%%) supported until %(time)s"
 
-#: ../ubuntu-support-status:139
+#: ../ubuntu-support-status:141
 msgid ""
 "You have %(num)s packages (%(percent).1f%%) that can not/no-longer be "
 "downloaded"
@@ -2443,11 +2448,11 @@ msgstr ""
 "You have %(num)s packages (%(percent).1f%%) that can not/no longer be "
 "downloaded"
 
-#: ../ubuntu-support-status:142
+#: ../ubuntu-support-status:144
 msgid "You have %(num)s packages (%(percent).1f%%) that are unsupported"
 msgstr "You have %(num)s packages (%(percent).1f%%) that are unsupported"
 
-#: ../ubuntu-support-status:150
+#: ../ubuntu-support-status:157
 msgid ""
 "Run with --show-unsupported, --show-supported or --show-all to see more "
 "details"
@@ -2455,22 +2460,32 @@ msgstr ""
 "Run with --show-unsupported, --show-supported or --show-all to see more "
 "details"
 
-#: ../ubuntu-support-status:154
+#: ../ubuntu-support-status:161
 msgid "No longer downloadable:"
 msgstr "No longer downloadable:"
 
-#: ../ubuntu-support-status:157
+#: ../ubuntu-support-status:164
 msgid "Unsupported: "
 msgstr "Unsupported: "
 
-#: ../ubuntu-support-status:162
+#: ../ubuntu-support-status:169
 #, c-format
 msgid "Supported until %s:"
 msgstr "Supported until %s:"
 
-#: ../ubuntu-support-status:171
+#: ../ubuntu-support-status:178
 msgid "Unsupported"
 msgstr "Unsupported"
+
+#: ../hwe-support-status:182
+msgid ""
+"You are not running a system with a Hardware Enablement Stack. Your system "
+"is supported until %(month)s %(year)s."
+msgstr ""
+
+#: ../hwe-support-status:189
+msgid "Check HWE support status"
+msgstr ""
 
 #: ../Janitor/computerjanitor/exc.py:30
 #, python-format
@@ -2523,10 +2538,74 @@ msgid "%s needs to be marked as manually installed."
 msgstr "%s needs to be marked as manually installed."
 
 #: ../Janitor/plugins/remove_lilo_plugin.py:28
-msgid ""
-"Remove lilo since grub is also installed.(See bug #314004 for details.)"
+msgid "Remove lilo since grub is also installed.(See bug #314004 for details.)"
 msgstr ""
 "Remove lilo since grub is also installed.(See bug #314004 for details.)"
+
+#: ../HweSupportStatus/consts.py:20
+#, python-format
+msgid ""
+"\n"
+"There is a graphics stack installed on this system. An upgrade to a \n"
+"supported (or longer supported) configuration will become available\n"
+"on %(date)s and can be invoked by running 'update-manager' in the\n"
+"Dash.\n"
+"    "
+msgstr ""
+
+#: ../HweSupportStatus/consts.py:28
+#, python-format
+msgid ""
+"\n"
+"To upgrade to a supported (or longer supported) configuration:\n"
+"\n"
+"* Upgrade from Ubuntu 12.04 LTS to Ubuntu 14.04 LTS by running:\n"
+"sudo do-release-upgrade %s\n"
+"\n"
+"OR\n"
+"\n"
+"* Install a newer HWE version by running:\n"
+"sudo apt-get install %s\n"
+"\n"
+"and reboot your system."
+msgstr ""
+
+#: ../HweSupportStatus/consts.py:41
+#, python-format
+msgid ""
+"Your Hardware Enablement Stack (HWE) is supported until %(month)s %(year)s."
+msgstr ""
+
+#: ../HweSupportStatus/consts.py:47
+#, python-format
+msgid ""
+"\n"
+"Your current Hardware Enablement Stack (HWE) is going out of support\n"
+"on %s.  After this date security updates for critical parts (kernel\n"
+"and graphics stack) of your system will no longer be available.\n"
+"\n"
+"For more information, please see:\n"
+"http://wiki.ubuntu.com/1204_HWE_EOL\n"
+msgstr ""
+
+#: ../HweSupportStatus/consts.py:56
+#, python-format
+msgid ""
+"\n"
+"Your current Hardware Enablement Stack (HWE) is no longer supported\n"
+"since %s.  Security updates for critical parts (kernel\n"
+"and graphics stack) of your system are no longer available.\n"
+"\n"
+"For more information, please see:\n"
+"http://wiki.ubuntu.com/1204_HWE_EOL\n"
+msgstr ""
+
+#~ msgid ""
+#~ "After your package information was updated the essential package '%s' can "
+#~ "not be found anymore so a bug reporting process is being started."
+#~ msgstr ""
+#~ "After your package information was updated, the essential package '%s' "
+#~ "can not be found anymore, so a bug reporting process is being started."
 
 #~ msgid "Checking for a new ubuntu release"
 #~ msgstr "Checking for a new ubuntu release"
@@ -2551,16 +2630,15 @@ msgstr ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from the "
 #~ "Administration menu later."
 
-#, python-format
 #~ msgid ""
-#~ "This upgrade is running in sandbox (test) mode. All changes are written to "
-#~ "'%s' and will be lost on the next reboot.\n"
+#~ "This upgrade is running in sandbox (test) mode. All changes are written "
+#~ "to '%s' and will be lost on the next reboot.\n"
 #~ "\n"
 #~ "*No* changes written to a systemdir from now until the next reboot are "
 #~ "permanent."
 #~ msgstr ""
-#~ "This upgrade is running in sandbox (test) mode. All changes are written to "
-#~ "'%s' and will be lost on the next reboot.\n"
+#~ "This upgrade is running in sandbox (test) mode. All changes are written "
+#~ "to '%s' and will be lost on the next reboot.\n"
 #~ "\n"
 #~ "*No* changes written to a systemdir from now until the next reboot are "
 #~ "permanent."
@@ -2587,67 +2665,69 @@ msgstr ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from "
 #~ "Applications later."
 
-#, python-format
 #~ msgid ""
 #~ "After your package information was updated the essential package '%s' can "
 #~ "not be found anymore.\n"
 #~ "This indicates a serious error, please report this bug using the command "
-#~ "'ubuntu-bug update-manager' in a terminal and include the files in "
-#~ "/var/log/dist-upgrade/ in the bug report."
+#~ "'ubuntu-bug update-manager' in a terminal and include the files in /var/"
+#~ "log/dist-upgrade/ in the bug report."
 #~ msgstr ""
 #~ "After your package information was updated the essential package '%s' can "
 #~ "not be found anymore.\n"
 #~ "This indicates a serious error, please report this bug using the command "
-#~ "'ubuntu-bug update-manager' in a terminal and include the files in "
-#~ "/var/log/dist-upgrade/ in the bug report."
+#~ "'ubuntu-bug update-manager' in a terminal and include the files in /var/"
+#~ "log/dist-upgrade/ in the bug report."
 
 #~ msgid ""
-#~ "The system was unable to get the prerequisites for the upgrade. The upgrade "
-#~ "will abort now and restore the original system state.\n"
+#~ "The system was unable to get the prerequisites for the upgrade. The "
+#~ "upgrade will abort now and restore the original system state.\n"
 #~ "\n"
-#~ "Please report this as a bug using the command 'ubuntu-bug update-manager' in "
-#~ "a terminal and include the files in /var/log/dist-upgrade/ in the bug report."
+#~ "Please report this as a bug using the command 'ubuntu-bug update-manager' "
+#~ "in a terminal and include the files in /var/log/dist-upgrade/ in the bug "
+#~ "report."
 #~ msgstr ""
-#~ "The system was unable to get the prerequisites for the upgrade. The upgrade "
-#~ "will abort now and restore the original system state.\n"
+#~ "The system was unable to get the prerequisites for the upgrade. The "
+#~ "upgrade will abort now and restore the original system state.\n"
 #~ "\n"
-#~ "Please report this as a bug using the command 'ubuntu-bug update-manager' in "
-#~ "a terminal and include the files in /var/log/dist-upgrade/ in the bug report."
+#~ "Please report this as a bug using the command 'ubuntu-bug update-manager' "
+#~ "in a terminal and include the files in /var/log/dist-upgrade/ in the bug "
+#~ "report."
 
 #~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
 #~ msgstr "Your graphics hardware may not be fully supported in Ubuntu 11.10."
 
 #~ msgid ""
-#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited and "
-#~ "you may encounter problems after the upgrade. Do you want to continue with "
-#~ "the upgrade?"
+#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited "
+#~ "and you may encounter problems after the upgrade. Do you want to continue "
+#~ "with the upgrade?"
 #~ msgstr ""
-#~ "The support in Ubuntu 11.10 for your Intel graphics hardware is limited and "
-#~ "you may encounter problems after the upgrade. Do you want to continue with "
-#~ "the upgrade?"
+#~ "The support in Ubuntu 11.10 for your Intel graphics hardware is limited "
+#~ "and you may encounter problems after the upgrade. Do you want to continue "
+#~ "with the upgrade?"
 
-#, python-format
 #~ msgid ""
 #~ "\n"
 #~ "\n"
 #~ "Please report this bug using the command 'ubuntu-bug update-manager' in a "
-#~ "terminal and include the files in /var/log/dist-upgrade/ in the bug report.\n"
+#~ "terminal and include the files in /var/log/dist-upgrade/ in the bug "
+#~ "report.\n"
 #~ "%s"
 #~ msgstr ""
 #~ "\n"
 #~ "\n"
 #~ "Please report this bug using the command 'ubuntu-bug update-manager' in a "
-#~ "terminal and include the files in /var/log/dist-upgrade/ in the bug report.\n"
+#~ "terminal and include the files in /var/log/dist-upgrade/ in the bug "
+#~ "report.\n"
 #~ "%s"
 
 #~ msgid ""
 #~ "Preparing the system for the upgrade failed. Please report this using the "
-#~ "command 'ubuntu-bug update-manager' in a terminal and include the files in "
-#~ "/var/log/dist-upgrade/ in the bug report."
+#~ "command 'ubuntu-bug update-manager' in a terminal and include the files "
+#~ "in /var/log/dist-upgrade/ in the bug report."
 #~ msgstr ""
 #~ "Preparing the system for the upgrade failed. Please report this using the "
-#~ "command 'ubuntu-bug update-manager' in a terminal and include the files in "
-#~ "/var/log/dist-upgrade/ in the bug report."
+#~ "command 'ubuntu-bug update-manager' in a terminal and include the files "
+#~ "in /var/log/dist-upgrade/ in the bug report."
 
 #~ msgid ""
 #~ "Upgrading the repository information resulted in a invalid file. Please "
@@ -2658,7 +2738,6 @@ msgstr ""
 #~ "report this as a bug using the command 'ubuntu-bug update-manager' in a "
 #~ "terminal."
 
-#, python-format
 #~ msgid "%.0f kB"
 #~ msgstr "%.0f kB"
 
@@ -2670,21 +2749,21 @@ msgstr ""
 
 #~ msgid ""
 #~ "These software updates have been issued since this version of Ubuntu was "
-#~ "released. If you don't want to install them now, choose \"Update Manager\" "
-#~ "from Applications later."
+#~ "released. If you don't want to install them now, choose \"Update Manager"
+#~ "\" from Applications later."
 #~ msgstr ""
 #~ "These software updates have been issued since this version of Ubuntu was "
-#~ "released. If you don't want to install them now, choose \"Update Manager\" "
-#~ "from Applications later."
+#~ "released. If you don't want to install them now, choose \"Update Manager"
+#~ "\" from Applications later."
 
 #~ msgid ""
 #~ "These software updates have been issued since this version of Ubuntu was "
-#~ "released. If you don't want to install them now, choose \"Update Manager\" "
-#~ "from the Administration Menu later."
+#~ "released. If you don't want to install them now, choose \"Update Manager"
+#~ "\" from the Administration Menu later."
 #~ msgstr ""
 #~ "These software updates have been issued since this version of Ubuntu was "
-#~ "released. If you don't want to install them now, choose \"Update Manager\" "
-#~ "from the Administration Menu later."
+#~ "released. If you don't want to install them now, choose \"Update Manager"
+#~ "\" from the Administration Menu later."
 
 #~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
 #~ msgstr "<b><big>Upgrading Ubuntu to version 11.10</big></b>"

@@ -80,6 +80,7 @@ from SimpleGtk3builderApp import SimpleGtkbuilderApp
 from MetaReleaseGObject import MetaRelease
 from UnitySupport import UnitySupport
 
+import HweSupportStatus.consts
 
 #import pdb
 
@@ -196,6 +197,7 @@ class UpdateManager(SimpleGtkbuilderApp):
     self.button_close.grab_focus()
     self.dl_size = 0
     self.connected = True
+    self.hwe_replacement_packages = []
 
     # create text view
     self.textview_changes = ChangelogViewer()
@@ -843,13 +845,16 @@ class UpdateManager(SimpleGtkbuilderApp):
         msg = _("Reading package information")
         self.label_cache_progress_title.set_label("<b><big>%s</big></b>" % msg)
         self.fillstore()
+        # check hwe status - if a hwe pkg is missing, show dialog
+        self._show_hide_hwe_frame()
+    else:
+        self.window_main.set_sensitive(True)
+        self.window_main.get_window().set_cursor(None)
 
     # Allow suspend after synaptic is finished
     if self.sleep_cookie:
         allow_sleep(self.sleep_dev, self.sleep_cookie)
         self.sleep_cookie = self.sleep_dev = None
-    self.window_main.set_sensitive(True)
-    self.window_main.get_window().set_cursor(None)
 
   def _on_network_alert(self, watcher, state):
       # do not set the buttons to sensitive/insensitive until NM
@@ -1081,6 +1086,7 @@ class UpdateManager(SimpleGtkbuilderApp):
       Gtk.main_iteration()
     self.check_all_updates_installable()
     self.refresh_updates_count()
+    self.progress.all_done()
     return False
 
   def dist_no_longer_supported(self, meta_release):
@@ -1163,8 +1169,6 @@ class UpdateManager(SimpleGtkbuilderApp):
         dialog.run()
         dialog.destroy()
         sys.exit(1)
-    else:
-        self.progress.all_done()
 
   def check_auto_update(self):
       # Check if automatic update is enabled. If not show a dialog to inform
@@ -1200,6 +1204,74 @@ class UpdateManager(SimpleGtkbuilderApp):
                    "--", "/usr/bin/update-manager", "--dist-upgrade")
       return False
 
+  def check_hwe_support_status(self):
+      HWE = "/usr/bin/hwe-support-status"
+      if not os.path.exists(HWE):
+          return
+      cmd = [HWE, "--show-replacements"]
+      flags = GObject.SPAWN_DO_NOT_REAP_CHILD
+      (pid, stdin, stdout, stderr) = GObject.spawn_async(
+          cmd, standard_output=True, flags=flags)
+      GObject.child_watch_add(
+          pid, self._on_hwe_support_status_done, (stdout, stderr))
+
+  def _show_hide_hwe_frame(self):
+      for pkgname in self.hwe_replacement_packages:
+          if pkgname in self.cache and not self.cache[pkgname].is_installed:
+              self.label_new_hwe.set_markup("<b>%s</b>" % _(
+                  "New hardware support is available"))
+              self.frame_new_hwe.show()
+              break
+      else:
+          self.frame_new_hwe.hide()
+
+  def _on_hwe_support_status_done(self, pid, condition, data):
+      stdout_fd, stderr_fd = data
+      with os.fdopen(stdout_fd) as f:
+          output = f.read()
+      ret_code = os.WEXITSTATUS(condition)
+      if ret_code != 10:
+          logging.warning("nothing unsupported running %s (%s)" % (
+              ret_code, condition))
+          return
+      packages = output.strip().split()
+      self.hwe_replacement_packages = []
+      for pkgname in packages:
+          if pkgname in self.cache and not self.cache[pkgname].is_installed:
+              self.hwe_replacement_packages.append(pkgname)
+      self._show_hide_hwe_frame()
+
+  def on_button_new_hwe_clicked(self, button):
+      if self.hwe_replacement_packages:
+          # provide information about the update
+          from ReleaseNotesViewer import ReleaseNotesViewer
+          dialog = Gtk.MessageDialog(
+              self.window_main,
+              Gtk.DialogFlags.MODAL,
+              Gtk.MessageType.INFO,
+              Gtk.ButtonsType.NONE,
+              "")
+          dialog.set_markup(
+              "<big><b>%s</b></big>" % _("New hardware support is available"))
+          dialog.add_button(_("Cancel"), Gtk.ResponseType.CANCEL)
+          dialog.add_button(_("Upgrade"), Gtk.ResponseType.OK)
+          # setup content area
+          content_area = dialog.get_content_area()
+          rv = ReleaseNotesViewer(
+              _(HweSupportStatus.consts.Messages.HWE_SUPPORT_ENDS))
+          rv.show()
+          content_area.pack_start(rv, True, True, 6)
+          # run it!
+          res = dialog.run()
+          dialog.destroy()
+          if res == Gtk.ResponseType.OK:
+              # lock window etc
+              self.window_main.set_sensitive(False)
+              self.window_main.get_window().set_cursor(
+                  Gdk.Cursor.new(Gdk.CursorType.WATCH))
+              self.install_backend.commit(
+                  self.hwe_replacement_packages, [], False)
+
   def check_metarelease(self):
       " check for new meta-release information "
       settings = Gio.Settings("com.ubuntu.update-manager")
@@ -1212,7 +1284,6 @@ class UpdateManager(SimpleGtkbuilderApp):
           settings.get_boolean("check-dist-upgrades")):
           self.meta.connect("new_dist_available",self.new_dist_available)
       
-
   def main(self, options):
     self.options = options
 
@@ -1223,6 +1294,11 @@ class UpdateManager(SimpleGtkbuilderApp):
       Gtk.main_iteration()
 
     self.fillstore()
+
+    # check for HardwareEnablement updates (needs to run after "fillstore")
+    # to ensure we have a cache
+    self.check_hwe_support_status()
+
     self.check_auto_update()
     self.alert_watcher.check_alert_state()
     Gtk.main()
