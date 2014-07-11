@@ -73,7 +73,7 @@ class GtkOpProgressInline(apt.progress.base.OpProgress):
         self._progressbar.hide()
         self._init_steps()
 
-class GtkOpProgressWindow(apt.OpProgress):
+class GtkOpProgressWindow(apt.progress.base.OpProgress):
     def __init__(self, host_window, progressbar, status, parent,
                  steps=STEPS_UPDATE_CACHE):
         # used for the "one run progressbar"
@@ -122,7 +122,7 @@ class GtkOpProgressWindow(apt.OpProgress):
     def hide(self):
         self._window.hide()
 
-class GtkFetchProgress(apt.progress.FetchProgress):
+class GtkFetchProgress(apt.progress.base.AcquireProgress):
     def __init__(self, parent, summary="", descr=""):
         # if this is set to false the download will cancel
         self._continue = True

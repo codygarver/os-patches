@@ -6,11 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: update-manager\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2012-04-14 00:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-02 12:16+0100\n"
 "PO-Revision-Date: 2011-12-06 06:39+0000\n"
 "Last-Translator: Tennom <Unknown>\n"
 "Language-Team: Tibetan <bo@li.org>\n"
+"Language: bo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +20,7 @@ msgstr ""
 "X-Generator: Launchpad (build 15099)\n"
 
 #. TRANSLATORS: download size of small updates, e.g. "250 kB"
-#: ../DistUpgrade/utils.py:399 ../UpdateManager/Core/utils.py:399
+#: ../DistUpgrade/utils.py:397 ../UpdateManager/Core/utils.py:397
 #, python-format
 msgid "%(size).0f kB"
 msgid_plural "%(size).0f kB"
@@ -27,7 +28,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: download size of updates, e.g. "2.3 MB"
-#: ../DistUpgrade/utils.py:402 ../UpdateManager/Core/utils.py:402
+#: ../DistUpgrade/utils.py:400 ../UpdateManager/Core/utils.py:400
 #, python-format
 msgid "%.1f MB"
 msgstr "%.1f MB"
@@ -56,12 +57,11 @@ msgstr "གཏེར་མཛོད་གྲངས་ཐོ་བརྩི་མ
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
-"wrong architecture?"
+"Unable to locate any package files, perhaps this is not a elementary OS Disc "
+"or the wrong architecture?"
 msgstr ""
-"ཡིག་ཆ་ཐུམ་བུ་གནས་སྟོན་ཐུབ་མི་འདུག "
-"འདི་ཕལ་ཆེར་མ་ལག་elementary OS་མཛོད་སྡེར་རེད་མི་འདུག་ཡང་ན་སྒྲིག་བཟོ་ "
-"ཡང་དག་པ་རེད་མི་འདུག"
+"ཡིག་ཆ་ཐུམ་བུ་གནས་སྟོན་ཐུབ་མི་འདུག འདི་ཕལ་ཆེར་མ་ལག་elementary OS་མཛོད་སྡེར་རེད་མི་འདུག་ཡང་ན་"
+"སྒྲིག་བཟོ་ ཡང་དག་པ་རེད་མི་འདུག"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
 msgid "Failed to add the CD"
@@ -76,9 +76,8 @@ msgid ""
 "The error message was:\n"
 "'%s'"
 msgstr ""
-"་་CD་་འོད་སྡེར་ནང་ཚན་ཁ་སྣོན་དུས་སྐྱོན་བྱུང་སོང་། རིམ་སྤར་མཚམས་བཅད་ངེས། "
-"འདི་གལ་སྲིད་ནུས་ལྡན་གྱི་མ་ལག་elementary OS "
-"་་CD་་སྒྲིག་སྡེར་ཡིན་ན་སྐྱོན་འདིའི་སྐོར་ཡ་ལན་སྤྲོད་རོགས\n"
+"་་CD་་འོད་སྡེར་ནང་ཚན་ཁ་སྣོན་དུས་སྐྱོན་བྱུང་སོང་། རིམ་སྤར་མཚམས་བཅད་ངེས། འདི་གལ་སྲིད་ནུས་ལྡན་གྱི་མ་"
+"ལག་elementary OS ་་CD་་སྒྲིག་སྡེར་ཡིན་ན་སྐྱོན་འདིའི་སྐོར་ཡ་ལན་སྤྲོད་རོགས\n"
 "\n"
 "ནོར་འཁྲུལ་ཡི་གེ་ནི། \n"
 "'%s'"
@@ -99,9 +98,8 @@ msgid_plural ""
 "but no archives can be found for them. Do you want to remove these packages "
 "now to continue?"
 msgstr[0] ""
-"'%s'ཐུམ་བུ་མཉམ་དུ་སྒྲིལ་མི་འདུག་པས་ཡང་བསྐྱར་སྒྲིག་འཇུག་དགོས "
-"་ཡིནའང་འོས་མཚམས་ཀྱི་ཡིག་ཚགས་རྙེད་མ་བྱུང་བས་ཁྱོད་ཀྱིས་ཐུམ་བུ་བསུབ་པ་མུ་མཐུད་དག"
-"ོས་སམ།"
+"'%s'ཐུམ་བུ་མཉམ་དུ་སྒྲིལ་མི་འདུག་པས་ཡང་བསྐྱར་སྒྲིག་འཇུག་དགོས ་ཡིནའང་འོས་མཚམས་ཀྱི་ཡིག་ཚགས་རྙེད་མ་བྱུང་"
+"བས་ཁྱོད་ཀྱིས་ཐུམ་བུ་བསུབ་པ་མུ་མཐུད་དགོས་སམ།"
 
 #. FIXME: not ideal error message, but we just reuse a
 #. existing one here to avoid a new string
@@ -118,12 +116,11 @@ msgid ""
 "Your system contains broken packages that couldn't be fixed with this "
 "software. Please fix them first using synaptic or apt-get before proceeding."
 msgstr ""
-"ཁྱོད་ཀྱི་མ་ལག་ནང་མཉེན་ཆས་འདིས་བཟོ་བཅོས་མི་ཐུབ་པའི་ཐུམ་བུ་སྐྱོན་ཅན་འདུག "
-"མདུན་སྐྱོད་མ་བྱས་གོང་synaptic་འམ་ཡང་ན་apt-"
-"get་བེད་སྤྱོད་གཏོང་ནས་བཟོ་བཅོས་བྱེད་རོགས"
+"ཁྱོད་ཀྱི་མ་ལག་ནང་མཉེན་ཆས་འདིས་བཟོ་བཅོས་མི་ཐུབ་པའི་ཐུམ་བུ་སྐྱོན་ཅན་འདུག མདུན་སྐྱོད་མ་བྱས་གོང་"
+"synaptic་འམ་ཡང་ན་apt-get་བེད་སྤྱོད་གཏོང་ནས་བཟོ་བཅོས་བྱེད་རོགས"
 
 #. FIXME: change the text to something more useful
-#: ../DistUpgrade/DistUpgradeCache.py:679
+#: ../DistUpgrade/DistUpgradeCache.py:659
 #, python-format
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade:\n"
@@ -143,26 +140,26 @@ msgstr ""
 " * མ་ལག་elementary OS་ཀྱིས་མཁོ་སྤྲོད་མ་བྱས་པའི་གཞུང་བཟོས་མཉེན་ཆས་ཐུམ་བུ་མིན་པ\n"
 "\n"
 
-#: ../DistUpgrade/DistUpgradeCache.py:689
+#: ../DistUpgrade/DistUpgradeCache.py:669
 msgid "This is most likely a transient problem, please try again later."
 msgstr "This is most likely a transient problem. Please try again later."
 
-#: ../DistUpgrade/DistUpgradeCache.py:692
+#: ../DistUpgrade/DistUpgradeCache.py:672
 msgid ""
 "If none of this applies, then please report this bug using the command "
 "'ubuntu-bug update-manager' in a terminal."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeCache.py:697
-#: ../UpdateManager/UpdateManager.py:1035
+#: ../DistUpgrade/DistUpgradeCache.py:677
+#: ../UpdateManager/UpdateManager.py:1024
 msgid "Could not calculate the upgrade"
 msgstr "རིམ་སྤོར་རྩིས་འདངས་རྒྱག་མི་ཐུབ་པ"
 
-#: ../DistUpgrade/DistUpgradeCache.py:748
+#: ../DistUpgrade/DistUpgradeCache.py:728
 msgid "Error authenticating some packages"
 msgstr "ཐུམ་བུ་འགའ་ངོས་འཛིན་བྱེད་པ་ནོར་འཁྲུལ་"
 
-#: ../DistUpgrade/DistUpgradeCache.py:749
+#: ../DistUpgrade/DistUpgradeCache.py:729
 msgid ""
 "It was not possible to authenticate some packages. This may be a transient "
 "network problem. You may want to try again later. See below for a list of "
@@ -172,41 +169,39 @@ msgstr ""
 "network problem. You may want to try again later. See below for a list of "
 "unauthenticated packages."
 
-#: ../DistUpgrade/DistUpgradeCache.py:769
+#: ../DistUpgrade/DistUpgradeCache.py:749
 #, python-format
 msgid ""
 "The package '%s' is marked for removal but it is in the removal blacklist."
-msgstr ""
-"རྟགས་'%s'འདི་འཁོད་ཡོད་པ་ཚང་མ་བསུབ་དགོས་ཀྱང་འདི་བསུབ་རྒྱུའི་དེབ་ཐོ་ནང་དུ་མི་འད"
-"ུག"
+msgstr "རྟགས་'%s'འདི་འཁོད་ཡོད་པ་ཚང་མ་བསུབ་དགོས་ཀྱང་འདི་བསུབ་རྒྱུའི་དེབ་ཐོ་ནང་དུ་མི་འདུག"
 
-#: ../DistUpgrade/DistUpgradeCache.py:773
+#: ../DistUpgrade/DistUpgradeCache.py:753
 #, python-format
 msgid "The essential package '%s' is marked for removal."
 msgstr "གལ་ཆེན་ཐུམ་བུ'%s' འདིར་བསུབ་དགོས་པའི་རྟགས་འཁོད་འདུག"
 
-#: ../DistUpgrade/DistUpgradeCache.py:782
+#: ../DistUpgrade/DistUpgradeCache.py:762
 #, python-format
 msgid "Trying to install blacklisted version '%s'"
 msgstr "རྟགས་ངན་ཅན་པར་གཞི་'%s་སྒྲིག་འཇུག་ཚོད་ལྟ་བཞིན་པ'"
 
-#: ../DistUpgrade/DistUpgradeCache.py:900
+#: ../DistUpgrade/DistUpgradeCache.py:880
 #, python-format
 msgid "Can't install '%s'"
 msgstr "'%s'སྒྲིག་འཇུག་མི་ཐུབ་པ"
 
-#: ../DistUpgrade/DistUpgradeCache.py:901
+#: ../DistUpgrade/DistUpgradeCache.py:881
 msgid ""
 "It was impossible to install a required package. Please report this as a bug "
 "using 'ubuntu-bug update-manager' in a terminal."
 msgstr ""
 
 #. FIXME: provide a list
-#: ../DistUpgrade/DistUpgradeCache.py:912
+#: ../DistUpgrade/DistUpgradeCache.py:892
 msgid "Can't guess meta-package"
 msgstr "meta-package་ཚོད་དཔགས་མི་ཐུབ་པ"
 
-#: ../DistUpgrade/DistUpgradeCache.py:913
+#: ../DistUpgrade/DistUpgradeCache.py:893
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
@@ -214,12 +209,10 @@ msgid ""
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
-"ཁྱོད་ཀྱི་མ་ལག་ནང་Your system does not contain a ubuntu-སྒྲོག་སྟེགས, kubuntu-"
-"སྒྲོག་སྟེགས, xubuntu-སྒྲོག་སྟེགས་ཡང་ན་edubuntu-"
-"སྒྲོག་སྟེགས་ཐུམ་བུ་ཞིག་འདུས་མེད་པས་སྤྱོད་བཞིན་པའི་པར་གཞི་རྩིས་བཤེར་བྱེད་པ་འགྲ"
-"ུབ་མི་སྲིད \n"
-"མདུན་སྐྱོད་མ་བྱས་གོང་synaptic་དང་ཡང་ན་ apt-"
-"get་བེད་སྤྱོད་ནས་གོང་གི་ཐུམ་བུ་ཞིག་སྒྲིག་འཇུག་བྱེད་རོགས"
+"ཁྱོད་ཀྱི་མ་ལག་ནང་Your system does not contain a ubuntu-སྒྲོག་སྟེགས, kubuntu-སྒྲོག་སྟེགས, "
+"xubuntu-སྒྲོག་སྟེགས་ཡང་ན་edubuntu-སྒྲོག་སྟེགས་ཐུམ་བུ་ཞིག་འདུས་མེད་པས་སྤྱོད་བཞིན་པའི་པར་གཞི་རྩིས་བཤེར་"
+"བྱེད་པ་འགྲུབ་མི་སྲིད \n"
+"མདུན་སྐྱོད་མ་བྱས་གོང་synaptic་དང་ཡང་ན་ apt-get་བེད་སྤྱོད་ནས་གོང་གི་ཐུམ་བུ་ཞིག་སྒྲིག་འཇུག་བྱེད་རོགས"
 
 #: ../DistUpgrade/DistUpgradeController.py:100
 msgid "Reading cache"
@@ -249,9 +242,8 @@ msgid ""
 "\n"
 "The upgrade will abort now. Please try without ssh."
 msgstr ""
-"ཁྱོད་ཀྱི་རིམ་སྤོར་འདི་མདུན་ངོས་མཐུད་སྣེའི་རམ་འདེགས་མེད་པའི་རྒྱང་འབྲེལ་ssh "
-"སྦྲེལ་མཐུད་ཐོག་འཁོར་སྐྱོད་བྱེད་བཞིན་འདུག ཁྱོད་ཀྱིས'do-release-"
-"upgrade'སྤྱད་ནས་ཡི་གེ་རྣམ་པ་ཅན་གྱི་རིམ་སྤོར་ལ་ཚོད་ལྟ་བྱེད་རོགས།\n"
+"ཁྱོད་ཀྱི་རིམ་སྤོར་འདི་མདུན་ངོས་མཐུད་སྣེའི་རམ་འདེགས་མེད་པའི་རྒྱང་འབྲེལ་ssh སྦྲེལ་མཐུད་ཐོག་འཁོར་སྐྱོད་བྱེད་བཞིན་"
+"འདུག ཁྱོད་ཀྱིས'do-release-upgrade'སྤྱད་ནས་ཡི་གེ་རྣམ་པ་ཅན་གྱི་རིམ་སྤོར་ལ་ཚོད་ལྟ་བྱེད་རོགས།\n"
 "\n"
 "རིམ་སྤོར་འདི་ད་ལྟ་མཚམས་བཅད་རྒྱུ་ཡིན་པ་དང་sshམ་སྤྱད་པ་ཚོད་ལྟ་བྱེད་རོགས"
 
@@ -299,9 +291,8 @@ msgid ""
 "with e.g.:\n"
 "'%s'"
 msgstr ""
-"ཁྱོད་ཉེན་འགོག་ཆས་སྤྱད་ན་གནས་སྐབས་རིང་མཐུད་སྣེ་འདི་ཁ་འབྱེད་དགོས་ཉེན་ཆེ། "
-"འདིར་ཉེན་ཁ་ཅུང་ཡོད་པས་རང་འགུལ་གྱིས་བཟོས་མེད། "
-"ཁྱོད་ཀྱིས་འདི་སྤྱད་ནས་མཐུད་སྣེ་ཁ་འབྱེད་ཆོག་པ། དཔེར་ན:\n"
+"ཁྱོད་ཉེན་འགོག་ཆས་སྤྱད་ན་གནས་སྐབས་རིང་མཐུད་སྣེ་འདི་ཁ་འབྱེད་དགོས་ཉེན་ཆེ། འདིར་ཉེན་ཁ་ཅུང་ཡོད་པས་རང་"
+"འགུལ་གྱིས་བཟོས་མེད། ཁྱོད་ཀྱིས་འདི་སྤྱད་ནས་མཐུད་སྣེ་ཁ་འབྱེད་ཆོག་པ། དཔེར་ན:\n"
 "'%s'"
 
 #: ../DistUpgrade/DistUpgradeController.py:355
@@ -479,9 +470,8 @@ msgid_plural ""
 "but no archive can be found for them. Please reinstall the packages manually "
 "or remove them from the system."
 msgstr[0] ""
-"'%s' འཐུམ་སྒྲིལ་ནི་མཉམ་དུ་སྦྲེལ་མི་འདུག་པས་ཡང་བསྐྱར་སྒྲིག་འཇུག་གནང་རོགས། "
-"ཡིནའང་སྒྲིག་འཇུག་ཡིག་ཚགས་ཀྱང་རྙེད་མི་འདུག་པས་འཐུམ་སྒྲིལ་ལག་པས་སྒྲིག་འཇུག་བཤིག"
-"ས་པའམ་མ་ལག་ཐོག་ནས་འདོར་དགོས"
+"'%s' འཐུམ་སྒྲིལ་ནི་མཉམ་དུ་སྦྲེལ་མི་འདུག་པས་ཡང་བསྐྱར་སྒྲིག་འཇུག་གནང་རོགས། ཡིནའང་སྒྲིག་འཇུག་ཡིག་ཚགས་ཀྱང་"
+"རྙེད་མི་འདུག་པས་འཐུམ་སྒྲིལ་ལག་པས་སྒྲིག་འཇུག་བཤིགས་པའམ་མ་ལག་ཐོག་ནས་འདོར་དགོས"
 
 #: ../DistUpgrade/DistUpgradeController.py:857
 msgid "Error during update"
@@ -492,12 +482,12 @@ msgid ""
 "A problem occurred during the update. This is usually some sort of network "
 "problem, please check your network connection and retry."
 msgstr ""
-"གསར་སྒྱུར་སྐབས་ནོར་འཁྲུལ་བྱུང་བ། ནམ་རྒྱུན་འདི་ནི་དྲ་བའི་གནོད་སྐྱོན་ཡིན་པས་ "
-"problem, please check your network connection and retry."
+"གསར་སྒྱུར་སྐབས་ནོར་འཁྲུལ་བྱུང་བ། ནམ་རྒྱུན་འདི་ནི་དྲ་བའི་གནོད་སྐྱོན་ཡིན་པས་ problem, please check "
+"your network connection and retry."
 
 #. print "on_button_install_clicked"
 #: ../DistUpgrade/DistUpgradeController.py:867
-#: ../UpdateManager/UpdateManager.py:758
+#: ../UpdateManager/UpdateManager.py:749
 msgid "Not enough free disk space"
 msgstr "བླུགས་སྡེར་འདངས་བ་མེད་པ"
 
@@ -509,15 +499,14 @@ msgid ""
 "your trash and remove temporary packages of former installations using 'sudo "
 "apt-get clean'."
 msgstr ""
-"རིམ་སྤོར་འདི་འདོར་ཚར་བ རིམས་སྤོར་འདི་ལ་གསོག་སྡེར་%s ཐོག་བར་སྟོང་ '%s'དགོས་པ "
-"ཁྱོད་ཀྱིས་ཉུང་ཤོས་ཡང་གསོག་སྡེར%s ཐོག་བར་སྟོང་'%s'བཟོ་དགོས "
-"སྙིགས་སྣོད་སྟོང་བར་བཟོ་བ་དང་སྔོན་ནས་སྒྲིག་འཇུག་བྱས་པའི་ཐུམ་བུའི་གནས་སྐབས་ཐུམ་"
-"བུ་འདོར་དགོས་ན'sudo apt-get clean'བེད་སྤྱོད་བྱེད་རོགས"
+"རིམ་སྤོར་འདི་འདོར་ཚར་བ རིམས་སྤོར་འདི་ལ་གསོག་སྡེར་%s ཐོག་བར་སྟོང་ '%s'དགོས་པ ཁྱོད་ཀྱིས་ཉུང་ཤོས་ཡང་"
+"གསོག་སྡེར%s ཐོག་བར་སྟོང་'%s'བཟོ་དགོས སྙིགས་སྣོད་སྟོང་བར་བཟོ་བ་དང་སྔོན་ནས་སྒྲིག་འཇུག་བྱས་པའི་ཐུམ་བུའི་"
+"གནས་སྐབས་ཐུམ་བུ་འདོར་དགོས་ན'sudo apt-get clean'བེད་སྤྱོད་བྱེད་རོགས"
 
 #. calc the dist-upgrade and see if the removals are ok/expected
 #. do the dist-upgrade
 #: ../DistUpgrade/DistUpgradeController.py:897
-#: ../DistUpgrade/DistUpgradeController.py:1664
+#: ../DistUpgrade/DistUpgradeController.py:1640
 msgid "Calculating the changes"
 msgstr "བཟོ་བཅོས་འདི་བརྩི་འདངས་རྒྱག་བཞིན་པ"
 
@@ -535,11 +524,11 @@ msgid ""
 "The upgrade will cancel now and the original system state will be restored. "
 "You can resume the upgrade at a later time."
 msgstr ""
-"རིམ་སྤོར་རྩིས་མེད་གཏོང་ནས་མ་ལག་ཐོག་མའི་གནས་སྟངས་བསྐྱར་གསོས་བྱེད་རྒྱུ "
-"ཁྱོད་ཀྱིས་རྗེས་སུ་རིམ་སྤོར་དེ་མི་མཐུད་ཐུབ"
+"རིམ་སྤོར་རྩིས་མེད་གཏོང་ནས་མ་ལག་ཐོག་མའི་གནས་སྟངས་བསྐྱར་གསོས་བྱེད་རྒྱུ ཁྱོད་ཀྱིས་རྗེས་སུ་རིམ་སྤོར་དེ་མི་མཐུད་"
+"ཐུབ"
 
 #: ../DistUpgrade/DistUpgradeController.py:1002
-#: ../DistUpgrade/DistUpgradeController.py:1136
+#: ../DistUpgrade/DistUpgradeController.py:1128
 msgid "Could not download the upgrades"
 msgstr "རིམ་སྤོར་ལེན་འཇུག་མི་ཐུབ་པ"
 
@@ -551,107 +540,105 @@ msgstr ""
 
 #. FIXME: strings are not good, but we are in string freeze
 #. currently
-#: ../DistUpgrade/DistUpgradeController.py:1087
-#: ../DistUpgrade/DistUpgradeController.py:1124
-#: ../DistUpgrade/DistUpgradeController.py:1229
+#: ../DistUpgrade/DistUpgradeController.py:1079
+#: ../DistUpgrade/DistUpgradeController.py:1116
+#: ../DistUpgrade/DistUpgradeController.py:1221
 msgid "Error during commit"
 msgstr "ངོས་འཛིན་སྐབས་སྐྱོན་བྱུང་བ"
 
 #. generate a new cache
-#: ../DistUpgrade/DistUpgradeController.py:1089
-#: ../DistUpgrade/DistUpgradeController.py:1126
-#: ../DistUpgrade/DistUpgradeController.py:1268
+#: ../DistUpgrade/DistUpgradeController.py:1081
+#: ../DistUpgrade/DistUpgradeController.py:1118
+#: ../DistUpgrade/DistUpgradeController.py:1260
 msgid "Restoring original system state"
 msgstr "མ་ལག་ཐོག་མའི་གནས་སྟངས་བསྐྱར་གསོ་བཞིན་པ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1090
-#: ../DistUpgrade/DistUpgradeController.py:1105
-#: ../DistUpgrade/DistUpgradeController.py:1127
+#: ../DistUpgrade/DistUpgradeController.py:1082
+#: ../DistUpgrade/DistUpgradeController.py:1097
+#: ../DistUpgrade/DistUpgradeController.py:1119
 msgid "Could not install the upgrades"
 msgstr "རིམ་སྤོར་སྒྲིག་འཇུག་མི་ཐུབ་པ"
 
 #. invoke the frontend now and show a error message
-#: ../DistUpgrade/DistUpgradeController.py:1095
+#: ../DistUpgrade/DistUpgradeController.py:1087
 msgid ""
 "The upgrade has aborted. Your system could be in an unusable state. A "
 "recovery will run now (dpkg --configure -a)."
 msgstr ""
-"རིམ་སྤོར་ཆད་སོང་། ཁྱོད་ཀྱི་མ་ལག་དེ་སྤྱོད་མི་རུང་བའི་གནས་ལ་ལྷུང་འགྲོ་ཉེན་ཆེ། "
-"ད་ལྟ་སྐྱོན་གསོ་བྱེད་ཞིག་འཁོར་སྐྱོད་བྱེད་པ (dpkg --configure -a)"
+"རིམ་སྤོར་ཆད་སོང་། ཁྱོད་ཀྱི་མ་ལག་དེ་སྤྱོད་མི་རུང་བའི་གནས་ལ་ལྷུང་འགྲོ་ཉེན་ཆེ། ད་ལྟ་སྐྱོན་གསོ་བྱེད་ཞིག་འཁོར་"
+"སྐྱོད་བྱེད་པ (dpkg --configure -a)"
 
-#: ../DistUpgrade/DistUpgradeController.py:1100
+#: ../DistUpgrade/DistUpgradeController.py:1092
 #, python-format
 msgid ""
 "\n"
 "\n"
-"Please report this bug in a browser at "
-"http://bugs.launchpad.net/ubuntu/+source/update-manager/+filebug and attach "
-"the files in /var/log/dist-upgrade/ to the bug report.\n"
+"Please report this bug in a browser at http://bugs.launchpad.net/ubuntu/"
+"+source/update-manager/+filebug and attach the files in /var/log/dist-"
+"upgrade/ to the bug report.\n"
 "%s"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:1137
+#: ../DistUpgrade/DistUpgradeController.py:1129
 msgid ""
 "The upgrade has aborted. Please check your Internet connection or "
 "installation media and try again. "
 msgstr ""
-"གསར་སྒྱུར་དེ་ཆད་སོང་། "
-"ཁྱོད་ཀྱི་དྲ་བ་སྦྲེལ་མཐུད་དང་ཡང་ན་སྒྲིག་འཇུག་འཇུག་ཟམ་ལ་ཞིབ་བཤེར་བྱས་ནས་ཡང་བསྐྱ"
-"ར་ཚོད་ལྟ་བྱེད་རོགས "
+"གསར་སྒྱུར་དེ་ཆད་སོང་། ཁྱོད་ཀྱི་དྲ་བ་སྦྲེལ་མཐུད་དང་ཡང་ན་སྒྲིག་འཇུག་འཇུག་ཟམ་ལ་ཞིབ་བཤེར་བྱས་ནས་ཡང་བསྐྱར་"
+"ཚོད་ལྟ་བྱེད་རོགས "
 
-#: ../DistUpgrade/DistUpgradeController.py:1217
+#: ../DistUpgrade/DistUpgradeController.py:1209
 msgid "Remove obsolete packages?"
 msgstr "དུས་ཡོལ་འཐུམ་སྒྲིལ་བསུབ་པ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
-#: ../DistUpgrade/DistUpgrade.ui.h:8
+#: ../DistUpgrade/DistUpgradeController.py:1210
+#: ../DistUpgrade/DistUpgrade.ui.h:22
 msgid "_Keep"
 msgstr "ཉར་འཇོག_K"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
+#: ../DistUpgrade/DistUpgradeController.py:1210
 msgid "_Remove"
 msgstr "བསུབ་པ_R"
 
-#: ../DistUpgrade/DistUpgradeController.py:1230
+#: ../DistUpgrade/DistUpgradeController.py:1222
 msgid ""
 "A problem occurred during the clean-up. Please see the below message for "
 "more information. "
-msgstr ""
-"གཙང་མ་བཟོ་དུས་སྐྱོན་ཞིག་འབྱུང་སོང་། གཤམ་གྱི་བརྡ་འཕྲིན་ཀློག་ནས་ གསལ་བཤད་བཏོན། "
+msgstr "གཙང་མ་བཟོ་དུས་སྐྱོན་ཞིག་འབྱུང་སོང་། གཤམ་གྱི་བརྡ་འཕྲིན་ཀློག་ནས་ གསལ་བཤད་བཏོན། "
 
 #. FIXME: instead of error out, fetch and install it
 #. here
-#: ../DistUpgrade/DistUpgradeController.py:1306
+#: ../DistUpgrade/DistUpgradeController.py:1298
 msgid "Required depends is not installed"
 msgstr "དགོས་མཁོའི་ཞོལ་གཏོགས་སྒྲིག་འཇུག་བྱས་མི་འདུག"
 
-#: ../DistUpgrade/DistUpgradeController.py:1307
+#: ../DistUpgrade/DistUpgradeController.py:1299
 #, python-format
 msgid "The required dependency '%s' is not installed. "
 msgstr "དགོས་མཁོའི་ཞོལ་གཏོགས་'%s' སྒྲིག་འཇུག་མི་འདུག "
 
 #. sanity check (check for ubuntu-desktop, brokenCache etc)
 #. then open the cache (again)
-#: ../DistUpgrade/DistUpgradeController.py:1568
-#: ../DistUpgrade/DistUpgradeController.py:1633
+#: ../DistUpgrade/DistUpgradeController.py:1544
+#: ../DistUpgrade/DistUpgradeController.py:1609
 msgid "Checking package manager"
 msgstr "འཐུམ་སྒྲིལ་དོ་དམ་པ་ཞིབ་བཤེར་བཞིན་པ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1573
+#: ../DistUpgrade/DistUpgradeController.py:1549
 msgid "Preparing the upgrade failed"
 msgstr "ལེགས་འགྲུབ་མ་ཐུབ་པའི་རིམ་སྤོར་ལ་གྲ་སྒྲིག་བཞིན་པ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1574
+#: ../DistUpgrade/DistUpgradeController.py:1550
 msgid ""
 "Preparing the system for the upgrade failed so a bug reporting process is "
 "being started."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:1588
+#: ../DistUpgrade/DistUpgradeController.py:1564
 msgid "Getting upgrade prerequisites failed"
 msgstr "སྔོན་འགྲོའི་ཆ་རྐྱེན་ཐོབ་མ་ཐུབ་པ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1589
+#: ../DistUpgrade/DistUpgradeController.py:1565
 msgid ""
 "The system was unable to get the prerequisites for the upgrade. The upgrade "
 "will abort now and restore the original system state.\n"
@@ -659,64 +646,63 @@ msgid ""
 "Additionally, a bug reporting process is being started."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:1617
+#: ../DistUpgrade/DistUpgradeController.py:1593
 msgid "Updating repository information"
 msgstr "གསོག་མཛོད་གྱི་གནས་ཚུལ་གསར་སྒྱུར་བཞིན་པ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1624
+#: ../DistUpgrade/DistUpgradeController.py:1600
 msgid "Failed to add the cdrom"
 msgstr "་་CD་་འོད་སྡེར་བཀོལ་ཆས་ཁ་སྣོན་མ་ཐུབ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1625
+#: ../DistUpgrade/DistUpgradeController.py:1601
 msgid "Sorry, adding the cdrom was not successful."
 msgstr "དགོངས་དག འོད་སྡེར་འཇུག་གནས་སྣོན་མ་ཐུབ་པ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1653
+#: ../DistUpgrade/DistUpgradeController.py:1629
 msgid "Invalid package information"
 msgstr "འཐུམ་སྒྲིལ་གནས་ཚུལ་ཕན་ནུས་མེད་པ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1654
+#: ../DistUpgrade/DistUpgradeController.py:1630
 #, python-format
 msgid ""
 "After your package information was updated the essential package '%s' can "
 "not be found anymore so a bug reporting process is being started."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:1670
-#: ../DistUpgrade/DistUpgradeController.py:1723
+#: ../DistUpgrade/DistUpgradeController.py:1646
+#: ../DistUpgrade/DistUpgradeController.py:1699
 msgid "Fetching"
 msgstr "ལེན་བཞིན་པ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1676
-#: ../DistUpgrade/DistUpgradeController.py:1727
+#: ../DistUpgrade/DistUpgradeController.py:1652
+#: ../DistUpgrade/DistUpgradeController.py:1703
 msgid "Upgrading"
 msgstr "རིམ་སྤོར་བཞིན་པ"
 
 #. don't abort here, because it would restore the sources.list
-#: ../DistUpgrade/DistUpgradeController.py:1681
-#: ../DistUpgrade/DistUpgradeController.py:1729
-#: ../DistUpgrade/DistUpgradeController.py:1736
-#: ../DistUpgrade/DistUpgradeController.py:1747
+#: ../DistUpgrade/DistUpgradeController.py:1657
+#: ../DistUpgrade/DistUpgradeController.py:1705
+#: ../DistUpgrade/DistUpgradeController.py:1712
+#: ../DistUpgrade/DistUpgradeController.py:1723
 msgid "Upgrade complete"
 msgstr "རིམ་སྤོར་ལེགས་འགྲུབ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1682
-#: ../DistUpgrade/DistUpgradeController.py:1730
-#: ../DistUpgrade/DistUpgradeController.py:1737
+#: ../DistUpgrade/DistUpgradeController.py:1658
+#: ../DistUpgrade/DistUpgradeController.py:1706
+#: ../DistUpgrade/DistUpgradeController.py:1713
 msgid ""
 "The upgrade has completed but there were errors during the upgrade process."
-msgstr ""
-"རིམ་སྤོར་ལེགས་འགྲུབ་ཚར་ནའང་རིམ་སྤོར་སྐྱོད་བཞིན་པའི་སྐབས་ནོར་འཁྲུལ་ཞིག་འདུག"
+msgstr "རིམ་སྤོར་ལེགས་འགྲུབ་ཚར་ནའང་རིམ་སྤོར་སྐྱོད་བཞིན་པའི་སྐབས་ནོར་འཁྲུལ་ཞིག་འདུག"
 
-#: ../DistUpgrade/DistUpgradeController.py:1689
+#: ../DistUpgrade/DistUpgradeController.py:1665
 msgid "Searching for obsolete software"
 msgstr "དུས་ཡོལ་གྱི་མཉེན་ཆས་འཚོལ་བཞིན་པ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1698
+#: ../DistUpgrade/DistUpgradeController.py:1674
 msgid "System upgrade is complete."
 msgstr "མ་ལག་རིམ་སྤོར་ལེགས་འགྲུབ་ཚར"
 
-#: ../DistUpgrade/DistUpgradeController.py:1748
+#: ../DistUpgrade/DistUpgradeController.py:1724
 msgid "The partial upgrade was completed."
 msgstr "ཆ་ཤས་རིམ་སྤོར་ཞིག་ལེགས་འགྲུབ་ཚར"
 
@@ -730,34 +716,33 @@ msgid ""
 "software is no longer supported, please switch it off and run the upgrade "
 "again when this is done."
 msgstr ""
-"ཁྱོད་ཀྱི་མ་ལག་གིས་/proc/mounts་ནང་གི'evms'འཇུག་སྣོད་དོ་དམ་ཆས་སྤྱོད་པ 'evms' "
-"ལ་རམ་འདེགས་མེད་པས་འདིར་གློག་སྒོ་བརྒྱབ་ནས་རིམ་སྤོར་ཞིག་ཡང་བསྐྱར་བྱེད་དགོས"
+"ཁྱོད་ཀྱི་མ་ལག་གིས་/proc/mounts་ནང་གི'evms'འཇུག་སྣོད་དོ་དམ་ཆས་སྤྱོད་པ 'evms' ལ་རམ་འདེགས་མེད་"
+"པས་འདིར་གློག་སྒོ་བརྒྱབ་ནས་རིམ་སྤོར་ཞིག་ཡང་བསྐྱར་བྱེད་དགོས"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 11.04."
 msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
-"and you may encounter problems after the upgrade. For more information see "
-"https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
+"The support in elementary OS 11.04 for your intel graphics hardware is "
+"limited and you may encounter problems after the upgrade. Do you want to "
 "continue with the upgrade?"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:520
-#: ../DistUpgrade/DistUpgradeQuirks.py:548
-#: ../DistUpgrade/DistUpgradeQuirks.py:575
+#: ../DistUpgrade/DistUpgradeQuirks.py:518
+#: ../DistUpgrade/DistUpgradeQuirks.py:546
+#: ../DistUpgrade/DistUpgradeQuirks.py:573
 msgid ""
 "Upgrading may reduce desktop effects, and performance in games and other "
 "graphically intensive programs."
 msgstr ""
-"རིམ་སྤོར་གྱིས་མདུན་ངོས་ཀྱི་རྣམ་པ་དང་རྩེད་རིགས་ཀྱི་འགྲོ་སྟངས། "
-"པར་རིས་མང་པོ་ཡོད་པའི་བྱ་རིམ་ལ་འགྱུར་ལྡོག་ཡོད་ཉེན་ཆེཨ"
+"རིམ་སྤོར་གྱིས་མདུན་ངོས་ཀྱི་རྣམ་པ་དང་རྩེད་རིགས་ཀྱི་འགྲོ་སྟངས། པར་རིས་མང་པོ་ཡོད་པའི་བྱ་རིམ་ལ་འགྱུར་ལྡོག་ཡོད་"
+"ཉེན་ཆེཨ"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:524
-#: ../DistUpgrade/DistUpgradeQuirks.py:552
+#: ../DistUpgrade/DistUpgradeQuirks.py:522
+#: ../DistUpgrade/DistUpgradeQuirks.py:550
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
@@ -765,30 +750,29 @@ msgid ""
 "\n"
 "Do you want to continue?"
 msgstr ""
-"རྩིས་འཁོར་འདིས་ཁNVIDIA་གཟུགས་རིས་སྒུལ་སློང་བ་བེད་སྤྱོད་བཞིན་ཡོད་པས་ elementary OS "
-"10.04 LTS་ནང་གི་བརྙན་རིས་བྱང་བུ་ལ་སྤྱོད་རུང་བའི་གཟུགས་རིས་སྒུལ་སློང་བ་མེད་པ\n"
+"རྩིས་འཁོར་འདིས་ཁNVIDIA་གཟུགས་རིས་སྒུལ་སློང་བ་བེད་སྤྱོད་བཞིན་ཡོད་པས་ elementary OS 10.04 LTS་"
+"ནང་གི་བརྙན་རིས་བྱང་བུ་ལ་སྤྱོད་རུང་བའི་གཟུགས་རིས་སྒུལ་སློང་བ་མེད་པ\n"
 "\n"
 "ཁྱོད་ཀྱིས་མུ་མཐུད་འདོད་དམ"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:579
+#: ../DistUpgrade/DistUpgradeQuirks.py:577
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in elementary OS 10.04 "
-"LTS.\n"
+"of this driver is available that works with your hardware in elementary OS "
+"10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
-"རྩིས་འཁོར་འདིས་ད་ལྟ་AMD "
-"'fglrx'་གཟུགས་རིས་སྒུལ་སློང་བ་བེད་སྤྱོད་བཞིན་ཡོད།འདིའི་པར་གཞི་གང་ཡང་elementary OS "
-"10.04 LTS་སྲ་ཆས་སྤྱོད་མི་རུང་།\n"
+"རྩིས་འཁོར་འདིས་ད་ལྟ་AMD 'fglrx'་གཟུགས་རིས་སྒུལ་སློང་བ་བེད་སྤྱོད་བཞིན་ཡོད།འདིའི་པར་གཞི་གང་ཡང་"
+"elementary OS 10.04 LTS་སྲ་ཆས་སྤྱོད་མི་རུང་།\n"
 "\n"
 "ཁྱོད་ཀྱིས་མུ་མཐུད་དགོས་སམ"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:609
+#: ../DistUpgrade/DistUpgradeQuirks.py:607
 msgid "No i686 CPU"
 msgstr "i686 CPU་མེད་པ"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:610
+#: ../DistUpgrade/DistUpgradeQuirks.py:608
 msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
@@ -800,11 +784,11 @@ msgstr ""
 "minimal architecture. It is not possible to upgrade your system to a new "
 "elementary OS release with this hardware."
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:646
+#: ../DistUpgrade/DistUpgradeQuirks.py:644
 msgid "No ARMv6 CPU"
 msgstr "ARMv6 CPU་མེད་པ"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:647
+#: ../DistUpgrade/DistUpgradeQuirks.py:645
 msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
@@ -816,22 +800,22 @@ msgstr ""
 "minimal architecture. It is not possible to upgrade your system to a new "
 "elementary OS release with this hardware."
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:667
+#: ../DistUpgrade/DistUpgradeQuirks.py:665
 msgid "No init available"
 msgstr "init ་མེད་པ"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:668
+#: ../DistUpgrade/DistUpgradeQuirks.py:666
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
-"environment, requiring an update to your virtual machine configuration "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type "
+"of environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
-"environment, requiring an update to your virtual machine configuration "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type "
+"of environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
@@ -842,9 +826,7 @@ msgstr "aufs་བེད་སྤྱོད་ནསSandbox རིམ་སྤོ
 
 #: ../DistUpgrade/DistUpgradeMain.py:65
 msgid "Use the given path to search for a cdrom with upgradable packages"
-msgstr ""
-"རྒྱུད་ཁོངས་དེ་སྤྱོད་ནས་རིམ་སྤོར་ཐུམ་བུ་ཡོད་པའི་འོད་སྡེར་སྒུལ་སྐྱོད་པ་འཚོལ་བཤེ"
-"ར་བྱེད་པ"
+msgstr "རྒྱུད་ཁོངས་དེ་སྤྱོད་ནས་རིམ་སྤོར་ཐུམ་བུ་ཡོད་པའི་འོད་སྡེར་སྒུལ་སྐྱོད་པ་འཚོལ་བཤེར་བྱེད་པ"
 
 #: ../DistUpgrade/DistUpgradeMain.py:71
 msgid ""
@@ -860,8 +842,7 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeMain.py:77
 msgid "Perform a partial upgrade only (no sources.list rewriting)"
-msgstr ""
-"རིམ་སྤོར་དུམ་བུ་ཞིག་ཁོ་ན་བྱེད་པ (འབྱུང་ཁུངས་ཐོ་འགོད་བསྐྱར་འབྲི་མི་བྱེད་པ)"
+msgstr "རིམ་སྤོར་དུམ་བུ་ཞིག་ཁོ་ན་བྱེད་པ (འབྱུང་ཁུངས་ཐོ་འགོད་བསྐྱར་འབྲི་མི་བྱེད་པ)"
 
 #: ../DistUpgrade/DistUpgradeMain.py:80
 msgid "Disable GNU screen support"
@@ -941,9 +922,8 @@ msgid ""
 "The upgrade will continue but the '%s' package may not be in a working "
 "state. Please consider submitting a bug report about it."
 msgstr ""
-"རིམ་སྤོར་འདི་མུ་མཐུད་རྒྱུ་ཡིན་ཡང་ "
-"'%s'་ཐུམ་བུ་དེ་ཕན་ནུས་མེད་པའི་ལནས་སྟངས་ལ་ལྷུངས་ཚར་ཉེན་ཆེ། "
-"འདིའི་སྐོར་སྐྱོན་ཞིག་ཡར་ཞུ་དགོས་མིན་བསམ་གཞིགས་གནང་རོགས"
+"རིམ་སྤོར་འདི་མུ་མཐུད་རྒྱུ་ཡིན་ཡང་ '%s'་ཐུམ་བུ་དེ་ཕན་ནུས་མེད་པའི་ལནས་སྟངས་ལ་ལྷུངས་ཚར་ཉེན་ཆེ། འདིའི་"
+"སྐོར་སྐྱོན་ཞིག་ཡར་ཞུ་དགོས་མིན་བསམ་གཞིགས་གནང་རོགས"
 
 #. self.expander.set_expanded(True)
 #: ../DistUpgrade/DistUpgradeViewGtk.py:231
@@ -964,8 +944,8 @@ msgid ""
 "You will lose any changes you have made to this configuration file if you "
 "choose to replace it with a newer version."
 msgstr ""
-"ཁྱོད་ཀྱིས་གལ་སྲིད་སྒྲིག་བཟོ་ཡིག་ཆ་དེ་པར་གཞི་གསར་པ་ཞིག་གིས་ཚབས་བཅུག་ན་ "
-"དེ་སྔར་དེའི་ཐོག་སྒྲིག་བཟོ་བྱས་པ་རྣམས་བཀླགས་འགྲོའོ།"
+"ཁྱོད་ཀྱིས་གལ་སྲིད་སྒྲིག་བཟོ་ཡིག་ཆ་དེ་པར་གཞི་གསར་པ་ཞིག་གིས་ཚབས་བཅུག་ན་ དེ་སྔར་དེའི་ཐོག་སྒྲིག་བཟོ་བྱས་པ་"
+"རྣམས་བཀླགས་འགྲོའོ།"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:250
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:253
@@ -982,16 +962,15 @@ msgstr "ནོར་འཁྲུལ་ཚབས་ཆེན་ཞིག་བྱ
 #: ../DistUpgrade/DistUpgradeViewGtk.py:464
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:470
 msgid ""
-"Please report this as a bug (if you haven't already) and include the files "
-"/var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
+"Please report this as a bug (if you haven't already) and include the files /"
+"var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
 "report. The upgrade has aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
-"(གལ་སྲིད་ཁྱོད་ཀྱིས་སྤྲོད་མེད་ན་)སྐྱོན་འདིའི་སྐོར་ཡར་ཞུ་སྤྲོད་པ་དང་ "
-"/var/log/dist-upgrade/main.log དང་ /var/log/dist-upgrade/apt.log "
-"ཡང་མཉམ་དུ་སྤྲོད་རོགས། རིམ་སྤོར་འདི་ད་ལྟ་བར་མཚམས་བཞག་འགྲོའོ།\n"
-"ཁྱོད་ཀྱི་ཐོག་མའི་འབྱུང་ཁུངས་མིང་ཐོ "
-"/etc/apt/sources.list.distUpgrade་གསོག་འཇོག་བྱས་ཡོད།"
+"(གལ་སྲིད་ཁྱོད་ཀྱིས་སྤྲོད་མེད་ན་)སྐྱོན་འདིའི་སྐོར་ཡར་ཞུ་སྤྲོད་པ་དང་ /var/log/dist-upgrade/main.log "
+"དང་ /var/log/dist-upgrade/apt.log ཡང་མཉམ་དུ་སྤྲོད་རོགས། རིམ་སྤོར་འདི་ད་ལྟ་བར་མཚམས་བཞག་"
+"འགྲོའོ།\n"
+"ཁྱོད་ཀྱི་ཐོག་མའི་འབྱུང་ཁུངས་མིང་ཐོ /etc/apt/sources.list.distUpgrade་གསོག་འཇོག་བྱས་ཡོད།"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:481
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:487
@@ -1004,15 +983,13 @@ msgid ""
 "This will abort the operation and may leave the system in a broken state. "
 "Are you sure you want to do that?"
 msgstr ""
-"འདིས་བྱ་འགུལ་འདི་མཚམས་གཅོད་པ་དང་མ་ལག་ལའང་སྐྱོན་གཏོང་ངེས་ཡིན།ཁྱོད་ཀྱིས་འདི་བྱེ"
-"ད་པར་གཏན་ཁེལ་ཡིན་ནམ།"
+"འདིས་བྱ་འགུལ་འདི་མཚམས་གཅོད་པ་དང་མ་ལག་ལའང་སྐྱོན་གཏོང་ངེས་ཡིན།ཁྱོད་ཀྱིས་འདི་བྱེད་པར་གཏན་ཁེལ་ཡིན་ནམ།"
 
 #. append warning
 #: ../DistUpgrade/DistUpgradeViewGtk.py:630
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:621
 msgid "To prevent data loss close all open applications and documents."
-msgstr ""
-"ཆ་འཕྲིན་གྲངས་མི་བརླགས་པའི་ཆེད་དུ་ཉེར་སྤྱོད་དང་ཡིག་གེ་ཡོངས་རྫོགས་སྒོ་རྒྱག་དགོས"
+msgstr "ཆ་འཕྲིན་གྲངས་མི་བརླགས་པའི་ཆེད་དུ་ཉེར་སྤྱོད་དང་ཡིག་གེ་ཡོངས་རྫོགས་སྒོ་རྒྱག་དགོས"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:644
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:635
@@ -1091,7 +1068,7 @@ msgstr "གནས་ཚུལ"
 
 #: ../DistUpgrade/DistUpgradeViewKDE.py:741
 #: ../DistUpgrade/DistUpgradeViewKDE.py:786
-#: ../DistUpgrade/DistUpgradeViewKDE.py:789 ../DistUpgrade/DistUpgrade.ui.h:7
+#: ../DistUpgrade/DistUpgradeViewKDE.py:789 ../DistUpgrade/DistUpgrade.ui.h:11
 msgid "Details"
 msgstr "ཞིབ་ཕྲ"
 
@@ -1128,11 +1105,10 @@ msgstr "འགོ་བསྐྱར་འཛུགས་དགོས་པ"
 
 #: ../DistUpgrade/DistUpgradeViewKDE.py:799
 msgid "<b><big>Restart the system to complete the upgrade</big></b>"
-msgstr ""
-"<b><big>་མ་ལག་འགོ་བསྐྱར་འཛུགས་བྱས་ནས་རིམ་སྤོར་ལེགས་འགྲུབ་བྱེད་པ</big></b>"
+msgstr "<b><big>་མ་ལག་འགོ་བསྐྱར་འཛུགས་བྱས་ནས་རིམ་སྤོར་ལེགས་འགྲུབ་བྱེད་པ</big></b>"
 
-#: ../DistUpgrade/DistUpgradeViewKDE.py:802 ../DistUpgrade/DistUpgrade.ui.h:14
-#: ../data/gtkbuilder/UpdateManager.ui.h:26
+#: ../DistUpgrade/DistUpgradeViewKDE.py:802 ../DistUpgrade/DistUpgrade.ui.h:25
+#: ../data/gtkbuilder/UpdateManager.ui.h:32
 msgid "_Restart Now"
 msgstr "ད་ལྟ་འགོ་བསྐྱར་འཛུགས_R"
 
@@ -1146,8 +1122,7 @@ msgid ""
 msgstr ""
 "<b><big>རིམ་སྤོར་འདི་རྩིས་མེད་གཏོང་དགོས་སམ།</big></b>\n"
 "\n"
-"རིམ་སྤོར་རྩིས་མེད་གཏོང་ན་མ་ལག་སྤྱོད་མི་རུང་བ་འགྱུར་ཉེན་ཡོད་པས་རིམ་སྤོར་ "
-"མུ་མཐུད་ན་དགའ་ངོས་ཡིན"
+"རིམ་སྤོར་རྩིས་མེད་གཏོང་ན་མ་ལག་སྤྱོད་མི་རུང་བ་འགྱུར་ཉེན་ཡོད་པས་རིམ་སྤོར་ མུ་མཐུད་ན་དགའ་ངོས་ཡིན"
 
 #: ../DistUpgrade/DistUpgradeViewKDE.py:824
 msgid "Cancel Upgrade?"
@@ -1181,10 +1156,10 @@ msgstr[0] "སྐར་ཆ་%li"
 #. information here if you shuffle %(str_days)s %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:80
 #, python-format
@@ -1195,10 +1170,10 @@ msgstr "%(str_days)s %(str_hours)s"
 #. information here if you shuffle %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:98
 #, python-format
@@ -1213,8 +1188,7 @@ msgid ""
 "This download will take about %s with a 1Mbit DSL connection and about %s "
 "with a 56k modem."
 msgstr ""
-"ལེན་འཇུག་འདི་ལ་ས་ཡ་ཚིག་1་ཅན་DSL སྦྲེལ་མཐུད་དང་56k ་དྲ་འཇུག་སྣེ%s་ཅན་ཚད་ཀྱིས་ "
-"དུས་ཚོད་%s་དགོས།"
+"ལེན་འཇུག་འདི་ལ་ས་ཡ་ཚིག་1་ཅན་DSL སྦྲེལ་མཐུད་དང་56k ་དྲ་འཇུག་སྣེ%s་ཅན་ཚད་ཀྱིས་ དུས་ཚོད་%s་དགོས།"
 
 #. if we have a estimated speed, use it
 #: ../DistUpgrade/DistUpgradeView.py:153
@@ -1222,7 +1196,7 @@ msgstr ""
 msgid "This download will take about %s with your connection. "
 msgstr "ཁྱོད་ཀྱི་སྦྲེལ་མཐུད་ཀྱིས་ལེན་འཇུག་འདི་བྱེད་པར་དུས་ཚོད་ %s་དགོས "
 
-#: ../DistUpgrade/DistUpgradeView.py:255 ../DistUpgrade/DistUpgrade.ui.h:21
+#: ../DistUpgrade/DistUpgradeView.py:255 ../DistUpgrade/DistUpgrade.ui.h:16
 msgid "Preparing to upgrade"
 msgstr "རིམ་སྤོར་གྲལ་སྒྲིག་བཞིན་པ"
 
@@ -1230,15 +1204,15 @@ msgstr "རིམ་སྤོར་གྲལ་སྒྲིག་བཞིན་
 msgid "Getting new software channels"
 msgstr "མཉེན་ཆས་རྩ་འཛུགས་གསར་བ་འདོན་བཞིན་པ"
 
-#: ../DistUpgrade/DistUpgradeView.py:257 ../DistUpgrade/DistUpgrade.ui.h:23
+#: ../DistUpgrade/DistUpgradeView.py:257 ../DistUpgrade/DistUpgrade.ui.h:14
 msgid "Getting new packages"
 msgstr "ཐུམ་བུ་གསར་བ་འདོན་བཞིན་པ"
 
-#: ../DistUpgrade/DistUpgradeView.py:258 ../DistUpgrade/DistUpgrade.ui.h:26
+#: ../DistUpgrade/DistUpgradeView.py:258 ../DistUpgrade/DistUpgrade.ui.h:15
 msgid "Installing the upgrades"
 msgstr "རིམ་སྤོར་སྒྲིག་འཇུག་བཞིན་པ"
 
-#: ../DistUpgrade/DistUpgradeView.py:259 ../DistUpgrade/DistUpgrade.ui.h:25
+#: ../DistUpgrade/DistUpgradeView.py:259 ../DistUpgrade/DistUpgrade.ui.h:10
 msgid "Cleaning up"
 msgstr "གཙང་དག་བཟོ་བཞིན་པ"
 
@@ -1251,8 +1225,8 @@ msgid_plural ""
 "%(amount)d installed packages are no longer supported by Canonical. You can "
 "still get support from the community."
 msgstr[0] ""
-"སྒྲིག་འཇུག་བྱས་པ་ཐུམ་བུ་%(amount)d ལCanonical་ཡིས་རྒྱབ་སྐྱོར་མེད "
-"ཁྱོད་ཀྱིས་མཁོ་སྤྱོད་ཚོགས་ལས་རྒྱབ་སྐྱོར་ཐོབ་ཐུབ"
+"སྒྲིག་འཇུག་བྱས་པ་ཐུམ་བུ་%(amount)d ལCanonical་ཡིས་རྒྱབ་སྐྱོར་མེད ཁྱོད་ཀྱིས་མཁོ་སྤྱོད་ཚོགས་ལས་རྒྱབ་སྐྱོར་"
+"ཐོབ་ཐུབ"
 
 #. FIXME: make those two separate lines to make it clear
 #. that the "%" applies to the result of ngettext
@@ -1302,7 +1276,7 @@ msgid "Removing the packages can take several hours. "
 msgstr ""
 
 #. FIXME: this should go into DistUpgradeController
-#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:683
+#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:674
 msgid "The software on this computer is up to date."
 msgstr ""
 
@@ -1310,8 +1284,7 @@ msgstr ""
 msgid ""
 "There are no upgrades available for your system. The upgrade will now be "
 "canceled."
-msgstr ""
-"ཁྱོད་ཀྱི་མ་ལག་ལ་རིམ་སྤོར་མེད་པས་རིམ་སྤོར་འདི་ད་ལྟ་རྩིས་མེད་གཏོང་རྒྱུ་ཡིན"
+msgstr "ཁྱོད་ཀྱི་མ་ལག་ལ་རིམ་སྤོར་མེད་པས་རིམ་སྤོར་འདི་ད་ལྟ་རྩིས་མེད་གཏོང་རྒྱུ་ཡིན"
 
 #: ../DistUpgrade/DistUpgradeView.py:402
 msgid "Reboot required"
@@ -1320,9 +1293,7 @@ msgstr "འགོ་བསྐྱར་འཛུགས་དགོས་པ"
 #: ../DistUpgrade/DistUpgradeView.py:403
 msgid ""
 "The upgrade is finished and a reboot is required. Do you want to do this now?"
-msgstr ""
-"རིམ་སྤོར་མཇུག་རྫོགས་ཚར་བ་དང་འགོ་བསྐྱར་འཛུགས་དགོས་པ། "
-"ད་ལྟ་འདི་བྱེད་དགོས་པ་ཡིན་ནམ"
+msgstr "རིམ་སྤོར་མཇུག་རྫོགས་ཚར་བ་དང་འགོ་བསྐྱར་འཛུགས་དགོས་པ། ད་ལྟ་འདི་བྱེད་དགོས་པ་ཡིན་ནམ"
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:70
 #: ../UpdateManager/Core/DistUpgradeFetcherCore.py:70
@@ -1380,8 +1351,7 @@ msgstr "བདེན་དཔངས་མ་ཐུབ་པ"
 msgid ""
 "Authenticating the upgrade failed. There may be a problem with the network "
 "or with the server. "
-msgstr ""
-"རིམ་སྤོར་བདེན་དཔངས་མ་ཐུབ་པ། འདི་ཕལ་ཆེར་དྲ་བའམ་དྲ་བ་ཞབས་ཞུ་བའི་སྐྱོན་ཡིན་ངེས "
+msgstr "རིམ་སྤོར་བདེན་དཔངས་མ་ཐུབ་པ། འདི་ཕལ་ཆེར་དྲ་བའམ་དྲ་བ་ཞབས་ཞུ་བའི་སྐྱོན་ཡིན་ངེས "
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:258
 #: ../UpdateManager/Core/DistUpgradeFetcherCore.py:258
@@ -1393,9 +1363,7 @@ msgstr "ཕྱིར་རུ་འདོན་མི་ཐུབ་"
 msgid ""
 "Extracting the upgrade failed. There may be a problem with the network or "
 "with the server. "
-msgstr ""
-"རིམ་སྤོར་ཕྱིར་རུ་འདོན་མི་ཐུབ་པ། "
-"འདི་ཕལ་ཆེར་དྲ་བའམ་དྲ་བ་ཞབས་ཞུ་བའི་སྐྱོན་ཡིན་ངེས "
+msgstr "རིམ་སྤོར་ཕྱིར་རུ་འདོན་མི་ཐུབ་པ། འདི་ཕལ་ཆེར་དྲ་བའམ་དྲ་བ་ཞབས་ཞུ་བའི་སྐྱོན་ཡིན་ངེས "
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:264
 #: ../UpdateManager/Core/DistUpgradeFetcherCore.py:264
@@ -1407,8 +1375,7 @@ msgstr "ར་སྤྲོད་མ་ཐུབ་པ"
 msgid ""
 "Verifying the upgrade failed.  There may be a problem with the network or "
 "with the server. "
-msgstr ""
-"རིམ་སྤོར་ར་སྤྲོད་མ་ཐུབ་པ། འདི་ཕལ་ཆེར་དྲ་བའམ་དྲ་བ་ཞབས་ཞུ་བའི་སྐྱོན་ཡིན་ངེས "
+msgstr "རིམ་སྤོར་ར་སྤྲོད་མ་ཐུབ་པ། འདི་ཕལ་ཆེར་དྲ་བའམ་དྲ་བ་ཞབས་ཞུ་བའི་སྐྱོན་ཡིན་ངེས "
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:279
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:285
@@ -1432,15 +1399,14 @@ msgstr "ནོར་འཁྲུལ་བརྡ་འཕྲིན་ '%s'"
 
 #: ../DistUpgrade/DistUpgradeViewText.py:91
 msgid ""
-"Please report this as a bug and include the files /var/log/dist-"
-"upgrade/main.log and /var/log/dist-upgrade/apt.log in your report. The "
-"upgrade has aborted.\n"
+"Please report this as a bug and include the files /var/log/dist-upgrade/main."
+"log and /var/log/dist-upgrade/apt.log in your report. The upgrade has "
+"aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
-"སྐྱོན་འདི་དང་/var/log/dist-upgrade/main.log་ད་དུང་ཡིག་ཆ /var/log/dist-"
-"upgrade/apt.log མཉམ་དུ་ཡར་ཞུ་སྤྲོད་རོགས། རིམ་སྤོར་འདི་འདོར་ཚར་བ\n"
-"ཁྱོད་ཀྱི་ཐོག་མའི་འབྱུང་ཁུངས་མིང་ཐོ་ནི /etc/apt/sources.list.distUpgrade "
-"གསོག་འཇོག་ཡོད་པ"
+"སྐྱོན་འདི་དང་/var/log/dist-upgrade/main.log་ད་དུང་ཡིག་ཆ /var/log/dist-upgrade/apt."
+"log མཉམ་དུ་ཡར་ཞུ་སྤྲོད་རོགས། རིམ་སྤོར་འདི་འདོར་ཚར་བ\n"
+"ཁྱོད་ཀྱི་ཐོག་མའི་འབྱུང་ཁུངས་མིང་ཐོ་ནི /etc/apt/sources.list.distUpgrade གསོག་འཇོག་ཡོད་པ"
 
 #: ../DistUpgrade/DistUpgradeViewText.py:115
 msgid "Aborting"
@@ -1517,14 +1483,10 @@ msgstr ""
 "ཁྱོད་ཀྱིས་གལ་སྲིད་'y'་་ཡིན་་གདམ་ན་མ་ལག་འགོ་བསྐྱར་འཛུགས་བྱེད་དོ"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:1
-msgid "_Cancel Upgrade"
-msgstr "རིམ་སྤོར་རྩིས་མེད་གཏོང་_C"
+msgid "    "
+msgstr "    "
 
 #: ../DistUpgrade/DistUpgrade.ui.h:2
-msgid "_Resume Upgrade"
-msgstr "རིམ་སྤོར་མུ་མཐུད་པ_R"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:3
 msgid ""
 "<b><big>Cancel the running upgrade?</big></b>\n"
 "\n"
@@ -1533,34 +1495,10 @@ msgid ""
 msgstr ""
 "<b><big>འཁོར་སྐྱོད་དགོས་པའི་རིམ་སྤོར་རྩིས་མེད་གཏོང་དགོས་སམ</big></b>\n"
 "\n"
-"གལ་སྲིད་རིམ་སྤོར་རཙིས་མེད་གཏོང་ན་མ་ལག་སྤྱོད་མི་རུང་གནས་ལ་ལྷུང་སྲིད། "
-"ཁྱོད་ཀྱིས་ རིམ་སྤོར་མུ་མཐུད་པར་སྐུལ་མ་ཡོད"
+"གལ་སྲིད་རིམ་སྤོར་རཙིས་མེད་གཏོང་ན་མ་ལག་སྤྱོད་མི་རུང་གནས་ལ་ལྷུང་སྲིད། ཁྱོད་ཀྱིས་ རིམ་སྤོར་མུ་མཐུད་པར་སྐུལ་"
+"མ་ཡོད"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:6
-msgid "_Start Upgrade"
-msgstr "རིམ་སྤོར་འགོ་འཛུགས་པ_S"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:9
-msgid "_Replace"
-msgstr "ཚབ་འཇོག་པ_R"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:10
-msgid "Difference between the files"
-msgstr "ཡིག་ཆ་བར་གྱི་ཁྱད་པ"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:11
-msgid "_Report Bug"
-msgstr "སྐྱོན་ཡར་ཞུ_R"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:12
-msgid "_Continue"
-msgstr "མུ་མཐུད་པ_C"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:13
-msgid "<b><big>Start the upgrade?</big></b>"
-msgstr "<b><big>རིམ་སྤོར་འགོ་འཛུགས་དགོས་སམ</big></b>"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:15
+#: ../DistUpgrade/DistUpgrade.ui.h:5
 msgid ""
 "<b><big>Restart the system to complete the upgrade</big></b>\n"
 "\n"
@@ -1570,29 +1508,57 @@ msgstr ""
 "\n"
 "མུ་མཐུད་མ་སྐྱོད་གོང་ཁྱོད་ཀྱི་ལས་ཀ་གསོག་འཇོག་བྱེད་དགོས"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:18
-msgid "Distribution Upgrade"
-msgstr "འགྲེམ་སྤེལ་རིམ་སྤོར"
+#: ../DistUpgrade/DistUpgrade.ui.h:8
+msgid "<b><big>Start the upgrade?</big></b>"
+msgstr "<b><big>རིམ་སྤོར་འགོ་འཛུགས་དགོས་སམ</big></b>"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:19
+#: ../DistUpgrade/DistUpgrade.ui.h:9
 msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgrade.ui.h:20
-msgid "    "
-msgstr "    "
+#: ../DistUpgrade/DistUpgrade.ui.h:12
+msgid "Difference between the files"
+msgstr "ཡིག་ཆ་བར་གྱི་ཁྱད་པ"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:22
-msgid "Setting new software channels"
-msgstr "མཉེན་ཆས་རྩ་འཛུགས་གསར་བ་སྒྲིག་འཛུགས་བཞིན་པ"
+#: ../DistUpgrade/DistUpgrade.ui.h:13
+msgid "Distribution Upgrade"
+msgstr "འགྲེམ་སྤེལ་རིམ་སྤོར"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:24
+#: ../DistUpgrade/DistUpgrade.ui.h:17
 msgid "Restarting the computer"
 msgstr "རྩིས་འཁོར་འགོ་བསྐྱར་འཛུགས་བྱེད་བཞིན་པ"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:27
+#: ../DistUpgrade/DistUpgrade.ui.h:18
+msgid "Setting new software channels"
+msgstr "མཉེན་ཆས་རྩ་འཛུགས་གསར་བ་སྒྲིག་འཛུགས་བཞིན་པ"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:19
 msgid "Terminal"
 msgstr "Terminal"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:20
+msgid "_Cancel Upgrade"
+msgstr "རིམ་སྤོར་རྩིས་མེད་གཏོང་_C"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:21
+msgid "_Continue"
+msgstr "མུ་མཐུད་པ_C"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:23
+msgid "_Replace"
+msgstr "ཚབ་འཇོག་པ_R"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:24
+msgid "_Report Bug"
+msgstr "སྐྱོན་ཡར་ཞུ_R"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:26
+msgid "_Resume Upgrade"
+msgstr "རིམ་སྤོར་མུ་མཐུད་པ_R"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:27
+msgid "_Start Upgrade"
+msgstr "རིམ་སྤོར་འགོ་འཛུགས་པ_S"
 
 #: ../UpdateManager/backend/InstallBackendSynaptic.py:60
 msgid "Please wait, this can take some time."
@@ -1628,8 +1594,8 @@ msgid "Upgrade"
 msgstr "རིམ་སྤོར"
 
 #: ../UpdateManager/DistUpgradeFetcherKDE.py:89
-#: ../data/gtkbuilder/UpdateManager.ui.h:20
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:2
+#: ../data/gtkbuilder/UpdateManager.ui.h:13
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:4
 msgid "Release Notes"
 msgstr "པར་བསྐྲུན་གསལ་བཤད"
 
@@ -1661,100 +1627,89 @@ msgstr "དྲས་པང་ཐོག་ཏུ་སྦྲེལ་མཐུད
 #, python-format
 msgid "Downloading file %(current)li of %(total)li with %(speed)s/s"
 msgstr ""
-"ཁྱོན་ཡོངས་%(total)li་ནང་ནས་ཡིག་ཆ་%(current)li་ལེན་འཇུག་བཞིན་པ་ ་ཚད "
-"%(speed)s/སྐར་ཆ"
+"ཁྱོན་ཡོངས་%(total)li་ནང་ནས་ཡིག་ཆ་%(current)li་ལེན་འཇུག་བཞིན་པ་ ་ཚད %(speed)s/སྐར་ཆ"
 
 #: ../UpdateManager/GtkProgress.py:164
 #, python-format
 msgid "Downloading file %(current)li of %(total)li"
 msgstr "ཁྱོན་ཡོངས་%(total)li་ནང་ནས་ཡིག་ཆ་%(current)li་ལེན་འཇུག་བཞིན་པ་"
 
-#: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
+#: ../UpdateManager/UpdateManager.py:103 ../do-release-upgrade:95
 msgid "Your elementary OS release is not supported anymore."
 msgstr "ཁྱོད་ཀྱི་elementary OS པར་གཞི་འདིར་རྒྱབ་སྐྱོར་མེད་པ།"
 
-#: ../UpdateManager/UpdateManager.py:105
+#: ../UpdateManager/UpdateManager.py:104
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
 "upgrade to a later version of elementary OS."
 msgstr ""
 
-#: ../UpdateManager/UpdateManager.py:113
+#: ../UpdateManager/UpdateManager.py:112
 msgid "Upgrade information"
 msgstr "རིམ་སྤོར་གནས་ཚུལ"
 
-#: ../UpdateManager/UpdateManager.py:229
-#: ../UpdateManagerText/UpdateManagerText.py:32
-msgid "Install"
-msgstr "སྒྲིག་འཇུག"
-
-#: ../UpdateManager/UpdateManager.py:231
-msgid "Name"
-msgstr ""
-
 #. upload_archive = version_match.group(2).strip()
-#: ../UpdateManager/UpdateManager.py:391
+#: ../UpdateManager/UpdateManager.py:387
 #, python-format
 msgid "Version %s: \n"
 msgstr "པར་གཞི་ %s: \n"
 
-#: ../UpdateManager/UpdateManager.py:453
+#: ../UpdateManager/UpdateManager.py:444
 msgid ""
 "No network connection detected, you can not download changelog information."
-msgstr ""
-"དྲ་བའི་སྦྲེལ་མཐུད་རྙེད་མ་ཐུབ ཁྱོད་ཀྱིས་བཟོས་བཅོས་ཐོ་འགོད་སྐོར་ལེན་འཇུག་མི་ཐུབ"
+msgstr "དྲ་བའི་སྦྲེལ་མཐུད་རྙེད་མ་ཐུབ ཁྱོད་ཀྱིས་བཟོས་བཅོས་ཐོ་འགོད་སྐོར་ལེན་འཇུག་མི་ཐུབ"
 
-#: ../UpdateManager/UpdateManager.py:461
+#: ../UpdateManager/UpdateManager.py:452
 msgid "Downloading list of changes..."
 msgstr "བཟོ་བཅོས་ཁག་ཅིག་ལེན་འཇུག་བཞིན་པ་་་"
 
-#: ../UpdateManager/UpdateManager.py:505
+#: ../UpdateManager/UpdateManager.py:496
 msgid "_Deselect All"
 msgstr ""
 
-#: ../UpdateManager/UpdateManager.py:511
+#: ../UpdateManager/UpdateManager.py:502
 msgid "Select _All"
 msgstr ""
 
-#: ../UpdateManager/UpdateManager.py:571
+#: ../UpdateManager/UpdateManager.py:562
 #, python-format
 msgid "%(count)s update has been selected."
 msgid_plural "%(count)s updates have been selected."
 msgstr[0] "གསར་སྒྱུར་དགོས་པ་%(count)s བདམས་ཟིན་པ"
 
-#: ../UpdateManager/UpdateManager.py:575
+#: ../UpdateManager/UpdateManager.py:566
 #, python-format
 msgid "%s will be downloaded."
 msgstr "%s ལེན་འཇུག་བྱེད་པ"
 
-#: ../UpdateManager/UpdateManager.py:587
+#: ../UpdateManager/UpdateManager.py:578
 msgid "The update has already been downloaded, but not installed."
 msgid_plural "The updates have already been downloaded, but not installed."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../UpdateManager/UpdateManager.py:592
+#: ../UpdateManager/UpdateManager.py:583
 msgid "There are no updates to install."
 msgstr ""
 
 #. TRANSLATORS: this allows to switch the order of the count of
 #. updates and the download size string (if needed)
-#: ../UpdateManager/UpdateManager.py:598
+#: ../UpdateManager/UpdateManager.py:589
 #, python-format
 msgid "%(count_str)s %(download_str)s"
 msgstr "%(count_str)s %(download_str)s"
 
-#: ../UpdateManager/UpdateManager.py:605
+#: ../UpdateManager/UpdateManager.py:596
 msgid "Unknown download size."
 msgstr "ལེན་འཇུག་གི་ཆེ་ཆུང་ཚད་མི་ཤེས"
 
-#: ../UpdateManager/UpdateManager.py:631
+#: ../UpdateManager/UpdateManager.py:622
 msgid ""
 "It is unknown when the package information was updated last. Please click "
 "the 'Check' button to update the information."
 msgstr ""
 
-#: ../UpdateManager/UpdateManager.py:637
+#: ../UpdateManager/UpdateManager.py:628
 #, python-format
 msgid ""
 "The package information was last updated %(days_ago)s days ago.\n"
@@ -1763,97 +1718,92 @@ msgstr ""
 "ཐུམ་བུ་འདི་ཐེངས་རྗེས་མའི་གསར་སྒྱུར་བྱས་པ་ནི་ཉིན་%(days_ago)s འགོར་སོང་།\n"
 "འོག་གི་ལྟ་བཤེར་མཐེབ་ལ་མནན་ནས་མཉེན་ཆས་གསར་སྒྱུར་ལྟ་བཤེར་བྱེད་དགོས"
 
-#: ../UpdateManager/UpdateManager.py:642
+#: ../UpdateManager/UpdateManager.py:633
 #, python-format
 msgid "The package information was last updated %(days_ago)s day ago."
-msgid_plural ""
-"The package information was last updated %(days_ago)s days ago."
-msgstr[0] ""
-"ཐུམ་བུ་སྐོར་ཐེངས་རྗེས་མའི་གསར་སྒྱུར་བྱས་ནས་ཉིན་ %(days_ago)s འགོར་སོང་།"
+msgid_plural "The package information was last updated %(days_ago)s days ago."
+msgstr[0] "ཐུམ་བུ་སྐོར་ཐེངས་རྗེས་མའི་གསར་སྒྱུར་བྱས་ནས་ཉིན་ %(days_ago)s འགོར་སོང་།"
 
-#: ../UpdateManager/UpdateManager.py:646
+#: ../UpdateManager/UpdateManager.py:637
 #, python-format
 msgid "The package information was last updated %(hours_ago)s hour ago."
 msgid_plural ""
 "The package information was last updated %(hours_ago)s hours ago."
-msgstr[0] ""
-"ཐུམ་བུ་སྐོར་ཐེངས་རྗེས་མའི་གསར་སྒྱུར་བྱས་ནས་ཆུ་ཚོད་ %(hours_ago)s འགོར་སོང་།"
+msgstr[0] "ཐུམ་བུ་སྐོར་ཐེངས་རྗེས་མའི་གསར་སྒྱུར་བྱས་ནས་ཆུ་ཚོད་ %(hours_ago)s འགོར་སོང་།"
 
 #. TRANSLATORS: only in plural form, as %s minutes ago is one of 15, 30, 45 minutes ago
-#: ../UpdateManager/UpdateManager.py:651 ../UpdateManager/UpdateManager.py:653
-#: ../UpdateManager/UpdateManager.py:655
+#: ../UpdateManager/UpdateManager.py:642 ../UpdateManager/UpdateManager.py:644
+#: ../UpdateManager/UpdateManager.py:646
 #, python-format
 msgid "The package information was last updated about %s minutes ago."
 msgstr ""
 
-#: ../UpdateManager/UpdateManager.py:657
+#: ../UpdateManager/UpdateManager.py:648
 msgid "The package information was just updated."
 msgstr ""
 
-#: ../UpdateManager/UpdateManager.py:677
-#: ../data/gtkbuilder/UpdateManager.ui.h:2
+#: ../UpdateManager/UpdateManager.py:668
+#: ../data/gtkbuilder/UpdateManager.ui.h:22
 msgid ""
 "Software updates correct errors, eliminate security vulnerabilities and "
 "provide new features."
 msgstr ""
-"མཉེན་ཆས་གསར་སྒྱུར་བྱས་ན་ནོར་འཁྲུལ་དག་བཅོས་བཟོ་བ་དང་བདེ་སྲུང་ཉེན་ཁ་འདོར་བ།  "
-"ཁྱད་ནུས་གསར་བ་སྟེར་བ"
+"མཉེན་ཆས་གསར་སྒྱུར་བྱས་ན་ནོར་འཁྲུལ་དག་བཅོས་བཟོ་བ་དང་བདེ་སྲུང་ཉེན་ཁ་འདོར་བ།  ཁྱད་ནུས་གསར་བ་སྟེར་བ"
 
-#: ../UpdateManager/UpdateManager.py:696
+#: ../UpdateManager/UpdateManager.py:687
 msgid "Software updates may be available for your computer."
 msgstr "རྩིས་འཁོར་འདི་ལ་མཉེན་ཆས་གསར་སྒྱུར་བྱེད་རྒྱུ་ཡོད་སྲིད"
 
-#: ../UpdateManager/UpdateManager.py:704
+#: ../UpdateManager/UpdateManager.py:695
 msgid "Welcome to elementary OS"
 msgstr "elementary OS མ་ལག་གིས་དགའ་བསུ་ཞུ"
 
-#: ../UpdateManager/UpdateManager.py:705
+#: ../UpdateManager/UpdateManager.py:696
 msgid ""
-"These software updates have been issued since this version of elementary OS was "
-"released."
+"These software updates have been issued since this version of elementary OS "
+"was released."
 msgstr ""
 
-#: ../UpdateManager/UpdateManager.py:708
+#: ../UpdateManager/UpdateManager.py:699
 msgid "Software updates are available for this computer."
 msgstr ""
 
-#: ../UpdateManager/UpdateManager.py:759
+#: ../UpdateManager/UpdateManager.py:750
 #, python-format
 msgid ""
 "The upgrade needs a total of %s free space on disk '%s'. Please free at "
 "least an additional %s of disk space on '%s'. Empty your trash and remove "
 "temporary packages of former installations using 'sudo apt-get clean'."
 msgstr ""
-"རིམ་སྤོར་འདི་བྱེད་པར་བླུགས་སྡེར་ '%s'ཐོག་ཁྱོན་ཡོངས་ %s "
-"་དགོས་པས་བླུགས་སྡེར་'%s'ཐོག་མ་མཐའ་ནའང་ བླུགས་སྡེར་སྟོང་བ་%s ་བཟོ་རོགས། "
-"འདིར་གད་སྙིགས་བཤོ་བ་དང་'sudo apt-get clean'སྤྱོད་ནས་ "
-"སྔོན་གྱི་སྒྲིག་འཇུག་གི་གནས་སྐབས་ཐུམ་བུ་བསུབ་ཆོག"
+"རིམ་སྤོར་འདི་བྱེད་པར་བླུགས་སྡེར་ '%s'ཐོག་ཁྱོན་ཡོངས་ %s ་དགོས་པས་བླུགས་སྡེར་'%s'ཐོག་མ་མཐའ་ནའང་ "
+"བླུགས་སྡེར་སྟོང་བ་%s ་བཟོ་རོགས། འདིར་གད་སྙིགས་བཤོ་བ་དང་'sudo apt-get clean'སྤྱོད་ནས་ སྔོན་གྱི་"
+"སྒྲིག་འཇུག་གི་གནས་སྐབས་ཐུམ་བུ་བསུབ་ཆོག"
 
-#: ../UpdateManager/UpdateManager.py:784
+#: ../UpdateManager/UpdateManager.py:775
 msgid ""
 "The computer needs to restart to finish installing updates. Please save your "
 "work before continuing."
 msgstr ""
-"རིམ་སྤོར་སྒྲིག་འཇུག་ལེགས་འགྲུབ་ཀྱི་ཆེད་དུ་རྩིས་འཁོར་འགོ་བསྐྱར་འཛུགས་དགོས་པ། "
-"ཁྱོད་ཀྱི་ལས་ཀ་གསོག་འཇོག་བྱས་ནས་ནུ་མཐུད"
+"རིམ་སྤོར་སྒྲིག་འཇུག་ལེགས་འགྲུབ་ཀྱི་ཆེད་དུ་རྩིས་འཁོར་འགོ་བསྐྱར་འཛུགས་དགོས་པ། ཁྱོད་ཀྱི་ལས་ཀ་གསོག་འཇོག་བྱས་"
+"ནས་ནུ་མཐུད"
 
-#: ../UpdateManager/UpdateManager.py:848
+#: ../UpdateManager/UpdateManager.py:839
 msgid "Reading package information"
 msgstr "ཐུམ་བུ་ཀློག་བཞིན་པ"
 
-#: ../UpdateManager/UpdateManager.py:863
+#: ../UpdateManager/UpdateManager.py:854
 msgid "Connecting..."
 msgstr "མཐུད་བཞིན་པ་་་"
 
-#: ../UpdateManager/UpdateManager.py:880
+#: ../UpdateManager/UpdateManager.py:871
 msgid "You may not be able to check for updates or download new updates."
 msgstr "ཁྱོད་ཀྱིས་ཕལ་ཆེར་གསར་སྒྱུར་གསར་པར་འཚོར་ཞིབ་དང་གསར་སྒྱུར་མི་ཐུབ"
 
-#: ../UpdateManager/UpdateManager.py:1004
+#: ../UpdateManager/UpdateManager.py:995
 msgid "Could not initialize the package information"
 msgstr "ཐུམ་བུ་སྐོར་འགོ་སློང་མི་ཐུམ་པ"
 
-#: ../UpdateManager/UpdateManager.py:1005
+#: ../UpdateManager/UpdateManager.py:996
 msgid ""
 "An unresolvable problem occurred while initializing the package "
 "information.\n"
@@ -1862,10 +1812,9 @@ msgid ""
 "following error message:\n"
 msgstr ""
 "ཐུམ་བུ་སྐོར་འགོ་སློང་བའི་སྐབས་བསྐྱར་གསོ་མི་ཐུབ་པའི་སྐྱོན་བྱུང་བ། \n"
-"ནོར་འཁྲུལ་འདི་དང་གཤམ་གྱི་ནོར་འཁྲུལ་ཡིག་གེ་མཉམ་དུ་་གསར་སྒྱུར་དོ་དམ་པ་ལ་ཡར་ཞུ་ "
-"སྤྲོད་རོགས:\n"
+"ནོར་འཁྲུལ་འདི་དང་གཤམ་གྱི་ནོར་འཁྲུལ་ཡིག་གེ་མཉམ་དུ་་གསར་སྒྱུར་དོ་དམ་པ་ལ་ཡར་ཞུ་ སྤྲོད་རོགས:\n"
 
-#: ../UpdateManager/UpdateManager.py:1036
+#: ../UpdateManager/UpdateManager.py:1025
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade.\n"
 "\n"
@@ -1874,65 +1823,64 @@ msgid ""
 msgstr ""
 "ཐུམ་བུ་ལ་རྩིས་འདངས་རྒྱག་པའི་སྐབས་བསྐྱར་གསོ་མི་ཐུབ་པའི་སྐྱོན་བྱུང་བ། \n"
 "\n"
-"ནོར་འཁྲུལ་འདི་དང་གཤམ་གྱི་ནོར་འཁྲུལ་ཡིག་གེ་མཉམ་དུ་་གསར་སྒྱུར་དོ་དམ་པ་ལ་ཡར་ཞུ་ "
-"སྤྲོད་རོགས:"
+"ནོར་འཁྲུལ་འདི་དང་གཤམ་གྱི་ནོར་འཁྲུལ་ཡིག་གེ་མཉམ་དུ་་གསར་སྒྱུར་དོ་དམ་པ་ལ་ཡར་ཞུ་ སྤྲོད་རོགས:"
 
-#: ../UpdateManager/UpdateManager.py:1061
+#: ../UpdateManager/UpdateManager.py:1050
 msgid " (New install)"
 msgstr " (སྒྲིག་འཇུག་གསར་པ)"
 
 #. TRANSLATORS: the b stands for Bytes
-#: ../UpdateManager/UpdateManager.py:1068
+#: ../UpdateManager/UpdateManager.py:1057
 #, python-format
 msgid "(Size: %s)"
 msgstr "(ཆེ་ཆུང: %s)"
 
-#: ../UpdateManager/UpdateManager.py:1070
+#: ../UpdateManager/UpdateManager.py:1059
 #, python-format
 msgid "From version %(old_version)s to %(new_version)s"
 msgstr "པར་གཞི་%(old_version)s ནས་ %(new_version)s་སྒྱུར་བ"
 
-#: ../UpdateManager/UpdateManager.py:1074
+#: ../UpdateManager/UpdateManager.py:1063
 #, python-format
 msgid "Version %s"
 msgstr "པར་གཞི་ %s"
 
-#: ../UpdateManager/UpdateManager.py:1105 ../do-release-upgrade:107
+#: ../UpdateManager/UpdateManager.py:1094 ../do-release-upgrade:107
 msgid "Release upgrade not possible right now"
 msgstr "ད་ལྟ་འགྲེམས་སྤེལ་གསར་པའི་རིམ་སྤོར་བྱེད་མི་ཐུབ"
 
-#: ../UpdateManager/UpdateManager.py:1106 ../do-release-upgrade:108
+#: ../UpdateManager/UpdateManager.py:1095 ../do-release-upgrade:108
 #, c-format, python-format
 msgid ""
 "The release upgrade can not be performed currently, please try again later. "
 "The server reported: '%s'"
 msgstr ""
-"འགྲེམས་སྤེལ་གསར་པའི་རིམ་སྤོར་ད་ལྟ་སྒྲུབ་མི་ཐུབ "
-"རྗེས་སུ་ཡང་བསྐྱར་ཚོད་ལྟ་གནོང་རོགས ཞབས་ཞུ་བས་ཡར་ཞུ།  '%s'"
+"འགྲེམས་སྤེལ་གསར་པའི་རིམ་སྤོར་ད་ལྟ་སྒྲུབ་མི་ཐུབ རྗེས་སུ་ཡང་བསྐྱར་ཚོད་ལྟ་གནོང་རོགས ཞབས་ཞུ་བས་ཡར་ཞུ།  "
+"'%s'"
 
-#: ../UpdateManager/UpdateManager.py:1108 ../check-new-release-gtk:115
+#: ../UpdateManager/UpdateManager.py:1097 ../check-new-release-gtk:115
 msgid "Downloading the release upgrade tool"
 msgstr "རིམ་སྤོར་འགྲེམས་སྤེལ་སྤྱོད་ཆས་ལེན་འཇུག་བཞིན་པ"
 
-#: ../UpdateManager/UpdateManager.py:1115
+#: ../UpdateManager/UpdateManager.py:1104
 #, python-format
 msgid "<b>New elementary OS release '%s' is available</b>"
 msgstr "<b>elementary OS་མ་ལག་འགྲེམས་སྤེལ་གསར་པ་ '%s' སྤྱོད་རུང་བ</b>"
 
 #. we assert a clean cache
-#: ../UpdateManager/UpdateManager.py:1154
+#: ../UpdateManager/UpdateManager.py:1143
 msgid "Software index is broken"
 msgstr "མཉེན་ཆས་ཟུར་རྟགས་འཕྲོ་བརླགས་ཚར་འདུག"
 
-#: ../UpdateManager/UpdateManager.py:1155
+#: ../UpdateManager/UpdateManager.py:1144
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"མཉེན་ཆས་གང་ཡང་སྒྲིག་འཇུག་དང་བསུབ་འདོར་མི་ཐུབ་པས་ཁྱོད་ཀྱིས་ཐུམ་བུ་དོ་དམ་པ་ "
-"\"Synaptic\" བེད་སྤྱོད་པའམ་terminal་་སྒོ་འཇུག་་ནང་དུ་ \"sudo apt-get install "
-"-f\" འཇུག་ནས་ གནས་ཚུལ་འདི་བཟོ་བཅོས་བྱེད་རོགས།"
+"མཉེན་ཆས་གང་ཡང་སྒྲིག་འཇུག་དང་བསུབ་འདོར་མི་ཐུབ་པས་ཁྱོད་ཀྱིས་ཐུམ་བུ་དོ་དམ་པ་ \"Synaptic\" བེད་སྤྱོད་"
+"པའམ་terminal་་སྒོ་འཇུག་་ནང་དུ་ \"sudo apt-get install -f\" འཇུག་ནས་ གནས་ཚུལ་འདི་བཟོ་"
+"བཅོས་བྱེད་རོགས།"
 
 #: ../UpdateManager/UnitySupport.py:57
 msgid "Check for Updates"
@@ -1945,6 +1893,10 @@ msgstr ""
 #: ../UpdateManagerText/UpdateManagerText.py:31
 msgid "Cancel"
 msgstr "རྩིས་མེད་གཏོང"
+
+#: ../UpdateManagerText/UpdateManagerText.py:32
+msgid "Install"
+msgstr "སྒྲིག་འཇུག"
 
 #: ../UpdateManagerText/UpdateManagerText.py:34
 msgid "Changelog"
@@ -1986,24 +1938,12 @@ msgstr ""
 msgid "Downloading changelog"
 msgstr "བཟོ་བཅོས་ཟིན་ཐོ་ལེན་འཇུག་བཞིན་པ"
 
-#: ../UpdateManager/Core/MyCache.py:138
+#: ../UpdateManager/Core/MyCache.py:130
 #, python-format
 msgid "Other updates (%s)"
 msgstr "གསར་སྒྱུར་གཞན་པ (%s)"
 
-#: ../UpdateManager/Core/MyCache.py:316
-msgid "This update does not come from a source that supports changelogs."
-msgstr ""
-
-#: ../UpdateManager/Core/MyCache.py:322 ../UpdateManager/Core/MyCache.py:350
-msgid ""
-"Failed to download the list of changes. \n"
-"Please check your Internet connection."
-msgstr ""
-"བཟོ་བཅོས་ཐོ་འགོད་ལེན་འཇུག་མ་ཐུབ་པ།\n"
-"དྲ་བ་སྦྲེལ་མཐུད་ལ་བརྟག་བཤེར་བྱེད་རོགས།"
-
-#: ../UpdateManager/Core/MyCache.py:329
+#: ../UpdateManager/Core/MyCache.py:285
 #, python-format
 msgid ""
 "Changes for the versions:\n"
@@ -2012,7 +1952,19 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../UpdateManager/Core/MyCache.py:339
+#: ../UpdateManager/Core/MyCache.py:299
+msgid "This update does not come from a source that supports changelogs."
+msgstr ""
+
+#: ../UpdateManager/Core/MyCache.py:305 ../UpdateManager/Core/MyCache.py:326
+msgid ""
+"Failed to download the list of changes. \n"
+"Please check your Internet connection."
+msgstr ""
+"བཟོ་བཅོས་ཐོ་འགོད་ལེན་འཇུག་མ་ཐུབ་པ།\n"
+"དྲ་བ་སྦྲེལ་མཐུད་ལ་བརྟག་བཤེར་བྱེད་རོགས།"
+
+#: ../UpdateManager/Core/MyCache.py:315
 #, python-format
 msgid ""
 "The changelog does not contain any relevant changes.\n"
@@ -2022,11 +1974,11 @@ msgid ""
 msgstr ""
 "བཟོ་བཅོས་ཐོ་འགོད་འདིར་བཟོ་བཅོས་ཕན་ཐོག་ཅན་མེད་པ\n"
 "\n"
-"བཟོ་བཅོས་སྤྱོད་རུང་བ་མ་རེད་བར་དུ་http://launchpad.net/ubuntu/+source/%s/%s/+c"
-"hangelog\n"
+"བཟོ་བཅོས་སྤྱོད་རུང་བ་མ་རེད་བར་དུ་http://launchpad.net/ubuntu/+source/%s/%s/"
+"+changelog\n"
 "སྤྱོད་པའམ་གཞུགས་ནས་ཚོད་ལྟ་བྱེད་རོགས"
 
-#: ../UpdateManager/Core/MyCache.py:344
+#: ../UpdateManager/Core/MyCache.py:320
 #, python-format
 msgid ""
 "The list of changes is not available yet.\n"
@@ -2036,8 +1988,8 @@ msgid ""
 msgstr ""
 "བཟོ་བཅོས་ཐོ་འགོད་དེ་མི་འདུག་པས།\n"
 "\n"
-"བཟོ་བཅོས་སྤྱོད་རུང་བ་མ་རེད་བར་དུ་http://launchpad.net/ubuntu/+source/%s/%s/+c"
-"hangelog\n"
+"བཟོ་བཅོས་སྤྱོད་རུང་བ་མ་རེད་བར་དུ་http://launchpad.net/ubuntu/+source/%s/%s/"
+"+changelog\n"
 "སྤྱོད་པའམ་གཞུགས་ནས་ཚོད་ལྟ་བྱེད་རོགས"
 
 #: ../UpdateManager/Core/UpdateList.py:49
@@ -2074,18 +2026,54 @@ msgid "Other updates"
 msgstr "གསར་སྒྱུར་གཞན་པ"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:1
-msgid "<big><b>Starting Update Manager</b></big>"
-msgstr "<big><b>གསར་སྒྱུར་དོ་དམ་པ་འགོ་འཛུགས་བཞིན་པ</b></big>"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:3
-msgid "_Partial Upgrade"
-msgstr "རིམ་སྤོར་དུམ་བུ_P"
+msgid ""
+"<b><big>You must check for updates manually</big></b>\n"
+"\n"
+"Your system does not check for updates automatically. You can configure this "
+"behavior in <i>Software Sources</i> on the <i>Updates</i> tab."
+msgstr ""
+"<b><big>ཁྱོད་ཀྱི་ངེས་པར་དུ་ལག་ཐོག་ནས་གསར་སྒྱུར་འཚོལ་བཤེར་བྱེད་དགོས།</big></b>\n"
+"\n"
+"ཁྱོད་ཀྱི་མ་ལག་གིས་རང་འགུལ་གྱིས་གསར་སྒྱུར་འཚོལ་བཤེར་མི་བྱེད། ཁྱོད་ཀྱིས་བྱ་འགུལ་འདི་ <i>གསར་སྒྱུར་</i>ཤོག་"
+"བྱང་ཐོག་གི་<i>མཉེན་ཆས་འབྱུང་ཁུངས་</i> ནས་སྒྲིག་བཟོ་བྱེད་ཆོག"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:4
 msgid "<big><b>Not all updates can be installed</b></big>"
 msgstr "<big><b>གསར་སྒྱུར་ཆ་ཚང་སྒྲིག་འཇུག་མི་ཐུབ་པ</b></big>"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:5
+msgid "<big><b>Running on battery</b></big>"
+msgstr "<big><b>གློག་རྫས་བེད་སྤྱོད་བཞིན་པ་</b></big>"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:6
+msgid "<big><b>Starting Update Manager</b></big>"
+msgstr "<big><b>གསར་སྒྱུར་དོ་དམ་པ་འགོ་འཛུགས་བཞིན་པ</b></big>"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:7
+msgid "Changes"
+msgstr "བཟོ་བཅོས"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:8
+msgid "Chec_k"
+msgstr "ལྟ་བཤེར་_k"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:9
+msgid "Co_ntinue"
+msgstr "མུ་མཐུད་པ_n"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:10
+msgid "Description"
+msgstr "གསལ་བཤད"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:11
+msgid "Description of update"
+msgstr "གསར་སྒྱུར་གསལ་བཤད"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:12
+msgid "It’s safer to connect the computer to AC power before updating."
+msgstr "གསར་སྒྱུར་མ་བྱས་སྔོན་རྩིས་འཁོར་ACགློག་ཁུངས་དང་མཐུད་ན་བཟང"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:14
 msgid ""
 "Run a partial upgrade, to install as many updates as possible. \n"
 "\n"
@@ -2103,141 +2091,98 @@ msgstr ""
 " * elementary OSམ་ལག་དཔོན་ས་ནས་བྱུང་བའི་མཉེན་ཆས་འཐུམ་་བུ་མིན་པ\n"
 " * སྔོན་གྱི་elementary OSཔར་གཞི་ལ་བྱུང་བའི་རྒྱུན་ལྡན་བཟོ་བཅོས"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:12
-msgid "Chec_k"
-msgstr "ལྟ་བཤེར་_k"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:13
-msgid ""
-"<b><big>You must check for updates manually</big></b>\n"
-"\n"
-"Your system does not check for updates automatically. You can configure this "
-"behavior in <i>Software Sources</i> on the <i>Updates</i> tab."
-msgstr ""
-"<b><big>ཁྱོད་ཀྱི་ངེས་པར་དུ་ལག་ཐོག་ནས་གསར་སྒྱུར་འཚོལ་བཤེར་བྱེད་དགོས།</big></b>"
-"\n"
-"\n"
-"ཁྱོད་ཀྱི་མ་ལག་གིས་རང་འགུལ་གྱིས་གསར་སྒྱུར་འཚོལ་བཤེར་མི་བྱེད། "
-"ཁྱོད་ཀྱིས་བྱ་འགུལ་འདི་ "
-"<i>གསར་སྒྱུར་</i>ཤོག་བྱང་ཐོག་གི་<i>མཉེན་ཆས་འབྱུང་ཁུངས་</i> "
-"ནས་སྒྲིག་བཟོ་བྱེད་ཆོག"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:16
-msgid "_Hide this information in the future"
-msgstr "རྗེས་སུ་ཆ་འཕྲིན་འདི་སྐུངས_H"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:17
-msgid "Co_ntinue"
-msgstr "མུ་མཐུད་པ_n"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:18
-msgid "<big><b>Running on battery</b></big>"
-msgstr "<big><b>གློག་རྫས་བེད་སྤྱོད་བཞིན་པ་</b></big>"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:19
-msgid "Your system is running on battery. Are you sure you want to continue?"
-msgstr ""
-"ཁྱོད་ཀྱི་མ་ལག་གློག་སྨན་གྱིས་འཁོར་སྐྱོད་བཞིན་འདུག "
-"ཁྱོད་ཀྱི་ནུ་མཐུད་པ་གཏན་ཁེལ་ཡིན་ནམ"
-
 #: ../data/gtkbuilder/UpdateManager.ui.h:21
-msgid "_Upgrade"
-msgstr "རིམ་སྤོར_U"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:22
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:8
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:5
 msgid "Show progress of individual files"
 msgstr "རང་སྒེར་གྱི་འཕེལ་རིམ་མངོན་པ"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:23
-#: ../data/update-manager.desktop.in.h:1
-msgid "Update Manager"
-msgstr "གསར་སྒྱུར་དོ་དམ་པ"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:24
 msgid "Starting Update Manager"
 msgstr "གསར་སྒྱུར་དོ་དམ་པ་འགོ་འཛུགས་པ"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:25
+#: ../data/gtkbuilder/UpdateManager.ui.h:24
 msgid "U_pgrade"
 msgstr "རིམ་སྤོར_p"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:27
-msgid "updates"
-msgstr "རིམ་སྤོར"
+#: ../data/gtkbuilder/UpdateManager.ui.h:25
+#: ../data/update-manager.desktop.in.h:3
+msgid "Update Manager"
+msgstr "གསར་སྒྱུར་དོ་དམ་པ"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:28
+#: ../data/gtkbuilder/UpdateManager.ui.h:26
+msgid "You are connected via a wireless modem."
+msgstr "ཁྱོད་ཀྱིས་སྐུད་མེད་མཐུན་སྒྲིག་ཆས་བརྒྱུད་ནས་སྦྲེལ་མཐུད་བྱས་འདུག"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:27
 msgid ""
 "You are connected via roaming and may be charged for the data consumed by "
 "this update."
 msgstr ""
-"ཁྱོད་ཀྱིས་རྒྱ་བསྐྱེད་དྲ་བ་བརྒྱུད་ནས་སྦྲེལ་མཐུད་བྱས་འདུག་པས་གསར་སྒྱུར་གྱི་རིན་"
-"འབབ་ཆ་འཕྲིན་གྲངས་ཚད་ལ་བསྟུན་སྲིད"
+"ཁྱོད་ཀྱིས་རྒྱ་བསྐྱེད་དྲ་བ་བརྒྱུད་ནས་སྦྲེལ་མཐུད་བྱས་འདུག་པས་གསར་སྒྱུར་གྱི་རིན་འབབ་ཆ་འཕྲིན་གྲངས་ཚད་ལ་བསྟུན་སྲིད"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:28
+msgid "Your system is running on battery. Are you sure you want to continue?"
+msgstr "ཁྱོད་ཀྱི་མ་ལག་གློག་སྨན་གྱིས་འཁོར་སྐྱོད་བཞིན་འདུག ཁྱོད་ཀྱི་ནུ་མཐུད་པ་གཏན་ཁེལ་ཡིན་ནམ"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:29
-msgid "You are connected via a wireless modem."
-msgstr "ཁྱོད་ཀྱིས་སྐུད་མེད་མཐུན་སྒྲིག་ཆས་བརྒྱུད་ནས་སྦྲེལ་མཐུད་བྱས་འདུག"
+msgid "_Hide this information in the future"
+msgstr "རྗེས་སུ་ཆ་འཕྲིན་འདི་སྐུངས_H"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:30
-msgid "It’s safer to connect the computer to AC power before updating."
-msgstr "གསར་སྒྱུར་མ་བྱས་སྔོན་རྩིས་འཁོར་ACགློག་ཁུངས་དང་མཐུད་ན་བཟང"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:31
 msgid "_Install Updates"
 msgstr "རིམ་སྤོར་སྒྲིག་འཇུག_I"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:32
-msgid "Changes"
-msgstr "བཟོ་བཅོས"
+#: ../data/gtkbuilder/UpdateManager.ui.h:31
+msgid "_Partial Upgrade"
+msgstr "རིམ་སྤོར་དུམ་བུ_P"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:33
-msgid "Description"
-msgstr "གསལ་བཤད"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:34
-msgid "Description of update"
-msgstr "གསར་སྒྱུར་གསལ་བཤད"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:35
 msgid "_Settings..."
 msgstr ""
 
+#: ../data/gtkbuilder/UpdateManager.ui.h:34
+msgid "_Upgrade"
+msgstr "རིམ་སྤོར_U"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:35
+msgid "updates"
+msgstr "རིམ་སྤོར"
+
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</"
+"b>"
 msgstr "<b>elementary OS ཡི་པར་གཞི་གསར་པ་ཞིག་ཡོད་པས་ཁྱོད་ཀྱིས་རིམ་སྤོར་དགོས་སམ</b>"
+
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:2
+msgid "Ask Me Later"
+msgstr "རྗེས་ནས་དྲིས་ཤོག"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
 msgstr "རིམ་སྤོར་མ་བྱེད"
 
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:4
-msgid "Ask Me Later"
-msgstr "རྗེས་ནས་དྲིས་ཤོག"
-
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:5
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
 msgid "Yes, Upgrade Now"
 msgstr "དགོས། རིམ་སྤོར་ད་་ལྟ་བྱེད།"
-
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new elementary OS"
-msgstr "ཁྱོད་ཀྱིས་elementary OSགསར་པར་རིམ་སྤོར་བྱེད་པར་འདོར་ཚར"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
 "You can upgrade at a later time by opening Update Manager and click on "
 "\"Upgrade\"."
-msgstr ""
-"རྗེས་སུ་རིམ་སྤོར་དགོས་ན་གསར་སྒྱུར་དོ་དམ་པ་ཁ་ཕྱེ་ནས་\"རིམ་སྤོར་\"ལ་རྡེབ་གནོན་བ"
-"ྱེད་དགོས་"
+msgstr "རྗེས་སུ་རིམ་སྤོར་དགོས་ན་གསར་སྒྱུར་དོ་དམ་པ་ཁ་ཕྱེ་ནས་\"རིམ་སྤོར་\"ལ་རྡེབ་གནོན་བྱེད་དགོས་"
+
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:8
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "ཁྱོད་ཀྱིས་elementary OSགསར་པར་རིམ་སྤོར་བྱེད་པར་འདོར་ཚར"
+
+#: ../data/update-manager.desktop.in.h:1
+msgid "Show and install available updates"
+msgstr "རིམ་སྤོར་སྤྱོད་རུང་རྣམས་མངོན་པ་དང་སྒྲིག་འཇུག་བྱེད"
 
 #: ../data/update-manager.desktop.in.h:2
 msgid "Software Updates"
 msgstr "མཉེན་ཆས་རིམ་སྤོར"
-
-#: ../data/update-manager.desktop.in.h:3
-msgid "Show and install available updates"
-msgstr "རིམ་སྤོར་སྤྱོད་རུང་རྣམས་མངོན་པ་དང་སྒྲིག་འཇུག་བྱེད"
 
 #: ../update-manager:61 ../update-manager-text:50 ../do-release-upgrade:46
 msgid "Show version and exit"
@@ -2254,13 +2199,12 @@ msgstr "elementary OS་འགྲེལ་སྤེལ་གསར་པ་ལ�
 #: ../update-manager:70 ../do-release-upgrade:49 ../check-new-release-gtk:182
 msgid "Check if upgrading to the latest devel release is possible"
 msgstr ""
-"Check if upgrading to the latest devel release is "
-"possibleཐེངས་རྗེས་མའི་འགྲེམ་སྤེལ་ལ་རིམ་སྤོར་ཐུབ་མིན་རྟགས་བཤེར"
+"Check if upgrading to the latest devel release is possibleཐེངས་རྗེས་མའི་འགྲེམ་སྤེལ་ལ་"
+"རིམ་སྤོར་ཐུབ་མིན་རྟགས་བཤེར"
 
 #: ../update-manager:74
 msgid "Upgrade using the latest proposed version of the release upgrader"
-msgstr ""
-"པར་གཞི་རིམ་སྤོར་བའི་ཐེངས་རྗེས་མའི་པར་གཞི་བེད་སྤྱོད་ནས་རིམ་སྤོར་བྱེད་པ"
+msgstr "པར་གཞི་རིམ་སྤོར་བའི་ཐེངས་རྗེས་མའི་པར་གཞི་བེད་སྤྱོད་ནས་རིམ་སྤོར་བྱེད་པ"
 
 #: ../update-manager:81
 msgid "Do not focus on map when starting"
@@ -2289,9 +2233,7 @@ msgstr ""
 #: ../do-release-upgrade:53 ../check-new-release-gtk:186
 msgid ""
 "Try upgrading to the latest release using the upgrader from $distro-proposed"
-msgstr ""
-"$distro-"
-"proposedཡི་རིམ་སྤོར་ཆས་སྤྱོད་ནས་ཐེངས་རྗེས་མའི་པར་གཞི་ལ་རིམ་སྤོར་བྱེད་པ"
+msgstr "$distro-proposedཡི་རིམ་སྤོར་ཆས་སྤྱོད་ནས་ཐེངས་རྗེས་མའི་པར་གཞི་ལ་རིམ་སྤོར་བྱེད་པ"
 
 #: ../do-release-upgrade:57
 msgid ""
@@ -2300,8 +2242,8 @@ msgid ""
 "for server systems are supported."
 msgstr ""
 "དམིགས་བསལ་གྱི་རིམ་སྤོར་རྣམ་པ་འཁོར་སྐྱོད་བྱེད་པ།\n"
-"དང་ཐོག་གི་གཙོ་ངོས་མ་ལག་ལ་་གཙོ་ངོས་་ཀྱི་ཚད་ལྡན་རིམ་སྤོར་དང་ཞབས་ཞུ་བའི་མ་ལག་ལ་ "
-"ཞབས་ཞུ་བའི་རམ་འདེགས་ཡོད་པ།"
+"དང་ཐོག་གི་གཙོ་ངོས་མ་ལག་ལ་་གཙོ་ངོས་་ཀྱི་ཚད་ལྡན་རིམ་སྤོར་དང་ཞབས་ཞུ་བའི་མ་ལག་ལ་ ཞབས་ཞུ་བའི་རམ་"
+"འདེགས་ཡོད་པ།"
 
 #: ../do-release-upgrade:63
 msgid "Run the specified frontend"
@@ -2312,8 +2254,8 @@ msgid ""
 "Check only if a new distribution release is available and report the result "
 "via the exit code"
 msgstr ""
-"འགྲེམས་སྤེལ་གསར་པ་ཁོ་ན་ཡོད་མིན་འཚོར་བཤེར་བྱེད་པ་དང་ཕྱིར་ཐོན་ཨང་རྟགས་བརྒྱུད་ནས"
-"་འདིའི་མཇུག་འབྲས་ཡར་ཞུ་བྱེད་དགོས"
+"འགྲེམས་སྤེལ་གསར་པ་ཁོ་ན་ཡོད་མིན་འཚོར་བཤེར་བྱེད་པ་དང་ཕྱིར་ཐོན་ཨང་རྟགས་བརྒྱུད་ནས་འདིའི་མཇུག་འབྲས་ཡར་ཞུ་"
+"བྱེད་དགོས"
 
 #: ../do-release-upgrade:82
 msgid "Checking for a new elementary OS release"
@@ -2338,9 +2280,7 @@ msgstr "འགྲེམ་སྤེལ་གསར་པ་'%s' སྤྱོད�
 
 #: ../do-release-upgrade:115
 msgid "Run 'do-release-upgrade' to upgrade to it."
-msgstr ""
-"'do-release-"
-"upgrade'འགྲེལ་སྤེལ་རིམ་སྤོར་བྱོས་་འཁོར་སྤྱོད་བྱས་ནས་དེ་ལ་རིམ་སྤོར་བྱེད་པ"
+msgstr "'do-release-upgrade'འགྲེལ་སྤེལ་རིམ་སྤོར་བྱོས་་འཁོར་སྤྱོད་བྱས་ནས་དེ་ལ་རིམ་སྤོར་བྱེད་པ"
 
 #: ../check-new-release-gtk:90
 msgid "elementary OS %(version)s Upgrade Available"
@@ -2455,9 +2395,8 @@ msgid ""
 "When upgrading, if kdelibs4-dev is installed, kdelibs5-dev needs to be "
 "installed. See bugs.launchpad.net, bug #279621 for details."
 msgstr ""
-"རིམ་སྤོར་སྐབས་གལ་སྲིད་kdelibs4-devསྒྲིག་འཇུག་ཚར་ན་kdelibs5-"
-"devཡང་སྒྲིག་འཇུག་དགོས་པ bugs.launchpad.net, bug "
-"#279621ལ་བལྟས་ནས་ཞིབ་ཕྲ་ཀློག་པ"
+"རིམ་སྤོར་སྐབས་གལ་སྲིད་kdelibs4-devསྒྲིག་འཇུག་ཚར་ན་kdelibs5-devཡང་སྒྲིག་འཇུག་དགོས་པ bugs."
+"launchpad.net, bug #279621ལ་བལྟས་ནས་ཞིབ་ཕྲ་ཀློག་པ"
 
 #: ../Janitor/plugins/langpack_manual_plugin.py:34
 #, python-format
@@ -2465,22 +2404,203 @@ msgid "%s needs to be marked as manually installed."
 msgstr "%sལ་ལག་བཟོས་སྒྲིག་འཇུག་དགོས་པ"
 
 #: ../Janitor/plugins/remove_lilo_plugin.py:28
-msgid ""
-"Remove lilo since grub is also installed.(See bug #314004 for details.)"
-msgstr ""
-"grub སྒྲིག་འཛུགས་ཡོད་པའི་སྟབས་ཀྱིས་lilo་བསུབ་དགོས(ཞིབ་ཕྲ་སྐྱོན་ #314004 "
-"ལ་ལྟ་རོགས)"
+msgid "Remove lilo since grub is also installed.(See bug #314004 for details.)"
+msgstr "grub སྒྲིག་འཛུགས་ཡོད་པའི་སྟབས་ཀྱིས་lilo་བསུབ་དགོས(ཞིབ་ཕྲ་སྐྱོན་ #314004 ལ་ལྟ་རོགས)"
 
-#, python-format
 #~ msgid ""
-#~ "This upgrade is running in sandbox (test) mode. All changes are written to "
-#~ "'%s' and will be lost on the next reboot.\n"
+#~ "Unable to locate any package files, perhaps this is not a Ubuntu Disc or "
+#~ "the wrong architecture?"
+#~ msgstr ""
+#~ "ཡིག་ཆ་ཐུམ་བུ་གནས་སྟོན་ཐུབ་མི་འདུག འདི་ཕལ་ཆེར་མ་ལག་Ubuntu་མཛོད་སྡེར་རེད་མི་འདུག་ཡང་ན་སྒྲིག་"
+#~ "བཟོ་ ཡང་དག་པ་རེད་མི་འདུག"
+
+#~ msgid ""
+#~ "There was a error adding the CD, the upgrade will abort. Please report "
+#~ "this as a bug if this is a valid Ubuntu CD.\n"
+#~ "\n"
+#~ "The error message was:\n"
+#~ "'%s'"
+#~ msgstr ""
+#~ "་་CD་་འོད་སྡེར་ནང་ཚན་ཁ་སྣོན་དུས་སྐྱོན་བྱུང་སོང་། རིམ་སྤར་མཚམས་བཅད་ངེས། འདི་གལ་སྲིད་ནུས་ལྡན་གྱི་"
+#~ "མ་ལག་Ubuntu ་་CD་་སྒྲིག་སྡེར་ཡིན་ན་སྐྱོན་འདིའི་སྐོར་ཡ་ལན་སྤྲོད་རོགས\n"
+#~ "\n"
+#~ "ནོར་འཁྲུལ་ཡི་གེ་ནི། \n"
+#~ "'%s'"
+
+#~ msgid ""
+#~ "An unresolvable problem occurred while calculating the upgrade:\n"
+#~ "%s\n"
+#~ "\n"
+#~ " This can be caused by:\n"
+#~ " * Upgrading to a pre-release version of Ubuntu\n"
+#~ " * Running the current pre-release version of Ubuntu\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ "\n"
+#~ msgstr ""
+#~ "%s་རིམ་སྤོར་རྩིས་འདངས་རྒྱག་དུསབསྐྱར་གསོ་བྱེད་མི་ཐུབ་པའི་གནོད་སྐྱོན་བྱུང་བ\n"
+#~ "\n"
+#~ " གནོད་སྐྱོན་འབྱུང་རྐྱེན།\n"
+#~ " * མ་ལག་Ubuntu་སྔོན་མའི་པར་གཞི་ཞིག་ལ་རིམ་སྤོར་བྱེད་པ\n"
+#~ " * མ་ལག་Ubuntu་སྔོན་མའི་པར་གཞི་ཞིག་དང་ཐོག་བཀོལ་སྤྱོད་བཞིན་པ\n"
+#~ " * མ་ལག་Ubuntu་ཀྱིས་མཁོ་སྤྲོད་མ་བྱས་པའི་གཞུང་བཟོས་མཉེན་ཆས་ཐུམ་བུ་མིན་པ\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
+#~ "desktop or edubuntu-desktop package and it was not possible to detect "
+#~ "which version of Ubuntu you are running.\n"
+#~ " Please install one of the packages above first using synaptic or apt-get "
+#~ "before proceeding."
+#~ msgstr ""
+#~ "ཁྱོད་ཀྱི་མ་ལག་ནང་Your system does not contain a ubuntu-སྒྲོག་སྟེགས, kubuntu-སྒྲོག་"
+#~ "སྟེགས, xubuntu-སྒྲོག་སྟེགས་ཡང་ན་edubuntu-སྒྲོག་སྟེགས་ཐུམ་བུ་ཞིག་འདུས་མེད་པས་སྤྱོད་བཞིན་པའི་པར་"
+#~ "གཞི་རྩིས་བཤེར་བྱེད་པ་འགྲུབ་མི་སྲིད \n"
+#~ "མདུན་སྐྱོད་མ་བྱས་གོང་synaptic་དང་ཡང་ན་ apt-get་བེད་སྤྱོད་ནས་གོང་གི་ཐུམ་བུ་ཞིག་སྒྲིག་འཇུག་བྱེད་"
+#~ "རོགས"
+
+#~ msgid ""
+#~ "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
+#~ "version of this driver is available that works with your video card in "
+#~ "Ubuntu 10.04 LTS.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "རྩིས་འཁོར་འདིས་ཁNVIDIA་གཟུགས་རིས་སྒུལ་སློང་བ་བེད་སྤྱོད་བཞིན་ཡོད་པས་ Ubuntu 10.04 LTS་ནང་གི་"
+#~ "བརྙན་རིས་བྱང་བུ་ལ་སྤྱོད་རུང་བའི་གཟུགས་རིས་སྒུལ་སློང་བ་མེད་པ\n"
+#~ "\n"
+#~ "ཁྱོད་ཀྱིས་མུ་མཐུད་འདོད་དམ"
+
+#~ msgid ""
+#~ "This computer is currently using the AMD 'fglrx' graphics driver. No "
+#~ "version of this driver is available that works with your hardware in "
+#~ "Ubuntu 10.04 LTS.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "རྩིས་འཁོར་འདིས་ད་ལྟ་AMD 'fglrx'་གཟུགས་རིས་སྒུལ་སློང་བ་བེད་སྤྱོད་བཞིན་ཡོད།འདིའི་པར་གཞི་གང་ཡང་"
+#~ "Ubuntu 10.04 LTS་སྲ་ཆས་སྤྱོད་མི་རུང་།\n"
+#~ "\n"
+#~ "ཁྱོད་ཀྱིས་མུ་མཐུད་དགོས་སམ"
+
+#~ msgid ""
+#~ "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
+#~ "extension. All packages were built with optimizations requiring i686 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+#~ msgstr ""
+#~ "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
+#~ "extension. All packages were built with optimizations requiring i686 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+
+#~ msgid ""
+#~ "Your system uses an ARM CPU that is older than the ARMv6 architecture. "
+#~ "All packages in karmic were built with optimizations requiring ARMv6 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+#~ msgstr ""
+#~ "Your system uses an ARM CPU that is older than the ARMv6 architecture. "
+#~ "All packages in karmic were built with optimizations requiring ARMv6 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+
+#~ msgid ""
+#~ "Your system appears to be a virtualised environment without an init "
+#~ "daemon, e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this "
+#~ "type of environment, requiring an update to your virtual machine "
+#~ "configuration first.\n"
+#~ "\n"
+#~ "Are you sure you want to continue?"
+#~ msgstr ""
+#~ "Your system appears to be a virtualised environment without an init "
+#~ "daemon, e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this "
+#~ "type of environment, requiring an update to your virtual machine "
+#~ "configuration first.\n"
+#~ "\n"
+#~ "Are you sure you want to continue?"
+
+#~ msgid "Your Ubuntu release is not supported anymore."
+#~ msgstr "ཁྱོད་ཀྱི་Ubuntu པར་གཞི་འདིར་རྒྱབ་སྐྱོར་མེད་པ།"
+
+#~ msgid "Welcome to Ubuntu"
+#~ msgstr "Ubuntu མ་ལག་གིས་དགའ་བསུ་ཞུ"
+
+#~ msgid "<b>New Ubuntu release '%s' is available</b>"
+#~ msgstr "<b>Ubuntu་མ་ལག་འགྲེམས་སྤེལ་གསར་པ་ '%s' སྤྱོད་རུང་བ</b>"
+
+#, fuzzy
+#~ msgid "New hardware support is available"
+#~ msgstr "འགྲེམ་སྤེལ་གསར་པ་'%s' སྤྱོད་རུང་བ"
+
+#~ msgid ""
+#~ "\n"
+#~ "A normal upgrade can not be calculated, please run: \n"
+#~ "  sudo apt-get dist-upgrade\n"
+#~ "\n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " * A previous upgrade which didn't complete\n"
+#~ " * Problems with some of the installed software\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ " * Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "\n"
+#~ "རྒྱུན་ལྡན་གྱི་རིམ་སྤོར་ཞིག་རྩིས་འདངས་རྒྱག་མི་ཐུབ་པས་ \n"
+#~ "  sudo apt-get dist-upgrade་འཁོར་སྐྱོད་བྱེད་རོགས།\n"
+#~ "\n"
+#~ "\n"
+#~ "འདིའི་འབྱུང་རྐྱེན་ནི:\n"
+#~ " * སྔོན་གྱི་རིམ་སྤོར་ཞིག་ལེགས་འགྲུབ་མ་ཐུབ་པ\n"
+#~ " * སྒྲིག་འཇུག་ཡོད་མཉེན་ཆས་སྐྱོན་ཡིན་པ་\n"
+#~ " * Ubuntu་མ་ལག་དཔོན་ས་ནས་ཐོབ་པའི་མཉེན་ཆས་མིན་པ\n"
+#~ " * Ubuntu་མ་ལག་གི་འགྲེམས་སྤེལ་སྔོན་མའི་རྒྱུན་ལྡན་བཟོ་བཅོས་ཡིན་པ"
+
+#~ msgid ""
+#~ "Run a partial upgrade, to install as many updates as possible. \n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " * A previous upgrade which didn't complete\n"
+#~ " * Problems with some of the installed software\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ " * Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "རིམ་སྤོར་དུམ་བུ་གཅིག་བྱས་ནས་རིམ་སྤོར་ཐུབ་ཚད་སྒྲིག་འཇུག་བྱེད་པ\n"
+#~ "\n"
+#~ "འདི་བྱུང་བའི་རྒྱུ་རྐྱེན་ནི་:\n"
+#~ " * ལེགས་འགྲུབ་མ་བྱུང་བའི་སྔོན་གྱི་རིམ་སྤོར\n"
+#~ " * སྒྲིག་འཇུག་ཟིན་པའི་མཉེན་ཆས་འགའ་ལ་སྐྱོན་ཡོད་པ\n"
+#~ " * Ubuntuམ་ལག་དཔོན་ས་ནས་བྱུང་བའི་མཉེན་ཆས་འཐུམ་་བུ་མིན་པ\n"
+#~ " * སྔོན་གྱི་Ubuntuཔར་གཞི་ལ་བྱུང་བའི་རྒྱུན་ལྡན་བཟོ་བཅོས"
+
+#, fuzzy
+#~ msgid "I_nstall"
+#~ msgstr "སྒྲིག་འཇུག"
+
+#~ msgid ""
+#~ "<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+#~ msgstr "<b>Ubuntu ཡི་པར་གཞི་གསར་པ་ཞིག་ཡོད་པས་ཁྱོད་ཀྱིས་རིམ་སྤོར་དགོས་སམ</b>"
+
+#~ msgid "You have declined to upgrade to the new Ubuntu"
+#~ msgstr "ཁྱོད་ཀྱིས་Ubuntuགསར་པར་རིམ་སྤོར་བྱེད་པར་འདོར་ཚར"
+
+#~ msgid "Check if a new Ubuntu release is available"
+#~ msgstr "Ubuntu་འགྲེལ་སྤེལ་གསར་པ་ལྟ་བཤེར་བྱེད་པ"
+
+#~ msgid "Ubuntu %(version)s Upgrade Available"
+#~ msgstr "Ubuntu %(པར་གཞི་)་ལ་རིམ་སྤོར་ཆོག་པ"
+
+#~ msgid "You have declined the upgrade to Ubuntu %s"
+#~ msgstr "Ubuntu %s་རིམ་སྤོར་བྱེད་པར་ཁྱོད་ཀྱིས་འདོར་ཚར"
+
+#~ msgid ""
+#~ "This upgrade is running in sandbox (test) mode. All changes are written "
+#~ "to '%s' and will be lost on the next reboot.\n"
 #~ "\n"
 #~ "*No* changes written to a systemdir from now until the next reboot are "
 #~ "permanent."
 #~ msgstr ""
-#~ "This upgrade is running in sandbox (test) mode. All changes are written to "
-#~ "'%s' and will be lost on the next reboot.\n"
+#~ "This upgrade is running in sandbox (test) mode. All changes are written "
+#~ "to '%s' and will be lost on the next reboot.\n"
 #~ "\n"
 #~ "*No* changes written to a systemdir from now until the next reboot are "
 #~ "permanent."
@@ -2489,24 +2609,22 @@ msgstr ""
 #~ "Fetching and installing the upgrade can take several hours. Once the "
 #~ "download has finished, the process cannot be cancelled."
 #~ msgstr ""
-#~ "རིམ་སྤོར་ལེན་འཇུག་དང་སྒྲིག་འཇུག་བྱེད་པ་ཆུ་ཚོད་འགའ་འགོར་ཉེན་ཡོད། "
-#~ "ལེན་འཇུག་མཇུག་སྒྲིལ་ཚར་བ་དང་རྒྱུད་རིམ་རྩིས་མེད་གཏོང་མི་ཉན"
+#~ "རིམ་སྤོར་ལེན་འཇུག་དང་སྒྲིག་འཇུག་བྱེད་པ་ཆུ་ཚོད་འགའ་འགོར་ཉེན་ཡོད། ལེན་འཇུག་མཇུག་སྒྲིལ་ཚར་བ་དང་རྒྱུད་"
+#~ "རིམ་རྩིས་མེད་གཏོང་མི་ཉན"
 
 #~ msgid "Your system is up-to-date"
 #~ msgstr "ཁྱོད་ཀྱི་མ་ལག་གསར་སྒྱུར་ཚར"
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of elementary OS Linux."
+#~ "upgrade to a later version of Ubuntu Linux."
 #~ msgstr ""
-#~ "ད་ནས་བཟུང་ཁྱོད་ལ་བདེ་འཇགས་བཟོ་བཅོས་དང་གསར་སྒྱུར་གཙོ་ཆེན་ཐོབ་མི་སྲིད་པསelementary OS "
-#~ "Linux་མ་ལག་པར་གཞི་གསར་པར་རིམ་སྤོར་བྱེད་རོགས"
+#~ "ད་ནས་བཟུང་ཁྱོད་ལ་བདེ་འཇགས་བཟོ་བཅོས་དང་གསར་སྒྱུར་གཙོ་ཆེན་ཐོབ་མི་སྲིད་པསUbuntu Linux་མ་ལག་"
+#~ "པར་གཞི་གསར་པར་རིམ་སྤོར་བྱེད་རོགས"
 
 #~ msgid "The update has already been downloaded, but not installed"
 #~ msgid_plural "The updates have already been downloaded, but not installed"
-#~ msgstr[0] ""
-#~ "གདམ་ཟིན་པའི་ཐུམ་བུ་གསར་སྒྱུར་རྣམས་མ་ལག་འདིའི་ཐོག་ལེན་འཇུག་དང་སྒྲིག་འཇུག་བྱས་ཚ"
-#~ "ར"
+#~ msgstr[0] "གདམ་ཟིན་པའི་ཐུམ་བུ་གསར་སྒྱུར་རྣམས་མ་ལག་འདིའི་ཐོག་ལེན་འཇུག་དང་སྒྲིག་འཇུག་བྱས་ཚར"
 
 #~ msgid "There are no updates to install"
 #~ msgstr "སྒྲིག་འཇུག་བྱེད་དགོས་པའི་གསར་སྒྱུར་མེད་པ"
@@ -2518,15 +2636,15 @@ msgstr ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from "
 #~ "Applications later."
 #~ msgstr ""
-#~ "ཁྱོད་ཀྱིས་གལ་སྲིད་ད་ལྟ་སྒྲིག་འཇུག་མ་བསམ་ན་རྗེས་སུ་མ་ལག་འདེམས་ཐོ་ནང་གི་\"གསར་ས"
-#~ "ྒྱུར་དོ་དམ་པ\" ནས་སླར་བཟོ་ཆོག"
+#~ "ཁྱོད་ཀྱིས་གལ་སྲིད་ད་ལྟ་སྒྲིག་འཇུག་མ་བསམ་ན་རྗེས་སུ་མ་ལག་འདེམས་ཐོ་ནང་གི་\"གསར་སྒྱུར་དོ་དམ་པ\" ནས་"
+#~ "སླར་བཟོ་ཆོག"
 
 #~ msgid ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from the "
 #~ "Administration menu later."
 #~ msgstr ""
-#~ "ཁྱོད་ཀྱིས་གལ་སྲིད་ད་ལྟ་སྒྲིག་འཇུག་མ་བསམ་ན་རྗེས་སུ་དོ་དམ་འདེམས་ཐོ་ནང་གི་\"གསར་"
-#~ "སྒྱུར་དོ་དམ་པ\" ་་གསར་སྒྱུར་དོ་དམ་པ་་ ཐོག་ནས་སླར་བཟོ་ཆོག"
+#~ "ཁྱོད་ཀྱིས་གལ་སྲིད་ད་ལྟ་སྒྲིག་འཇུག་མ་བསམ་ན་རྗེས་སུ་དོ་དམ་འདེམས་ཐོ་ནང་གི་\"གསར་སྒྱུར་དོ་དམ་པ\" ་་"
+#~ "གསར་སྒྱུར་དོ་དམ་པ་་ ཐོག་ནས་སླར་བཟོ་ཆོག"
 
 #~ msgid "Checking for a new ubuntu release"
-#~ msgstr "elementary OSའགྲེམ་སྤེལ་གསར་པ་ལྟ་བཤེར་བྱེད་པ"
+#~ msgstr "Ubuntuའགྲེམ་སྤེལ་གསར་པ་ལྟ་བཤེར་བྱེད་པ"

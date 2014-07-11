@@ -2,10 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: update-manager 0.41.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-14 00:52+0000\n"
+"POT-Creation-Date: 2012-03-02 12:16+0100\n"
 "PO-Revision-Date: 2012-03-23 02:57+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) <zh-l10n@linux.org.tw>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,14 +15,14 @@ msgstr ""
 "X-Generator: Launchpad (build 15099)\n"
 
 #. TRANSLATORS: download size of small updates, e.g. "250 kB"
-#: ../DistUpgrade/utils.py:399 ../UpdateManager/Core/utils.py:399
+#: ../DistUpgrade/utils.py:397 ../UpdateManager/Core/utils.py:397
 #, python-format
 msgid "%(size).0f kB"
 msgid_plural "%(size).0f kB"
 msgstr[0] "%(size).0f kB"
 
 #. TRANSLATORS: download size of updates, e.g. "2.3 MB"
-#: ../DistUpgrade/utils.py:402 ../UpdateManager/Core/utils.py:402
+#: ../DistUpgrade/utils.py:400 ../UpdateManager/Core/utils.py:400
 #, python-format
 msgid "%.1f MB"
 msgstr "%.1f MB"
@@ -50,8 +51,8 @@ msgstr "無法計算 sources.list 項目"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
-"wrong architecture?"
+"Unable to locate any package files, perhaps this is not a elementary OS Disc "
+"or the wrong architecture?"
 msgstr "找不到套件檔，也許這不是 elementary OS 光碟，或者處理器架構不對。"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
@@ -87,7 +88,8 @@ msgid_plural ""
 "The packages '%s' are in an inconsistent state and need to be reinstalled, "
 "but no archives can be found for them. Do you want to remove these packages "
 "now to continue?"
-msgstr[0] "「%s」套件狀態不一致而需要重新安裝，但找不到其存檔。是否移除此套件並繼續？"
+msgstr[0] ""
+"「%s」套件狀態不一致而需要重新安裝，但找不到其存檔。是否移除此套件並繼續？"
 
 #. FIXME: not ideal error message, but we just reuse a
 #. existing one here to avoid a new string
@@ -103,10 +105,11 @@ msgstr "損毀套件"
 msgid ""
 "Your system contains broken packages that couldn't be fixed with this "
 "software. Please fix them first using synaptic or apt-get before proceeding."
-msgstr "本軟體無法修正閣下系統某有損毀套件。請先使用 synaptic 或 apt-get 修正才繼續。"
+msgstr ""
+"本軟體無法修正閣下系統某有損毀套件。請先使用 synaptic 或 apt-get 修正才繼續。"
 
 #. FIXME: change the text to something more useful
-#: ../DistUpgrade/DistUpgradeCache.py:679
+#: ../DistUpgrade/DistUpgradeCache.py:659
 #, python-format
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade:\n"
@@ -127,65 +130,69 @@ msgstr ""
 " * 安裝了非由 elementary OS 官方提供的軟體套件\n"
 "\n"
 
-#: ../DistUpgrade/DistUpgradeCache.py:689
+#: ../DistUpgrade/DistUpgradeCache.py:669
 msgid "This is most likely a transient problem, please try again later."
 msgstr "很可能只是暫時有問題。請稍候再試。"
 
-#: ../DistUpgrade/DistUpgradeCache.py:692
+#: ../DistUpgrade/DistUpgradeCache.py:672
 msgid ""
 "If none of this applies, then please report this bug using the command "
 "'ubuntu-bug update-manager' in a terminal."
-msgstr "如全都不對，請在終端機內輸入指令「ubuntu-bug update-manager」回報錯誤。"
+msgstr ""
+"如全都不對，請在終端機內輸入指令「ubuntu-bug update-manager」回報錯誤。"
 
-#: ../DistUpgrade/DistUpgradeCache.py:697
-#: ../UpdateManager/UpdateManager.py:1035
+#: ../DistUpgrade/DistUpgradeCache.py:677
+#: ../UpdateManager/UpdateManager.py:1024
 msgid "Could not calculate the upgrade"
 msgstr "無法計算升級"
 
-#: ../DistUpgrade/DistUpgradeCache.py:748
+#: ../DistUpgrade/DistUpgradeCache.py:728
 msgid "Error authenticating some packages"
 msgstr "認證一些套件時發生錯誤"
 
-#: ../DistUpgrade/DistUpgradeCache.py:749
+#: ../DistUpgrade/DistUpgradeCache.py:729
 msgid ""
 "It was not possible to authenticate some packages. This may be a transient "
 "network problem. You may want to try again later. See below for a list of "
 "unauthenticated packages."
-msgstr "無法驗證部份套件。可能是因為短時間的網路問題。您可以稍候再試一次。下面是未被驗證的套件清單。"
+msgstr ""
+"無法驗證部份套件。可能是因為短時間的網路問題。您可以稍候再試一次。下面是未被"
+"驗證的套件清單。"
 
-#: ../DistUpgrade/DistUpgradeCache.py:769
+#: ../DistUpgrade/DistUpgradeCache.py:749
 #, python-format
 msgid ""
 "The package '%s' is marked for removal but it is in the removal blacklist."
 msgstr "套件「%s」標記作移除，但它在移除黑名單中。"
 
-#: ../DistUpgrade/DistUpgradeCache.py:773
+#: ../DistUpgrade/DistUpgradeCache.py:753
 #, python-format
 msgid "The essential package '%s' is marked for removal."
 msgstr "必要套件「%s」被標記作移除。"
 
-#: ../DistUpgrade/DistUpgradeCache.py:782
+#: ../DistUpgrade/DistUpgradeCache.py:762
 #, python-format
 msgid "Trying to install blacklisted version '%s'"
 msgstr "正在嘗試安裝黑名單版本「%s」"
 
-#: ../DistUpgrade/DistUpgradeCache.py:900
+#: ../DistUpgrade/DistUpgradeCache.py:880
 #, python-format
 msgid "Can't install '%s'"
 msgstr "無法安裝「%s」"
 
-#: ../DistUpgrade/DistUpgradeCache.py:901
+#: ../DistUpgrade/DistUpgradeCache.py:881
 msgid ""
 "It was impossible to install a required package. Please report this as a bug "
 "using 'ubuntu-bug update-manager' in a terminal."
-msgstr "無法安裝必要的套件。請在終端機內輸入「ubuntu-bug update-manager」回報錯誤。"
+msgstr ""
+"無法安裝必要的套件。請在終端機內輸入「ubuntu-bug update-manager」回報錯誤。"
 
 #. FIXME: provide a list
-#: ../DistUpgrade/DistUpgradeCache.py:912
+#: ../DistUpgrade/DistUpgradeCache.py:892
 msgid "Can't guess meta-package"
 msgstr "無法估計元套件 (meta-package)"
 
-#: ../DistUpgrade/DistUpgradeCache.py:913
+#: ../DistUpgrade/DistUpgradeCache.py:893
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
@@ -193,8 +200,8 @@ msgid ""
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
-"您的系統沒有安裝 ubuntu-desktop，kubuntu-desktop 或 edubuntu-desktop "
-"套件，因此無法偵測正在使用那個版本的 elementary OS。\n"
+"您的系統沒有安裝 ubuntu-desktop，kubuntu-desktop 或 edubuntu-desktop 套件，因"
+"此無法偵測正在使用那個版本的 elementary OS。\n"
 " 請先使用 synaptic 或 apt-get 安裝上述其中一個套件再繼續作業"
 
 #: ../DistUpgrade/DistUpgradeController.py:100
@@ -209,7 +216,9 @@ msgstr "無法取得(使用)排他鎖定"
 msgid ""
 "This usually means that another package management application (like apt-get "
 "or aptitude) already running. Please close that application first."
-msgstr "這通常表示有其他的套件管理員程式（如 apt-get 或 aptitude）正在執行。請先關閉這些應用程式。"
+msgstr ""
+"這通常表示有其他的套件管理員程式（如 apt-get 或 aptitude）正在執行。請先關閉"
+"這些應用程式。"
 
 #: ../DistUpgrade/DistUpgradeController.py:244
 msgid "Upgrading over remote connection not supported"
@@ -223,7 +232,8 @@ msgid ""
 "\n"
 "The upgrade will abort now. Please try without ssh."
 msgstr ""
-"您正在透過遠端 ssh 連線的前端介面執行更新，而此介面不支援。請試試純文字模式下以 'do-release-upgrade' 進行更新。\n"
+"您正在透過遠端 ssh 連線的前端介面執行更新，而此介面不支援。請試試純文字模式下"
+"以 'do-release-upgrade' 進行更新。\n"
 "\n"
 "目前更新將會中止。請透過非 ssh 連線重試。"
 
@@ -241,7 +251,8 @@ msgid ""
 "If you continue, an additional ssh daemon will be started at port '%s'.\n"
 "Do you want to continue?"
 msgstr ""
-"此連線階段似乎是在 ssh 下執行。目前不建議在 ssh 連線下進行升級，因為若發生失敗將會較難以修復。\n"
+"此連線階段似乎是在 ssh 下執行。目前不建議在 ssh 連線下進行升級，因為若發生失"
+"敗將會較難以修復。\n"
 "\n"
 "若您繼續，一個額外的 ssh 背景程序將會啟動在 '%s' 連接埠。\n"
 "您想要繼續嗎？"
@@ -256,7 +267,9 @@ msgid ""
 "To make recovery in case of failure easier, an additional sshd will be "
 "started on port '%s'. If anything goes wrong with the running ssh you can "
 "still connect to the additional one.\n"
-msgstr "為在失敗時更易進行修復，一個後備 sshd 將在‘%s’埠被啟動。如果使用中的 ssh 有任何問題，您仍可以連接後備的 sshd 。\n"
+msgstr ""
+"為在失敗時更易進行修復，一個後備 sshd 將在‘%s’埠被啟動。如果使用中的 ssh 有任"
+"何問題，您仍可以連接後備的 sshd 。\n"
 
 #: ../DistUpgrade/DistUpgradeController.py:283
 #, python-format
@@ -266,7 +279,8 @@ msgid ""
 "with e.g.:\n"
 "'%s'"
 msgstr ""
-"若您有執行防火牆，您可能需要暫時開啟此連接埠。由於此動作存在潛在危險，系統不會自動執行。您可以這樣開啟連接埠：\n"
+"若您有執行防火牆，您可能需要暫時開啟此連接埠。由於此動作存在潛在危險，系統不"
+"會自動執行。您可以這樣開啟連接埠：\n"
 "「%s」"
 
 #: ../DistUpgrade/DistUpgradeController.py:355
@@ -300,7 +314,8 @@ msgid ""
 "*No* changes written to a system directory from now until the next reboot "
 "are permanent."
 msgstr ""
-"此升級程序正以沙箱 (測試) 模式執行。所有的變更會寫入「%s」，下次重新開機後會消失。\n"
+"此升級程序正以沙箱 (測試) 模式執行。所有的變更會寫入「%s」，下次重新開機後會"
+"消失。\n"
 "\n"
 "從現在起直到下次重新開機前，任何寫入系統目錄的變更都「不會」被留存。"
 
@@ -319,7 +334,8 @@ msgid ""
 "Please remove it with synaptic or 'apt-get remove debsig-verify' first and "
 "run the upgrade again."
 msgstr ""
-"此已安裝的套件令升級無法繼續，請使用 synaptic 或命令 'apt-get remove debsig-verify' 移除它後再次進行升級。"
+"此已安裝的套件令升級無法繼續，請使用 synaptic 或命令 'apt-get remove debsig-"
+"verify' 移除它後再次進行升級。"
 
 #: ../DistUpgrade/DistUpgradeController.py:440
 #, python-format
@@ -351,9 +367,11 @@ msgid ""
 "latest updates soon after upgrading.\n"
 "If you answer 'no' here, the network is not used at all."
 msgstr ""
-"升級系統可自動由網際網路下載最新更新並於升級時安裝。如您有網路連線，建議使用這方法。\n"
+"升級系統可自動由網際網路下載最新更新並於升級時安裝。如您有網路連線，建議使用"
+"這方法。\n"
 "\n"
-"升級時間會較長，但完成後，您的系統就會完全在最新狀態。您可以選擇現在不進行這工作，但是在升級後，您應該要盡快安裝最新的更新。\n"
+"升級時間會較長，但完成後，您的系統就會完全在最新狀態。您可以選擇現在不進行這"
+"工作，但是在升級後，您應該要盡快安裝最新的更新。\n"
 "如果您在此回答「否」，將完全不會使用網路。"
 
 #: ../DistUpgrade/DistUpgradeController.py:673
@@ -376,9 +394,11 @@ msgid ""
 "here it will update all '%s' to '%s' entries.\n"
 "If you select 'No' the upgrade will cancel."
 msgstr ""
-"掃描閣下套件庫時沒有發現升級映射項目資訊。如果您運行內部映射或者映射資訊已經過期，就會發生這種情況。\n"
+"掃描閣下套件庫時沒有發現升級映射項目資訊。如果您運行內部映射或者映射資訊已經"
+"過期，就會發生這種情況。\n"
 "\n"
-"是否無論如何都希望覆寫您的「sources.list」檔案？如選「是」則將會將所有「%s」更新成「%s」項目。\n"
+"是否無論如何都希望覆寫您的「sources.list」檔案？如選「是」則將會將所有「%s」"
+"更新成「%s」項目。\n"
 "如選「否」則會取消更新。"
 
 #. hm, still nothing useful ...
@@ -417,7 +437,9 @@ msgid ""
 "Some third party entries in your sources.list were disabled. You can re-"
 "enable them after the upgrade with the 'software-properties' tool or your "
 "package manager."
-msgstr "sources.list 中的某些第三方項目已停用。以「軟體來源」工具或套件管理員升級後可將之重新啟用。"
+msgstr ""
+"sources.list 中的某些第三方項目已停用。以「軟體來源」工具或套件管理員升級後可"
+"將之重新啟用。"
 
 #: ../DistUpgrade/DistUpgradeController.py:806
 msgid "Package in inconsistent state"
@@ -434,7 +456,9 @@ msgid_plural ""
 "The packages '%s' are in an inconsistent state and need to be reinstalled, "
 "but no archive can be found for them. Please reinstall the packages manually "
 "or remove them from the system."
-msgstr[0] "這個套件 '%s' 狀態不一致而需要重新安裝，但找不到它的套件。請手動地重新安裝套件或將它由系統中移除。"
+msgstr[0] ""
+"這個套件 '%s' 狀態不一致而需要重新安裝，但找不到它的套件。請手動地重新安裝套"
+"件或將它由系統中移除。"
 
 #: ../DistUpgrade/DistUpgradeController.py:857
 msgid "Error during update"
@@ -448,7 +472,7 @@ msgstr "更新時發生錯誤。這可能是某些網路問題，試檢查網路
 
 #. print "on_button_install_clicked"
 #: ../DistUpgrade/DistUpgradeController.py:867
-#: ../UpdateManager/UpdateManager.py:758
+#: ../UpdateManager/UpdateManager.py:749
 msgid "Not enough free disk space"
 msgstr "磁碟空間不足"
 
@@ -460,13 +484,14 @@ msgid ""
 "your trash and remove temporary packages of former installations using 'sudo "
 "apt-get clean'."
 msgstr ""
-"已放棄升級。升級程序總共需要  %s 可用空間於磁碟「%s」。請釋放至少額外 %s 的磁碟空間於磁碟「%s」。清理您的回收筒，並使用 'sudo apt-"
-"get clean' 來移除之前安裝時的暫時性套件。"
+"已放棄升級。升級程序總共需要  %s 可用空間於磁碟「%s」。請釋放至少額外 %s 的磁"
+"碟空間於磁碟「%s」。清理您的回收筒，並使用 'sudo apt-get clean' 來移除之前安"
+"裝時的暫時性套件。"
 
 #. calc the dist-upgrade and see if the removals are ok/expected
 #. do the dist-upgrade
 #: ../DistUpgrade/DistUpgradeController.py:897
-#: ../DistUpgrade/DistUpgradeController.py:1664
+#: ../DistUpgrade/DistUpgradeController.py:1640
 msgid "Calculating the changes"
 msgstr "正在計算所有的更動"
 
@@ -486,7 +511,7 @@ msgid ""
 msgstr "現在將取消升級，並且還原至原始系統。您可以在之後繼續升級。"
 
 #: ../DistUpgrade/DistUpgradeController.py:1002
-#: ../DistUpgrade/DistUpgradeController.py:1136
+#: ../DistUpgrade/DistUpgradeController.py:1128
 msgid "Could not download the upgrades"
 msgstr "無法下載升級套件"
 
@@ -494,44 +519,48 @@ msgstr "無法下載升級套件"
 msgid ""
 "The upgrade has aborted. Please check your Internet connection or "
 "installation media and try again. All files downloaded so far have been kept."
-msgstr "升級已中止。請檢查您的網際網路連線，或安裝媒體並重試。所有目前已下載的檔案都會被保留。"
+msgstr ""
+"升級已中止。請檢查您的網際網路連線，或安裝媒體並重試。所有目前已下載的檔案都"
+"會被保留。"
 
 #. FIXME: strings are not good, but we are in string freeze
 #. currently
-#: ../DistUpgrade/DistUpgradeController.py:1087
-#: ../DistUpgrade/DistUpgradeController.py:1124
-#: ../DistUpgrade/DistUpgradeController.py:1229
+#: ../DistUpgrade/DistUpgradeController.py:1079
+#: ../DistUpgrade/DistUpgradeController.py:1116
+#: ../DistUpgrade/DistUpgradeController.py:1221
 msgid "Error during commit"
 msgstr "提交時發生錯誤"
 
 #. generate a new cache
-#: ../DistUpgrade/DistUpgradeController.py:1089
-#: ../DistUpgrade/DistUpgradeController.py:1126
-#: ../DistUpgrade/DistUpgradeController.py:1268
+#: ../DistUpgrade/DistUpgradeController.py:1081
+#: ../DistUpgrade/DistUpgradeController.py:1118
+#: ../DistUpgrade/DistUpgradeController.py:1260
 msgid "Restoring original system state"
 msgstr "回復原有系統狀態"
 
-#: ../DistUpgrade/DistUpgradeController.py:1090
-#: ../DistUpgrade/DistUpgradeController.py:1105
-#: ../DistUpgrade/DistUpgradeController.py:1127
+#: ../DistUpgrade/DistUpgradeController.py:1082
+#: ../DistUpgrade/DistUpgradeController.py:1097
+#: ../DistUpgrade/DistUpgradeController.py:1119
 msgid "Could not install the upgrades"
 msgstr "無法安裝升級"
 
 #. invoke the frontend now and show a error message
-#: ../DistUpgrade/DistUpgradeController.py:1095
+#: ../DistUpgrade/DistUpgradeController.py:1087
 msgid ""
 "The upgrade has aborted. Your system could be in an unusable state. A "
 "recovery will run now (dpkg --configure -a)."
-msgstr "已放棄升級。您的系統可能處於不穩定狀態。現在將執行復原程序 (dpkg --configure -a)。"
+msgstr ""
+"已放棄升級。您的系統可能處於不穩定狀態。現在將執行復原程序 (dpkg --configure "
+"-a)。"
 
-#: ../DistUpgrade/DistUpgradeController.py:1100
+#: ../DistUpgrade/DistUpgradeController.py:1092
 #, python-format
 msgid ""
 "\n"
 "\n"
-"Please report this bug in a browser at "
-"http://bugs.launchpad.net/ubuntu/+source/update-manager/+filebug and attach "
-"the files in /var/log/dist-upgrade/ to the bug report.\n"
+"Please report this bug in a browser at http://bugs.launchpad.net/ubuntu/"
+"+source/update-manager/+filebug and attach the files in /var/log/dist-"
+"upgrade/ to the bug report.\n"
 "%s"
 msgstr ""
 "\n"
@@ -540,26 +569,26 @@ msgstr ""
 "manager/+filebug ，並請附加 /var/log/dist-upgrade/ 內的檔案至臭蟲回報中。\n"
 "%s"
 
-#: ../DistUpgrade/DistUpgradeController.py:1137
+#: ../DistUpgrade/DistUpgradeController.py:1129
 msgid ""
 "The upgrade has aborted. Please check your Internet connection or "
 "installation media and try again. "
 msgstr "已放棄升級。請檢查您的網際網路連線或安裝媒體，接著再試一次。 "
 
-#: ../DistUpgrade/DistUpgradeController.py:1217
+#: ../DistUpgrade/DistUpgradeController.py:1209
 msgid "Remove obsolete packages?"
 msgstr "移除廢棄的套件？"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
-#: ../DistUpgrade/DistUpgrade.ui.h:8
+#: ../DistUpgrade/DistUpgradeController.py:1210
+#: ../DistUpgrade/DistUpgrade.ui.h:22
 msgid "_Keep"
 msgstr "保留(_K)"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
+#: ../DistUpgrade/DistUpgradeController.py:1210
 msgid "_Remove"
 msgstr "移除(_R)"
 
-#: ../DistUpgrade/DistUpgradeController.py:1230
+#: ../DistUpgrade/DistUpgradeController.py:1222
 msgid ""
 "A problem occurred during the clean-up. Please see the below message for "
 "more information. "
@@ -567,37 +596,37 @@ msgstr "在清理時發生一些問題。詳情請參閱以下訊息。 "
 
 #. FIXME: instead of error out, fetch and install it
 #. here
-#: ../DistUpgrade/DistUpgradeController.py:1306
+#: ../DistUpgrade/DistUpgradeController.py:1298
 msgid "Required depends is not installed"
 msgstr "必需的相依套件未被安裝"
 
-#: ../DistUpgrade/DistUpgradeController.py:1307
+#: ../DistUpgrade/DistUpgradeController.py:1299
 #, python-format
 msgid "The required dependency '%s' is not installed. "
 msgstr "必需的相依套件‘%s’未被安裝。 "
 
 #. sanity check (check for ubuntu-desktop, brokenCache etc)
 #. then open the cache (again)
-#: ../DistUpgrade/DistUpgradeController.py:1568
-#: ../DistUpgrade/DistUpgradeController.py:1633
+#: ../DistUpgrade/DistUpgradeController.py:1544
+#: ../DistUpgrade/DistUpgradeController.py:1609
 msgid "Checking package manager"
 msgstr "正在檢查套件管理員"
 
-#: ../DistUpgrade/DistUpgradeController.py:1573
+#: ../DistUpgrade/DistUpgradeController.py:1549
 msgid "Preparing the upgrade failed"
 msgstr "準備升級失敗"
 
-#: ../DistUpgrade/DistUpgradeController.py:1574
+#: ../DistUpgrade/DistUpgradeController.py:1550
 msgid ""
 "Preparing the system for the upgrade failed so a bug reporting process is "
 "being started."
 msgstr "準備系統以供升級的動作失敗，所以正在啟動臭蟲回報程序。"
 
-#: ../DistUpgrade/DistUpgradeController.py:1588
+#: ../DistUpgrade/DistUpgradeController.py:1564
 msgid "Getting upgrade prerequisites failed"
 msgstr "取得升級先決元件失敗"
 
-#: ../DistUpgrade/DistUpgradeController.py:1589
+#: ../DistUpgrade/DistUpgradeController.py:1565
 msgid ""
 "The system was unable to get the prerequisites for the upgrade. The upgrade "
 "will abort now and restore the original system state.\n"
@@ -608,63 +637,65 @@ msgstr ""
 "\n"
 "此外，臭蟲回報程序正在啟動中。"
 
-#: ../DistUpgrade/DistUpgradeController.py:1617
+#: ../DistUpgrade/DistUpgradeController.py:1593
 msgid "Updating repository information"
 msgstr "正在更新套件庫資訊"
 
-#: ../DistUpgrade/DistUpgradeController.py:1624
+#: ../DistUpgrade/DistUpgradeController.py:1600
 msgid "Failed to add the cdrom"
 msgstr "無法加入光碟"
 
-#: ../DistUpgrade/DistUpgradeController.py:1625
+#: ../DistUpgrade/DistUpgradeController.py:1601
 msgid "Sorry, adding the cdrom was not successful."
 msgstr "很抱歉，沒有成功加入光碟。"
 
-#: ../DistUpgrade/DistUpgradeController.py:1653
+#: ../DistUpgrade/DistUpgradeController.py:1629
 msgid "Invalid package information"
 msgstr "無效的套件資訊"
 
-#: ../DistUpgrade/DistUpgradeController.py:1654
+#: ../DistUpgrade/DistUpgradeController.py:1630
 #, python-format
 msgid ""
 "After your package information was updated the essential package '%s' can "
 "not be found anymore so a bug reporting process is being started."
-msgstr "在您的套件資訊更新之後，我們無法再找到必要的「%s」套件，因此正在啟動臭蟲回報程序。"
+msgstr ""
+"在您的套件資訊更新之後，我們無法再找到必要的「%s」套件，因此正在啟動臭蟲回報"
+"程序。"
 
-#: ../DistUpgrade/DistUpgradeController.py:1670
-#: ../DistUpgrade/DistUpgradeController.py:1723
+#: ../DistUpgrade/DistUpgradeController.py:1646
+#: ../DistUpgrade/DistUpgradeController.py:1699
 msgid "Fetching"
 msgstr "接收中"
 
-#: ../DistUpgrade/DistUpgradeController.py:1676
-#: ../DistUpgrade/DistUpgradeController.py:1727
+#: ../DistUpgrade/DistUpgradeController.py:1652
+#: ../DistUpgrade/DistUpgradeController.py:1703
 msgid "Upgrading"
 msgstr "升級中"
 
 #. don't abort here, because it would restore the sources.list
-#: ../DistUpgrade/DistUpgradeController.py:1681
-#: ../DistUpgrade/DistUpgradeController.py:1729
-#: ../DistUpgrade/DistUpgradeController.py:1736
-#: ../DistUpgrade/DistUpgradeController.py:1747
+#: ../DistUpgrade/DistUpgradeController.py:1657
+#: ../DistUpgrade/DistUpgradeController.py:1705
+#: ../DistUpgrade/DistUpgradeController.py:1712
+#: ../DistUpgrade/DistUpgradeController.py:1723
 msgid "Upgrade complete"
 msgstr "升級完成"
 
-#: ../DistUpgrade/DistUpgradeController.py:1682
-#: ../DistUpgrade/DistUpgradeController.py:1730
-#: ../DistUpgrade/DistUpgradeController.py:1737
+#: ../DistUpgrade/DistUpgradeController.py:1658
+#: ../DistUpgrade/DistUpgradeController.py:1706
+#: ../DistUpgrade/DistUpgradeController.py:1713
 msgid ""
 "The upgrade has completed but there were errors during the upgrade process."
 msgstr "升級已經完成，但在升級過程中有發生錯誤。"
 
-#: ../DistUpgrade/DistUpgradeController.py:1689
+#: ../DistUpgrade/DistUpgradeController.py:1665
 msgid "Searching for obsolete software"
 msgstr "搜尋廢棄的軟體中"
 
-#: ../DistUpgrade/DistUpgradeController.py:1698
+#: ../DistUpgrade/DistUpgradeController.py:1674
 msgid "System upgrade is complete."
 msgstr "系統升級完成。"
 
-#: ../DistUpgrade/DistUpgradeController.py:1748
+#: ../DistUpgrade/DistUpgradeController.py:1724
 msgid "The partial upgrade was completed."
 msgstr "部份升級完成。"
 
@@ -678,33 +709,33 @@ msgid ""
 "software is no longer supported, please switch it off and run the upgrade "
 "again when this is done."
 msgstr ""
-"您的系統於 /proc/mounts 使用 'evms' volume 管理程式。'evms' 軟體已不受支援，請將其關閉再執行升級工作。"
+"您的系統於 /proc/mounts 使用 'evms' volume 管理程式。'evms' 軟體已不受支援，"
+"請將其關閉再執行升級工作。"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
-msgstr "您的繪圖硬體可能無法被 elementary OS 12.04 LTS 完整支援。"
+"Your graphics hardware may not be fully supported in elementary OS 11.04."
+msgstr "您的繪圖硬體可能無法在 elementary OS 11.04 獲得完整的支援。"
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
-"and you may encounter problems after the upgrade. For more information see "
-"https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
+"The support in elementary OS 11.04 for your intel graphics hardware is "
+"limited and you may encounter problems after the upgrade. Do you want to "
 "continue with the upgrade?"
 msgstr ""
-"elementary OS 12.04 LTS 對您的 Intel 繪圖硬體的支援有限，升級之後您可能會碰到一些問題。更多資訊可以查看 "
-"\"https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx\"。您是否要繼續升級？"
+"您的 Intel 繪圖硬體在 elementary OS 11.04 內的支援有限，且可能會在升級之後碰"
+"到一些問題。您要繼續進行升級嗎？"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:520
-#: ../DistUpgrade/DistUpgradeQuirks.py:548
-#: ../DistUpgrade/DistUpgradeQuirks.py:575
+#: ../DistUpgrade/DistUpgradeQuirks.py:518
+#: ../DistUpgrade/DistUpgradeQuirks.py:546
+#: ../DistUpgrade/DistUpgradeQuirks.py:573
 msgid ""
 "Upgrading may reduce desktop effects, and performance in games and other "
 "graphically intensive programs."
 msgstr "升級可能減低桌面特效和遊戲及其他著重圖形程式的表現。"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:524
-#: ../DistUpgrade/DistUpgradeQuirks.py:552
+#: ../DistUpgrade/DistUpgradeQuirks.py:522
+#: ../DistUpgrade/DistUpgradeQuirks.py:550
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
@@ -712,65 +743,68 @@ msgid ""
 "\n"
 "Do you want to continue?"
 msgstr ""
-"這個電腦目前正使用 NVIDIA 的「nvidia」圖形驅動程式。這個驅動程式沒有任何版本可在 elementary OS 10.04 LTS 中正常驅動您的硬體。\n"
+"這個電腦目前正使用 NVIDIA 的「nvidia」圖形驅動程式。這個驅動程式沒有任何版本"
+"可在 elementary OS 10.04 LTS 中正常驅動您的硬體。\n"
 "\n"
 "是否要繼續？"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:579
+#: ../DistUpgrade/DistUpgradeQuirks.py:577
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in elementary OS 10.04 "
-"LTS.\n"
+"of this driver is available that works with your hardware in elementary OS "
+"10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
-"這個電腦目前正使用 AMD 的「fglrx」圖形驅動程式。這個驅動程式沒有任何版本可在 elementary OS 10.04 LTS 中正常驅動您的硬體。\n"
+"這個電腦目前正使用 AMD 的「fglrx」圖形驅動程式。這個驅動程式沒有任何版本可在 "
+"elementary OS 10.04 LTS 中正常驅動您的硬體。\n"
 "\n"
 "是否要繼續？"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:609
+#: ../DistUpgrade/DistUpgradeQuirks.py:607
 msgid "No i686 CPU"
 msgstr "無 i686 CPU"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:610
+#: ../DistUpgrade/DistUpgradeQuirks.py:608
 msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
 "elementary OS release with this hardware."
 msgstr ""
-"您的系統使用 i586 CPU，或是不支援 'cmov' 擴充功能的 CPU。所有套件都以 i686 架構為最佳化目標來建置，所以 CPU 至少需要有 "
-"i686 等級。對於您目前的硬體來說，您無法將系統升級到最新的 elementary OS 發行。"
+"您的系統使用 i586 CPU，或是不支援 'cmov' 擴充功能的 CPU。所有套件都以 i686 架"
+"構為最佳化目標來建置，所以 CPU 至少需要有 i686 等級。對於您目前的硬體來說，您"
+"無法將系統升級到最新的 elementary OS 發行。"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:646
+#: ../DistUpgrade/DistUpgradeQuirks.py:644
 msgid "No ARMv6 CPU"
 msgstr "無 ARMv6 處理器"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:647
+#: ../DistUpgrade/DistUpgradeQuirks.py:645
 msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
 "elementary OS release with this hardware."
 msgstr ""
-"您系統使用的 ARM 處理器舊於 ARMv6 架構。所有 karmic 套件都是以 ARMv6 "
-"為最低架構優化建造的。所以伴隨此硬體無法升級您的系統到新的 elementary OS 版本。"
+"您系統使用的 ARM 處理器舊於 ARMv6 架構。所有 karmic 套件都是以 ARMv6 為最低架"
+"構優化建造的。所以伴隨此硬體無法升級您的系統到新的 elementary OS 版本。"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:667
+#: ../DistUpgrade/DistUpgradeQuirks.py:665
 msgid "No init available"
 msgstr "無法初始化"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:668
+#: ../DistUpgrade/DistUpgradeQuirks.py:666
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
-"environment, requiring an update to your virtual machine configuration "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type "
+"of environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
-"您的系統似乎處於虛擬化環境且無初始化程序，例如 Linux-VServer。elementary OS 10.04 LTS "
-"無法於此環境執行，需要先更新您的虛擬機器設定。\n"
+"您的系統似乎處於虛擬化環境且無初始化程序，例如 Linux-VServer。elementary OS "
+"10.04 LTS 無法於此環境執行，需要先更新您的虛擬機器設定。\n"
 "\n"
 "您確定想要繼續？"
 
@@ -876,7 +910,8 @@ msgstr "無法安裝‘%s’"
 msgid ""
 "The upgrade will continue but the '%s' package may not be in a working "
 "state. Please consider submitting a bug report about it."
-msgstr "此次更新將繼續但是 '%s' 套件可能無法運作。請考慮提交關於該套件的臭蟲報告。"
+msgstr ""
+"此次更新將繼續但是 '%s' 套件可能無法運作。請考慮提交關於該套件的臭蟲報告。"
 
 #. self.expander.set_expanded(True)
 #: ../DistUpgrade/DistUpgradeViewGtk.py:231
@@ -913,13 +948,13 @@ msgstr "發生嚴重錯誤"
 #: ../DistUpgrade/DistUpgradeViewGtk.py:464
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:470
 msgid ""
-"Please report this as a bug (if you haven't already) and include the files "
-"/var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
+"Please report this as a bug (if you haven't already) and include the files /"
+"var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
 "report. The upgrade has aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
-"請回報此錯誤 (若您尚未回報) 並將檔案 /var/log/dist-upgrade/main.log 與 /var/log/dist-"
-"upgrade/apt.log 附在您的報告中。升級程序已取消。\n"
+"請回報此錯誤 (若您尚未回報) 並將檔案 /var/log/dist-upgrade/main.log 與 /var/"
+"log/dist-upgrade/apt.log 附在您的報告中。升級程序已取消。\n"
 "您原先的 sources.list 儲存於 /etc/apt/sources.list.distUpgrade。"
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:481
@@ -1017,7 +1052,7 @@ msgstr "資訊"
 
 #: ../DistUpgrade/DistUpgradeViewKDE.py:741
 #: ../DistUpgrade/DistUpgradeViewKDE.py:786
-#: ../DistUpgrade/DistUpgradeViewKDE.py:789 ../DistUpgrade/DistUpgrade.ui.h:7
+#: ../DistUpgrade/DistUpgradeViewKDE.py:789 ../DistUpgrade/DistUpgrade.ui.h:11
 msgid "Details"
 msgstr "詳情"
 
@@ -1056,8 +1091,8 @@ msgstr "需要重新開機"
 msgid "<b><big>Restart the system to complete the upgrade</big></b>"
 msgstr "<b><big>重新啟動系統以完成更新</big></b>"
 
-#: ../DistUpgrade/DistUpgradeViewKDE.py:802 ../DistUpgrade/DistUpgrade.ui.h:14
-#: ../data/gtkbuilder/UpdateManager.ui.h:26
+#: ../DistUpgrade/DistUpgradeViewKDE.py:802 ../DistUpgrade/DistUpgrade.ui.h:25
+#: ../data/gtkbuilder/UpdateManager.ui.h:32
 msgid "_Restart Now"
 msgstr "現在重新啟動(_R)"
 
@@ -1105,10 +1140,10 @@ msgstr[0] "%li 秒"
 #. information here if you shuffle %(str_days)s %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:80
 #, python-format
@@ -1119,10 +1154,10 @@ msgstr "%(str_days)s %(str_hours)s"
 #. information here if you shuffle %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:98
 #, python-format
@@ -1144,7 +1179,7 @@ msgstr "這次下載所需時間在 1M DSL 連線大約要 %s，用 56k 數據�
 msgid "This download will take about %s with your connection. "
 msgstr "依照您的連線速率，此下載將要約 %s 的時間。 "
 
-#: ../DistUpgrade/DistUpgradeView.py:255 ../DistUpgrade/DistUpgrade.ui.h:21
+#: ../DistUpgrade/DistUpgradeView.py:255 ../DistUpgrade/DistUpgrade.ui.h:16
 msgid "Preparing to upgrade"
 msgstr "準備升級中"
 
@@ -1152,15 +1187,15 @@ msgstr "準備升級中"
 msgid "Getting new software channels"
 msgstr "正取得新軟體頻道"
 
-#: ../DistUpgrade/DistUpgradeView.py:257 ../DistUpgrade/DistUpgrade.ui.h:23
+#: ../DistUpgrade/DistUpgradeView.py:257 ../DistUpgrade/DistUpgrade.ui.h:14
 msgid "Getting new packages"
 msgstr "取得新套件"
 
-#: ../DistUpgrade/DistUpgradeView.py:258 ../DistUpgrade/DistUpgrade.ui.h:26
+#: ../DistUpgrade/DistUpgradeView.py:258 ../DistUpgrade/DistUpgrade.ui.h:15
 msgid "Installing the upgrades"
 msgstr "安裝升級中"
 
-#: ../DistUpgrade/DistUpgradeView.py:259 ../DistUpgrade/DistUpgrade.ui.h:25
+#: ../DistUpgrade/DistUpgradeView.py:259 ../DistUpgrade/DistUpgrade.ui.h:10
 msgid "Cleaning up"
 msgstr "清理中"
 
@@ -1172,7 +1207,8 @@ msgid ""
 msgid_plural ""
 "%(amount)d installed packages are no longer supported by Canonical. You can "
 "still get support from the community."
-msgstr[0] "%(amount)d 個已安裝套件不再受 Canonical 支援。您仍可以取得來自社群的支援。"
+msgstr[0] ""
+"%(amount)d 個已安裝套件不再受 Canonical 支援。您仍可以取得來自社群的支援。"
 
 #. FIXME: make those two separate lines to make it clear
 #. that the "%" applies to the result of ngettext
@@ -1222,7 +1258,7 @@ msgid "Removing the packages can take several hours. "
 msgstr "移除套件可能會花上幾個鐘頭。 "
 
 #. FIXME: this should go into DistUpgradeController
-#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:683
+#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:674
 msgid "The software on this computer is up to date."
 msgstr "這臺電腦上的軟體已處最新狀態。"
 
@@ -1265,7 +1301,8 @@ msgstr "無法執行升級工具"
 msgid ""
 "This is most likely a bug in the upgrade tool. Please report it as a bug "
 "using the command 'ubuntu-bug update-manager'."
-msgstr "這可能是升級工具的錯誤，請使用指令「ubuntu-bug update-manager」回報錯誤。"
+msgstr ""
+"這可能是升級工具的錯誤，請使用指令「ubuntu-bug update-manager」回報錯誤。"
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:206
 #: ../UpdateManager/Core/DistUpgradeFetcherCore.py:206
@@ -1335,7 +1372,9 @@ msgstr "不能進行升級"
 msgid ""
 "This usually is caused by a system where /tmp is mounted noexec. Please "
 "remount without noexec and run the upgrade again."
-msgstr "這通常是由使用 noexec 掛載 /tmp 的系統引致的。請不要使用 noexec 重新掛載，並再次進行升級。"
+msgstr ""
+"這通常是由使用 noexec 掛載 /tmp 的系統引致的。請不要使用 noexec 重新掛載，並"
+"再次進行升級。"
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:286
 #: ../UpdateManager/Core/DistUpgradeFetcherCore.py:286
@@ -1345,13 +1384,13 @@ msgstr "錯誤訊息 '%s'。"
 
 #: ../DistUpgrade/DistUpgradeViewText.py:91
 msgid ""
-"Please report this as a bug and include the files /var/log/dist-"
-"upgrade/main.log and /var/log/dist-upgrade/apt.log in your report. The "
-"upgrade has aborted.\n"
+"Please report this as a bug and include the files /var/log/dist-upgrade/main."
+"log and /var/log/dist-upgrade/apt.log in your report. The upgrade has "
+"aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
-"請回報此錯誤並將檔案 /var/log/dist-upgrade/main.log 與 /var/log/dist-upgrade/apt.log "
-"附在您的報告中。升級程序已取消。\n"
+"請回報此錯誤並將檔案 /var/log/dist-upgrade/main.log 與 /var/log/dist-upgrade/"
+"apt.log 附在您的報告中。升級程序已取消。\n"
 "您原先的 sources.list 儲存於 /etc/apt/sources.list.distUpgrade。"
 
 #: ../DistUpgrade/DistUpgradeViewText.py:115
@@ -1429,14 +1468,10 @@ msgstr ""
 "如果您選擇「y」系統將會重新開機。"
 
 #: ../DistUpgrade/DistUpgrade.ui.h:1
-msgid "_Cancel Upgrade"
-msgstr "取消升級(_C)"
+msgid "    "
+msgstr "    "
 
 #: ../DistUpgrade/DistUpgrade.ui.h:2
-msgid "_Resume Upgrade"
-msgstr "繼續升級(_R)"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:3
 msgid ""
 "<b><big>Cancel the running upgrade?</big></b>\n"
 "\n"
@@ -1447,31 +1482,7 @@ msgstr ""
 "\n"
 "如果取消升級可能會導致系統不穩定。強烈建議您繼續升級。"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:6
-msgid "_Start Upgrade"
-msgstr "開始升級(_S)"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:9
-msgid "_Replace"
-msgstr "取代(_R)"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:10
-msgid "Difference between the files"
-msgstr "檔案間的差別"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:11
-msgid "_Report Bug"
-msgstr "回報錯誤(_R)"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:12
-msgid "_Continue"
-msgstr "繼續(_C)"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:13
-msgid "<b><big>Start the upgrade?</big></b>"
-msgstr "<b><big>開始升級嗎？</big></b>"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:15
+#: ../DistUpgrade/DistUpgrade.ui.h:5
 msgid ""
 "<b><big>Restart the system to complete the upgrade</big></b>\n"
 "\n"
@@ -1481,29 +1492,57 @@ msgstr ""
 "\n"
 "請在繼續前先儲存您的作業。"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:18
-msgid "Distribution Upgrade"
-msgstr "發行版升級"
+#: ../DistUpgrade/DistUpgrade.ui.h:8
+msgid "<b><big>Start the upgrade?</big></b>"
+msgstr "<b><big>開始升級嗎？</big></b>"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:19
+#: ../DistUpgrade/DistUpgrade.ui.h:9
 msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr "<b><big>升級 elementary OS 至 12.04 版</big></b>"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:20
-msgid "    "
-msgstr "    "
+#: ../DistUpgrade/DistUpgrade.ui.h:12
+msgid "Difference between the files"
+msgstr "檔案間的差別"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:22
-msgid "Setting new software channels"
-msgstr "設定新軟體頻道"
+#: ../DistUpgrade/DistUpgrade.ui.h:13
+msgid "Distribution Upgrade"
+msgstr "發行版升級"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:24
+#: ../DistUpgrade/DistUpgrade.ui.h:17
 msgid "Restarting the computer"
 msgstr "重新啟動系統"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:27
+#: ../DistUpgrade/DistUpgrade.ui.h:18
+msgid "Setting new software channels"
+msgstr "設定新軟體頻道"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:19
 msgid "Terminal"
 msgstr "終端"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:20
+msgid "_Cancel Upgrade"
+msgstr "取消升級(_C)"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:21
+msgid "_Continue"
+msgstr "繼續(_C)"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:23
+msgid "_Replace"
+msgstr "取代(_R)"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:24
+msgid "_Report Bug"
+msgstr "回報錯誤(_R)"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:26
+msgid "_Resume Upgrade"
+msgstr "繼續升級(_R)"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:27
+msgid "_Start Upgrade"
+msgstr "開始升級(_S)"
 
 #: ../UpdateManager/backend/InstallBackendSynaptic.py:60
 msgid "Please wait, this can take some time."
@@ -1539,8 +1578,8 @@ msgid "Upgrade"
 msgstr "升級"
 
 #: ../UpdateManager/DistUpgradeFetcherKDE.py:89
-#: ../data/gtkbuilder/UpdateManager.ui.h:20
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:2
+#: ../data/gtkbuilder/UpdateManager.ui.h:13
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:4
 msgid "Release Notes"
 msgstr "發行公告"
 
@@ -1578,90 +1617,81 @@ msgstr "共 %(total)li 個檔案，正下載第 %(current)li 個 (速度: %(spee
 msgid "Downloading file %(current)li of %(total)li"
 msgstr "共 %(total)li 個檔案，正下載第 %(current)li 個"
 
-#: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
+#: ../UpdateManager/UpdateManager.py:103 ../do-release-upgrade:95
 msgid "Your elementary OS release is not supported anymore."
 msgstr "您的 elementary OS 發行版本已經不再支援。"
 
-#: ../UpdateManager/UpdateManager.py:105
+#: ../UpdateManager/UpdateManager.py:104
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
 "upgrade to a later version of elementary OS."
 msgstr "您將無法再取得安全性修正或重大更新。請升級至較新版本的 elementary OS。"
 
-#: ../UpdateManager/UpdateManager.py:113
+#: ../UpdateManager/UpdateManager.py:112
 msgid "Upgrade information"
 msgstr "升級資訊"
 
-#: ../UpdateManager/UpdateManager.py:229
-#: ../UpdateManagerText/UpdateManagerText.py:32
-msgid "Install"
-msgstr "安裝"
-
-#: ../UpdateManager/UpdateManager.py:231
-msgid "Name"
-msgstr "名稱"
-
 #. upload_archive = version_match.group(2).strip()
-#: ../UpdateManager/UpdateManager.py:391
+#: ../UpdateManager/UpdateManager.py:387
 #, python-format
 msgid "Version %s: \n"
 msgstr "版本 %s： \n"
 
-#: ../UpdateManager/UpdateManager.py:453
+#: ../UpdateManager/UpdateManager.py:444
 msgid ""
 "No network connection detected, you can not download changelog information."
 msgstr "未偵測到網路連線，您無法下載更動紀錄資訊。"
 
-#: ../UpdateManager/UpdateManager.py:461
+#: ../UpdateManager/UpdateManager.py:452
 msgid "Downloading list of changes..."
 msgstr "正下載更動清單..."
 
-#: ../UpdateManager/UpdateManager.py:505
+#: ../UpdateManager/UpdateManager.py:496
 msgid "_Deselect All"
 msgstr "全部不選(_D)"
 
-#: ../UpdateManager/UpdateManager.py:511
+#: ../UpdateManager/UpdateManager.py:502
 msgid "Select _All"
 msgstr "全部選取(_A)"
 
-#: ../UpdateManager/UpdateManager.py:571
+#: ../UpdateManager/UpdateManager.py:562
 #, python-format
 msgid "%(count)s update has been selected."
 msgid_plural "%(count)s updates have been selected."
 msgstr[0] "已選取 %(count)s 項更新。"
 
-#: ../UpdateManager/UpdateManager.py:575
+#: ../UpdateManager/UpdateManager.py:566
 #, python-format
 msgid "%s will be downloaded."
 msgstr "將下載 %s。"
 
-#: ../UpdateManager/UpdateManager.py:587
+#: ../UpdateManager/UpdateManager.py:578
 msgid "The update has already been downloaded, but not installed."
 msgid_plural "The updates have already been downloaded, but not installed."
 msgstr[0] "更新已經下載，但尚未安裝。"
 
-#: ../UpdateManager/UpdateManager.py:592
+#: ../UpdateManager/UpdateManager.py:583
 msgid "There are no updates to install."
 msgstr "沒有要安裝的更新。"
 
 #. TRANSLATORS: this allows to switch the order of the count of
 #. updates and the download size string (if needed)
-#: ../UpdateManager/UpdateManager.py:598
+#: ../UpdateManager/UpdateManager.py:589
 #, python-format
 msgid "%(count_str)s %(download_str)s"
 msgstr "%(count_str)s %(download_str)s"
 
-#: ../UpdateManager/UpdateManager.py:605
+#: ../UpdateManager/UpdateManager.py:596
 msgid "Unknown download size."
 msgstr "未知下載大小。"
 
-#: ../UpdateManager/UpdateManager.py:631
+#: ../UpdateManager/UpdateManager.py:622
 msgid ""
 "It is unknown when the package information was updated last. Please click "
 "the 'Check' button to update the information."
 msgstr "未知套件資訊的上次更新時間。請點擊「檢查」按鈕來更新資訊。"
 
-#: ../UpdateManager/UpdateManager.py:637
+#: ../UpdateManager/UpdateManager.py:628
 #, python-format
 msgid ""
 "The package information was last updated %(days_ago)s days ago.\n"
@@ -1670,14 +1700,13 @@ msgstr ""
 "%(days_ago)s 天前更新過套件資訊。\n"
 "請按下方「檢查」鈕看看有否新資訊。"
 
-#: ../UpdateManager/UpdateManager.py:642
+#: ../UpdateManager/UpdateManager.py:633
 #, python-format
 msgid "The package information was last updated %(days_ago)s day ago."
-msgid_plural ""
-"The package information was last updated %(days_ago)s days ago."
+msgid_plural "The package information was last updated %(days_ago)s days ago."
 msgstr[0] "%(days_ago)s 天前更新過套件資訊。"
 
-#: ../UpdateManager/UpdateManager.py:646
+#: ../UpdateManager/UpdateManager.py:637
 #, python-format
 msgid "The package information was last updated %(hours_ago)s hour ago."
 msgid_plural ""
@@ -1685,74 +1714,74 @@ msgid_plural ""
 msgstr[0] "%(hours_ago)s 小時前更新過套件資訊。"
 
 #. TRANSLATORS: only in plural form, as %s minutes ago is one of 15, 30, 45 minutes ago
-#: ../UpdateManager/UpdateManager.py:651 ../UpdateManager/UpdateManager.py:653
-#: ../UpdateManager/UpdateManager.py:655
+#: ../UpdateManager/UpdateManager.py:642 ../UpdateManager/UpdateManager.py:644
+#: ../UpdateManager/UpdateManager.py:646
 #, python-format
 msgid "The package information was last updated about %s minutes ago."
 msgstr "套件資訊約 %s 分鐘前更新。"
 
-#: ../UpdateManager/UpdateManager.py:657
+#: ../UpdateManager/UpdateManager.py:648
 msgid "The package information was just updated."
 msgstr "套件資訊剛更新。"
 
-#: ../UpdateManager/UpdateManager.py:677
-#: ../data/gtkbuilder/UpdateManager.ui.h:2
+#: ../UpdateManager/UpdateManager.py:668
+#: ../data/gtkbuilder/UpdateManager.ui.h:22
 msgid ""
 "Software updates correct errors, eliminate security vulnerabilities and "
 "provide new features."
 msgstr "軟體更新會修正錯誤、消除安全隱患並提供新功能。"
 
-#: ../UpdateManager/UpdateManager.py:696
+#: ../UpdateManager/UpdateManager.py:687
 msgid "Software updates may be available for your computer."
 msgstr "可能有軟體更新提供予閣下之電腦。"
 
-#: ../UpdateManager/UpdateManager.py:704
+#: ../UpdateManager/UpdateManager.py:695
 msgid "Welcome to elementary OS"
 msgstr "歡迎使用 elementary OS"
 
-#: ../UpdateManager/UpdateManager.py:705
+#: ../UpdateManager/UpdateManager.py:696
 msgid ""
-"These software updates have been issued since this version of elementary OS was "
-"released."
+"These software updates have been issued since this version of elementary OS "
+"was released."
 msgstr "自從這個版本的 elementary OS 發行後，已經釋出這些軟體更新"
 
-#: ../UpdateManager/UpdateManager.py:708
+#: ../UpdateManager/UpdateManager.py:699
 msgid "Software updates are available for this computer."
 msgstr "有此電腦可用的軟體更新。"
 
-#: ../UpdateManager/UpdateManager.py:759
+#: ../UpdateManager/UpdateManager.py:750
 #, python-format
 msgid ""
 "The upgrade needs a total of %s free space on disk '%s'. Please free at "
 "least an additional %s of disk space on '%s'. Empty your trash and remove "
 "temporary packages of former installations using 'sudo apt-get clean'."
 msgstr ""
-"升級工作需要總共 %s 可用空間於硬碟 ‘%s’。請額外空出最少 %s 的空間於 ‘%s’。清理清理您的回收筒或使用 ‘sudo apt-get "
-"clean’ 移除上次安裝的暫存套件。"
+"升級工作需要總共 %s 可用空間於硬碟 ‘%s’。請額外空出最少 %s 的空間於 ‘%s’。清"
+"理清理您的回收筒或使用 ‘sudo apt-get clean’ 移除上次安裝的暫存套件。"
 
-#: ../UpdateManager/UpdateManager.py:784
+#: ../UpdateManager/UpdateManager.py:775
 msgid ""
 "The computer needs to restart to finish installing updates. Please save your "
 "work before continuing."
 msgstr "必須重啟電腦以完成安裝更新。繼續前請先儲存工作。"
 
-#: ../UpdateManager/UpdateManager.py:848
+#: ../UpdateManager/UpdateManager.py:839
 msgid "Reading package information"
 msgstr "正在讀取套件資訊"
 
-#: ../UpdateManager/UpdateManager.py:863
+#: ../UpdateManager/UpdateManager.py:854
 msgid "Connecting..."
 msgstr "連線中..."
 
-#: ../UpdateManager/UpdateManager.py:880
+#: ../UpdateManager/UpdateManager.py:871
 msgid "You may not be able to check for updates or download new updates."
 msgstr "您可能無法檢查是否有更新，或是下載新的更新。"
 
-#: ../UpdateManager/UpdateManager.py:1004
+#: ../UpdateManager/UpdateManager.py:995
 msgid "Could not initialize the package information"
 msgstr "無法初始化套件資訊"
 
-#: ../UpdateManager/UpdateManager.py:1005
+#: ../UpdateManager/UpdateManager.py:996
 msgid ""
 "An unresolvable problem occurred while initializing the package "
 "information.\n"
@@ -1764,7 +1793,7 @@ msgstr ""
 "\n"
 "請匯報此為『update-manager』套件的問題並附上以下的錯誤訊息：\n"
 
-#: ../UpdateManager/UpdateManager.py:1036
+#: ../UpdateManager/UpdateManager.py:1025
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade.\n"
 "\n"
@@ -1775,57 +1804,59 @@ msgstr ""
 "\n"
 "請匯報此為『update-manager』套件的問題並附上以下的錯誤訊息："
 
-#: ../UpdateManager/UpdateManager.py:1061
+#: ../UpdateManager/UpdateManager.py:1050
 msgid " (New install)"
 msgstr " (新安裝)"
 
 #. TRANSLATORS: the b stands for Bytes
-#: ../UpdateManager/UpdateManager.py:1068
+#: ../UpdateManager/UpdateManager.py:1057
 #, python-format
 msgid "(Size: %s)"
 msgstr "(大小：%s)"
 
-#: ../UpdateManager/UpdateManager.py:1070
+#: ../UpdateManager/UpdateManager.py:1059
 #, python-format
 msgid "From version %(old_version)s to %(new_version)s"
 msgstr "由版本 %(old_version)s 更新至 %(new_version)s"
 
-#: ../UpdateManager/UpdateManager.py:1074
+#: ../UpdateManager/UpdateManager.py:1063
 #, python-format
 msgid "Version %s"
 msgstr "版本 %s"
 
-#: ../UpdateManager/UpdateManager.py:1105 ../do-release-upgrade:107
+#: ../UpdateManager/UpdateManager.py:1094 ../do-release-upgrade:107
 msgid "Release upgrade not possible right now"
 msgstr "目前不能升級發行版"
 
-#: ../UpdateManager/UpdateManager.py:1106 ../do-release-upgrade:108
+#: ../UpdateManager/UpdateManager.py:1095 ../do-release-upgrade:108
 #, c-format, python-format
 msgid ""
 "The release upgrade can not be performed currently, please try again later. "
 "The server reported: '%s'"
 msgstr "發行版升級升級目前無法執行，請稍後重試。該伺服器回報：「%s」。"
 
-#: ../UpdateManager/UpdateManager.py:1108 ../check-new-release-gtk:115
+#: ../UpdateManager/UpdateManager.py:1097 ../check-new-release-gtk:115
 msgid "Downloading the release upgrade tool"
 msgstr "正下載發行版更新工具"
 
-#: ../UpdateManager/UpdateManager.py:1115
+#: ../UpdateManager/UpdateManager.py:1104
 #, python-format
 msgid "<b>New elementary OS release '%s' is available</b>"
 msgstr "<b>有新 elementary OS 發行版 '%s' 可供升級</b>"
 
 #. we assert a clean cache
-#: ../UpdateManager/UpdateManager.py:1154
+#: ../UpdateManager/UpdateManager.py:1143
 msgid "Software index is broken"
 msgstr "軟體索引損壞"
 
-#: ../UpdateManager/UpdateManager.py:1155
+#: ../UpdateManager/UpdateManager.py:1144
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
-msgstr "無法安裝或移除軟體。請先用 Synaptic 套件管理員或在終端機執行「sudo apt-get install -f」修正。"
+msgstr ""
+"無法安裝或移除軟體。請先用 Synaptic 套件管理員或在終端機執行「sudo apt-get "
+"install -f」修正。"
 
 #: ../UpdateManager/UnitySupport.py:57
 msgid "Check for Updates"
@@ -1838,6 +1869,10 @@ msgstr "安裝所有可進行的更新"
 #: ../UpdateManagerText/UpdateManagerText.py:31
 msgid "Cancel"
 msgstr "取消"
+
+#: ../UpdateManagerText/UpdateManagerText.py:32
+msgid "Install"
+msgstr "安裝"
 
 #: ../UpdateManagerText/UpdateManagerText.py:34
 msgid "Changelog"
@@ -1879,24 +1914,12 @@ msgstr ""
 msgid "Downloading changelog"
 msgstr "正下載變更記錄"
 
-#: ../UpdateManager/Core/MyCache.py:138
+#: ../UpdateManager/Core/MyCache.py:130
 #, python-format
 msgid "Other updates (%s)"
 msgstr "其他更新 (%s)"
 
-#: ../UpdateManager/Core/MyCache.py:316
-msgid "This update does not come from a source that supports changelogs."
-msgstr "這份更新的來源不支援變更記錄 (changelog)。"
-
-#: ../UpdateManager/Core/MyCache.py:322 ../UpdateManager/Core/MyCache.py:350
-msgid ""
-"Failed to download the list of changes. \n"
-"Please check your Internet connection."
-msgstr ""
-"下載更動清單失敗。\n"
-"請檢查網際網路連線。"
-
-#: ../UpdateManager/Core/MyCache.py:329
+#: ../UpdateManager/Core/MyCache.py:285
 #, python-format
 msgid ""
 "Changes for the versions:\n"
@@ -1909,7 +1932,19 @@ msgstr ""
 "可用的版本：%s\n"
 "\n"
 
-#: ../UpdateManager/Core/MyCache.py:339
+#: ../UpdateManager/Core/MyCache.py:299
+msgid "This update does not come from a source that supports changelogs."
+msgstr "這份更新的來源不支援變更記錄 (changelog)。"
+
+#: ../UpdateManager/Core/MyCache.py:305 ../UpdateManager/Core/MyCache.py:326
+msgid ""
+"Failed to download the list of changes. \n"
+"Please check your Internet connection."
+msgstr ""
+"下載更動清單失敗。\n"
+"請檢查網際網路連線。"
+
+#: ../UpdateManager/Core/MyCache.py:315
 #, python-format
 msgid ""
 "The changelog does not contain any relevant changes.\n"
@@ -1922,7 +1957,7 @@ msgstr ""
 "有變更記錄提供前請至 http://launchpad.net/ubuntu/+source/%s/%s/+changelog，\n"
 "或稍候再試。"
 
-#: ../UpdateManager/Core/MyCache.py:344
+#: ../UpdateManager/Core/MyCache.py:320
 #, python-format
 msgid ""
 "The list of changes is not available yet.\n"
@@ -1969,18 +2004,53 @@ msgid "Other updates"
 msgstr "其他更新"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:1
-msgid "<big><b>Starting Update Manager</b></big>"
-msgstr "<big><b>啟動更新管理員</b></big>"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:3
-msgid "_Partial Upgrade"
-msgstr "部份升級(_P)"
+msgid ""
+"<b><big>You must check for updates manually</big></b>\n"
+"\n"
+"Your system does not check for updates automatically. You can configure this "
+"behavior in <i>Software Sources</i> on the <i>Updates</i> tab."
+msgstr ""
+"<b><big>您必須手動檢查更新</big></b>\n"
+"\n"
+"您的系統不會自動檢查更新。您可以 <i>更新</i> 分頁之 <i>軟體來源</i> 設定。"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:4
 msgid "<big><b>Not all updates can be installed</b></big>"
 msgstr "<big><b>並非所有更新都可安裝</b></big>"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:5
+msgid "<big><b>Running on battery</b></big>"
+msgstr "<big><b>使用電池運行</b></big>"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:6
+msgid "<big><b>Starting Update Manager</b></big>"
+msgstr "<big><b>啟動更新管理員</b></big>"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:7
+msgid "Changes"
+msgstr "變更"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:8
+msgid "Chec_k"
+msgstr "檢查(_K)"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:9
+msgid "Co_ntinue"
+msgstr "繼續(_N)"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:10
+msgid "Description"
+msgstr "說明"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:11
+msgid "Description of update"
+msgstr "更新說明"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:12
+msgid "It’s safer to connect the computer to AC power before updating."
+msgstr "在更新前先將電腦接上 AC 電源比較安全。"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:14
 msgid ""
 "Run a partial upgrade, to install as many updates as possible. \n"
 "\n"
@@ -1997,117 +2067,79 @@ msgstr ""
 " * 安裝了非由 elementary OS 官方提供的軟體套件\n"
 " * elementary OS 非正式發佈版本的正常更動"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:12
-msgid "Chec_k"
-msgstr "檢查(_K)"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:13
-msgid ""
-"<b><big>You must check for updates manually</big></b>\n"
-"\n"
-"Your system does not check for updates automatically. You can configure this "
-"behavior in <i>Software Sources</i> on the <i>Updates</i> tab."
-msgstr ""
-"<b><big>您必須手動檢查更新</big></b>\n"
-"\n"
-"您的系統不會自動檢查更新。您可以 <i>更新</i> 分頁之 <i>軟體來源</i> 設定。"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:16
-msgid "_Hide this information in the future"
-msgstr "以後不要再顯示此訊息(_H)"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:17
-msgid "Co_ntinue"
-msgstr "繼續(_N)"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:18
-msgid "<big><b>Running on battery</b></big>"
-msgstr "<big><b>使用電池運行</b></big>"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:19
-msgid "Your system is running on battery. Are you sure you want to continue?"
-msgstr "您的系統正在使用電池。確定要繼續嗎？"
-
 #: ../data/gtkbuilder/UpdateManager.ui.h:21
-msgid "_Upgrade"
-msgstr "升級(_U)"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:22
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:8
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:5
 msgid "Show progress of individual files"
 msgstr "顯示單一檔案的進度"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:23
-#: ../data/update-manager.desktop.in.h:1
-msgid "Update Manager"
-msgstr "更新管理員"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:24
 msgid "Starting Update Manager"
 msgstr "正在啟動更新管理員"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:25
+#: ../data/gtkbuilder/UpdateManager.ui.h:24
 msgid "U_pgrade"
 msgstr "升級(_P)"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:27
-msgid "updates"
-msgstr "更新"
+#: ../data/gtkbuilder/UpdateManager.ui.h:25
+#: ../data/update-manager.desktop.in.h:3
+msgid "Update Manager"
+msgstr "更新管理員"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:28
+#: ../data/gtkbuilder/UpdateManager.ui.h:26
+msgid "You are connected via a wireless modem."
+msgstr "您正透過無線數據機連線。"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:27
 msgid ""
 "You are connected via roaming and may be charged for the data consumed by "
 "this update."
 msgstr "您已透過漫遊連上網路，可能要對本次更新所下載的資料量付費。"
 
+#: ../data/gtkbuilder/UpdateManager.ui.h:28
+msgid "Your system is running on battery. Are you sure you want to continue?"
+msgstr "您的系統正在使用電池。確定要繼續嗎？"
+
 #: ../data/gtkbuilder/UpdateManager.ui.h:29
-msgid "You are connected via a wireless modem."
-msgstr "您正透過無線數據機連線。"
+msgid "_Hide this information in the future"
+msgstr "以後不要再顯示此訊息(_H)"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:30
-msgid "It’s safer to connect the computer to AC power before updating."
-msgstr "在更新前先將電腦接上 AC 電源比較安全。"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:31
 msgid "_Install Updates"
 msgstr "安裝更新套件(_I)"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:32
-msgid "Changes"
-msgstr "變更"
+#: ../data/gtkbuilder/UpdateManager.ui.h:31
+msgid "_Partial Upgrade"
+msgstr "部份升級(_P)"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:33
-msgid "Description"
-msgstr "說明"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:34
-msgid "Description of update"
-msgstr "更新說明"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:35
 msgid "_Settings..."
 msgstr "設定(_S)..."
 
+#: ../data/gtkbuilder/UpdateManager.ui.h:34
+msgid "_Upgrade"
+msgstr "升級(_U)"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:35
+msgid "updates"
+msgstr "更新"
+
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</"
+"b>"
 msgstr "<b>有新版本 elementary OS。要否升級？</b>"
+
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:2
+msgid "Ask Me Later"
+msgstr "稍後再問我"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
 msgstr "不升級"
 
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:4
-msgid "Ask Me Later"
-msgstr "稍後再問我"
-
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:5
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
 msgid "Yes, Upgrade Now"
 msgstr "是，現在升級"
-
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new elementary OS"
-msgstr "您已拒絕升級至新的 elementary OS"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2115,13 +2147,17 @@ msgid ""
 "\"Upgrade\"."
 msgstr "您稍後仍可以透過開啟更新管理員並按下『升級』進行升級。"
 
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:8
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "您已拒絕升級至新的 elementary OS"
+
+#: ../data/update-manager.desktop.in.h:1
+msgid "Show and install available updates"
+msgstr "顯示並安裝現有軟體更新"
+
 #: ../data/update-manager.desktop.in.h:2
 msgid "Software Updates"
 msgstr "軟體更新"
-
-#: ../data/update-manager.desktop.in.h:3
-msgid "Show and install available updates"
-msgstr "顯示並安裝現有軟體更新"
 
 #: ../update-manager:61 ../update-manager-text:50 ../do-release-upgrade:46
 msgid "Show version and exit"
@@ -2179,7 +2215,8 @@ msgid ""
 "for server systems are supported."
 msgstr ""
 "在特殊升級模式執行。\n"
-"目前只支援以 'desktop' 模式升級桌面版本的系統，以及以 'server' 模式升級伺服器版的系統。"
+"目前只支援以 'desktop' 模式升級桌面版本的系統，以及以 'server' 模式升級伺服器"
+"版的系統。"
 
 #: ../do-release-upgrade:63
 msgid "Run the specified frontend"
@@ -2268,7 +2305,9 @@ msgstr "您有 %(num)s 個套件 (%(percent).1f%%) 不再支援"
 msgid ""
 "Run with --show-unsupported, --show-supported or --show-all to see more "
 "details"
-msgstr "加上 --show-unsupported、--show-supported 或是 --show-all 作為參數執行以查看更多細節"
+msgstr ""
+"加上 --show-unsupported、--show-supported 或是 --show-all 作為參數執行以查看"
+"更多細節"
 
 #: ../ubuntu-support-status:154
 msgid "No longer downloadable:"
@@ -2329,8 +2368,8 @@ msgid ""
 "When upgrading, if kdelibs4-dev is installed, kdelibs5-dev needs to be "
 "installed. See bugs.launchpad.net, bug #279621 for details."
 msgstr ""
-"在升級時，如果有安裝 kdelibs4-dev，那 kdelibs5-dev 就必須安裝。詳情請見 bugs.launchpad.net， bug "
-"#279621。"
+"在升級時，如果有安裝 kdelibs4-dev，那 kdelibs5-dev 就必須安裝。詳情請見 bugs."
+"launchpad.net， bug #279621。"
 
 #: ../Janitor/plugins/langpack_manual_plugin.py:34
 #, python-format
@@ -2338,9 +2377,216 @@ msgid "%s needs to be marked as manually installed."
 msgstr "%s 要標記為手動安裝。"
 
 #: ../Janitor/plugins/remove_lilo_plugin.py:28
-msgid ""
-"Remove lilo since grub is also installed.(See bug #314004 for details.)"
+msgid "Remove lilo since grub is also installed.(See bug #314004 for details.)"
 msgstr "因已安裝 grub，移除 lilo。（詳情見 bug #314004。）"
+
+#~ msgid ""
+#~ "Unable to locate any package files, perhaps this is not a Ubuntu Disc or "
+#~ "the wrong architecture?"
+#~ msgstr "找不到套件檔，也許這不是 Ubuntu 光碟，或者處理器架構不對。"
+
+#~ msgid ""
+#~ "There was a error adding the CD, the upgrade will abort. Please report "
+#~ "this as a bug if this is a valid Ubuntu CD.\n"
+#~ "\n"
+#~ "The error message was:\n"
+#~ "'%s'"
+#~ msgstr ""
+#~ "加入光碟時發生錯誤，升級將終止。若您確定光碟沒有問題，請將此匯報為臭蟲。\n"
+#~ "\n"
+#~ "錯誤訊息：\n"
+#~ "「%s」"
+
+#~ msgid ""
+#~ "An unresolvable problem occurred while calculating the upgrade:\n"
+#~ "%s\n"
+#~ "\n"
+#~ " This can be caused by:\n"
+#~ " * Upgrading to a pre-release version of Ubuntu\n"
+#~ " * Running the current pre-release version of Ubuntu\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ "\n"
+#~ msgstr ""
+#~ "準備升級時發生不能解決的問題：\n"
+#~ "%s\n"
+#~ "\n"
+#~ " 這可能由以下原因造成：\n"
+#~ " * 正升級至非正式發佈版本的 Ubuntu\n"
+#~ " * 正使用非正式發佈版本的 Ubuntu\n"
+#~ " * 安裝了非由 Ubuntu 官方提供的軟體套件\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
+#~ "desktop or edubuntu-desktop package and it was not possible to detect "
+#~ "which version of Ubuntu you are running.\n"
+#~ " Please install one of the packages above first using synaptic or apt-get "
+#~ "before proceeding."
+#~ msgstr ""
+#~ "您的系統沒有安裝 ubuntu-desktop，kubuntu-desktop 或 edubuntu-desktop 套"
+#~ "件，因此無法偵測正在使用那個版本的 Ubuntu。\n"
+#~ " 請先使用 synaptic 或 apt-get 安裝上述其中一個套件再繼續作業"
+
+#~ msgid ""
+#~ "Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+#~ msgstr "您的繪圖硬體可能無法被 Ubuntu 12.04 LTS 完整支援。"
+
+#~ msgid ""
+#~ "The support in Ubuntu 12.04 LTS for your Intel graphics hardware is "
+#~ "limited and you may encounter problems after the upgrade. For more "
+#~ "information see https://wiki.ubuntu.com/X/Bugs/"
+#~ "UpdateManagerWarningForI8xx Do you want to continue with the upgrade?"
+#~ msgstr ""
+#~ "Ubuntu 12.04 LTS 對您的 Intel 繪圖硬體的支援有限，升級之後您可能會碰到一些"
+#~ "問題。更多資訊可以查看 \"https://wiki.ubuntu.com/X/Bugs/"
+#~ "UpdateManagerWarningForI8xx\"。您是否要繼續升級？"
+
+#~ msgid ""
+#~ "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
+#~ "version of this driver is available that works with your video card in "
+#~ "Ubuntu 10.04 LTS.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "這個電腦目前正使用 NVIDIA 的「nvidia」圖形驅動程式。這個驅動程式沒有任何版"
+#~ "本可在 Ubuntu 10.04 LTS 中正常驅動您的硬體。\n"
+#~ "\n"
+#~ "是否要繼續？"
+
+#~ msgid ""
+#~ "This computer is currently using the AMD 'fglrx' graphics driver. No "
+#~ "version of this driver is available that works with your hardware in "
+#~ "Ubuntu 10.04 LTS.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "這個電腦目前正使用 AMD 的「fglrx」圖形驅動程式。這個驅動程式沒有任何版本可"
+#~ "在 Ubuntu 10.04 LTS 中正常驅動您的硬體。\n"
+#~ "\n"
+#~ "是否要繼續？"
+
+#~ msgid ""
+#~ "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
+#~ "extension. All packages were built with optimizations requiring i686 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+#~ msgstr ""
+#~ "您的系統使用 i586 CPU，或是不支援 'cmov' 擴充功能的 CPU。所有套件都以 "
+#~ "i686 架構為最佳化目標來建置，所以 CPU 至少需要有 i686 等級。對於您目前的硬"
+#~ "體來說，您無法將系統升級到最新的 Ubuntu 發行。"
+
+#~ msgid ""
+#~ "Your system uses an ARM CPU that is older than the ARMv6 architecture. "
+#~ "All packages in karmic were built with optimizations requiring ARMv6 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+#~ msgstr ""
+#~ "您系統使用的 ARM 處理器舊於 ARMv6 架構。所有 karmic 套件都是以 ARMv6 為最"
+#~ "低架構優化建造的。所以伴隨此硬體無法升級您的系統到新的 Ubuntu 版本。"
+
+#~ msgid ""
+#~ "Your system appears to be a virtualised environment without an init "
+#~ "daemon, e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this "
+#~ "type of environment, requiring an update to your virtual machine "
+#~ "configuration first.\n"
+#~ "\n"
+#~ "Are you sure you want to continue?"
+#~ msgstr ""
+#~ "您的系統似乎處於虛擬化環境且無初始化程序，例如 Linux-VServer。Ubuntu "
+#~ "10.04 LTS 無法於此環境執行，需要先更新您的虛擬機器設定。\n"
+#~ "\n"
+#~ "您確定想要繼續？"
+
+#~ msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+#~ msgstr "<b><big>升級 Ubuntu 至 12.04 版</big></b>"
+
+#~ msgid "Your Ubuntu release is not supported anymore."
+#~ msgstr "您的 Ubuntu 發行版本已經不再支援。"
+
+#~ msgid ""
+#~ "You will not get any further security fixes or critical updates. Please "
+#~ "upgrade to a later version of Ubuntu."
+#~ msgstr "您將無法再取得安全性修正或重大更新。請升級至較新版本的 Ubuntu。"
+
+#~ msgid "Name"
+#~ msgstr "名稱"
+
+#~ msgid "Welcome to Ubuntu"
+#~ msgstr "歡迎使用 Ubuntu"
+
+#~ msgid ""
+#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "released."
+#~ msgstr "自從這個版本的 Ubuntu 發行後，已經釋出這些軟體更新"
+
+#~ msgid "<b>New Ubuntu release '%s' is available</b>"
+#~ msgstr "<b>有新 Ubuntu 發行版 '%s' 可供升級</b>"
+
+#, fuzzy
+#~ msgid "New hardware support is available"
+#~ msgstr "有新版「%s」提供。"
+
+#~ msgid ""
+#~ "\n"
+#~ "A normal upgrade can not be calculated, please run: \n"
+#~ "  sudo apt-get dist-upgrade\n"
+#~ "\n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " * A previous upgrade which didn't complete\n"
+#~ " * Problems with some of the installed software\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ " * Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "\n"
+#~ "無法計算標準升級，請執行： \n"
+#~ "  sudo apt-get dist-upgrade\n"
+#~ "\n"
+#~ "\n"
+#~ " 這可能由以下原因造成：\n"
+#~ " * 前次升級程序未完成\n"
+#~ " * 某些已安裝的軟體有問題\n"
+#~ " * 安裝了非由 Ubuntu 官方提供的軟體套件\n"
+#~ " * Ubuntu 非正式發佈版本的正常更動"
+
+#~ msgid ""
+#~ "Run a partial upgrade, to install as many updates as possible. \n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " * A previous upgrade which didn't complete\n"
+#~ " * Problems with some of the installed software\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ " * Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "執行部份升級，將儘可能安裝最多的更新。 \n"
+#~ " 這可能由以下原因造成：\n"
+#~ " * 前次升級程序未完成\n"
+#~ " * 某些已安裝的軟體有問題\n"
+#~ " * 安裝了非由 Ubuntu 官方提供的軟體套件\n"
+#~ " * Ubuntu 非正式發佈版本的正常更動"
+
+#, fuzzy
+#~ msgid "I_nstall"
+#~ msgstr "安裝"
+
+#~ msgid ""
+#~ "<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+#~ msgstr "<b>有新版本 Ubuntu。要否升級？</b>"
+
+#~ msgid "You have declined to upgrade to the new Ubuntu"
+#~ msgstr "您已拒絕升級至新的 Ubuntu"
+
+#~ msgid "Check if a new Ubuntu release is available"
+#~ msgstr "檢查有否新 Ubuntu 發行版可供升級"
+
+#~ msgid "Checking for a new Ubuntu release"
+#~ msgstr "檢查是否有新的 Ubuntu 發行"
+
+#~ msgid "Ubuntu %(version)s Upgrade Available"
+#~ msgstr "可以升級至 Ubuntu %(version)s"
+
+#~ msgid "You have declined the upgrade to Ubuntu %s"
+#~ msgstr "您已拒絕升級至 Ubuntu %s"
 
 #~ msgid "Checking for a new ubuntu release"
 #~ msgstr "檢查有沒有新的 ubuntu 發行版"
@@ -2348,15 +2594,15 @@ msgstr "因已安裝 grub，移除 lilo。（詳情見 bug #314004。）"
 #~ msgid "Your system is up-to-date"
 #~ msgstr "系統已經在最新狀態"
 
-#, python-format
 #~ msgid ""
-#~ "This upgrade is running in sandbox (test) mode. All changes are written to "
-#~ "'%s' and will be lost on the next reboot.\n"
+#~ "This upgrade is running in sandbox (test) mode. All changes are written "
+#~ "to '%s' and will be lost on the next reboot.\n"
 #~ "\n"
 #~ "*No* changes written to a systemdir from now until the next reboot are "
 #~ "permanent."
 #~ msgstr ""
-#~ "這次升級是在沙堆(sandbox, 測試)模式中執行。所有更動都會寫入至「%s」並且會在下次重新開機時消失。\n"
+#~ "這次升級是在沙堆(sandbox, 測試)模式中執行。所有更動都會寫入至「%s」並且會"
+#~ "在下次重新開機時消失。\n"
 #~ "\n"
 #~ "現在起到下次重新開機前將*不會*有任何變更寫入至系統目錄。"
 
@@ -2383,78 +2629,82 @@ msgstr "因已安裝 grub，移除 lilo。（詳情見 bug #314004。）"
 #~ msgid ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from "
 #~ "Applications later."
-#~ msgstr "若現在您不想要安裝它們，您可以稍後從「應用程式」選擇「更新管理員」再安裝。"
+#~ msgstr ""
+#~ "若現在您不想要安裝它們，您可以稍後從「應用程式」選擇「更新管理員」再安裝。"
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of elementary OS Linux."
-#~ msgstr "您將無法再取得安全性修正與重大更新。請升級至新版 elementary OS Linux。"
+#~ "upgrade to a later version of Ubuntu Linux."
+#~ msgstr "您將無法再取得安全性修正與重大更新。請升級至新版 Ubuntu Linux。"
 
 #~ msgid ""
 #~ "Upgrading the repository information resulted in a invalid file. Please "
 #~ "report this as a bug using the command 'ubuntu-bug update-manager' in a "
 #~ "terminal."
-#~ msgstr "升級套件庫時導致無效的檔案。請在終端機內輸入指令「ubuntu-bug update-manager」回報錯誤。"
+#~ msgstr ""
+#~ "升級套件庫時導致無效的檔案。請在終端機內輸入指令「ubuntu-bug update-"
+#~ "manager」回報錯誤。"
 
-#, python-format
 #~ msgid ""
 #~ "\n"
 #~ "\n"
 #~ "Please report this bug using the command 'ubuntu-bug update-manager' in a "
-#~ "terminal and include the files in /var/log/dist-upgrade/ in the bug report.\n"
+#~ "terminal and include the files in /var/log/dist-upgrade/ in the bug "
+#~ "report.\n"
 #~ "%s"
 #~ msgstr ""
 #~ "\n"
 #~ "\n"
-#~ "請在終端機內輸入指令「ubuntu-bug update-manager」回報錯誤，並在錯誤報告中附上 /var/log/dist-upgrade/ "
-#~ "內之檔案。\n"
+#~ "請在終端機內輸入指令「ubuntu-bug update-manager」回報錯誤，並在錯誤報告中"
+#~ "附上 /var/log/dist-upgrade/ 內之檔案。\n"
 #~ "%s"
 
 #~ msgid ""
-#~ "The system was unable to get the prerequisites for the upgrade. The upgrade "
-#~ "will abort now and restore the original system state.\n"
+#~ "The system was unable to get the prerequisites for the upgrade. The "
+#~ "upgrade will abort now and restore the original system state.\n"
 #~ "\n"
-#~ "Please report this as a bug using the command 'ubuntu-bug update-manager' in "
-#~ "a terminal and include the files in /var/log/dist-upgrade/ in the bug report."
+#~ "Please report this as a bug using the command 'ubuntu-bug update-manager' "
+#~ "in a terminal and include the files in /var/log/dist-upgrade/ in the bug "
+#~ "report."
 #~ msgstr ""
 #~ "此系統無法達到升級之要求。現在將中斷升級並回復系統至原始狀態。\n"
 #~ "\n"
-#~ "請在終端機內輸入指令「ubuntu-bug update-manager」回報錯誤，並在錯誤報告中附上 /var/log/dist-upgrade/ "
-#~ "內之檔案。"
+#~ "請在終端機內輸入指令「ubuntu-bug update-manager」回報錯誤，並在錯誤報告中"
+#~ "附上 /var/log/dist-upgrade/ 內之檔案。"
 
 #~ msgid ""
 #~ "Preparing the system for the upgrade failed. Please report this using the "
-#~ "command 'ubuntu-bug update-manager' in a terminal and include the files in "
-#~ "/var/log/dist-upgrade/ in the bug report."
+#~ "command 'ubuntu-bug update-manager' in a terminal and include the files "
+#~ "in /var/log/dist-upgrade/ in the bug report."
 #~ msgstr ""
-#~ "準備系統升級失敗。請在終端機內輸入指令「ubuntu-bug update-manager」回報錯誤，並在錯誤報告中附上 /var/log/dist-"
-#~ "upgrade/ 內之檔案。"
+#~ "準備系統升級失敗。請在終端機內輸入指令「ubuntu-bug update-manager」回報錯"
+#~ "誤，並在錯誤報告中附上 /var/log/dist-upgrade/ 內之檔案。"
 
-#, python-format
 #~ msgid ""
 #~ "After your package information was updated the essential package '%s' can "
 #~ "not be found anymore.\n"
 #~ "This indicates a serious error, please report this bug using the command "
-#~ "'ubuntu-bug update-manager' in a terminal and include the files in "
-#~ "/var/log/dist-upgrade/ in the bug report."
+#~ "'ubuntu-bug update-manager' in a terminal and include the files in /var/"
+#~ "log/dist-upgrade/ in the bug report."
 #~ msgstr ""
 #~ "套件資訊更新後無法找到必要套件「%s」。\n"
-#~ "此為嚴重錯誤，請在終端機內輸入指令「ubuntu-bug update-manager」回報錯誤，並在錯誤報告中附上 /var/log/dist-"
-#~ "upgrade/ 內的檔案。"
+#~ "此為嚴重錯誤，請在終端機內輸入指令「ubuntu-bug update-manager」回報錯誤，"
+#~ "並在錯誤報告中附上 /var/log/dist-upgrade/ 內的檔案。"
 
-#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
-#~ msgstr "您的繪圖硬體可能無法在 elementary OS 11.04 獲得完整的支援。"
+#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
+#~ msgstr "您的繪圖硬體可能無法在 Ubuntu 11.04 獲得完整的支援。"
 
 #~ msgid ""
-#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
-#~ "you may encounter problems after the upgrade. Do you want to continue with "
-#~ "the upgrade?"
-#~ msgstr "您的 Intel 繪圖硬體在 elementary OS 11.04 內的支援有限，且可能會在升級之後碰到一些問題。您要繼續進行升級嗎？"
+#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited "
+#~ "and you may encounter problems after the upgrade. Do you want to continue "
+#~ "with the upgrade?"
+#~ msgstr ""
+#~ "您的 Intel 繪圖硬體在 Ubuntu 11.04 內的支援有限，且可能會在升級之後碰到一"
+#~ "些問題。您要繼續進行升級嗎？"
 
-#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
-#~ msgstr "<b><big>將 elementary OS 升級至 11.10 版</big></b>"
+#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
+#~ msgstr "<b><big>將 Ubuntu 升級至 11.10 版</big></b>"
 
-#, python-format
 #~ msgid "%.0f kB"
 #~ msgstr "%.0f kB"
 
@@ -2465,13 +2715,17 @@ msgstr "因已安裝 grub，移除 lilo。（詳情見 bug #314004。）"
 #~ msgstr "1 kB"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of elementary OS was "
-#~ "released. If you don't want to install them now, choose \"Update Manager\" "
-#~ "from Applications later."
-#~ msgstr "自從這個 elementary OS 版本發行後已經發布這些軟體更新。如果您現在還不想安裝它們，請稍後從「應用程式」選單選擇「更新管理員」。"
+#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "released. If you don't want to install them now, choose \"Update Manager"
+#~ "\" from Applications later."
+#~ msgstr ""
+#~ "自從這個 Ubuntu 版本發行後已經發布這些軟體更新。如果您現在還不想安裝它們，"
+#~ "請稍後從「應用程式」選單選擇「更新管理員」。"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of elementary OS was "
-#~ "released. If you don't want to install them now, choose \"Update Manager\" "
-#~ "from the Administration Menu later."
-#~ msgstr "自從這個 elementary OS 版本發行後已經發布這些軟體更新。如果您現在還不想安裝它們，請稍後從「管理」選單選擇「更新管理員」。"
+#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "released. If you don't want to install them now, choose \"Update Manager"
+#~ "\" from the Administration Menu later."
+#~ msgstr ""
+#~ "自從這個 Ubuntu 版本發行後已經發布這些軟體更新。如果您現在還不想安裝它們，"
+#~ "請稍後從「管理」選單選擇「更新管理員」。"

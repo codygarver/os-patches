@@ -8,21 +8,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: update-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-14 00:52+0000\n"
+"POT-Creation-Date: 2012-03-02 12:16+0100\n"
 "PO-Revision-Date: 2012-03-14 19:48+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2012-04-17 13:41+0000\n"
 "X-Generator: Launchpad (build 15099)\n"
-"Language: sr\n"
 
 #. TRANSLATORS: download size of small updates, e.g. "250 kB"
-#: ../DistUpgrade/utils.py:399 ../UpdateManager/Core/utils.py:399
+#: ../DistUpgrade/utils.py:397 ../UpdateManager/Core/utils.py:397
 #, python-format
 msgid "%(size).0f kB"
 msgid_plural "%(size).0f kB"
@@ -31,7 +31,7 @@ msgstr[1] "%(size).0f kB"
 msgstr[2] "%(size).0f kB"
 
 #. TRANSLATORS: download size of updates, e.g. "2.3 MB"
-#: ../DistUpgrade/utils.py:402 ../UpdateManager/Core/utils.py:402
+#: ../DistUpgrade/utils.py:400 ../UpdateManager/Core/utils.py:400
 #, python-format
 msgid "%.1f MB"
 msgstr "%.1f MB"
@@ -60,8 +60,8 @@ msgstr "Не могу да урачунам ставку „sources.list“ (с�
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
-"wrong architecture?"
+"Unable to locate any package files, perhaps this is not a elementary OS Disc "
+"or the wrong architecture?"
 msgstr ""
 "Не могу да пронађем ниједну датотеку пакета, можда ово није Убунту диск или "
 "је погрешна архитектура?"
@@ -135,7 +135,7 @@ msgstr ""
 "наставите."
 
 #. FIXME: change the text to something more useful
-#: ../DistUpgrade/DistUpgradeCache.py:679
+#: ../DistUpgrade/DistUpgradeCache.py:659
 #, python-format
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade:\n"
@@ -156,12 +156,12 @@ msgstr ""
 " * Употребом незваничних пакета софтвера\n"
 "\n"
 
-#: ../DistUpgrade/DistUpgradeCache.py:689
+#: ../DistUpgrade/DistUpgradeCache.py:669
 msgid "This is most likely a transient problem, please try again later."
 msgstr ""
 "Ово је највероватније пролазни проблем, молим покушајте поново касније."
 
-#: ../DistUpgrade/DistUpgradeCache.py:692
+#: ../DistUpgrade/DistUpgradeCache.py:672
 msgid ""
 "If none of this applies, then please report this bug using the command "
 "'ubuntu-bug update-manager' in a terminal."
@@ -169,16 +169,16 @@ msgstr ""
 "Ако ништа од овога не може да се примени, онда будите љубазни и пријавите "
 "ову грешку користећи наредбу „ubuntu-bug update-manager“ у терминалу."
 
-#: ../DistUpgrade/DistUpgradeCache.py:697
-#: ../UpdateManager/UpdateManager.py:1035
+#: ../DistUpgrade/DistUpgradeCache.py:677
+#: ../UpdateManager/UpdateManager.py:1024
 msgid "Could not calculate the upgrade"
 msgstr "Нисам могао да испланирам надоградњу"
 
-#: ../DistUpgrade/DistUpgradeCache.py:748
+#: ../DistUpgrade/DistUpgradeCache.py:728
 msgid "Error authenticating some packages"
 msgstr "Грешка приликом провере веродостојности неких пакета"
 
-#: ../DistUpgrade/DistUpgradeCache.py:749
+#: ../DistUpgrade/DistUpgradeCache.py:729
 msgid ""
 "It was not possible to authenticate some packages. This may be a transient "
 "network problem. You may want to try again later. See below for a list of "
@@ -188,7 +188,7 @@ msgstr ""
 "пролазни мрежни проблем, те уколико желите, можете пробати још једном "
 "касније. Испод се налази списак пакета који нису проверени."
 
-#: ../DistUpgrade/DistUpgradeCache.py:769
+#: ../DistUpgrade/DistUpgradeCache.py:749
 #, python-format
 msgid ""
 "The package '%s' is marked for removal but it is in the removal blacklist."
@@ -196,22 +196,22 @@ msgstr ""
 "Пакет „%s“ је означен за уклањање али се налази на листи пакета који не "
 "треба да се уклањају."
 
-#: ../DistUpgrade/DistUpgradeCache.py:773
+#: ../DistUpgrade/DistUpgradeCache.py:753
 #, python-format
 msgid "The essential package '%s' is marked for removal."
 msgstr "Кључни пакет „%s“ је означен за уклањање."
 
-#: ../DistUpgrade/DistUpgradeCache.py:782
+#: ../DistUpgrade/DistUpgradeCache.py:762
 #, python-format
 msgid "Trying to install blacklisted version '%s'"
 msgstr "Покушавам да инсталирам верзију „%s“ из црне листе"
 
-#: ../DistUpgrade/DistUpgradeCache.py:900
+#: ../DistUpgrade/DistUpgradeCache.py:880
 #, python-format
 msgid "Can't install '%s'"
 msgstr "Не могу да инсталирам „%s“"
 
-#: ../DistUpgrade/DistUpgradeCache.py:901
+#: ../DistUpgrade/DistUpgradeCache.py:881
 msgid ""
 "It was impossible to install a required package. Please report this as a bug "
 "using 'ubuntu-bug update-manager' in a terminal."
@@ -220,11 +220,11 @@ msgstr ""
 "као грешку користећи наредбу „ubuntu-bug update-manager“ у терминалу."
 
 #. FIXME: provide a list
-#: ../DistUpgrade/DistUpgradeCache.py:912
+#: ../DistUpgrade/DistUpgradeCache.py:892
 msgid "Can't guess meta-package"
 msgstr "Не могу да погодим мета пакет"
 
-#: ../DistUpgrade/DistUpgradeCache.py:913
+#: ../DistUpgrade/DistUpgradeCache.py:893
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
@@ -533,7 +533,7 @@ msgstr ""
 
 #. print "on_button_install_clicked"
 #: ../DistUpgrade/DistUpgradeController.py:867
-#: ../UpdateManager/UpdateManager.py:758
+#: ../UpdateManager/UpdateManager.py:749
 msgid "Not enough free disk space"
 msgstr "Нема довољно слободног простора на диску"
 
@@ -553,7 +553,7 @@ msgstr ""
 #. calc the dist-upgrade and see if the removals are ok/expected
 #. do the dist-upgrade
 #: ../DistUpgrade/DistUpgradeController.py:897
-#: ../DistUpgrade/DistUpgradeController.py:1664
+#: ../DistUpgrade/DistUpgradeController.py:1640
 msgid "Calculating the changes"
 msgstr "Прорачунавам измене"
 
@@ -575,7 +575,7 @@ msgstr ""
 "Можете да наставите надоградњу касније."
 
 #: ../DistUpgrade/DistUpgradeController.py:1002
-#: ../DistUpgrade/DistUpgradeController.py:1136
+#: ../DistUpgrade/DistUpgradeController.py:1128
 msgid "Could not download the upgrades"
 msgstr "Нисам могао да преузмем надоградње"
 
@@ -589,27 +589,27 @@ msgstr ""
 
 #. FIXME: strings are not good, but we are in string freeze
 #. currently
-#: ../DistUpgrade/DistUpgradeController.py:1087
-#: ../DistUpgrade/DistUpgradeController.py:1124
-#: ../DistUpgrade/DistUpgradeController.py:1229
+#: ../DistUpgrade/DistUpgradeController.py:1079
+#: ../DistUpgrade/DistUpgradeController.py:1116
+#: ../DistUpgrade/DistUpgradeController.py:1221
 msgid "Error during commit"
 msgstr "Грешка приликом слања"
 
 #. generate a new cache
-#: ../DistUpgrade/DistUpgradeController.py:1089
-#: ../DistUpgrade/DistUpgradeController.py:1126
-#: ../DistUpgrade/DistUpgradeController.py:1268
+#: ../DistUpgrade/DistUpgradeController.py:1081
+#: ../DistUpgrade/DistUpgradeController.py:1118
+#: ../DistUpgrade/DistUpgradeController.py:1260
 msgid "Restoring original system state"
 msgstr "Враћам оригинално стање система"
 
-#: ../DistUpgrade/DistUpgradeController.py:1090
-#: ../DistUpgrade/DistUpgradeController.py:1105
-#: ../DistUpgrade/DistUpgradeController.py:1127
+#: ../DistUpgrade/DistUpgradeController.py:1082
+#: ../DistUpgrade/DistUpgradeController.py:1097
+#: ../DistUpgrade/DistUpgradeController.py:1119
 msgid "Could not install the upgrades"
 msgstr "Нисам могао да инсталирам надоградње"
 
 #. invoke the frontend now and show a error message
-#: ../DistUpgrade/DistUpgradeController.py:1095
+#: ../DistUpgrade/DistUpgradeController.py:1087
 msgid ""
 "The upgrade has aborted. Your system could be in an unusable state. A "
 "recovery will run now (dpkg --configure -a)."
@@ -617,24 +617,24 @@ msgstr ""
 "Надоградња је прекинута. Ваш систем би могао бити у неупотребљивом стању. "
 "Сада ће почети процес опоравка (dpkg --configure -a)."
 
-#: ../DistUpgrade/DistUpgradeController.py:1100
+#: ../DistUpgrade/DistUpgradeController.py:1092
 #, python-format
 msgid ""
 "\n"
 "\n"
-"Please report this bug in a browser at "
-"http://bugs.launchpad.net/ubuntu/+source/update-manager/+filebug and attach "
-"the files in /var/log/dist-upgrade/ to the bug report.\n"
+"Please report this bug in a browser at http://bugs.launchpad.net/ubuntu/"
+"+source/update-manager/+filebug and attach the files in /var/log/dist-"
+"upgrade/ to the bug report.\n"
 "%s"
 msgstr ""
 "\n"
 "\n"
-"Пријавите ову грешку у прегледнику на "
-"„http://bugs.launchpad.net/ubuntu/+source/update-manager/+filebug“ и "
-"извештају о грешци прикачите датотеке из „/var/log/dist-upgrade/“.\n"
+"Пријавите ову грешку у прегледнику на „http://bugs.launchpad.net/ubuntu/"
+"+source/update-manager/+filebug“ и извештају о грешци прикачите датотеке из "
+"„/var/log/dist-upgrade/“.\n"
 "%s"
 
-#: ../DistUpgrade/DistUpgradeController.py:1137
+#: ../DistUpgrade/DistUpgradeController.py:1129
 msgid ""
 "The upgrade has aborted. Please check your Internet connection or "
 "installation media and try again. "
@@ -642,20 +642,20 @@ msgstr ""
 "Надоградња је прекинута. Молим проверите Вашу везу на Интернет или "
 "инсталациони медијум и покушајте поново. "
 
-#: ../DistUpgrade/DistUpgradeController.py:1217
+#: ../DistUpgrade/DistUpgradeController.py:1209
 msgid "Remove obsolete packages?"
 msgstr "Уклонити застареле пакете?"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
-#: ../DistUpgrade/DistUpgrade.ui.h:8
+#: ../DistUpgrade/DistUpgradeController.py:1210
+#: ../DistUpgrade/DistUpgrade.ui.h:22
 msgid "_Keep"
 msgstr "За_држи"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
+#: ../DistUpgrade/DistUpgradeController.py:1210
 msgid "_Remove"
 msgstr "У_клони"
 
-#: ../DistUpgrade/DistUpgradeController.py:1230
+#: ../DistUpgrade/DistUpgradeController.py:1222
 msgid ""
 "A problem occurred during the clean-up. Please see the below message for "
 "more information. "
@@ -665,27 +665,27 @@ msgstr ""
 
 #. FIXME: instead of error out, fetch and install it
 #. here
-#: ../DistUpgrade/DistUpgradeController.py:1306
+#: ../DistUpgrade/DistUpgradeController.py:1298
 msgid "Required depends is not installed"
 msgstr "Неопходна зависност није инсталирана"
 
-#: ../DistUpgrade/DistUpgradeController.py:1307
+#: ../DistUpgrade/DistUpgradeController.py:1299
 #, python-format
 msgid "The required dependency '%s' is not installed. "
 msgstr "Неопходна зависност „%s“ није инсталирана. "
 
 #. sanity check (check for ubuntu-desktop, brokenCache etc)
 #. then open the cache (again)
-#: ../DistUpgrade/DistUpgradeController.py:1568
-#: ../DistUpgrade/DistUpgradeController.py:1633
+#: ../DistUpgrade/DistUpgradeController.py:1544
+#: ../DistUpgrade/DistUpgradeController.py:1609
 msgid "Checking package manager"
 msgstr "Проверавам управника пакета"
 
-#: ../DistUpgrade/DistUpgradeController.py:1573
+#: ../DistUpgrade/DistUpgradeController.py:1549
 msgid "Preparing the upgrade failed"
 msgstr "Припрема надоградње није успела"
 
-#: ../DistUpgrade/DistUpgradeController.py:1574
+#: ../DistUpgrade/DistUpgradeController.py:1550
 msgid ""
 "Preparing the system for the upgrade failed so a bug reporting process is "
 "being started."
@@ -693,11 +693,11 @@ msgstr ""
 "Припрема система за надоградњу није успела тако да је покренут процес за "
 "извештавање о грешки."
 
-#: ../DistUpgrade/DistUpgradeController.py:1588
+#: ../DistUpgrade/DistUpgradeController.py:1564
 msgid "Getting upgrade prerequisites failed"
 msgstr "Набављање предуслова надоградње није успело"
 
-#: ../DistUpgrade/DistUpgradeController.py:1589
+#: ../DistUpgrade/DistUpgradeController.py:1565
 msgid ""
 "The system was unable to get the prerequisites for the upgrade. The upgrade "
 "will abort now and restore the original system state.\n"
@@ -709,23 +709,23 @@ msgstr ""
 "\n"
 "Уз ово, покренут је и процес за извештавање о грешци."
 
-#: ../DistUpgrade/DistUpgradeController.py:1617
+#: ../DistUpgrade/DistUpgradeController.py:1593
 msgid "Updating repository information"
 msgstr "Ажурирам информације ризница"
 
-#: ../DistUpgrade/DistUpgradeController.py:1624
+#: ../DistUpgrade/DistUpgradeController.py:1600
 msgid "Failed to add the cdrom"
 msgstr "Нисам успео да додам ЦД-РОМ"
 
-#: ../DistUpgrade/DistUpgradeController.py:1625
+#: ../DistUpgrade/DistUpgradeController.py:1601
 msgid "Sorry, adding the cdrom was not successful."
 msgstr "Извините, додавање ЦД-РОМа није било успешно."
 
-#: ../DistUpgrade/DistUpgradeController.py:1653
+#: ../DistUpgrade/DistUpgradeController.py:1629
 msgid "Invalid package information"
 msgstr "Неважеће информације пакета"
 
-#: ../DistUpgrade/DistUpgradeController.py:1654
+#: ../DistUpgrade/DistUpgradeController.py:1630
 #, python-format
 msgid ""
 "After your package information was updated the essential package '%s' can "
@@ -734,41 +734,40 @@ msgstr ""
 "Након ажурирања података о пакетима основни пакет „%s“ више не може бити "
 "пронађен тако да је покренут процес за извештавање о грешци."
 
-#: ../DistUpgrade/DistUpgradeController.py:1670
-#: ../DistUpgrade/DistUpgradeController.py:1723
+#: ../DistUpgrade/DistUpgradeController.py:1646
+#: ../DistUpgrade/DistUpgradeController.py:1699
 msgid "Fetching"
 msgstr "Добављам"
 
-#: ../DistUpgrade/DistUpgradeController.py:1676
-#: ../DistUpgrade/DistUpgradeController.py:1727
+#: ../DistUpgrade/DistUpgradeController.py:1652
+#: ../DistUpgrade/DistUpgradeController.py:1703
 msgid "Upgrading"
 msgstr "Надограђујем"
 
 #. don't abort here, because it would restore the sources.list
-#: ../DistUpgrade/DistUpgradeController.py:1681
-#: ../DistUpgrade/DistUpgradeController.py:1729
-#: ../DistUpgrade/DistUpgradeController.py:1736
-#: ../DistUpgrade/DistUpgradeController.py:1747
+#: ../DistUpgrade/DistUpgradeController.py:1657
+#: ../DistUpgrade/DistUpgradeController.py:1705
+#: ../DistUpgrade/DistUpgradeController.py:1712
+#: ../DistUpgrade/DistUpgradeController.py:1723
 msgid "Upgrade complete"
 msgstr "Надоградња је завршена"
 
-#: ../DistUpgrade/DistUpgradeController.py:1682
-#: ../DistUpgrade/DistUpgradeController.py:1730
-#: ../DistUpgrade/DistUpgradeController.py:1737
+#: ../DistUpgrade/DistUpgradeController.py:1658
+#: ../DistUpgrade/DistUpgradeController.py:1706
+#: ../DistUpgrade/DistUpgradeController.py:1713
 msgid ""
 "The upgrade has completed but there were errors during the upgrade process."
-msgstr ""
-"Надоградња је завршена, али је било грешака током процеса надоградње."
+msgstr "Надоградња је завршена, али је било грешака током процеса надоградње."
 
-#: ../DistUpgrade/DistUpgradeController.py:1689
+#: ../DistUpgrade/DistUpgradeController.py:1665
 msgid "Searching for obsolete software"
 msgstr "Тражим застарели софтвер"
 
-#: ../DistUpgrade/DistUpgradeController.py:1698
+#: ../DistUpgrade/DistUpgradeController.py:1674
 msgid "System upgrade is complete."
 msgstr "Надоградња система је завршена."
 
-#: ../DistUpgrade/DistUpgradeController.py:1748
+#: ../DistUpgrade/DistUpgradeController.py:1724
 msgid "The partial upgrade was completed."
 msgstr "Делимична надоградња је завршена."
 
@@ -788,20 +787,22 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
-msgstr ""
+"Your graphics hardware may not be fully supported in elementary OS 11.04."
+msgstr "Ваш графички хардвер можда није у потпуности подржан у Убунтуу 11.04."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
-"and you may encounter problems after the upgrade. For more information see "
-"https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
+"The support in elementary OS 11.04 for your intel graphics hardware is "
+"limited and you may encounter problems after the upgrade. Do you want to "
 "continue with the upgrade?"
 msgstr ""
+"Подршка за ваш Интел графички хардвер у Убунтуу 11.04 је ограничена и због "
+"тога се могу појавити проблеми након надоградње. Да ли желите да наставите "
+"са надоградњом?"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:520
-#: ../DistUpgrade/DistUpgradeQuirks.py:548
-#: ../DistUpgrade/DistUpgradeQuirks.py:575
+#: ../DistUpgrade/DistUpgradeQuirks.py:518
+#: ../DistUpgrade/DistUpgradeQuirks.py:546
+#: ../DistUpgrade/DistUpgradeQuirks.py:573
 msgid ""
 "Upgrading may reduce desktop effects, and performance in games and other "
 "graphically intensive programs."
@@ -809,8 +810,8 @@ msgstr ""
 "Надоградња може смањити ефекте радне површине, перформансе игрица и других "
 "графички захтевних програма."
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:524
-#: ../DistUpgrade/DistUpgradeQuirks.py:552
+#: ../DistUpgrade/DistUpgradeQuirks.py:522
+#: ../DistUpgrade/DistUpgradeQuirks.py:550
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
@@ -823,11 +824,11 @@ msgstr ""
 "\n"
 "Да ли желите да наставите?"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:579
+#: ../DistUpgrade/DistUpgradeQuirks.py:577
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in elementary OS 10.04 "
-"LTS.\n"
+"of this driver is available that works with your hardware in elementary OS "
+"10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
@@ -836,11 +837,11 @@ msgstr ""
 "\n"
 "Да ли желите да наставите?"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:609
+#: ../DistUpgrade/DistUpgradeQuirks.py:607
 msgid "No i686 CPU"
 msgstr "Нема „i686“ процесора"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:610
+#: ../DistUpgrade/DistUpgradeQuirks.py:608
 msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
@@ -852,11 +853,11 @@ msgstr ""
 "архитектуру. Није могуће надоградити Ваш систем на ново Убунту издање са "
 "овим хардвером."
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:646
+#: ../DistUpgrade/DistUpgradeQuirks.py:644
 msgid "No ARMv6 CPU"
 msgstr "Нема „ARMv6“ процесора"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:647
+#: ../DistUpgrade/DistUpgradeQuirks.py:645
 msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
@@ -868,15 +869,15 @@ msgstr ""
 "минималну архитектуру. Није могуће надоградити Ваш систем на ново Убунту "
 "издање са овим хардвером."
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:667
+#: ../DistUpgrade/DistUpgradeQuirks.py:665
 msgid "No init available"
 msgstr "Инит није доступан"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:668
+#: ../DistUpgrade/DistUpgradeQuirks.py:666
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
-"environment, requiring an update to your virtual machine configuration "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type "
+"of environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
@@ -1030,16 +1031,16 @@ msgstr "Јавила се фатална грешка"
 #: ../DistUpgrade/DistUpgradeViewGtk.py:464
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:470
 msgid ""
-"Please report this as a bug (if you haven't already) and include the files "
-"/var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
+"Please report this as a bug (if you haven't already) and include the files /"
+"var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
 "report. The upgrade has aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
-"Молим пријавите ово као грешку (ако већ нисте) и укључите датотеке "
-"„/var/log/dist-upgrade/main.log“ и „/var/log/dist-upgrade/apt.log“ у Ваш "
-"извештај. Надоградња је прекинута.\n"
-"Ваша оригинална датотека „sources.list“ је сачувана у "
-"„/etc/apt/sources.list.distUpgrade“."
+"Молим пријавите ово као грешку (ако већ нисте) и укључите датотеке „/var/log/"
+"dist-upgrade/main.log“ и „/var/log/dist-upgrade/apt.log“ у Ваш извештај. "
+"Надоградња је прекинута.\n"
+"Ваша оригинална датотека „sources.list“ је сачувана у „/etc/apt/sources.list."
+"distUpgrade“."
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:481
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:487
@@ -1139,7 +1140,7 @@ msgstr "Информације"
 
 #: ../DistUpgrade/DistUpgradeViewKDE.py:741
 #: ../DistUpgrade/DistUpgradeViewKDE.py:786
-#: ../DistUpgrade/DistUpgradeViewKDE.py:789 ../DistUpgrade/DistUpgrade.ui.h:7
+#: ../DistUpgrade/DistUpgradeViewKDE.py:789 ../DistUpgrade/DistUpgrade.ui.h:11
 msgid "Details"
 msgstr "Детаљи"
 
@@ -1178,8 +1179,8 @@ msgstr "Потребно је поновно покретање"
 msgid "<b><big>Restart the system to complete the upgrade</big></b>"
 msgstr "<b><big>Поново покрените систем да комплетирате надоградњу</big></b>"
 
-#: ../DistUpgrade/DistUpgradeViewKDE.py:802 ../DistUpgrade/DistUpgrade.ui.h:14
-#: ../data/gtkbuilder/UpdateManager.ui.h:26
+#: ../DistUpgrade/DistUpgradeViewKDE.py:802 ../DistUpgrade/DistUpgrade.ui.h:25
+#: ../data/gtkbuilder/UpdateManager.ui.h:32
 msgid "_Restart Now"
 msgstr "По_ново покрени сада"
 
@@ -1236,10 +1237,10 @@ msgstr[2] "%li секунди"
 #. information here if you shuffle %(str_days)s %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:80
 #, python-format
@@ -1250,10 +1251,10 @@ msgstr "%(str_days)s %(str_hours)s"
 #. information here if you shuffle %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:98
 #, python-format
@@ -1276,7 +1277,7 @@ msgstr ""
 msgid "This download will take about %s with your connection. "
 msgstr "Ово преузимање ће Вашом везом трајати око %s. "
 
-#: ../DistUpgrade/DistUpgradeView.py:255 ../DistUpgrade/DistUpgrade.ui.h:21
+#: ../DistUpgrade/DistUpgradeView.py:255 ../DistUpgrade/DistUpgrade.ui.h:16
 msgid "Preparing to upgrade"
 msgstr "Припремам надоградњу"
 
@@ -1284,15 +1285,15 @@ msgstr "Припремам надоградњу"
 msgid "Getting new software channels"
 msgstr "Набављам нове канале софтвера"
 
-#: ../DistUpgrade/DistUpgradeView.py:257 ../DistUpgrade/DistUpgrade.ui.h:23
+#: ../DistUpgrade/DistUpgradeView.py:257 ../DistUpgrade/DistUpgrade.ui.h:14
 msgid "Getting new packages"
 msgstr "Набављам нове пакете"
 
-#: ../DistUpgrade/DistUpgradeView.py:258 ../DistUpgrade/DistUpgrade.ui.h:26
+#: ../DistUpgrade/DistUpgradeView.py:258 ../DistUpgrade/DistUpgrade.ui.h:15
 msgid "Installing the upgrades"
 msgstr "Инсталирам надоградње"
 
-#: ../DistUpgrade/DistUpgradeView.py:259 ../DistUpgrade/DistUpgrade.ui.h:25
+#: ../DistUpgrade/DistUpgradeView.py:259 ../DistUpgrade/DistUpgrade.ui.h:10
 msgid "Cleaning up"
 msgstr "Чистим"
 
@@ -1372,7 +1373,7 @@ msgid "Removing the packages can take several hours. "
 msgstr "Уклањање пакета може да потраје неколико сати. "
 
 #. FIXME: this should go into DistUpgradeController
-#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:683
+#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:674
 msgid "The software on this computer is up to date."
 msgstr "Софтвер на овом рачунару је ажуриран."
 
@@ -1508,16 +1509,16 @@ msgstr "Порука грешке је „%s“."
 
 #: ../DistUpgrade/DistUpgradeViewText.py:91
 msgid ""
-"Please report this as a bug and include the files /var/log/dist-"
-"upgrade/main.log and /var/log/dist-upgrade/apt.log in your report. The "
-"upgrade has aborted.\n"
+"Please report this as a bug and include the files /var/log/dist-upgrade/main."
+"log and /var/log/dist-upgrade/apt.log in your report. The upgrade has "
+"aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
-"Молим пријавите ово као грешку и укључите датотеке „/var/log/dist-"
-"upgrade/main.log“ и „/var/log/dist-upgrade/apt.log“ у Ваш извештај. "
-"Надоградња је прекинута.\n"
-"Ваша оригинална датотека „sources.list“ је сачувана у "
-"„/etc/apt/sources.list.distUpgrade“."
+"Молим пријавите ово као грешку и укључите датотеке „/var/log/dist-upgrade/"
+"main.log“ и „/var/log/dist-upgrade/apt.log“ у Ваш извештај. Надоградња је "
+"прекинута.\n"
+"Ваша оригинална датотека „sources.list“ је сачувана у „/etc/apt/sources.list."
+"distUpgrade“."
 
 #: ../DistUpgrade/DistUpgradeViewText.py:115
 msgid "Aborting"
@@ -1594,14 +1595,10 @@ msgstr ""
 "Ако изаберете „д“ систем ће бити рестартован."
 
 #: ../DistUpgrade/DistUpgrade.ui.h:1
-msgid "_Cancel Upgrade"
-msgstr "О_ткажи надоградњу"
+msgid "    "
+msgstr "    "
 
 #: ../DistUpgrade/DistUpgrade.ui.h:2
-msgid "_Resume Upgrade"
-msgstr "На_стави надоградњу"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:3
 msgid ""
 "<b><big>Cancel the running upgrade?</big></b>\n"
 "\n"
@@ -1613,31 +1610,7 @@ msgstr ""
 "Систем би могао да буде у неупотребљивом стању ако откажете надоградњу. "
 "Снажно вам се препоручује да наставите надоградњу."
 
-#: ../DistUpgrade/DistUpgrade.ui.h:6
-msgid "_Start Upgrade"
-msgstr "За_почни надоградњу"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:9
-msgid "_Replace"
-msgstr "За_мени"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:10
-msgid "Difference between the files"
-msgstr "Разлике између датотека"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:11
-msgid "_Report Bug"
-msgstr "П_ријави грешку"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:12
-msgid "_Continue"
-msgstr "Н_астави"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:13
-msgid "<b><big>Start the upgrade?</big></b>"
-msgstr "<b><big>Започети надоградњу?</big></b>"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:15
+#: ../DistUpgrade/DistUpgrade.ui.h:5
 msgid ""
 "<b><big>Restart the system to complete the upgrade</big></b>\n"
 "\n"
@@ -1647,29 +1620,57 @@ msgstr ""
 "\n"
 "Молим сачувајте Ваш рад пре него што наставите."
 
-#: ../DistUpgrade/DistUpgrade.ui.h:18
-msgid "Distribution Upgrade"
-msgstr "Надоградња дистрибуције"
+#: ../DistUpgrade/DistUpgrade.ui.h:8
+msgid "<b><big>Start the upgrade?</big></b>"
+msgstr "<b><big>Започети надоградњу?</big></b>"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:19
+#: ../DistUpgrade/DistUpgrade.ui.h:9
 msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr "<b><big>Надоградња Убунтуа на издање 12.04</big></b>"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:20
-msgid "    "
-msgstr "    "
+#: ../DistUpgrade/DistUpgrade.ui.h:12
+msgid "Difference between the files"
+msgstr "Разлике између датотека"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:22
-msgid "Setting new software channels"
-msgstr "Постављам нове канале софтвера"
+#: ../DistUpgrade/DistUpgrade.ui.h:13
+msgid "Distribution Upgrade"
+msgstr "Надоградња дистрибуције"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:24
+#: ../DistUpgrade/DistUpgrade.ui.h:17
 msgid "Restarting the computer"
 msgstr "Поново покрећем рачунар"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:27
+#: ../DistUpgrade/DistUpgrade.ui.h:18
+msgid "Setting new software channels"
+msgstr "Постављам нове канале софтвера"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:19
 msgid "Terminal"
 msgstr "Терминал"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:20
+msgid "_Cancel Upgrade"
+msgstr "О_ткажи надоградњу"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:21
+msgid "_Continue"
+msgstr "Н_астави"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:23
+msgid "_Replace"
+msgstr "За_мени"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:24
+msgid "_Report Bug"
+msgstr "П_ријави грешку"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:26
+msgid "_Resume Upgrade"
+msgstr "На_стави надоградњу"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:27
+msgid "_Start Upgrade"
+msgstr "За_почни надоградњу"
 
 #: ../UpdateManager/backend/InstallBackendSynaptic.py:60
 msgid "Please wait, this can take some time."
@@ -1705,8 +1706,8 @@ msgid "Upgrade"
 msgstr "Надоградња"
 
 #: ../UpdateManager/DistUpgradeFetcherKDE.py:89
-#: ../data/gtkbuilder/UpdateManager.ui.h:20
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:2
+#: ../data/gtkbuilder/UpdateManager.ui.h:13
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:4
 msgid "Release Notes"
 msgstr "Белешке о издању"
 
@@ -1745,11 +1746,11 @@ msgstr ""
 msgid "Downloading file %(current)li of %(total)li"
 msgstr "Преузимам датотеку %(current)li oд укупно %(total)li"
 
-#: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
+#: ../UpdateManager/UpdateManager.py:103 ../do-release-upgrade:95
 msgid "Your elementary OS release is not supported anymore."
 msgstr "Ваша Убунту верзија више није подржана."
 
-#: ../UpdateManager/UpdateManager.py:105
+#: ../UpdateManager/UpdateManager.py:104
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
 "upgrade to a later version of elementary OS."
@@ -1757,45 +1758,36 @@ msgstr ""
 "Нећете добити никакве додатне безбедносне исправке и критична ажурирања. "
 "Молим надоградите систем на најновије издање Убунтуа."
 
-#: ../UpdateManager/UpdateManager.py:113
+#: ../UpdateManager/UpdateManager.py:112
 msgid "Upgrade information"
 msgstr "Информације о надоградњи"
 
-#: ../UpdateManager/UpdateManager.py:229
-#: ../UpdateManagerText/UpdateManagerText.py:32
-msgid "Install"
-msgstr "Инсталирам"
-
-#: ../UpdateManager/UpdateManager.py:231
-msgid "Name"
-msgstr ""
-
 #. upload_archive = version_match.group(2).strip()
-#: ../UpdateManager/UpdateManager.py:391
+#: ../UpdateManager/UpdateManager.py:387
 #, python-format
 msgid "Version %s: \n"
 msgstr "Верзија %s: \n"
 
-#: ../UpdateManager/UpdateManager.py:453
+#: ../UpdateManager/UpdateManager.py:444
 msgid ""
 "No network connection detected, you can not download changelog information."
 msgstr ""
 "Није откривена веза са мрежом, нећете моћи да преузмете информације о "
 "изменама дневника."
 
-#: ../UpdateManager/UpdateManager.py:461
+#: ../UpdateManager/UpdateManager.py:452
 msgid "Downloading list of changes..."
 msgstr "Преузимам списак измена..."
 
-#: ../UpdateManager/UpdateManager.py:505
+#: ../UpdateManager/UpdateManager.py:496
 msgid "_Deselect All"
 msgstr "_Поништи све"
 
-#: ../UpdateManager/UpdateManager.py:511
+#: ../UpdateManager/UpdateManager.py:502
 msgid "Select _All"
 msgstr "Изабери _све"
 
-#: ../UpdateManager/UpdateManager.py:571
+#: ../UpdateManager/UpdateManager.py:562
 #, python-format
 msgid "%(count)s update has been selected."
 msgid_plural "%(count)s updates have been selected."
@@ -1803,34 +1795,34 @@ msgstr[0] "%(count)s ажурирање је изабрано."
 msgstr[1] "%(count)s ажурирања су изабрана."
 msgstr[2] "%(count)s ажурирања је изабрано."
 
-#: ../UpdateManager/UpdateManager.py:575
+#: ../UpdateManager/UpdateManager.py:566
 #, python-format
 msgid "%s will be downloaded."
 msgstr "%s биће преузет."
 
-#: ../UpdateManager/UpdateManager.py:587
+#: ../UpdateManager/UpdateManager.py:578
 msgid "The update has already been downloaded, but not installed."
 msgid_plural "The updates have already been downloaded, but not installed."
 msgstr[0] "Ажурирање је већ преузето, али није инсталирано."
 msgstr[1] "Ажурирања су већ преузета, али нису инсталирана."
 msgstr[2] "Ажурирања су већ преузета, али нису инсталирана."
 
-#: ../UpdateManager/UpdateManager.py:592
+#: ../UpdateManager/UpdateManager.py:583
 msgid "There are no updates to install."
 msgstr "Нема ажурирања за инсталирање."
 
 #. TRANSLATORS: this allows to switch the order of the count of
 #. updates and the download size string (if needed)
-#: ../UpdateManager/UpdateManager.py:598
+#: ../UpdateManager/UpdateManager.py:589
 #, python-format
 msgid "%(count_str)s %(download_str)s"
 msgstr "%(count_str)s %(download_str)s"
 
-#: ../UpdateManager/UpdateManager.py:605
+#: ../UpdateManager/UpdateManager.py:596
 msgid "Unknown download size."
 msgstr "Непозната величина преузимања."
 
-#: ../UpdateManager/UpdateManager.py:631
+#: ../UpdateManager/UpdateManager.py:622
 msgid ""
 "It is unknown when the package information was updated last. Please click "
 "the 'Check' button to update the information."
@@ -1838,7 +1830,7 @@ msgstr ""
 "Није познато када су подаци о пакетима последњи пут освежени. Молим кликните "
 "на дугме „Провери“ да их освежите."
 
-#: ../UpdateManager/UpdateManager.py:637
+#: ../UpdateManager/UpdateManager.py:628
 #, python-format
 msgid ""
 "The package information was last updated %(days_ago)s days ago.\n"
@@ -1848,16 +1840,15 @@ msgstr ""
 "Притисните дугме <quote>Провери</quote> да извршите проверу за новим "
 "исправкама софтвера."
 
-#: ../UpdateManager/UpdateManager.py:642
+#: ../UpdateManager/UpdateManager.py:633
 #, python-format
 msgid "The package information was last updated %(days_ago)s day ago."
-msgid_plural ""
-"The package information was last updated %(days_ago)s days ago."
+msgid_plural "The package information was last updated %(days_ago)s days ago."
 msgstr[0] "Информације о пакетима су ажуриране пре %(days_ago)s дан."
 msgstr[1] "Информације о пакетима су ажуриране пре %(days_ago)s дана."
 msgstr[2] "Информације о пакетима су ажуриране пре %(days_ago)s дана."
 
-#: ../UpdateManager/UpdateManager.py:646
+#: ../UpdateManager/UpdateManager.py:637
 #, python-format
 msgid "The package information was last updated %(hours_ago)s hour ago."
 msgid_plural ""
@@ -1867,18 +1858,18 @@ msgstr[1] "Информације о пакетима су ажуриране п
 msgstr[2] "Информације о пакетима су ажуриране пре %(hours_ago)s сати."
 
 #. TRANSLATORS: only in plural form, as %s minutes ago is one of 15, 30, 45 minutes ago
-#: ../UpdateManager/UpdateManager.py:651 ../UpdateManager/UpdateManager.py:653
-#: ../UpdateManager/UpdateManager.py:655
+#: ../UpdateManager/UpdateManager.py:642 ../UpdateManager/UpdateManager.py:644
+#: ../UpdateManager/UpdateManager.py:646
 #, python-format
 msgid "The package information was last updated about %s minutes ago."
 msgstr "Информације о пакетима су последњи пут освежене пре %s минута."
 
-#: ../UpdateManager/UpdateManager.py:657
+#: ../UpdateManager/UpdateManager.py:648
 msgid "The package information was just updated."
 msgstr "Информације о пакетима су управо освежене."
 
-#: ../UpdateManager/UpdateManager.py:677
-#: ../data/gtkbuilder/UpdateManager.ui.h:2
+#: ../UpdateManager/UpdateManager.py:668
+#: ../data/gtkbuilder/UpdateManager.ui.h:22
 msgid ""
 "Software updates correct errors, eliminate security vulnerabilities and "
 "provide new features."
@@ -1886,26 +1877,26 @@ msgstr ""
 "Ажурирање програма исправља грешке, уклања безбедносне пропусте и пружа нове "
 "могућности."
 
-#: ../UpdateManager/UpdateManager.py:696
+#: ../UpdateManager/UpdateManager.py:687
 msgid "Software updates may be available for your computer."
 msgstr "Ажурирања софтвера могу бити доступна за Ваш рачунар."
 
-#: ../UpdateManager/UpdateManager.py:704
+#: ../UpdateManager/UpdateManager.py:695
 msgid "Welcome to elementary OS"
 msgstr "Добродошли у Убунту"
 
-#: ../UpdateManager/UpdateManager.py:705
+#: ../UpdateManager/UpdateManager.py:696
 msgid ""
-"These software updates have been issued since this version of elementary OS was "
-"released."
+"These software updates have been issued since this version of elementary OS "
+"was released."
 msgstr ""
 "Ова ажурирања софтвера су објављена од када је издато ово издање Убунтуа."
 
-#: ../UpdateManager/UpdateManager.py:708
+#: ../UpdateManager/UpdateManager.py:699
 msgid "Software updates are available for this computer."
 msgstr "Доступна су ажурирања софтвера за овај рачунар."
 
-#: ../UpdateManager/UpdateManager.py:759
+#: ../UpdateManager/UpdateManager.py:750
 #, python-format
 msgid ""
 "The upgrade needs a total of %s free space on disk '%s'. Please free at "
@@ -1917,7 +1908,7 @@ msgstr ""
 "привремене пакете претходних инсталација користећи команду „sudo apt-get "
 "clean“."
 
-#: ../UpdateManager/UpdateManager.py:784
+#: ../UpdateManager/UpdateManager.py:775
 msgid ""
 "The computer needs to restart to finish installing updates. Please save your "
 "work before continuing."
@@ -1925,25 +1916,25 @@ msgstr ""
 "Да завршите са инсталирањем освежења, морате поново покренути рачунар. Молим "
 "сачувајте Ваш рад пре него што наставите."
 
-#: ../UpdateManager/UpdateManager.py:848
+#: ../UpdateManager/UpdateManager.py:839
 msgid "Reading package information"
 msgstr "Читам информације о пакетима"
 
-#: ../UpdateManager/UpdateManager.py:863
+#: ../UpdateManager/UpdateManager.py:854
 msgid "Connecting..."
 msgstr "Повезујем се..."
 
-#: ../UpdateManager/UpdateManager.py:880
+#: ../UpdateManager/UpdateManager.py:871
 msgid "You may not be able to check for updates or download new updates."
 msgstr ""
 "Можда нећете бити у могућности да проверите за ажурирањима или да преузмете "
 "нова ажурирања."
 
-#: ../UpdateManager/UpdateManager.py:1004
+#: ../UpdateManager/UpdateManager.py:995
 msgid "Could not initialize the package information"
 msgstr "Не могу да покренем информације о пакетима"
 
-#: ../UpdateManager/UpdateManager.py:1005
+#: ../UpdateManager/UpdateManager.py:996
 msgid ""
 "An unresolvable problem occurred while initializing the package "
 "information.\n"
@@ -1956,7 +1947,7 @@ msgstr ""
 "Молим пријавите ово као грешку пакета „update-manager“ и укључите следећу "
 "поруку о грешци:\n"
 
-#: ../UpdateManager/UpdateManager.py:1036
+#: ../UpdateManager/UpdateManager.py:1025
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade.\n"
 "\n"
@@ -1968,31 +1959,31 @@ msgstr ""
 "Молим пријавите ово као грешку пакета „update-manager“ и укључите следећу "
 "поруку о грешци:"
 
-#: ../UpdateManager/UpdateManager.py:1061
+#: ../UpdateManager/UpdateManager.py:1050
 msgid " (New install)"
 msgstr " (Нова инсталација)"
 
 #. TRANSLATORS: the b stands for Bytes
-#: ../UpdateManager/UpdateManager.py:1068
+#: ../UpdateManager/UpdateManager.py:1057
 #, python-format
 msgid "(Size: %s)"
 msgstr "(Величина: %s)"
 
-#: ../UpdateManager/UpdateManager.py:1070
+#: ../UpdateManager/UpdateManager.py:1059
 #, python-format
 msgid "From version %(old_version)s to %(new_version)s"
 msgstr "Са верзије %(old_version)s на верзију %(new_version)s"
 
-#: ../UpdateManager/UpdateManager.py:1074
+#: ../UpdateManager/UpdateManager.py:1063
 #, python-format
 msgid "Version %s"
 msgstr "Верзија %s"
 
-#: ../UpdateManager/UpdateManager.py:1105 ../do-release-upgrade:107
+#: ../UpdateManager/UpdateManager.py:1094 ../do-release-upgrade:107
 msgid "Release upgrade not possible right now"
 msgstr "Надоградња издања није тренутно могућа"
 
-#: ../UpdateManager/UpdateManager.py:1106 ../do-release-upgrade:108
+#: ../UpdateManager/UpdateManager.py:1095 ../do-release-upgrade:108
 #, c-format, python-format
 msgid ""
 "The release upgrade can not be performed currently, please try again later. "
@@ -2001,21 +1992,21 @@ msgstr ""
 "Надоградња издања тренутно не може бити извршена, молим покушајте касније. "
 "Сервер је известио: „%s“"
 
-#: ../UpdateManager/UpdateManager.py:1108 ../check-new-release-gtk:115
+#: ../UpdateManager/UpdateManager.py:1097 ../check-new-release-gtk:115
 msgid "Downloading the release upgrade tool"
 msgstr "Преузимам алат надоградње издања"
 
-#: ../UpdateManager/UpdateManager.py:1115
+#: ../UpdateManager/UpdateManager.py:1104
 #, python-format
 msgid "<b>New elementary OS release '%s' is available</b>"
 msgstr "<b>Ново Убунту издање „%s“ је доступно</b>"
 
 #. we assert a clean cache
-#: ../UpdateManager/UpdateManager.py:1154
+#: ../UpdateManager/UpdateManager.py:1143
 msgid "Software index is broken"
 msgstr "Индекс софтвера је оштећен."
 
-#: ../UpdateManager/UpdateManager.py:1155
+#: ../UpdateManager/UpdateManager.py:1144
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -2036,6 +2027,10 @@ msgstr "Инсталирај све доступне допуне"
 #: ../UpdateManagerText/UpdateManagerText.py:31
 msgid "Cancel"
 msgstr "Отказујем"
+
+#: ../UpdateManagerText/UpdateManagerText.py:32
+msgid "Install"
+msgstr "Инсталирам"
 
 #: ../UpdateManagerText/UpdateManagerText.py:34
 msgid "Changelog"
@@ -2077,24 +2072,12 @@ msgstr ""
 msgid "Downloading changelog"
 msgstr "Преузимам дневник измена"
 
-#: ../UpdateManager/Core/MyCache.py:138
+#: ../UpdateManager/Core/MyCache.py:130
 #, python-format
 msgid "Other updates (%s)"
 msgstr "Остала ажурирања (%s)"
 
-#: ../UpdateManager/Core/MyCache.py:316
-msgid "This update does not come from a source that supports changelogs."
-msgstr "Ова допуна не долази са извора који подржава дневнике измена."
-
-#: ../UpdateManager/Core/MyCache.py:322 ../UpdateManager/Core/MyCache.py:350
-msgid ""
-"Failed to download the list of changes. \n"
-"Please check your Internet connection."
-msgstr ""
-"Нисам успео да преузмем списак измена.\n"
-"Молим проверите Вашу интернет везу."
-
-#: ../UpdateManager/Core/MyCache.py:329
+#: ../UpdateManager/Core/MyCache.py:285
 #, python-format
 msgid ""
 "Changes for the versions:\n"
@@ -2107,7 +2090,19 @@ msgstr ""
 "Доступно издање: %s\n"
 "\n"
 
-#: ../UpdateManager/Core/MyCache.py:339
+#: ../UpdateManager/Core/MyCache.py:299
+msgid "This update does not come from a source that supports changelogs."
+msgstr "Ова допуна не долази са извора који подржава дневнике измена."
+
+#: ../UpdateManager/Core/MyCache.py:305 ../UpdateManager/Core/MyCache.py:326
+msgid ""
+"Failed to download the list of changes. \n"
+"Please check your Internet connection."
+msgstr ""
+"Нисам успео да преузмем списак измена.\n"
+"Молим проверите Вашу интернет везу."
+
+#: ../UpdateManager/Core/MyCache.py:315
 #, python-format
 msgid ""
 "The changelog does not contain any relevant changes.\n"
@@ -2120,7 +2115,7 @@ msgstr ""
 "Молим користите http://launchpad.net/ubuntu/+source/%s/%s/+changelog\n"
 "док промене не постану доступне или пробајте касније."
 
-#: ../UpdateManager/Core/MyCache.py:344
+#: ../UpdateManager/Core/MyCache.py:320
 #, python-format
 msgid ""
 "The list of changes is not available yet.\n"
@@ -2167,18 +2162,54 @@ msgid "Other updates"
 msgstr "Остала ажурирања"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:1
-msgid "<big><b>Starting Update Manager</b></big>"
-msgstr "<big><b>Покрећем Управника ажурирања</b></big>"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:3
-msgid "_Partial Upgrade"
-msgstr "Де_лимична надоградња"
+msgid ""
+"<b><big>You must check for updates manually</big></b>\n"
+"\n"
+"Your system does not check for updates automatically. You can configure this "
+"behavior in <i>Software Sources</i> on the <i>Updates</i> tab."
+msgstr ""
+"<b><big>Морате ручно проверити за ажурирањима</big></b>\n"
+"\n"
+"Ваш систем не врши аутоматски проверу за ажурирањима. Ово можете подесити у "
+"прозорчету <i>Извори програма</i> у језичку <i>Ажурирања</i>."
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:4
 msgid "<big><b>Not all updates can be installed</b></big>"
 msgstr "<big><b>Не могу бити инсталирана сва ажурирања</b></big>"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:5
+msgid "<big><b>Running on battery</b></big>"
+msgstr "<big><b>Радим на батерији</b></big>"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:6
+msgid "<big><b>Starting Update Manager</b></big>"
+msgstr "<big><b>Покрећем Управника ажурирања</b></big>"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:7
+msgid "Changes"
+msgstr "Измене"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:8
+msgid "Chec_k"
+msgstr "П_ровери"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:9
+msgid "Co_ntinue"
+msgstr "На_стави"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:10
+msgid "Description"
+msgstr "Опис"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:11
+msgid "Description of update"
+msgstr "Опис ажурирања"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:12
+msgid "It’s safer to connect the computer to AC power before updating."
+msgstr "Сигурније је повезати рачунар на мрежно напајање пре ажурирања."
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:14
 msgid ""
 "Run a partial upgrade, to install as many updates as possible. \n"
 "\n"
@@ -2196,66 +2227,29 @@ msgstr ""
 " * Незваничним пакетима софтвера које не обезбеђује Убунту\n"
 " * Нормалним изменама верзије пред-издања Убунтуа"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:12
-msgid "Chec_k"
-msgstr "П_ровери"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:13
-msgid ""
-"<b><big>You must check for updates manually</big></b>\n"
-"\n"
-"Your system does not check for updates automatically. You can configure this "
-"behavior in <i>Software Sources</i> on the <i>Updates</i> tab."
-msgstr ""
-"<b><big>Морате ручно проверити за ажурирањима</big></b>\n"
-"\n"
-"Ваш систем не врши аутоматски проверу за ажурирањима. Ово можете подесити у "
-"прозорчету <i>Извори програма</i> у језичку <i>Ажурирања</i>."
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:16
-msgid "_Hide this information in the future"
-msgstr "Убудуће _сакриј овакве информације"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:17
-msgid "Co_ntinue"
-msgstr "На_стави"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:18
-msgid "<big><b>Running on battery</b></big>"
-msgstr "<big><b>Радим на батерији</b></big>"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:19
-msgid "Your system is running on battery. Are you sure you want to continue?"
-msgstr ""
-"Ваш систем се напаја из батерије. Да ли сте сигурни да желите да наставите?"
-
 #: ../data/gtkbuilder/UpdateManager.ui.h:21
-msgid "_Upgrade"
-msgstr "Надо_гради"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:22
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:8
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:5
 msgid "Show progress of individual files"
 msgstr "Прикажи напредак појединачних датотека"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:23
-#: ../data/update-manager.desktop.in.h:1
-msgid "Update Manager"
-msgstr "Управник ажурирања"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:24
 msgid "Starting Update Manager"
 msgstr "Покрећем Управника ажурирања"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:25
+#: ../data/gtkbuilder/UpdateManager.ui.h:24
 msgid "U_pgrade"
 msgstr "На_догради"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:27
-msgid "updates"
-msgstr "ажурирања"
+#: ../data/gtkbuilder/UpdateManager.ui.h:25
+#: ../data/update-manager.desktop.in.h:3
+msgid "Update Manager"
+msgstr "Управник ажурирања"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:28
+#: ../data/gtkbuilder/UpdateManager.ui.h:26
+msgid "You are connected via a wireless modem."
+msgstr "Повезани сте бежичним модемом."
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:27
 msgid ""
 "You are connected via roaming and may be charged for the data consumed by "
 "this update."
@@ -2263,55 +2257,52 @@ msgstr ""
 "Повезени сте у ромингу и можете утрошити више података него што вам је "
 "допуштено овим ажурирањем."
 
+#: ../data/gtkbuilder/UpdateManager.ui.h:28
+msgid "Your system is running on battery. Are you sure you want to continue?"
+msgstr ""
+"Ваш систем се напаја из батерије. Да ли сте сигурни да желите да наставите?"
+
 #: ../data/gtkbuilder/UpdateManager.ui.h:29
-msgid "You are connected via a wireless modem."
-msgstr "Повезани сте бежичним модемом."
+msgid "_Hide this information in the future"
+msgstr "Убудуће _сакриј овакве информације"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:30
-msgid "It’s safer to connect the computer to AC power before updating."
-msgstr "Сигурније је повезати рачунар на мрежно напајање пре ажурирања."
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:31
 msgid "_Install Updates"
 msgstr "И_нсталирај ажурирања"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:32
-msgid "Changes"
-msgstr "Измене"
+#: ../data/gtkbuilder/UpdateManager.ui.h:31
+msgid "_Partial Upgrade"
+msgstr "Де_лимична надоградња"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:33
-msgid "Description"
-msgstr "Опис"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:34
-msgid "Description of update"
-msgstr "Опис ажурирања"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:35
 msgid "_Settings..."
 msgstr "_Подешавања..."
 
+#: ../data/gtkbuilder/UpdateManager.ui.h:34
+msgid "_Upgrade"
+msgstr "Надо_гради"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:35
+msgid "updates"
+msgstr "ажурирања"
+
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
-msgstr ""
-"<b>Доступна је нова верзија Убунтуа. Да ли желите да надоградите?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</"
+"b>"
+msgstr "<b>Доступна је нова верзија Убунтуа. Да ли желите да надоградите?</b>"
+
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:2
+msgid "Ask Me Later"
+msgstr "Питај ме касније"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
 msgstr "Не надограђуј"
 
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:4
-msgid "Ask Me Later"
-msgstr "Питај ме касније"
-
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:5
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
 msgid "Yes, Upgrade Now"
 msgstr "Да, надогради сада"
-
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new elementary OS"
-msgstr "Одбили сте да надоградите на нову верзију Убунтуа"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2321,13 +2312,17 @@ msgstr ""
 "Можете да надоградите у каснијем времену отварањем Управника ажурирања и "
 "кликом на „Надогради“."
 
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:8
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "Одбили сте да надоградите на нову верзију Убунтуа"
+
+#: ../data/update-manager.desktop.in.h:1
+msgid "Show and install available updates"
+msgstr "Прикажи и инсталирај доступне надоградње"
+
 #: ../data/update-manager.desktop.in.h:2
 msgid "Software Updates"
 msgstr "Софтверска ажурирања"
-
-#: ../data/update-manager.desktop.in.h:3
-msgid "Show and install available updates"
-msgstr "Прикажи и инсталирај доступне надоградње"
 
 #: ../update-manager:61 ../update-manager-text:50 ../do-release-upgrade:46
 msgid "Show version and exit"
@@ -2554,11 +2549,217 @@ msgid "%s needs to be marked as manually installed."
 msgstr "%s мора бити означен као ручно инсталиран."
 
 #: ../Janitor/plugins/remove_lilo_plugin.py:28
-msgid ""
-"Remove lilo since grub is also installed.(See bug #314004 for details.)"
+msgid "Remove lilo since grub is also installed.(See bug #314004 for details.)"
 msgstr ""
 "Уклони лило с обзиром да је груб такође инсталиран.(Погледајте грешку број "
 "#314004 за више детаља.)"
+
+#~ msgid ""
+#~ "Unable to locate any package files, perhaps this is not a Ubuntu Disc or "
+#~ "the wrong architecture?"
+#~ msgstr ""
+#~ "Не могу да пронађем ниједну датотеку пакета, можда ово није Убунту диск "
+#~ "или је погрешна архитектура?"
+
+#~ msgid ""
+#~ "There was a error adding the CD, the upgrade will abort. Please report "
+#~ "this as a bug if this is a valid Ubuntu CD.\n"
+#~ "\n"
+#~ "The error message was:\n"
+#~ "'%s'"
+#~ msgstr ""
+#~ "Дошло је до грешке приликом додавања ЦД-а, надоградња ће бити прекинута. "
+#~ "Молим пријавите ово као грешку ако је ово исправан Убунту диск.\n"
+#~ "\n"
+#~ "Грешка беше:\n"
+#~ "„%s“"
+
+#~ msgid ""
+#~ "An unresolvable problem occurred while calculating the upgrade:\n"
+#~ "%s\n"
+#~ "\n"
+#~ " This can be caused by:\n"
+#~ " * Upgrading to a pre-release version of Ubuntu\n"
+#~ " * Running the current pre-release version of Ubuntu\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Дошло је до нерешивог проблема приликом планирања надоградње.\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Ово може бити изазвано:\n"
+#~ " * Надоградњом на рано издање дистрибуције\n"
+#~ " * Извршавањем раног издања дистрибуције\n"
+#~ " * Употребом незваничних пакета софтвера\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
+#~ "desktop or edubuntu-desktop package and it was not possible to detect "
+#~ "which version of Ubuntu you are running.\n"
+#~ " Please install one of the packages above first using synaptic or apt-get "
+#~ "before proceeding."
+#~ msgstr ""
+#~ "Ваш систем не садржи убунту-десктоп, кубунту-десктоп, хубунту-десктоп или "
+#~ "едубунту-десктоп пакет и није могуће одредити које издање Убунту "
+#~ "дистрибуције користите.\n"
+#~ " Молим инсталирајте прво један од тих пакета користећи синаптик или апт-"
+#~ "гет пре него што наставите."
+
+#~ msgid ""
+#~ "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
+#~ "version of this driver is available that works with your video card in "
+#~ "Ubuntu 10.04 LTS.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Овај рачунар тренутно користи НВИДИА „nvidia“ графички дајвер. Нема "
+#~ "доступне верзије овог драјвера која ради са Вашом видео картицом у Убунту "
+#~ "10.04 LTS.\n"
+#~ "\n"
+#~ "Да ли желите да наставите?"
+
+#~ msgid ""
+#~ "This computer is currently using the AMD 'fglrx' graphics driver. No "
+#~ "version of this driver is available that works with your hardware in "
+#~ "Ubuntu 10.04 LTS.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Овај рачунар тренутно користи АМД „fglrx“ графички дајвер. Нема доступне "
+#~ "верзије овог драјвера која ради са Вашим хардвером у Убунту 10.04 LTS.\n"
+#~ "\n"
+#~ "Да ли желите да наставите?"
+
+#~ msgid ""
+#~ "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
+#~ "extension. All packages were built with optimizations requiring i686 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+#~ msgstr ""
+#~ "Ваш систем користи „i586“ процесор или процесор који нема „cmov“ "
+#~ "проширење. Сви пакети су саграђени са оптимизацијама захтевајући „i686“ "
+#~ "као минималну архитектуру. Није могуће надоградити Ваш систем на ново "
+#~ "Убунту издање са овим хардвером."
+
+#~ msgid ""
+#~ "Your system uses an ARM CPU that is older than the ARMv6 architecture. "
+#~ "All packages in karmic were built with optimizations requiring ARMv6 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+#~ msgstr ""
+#~ "Ваш систем користи АРМ процесор који је старији од АРМв6 архитектуре. Сви "
+#~ "пакети у кармику су саграђени са оптимизацијама захтевајући АРМв6 као "
+#~ "минималну архитектуру. Није могуће надоградити Ваш систем на ново Убунту "
+#~ "издање са овим хардвером."
+
+#~ msgid ""
+#~ "Your system appears to be a virtualised environment without an init "
+#~ "daemon, e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this "
+#~ "type of environment, requiring an update to your virtual machine "
+#~ "configuration first.\n"
+#~ "\n"
+#~ "Are you sure you want to continue?"
+#~ msgstr ""
+#~ "Ваш систем изгледа да је виртуелизовано окружење без инит демона, нпр. "
+#~ "Линукс-ВСервер. Убунту 10.04 LTS не може радити унутар оваквог окружења, "
+#~ "захтевајући прво ажурирање подешавања Ваше виртуелне машине.\n"
+#~ "\n"
+#~ "Да ли сте сигурни да желите на наставите?"
+
+#~ msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+#~ msgstr "<b><big>Надоградња Убунтуа на издање 12.04</big></b>"
+
+#~ msgid "Your Ubuntu release is not supported anymore."
+#~ msgstr "Ваша Убунту верзија више није подржана."
+
+#~ msgid ""
+#~ "You will not get any further security fixes or critical updates. Please "
+#~ "upgrade to a later version of Ubuntu."
+#~ msgstr ""
+#~ "Нећете добити никакве додатне безбедносне исправке и критична ажурирања. "
+#~ "Молим надоградите систем на најновије издање Убунтуа."
+
+#~ msgid "Welcome to Ubuntu"
+#~ msgstr "Добродошли у Убунту"
+
+#~ msgid ""
+#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "released."
+#~ msgstr ""
+#~ "Ова ажурирања софтвера су објављена од када је издато ово издање Убунтуа."
+
+#~ msgid "<b>New Ubuntu release '%s' is available</b>"
+#~ msgstr "<b>Ново Убунту издање „%s“ је доступно</b>"
+
+#, fuzzy
+#~ msgid "New hardware support is available"
+#~ msgstr "Доступно је ново издање „%s“."
+
+#~ msgid ""
+#~ "\n"
+#~ "A normal upgrade can not be calculated, please run: \n"
+#~ "  sudo apt-get dist-upgrade\n"
+#~ "\n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " * A previous upgrade which didn't complete\n"
+#~ " * Problems with some of the installed software\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ " * Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "\n"
+#~ "Нормална надоградња не може бити прорачуната, молим покрените:\n"
+#~ "  sudo apt-get dist-upgrade\n"
+#~ "\n"
+#~ "\n"
+#~ "Ово може бити проузроковано:\n"
+#~ " * Претходном надоградњом која није завршена\n"
+#~ " * Проблемима са неким инсталираним програмима\n"
+#~ " * Незваничним софтверским пакетима које не обезбеђује Убунту\n"
+#~ " * Нормалним променама пред-издања Убунту верзије"
+
+#~ msgid ""
+#~ "Run a partial upgrade, to install as many updates as possible. \n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " * A previous upgrade which didn't complete\n"
+#~ " * Problems with some of the installed software\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ " * Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "Покрећем делимичну надоградњу да бих инсталирао што више измена и "
+#~ "допуна. \n"
+#~ "\n"
+#~ "Ово може бити проузроковано:\n"
+#~ " * Претходном надоградњом која није довршена\n"
+#~ " * Проблемима са неким од инсталираног софтвера\n"
+#~ " * Незваничним пакетима софтвера које не обезбеђује Убунту\n"
+#~ " * Нормалним изменама верзије пред-издања Убунтуа"
+
+#, fuzzy
+#~ msgid "I_nstall"
+#~ msgstr "Инсталирам"
+
+#~ msgid ""
+#~ "<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+#~ msgstr ""
+#~ "<b>Доступна је нова верзија Убунтуа. Да ли желите да надоградите?</b>"
+
+#~ msgid "You have declined to upgrade to the new Ubuntu"
+#~ msgstr "Одбили сте да надоградите на нову верзију Убунтуа"
+
+#~ msgid "Check if a new Ubuntu release is available"
+#~ msgstr "Провериће да ли је доступно ново Убунту издање"
+
+#~ msgid "Checking for a new Ubuntu release"
+#~ msgstr "Проверавам за новим издањем Убунтуа"
+
+#~ msgid "Ubuntu %(version)s Upgrade Available"
+#~ msgstr "Доступна је Убунту %(version)s надоградња"
+
+#~ msgid "You have declined the upgrade to Ubuntu %s"
+#~ msgstr "Одбили сте надоградњу на Убунту %s"
 
 #~ msgid "Software updates are available for this computer"
 #~ msgstr "Доступна су ажурирања за овај рачунар"
@@ -2594,21 +2795,20 @@ msgstr ""
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of elementary OS Linux."
+#~ "upgrade to a later version of Ubuntu Linux."
 #~ msgstr ""
 #~ "Нећете добити никакве додатне сигурносне исправке и критична ажурирања. "
 #~ "Молим надоградите систем на најновију верзију Убунту Линукса."
 
-#, python-format
 #~ msgid ""
-#~ "This upgrade is running in sandbox (test) mode. All changes are written to "
-#~ "'%s' and will be lost on the next reboot.\n"
+#~ "This upgrade is running in sandbox (test) mode. All changes are written "
+#~ "to '%s' and will be lost on the next reboot.\n"
 #~ "\n"
 #~ "*No* changes written to a systemdir from now until the next reboot are "
 #~ "permanent."
 #~ msgstr ""
-#~ "Ова надоградња се обавља у тест окружењу. Све промене су записане у „%s“ и "
-#~ "биће изгубљене при следећем учитавању.\n"
+#~ "Ова надоградња се обавља у тест окружењу. Све промене су записане у „%s“ "
+#~ "и биће изгубљене при следећем учитавању.\n"
 #~ "\n"
 #~ "*Никакве* измене записане у директоријуму система од сада па до следећег "
 #~ "учитавања неће бити сталне."
@@ -2621,66 +2821,66 @@ msgstr ""
 #~ "изаберите „Управник ажурирања“."
 
 #~ msgid ""
-#~ "The system was unable to get the prerequisites for the upgrade. The upgrade "
-#~ "will abort now and restore the original system state.\n"
+#~ "The system was unable to get the prerequisites for the upgrade. The "
+#~ "upgrade will abort now and restore the original system state.\n"
 #~ "\n"
-#~ "Please report this as a bug using the command 'ubuntu-bug update-manager' in "
-#~ "a terminal and include the files in /var/log/dist-upgrade/ in the bug report."
+#~ "Please report this as a bug using the command 'ubuntu-bug update-manager' "
+#~ "in a terminal and include the files in /var/log/dist-upgrade/ in the bug "
+#~ "report."
 #~ msgstr ""
 #~ "Систем није био у могућности да набави све предуслове за надоградњу. "
 #~ "Надоградња ће сада бити прекинута и систем ће бити враћен у првобитно "
 #~ "стање.\n"
 #~ "\n"
 #~ "Будите љубазни и пријавите ово као грешку користећи наредбу „ubuntu-bug "
-#~ "update-manager“ у терминалу и прикачите датотеке из „/var/log/dist-upgrade/“ "
-#~ "уз извештај."
+#~ "update-manager“ у терминалу и прикачите датотеке из „/var/log/dist-"
+#~ "upgrade/“ уз извештај."
 
-#, python-format
 #~ msgid ""
 #~ "After your package information was updated the essential package '%s' can "
 #~ "not be found anymore.\n"
 #~ "This indicates a serious error, please report this bug using the command "
-#~ "'ubuntu-bug update-manager' in a terminal and include the files in "
-#~ "/var/log/dist-upgrade/ in the bug report."
+#~ "'ubuntu-bug update-manager' in a terminal and include the files in /var/"
+#~ "log/dist-upgrade/ in the bug report."
 #~ msgstr ""
-#~ "Након ажурирања информација о пакетима кључни пакет „%s“ не може више бити "
-#~ "пронађен.\n"
+#~ "Након ажурирања информација о пакетима кључни пакет „%s“ не може више "
+#~ "бити пронађен.\n"
 #~ "Ово указује на озбиљну грешку, будите љубазни и пријавите ову грешку "
 #~ "користећи наредбу „ubuntu-bug update-manager“ у терминалу и прикачите "
 #~ "датотеке из „/var/log/dist-upgrade/“ уз извештај."
 
-#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
+#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
 #~ msgstr ""
 #~ "Ваш графички хардвер можда није у потпуности подржан у Убунтуу 11.04."
 
 #~ msgid ""
-#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
-#~ "you may encounter problems after the upgrade. Do you want to continue with "
-#~ "the upgrade?"
+#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited "
+#~ "and you may encounter problems after the upgrade. Do you want to continue "
+#~ "with the upgrade?"
 #~ msgstr ""
-#~ "Подршка за ваш Интел графички хардвер у Убунтуу 11.04 је ограничена и због "
-#~ "тога се могу појавити проблеми након надоградње. Да ли желите да наставите "
-#~ "са надоградњом?"
+#~ "Подршка за ваш Интел графички хардвер у Убунтуу 11.04 је ограничена и "
+#~ "због тога се могу појавити проблеми након надоградње. Да ли желите да "
+#~ "наставите са надоградњом?"
 
-#, python-format
 #~ msgid ""
 #~ "\n"
 #~ "\n"
 #~ "Please report this bug using the command 'ubuntu-bug update-manager' in a "
-#~ "terminal and include the files in /var/log/dist-upgrade/ in the bug report.\n"
+#~ "terminal and include the files in /var/log/dist-upgrade/ in the bug "
+#~ "report.\n"
 #~ "%s"
 #~ msgstr ""
 #~ "\n"
 #~ "\n"
-#~ "Будите љубазни и пријавите ову грешку користећи наредбу „ubuntu-bug update-"
-#~ "manager“ у терминалу и прикачите датотеке из „/var/log/dist-upgrade/“ уз "
-#~ "извештај.\n"
+#~ "Будите љубазни и пријавите ову грешку користећи наредбу „ubuntu-bug "
+#~ "update-manager“ у терминалу и прикачите датотеке из „/var/log/dist-"
+#~ "upgrade/“ уз извештај.\n"
 #~ "%s"
 
 #~ msgid ""
 #~ "Preparing the system for the upgrade failed. Please report this using the "
-#~ "command 'ubuntu-bug update-manager' in a terminal and include the files in "
-#~ "/var/log/dist-upgrade/ in the bug report."
+#~ "command 'ubuntu-bug update-manager' in a terminal and include the files "
+#~ "in /var/log/dist-upgrade/ in the bug report."
 #~ msgstr ""
 #~ "Нисам успео да припремим надоградњу. Будите љубазни и пријавите ово "
 #~ "користећи наредбу „ubuntu-bug update-manager“ у терминалу и прикачите "
@@ -2695,17 +2895,16 @@ msgstr ""
 #~ "Будите љубазни и пријавите ово као грешку користећи наредбу „ubuntu-bug "
 #~ "update-manager“ у терминалу."
 
-#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
+#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
 #~ msgstr "<b><big>Надоградња Убунтуа на издање 11.10</big></b>"
 
-#, python-format
 #~ msgid "%.0f kB"
 #~ msgstr "%.0f kB"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of elementary OS was "
-#~ "released. If you don't want to install them now, choose \"Update Manager\" "
-#~ "from Applications later."
+#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "released. If you don't want to install them now, choose \"Update Manager"
+#~ "\" from Applications later."
 #~ msgstr ""
 #~ "Ова ажурирања софтвера су објављена од када је изашло ово издање Убунтуа. "
 #~ "Ако не желите сада да их инсталирате, касније изаберите „Управника "
@@ -2718,9 +2917,9 @@ msgstr ""
 #~ msgstr "1 kB"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of elementary OS was "
-#~ "released. If you don't want to install them now, choose \"Update Manager\" "
-#~ "from the Administration Menu later."
+#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "released. If you don't want to install them now, choose \"Update Manager"
+#~ "\" from the Administration Menu later."
 #~ msgstr ""
 #~ "Ова ажурирања софтвера су објављена од када је изашло ово издање Убунтуа. "
 #~ "Ако не желите сада да их инсталирате, касније изаберите „Управника "

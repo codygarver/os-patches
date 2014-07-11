@@ -1,3 +1,32 @@
+update-manager (1:0.156.14.15) precise-proposed; urgency=low
+
+  * support HardwareEnablement End-of-Life transition 
+    (LP: #1333728)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 24 Jun 2014 16:32:25 +0200
+
+update-manager (1:0.156.14.14) precise-proposed; urgency=medium
+
+  * Fix translations (ja, id, eo, ug) of check-new-release-gtk dialog
+    which cause a crash and users not to be notified of the new version.
+    (LP: #1311396) 
+
+ -- Brian Murray <brian@ubuntu.com>  Wed, 23 Apr 2014 11:58:26 -0700
+
+update-manager (1:0.156.14.13) precise-proposed; urgency=medium
+
+  * debian/source_update-manager.py: use root_command_output so that we can
+    collect apt-clone_system_state.tar.gz. (LP: #1274704)
+
+ -- Brian Murray <brian@ubuntu.com>  Fri, 11 Apr 2014 14:42:25 -0700
+
+update-manager (1:0.156.14.12) precise-proposed; urgency=medium
+
+  * debian/source_update-manager.py: create a DuplicateSignature by
+    replacing the tmpdir name in the Traceback (LP: #1289580)
+
+ -- Brian Murray <brian@ubuntu.com>  Mon, 10 Mar 2014 10:40:57 -0700
+
 update-manager (1:0.156.14.11) precise-proposed; urgency=low
 
   * DistUpgradeApport.py: don't use a '/' as a key name in the apport report

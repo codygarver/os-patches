@@ -3,7 +3,7 @@
 set -e
 
 # update demotions
-(cd utils && ./demotions.py oneiric precise > demoted.cfg)
+#(cd utils && ./demotions.py oneiric precise > demoted.cfg)
 # when this gets enabled, make sure to add symlink in DistUpgrade
 (cd utils && ./demotions.py lucid precise > demoted.cfg.lucid)
 
@@ -35,7 +35,7 @@ rm -rf utils/apt/lists utils/apt/*.bin
 
 # run the test-suit
 #echo "Running integrated tests"
-(cd tests && make)
+#(cd tests && make)
 
 # test leftovers
 rm -f ./tests/data-sources-list-test/apt.log

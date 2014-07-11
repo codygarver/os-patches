@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: update-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-14 00:52+0000\n"
+"POT-Creation-Date: 2012-03-02 12:16+0100\n"
 "PO-Revision-Date: 2012-04-10 17:40+0000\n"
 "Last-Translator: Kim Boram <boramism@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,14 +20,14 @@ msgstr ""
 "X-Generator: Launchpad (build 15099)\n"
 
 #. TRANSLATORS: download size of small updates, e.g. "250 kB"
-#: ../DistUpgrade/utils.py:399 ../UpdateManager/Core/utils.py:399
+#: ../DistUpgrade/utils.py:397 ../UpdateManager/Core/utils.py:397
 #, python-format
 msgid "%(size).0f kB"
 msgid_plural "%(size).0f kB"
 msgstr[0] "%(size).0f kB"
 
 #. TRANSLATORS: download size of updates, e.g. "2.3 MB"
-#: ../DistUpgrade/utils.py:402 ../UpdateManager/Core/utils.py:402
+#: ../DistUpgrade/utils.py:400 ../UpdateManager/Core/utils.py:400
 #, python-format
 msgid "%.1f MB"
 msgstr "%.1f MB"
@@ -55,9 +56,11 @@ msgstr "sources.list 항목을 계산할 수 없습니다."
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
-"wrong architecture?"
-msgstr "어떤 패키지 파일도 찾을 수 없습니다. 우분투 디스크가 아니거나 올바르지 않은 아키텍처인 것은 아닙니까?"
+"Unable to locate any package files, perhaps this is not a elementary OS Disc "
+"or the wrong architecture?"
+msgstr ""
+"어떤 패키지 파일도 찾을 수 없습니다. 우분투 디스크가 아니거나 올바르지 않은 "
+"아키텍처인 것은 아닙니까?"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:287
 msgid "Failed to add the CD"
@@ -72,7 +75,8 @@ msgid ""
 "The error message was:\n"
 "'%s'"
 msgstr ""
-"CD를 추가할 때 오류가 발생하여 업그레이드를 중단할 것입니다. 올바른 우분투 CD를 사용하고 있었다면 이 버그를 보고해 주십시오.\n"
+"CD를 추가할 때 오류가 발생하여 업그레이드를 중단할 것입니다. 올바른 우분투 CD"
+"를 사용하고 있었다면 이 버그를 보고해 주십시오.\n"
 "\n"
 "오류 메시지:\n"
 "'%s'"
@@ -93,7 +97,8 @@ msgid_plural ""
 "but no archives can be found for them. Do you want to remove these packages "
 "now to continue?"
 msgstr[0] ""
-"'%s' 패키지는 불완전한 상태이며 다시 설치해야 하지만, 저장소에서 찾을 수 없습니다.이 패키지를 제거한 후 계속하시겠습니까?"
+"'%s' 패키지는 불완전한 상태이며 다시 설치해야 하지만, 저장소에서 찾을 수 없습"
+"니다.이 패키지를 제거한 후 계속하시겠습니까?"
 
 #. FIXME: not ideal error message, but we just reuse a
 #. existing one here to avoid a new string
@@ -109,10 +114,12 @@ msgstr "망가진 패키지"
 msgid ""
 "Your system contains broken packages that couldn't be fixed with this "
 "software. Please fix them first using synaptic or apt-get before proceeding."
-msgstr "이 소프트웨어로 고칠 수 없는 망가진 패키지가 있습니다. 진행하기 전에 시냅틱이나 apt-get 명령으로 복구하십시오."
+msgstr ""
+"이 소프트웨어로 고칠 수 없는 망가진 패키지가 있습니다. 진행하기 전에 시냅틱이"
+"나 apt-get 명령으로 복구하십시오."
 
 #. FIXME: change the text to something more useful
-#: ../DistUpgrade/DistUpgradeCache.py:679
+#: ../DistUpgrade/DistUpgradeCache.py:659
 #, python-format
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade:\n"
@@ -133,70 +140,71 @@ msgstr ""
 " * 써드 파티 소프트웨어를 사용 중입니다.\n"
 "\n"
 
-#: ../DistUpgrade/DistUpgradeCache.py:689
+#: ../DistUpgrade/DistUpgradeCache.py:669
 msgid "This is most likely a transient problem, please try again later."
 msgstr "이것은 아마도 일시적인 문제일 것입니다. 나중에 다시 시도해주십시오."
 
-#: ../DistUpgrade/DistUpgradeCache.py:692
+#: ../DistUpgrade/DistUpgradeCache.py:672
 msgid ""
 "If none of this applies, then please report this bug using the command "
 "'ubuntu-bug update-manager' in a terminal."
 msgstr ""
-"만약 아무 것도 적용되지 않으면, 터미널에서 'ubuntu-bug update-manager' 명령을 입력하여 이 버그를 보고해주십시오."
+"만약 아무 것도 적용되지 않으면, 터미널에서 'ubuntu-bug update-manager' 명령"
+"을 입력하여 이 버그를 보고해주십시오."
 
-#: ../DistUpgrade/DistUpgradeCache.py:697
-#: ../UpdateManager/UpdateManager.py:1035
+#: ../DistUpgrade/DistUpgradeCache.py:677
+#: ../UpdateManager/UpdateManager.py:1024
 msgid "Could not calculate the upgrade"
 msgstr "업그레이드를 계산할 수 없습니다."
 
-#: ../DistUpgrade/DistUpgradeCache.py:748
+#: ../DistUpgrade/DistUpgradeCache.py:728
 msgid "Error authenticating some packages"
 msgstr "일부 패키지를 인증할 수 없습니다."
 
-#: ../DistUpgrade/DistUpgradeCache.py:749
+#: ../DistUpgrade/DistUpgradeCache.py:729
 msgid ""
 "It was not possible to authenticate some packages. This may be a transient "
 "network problem. You may want to try again later. See below for a list of "
 "unauthenticated packages."
 msgstr ""
-"몇몇 패키지를 인증할 수 없습니다. 일시적인 네트워크 문제일 수 있으므로 나중에 대시 시도해주십시오. 인증하지 못한 패키지의 목록은 "
-"다음과 같습니다."
+"몇몇 패키지를 인증할 수 없습니다. 일시적인 네트워크 문제일 수 있으므로 나중"
+"에 대시 시도해주십시오. 인증하지 못한 패키지의 목록은 다음과 같습니다."
 
-#: ../DistUpgrade/DistUpgradeCache.py:769
+#: ../DistUpgrade/DistUpgradeCache.py:749
 #, python-format
 msgid ""
 "The package '%s' is marked for removal but it is in the removal blacklist."
 msgstr "패키지 '%s'은(는) 제거 차단 목록에 기록되어 있어 제거할 수 없습니다."
 
-#: ../DistUpgrade/DistUpgradeCache.py:773
+#: ../DistUpgrade/DistUpgradeCache.py:753
 #, python-format
 msgid "The essential package '%s' is marked for removal."
 msgstr "필수 패키지 '%s'을(를) 제거할 항목으로 표시했습니다."
 
-#: ../DistUpgrade/DistUpgradeCache.py:782
+#: ../DistUpgrade/DistUpgradeCache.py:762
 #, python-format
 msgid "Trying to install blacklisted version '%s'"
 msgstr "차단 목록 상의 버전 '%s'을(를) 설치합니다"
 
-#: ../DistUpgrade/DistUpgradeCache.py:900
+#: ../DistUpgrade/DistUpgradeCache.py:880
 #, python-format
 msgid "Can't install '%s'"
 msgstr "'%s'을(를) 설치할 수 없음"
 
-#: ../DistUpgrade/DistUpgradeCache.py:901
+#: ../DistUpgrade/DistUpgradeCache.py:881
 msgid ""
 "It was impossible to install a required package. Please report this as a bug "
 "using 'ubuntu-bug update-manager' in a terminal."
 msgstr ""
-"요청한 패키지를 설치할 수 없습니다. 터미널에서 'ubuntu-bug update-manager' 명령을 입력하시어 이 버그를 보고해 "
-"주십시오."
+"요청한 패키지를 설치할 수 없습니다. 터미널에서 'ubuntu-bug update-manager' 명"
+"령을 입력하시어 이 버그를 보고해 주십시오."
 
 #. FIXME: provide a list
-#: ../DistUpgrade/DistUpgradeCache.py:912
+#: ../DistUpgrade/DistUpgradeCache.py:892
 msgid "Can't guess meta-package"
 msgstr "메타 패키지를 추측할 수 없음"
 
-#: ../DistUpgrade/DistUpgradeCache.py:913
+#: ../DistUpgrade/DistUpgradeCache.py:893
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
@@ -204,8 +212,9 @@ msgid ""
 " Please install one of the packages above first using synaptic or apt-get "
 "before proceeding."
 msgstr ""
-"시스템에 ubuntu-desktop이나 kubuntu-desktop이나 xubuntu-desktop 또는 edubuntu-desktop "
-"패키지가 없으며, 현재 실행 중인 우분투의 버전을 알아낼 수 없습니다.\n"
+"시스템에 ubuntu-desktop이나 kubuntu-desktop이나 xubuntu-desktop 또는 "
+"edubuntu-desktop 패키지가 없으며, 현재 실행 중인 우분투의 버전을 알아낼 수 없"
+"습니다.\n"
 "우선 위의 패키지 중 하나를 시냅틱이나 apt-get 명령으로 설치하시기 바랍니다."
 
 #: ../DistUpgrade/DistUpgradeController.py:100
@@ -221,8 +230,8 @@ msgid ""
 "This usually means that another package management application (like apt-get "
 "or aptitude) already running. Please close that application first."
 msgstr ""
-"이것은 보통 또 다른 패키지 관리 프로그램(예를 들어 apt-get이나 aptitude)을 이미 실행하고 있는 것을 의미 합니다. 우선 "
-"해덩 프로그램을 종료하십시오."
+"이것은 보통 또 다른 패키지 관리 프로그램(예를 들어 apt-get이나 aptitude)을 이"
+"미 실행하고 있는 것을 의미 합니다. 우선 해덩 프로그램을 종료하십시오."
 
 #: ../DistUpgrade/DistUpgradeController.py:244
 msgid "Upgrading over remote connection not supported"
@@ -236,8 +245,9 @@ msgid ""
 "\n"
 "The upgrade will abort now. Please try without ssh."
 msgstr ""
-"원격 SSH접속을 통한 업그레이드를 지원하지 않는 SS H프론트엔드를 사용하여 업그레이드를 실행하고 있습니다. 'do-release-"
-"upgrade' 명령으로 텍스트모드 업그레이드를 사요해주십시오.\n"
+"원격 SSH접속을 통한 업그레이드를 지원하지 않는 SS H프론트엔드를 사용하여 업그"
+"레이드를 실행하고 있습니다. 'do-release-upgrade' 명령으로 텍스트모드 업그레이"
+"드를 사요해주십시오.\n"
 "\n"
 "업그레이드를 중지될 것입니다. SSH를 사용하지 않고 다시 시도하십시오."
 
@@ -255,8 +265,9 @@ msgid ""
 "If you continue, an additional ssh daemon will be started at port '%s'.\n"
 "Do you want to continue?"
 msgstr ""
-"현재 세션은 SSH에서 돌아가고 있습니다. SSH를 이용한 세션에서 업그레이드를 하는 것은 추천하지 않습니다. 업그레이드에 실패할 경우 "
-"복구하기가 힘들어 집니다.\n"
+"현재 세션은 SSH에서 돌아가고 있습니다. SSH를 이용한 세션에서 업그레이드를 하"
+"는 것은 추천하지 않습니다. 업그레이드에 실패할 경우 복구하기가 힘들어 집니"
+"다.\n"
 "\n"
 "진행하시면 '%s' 포트로 추가 SSH데몬을 시작할 것입니다.\n"
 "계속 진행하시겠습니까?"
@@ -272,8 +283,9 @@ msgid ""
 "started on port '%s'. If anything goes wrong with the running ssh you can "
 "still connect to the additional one.\n"
 msgstr ""
-"문제가 발생했을 때 복구를 쉽게 할 수 있도록 sshd 데몬을 포트 '%s'에 추가로 실행합니다. 현재 실행 중인 ssh에 문제가 "
-"발생해도 추가로 실행한 데몬을 통해 접속할 수 있습니다.\n"
+"문제가 발생했을 때 복구를 쉽게 할 수 있도록 sshd 데몬을 포트 '%s'에 추가로 실"
+"행합니다. 현재 실행 중인 ssh에 문제가 발생해도 추가로 실행한 데몬을 통해 접속"
+"할 수 있습니다.\n"
 
 #: ../DistUpgrade/DistUpgradeController.py:283
 #, python-format
@@ -283,8 +295,9 @@ msgid ""
 "with e.g.:\n"
 "'%s'"
 msgstr ""
-"방화벽을 사용 중이시라면 임시로 이 포트를 열어 주셔야 합니다. 포트를 여는 것은 잠재적으로 위험하기 때문에 자동으로 실행되지 않습니다. "
-"아래와 같이 포트를 여실 수 있습니다 : '%s'"
+"방화벽을 사용 중이시라면 임시로 이 포트를 열어 주셔야 합니다. 포트를 여는 것"
+"은 잠재적으로 위험하기 때문에 자동으로 실행되지 않습니다. 아래와 같이 포트를 "
+"여실 수 있습니다 : '%s'"
 
 #: ../DistUpgrade/DistUpgradeController.py:355
 #: ../DistUpgrade/DistUpgradeController.py:400
@@ -317,14 +330,17 @@ msgid ""
 "*No* changes written to a system directory from now until the next reboot "
 "are permanent."
 msgstr ""
-"이 업그레이드는 샌드 박스(테스트) 모드에서 실행하고 있습니다. 모든 바뀐 내용은 '%s'에 기록하며 다시 시작하게 되면 유실됩니다.\n"
+"이 업그레이드는 샌드 박스(테스트) 모드에서 실행하고 있습니다. 모든 바뀐 내용"
+"은 '%s'에 기록하며 다시 시작하게 되면 유실됩니다.\n"
 "\n"
-"지금부터 다음 다시 시작할 때까지 어떤 바뀐 내용도 시스템 디렉터리에 기록하지 않습니다."
+"지금부터 다음 다시 시작할 때까지 어떤 바뀐 내용도 시스템 디렉터리에 기록하지 "
+"않습니다."
 
 #: ../DistUpgrade/DistUpgradeController.py:401
 msgid ""
 "Your python install is corrupted. Please fix the '/usr/bin/python' symlink."
-msgstr "파이썬 설치가 잘못되었습니다. '/usr/bin/python' 심볼릭 링크를 수정하십시오."
+msgstr ""
+"파이썬 설치가 잘못되었습니다. '/usr/bin/python' 심볼릭 링크를 수정하십시오."
 
 #: ../DistUpgrade/DistUpgradeController.py:427
 msgid "Package 'debsig-verify' is installed"
@@ -337,7 +353,8 @@ msgid ""
 "run the upgrade again."
 msgstr ""
 "해당 패키지를 설치한 상태로는 업그레이드를 계속할 수 없습니다.\n"
-"시냅틱이나 'apt-get remove debsig-verify' 명령으로 제거한 후 다시 업그레이드를 수행하십시오."
+"시냅틱이나 'apt-get remove debsig-verify' 명령으로 제거한 후 다시 업그레이드"
+"를 수행하십시오."
 
 #: ../DistUpgrade/DistUpgradeController.py:440
 #, python-format
@@ -351,7 +368,8 @@ msgid ""
 "upgrade can not continue.\n"
 "Please make sure that the system directory is writable."
 msgstr ""
-"사용자 시스템의 시스템 디렉터리 '%s'에 기록할 수 없습니다. 업그레이드를 계속할 수 없습니다.\n"
+"사용자 시스템의 시스템 디렉터리 '%s'에 기록할 수 없습니다. 업그레이드를 계속"
+"할 수 없습니다.\n"
 "시스템 디렉터리에 기록할 수 있는 권한이 있는지 확인하십시오."
 
 #: ../DistUpgrade/DistUpgradeController.py:452
@@ -369,11 +387,13 @@ msgid ""
 "latest updates soon after upgrading.\n"
 "If you answer 'no' here, the network is not used at all."
 msgstr ""
-"업그레이드 프로그램은 업그레이드 중 인터넷을 이용해 자동으로 최신 업데이트를 다운로드해 설치할 수 있습니다. 인터넷에 연결되어 있다면 "
-"가급적 설치하는 것이 좋습니다.\n"
+"업그레이드 프로그램은 업그레이드 중 인터넷을 이용해 자동으로 최신 업데이트를 "
+"다운로드해 설치할 수 있습니다. 인터넷에 연결되어 있다면 가급적 설치하는 것이 "
+"좋습니다.\n"
 "\n"
-"업그레이드는 더 오래 걸리겠지만 완료 후에는 시스템이 완전히 최신 상태가 됩니다. 지금 설치를 하지 않기로 했다면 업그레이드를 마친 다음 "
-"즉시 최신 업데이트를 설치해야 합니다.\n"
+"업그레이드는 더 오래 걸리겠지만 완료 후에는 시스템이 완전히 최신 상태가 됩니"
+"다. 지금 설치를 하지 않기로 했다면 업그레이드를 마친 다음 즉시 최신 업데이트"
+"를 설치해야 합니다.\n"
 "'아니오'를 선택하면 네트워크를 이용하지 않습니다."
 
 #: ../DistUpgrade/DistUpgradeController.py:673
@@ -396,11 +416,11 @@ msgid ""
 "here it will update all '%s' to '%s' entries.\n"
 "If you select 'No' the upgrade will cancel."
 msgstr ""
-"저장소 정보를 찾아봤지만 업그레이드를 위한 미러 항목을 찾을 수 없습니다. 내부 미러를 운영 중이거나 혹은 미러 정보가 최신이 아닐 수 "
-"있습니다.\n"
+"저장소 정보를 찾아봤지만 업그레이드를 위한 미러 항목을 찾을 수 없습니다. 내"
+"부 미러를 운영 중이거나 혹은 미러 정보가 최신이 아닐 수 있습니다.\n"
 "\n"
-"그래도 'sources.list' 파일을 다시 작성 하시겠습니까? 여기서 '예'를 선택하면 모든 '%s' 항목을 '%s'(으)로  "
-"업데이트합니다.\n"
+"그래도 'sources.list' 파일을 다시 작성 하시겠습니까? 여기서 '예'를 선택하면 "
+"모든 '%s' 항목을 '%s'(으)로  업데이트합니다.\n"
 "'아니오'를 선택하면 업그레이드를 취소합니다."
 
 #. hm, still nothing useful ...
@@ -417,7 +437,8 @@ msgid ""
 "will cancel."
 msgstr ""
 "'sources.list' 파일을 찾아봤지만 '%s'에 대한 항목을 찾을 수 없습니다.\n"
-"'%s'에 대한 기본 항목을 추가하시겠습니까? '아니오'를 선택하면 업그레이드를 취소합니다."
+"'%s'에 대한 기본 항목을 추가하시겠습니까? '아니오'를 선택하면 업그레이드를 취"
+"소합니다."
 
 #: ../DistUpgrade/DistUpgradeController.py:757
 msgid "Repository information invalid"
@@ -427,7 +448,9 @@ msgstr "저장소 정보가 올바르지 않습니다"
 msgid ""
 "Upgrading the repository information resulted in a invalid file so a bug "
 "reporting process is being started."
-msgstr "저장소 정보를 업데이트한 결과 올바르지 않은 파일이 생성되었습니다. 버그 보고 작업을 시작합니다."
+msgstr ""
+"저장소 정보를 업데이트한 결과 올바르지 않은 파일이 생성되었습니다. 버그 보고 "
+"작업을 시작합니다."
 
 #: ../DistUpgrade/DistUpgradeController.py:765
 msgid "Third party sources disabled"
@@ -439,8 +462,9 @@ msgid ""
 "enable them after the upgrade with the 'software-properties' tool or your "
 "package manager."
 msgstr ""
-"souces.list에서 서드 파티 목록의 일부를 이용할 수 없습니다. 업그레이드를 마친 후 '소프트웨어 소스' 도구나 패키지 관리자를 "
-"이용해 다시 사용 할 수 있습니다."
+"souces.list에서 서드 파티 목록의 일부를 이용할 수 없습니다. 업그레이드를 마"
+"친 후 '소프트웨어 소스' 도구나 패키지 관리자를 이용해 다시 사용 할 수 있습니"
+"다."
 
 #: ../DistUpgrade/DistUpgradeController.py:806
 msgid "Package in inconsistent state"
@@ -458,8 +482,8 @@ msgid_plural ""
 "but no archive can be found for them. Please reinstall the packages manually "
 "or remove them from the system."
 msgstr[0] ""
-"'%s' 패키지는 불완전한 상태이며 다시 설치해야합니다만, 저장소에서 찾을 수 없습니다.  이 패키지를 직접 다시 설치하거나 시스템에서 "
-"제거하십시오."
+"'%s' 패키지는 불완전한 상태이며 다시 설치해야합니다만, 저장소에서 찾을 수 없"
+"습니다.  이 패키지를 직접 다시 설치하거나 시스템에서 제거하십시오."
 
 #: ../DistUpgrade/DistUpgradeController.py:857
 msgid "Error during update"
@@ -470,11 +494,12 @@ msgid ""
 "A problem occurred during the update. This is usually some sort of network "
 "problem, please check your network connection and retry."
 msgstr ""
-"업데이트 중 문제가 발생했습니다. 보통 네트워크 문제인 경우가 많습니다.네트워크의 연결 상태를 확인하시고 다시 시도하십시오."
+"업데이트 중 문제가 발생했습니다. 보통 네트워크 문제인 경우가 많습니다.네트워"
+"크의 연결 상태를 확인하시고 다시 시도하십시오."
 
 #. print "on_button_install_clicked"
 #: ../DistUpgrade/DistUpgradeController.py:867
-#: ../UpdateManager/UpdateManager.py:758
+#: ../UpdateManager/UpdateManager.py:749
 msgid "Not enough free disk space"
 msgstr "디스크 여유 공간이 충분하지 않습니다."
 
@@ -486,13 +511,14 @@ msgid ""
 "your trash and remove temporary packages of former installations using 'sudo "
 "apt-get clean'."
 msgstr ""
-"업그레이드를 중단했습니다. 이 업그레이드는 %s의 용량이 드라이브 '%s'에 필요합니다.최소한 %s의 용량을 '%s'에 확보해주십시오. "
-"휴지통을 비워주시고 'sudo apt-get clean' 명령으로 이전에 설치하며 만들어진 임시 패키지를 제거하십시오."
+"업그레이드를 중단했습니다. 이 업그레이드는 %s의 용량이 드라이브 '%s'에 필요합"
+"니다.최소한 %s의 용량을 '%s'에 확보해주십시오. 휴지통을 비워주시고 'sudo apt-"
+"get clean' 명령으로 이전에 설치하며 만들어진 임시 패키지를 제거하십시오."
 
 #. calc the dist-upgrade and see if the removals are ok/expected
 #. do the dist-upgrade
 #: ../DistUpgrade/DistUpgradeController.py:897
-#: ../DistUpgrade/DistUpgradeController.py:1664
+#: ../DistUpgrade/DistUpgradeController.py:1640
 msgid "Calculating the changes"
 msgstr "바뀐 내용을 계산하는 중"
 
@@ -509,10 +535,12 @@ msgstr "업그레이드 취소함"
 msgid ""
 "The upgrade will cancel now and the original system state will be restored. "
 "You can resume the upgrade at a later time."
-msgstr "업그레이드를 취소합니다. 시스템은 업그레이드 이전 상태로 돌아가며 업그레이드는 이후에도 언제든지 다시 할 수 있습니다."
+msgstr ""
+"업그레이드를 취소합니다. 시스템은 업그레이드 이전 상태로 돌아가며 업그레이드"
+"는 이후에도 언제든지 다시 할 수 있습니다."
 
 #: ../DistUpgrade/DistUpgradeController.py:1002
-#: ../DistUpgrade/DistUpgradeController.py:1136
+#: ../DistUpgrade/DistUpgradeController.py:1128
 msgid "Could not download the upgrades"
 msgstr "업그레이드 파일을 다운로드 할 수 없음"
 
@@ -520,178 +548,189 @@ msgstr "업그레이드 파일을 다운로드 할 수 없음"
 msgid ""
 "The upgrade has aborted. Please check your Internet connection or "
 "installation media and try again. All files downloaded so far have been kept."
-msgstr "업그레이드를 중단했습니다. 인터넷 연결이나 설치 매체를 확인한 후 다시 시도하십시오. 다운로드한 파일은 계속 보존합니다."
+msgstr ""
+"업그레이드를 중단했습니다. 인터넷 연결이나 설치 매체를 확인한 후 다시 시도하"
+"십시오. 다운로드한 파일은 계속 보존합니다."
 
 #. FIXME: strings are not good, but we are in string freeze
 #. currently
-#: ../DistUpgrade/DistUpgradeController.py:1087
-#: ../DistUpgrade/DistUpgradeController.py:1124
-#: ../DistUpgrade/DistUpgradeController.py:1229
+#: ../DistUpgrade/DistUpgradeController.py:1079
+#: ../DistUpgrade/DistUpgradeController.py:1116
+#: ../DistUpgrade/DistUpgradeController.py:1221
 msgid "Error during commit"
 msgstr "커밋 작업 중 오류 발생"
 
 #. generate a new cache
-#: ../DistUpgrade/DistUpgradeController.py:1089
-#: ../DistUpgrade/DistUpgradeController.py:1126
-#: ../DistUpgrade/DistUpgradeController.py:1268
+#: ../DistUpgrade/DistUpgradeController.py:1081
+#: ../DistUpgrade/DistUpgradeController.py:1118
+#: ../DistUpgrade/DistUpgradeController.py:1260
 msgid "Restoring original system state"
 msgstr "시스템을 이전의 상태로 복구하고 있습니다"
 
-#: ../DistUpgrade/DistUpgradeController.py:1090
-#: ../DistUpgrade/DistUpgradeController.py:1105
-#: ../DistUpgrade/DistUpgradeController.py:1127
+#: ../DistUpgrade/DistUpgradeController.py:1082
+#: ../DistUpgrade/DistUpgradeController.py:1097
+#: ../DistUpgrade/DistUpgradeController.py:1119
 msgid "Could not install the upgrades"
 msgstr "업그레이드를 깔지 못했습니다."
 
 #. invoke the frontend now and show a error message
-#: ../DistUpgrade/DistUpgradeController.py:1095
+#: ../DistUpgrade/DistUpgradeController.py:1087
 msgid ""
 "The upgrade has aborted. Your system could be in an unusable state. A "
 "recovery will run now (dpkg --configure -a)."
 msgstr ""
-"업그레이드를 중단했습니다. 시스템에 치명적인 오류가 발생했을 수 있습니다.복구(dpkg --configure -a) 명령을 실행하겠습니다."
+"업그레이드를 중단했습니다. 시스템에 치명적인 오류가 발생했을 수 있습니다.복구"
+"(dpkg --configure -a) 명령을 실행하겠습니다."
 
-#: ../DistUpgrade/DistUpgradeController.py:1100
+#: ../DistUpgrade/DistUpgradeController.py:1092
 #, python-format
 msgid ""
 "\n"
 "\n"
-"Please report this bug in a browser at "
-"http://bugs.launchpad.net/ubuntu/+source/update-manager/+filebug and attach "
-"the files in /var/log/dist-upgrade/ to the bug report.\n"
+"Please report this bug in a browser at http://bugs.launchpad.net/ubuntu/"
+"+source/update-manager/+filebug and attach the files in /var/log/dist-"
+"upgrade/ to the bug report.\n"
 "%s"
 msgstr ""
 "\n"
 "\n"
-"브라우저로 http://bugs.launchpad.net/ubuntu/+source/update-manager/+filebug 페이지로 "
-"이동한 후 버그 보고서에 /var/log/dist-upgrade/ 파일을 첨부하여 버그를 보고해주십시오.\n"
+"브라우저로 http://bugs.launchpad.net/ubuntu/+source/update-manager/+filebug "
+"페이지로 이동한 후 버그 보고서에 /var/log/dist-upgrade/ 파일을 첨부하여 버그"
+"를 보고해주십시오.\n"
 "%s"
 
-#: ../DistUpgrade/DistUpgradeController.py:1137
+#: ../DistUpgrade/DistUpgradeController.py:1129
 msgid ""
 "The upgrade has aborted. Please check your Internet connection or "
 "installation media and try again. "
-msgstr "업그레이드를 중단했습니다. 인터넷 연결이나 설치 매체를 확인한 후 다시 시도하십시오. "
+msgstr ""
+"업그레이드를 중단했습니다. 인터넷 연결이나 설치 매체를 확인한 후 다시 시도하"
+"십시오. "
 
-#: ../DistUpgrade/DistUpgradeController.py:1217
+#: ../DistUpgrade/DistUpgradeController.py:1209
 msgid "Remove obsolete packages?"
 msgstr "사용하지 못하게 된 패키지를 제거하시겠습니까?"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
-#: ../DistUpgrade/DistUpgrade.ui.h:8
+#: ../DistUpgrade/DistUpgradeController.py:1210
+#: ../DistUpgrade/DistUpgrade.ui.h:22
 msgid "_Keep"
 msgstr "유지(_K)"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
+#: ../DistUpgrade/DistUpgradeController.py:1210
 msgid "_Remove"
 msgstr "제거(_R)"
 
-#: ../DistUpgrade/DistUpgradeController.py:1230
+#: ../DistUpgrade/DistUpgradeController.py:1222
 msgid ""
 "A problem occurred during the clean-up. Please see the below message for "
 "more information. "
-msgstr "정리하는 도중에 문제가 발생하였습니다. 다음 메시지를 통해 더 많은 정보를 확인할 수 있습니다. "
+msgstr ""
+"정리하는 도중에 문제가 발생하였습니다. 다음 메시지를 통해 더 많은 정보를 확인"
+"할 수 있습니다. "
 
 #. FIXME: instead of error out, fetch and install it
 #. here
-#: ../DistUpgrade/DistUpgradeController.py:1306
+#: ../DistUpgrade/DistUpgradeController.py:1298
 msgid "Required depends is not installed"
 msgstr "필요한 의존 프로그램을 설치하지 않았습니다."
 
-#: ../DistUpgrade/DistUpgradeController.py:1307
+#: ../DistUpgrade/DistUpgradeController.py:1299
 #, python-format
 msgid "The required dependency '%s' is not installed. "
 msgstr "필요한 의존 프로그램 '%s'을(를) 설치하지 않습니다. "
 
 #. sanity check (check for ubuntu-desktop, brokenCache etc)
 #. then open the cache (again)
-#: ../DistUpgrade/DistUpgradeController.py:1568
-#: ../DistUpgrade/DistUpgradeController.py:1633
+#: ../DistUpgrade/DistUpgradeController.py:1544
+#: ../DistUpgrade/DistUpgradeController.py:1609
 msgid "Checking package manager"
 msgstr "패키지 관리자 확인 중"
 
-#: ../DistUpgrade/DistUpgradeController.py:1573
+#: ../DistUpgrade/DistUpgradeController.py:1549
 msgid "Preparing the upgrade failed"
 msgstr "업그레이드 준비에 실패했습니다"
 
-#: ../DistUpgrade/DistUpgradeController.py:1574
+#: ../DistUpgrade/DistUpgradeController.py:1550
 msgid ""
 "Preparing the system for the upgrade failed so a bug reporting process is "
 "being started."
 msgstr "시스템 업그레이드 준비를 실패했습니다. 버그 보고 작업을 시작합니다."
 
-#: ../DistUpgrade/DistUpgradeController.py:1588
+#: ../DistUpgrade/DistUpgradeController.py:1564
 msgid "Getting upgrade prerequisites failed"
 msgstr "업그레이드 사전 작업에 실패했습니다"
 
-#: ../DistUpgrade/DistUpgradeController.py:1589
+#: ../DistUpgrade/DistUpgradeController.py:1565
 msgid ""
 "The system was unable to get the prerequisites for the upgrade. The upgrade "
 "will abort now and restore the original system state.\n"
 "\n"
 "Additionally, a bug reporting process is being started."
 msgstr ""
-"시스템에서 업그레이드 사전 작업을 할 수 없습니다. 업그레이드를 취소한 후 이전 시스템 상태로 되돌립니다.\n"
+"시스템에서 업그레이드 사전 작업을 할 수 없습니다. 업그레이드를 취소한 후 이"
+"전 시스템 상태로 되돌립니다.\n"
 "\n"
 "추가적으로, 버그 보고 작업을 시작합니다."
 
-#: ../DistUpgrade/DistUpgradeController.py:1617
+#: ../DistUpgrade/DistUpgradeController.py:1593
 msgid "Updating repository information"
 msgstr "저장소 정보 업데이트 중"
 
-#: ../DistUpgrade/DistUpgradeController.py:1624
+#: ../DistUpgrade/DistUpgradeController.py:1600
 msgid "Failed to add the cdrom"
 msgstr "cdrom을 추가할 수 없음"
 
-#: ../DistUpgrade/DistUpgradeController.py:1625
+#: ../DistUpgrade/DistUpgradeController.py:1601
 msgid "Sorry, adding the cdrom was not successful."
 msgstr "죄송합니다. cdrom을 추사할 수 없습니다."
 
-#: ../DistUpgrade/DistUpgradeController.py:1653
+#: ../DistUpgrade/DistUpgradeController.py:1629
 msgid "Invalid package information"
 msgstr "올바르지 않은 패키지 정보"
 
-#: ../DistUpgrade/DistUpgradeController.py:1654
+#: ../DistUpgrade/DistUpgradeController.py:1630
 #, python-format
 msgid ""
 "After your package information was updated the essential package '%s' can "
 "not be found anymore so a bug reporting process is being started."
-msgstr "패키지 정보를 업데이트한 후 필수 패키지 '%s'을(를) 찾을 수 없습니다. 버그 보고 작업을 시작합니다."
+msgstr ""
+"패키지 정보를 업데이트한 후 필수 패키지 '%s'을(를) 찾을 수 없습니다. 버그 보"
+"고 작업을 시작합니다."
 
-#: ../DistUpgrade/DistUpgradeController.py:1670
-#: ../DistUpgrade/DistUpgradeController.py:1723
+#: ../DistUpgrade/DistUpgradeController.py:1646
+#: ../DistUpgrade/DistUpgradeController.py:1699
 msgid "Fetching"
 msgstr "가져오는 중"
 
-#: ../DistUpgrade/DistUpgradeController.py:1676
-#: ../DistUpgrade/DistUpgradeController.py:1727
+#: ../DistUpgrade/DistUpgradeController.py:1652
+#: ../DistUpgrade/DistUpgradeController.py:1703
 msgid "Upgrading"
 msgstr "업그레이드 중"
 
 #. don't abort here, because it would restore the sources.list
-#: ../DistUpgrade/DistUpgradeController.py:1681
-#: ../DistUpgrade/DistUpgradeController.py:1729
-#: ../DistUpgrade/DistUpgradeController.py:1736
-#: ../DistUpgrade/DistUpgradeController.py:1747
+#: ../DistUpgrade/DistUpgradeController.py:1657
+#: ../DistUpgrade/DistUpgradeController.py:1705
+#: ../DistUpgrade/DistUpgradeController.py:1712
+#: ../DistUpgrade/DistUpgradeController.py:1723
 msgid "Upgrade complete"
 msgstr "업그레이드 완료"
 
-#: ../DistUpgrade/DistUpgradeController.py:1682
-#: ../DistUpgrade/DistUpgradeController.py:1730
-#: ../DistUpgrade/DistUpgradeController.py:1737
+#: ../DistUpgrade/DistUpgradeController.py:1658
+#: ../DistUpgrade/DistUpgradeController.py:1706
+#: ../DistUpgrade/DistUpgradeController.py:1713
 msgid ""
 "The upgrade has completed but there were errors during the upgrade process."
 msgstr "업그레이드를 완료했지만 업그레이드 과정 중 오류가 발생하였습니다."
 
-#: ../DistUpgrade/DistUpgradeController.py:1689
+#: ../DistUpgrade/DistUpgradeController.py:1665
 msgid "Searching for obsolete software"
 msgstr "못 쓰게 된 소프트웨어를 검색하는 중"
 
-#: ../DistUpgrade/DistUpgradeController.py:1698
+#: ../DistUpgrade/DistUpgradeController.py:1674
 msgid "System upgrade is complete."
 msgstr "시스템 업그레이드를 완료했습니다."
 
-#: ../DistUpgrade/DistUpgradeController.py:1748
+#: ../DistUpgrade/DistUpgradeController.py:1724
 msgid "The partial upgrade was completed."
 msgstr "부분 업그레이드를 완료했습니다."
 
@@ -705,35 +744,37 @@ msgid ""
 "software is no longer supported, please switch it off and run the upgrade "
 "again when this is done."
 msgstr ""
-"이 시스템은 /proc/mounts 안에 'evms' 볼륨 매니저를 사용하고 있습니다.  'evms'은 더 이상 지원되지 않으므로, 종료 "
-"후 업그레이드를 다시 실행하십시오."
+"이 시스템은 /proc/mounts 안에 'evms' 볼륨 매니저를 사용하고 있습니다.  "
+"'evms'은 더 이상 지원되지 않으므로, 종료 후 업그레이드를 다시 실행하십시오."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
-msgstr "그래픽 카드가 우분투 12.04 장기 지원판을 지원하지 않습니다."
+"Your graphics hardware may not be fully supported in elementary OS 11.04."
+msgstr ""
+"사용 중인 그래픽 카드가 우분투 11.04 버전을 완전히 지원하지 않을 수 있습니다."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
-"and you may encounter problems after the upgrade. For more information see "
-"https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
+"The support in elementary OS 11.04 for your intel graphics hardware is "
+"limited and you may encounter problems after the upgrade. Do you want to "
 "continue with the upgrade?"
 msgstr ""
-"인텔 그래픽 카드가 우분투 12.04 장기 지원판을 완전하게 지원하지 않아 업그레이드 후 문제가 발생할 수 있습니다. 더 자세한 내용은 "
-"https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx 페이지를 확인해주십시오. "
-"업그레이드를 계속 진행하시겠습니까?"
+"사용 중인 인텔 그래픽 하드웨어를 우분투 11.04 버전에서 사용하는 경우 기능 상"
+"의 제약이 있을 수 있으며 업그레이드 후 문제가 발생할 수 있습니다. 업그레이드"
+"를 계속하시겠습니까?"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:520
-#: ../DistUpgrade/DistUpgradeQuirks.py:548
-#: ../DistUpgrade/DistUpgradeQuirks.py:575
+#: ../DistUpgrade/DistUpgradeQuirks.py:518
+#: ../DistUpgrade/DistUpgradeQuirks.py:546
+#: ../DistUpgrade/DistUpgradeQuirks.py:573
 msgid ""
 "Upgrading may reduce desktop effects, and performance in games and other "
 "graphically intensive programs."
-msgstr "업그레이드로 인해 데스크탑 효과나 게임, 그래픽 관련 프로그램의 성능이 줄어들 수 있습니다."
+msgstr ""
+"업그레이드로 인해 데스크탑 효과나 게임, 그래픽 관련 프로그램의 성능이 줄어들 "
+"수 있습니다."
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:524
-#: ../DistUpgrade/DistUpgradeQuirks.py:552
+#: ../DistUpgrade/DistUpgradeQuirks.py:522
+#: ../DistUpgrade/DistUpgradeQuirks.py:550
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
@@ -741,65 +782,69 @@ msgid ""
 "\n"
 "Do you want to continue?"
 msgstr ""
-"이 컴퓨터는 현재 NVIDIA사의 'nvidia' 그래픽 드라이버를 사용하고 있습니다. 이 드라이버는 우분투 10.04 LTS을 지원하는 "
-"버전이 없습니다.\n"
+"이 컴퓨터는 현재 NVIDIA사의 'nvidia' 그래픽 드라이버를 사용하고 있습니다. 이 "
+"드라이버는 우분투 10.04 LTS을 지원하는 버전이 없습니다.\n"
 "계속 진행하시겠습니까?"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:579
+#: ../DistUpgrade/DistUpgradeQuirks.py:577
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in elementary OS 10.04 "
-"LTS.\n"
+"of this driver is available that works with your hardware in elementary OS "
+"10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
-"이 컴퓨터는 현재 AMD사의 'fglrx' 그래픽 드라이버를 사용하고 있습니다. 이 드라이버는 우분투 10.04 LTS을 지원하는 버전이 "
-"없습니다.\n"
+"이 컴퓨터는 현재 AMD사의 'fglrx' 그래픽 드라이버를 사용하고 있습니다. 이 드라"
+"이버는 우분투 10.04 LTS을 지원하는 버전이 없습니다.\n"
 "계속 진행하시겠습니까?"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:609
+#: ../DistUpgrade/DistUpgradeQuirks.py:607
 msgid "No i686 CPU"
 msgstr "i686 CPU 아님"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:610
+#: ../DistUpgrade/DistUpgradeQuirks.py:608
 msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
 "elementary OS release with this hardware."
 msgstr ""
-"현 시스템은 i586 호환 CPU가 아니거나, 'cmov' 기능이 없는 CPU를 사용하고 있습니다. 모든 패키지는 최소 i686 호환 "
-"CPU가 필요합니다. 현 시스템에서 새로운 우분투 버전으로 업그레이드 할 수 없습니다."
+"현 시스템은 i586 호환 CPU가 아니거나, 'cmov' 기능이 없는 CPU를 사용하고 있습"
+"니다. 모든 패키지는 최소 i686 호환 CPU가 필요합니다. 현 시스템에서 새로운 우"
+"분투 버전으로 업그레이드 할 수 없습니다."
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:646
+#: ../DistUpgrade/DistUpgradeQuirks.py:644
 msgid "No ARMv6 CPU"
 msgstr "ARMv6 CPU 아님"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:647
+#: ../DistUpgrade/DistUpgradeQuirks.py:645
 msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
 "minimal architecture. It is not possible to upgrade your system to a new "
 "elementary OS release with this hardware."
 msgstr ""
-"시스템이 ARMv6 보다 더 오래된 아키텍처의 ARM CPU를 사용하고 있습니다. 우분투 karmic의 모든 꾸러미는 ARMv6에 최적화 "
-"되어있기 때문에 최소 CPU로 ARMv6이 필요합니다. 현재 하드웨어로는 새로운 우분투 버전으로 시스템을 업그레이드 할 수 없습니다."
+"시스템이 ARMv6 보다 더 오래된 아키텍처의 ARM CPU를 사용하고 있습니다. 우분투 "
+"karmic의 모든 꾸러미는 ARMv6에 최적화 되어있기 때문에 최소 CPU로 ARMv6이 필요"
+"합니다. 현재 하드웨어로는 새로운 우분투 버전으로 시스템을 업그레이드 할 수 없"
+"습니다."
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:667
+#: ../DistUpgrade/DistUpgradeQuirks.py:665
 msgid "No init available"
 msgstr "init 사용 불가"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:668
+#: ../DistUpgrade/DistUpgradeQuirks.py:666
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
-"environment, requiring an update to your virtual machine configuration "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type "
+"of environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
 msgstr ""
-"현재 시스템은 init 데몬(예:Linux-VServer)가 없는 가상 환경인 것으로 감지되었습니다. 우분투 10.04 LTS는 이러한 "
-"환경에서 제대로 동작할 수 없으며 우선 가상 환경의 설정을 조정해야합니다.\n"
+"현재 시스템은 init 데몬(예:Linux-VServer)가 없는 가상 환경인 것으로 감지되었"
+"습니다. 우분투 10.04 LTS는 이러한 환경에서 제대로 동작할 수 없으며 우선 가상 "
+"환경의 설정을 조정해야합니다.\n"
 "\n"
 "계속 진행하시겠습니까?"
 
@@ -904,7 +949,9 @@ msgstr "'%s'(을)를 설치할 수 없음"
 msgid ""
 "The upgrade will continue but the '%s' package may not be in a working "
 "state. Please consider submitting a bug report about it."
-msgstr "업그레이드는 계속 진행하지만 '%s' 패키지가 동작하지 않을 수도 있습니다. 이 버그를 보고해주십시오."
+msgstr ""
+"업그레이드는 계속 진행하지만 '%s' 패키지가 동작하지 않을 수도 있습니다. 이 버"
+"그를 보고해주십시오."
 
 #. self.expander.set_expanded(True)
 #: ../DistUpgrade/DistUpgradeViewGtk.py:231
@@ -924,7 +971,8 @@ msgstr ""
 msgid ""
 "You will lose any changes you have made to this configuration file if you "
 "choose to replace it with a newer version."
-msgstr "새로운 버전으로 바꾸기를 선택하면 이전 설정 파일의 바뀐 내용을 잃게 됩니다."
+msgstr ""
+"새로운 버전으로 바꾸기를 선택하면 이전 설정 파일의 바뀐 내용을 잃게 됩니다."
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:250
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:253
@@ -941,14 +989,15 @@ msgstr "치명적인 오류 발생"
 #: ../DistUpgrade/DistUpgradeViewGtk.py:464
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:470
 msgid ""
-"Please report this as a bug (if you haven't already) and include the files "
-"/var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
+"Please report this as a bug (if you haven't already) and include the files /"
+"var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
 "report. The upgrade has aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
-"이 버그를 /var/log/dist-upgrade/main.log와 /var/log/dist-upgrade/apt.log를 첨부하여 "
-"보고해주십시오. 업그레이드를 중단했습니다.\n"
-"기존 sources.list 파일은 /etc/apt/sources.list.distUpgrade 파일로 저장했습니다."
+"이 버그를 /var/log/dist-upgrade/main.log와 /var/log/dist-upgrade/apt.log를 첨"
+"부하여 보고해주십시오. 업그레이드를 중단했습니다.\n"
+"기존 sources.list 파일은 /etc/apt/sources.list.distUpgrade 파일로 저장했습니"
+"다."
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:481
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:487
@@ -960,7 +1009,9 @@ msgstr "컨트롤-C 누름"
 msgid ""
 "This will abort the operation and may leave the system in a broken state. "
 "Are you sure you want to do that?"
-msgstr "이 작업을 취소하면 시스템을 사용할 수 없게 될 수도 있습니다. 정말 취소하시겠습니까?"
+msgstr ""
+"이 작업을 취소하면 시스템을 사용할 수 없게 될 수도 있습니다. 정말 취소하시겠"
+"습니까?"
 
 #. append warning
 #: ../DistUpgrade/DistUpgradeViewGtk.py:630
@@ -1045,7 +1096,7 @@ msgstr "정보"
 
 #: ../DistUpgrade/DistUpgradeViewKDE.py:741
 #: ../DistUpgrade/DistUpgradeViewKDE.py:786
-#: ../DistUpgrade/DistUpgradeViewKDE.py:789 ../DistUpgrade/DistUpgrade.ui.h:7
+#: ../DistUpgrade/DistUpgradeViewKDE.py:789 ../DistUpgrade/DistUpgrade.ui.h:11
 msgid "Details"
 msgstr "자세한 내용"
 
@@ -1084,8 +1135,8 @@ msgstr "다시 시작해야 합니다."
 msgid "<b><big>Restart the system to complete the upgrade</big></b>"
 msgstr "<b><big>업그레이드를 완료하기 위해 시스템을 다시 시작합니다.</big></b>"
 
-#: ../DistUpgrade/DistUpgradeViewKDE.py:802 ../DistUpgrade/DistUpgrade.ui.h:14
-#: ../data/gtkbuilder/UpdateManager.ui.h:26
+#: ../DistUpgrade/DistUpgradeViewKDE.py:802 ../DistUpgrade/DistUpgrade.ui.h:25
+#: ../data/gtkbuilder/UpdateManager.ui.h:32
 msgid "_Restart Now"
 msgstr "지금 다시 시작(_R)"
 
@@ -1099,7 +1150,8 @@ msgid ""
 msgstr ""
 "<b><big>진행 중인 업그레이드를 취소하시겠습니까?</big></b>\n"
 "\n"
-"업그레이드 중간에 취소하면 시스템을 사용할 수 없게 될 수 있습니다. 업그레이드를 계속 진행할 것을 강력하게 추천합니다."
+"업그레이드 중간에 취소하면 시스템을 사용할 수 없게 될 수 있습니다. 업그레이드"
+"를 계속 진행할 것을 강력하게 추천합니다."
 
 #: ../DistUpgrade/DistUpgradeViewKDE.py:824
 msgid "Cancel Upgrade?"
@@ -1133,10 +1185,10 @@ msgstr[0] "%li 초"
 #. information here if you shuffle %(str_days)s %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:80
 #, python-format
@@ -1147,10 +1199,10 @@ msgstr "%(str_days)s %(str_hours)s"
 #. information here if you shuffle %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:98
 #, python-format
@@ -1164,7 +1216,9 @@ msgstr "%(str_hours)s %(str_minutes)s"
 msgid ""
 "This download will take about %s with a 1Mbit DSL connection and about %s "
 "with a 56k modem."
-msgstr "이 다운로드는 1Mbit DSL 연결로는 약 %s, 56k 모뎀으로는 약 %s 정도 가 필요합니다."
+msgstr ""
+"이 다운로드는 1Mbit DSL 연결로는 약 %s, 56k 모뎀으로는 약 %s 정도 가 필요합니"
+"다."
 
 #. if we have a estimated speed, use it
 #: ../DistUpgrade/DistUpgradeView.py:153
@@ -1172,7 +1226,7 @@ msgstr "이 다운로드는 1Mbit DSL 연결로는 약 %s, 56k 모뎀으로는 �
 msgid "This download will take about %s with your connection. "
 msgstr "현재 연결 상태로는 다운로드 과정에 약 %s 정도가 필요합니다. "
 
-#: ../DistUpgrade/DistUpgradeView.py:255 ../DistUpgrade/DistUpgrade.ui.h:21
+#: ../DistUpgrade/DistUpgradeView.py:255 ../DistUpgrade/DistUpgrade.ui.h:16
 msgid "Preparing to upgrade"
 msgstr "업그레이드를 준비하는 중"
 
@@ -1180,15 +1234,15 @@ msgstr "업그레이드를 준비하는 중"
 msgid "Getting new software channels"
 msgstr "새 소프트웨어 채널을 가져오는 중"
 
-#: ../DistUpgrade/DistUpgradeView.py:257 ../DistUpgrade/DistUpgrade.ui.h:23
+#: ../DistUpgrade/DistUpgradeView.py:257 ../DistUpgrade/DistUpgrade.ui.h:14
 msgid "Getting new packages"
 msgstr "새 패키지를 가져오는 중"
 
-#: ../DistUpgrade/DistUpgradeView.py:258 ../DistUpgrade/DistUpgrade.ui.h:26
+#: ../DistUpgrade/DistUpgradeView.py:258 ../DistUpgrade/DistUpgrade.ui.h:15
 msgid "Installing the upgrades"
 msgstr "업그레이드를 까는 중"
 
-#: ../DistUpgrade/DistUpgradeView.py:259 ../DistUpgrade/DistUpgrade.ui.h:25
+#: ../DistUpgrade/DistUpgradeView.py:259 ../DistUpgrade/DistUpgrade.ui.h:10
 msgid "Cleaning up"
 msgstr "마무리 중"
 
@@ -1200,7 +1254,9 @@ msgid ""
 msgid_plural ""
 "%(amount)d installed packages are no longer supported by Canonical. You can "
 "still get support from the community."
-msgstr[0] "설치한 패키지 중 %(amount)d개는 더 이상 캐노니컬이 지원하지 않습니다.하지만 공동체는 계속 지원합니다."
+msgstr[0] ""
+"설치한 패키지 중 %(amount)d개는 더 이상 캐노니컬이 지원하지 않습니다.하지만 "
+"공동체는 계속 지원합니다."
 
 #. FIXME: make those two separate lines to make it clear
 #. that the "%" applies to the result of ngettext
@@ -1237,20 +1293,24 @@ msgstr ""
 msgid ""
 "Installing the upgrade can take several hours. Once the download has "
 "finished, the process cannot be canceled."
-msgstr "업그레이드를 다운로드하고 설치하는 것은 긴 시간이 필요할 수도 있으며, 한번 다운로드가 끝나면 취소할 수 없습니다."
+msgstr ""
+"업그레이드를 다운로드하고 설치하는 것은 긴 시간이 필요할 수도 있으며, 한번 다"
+"운로드가 끝나면 취소할 수 없습니다."
 
 #: ../DistUpgrade/DistUpgradeView.py:378
 msgid ""
 "Fetching and installing the upgrade can take several hours. Once the "
 "download has finished, the process cannot be canceled."
-msgstr "업그레이드를 다운로드하고 설치하는 것은 수 시간이 필요할 수도 있으며, 한번 다운로드가 끝나면 취소할 수 없습니다."
+msgstr ""
+"업그레이드를 다운로드하고 설치하는 것은 수 시간이 필요할 수도 있으며, 한번 다"
+"운로드가 끝나면 취소할 수 없습니다."
 
 #: ../DistUpgrade/DistUpgradeView.py:383
 msgid "Removing the packages can take several hours. "
 msgstr "패키지 제거는 수 시간이 걸릴 수 있습니다. "
 
 #. FIXME: this should go into DistUpgradeController
-#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:683
+#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:674
 msgid "The software on this computer is up to date."
 msgstr "이 컴퓨터의 소프트웨어를 모두 업데이트했습니다."
 
@@ -1294,8 +1354,8 @@ msgid ""
 "This is most likely a bug in the upgrade tool. Please report it as a bug "
 "using the command 'ubuntu-bug update-manager'."
 msgstr ""
-"업그레이드 도구에 버그가 있을 가능성이 높습니다. 터미널에서 'ubuntu-bug update-manager' 명령을 사용하여 이 버그를 "
-"보고해 주십시오."
+"업그레이드 도구에 버그가 있을 가능성이 높습니다. 터미널에서 'ubuntu-bug "
+"update-manager' 명령을 사용하여 이 버그를 보고해 주십시오."
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:206
 #: ../UpdateManager/Core/DistUpgradeFetcherCore.py:206
@@ -1327,7 +1387,8 @@ msgstr "인증 실패"
 msgid ""
 "Authenticating the upgrade failed. There may be a problem with the network "
 "or with the server. "
-msgstr "업그레이드를 인증할 수 없습니다.네트워크나 서버에 문제가 있을 수 있습니다. "
+msgstr ""
+"업그레이드를 인증할 수 없습니다.네트워크나 서버에 문제가 있을 수 있습니다. "
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:258
 #: ../UpdateManager/Core/DistUpgradeFetcherCore.py:258
@@ -1339,7 +1400,9 @@ msgstr "압축 해체 실패"
 msgid ""
 "Extracting the upgrade failed. There may be a problem with the network or "
 "with the server. "
-msgstr "업그레이드의 압축을 해체할 수 없습니다. 네트워크나 서버에 문제가 있을 수 있습니다. "
+msgstr ""
+"업그레이드의 압축을 해체할 수 없습니다. 네트워크나 서버에 문제가 있을 수 있습"
+"니다. "
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:264
 #: ../UpdateManager/Core/DistUpgradeFetcherCore.py:264
@@ -1351,7 +1414,8 @@ msgstr "검증 실패"
 msgid ""
 "Verifying the upgrade failed.  There may be a problem with the network or "
 "with the server. "
-msgstr "업그레이드를 검증할 수 없습니다.  네트워크나 서버에 문제가 있을 수 있습니다. "
+msgstr ""
+"업그레이드를 검증할 수 없습니다.  네트워크나 서버에 문제가 있을 수 있습니다. "
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:279
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:285
@@ -1366,8 +1430,8 @@ msgid ""
 "This usually is caused by a system where /tmp is mounted noexec. Please "
 "remount without noexec and run the upgrade again."
 msgstr ""
-"이 것은 보통 /tmp 디렉터리를 noexec로 마운트한 시스템에서 발생합니다. noexec 없이 다시 마운트한 후 업그레이드를 "
-"시작하십시오."
+"이 것은 보통 /tmp 디렉터리를 noexec로 마운트한 시스템에서 발생합니다. noexec "
+"없이 다시 마운트한 후 업그레이드를 시작하십시오."
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:286
 #: ../UpdateManager/Core/DistUpgradeFetcherCore.py:286
@@ -1377,13 +1441,13 @@ msgstr "오류 메시지는 '%s'입니다."
 
 #: ../DistUpgrade/DistUpgradeViewText.py:91
 msgid ""
-"Please report this as a bug and include the files /var/log/dist-"
-"upgrade/main.log and /var/log/dist-upgrade/apt.log in your report. The "
-"upgrade has aborted.\n"
+"Please report this as a bug and include the files /var/log/dist-upgrade/main."
+"log and /var/log/dist-upgrade/apt.log in your report. The upgrade has "
+"aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
-"버그를 /var/log/dist-upgrade/main.log 파일과 /var/log/dist-upgrade/apt.log파일을 보고서에 "
-"첨부하여 보고해주십시오. 업그레이드를 취소합니다.\n"
+"버그를 /var/log/dist-upgrade/main.log 파일과 /var/log/dist-upgrade/apt.log파"
+"일을 보고서에 첨부하여 보고해주십시오. 업그레이드를 취소합니다.\n"
 "원본 소스 목록을 /etc/apt/sources.list.distUpgrade 파일에 저장했습니다."
 
 #: ../DistUpgrade/DistUpgradeViewText.py:115
@@ -1461,14 +1525,10 @@ msgstr ""
 "'y'를 선택하시면 시스템이 다시 시작합니다."
 
 #: ../DistUpgrade/DistUpgrade.ui.h:1
-msgid "_Cancel Upgrade"
-msgstr "업그레이드 취소(_C)"
+msgid "    "
+msgstr "    "
 
 #: ../DistUpgrade/DistUpgrade.ui.h:2
-msgid "_Resume Upgrade"
-msgstr "업그레이드 계속(_R)"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:3
 msgid ""
 "<b><big>Cancel the running upgrade?</big></b>\n"
 "\n"
@@ -1477,33 +1537,10 @@ msgid ""
 msgstr ""
 "<b><big>실행 중인 업그레이드를 취소하시겠습니까?</big></b>\n"
 "\n"
-"업그레이드를 취소하면 시스템을 사용할 수 없을 가능성이 있습니다.업그레이드를 계속 하는 것을 강력히 추천합니다."
+"업그레이드를 취소하면 시스템을 사용할 수 없을 가능성이 있습니다.업그레이드를 "
+"계속 하는 것을 강력히 추천합니다."
 
-#: ../DistUpgrade/DistUpgrade.ui.h:6
-msgid "_Start Upgrade"
-msgstr "업그레이드 시작(_S)"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:9
-msgid "_Replace"
-msgstr "바꾸기(_R)"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:10
-msgid "Difference between the files"
-msgstr "파일 간의 차이점"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:11
-msgid "_Report Bug"
-msgstr "버그 보고(_R)"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:12
-msgid "_Continue"
-msgstr "계속(_C)"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:13
-msgid "<b><big>Start the upgrade?</big></b>"
-msgstr "<b><big>업그레이드를 시작하시겠습니까?</big></b>"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:15
+#: ../DistUpgrade/DistUpgrade.ui.h:5
 msgid ""
 "<b><big>Restart the system to complete the upgrade</big></b>\n"
 "\n"
@@ -1513,29 +1550,57 @@ msgstr ""
 "\n"
 "계속하기 전에 작업을 저장해 주십시오."
 
-#: ../DistUpgrade/DistUpgrade.ui.h:18
-msgid "Distribution Upgrade"
-msgstr "배포판 업그레이드"
+#: ../DistUpgrade/DistUpgrade.ui.h:8
+msgid "<b><big>Start the upgrade?</big></b>"
+msgstr "<b><big>업그레이드를 시작하시겠습니까?</big></b>"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:19
+#: ../DistUpgrade/DistUpgrade.ui.h:9
 msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr "<b><big>우분투를 12.04버전으로 업그레이드합니다.</big></b>"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:20
-msgid "    "
-msgstr "    "
+#: ../DistUpgrade/DistUpgrade.ui.h:12
+msgid "Difference between the files"
+msgstr "파일 간의 차이점"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:22
-msgid "Setting new software channels"
-msgstr "새 소프트웨어 채널을 설정하는 중"
+#: ../DistUpgrade/DistUpgrade.ui.h:13
+msgid "Distribution Upgrade"
+msgstr "배포판 업그레이드"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:24
+#: ../DistUpgrade/DistUpgrade.ui.h:17
 msgid "Restarting the computer"
 msgstr "시스템 다시 시작"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:27
+#: ../DistUpgrade/DistUpgrade.ui.h:18
+msgid "Setting new software channels"
+msgstr "새 소프트웨어 채널을 설정하는 중"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:19
 msgid "Terminal"
 msgstr "터미널"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:20
+msgid "_Cancel Upgrade"
+msgstr "업그레이드 취소(_C)"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:21
+msgid "_Continue"
+msgstr "계속(_C)"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:23
+msgid "_Replace"
+msgstr "바꾸기(_R)"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:24
+msgid "_Report Bug"
+msgstr "버그 보고(_R)"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:26
+msgid "_Resume Upgrade"
+msgstr "업그레이드 계속(_R)"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:27
+msgid "_Start Upgrade"
+msgstr "업그레이드 시작(_S)"
 
 #: ../UpdateManager/backend/InstallBackendSynaptic.py:60
 msgid "Please wait, this can take some time."
@@ -1571,8 +1636,8 @@ msgid "Upgrade"
 msgstr "업그레이드"
 
 #: ../UpdateManager/DistUpgradeFetcherKDE.py:89
-#: ../data/gtkbuilder/UpdateManager.ui.h:20
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:2
+#: ../data/gtkbuilder/UpdateManager.ui.h:13
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:4
 msgid "Release Notes"
 msgstr "릴리즈 정보"
 
@@ -1610,90 +1675,86 @@ msgstr "%(total)li개 중 %(current)li번째 파일을 %(speed)s/s의 속도로 
 msgid "Downloading file %(current)li of %(total)li"
 msgstr "%(total)li개 중 %(current)li번째 파일을 다운로드 중"
 
-#: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
+#: ../UpdateManager/UpdateManager.py:103 ../do-release-upgrade:95
 msgid "Your elementary OS release is not supported anymore."
 msgstr "현재 사용 중인 우분투 배포판은 더 이상 지원하지 않습니다."
 
-#: ../UpdateManager/UpdateManager.py:105
+#: ../UpdateManager/UpdateManager.py:104
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
 "upgrade to a later version of elementary OS."
-msgstr "이후 보안 패치, 중요한 업데이트를 받을 수 없습니다. 최신 버전으로 업그레이드 하십시오."
+msgstr ""
+"이후 보안 패치, 중요한 업데이트를 받을 수 없습니다. 최신 버전으로 업그레이드 "
+"하십시오."
 
-#: ../UpdateManager/UpdateManager.py:113
+#: ../UpdateManager/UpdateManager.py:112
 msgid "Upgrade information"
 msgstr "업그레이드 정보"
 
-#: ../UpdateManager/UpdateManager.py:229
-#: ../UpdateManagerText/UpdateManagerText.py:32
-msgid "Install"
-msgstr "설치"
-
-#: ../UpdateManager/UpdateManager.py:231
-msgid "Name"
-msgstr "이름"
-
 #. upload_archive = version_match.group(2).strip()
-#: ../UpdateManager/UpdateManager.py:391
+#: ../UpdateManager/UpdateManager.py:387
 #, python-format
 msgid "Version %s: \n"
 msgstr "버전 %s: \n"
 
-#: ../UpdateManager/UpdateManager.py:453
+#: ../UpdateManager/UpdateManager.py:444
 msgid ""
 "No network connection detected, you can not download changelog information."
-msgstr "네트워크에 연결되어 있지 않습니다. 바뀐 내용 목록을 다운로드할 수 없습니다."
+msgstr ""
+"네트워크에 연결되어 있지 않습니다. 바뀐 내용 목록을 다운로드할 수 없습니다."
 
-#: ../UpdateManager/UpdateManager.py:461
+#: ../UpdateManager/UpdateManager.py:452
 msgid "Downloading list of changes..."
 msgstr "바뀐 내용 목록을 다운로드하고 있습니다..."
 
-#: ../UpdateManager/UpdateManager.py:505
+#: ../UpdateManager/UpdateManager.py:496
 msgid "_Deselect All"
 msgstr "모든 선택 취소(_D)"
 
-#: ../UpdateManager/UpdateManager.py:511
+#: ../UpdateManager/UpdateManager.py:502
 msgid "Select _All"
 msgstr "모두 선택(_A)"
 
-#: ../UpdateManager/UpdateManager.py:571
+#: ../UpdateManager/UpdateManager.py:562
 #, python-format
 msgid "%(count)s update has been selected."
 msgid_plural "%(count)s updates have been selected."
 msgstr[0] "%(count)s개의 업데이트가 선택 되었습니다."
 
-#: ../UpdateManager/UpdateManager.py:575
+#: ../UpdateManager/UpdateManager.py:566
 #, python-format
 msgid "%s will be downloaded."
 msgstr "%s을(를) 다운로드 하게됩니다."
 
-#: ../UpdateManager/UpdateManager.py:587
+#: ../UpdateManager/UpdateManager.py:578
 msgid "The update has already been downloaded, but not installed."
 msgid_plural "The updates have already been downloaded, but not installed."
 msgstr[0] "업데이트를 이미 다운로드했으나 설치하지 않았습니다."
 
-#: ../UpdateManager/UpdateManager.py:592
+#: ../UpdateManager/UpdateManager.py:583
 msgid "There are no updates to install."
 msgstr "설치할 업데이트가 없습니다."
 
 #. TRANSLATORS: this allows to switch the order of the count of
 #. updates and the download size string (if needed)
-#: ../UpdateManager/UpdateManager.py:598
+#: ../UpdateManager/UpdateManager.py:589
 #, python-format
 msgid "%(count_str)s %(download_str)s"
 msgstr "%(count_str)s %(download_str)s"
 
-#: ../UpdateManager/UpdateManager.py:605
+#: ../UpdateManager/UpdateManager.py:596
 msgid "Unknown download size."
 msgstr "다운로드 크기 알 수 없음"
 
-#: ../UpdateManager/UpdateManager.py:631
+#: ../UpdateManager/UpdateManager.py:622
 msgid ""
 "It is unknown when the package information was updated last. Please click "
 "the 'Check' button to update the information."
-msgstr "패키지 정보를 언제 마지막으로 업데이트했는지 알 수 없습니다. 정보를 업데이트하려면 '확인' 단추를 눌러주십시오."
+msgstr ""
+"패키지 정보를 언제 마지막으로 업데이트했는지 알 수 없습니다. 정보를 업데이트"
+"하려면 '확인' 단추를 눌러주십시오."
 
-#: ../UpdateManager/UpdateManager.py:637
+#: ../UpdateManager/UpdateManager.py:628
 #, python-format
 msgid ""
 "The package information was last updated %(days_ago)s days ago.\n"
@@ -1702,14 +1763,13 @@ msgstr ""
 "패키지 정보를 %(days_ago)s일 전에 업데이트했습니다.\n"
 "아래 '검사' 단추를 눌러 새로운 소프트웨어 업데이트가 있는지 확인하십시오."
 
-#: ../UpdateManager/UpdateManager.py:642
+#: ../UpdateManager/UpdateManager.py:633
 #, python-format
 msgid "The package information was last updated %(days_ago)s day ago."
-msgid_plural ""
-"The package information was last updated %(days_ago)s days ago."
+msgid_plural "The package information was last updated %(days_ago)s days ago."
 msgstr[0] "패키지 정보를 %(days_ago)s일 전에 업데이트했습니다."
 
-#: ../UpdateManager/UpdateManager.py:646
+#: ../UpdateManager/UpdateManager.py:637
 #, python-format
 msgid "The package information was last updated %(hours_ago)s hour ago."
 msgid_plural ""
@@ -1717,74 +1777,81 @@ msgid_plural ""
 msgstr[0] "패키지 정보를 %(hours_ago)s시간 전에 업데이트했습니다."
 
 #. TRANSLATORS: only in plural form, as %s minutes ago is one of 15, 30, 45 minutes ago
-#: ../UpdateManager/UpdateManager.py:651 ../UpdateManager/UpdateManager.py:653
-#: ../UpdateManager/UpdateManager.py:655
+#: ../UpdateManager/UpdateManager.py:642 ../UpdateManager/UpdateManager.py:644
+#: ../UpdateManager/UpdateManager.py:646
 #, python-format
 msgid "The package information was last updated about %s minutes ago."
 msgstr "패키지 정보를 %s분 전에 마지막으로 업데이트했습니다."
 
-#: ../UpdateManager/UpdateManager.py:657
+#: ../UpdateManager/UpdateManager.py:648
 msgid "The package information was just updated."
 msgstr "패키지 정보를 지금 막 업데이트했습니다."
 
-#: ../UpdateManager/UpdateManager.py:677
-#: ../data/gtkbuilder/UpdateManager.ui.h:2
+#: ../UpdateManager/UpdateManager.py:668
+#: ../data/gtkbuilder/UpdateManager.ui.h:22
 msgid ""
 "Software updates correct errors, eliminate security vulnerabilities and "
 "provide new features."
-msgstr "소프트웨어 업데이트는 오류를 고치고, 보안 문제를 제거하며 새로운 기능을 제공합니다."
+msgstr ""
+"소프트웨어 업데이트는 오류를 고치고, 보안 문제를 제거하며 새로운 기능을 제공"
+"합니다."
 
-#: ../UpdateManager/UpdateManager.py:696
+#: ../UpdateManager/UpdateManager.py:687
 msgid "Software updates may be available for your computer."
 msgstr "컴퓨터가 사용할 수 있는 소프트웨어 업데이트가 있을 수 있습니다."
 
-#: ../UpdateManager/UpdateManager.py:704
+#: ../UpdateManager/UpdateManager.py:695
 msgid "Welcome to elementary OS"
 msgstr "우분투의 세계에 오신 것을 환영합니다."
 
-#: ../UpdateManager/UpdateManager.py:705
+#: ../UpdateManager/UpdateManager.py:696
 msgid ""
-"These software updates have been issued since this version of elementary OS was "
-"released."
-msgstr "이 소프트웨어 업데이트는 이 버전의 우분투가 배포된 이후에 발표된 업데이트입니다."
+"These software updates have been issued since this version of elementary OS "
+"was released."
+msgstr ""
+"이 소프트웨어 업데이트는 이 버전의 우분투가 배포된 이후에 발표된 업데이트입니"
+"다."
 
-#: ../UpdateManager/UpdateManager.py:708
+#: ../UpdateManager/UpdateManager.py:699
 msgid "Software updates are available for this computer."
 msgstr "이 컴퓨터에 소프트웨어 업데이트를 설치할 수 있습니다"
 
-#: ../UpdateManager/UpdateManager.py:759
+#: ../UpdateManager/UpdateManager.py:750
 #, python-format
 msgid ""
 "The upgrade needs a total of %s free space on disk '%s'. Please free at "
 "least an additional %s of disk space on '%s'. Empty your trash and remove "
 "temporary packages of former installations using 'sudo apt-get clean'."
 msgstr ""
-"업그레이드를 하려면 '%s' 디스크에 총 %s의 빈 공간이 필요합니다.최소 %s의 디스크 공간을 '%s'에 추가로 확보하세요.  휴지통을 "
-"비우고 'sudo apt-get clean' 명령으로 이전에 설치하며 사용한 임시 패키지를 제거하십시오."
+"업그레이드를 하려면 '%s' 디스크에 총 %s의 빈 공간이 필요합니다.최소 %s의 디스"
+"크 공간을 '%s'에 추가로 확보하세요.  휴지통을 비우고 'sudo apt-get clean' 명"
+"령으로 이전에 설치하며 사용한 임시 패키지를 제거하십시오."
 
-#: ../UpdateManager/UpdateManager.py:784
+#: ../UpdateManager/UpdateManager.py:775
 msgid ""
 "The computer needs to restart to finish installing updates. Please save your "
 "work before continuing."
-msgstr "업데이트를 끝내려면 다시 시작해야 합니다. 그 전에 작업을 저장해주십시오."
+msgstr ""
+"업데이트를 끝내려면 다시 시작해야 합니다. 그 전에 작업을 저장해주십시오."
 
-#: ../UpdateManager/UpdateManager.py:848
+#: ../UpdateManager/UpdateManager.py:839
 msgid "Reading package information"
 msgstr "패키지 정보를 읽는 중"
 
-#: ../UpdateManager/UpdateManager.py:863
+#: ../UpdateManager/UpdateManager.py:854
 msgid "Connecting..."
 msgstr "접속 중..."
 
-#: ../UpdateManager/UpdateManager.py:880
+#: ../UpdateManager/UpdateManager.py:871
 msgid "You may not be able to check for updates or download new updates."
-msgstr "업데이트를 확인할 수 없거나 새 업데이트를 다운로드하지 못할 수 있습니다."
+msgstr ""
+"업데이트를 확인할 수 없거나 새 업데이트를 다운로드하지 못할 수 있습니다."
 
-#: ../UpdateManager/UpdateManager.py:1004
+#: ../UpdateManager/UpdateManager.py:995
 msgid "Could not initialize the package information"
 msgstr "패키지 정보를 초기화할 수 없습니다."
 
-#: ../UpdateManager/UpdateManager.py:1005
+#: ../UpdateManager/UpdateManager.py:996
 msgid ""
 "An unresolvable problem occurred while initializing the package "
 "information.\n"
@@ -1794,9 +1861,10 @@ msgid ""
 msgstr ""
 "패키지 정보를 초기화 하는 과정에서 해결할 수 없는 문제가 발생했습니다.\n"
 "\n"
-"다음 오류 메시지를 포함해서 'update-manager' 패키지의 버그로 보고해 주십시오:\n"
+"다음 오류 메시지를 포함해서 'update-manager' 패키지의 버그로 보고해 주십시"
+"오:\n"
 
-#: ../UpdateManager/UpdateManager.py:1036
+#: ../UpdateManager/UpdateManager.py:1025
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade.\n"
 "\n"
@@ -1807,59 +1875,62 @@ msgstr ""
 "\n"
 "다음 오류 메시지를 포함해서 'update-manager' 패키지의 버그로 보고해 주십시오:"
 
-#: ../UpdateManager/UpdateManager.py:1061
+#: ../UpdateManager/UpdateManager.py:1050
 msgid " (New install)"
 msgstr " (새로 설치)"
 
 #. TRANSLATORS: the b stands for Bytes
-#: ../UpdateManager/UpdateManager.py:1068
+#: ../UpdateManager/UpdateManager.py:1057
 #, python-format
 msgid "(Size: %s)"
 msgstr "(크기: %s)"
 
-#: ../UpdateManager/UpdateManager.py:1070
+#: ../UpdateManager/UpdateManager.py:1059
 #, python-format
 msgid "From version %(old_version)s to %(new_version)s"
 msgstr "버전 %(old_version)s에서 %(new_version)s(으)로"
 
-#: ../UpdateManager/UpdateManager.py:1074
+#: ../UpdateManager/UpdateManager.py:1063
 #, python-format
 msgid "Version %s"
 msgstr "버전 %s"
 
-#: ../UpdateManager/UpdateManager.py:1105 ../do-release-upgrade:107
+#: ../UpdateManager/UpdateManager.py:1094 ../do-release-upgrade:107
 msgid "Release upgrade not possible right now"
 msgstr "배포판을 업그레이드할 수 없습니다."
 
-#: ../UpdateManager/UpdateManager.py:1106 ../do-release-upgrade:108
+#: ../UpdateManager/UpdateManager.py:1095 ../do-release-upgrade:108
 #, c-format, python-format
 msgid ""
 "The release upgrade can not be performed currently, please try again later. "
 "The server reported: '%s'"
-msgstr "지금 배포판을 업그레이드할 수 없습니다. 나중에 다시 시도해주십시오.서버의 보고: '%s'"
+msgstr ""
+"지금 배포판을 업그레이드할 수 없습니다. 나중에 다시 시도해주십시오.서버의 보"
+"고: '%s'"
 
-#: ../UpdateManager/UpdateManager.py:1108 ../check-new-release-gtk:115
+#: ../UpdateManager/UpdateManager.py:1097 ../check-new-release-gtk:115
 msgid "Downloading the release upgrade tool"
 msgstr "배포판 업그레이드 도구 다운로드 중"
 
-#: ../UpdateManager/UpdateManager.py:1115
+#: ../UpdateManager/UpdateManager.py:1104
 #, python-format
 msgid "<b>New elementary OS release '%s' is available</b>"
 msgstr "<b>새 우분투 버전 '%s'을(를) 사용할 수 있습니다</b>"
 
 #. we assert a clean cache
-#: ../UpdateManager/UpdateManager.py:1154
+#: ../UpdateManager/UpdateManager.py:1143
 msgid "Software index is broken"
 msgstr "소프트웨어 목록이 망가짐"
 
-#: ../UpdateManager/UpdateManager.py:1155
+#: ../UpdateManager/UpdateManager.py:1144
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"어떤 소프트웨어도 설치하거나 제거할 수 없습니다. 우선 패키지 관리자 \"시냅틱\"을 사용하거나 터미널에서 \"sudo apt-get "
-"install -f\" 명령을 실행하여 이 문제를 해결하십시오."
+"어떤 소프트웨어도 설치하거나 제거할 수 없습니다. 우선 패키지 관리자 \"시냅틱"
+"\"을 사용하거나 터미널에서 \"sudo apt-get install -f\" 명령을 실행하여 이 문"
+"제를 해결하십시오."
 
 #: ../UpdateManager/UnitySupport.py:57
 msgid "Check for Updates"
@@ -1872,6 +1943,10 @@ msgstr "사용 가능한 업데이트 모두 설치"
 #: ../UpdateManagerText/UpdateManagerText.py:31
 msgid "Cancel"
 msgstr "취소"
+
+#: ../UpdateManagerText/UpdateManagerText.py:32
+msgid "Install"
+msgstr "설치"
 
 #: ../UpdateManagerText/UpdateManagerText.py:34
 msgid "Changelog"
@@ -1914,24 +1989,12 @@ msgstr ""
 msgid "Downloading changelog"
 msgstr "바뀐 내용 목록 다운로드 중"
 
-#: ../UpdateManager/Core/MyCache.py:138
+#: ../UpdateManager/Core/MyCache.py:130
 #, python-format
 msgid "Other updates (%s)"
 msgstr "기타 업데이트 (%s)"
 
-#: ../UpdateManager/Core/MyCache.py:316
-msgid "This update does not come from a source that supports changelogs."
-msgstr "바뀐 내용 목록을 지원하지 않는 소스로 패키징한 업데이트입니다."
-
-#: ../UpdateManager/Core/MyCache.py:322 ../UpdateManager/Core/MyCache.py:350
-msgid ""
-"Failed to download the list of changes. \n"
-"Please check your Internet connection."
-msgstr ""
-"바뀐 내용 목록을 다운로드할 수 없습니다. \n"
-"인터넷 연결을 확인해주십시오."
-
-#: ../UpdateManager/Core/MyCache.py:329
+#: ../UpdateManager/Core/MyCache.py:285
 #, python-format
 msgid ""
 "Changes for the versions:\n"
@@ -1944,7 +2007,19 @@ msgstr ""
 "사용 가능한 버전: %s\n"
 "\n"
 
-#: ../UpdateManager/Core/MyCache.py:339
+#: ../UpdateManager/Core/MyCache.py:299
+msgid "This update does not come from a source that supports changelogs."
+msgstr "바뀐 내용 목록을 지원하지 않는 소스로 패키징한 업데이트입니다."
+
+#: ../UpdateManager/Core/MyCache.py:305 ../UpdateManager/Core/MyCache.py:326
+msgid ""
+"Failed to download the list of changes. \n"
+"Please check your Internet connection."
+msgstr ""
+"바뀐 내용 목록을 다운로드할 수 없습니다. \n"
+"인터넷 연결을 확인해주십시오."
+
+#: ../UpdateManager/Core/MyCache.py:315
 #, python-format
 msgid ""
 "The changelog does not contain any relevant changes.\n"
@@ -1954,10 +2029,11 @@ msgid ""
 msgstr ""
 "바뀐 내용 목록에 내용이 없습니다.\n"
 "\n"
-"바뀐 내용 목록이 사용 가능하게 되기 전에는 일단 다음 주소를 사용하거나 나중에 다시 시도하십시오.\n"
+"바뀐 내용 목록이 사용 가능하게 되기 전에는 일단 다음 주소를 사용하거나 나중"
+"에 다시 시도하십시오.\n"
 "http://launchpad.net/ubuntu/+source/%s/%s/+changelog"
 
-#: ../UpdateManager/Core/MyCache.py:344
+#: ../UpdateManager/Core/MyCache.py:320
 #, python-format
 msgid ""
 "The list of changes is not available yet.\n"
@@ -1967,7 +2043,8 @@ msgid ""
 msgstr ""
 "아직 바뀐 내용 목록을 사용할 수 없습니다.\n"
 "\n"
-"바뀐 내용 목록이 사용 가능하게 되기 전에는 일단 다음 주소를 사용하거나 나중에 다시 시도하십시오.\n"
+"바뀐 내용 목록이 사용 가능하게 되기 전에는 일단 다음 주소를 사용하거나 나중"
+"에 다시 시도하십시오.\n"
 "http://launchpad.net/ubuntu/+source/%s/%s/+changelog"
 
 #: ../UpdateManager/Core/UpdateList.py:49
@@ -2004,18 +2081,55 @@ msgid "Other updates"
 msgstr "기타 업데이트"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:1
-msgid "<big><b>Starting Update Manager</b></big>"
-msgstr "<b><big>업데이트 관리자를 시작합니다</big></b>"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:3
-msgid "_Partial Upgrade"
-msgstr "부분 업그레이드(_P)"
+msgid ""
+"<b><big>You must check for updates manually</big></b>\n"
+"\n"
+"Your system does not check for updates automatically. You can configure this "
+"behavior in <i>Software Sources</i> on the <i>Updates</i> tab."
+msgstr ""
+"<b><big>업데이트를 직접 확인해야 합니다.</big></b>\n"
+"\n"
+"업데이트를자동으로 확인하지 않습니다. 이 동작은 <i>업데이트</i> 탭의 <i>소프"
+"트웨어 소스</i>에서 설정할 수 있습니다."
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:4
 msgid "<big><b>Not all updates can be installed</b></big>"
 msgstr "<big><b>업데이트를 전부 설치할 수 없습니다</b></big>"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:5
+msgid "<big><b>Running on battery</b></big>"
+msgstr "<big><b>배터리로 동작 중</b></big>"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:6
+msgid "<big><b>Starting Update Manager</b></big>"
+msgstr "<b><big>업데이트 관리자를 시작합니다</big></b>"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:7
+msgid "Changes"
+msgstr "바뀐 내용"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:8
+msgid "Chec_k"
+msgstr "확인(_K)"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:9
+msgid "Co_ntinue"
+msgstr "계속(_N)"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:10
+msgid "Description"
+msgstr "설명"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:11
+msgid "Description of update"
+msgstr "업데이트 설명"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:12
+msgid "It’s safer to connect the computer to AC power before updating."
+msgstr ""
+"업데이트를 시작하기 전에 컴퓨터를 교류 전원에 연결 하는 것이 안전합니다."
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:14
 msgid ""
 "Run a partial upgrade, to install as many updates as possible. \n"
 "\n"
@@ -2033,131 +2147,101 @@ msgstr ""
 " * 우분투에서 제공하지 않는 비공식 소프트웨어 패키지\n"
 " * 공식 배포 이전 버전 우분투의 일상적인 바뀜"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:12
-msgid "Chec_k"
-msgstr "확인(_K)"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:13
-msgid ""
-"<b><big>You must check for updates manually</big></b>\n"
-"\n"
-"Your system does not check for updates automatically. You can configure this "
-"behavior in <i>Software Sources</i> on the <i>Updates</i> tab."
-msgstr ""
-"<b><big>업데이트를 직접 확인해야 합니다.</big></b>\n"
-"\n"
-"업데이트를자동으로 확인하지 않습니다. 이 동작은 <i>업데이트</i> 탭의 <i>소프트웨어 소스</i>에서 설정할 수 있습니다."
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:16
-msgid "_Hide this information in the future"
-msgstr "앞으로 이 정보 숨기기(_H)"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:17
-msgid "Co_ntinue"
-msgstr "계속(_N)"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:18
-msgid "<big><b>Running on battery</b></big>"
-msgstr "<big><b>배터리로 동작 중</b></big>"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:19
-msgid "Your system is running on battery. Are you sure you want to continue?"
-msgstr "시스템이 배터리로 동작하고 있습니다. 계속 진행하시겠습니까?"
-
 #: ../data/gtkbuilder/UpdateManager.ui.h:21
-msgid "_Upgrade"
-msgstr "업그레이드(_U)"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:22
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:8
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:5
 msgid "Show progress of individual files"
 msgstr "각 파일의 진행 상태 표시"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:23
-#: ../data/update-manager.desktop.in.h:1
-msgid "Update Manager"
-msgstr "업데이트 관리자"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:24
 msgid "Starting Update Manager"
 msgstr "업데이트 관리자를 시작합니다."
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:25
+#: ../data/gtkbuilder/UpdateManager.ui.h:24
 msgid "U_pgrade"
 msgstr "업그레이드(_P)"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:27
-msgid "updates"
-msgstr "업데이트"
+#: ../data/gtkbuilder/UpdateManager.ui.h:25
+#: ../data/update-manager.desktop.in.h:3
+msgid "Update Manager"
+msgstr "업데이트 관리자"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:28
-msgid ""
-"You are connected via roaming and may be charged for the data consumed by "
-"this update."
-msgstr "로밍 서비스에 연결되어 있습니다. 이 업데이트의 데이터 사용으로 인한 요금이 발생할 수 있습니다."
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:29
+#: ../data/gtkbuilder/UpdateManager.ui.h:26
 msgid "You are connected via a wireless modem."
 msgstr "무선 모뎀에 연결되어 있습니다."
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:30
-msgid "It’s safer to connect the computer to AC power before updating."
-msgstr "업데이트를 시작하기 전에 컴퓨터를 교류 전원에 연결 하는 것이 안전합니다."
+#: ../data/gtkbuilder/UpdateManager.ui.h:27
+msgid ""
+"You are connected via roaming and may be charged for the data consumed by "
+"this update."
+msgstr ""
+"로밍 서비스에 연결되어 있습니다. 이 업데이트의 데이터 사용으로 인한 요금이 발"
+"생할 수 있습니다."
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:31
+#: ../data/gtkbuilder/UpdateManager.ui.h:28
+msgid "Your system is running on battery. Are you sure you want to continue?"
+msgstr "시스템이 배터리로 동작하고 있습니다. 계속 진행하시겠습니까?"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:29
+msgid "_Hide this information in the future"
+msgstr "앞으로 이 정보 숨기기(_H)"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:30
 msgid "_Install Updates"
 msgstr "업데이트 설치(_I)"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:32
-msgid "Changes"
-msgstr "바뀐 내용"
+#: ../data/gtkbuilder/UpdateManager.ui.h:31
+msgid "_Partial Upgrade"
+msgstr "부분 업그레이드(_P)"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:33
-msgid "Description"
-msgstr "설명"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:34
-msgid "Description of update"
-msgstr "업데이트 설명"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:35
 msgid "_Settings..."
 msgstr "설정(_S)..."
 
+#: ../data/gtkbuilder/UpdateManager.ui.h:34
+msgid "_Upgrade"
+msgstr "업그레이드(_U)"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:35
+msgid "updates"
+msgstr "업데이트"
+
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</"
+"b>"
 msgstr "<b>새 버전의 우분투를 사용할 수 있습니다. 업그레이드 하시겠습니까?</b>"
+
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:2
+msgid "Ask Me Later"
+msgstr "나중에 묻기"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
 msgstr "업그레이드하지 않음"
 
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:4
-msgid "Ask Me Later"
-msgstr "나중에 묻기"
-
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:5
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
 msgid "Yes, Upgrade Now"
 msgstr "지금 업그레이드"
-
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new elementary OS"
-msgstr "새 우분투로 업그레이드 하는 것을 취소했습니다."
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
 "You can upgrade at a later time by opening Update Manager and click on "
 "\"Upgrade\"."
-msgstr "이후 업데이트 관리자에서 \"업그레이드\"를 클릭하시면 업그레이드할 수 있습니다."
+msgstr ""
+"이후 업데이트 관리자에서 \"업그레이드\"를 클릭하시면 업그레이드할 수 있습니"
+"다."
+
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:8
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "새 우분투로 업그레이드 하는 것을 취소했습니다."
+
+#: ../data/update-manager.desktop.in.h:1
+msgid "Show and install available updates"
+msgstr "사용할 수 있는 업데이트를 보여주고, 설치합니다."
 
 #: ../data/update-manager.desktop.in.h:2
 msgid "Software Updates"
 msgstr "소프트웨어 업데이트"
-
-#: ../data/update-manager.desktop.in.h:3
-msgid "Show and install available updates"
-msgstr "사용할 수 있는 업데이트를 보여주고, 설치합니다."
 
 #: ../update-manager:61 ../update-manager-text:50 ../do-release-upgrade:46
 msgid "Show version and exit"
@@ -2206,7 +2290,9 @@ msgstr "패지키의 바뀐 내용 목록대신 설명 보이기"
 #: ../do-release-upgrade:53 ../check-new-release-gtk:186
 msgid ""
 "Try upgrading to the latest release using the upgrader from $distro-proposed"
-msgstr "업그레이드 도구를 이용하여 $distro-proposed에서 최신 배포판으로 업그레이드를 시도합니다"
+msgstr ""
+"업그레이드 도구를 이용하여 $distro-proposed에서 최신 배포판으로 업그레이드를 "
+"시도합니다"
 
 #: ../do-release-upgrade:57
 msgid ""
@@ -2215,7 +2301,8 @@ msgid ""
 "for server systems are supported."
 msgstr ""
 "특별 업그레이드 모드에서 실행합니다.\n"
-"현재는 데스크톱 시스템의 일반적인 업그레이드를 위한 'desktop' 모드와 서버 시스템을 위한 'server' 모드를 지원합니다."
+"현재는 데스크톱 시스템의 일반적인 업그레이드를 위한 'desktop' 모드와 서버 시"
+"스템을 위한 'server' 모드를 지원합니다."
 
 #: ../do-release-upgrade:63
 msgid "Run the specified frontend"
@@ -2294,7 +2381,8 @@ msgstr "%(time)s까지 지원하는 패키지가 %(num)s개 (%(percent).1f%%) �
 msgid ""
 "You have %(num)s packages (%(percent).1f%%) that can not/no-longer be "
 "downloaded"
-msgstr "더 이상 다운로드 할 수 없는 패키지가 %(num)s개 (%(percent).1f%%) 있습니다."
+msgstr ""
+"더 이상 다운로드 할 수 없는 패키지가 %(num)s개 (%(percent).1f%%) 있습니다."
 
 #: ../ubuntu-support-status:142
 msgid "You have %(num)s packages (%(percent).1f%%) that are unsupported"
@@ -2305,8 +2393,8 @@ msgid ""
 "Run with --show-unsupported, --show-supported or --show-all to see more "
 "details"
 msgstr ""
-"자세한 내용을 확인하시려면 --show-unsupported, --show-supported 또는 --show-all 옵션으로 "
-"실행하십시오."
+"자세한 내용을 확인하시려면 --show-unsupported, --show-supported 또는 --show-"
+"all 옵션으로 실행하십시오."
 
 #: ../ubuntu-support-status:154
 msgid "No longer downloadable:"
@@ -2367,8 +2455,8 @@ msgid ""
 "When upgrading, if kdelibs4-dev is installed, kdelibs5-dev needs to be "
 "installed. See bugs.launchpad.net, bug #279621 for details."
 msgstr ""
-"업그레이드 중 kdelibs4-dev 패키지를 설치한 경우 kdelibs5-dev 패키지를 설치합니다. "
-"bugs.launchpad.net의 bug #279621에서 자세한 내용을 확인할 수 있습니다."
+"업그레이드 중 kdelibs4-dev 패키지를 설치한 경우 kdelibs5-dev 패키지를 설치합"
+"니다. bugs.launchpad.net의 bug #279621에서 자세한 내용을 확인할 수 있습니다."
 
 #: ../Janitor/plugins/langpack_manual_plugin.py:34
 #, python-format
@@ -2376,9 +2464,231 @@ msgid "%s needs to be marked as manually installed."
 msgstr "%s은(는) 직접 설치할 패키지로 표시해야 합니다."
 
 #: ../Janitor/plugins/remove_lilo_plugin.py:28
-msgid ""
-"Remove lilo since grub is also installed.(See bug #314004 for details.)"
-msgstr "grub을 설치했으므로 lilo는 제거하십시오.(자세한 내용은 버그 #314004를 참조.)"
+msgid "Remove lilo since grub is also installed.(See bug #314004 for details.)"
+msgstr ""
+"grub을 설치했으므로 lilo는 제거하십시오.(자세한 내용은 버그 #314004를 참조.)"
+
+#~ msgid ""
+#~ "Unable to locate any package files, perhaps this is not a Ubuntu Disc or "
+#~ "the wrong architecture?"
+#~ msgstr ""
+#~ "어떤 패키지 파일도 찾을 수 없습니다. 우분투 디스크가 아니거나 올바르지 않"
+#~ "은 아키텍처인 것은 아닙니까?"
+
+#~ msgid ""
+#~ "There was a error adding the CD, the upgrade will abort. Please report "
+#~ "this as a bug if this is a valid Ubuntu CD.\n"
+#~ "\n"
+#~ "The error message was:\n"
+#~ "'%s'"
+#~ msgstr ""
+#~ "CD를 추가할 때 오류가 발생하여 업그레이드를 중단할 것입니다. 올바른 우분"
+#~ "투 CD를 사용하고 있었다면 이 버그를 보고해 주십시오.\n"
+#~ "\n"
+#~ "오류 메시지:\n"
+#~ "'%s'"
+
+#~ msgid ""
+#~ "An unresolvable problem occurred while calculating the upgrade:\n"
+#~ "%s\n"
+#~ "\n"
+#~ " This can be caused by:\n"
+#~ " * Upgrading to a pre-release version of Ubuntu\n"
+#~ " * Running the current pre-release version of Ubuntu\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ "\n"
+#~ msgstr ""
+#~ "업데이트를 계산하는 중 해결할 수 없는 문제가 생겼습니다.:\n"
+#~ "%s\n"
+#~ "\n"
+#~ " 이것의 원인은 다음 중 하나일 수 있습니다:\n"
+#~ " * 차기 버전의 우분투 업그레이드로 업그레이드하는 중이거나\n"
+#~ " * 차기 버전의 우분투를 사용하고 있거나\n"
+#~ " * 써드 파티 소프트웨어를 사용 중입니다.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
+#~ "desktop or edubuntu-desktop package and it was not possible to detect "
+#~ "which version of Ubuntu you are running.\n"
+#~ " Please install one of the packages above first using synaptic or apt-get "
+#~ "before proceeding."
+#~ msgstr ""
+#~ "시스템에 ubuntu-desktop이나 kubuntu-desktop이나 xubuntu-desktop 또는 "
+#~ "edubuntu-desktop 패키지가 없으며, 현재 실행 중인 우분투의 버전을 알아낼 "
+#~ "수 없습니다.\n"
+#~ "우선 위의 패키지 중 하나를 시냅틱이나 apt-get 명령으로 설치하시기 바랍니"
+#~ "다."
+
+#~ msgid ""
+#~ "Your graphics hardware may not be fully supported in Ubuntu 12.04 LTS."
+#~ msgstr "그래픽 카드가 우분투 12.04 장기 지원판을 지원하지 않습니다."
+
+#~ msgid ""
+#~ "The support in Ubuntu 12.04 LTS for your Intel graphics hardware is "
+#~ "limited and you may encounter problems after the upgrade. For more "
+#~ "information see https://wiki.ubuntu.com/X/Bugs/"
+#~ "UpdateManagerWarningForI8xx Do you want to continue with the upgrade?"
+#~ msgstr ""
+#~ "인텔 그래픽 카드가 우분투 12.04 장기 지원판을 완전하게 지원하지 않아 업그"
+#~ "레이드 후 문제가 발생할 수 있습니다. 더 자세한 내용은 https://wiki.ubuntu."
+#~ "com/X/Bugs/UpdateManagerWarningForI8xx 페이지를 확인해주십시오. 업그레이드"
+#~ "를 계속 진행하시겠습니까?"
+
+#~ msgid ""
+#~ "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
+#~ "version of this driver is available that works with your video card in "
+#~ "Ubuntu 10.04 LTS.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "이 컴퓨터는 현재 NVIDIA사의 'nvidia' 그래픽 드라이버를 사용하고 있습니다. "
+#~ "이 드라이버는 우분투 10.04 LTS을 지원하는 버전이 없습니다.\n"
+#~ "계속 진행하시겠습니까?"
+
+#~ msgid ""
+#~ "This computer is currently using the AMD 'fglrx' graphics driver. No "
+#~ "version of this driver is available that works with your hardware in "
+#~ "Ubuntu 10.04 LTS.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "이 컴퓨터는 현재 AMD사의 'fglrx' 그래픽 드라이버를 사용하고 있습니다. 이 "
+#~ "드라이버는 우분투 10.04 LTS을 지원하는 버전이 없습니다.\n"
+#~ "계속 진행하시겠습니까?"
+
+#~ msgid ""
+#~ "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
+#~ "extension. All packages were built with optimizations requiring i686 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+#~ msgstr ""
+#~ "현 시스템은 i586 호환 CPU가 아니거나, 'cmov' 기능이 없는 CPU를 사용하고 있"
+#~ "습니다. 모든 패키지는 최소 i686 호환 CPU가 필요합니다. 현 시스템에서 새로"
+#~ "운 우분투 버전으로 업그레이드 할 수 없습니다."
+
+#~ msgid ""
+#~ "Your system uses an ARM CPU that is older than the ARMv6 architecture. "
+#~ "All packages in karmic were built with optimizations requiring ARMv6 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+#~ msgstr ""
+#~ "시스템이 ARMv6 보다 더 오래된 아키텍처의 ARM CPU를 사용하고 있습니다. 우분"
+#~ "투 karmic의 모든 꾸러미는 ARMv6에 최적화 되어있기 때문에 최소 CPU로 ARMv6"
+#~ "이 필요합니다. 현재 하드웨어로는 새로운 우분투 버전으로 시스템을 업그레이"
+#~ "드 할 수 없습니다."
+
+#~ msgid ""
+#~ "Your system appears to be a virtualised environment without an init "
+#~ "daemon, e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this "
+#~ "type of environment, requiring an update to your virtual machine "
+#~ "configuration first.\n"
+#~ "\n"
+#~ "Are you sure you want to continue?"
+#~ msgstr ""
+#~ "현재 시스템은 init 데몬(예:Linux-VServer)가 없는 가상 환경인 것으로 감지되"
+#~ "었습니다. 우분투 10.04 LTS는 이러한 환경에서 제대로 동작할 수 없으며 우선 "
+#~ "가상 환경의 설정을 조정해야합니다.\n"
+#~ "\n"
+#~ "계속 진행하시겠습니까?"
+
+#~ msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+#~ msgstr "<b><big>우분투를 12.04버전으로 업그레이드합니다.</big></b>"
+
+#~ msgid "Your Ubuntu release is not supported anymore."
+#~ msgstr "현재 사용 중인 우분투 배포판은 더 이상 지원하지 않습니다."
+
+#~ msgid ""
+#~ "You will not get any further security fixes or critical updates. Please "
+#~ "upgrade to a later version of Ubuntu."
+#~ msgstr ""
+#~ "이후 보안 패치, 중요한 업데이트를 받을 수 없습니다. 최신 버전으로 업그레이"
+#~ "드 하십시오."
+
+#~ msgid "Name"
+#~ msgstr "이름"
+
+#~ msgid "Welcome to Ubuntu"
+#~ msgstr "우분투의 세계에 오신 것을 환영합니다."
+
+#~ msgid ""
+#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "released."
+#~ msgstr ""
+#~ "이 소프트웨어 업데이트는 이 버전의 우분투가 배포된 이후에 발표된 업데이트"
+#~ "입니다."
+
+#~ msgid "<b>New Ubuntu release '%s' is available</b>"
+#~ msgstr "<b>새 우분투 버전 '%s'을(를) 사용할 수 있습니다</b>"
+
+#, fuzzy
+#~ msgid "New hardware support is available"
+#~ msgstr "새 배포판 '%s'을(를) 사용할 수 있습니다."
+
+#~ msgid ""
+#~ "\n"
+#~ "A normal upgrade can not be calculated, please run: \n"
+#~ "  sudo apt-get dist-upgrade\n"
+#~ "\n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " * A previous upgrade which didn't complete\n"
+#~ " * Problems with some of the installed software\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ " * Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "\n"
+#~ "일반 업그레이드를 계산할 수 없습니다. 다음 명령을 실행해주십시오.: \n"
+#~ "  sudo apt-get dist-upgrade\n"
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "이 문제의 원인은:\n"
+#~ " * 이전 업그레이드가 완료되지 않음\n"
+#~ " * 일부 설치한 소프트웨어의 문제\n"
+#~ " * 우분투에서 제공하지 않는 비공식 소프트웨어 패키지\n"
+#~ " * 공식 배포 이전 버전 우분투의 일상적인 바뀜"
+
+#~ msgid ""
+#~ "Run a partial upgrade, to install as many updates as possible. \n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " * A previous upgrade which didn't complete\n"
+#~ " * Problems with some of the installed software\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ " * Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "최대한 많은 업데이트를 설치하기 위해 부분적으로 업데이트합니다.\n"
+#~ "\n"
+#~ "이 문제의 원인은:\n"
+#~ " * 이전 업그레이드가 완료되지 않음\n"
+#~ " * 일부 설치한 소프트웨어의 문제\n"
+#~ " * 우분투에서 제공하지 않는 비공식 소프트웨어 패키지\n"
+#~ " * 공식 배포 이전 버전 우분투의 일상적인 바뀜"
+
+#, fuzzy
+#~ msgid "I_nstall"
+#~ msgstr "설치"
+
+#~ msgid ""
+#~ "<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+#~ msgstr ""
+#~ "<b>새 버전의 우분투를 사용할 수 있습니다. 업그레이드 하시겠습니까?</b>"
+
+#~ msgid "You have declined to upgrade to the new Ubuntu"
+#~ msgstr "새 우분투로 업그레이드 하는 것을 취소했습니다."
+
+#~ msgid "Check if a new Ubuntu release is available"
+#~ msgstr "새로운 우분투 버전이 있는지 확인합니다"
+
+#~ msgid "Checking for a new Ubuntu release"
+#~ msgstr "새 우분투 배포판 확인"
+
+#~ msgid "Ubuntu %(version)s Upgrade Available"
+#~ msgstr "우분투 %(version)s(으)로 업그레이드할 수 있습니다."
+
+#~ msgid "You have declined the upgrade to Ubuntu %s"
+#~ msgstr "우분투 %s(으)로 업그레이드하는 것을 취소했습니다."
 
 #~ msgid "Checking for a new ubuntu release"
 #~ msgstr "새로운 우분투 버전을 확인합니다."
@@ -2388,21 +2698,23 @@ msgstr "grub을 설치했으므로 lilo는 제거하십시오.(자세한 내용�
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of elementary OS Linux."
-#~ msgstr "앞으로 보안 패치, 치명적인 버그 수정을 받을 수 없습니다. 최신 우분투로 업그레이드 하십시오."
+#~ "upgrade to a later version of Ubuntu Linux."
+#~ msgstr ""
+#~ "앞으로 보안 패치, 치명적인 버그 수정을 받을 수 없습니다. 최신 우분투로 업"
+#~ "그레이드 하십시오."
 
-#, python-format
 #~ msgid ""
-#~ "This upgrade is running in sandbox (test) mode. All changes are written to "
-#~ "'%s' and will be lost on the next reboot.\n"
+#~ "This upgrade is running in sandbox (test) mode. All changes are written "
+#~ "to '%s' and will be lost on the next reboot.\n"
 #~ "\n"
 #~ "*No* changes written to a systemdir from now until the next reboot are "
 #~ "permanent."
 #~ msgstr ""
-#~ "이 업그레이드는 샌드박스 (시험) 모드에서 실행되고 있습니다.  모든 바뀐 내용들은 '%s'에 기록되며 다음 다시 시작 때 지워질 것 "
-#~ "입니다.\n"
+#~ "이 업그레이드는 샌드박스 (시험) 모드에서 실행되고 있습니다.  모든 바뀐 내"
+#~ "용들은 '%s'에 기록되며 다음 다시 시작 때 지워질 것 입니다.\n"
 #~ "\n"
-#~ "지금부터 다음 다시 시작 때까지 시스템 디렉터리 내용은 전혀 변경되지 *않습니다.*"
+#~ "지금부터 다음 다시 시작 때까지 시스템 디렉터리 내용은 전혀 변경되지 *않습"
+#~ "니다.*"
 
 #~ msgid "Software updates are available for this computer"
 #~ msgstr "이 컴퓨터에 새 소프트웨어 업데이트가 있습니다."
@@ -2410,17 +2722,23 @@ msgstr "grub을 설치했으므로 lilo는 제거하십시오.(자세한 내용�
 #~ msgid ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from "
 #~ "Applications later."
-#~ msgstr "만약 지금 깔고 싶지 않으시면, 이후 \"프로그램\"의 \"업데이트 관리자\"를  써서 깔을 수 있습니다."
+#~ msgstr ""
+#~ "만약 지금 깔고 싶지 않으시면, 이후 \"프로그램\"의 \"업데이트 관리자\"를  "
+#~ "써서 깔을 수 있습니다."
 
 #~ msgid ""
 #~ "Fetching and installing the upgrade can take several hours. Once the "
 #~ "download has finished, the process cannot be cancelled."
-#~ msgstr "업그레이드를 받아와 까는 것은 여러 시간이 걸릴 수도 있으며, 일단 모두 받아오고 나면 그만둘 수 없습니다."
+#~ msgstr ""
+#~ "업그레이드를 받아와 까는 것은 여러 시간이 걸릴 수도 있으며, 일단 모두 받아"
+#~ "오고 나면 그만둘 수 없습니다."
 
 #~ msgid ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from the "
 #~ "Administration menu later."
-#~ msgstr "지금 깔고 싶지 않는다면 나중에 관리 메뉴의 \"업데이트 관리자\"를 쓰시면 됩니다."
+#~ msgstr ""
+#~ "지금 깔고 싶지 않는다면 나중에 관리 메뉴의 \"업데이트 관리자\"를 쓰시면 됩"
+#~ "니다."
 
 #~ msgid "There are no updates to install"
 #~ msgstr "새로 깔 업데이트 없음"
@@ -2429,13 +2747,16 @@ msgstr "grub을 설치했으므로 lilo는 제거하십시오.(자세한 내용�
 #~ msgid_plural "The updates have already been downloaded, but not installed"
 #~ msgstr[0] "업데이트는 이미 모두 받았으나 깔리지 않음"
 
-#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
-#~ msgstr "사용 중인 그래픽 카드가 우분투 11.04 버전을 완전히 지원하지 않을 수 있습니다."
+#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
+#~ msgstr ""
+#~ "사용 중인 그래픽 카드가 우분투 11.04 버전을 완전히 지원하지 않을 수 있습니"
+#~ "다."
 
 #~ msgid ""
-#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
-#~ "you may encounter problems after the upgrade. Do you want to continue with "
-#~ "the upgrade?"
+#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited "
+#~ "and you may encounter problems after the upgrade. Do you want to continue "
+#~ "with the upgrade?"
 #~ msgstr ""
-#~ "사용 중인 인텔 그래픽 하드웨어를 우분투 11.04 버전에서 사용하는 경우 기능 상의 제약이 있을 수 있으며 업그레이드 후 문제가 발생할 "
-#~ "수 있습니다. 업그레이드를 계속하시겠습니까?"
+#~ "사용 중인 인텔 그래픽 하드웨어를 우분투 11.04 버전에서 사용하는 경우 기능 "
+#~ "상의 제약이 있을 수 있으며 업그레이드 후 문제가 발생할 수 있습니다. 업그레"
+#~ "이드를 계속하시겠습니까?"

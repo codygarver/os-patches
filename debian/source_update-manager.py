@@ -4,14 +4,26 @@
 Author: Brian Murray <brian@ubuntu.com>
 '''
 
+import os
 import re
 from apport.hookutils import (
     attach_gsettings_package, attach_root_command_outputs,
-    attach_file_if_exists, recent_syslog)
+    attach_file_if_exists, recent_syslog,
+    root_command_output)
 
 
 def add_info(report, ui):
 
+    problem_type = report.get("ProblemType", None)
+    if problem_type == 'Crash':
+        tmpdir = re.compile('update-manager-\w+')
+        tb = report.get("Traceback", None)
+        if tb:
+            dupe_sig = ''
+            for line in tb.splitlines():
+                scrub_line = tmpdir.sub('update-manager-tmpdir', line)
+                dupe_sig += scrub_line + '\n'
+            report["DuplicateSignature"] = dupe_sig
     try:
         attach_gsettings_package(report, 'update-manager')
     except:
@@ -20,9 +32,10 @@ def add_info(report, ui):
     if response:
         report.setdefault('Tags', 'dist-upgrade')
         report['Tags'] += ' dist-upgrade'
-        attach_file_if_exists(report,
-            '/var/log/dist-upgrade/apt-clone_system_state.tar.gz',
-            'VarLogDistupgradeAptclonesystemstate.tar.gz')
+        clone_file = '/var/log/dist-upgrade/apt-clone_system_state.tar.gz'
+        if os.path.exists(clone_file):
+            report['VarLogDistupgradeAptclonesystemstate.tar.gz'] =  \
+                root_command_output(["cat", clone_file])
         attach_file_if_exists(report, '/var/log/dist-upgrade/apt.log',
             'VarLogDistupgradeAptlog')
         attach_file_if_exists(report, '/var/log/dist-upgrade/apt-term.log',

@@ -7,20 +7,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: update-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-14 00:52+0000\n"
+"POT-Creation-Date: 2012-03-02 12:16+0100\n"
 "PO-Revision-Date: 2012-04-13 00:57+0000\n"
 "Last-Translator: Soltan Dzmitry <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
+"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Launchpad-Export-Date: 2012-04-17 13:40+0000\n"
 "X-Generator: Launchpad (build 15099)\n"
 
 #. TRANSLATORS: download size of small updates, e.g. "250 kB"
-#: ../DistUpgrade/utils.py:399 ../UpdateManager/Core/utils.py:399
+#: ../DistUpgrade/utils.py:397 ../UpdateManager/Core/utils.py:397
 #, python-format
 msgid "%(size).0f kB"
 msgid_plural "%(size).0f kB"
@@ -29,7 +30,7 @@ msgstr[1] "%(size).0f КБ"
 msgstr[2] "%(size).0f КБ"
 
 #. TRANSLATORS: download size of updates, e.g. "2.3 MB"
-#: ../DistUpgrade/utils.py:402 ../UpdateManager/Core/utils.py:402
+#: ../DistUpgrade/utils.py:400 ../UpdateManager/Core/utils.py:400
 #, python-format
 msgid "%.1f MB"
 msgstr "%.1f МБ"
@@ -58,8 +59,8 @@ msgstr "Немагчыма разлічыць запіс sources.list"
 
 #: ../DistUpgrade/DistUpgradeAptCdrom.py:244
 msgid ""
-"Unable to locate any package files, perhaps this is not a elementary OS Disc or the "
-"wrong architecture?"
+"Unable to locate any package files, perhaps this is not a elementary OS Disc "
+"or the wrong architecture?"
 msgstr ""
 "Немагчыма адшукаць ніводнага файла з пакетам, верагодна, гэты дыск не "
 "з'яўляецца elementary OS ці мае іншую архітэктуру."
@@ -78,7 +79,8 @@ msgid ""
 "'%s'"
 msgstr ""
 "Пры дадаванні кампакт-дыска адбылася памылка, абнаўленне будзе спынена. Калі "
-"ласка, паведаміце аб памылцы, калі гэта быў карэктны кампакт-дыск elementary OS.\n"
+"ласка, паведаміце аб памылцы, калі гэта быў карэктны кампакт-дыск elementary "
+"OS.\n"
 "\n"
 "Тэкст памылкі:\n"
 "\"%s\""
@@ -130,7 +132,7 @@ msgstr ""
 "перш чым працягваць."
 
 #. FIXME: change the text to something more useful
-#: ../DistUpgrade/DistUpgradeCache.py:679
+#: ../DistUpgrade/DistUpgradeCache.py:659
 #, python-format
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade:\n"
@@ -151,11 +153,11 @@ msgstr ""
 " * неафіцыйных праграм, якія не пастаўляюцца з elementary OS\n"
 "\n"
 
-#: ../DistUpgrade/DistUpgradeCache.py:689
+#: ../DistUpgrade/DistUpgradeCache.py:669
 msgid "This is most likely a transient problem, please try again later."
 msgstr "Магчыма, гэта часовая праблема. Паспрабуйце паўтарыць пазней."
 
-#: ../DistUpgrade/DistUpgradeCache.py:692
+#: ../DistUpgrade/DistUpgradeCache.py:672
 msgid ""
 "If none of this applies, then please report this bug using the command "
 "'ubuntu-bug update-manager' in a terminal."
@@ -163,16 +165,16 @@ msgstr ""
 "Калі з прапанаванага нічога не пасуе, калі ласка, адпраўце гэту справаздачу, "
 "выкарыстоўваючы ў тэрмінале каманду 'ubuntu-bug update-manager'"
 
-#: ../DistUpgrade/DistUpgradeCache.py:697
-#: ../UpdateManager/UpdateManager.py:1035
+#: ../DistUpgrade/DistUpgradeCache.py:677
+#: ../UpdateManager/UpdateManager.py:1024
 msgid "Could not calculate the upgrade"
 msgstr "Немагчыма падлічыць абнаўленне"
 
-#: ../DistUpgrade/DistUpgradeCache.py:748
+#: ../DistUpgrade/DistUpgradeCache.py:728
 msgid "Error authenticating some packages"
 msgstr "Памылка аўтэнтыфікацыі некаторых пакетаў"
 
-#: ../DistUpgrade/DistUpgradeCache.py:749
+#: ../DistUpgrade/DistUpgradeCache.py:729
 msgid ""
 "It was not possible to authenticate some packages. This may be a transient "
 "network problem. You may want to try again later. See below for a list of "
@@ -182,28 +184,28 @@ msgstr ""
 "праблемы з сеткай. Вы можаце паспрабаваць паўтарыць дзеяньне пазней. "
 "Глядзіце ніжэй спіс неаўтэнтыфікаваных пакетаў."
 
-#: ../DistUpgrade/DistUpgradeCache.py:769
+#: ../DistUpgrade/DistUpgradeCache.py:749
 #, python-format
 msgid ""
 "The package '%s' is marked for removal but it is in the removal blacklist."
 msgstr "Пакет “%s“ пазначаны для выдалення, але ён у чорным спісе выдалення."
 
-#: ../DistUpgrade/DistUpgradeCache.py:773
+#: ../DistUpgrade/DistUpgradeCache.py:753
 #, python-format
 msgid "The essential package '%s' is marked for removal."
 msgstr "Важны пакет “%s“ пазначаны для выдалення."
 
-#: ../DistUpgrade/DistUpgradeCache.py:782
+#: ../DistUpgrade/DistUpgradeCache.py:762
 #, python-format
 msgid "Trying to install blacklisted version '%s'"
 msgstr "Спроба ўсталёўкі ўнесенай у чорны спіс версіі '%s'"
 
-#: ../DistUpgrade/DistUpgradeCache.py:900
+#: ../DistUpgrade/DistUpgradeCache.py:880
 #, python-format
 msgid "Can't install '%s'"
 msgstr "Немагчыма ўсталяваць \"%s\""
 
-#: ../DistUpgrade/DistUpgradeCache.py:901
+#: ../DistUpgrade/DistUpgradeCache.py:881
 msgid ""
 "It was impossible to install a required package. Please report this as a bug "
 "using 'ubuntu-bug update-manager' in a terminal."
@@ -212,11 +214,11 @@ msgstr ""
 "выкарыстоўваючы ў тэрмінале каманду 'ubuntu-bug update-manager'"
 
 #. FIXME: provide a list
-#: ../DistUpgrade/DistUpgradeCache.py:912
+#: ../DistUpgrade/DistUpgradeCache.py:892
 msgid "Can't guess meta-package"
 msgstr "Немагчыма вызначыць мета-пакет"
 
-#: ../DistUpgrade/DistUpgradeCache.py:913
+#: ../DistUpgrade/DistUpgradeCache.py:893
 msgid ""
 "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
 "desktop or edubuntu-desktop package and it was not possible to detect which "
@@ -225,8 +227,8 @@ msgid ""
 "before proceeding."
 msgstr ""
 "Вашая сістэма не ўтрымлівае пакет ubuntu-desktop, kubuntu-desktop, xubuntu-"
-"desktop ці edubuntu-desktop таму немагчыма вызначыць якую версію elementary OS вы "
-"маеце.\n"
+"desktop ці edubuntu-desktop таму немагчыма вызначыць якую версію elementary "
+"OS вы маеце.\n"
 "Калі ласка, найперш усталюйце адзін з вышэй узгаданых пакетаў з дапамогай "
 "synaptic ці apt-get."
 
@@ -352,8 +354,8 @@ msgstr ""
 msgid ""
 "Your python install is corrupted. Please fix the '/usr/bin/python' symlink."
 msgstr ""
-"Python усталяваны некарэктна. Калі ласка, выпраўце сімвалічную спасылку "
-"\"/usr/bin/python\"."
+"Python усталяваны некарэктна. Калі ласка, выпраўце сімвалічную спасылку \"/"
+"usr/bin/python\"."
 
 #: ../DistUpgrade/DistUpgradeController.py:427
 msgid "Package 'debsig-verify' is installed"
@@ -523,7 +525,7 @@ msgstr ""
 
 #. print "on_button_install_clicked"
 #: ../DistUpgrade/DistUpgradeController.py:867
-#: ../UpdateManager/UpdateManager.py:758
+#: ../UpdateManager/UpdateManager.py:749
 msgid "Not enough free disk space"
 msgstr "Бракуе дыскавае прасторы"
 
@@ -543,7 +545,7 @@ msgstr ""
 #. calc the dist-upgrade and see if the removals are ok/expected
 #. do the dist-upgrade
 #: ../DistUpgrade/DistUpgradeController.py:897
-#: ../DistUpgrade/DistUpgradeController.py:1664
+#: ../DistUpgrade/DistUpgradeController.py:1640
 msgid "Calculating the changes"
 msgstr "Падлічыць змены"
 
@@ -565,7 +567,7 @@ msgstr ""
 "стану сістэмы. Вы можаце працягнуць гэта абнаўленне пазней."
 
 #: ../DistUpgrade/DistUpgradeController.py:1002
-#: ../DistUpgrade/DistUpgradeController.py:1136
+#: ../DistUpgrade/DistUpgradeController.py:1128
 msgid "Could not download the upgrades"
 msgstr "Не атрымалася загрузіць абнаўленні"
 
@@ -580,47 +582,47 @@ msgstr ""
 
 #. FIXME: strings are not good, but we are in string freeze
 #. currently
-#: ../DistUpgrade/DistUpgradeController.py:1087
-#: ../DistUpgrade/DistUpgradeController.py:1124
-#: ../DistUpgrade/DistUpgradeController.py:1229
+#: ../DistUpgrade/DistUpgradeController.py:1079
+#: ../DistUpgrade/DistUpgradeController.py:1116
+#: ../DistUpgrade/DistUpgradeController.py:1221
 msgid "Error during commit"
 msgstr "Памылка пры фіксаванні"
 
 #. generate a new cache
-#: ../DistUpgrade/DistUpgradeController.py:1089
-#: ../DistUpgrade/DistUpgradeController.py:1126
-#: ../DistUpgrade/DistUpgradeController.py:1268
+#: ../DistUpgrade/DistUpgradeController.py:1081
+#: ../DistUpgrade/DistUpgradeController.py:1118
+#: ../DistUpgrade/DistUpgradeController.py:1260
 msgid "Restoring original system state"
 msgstr "Аднаўленне першапачатковага стану сістэмы"
 
-#: ../DistUpgrade/DistUpgradeController.py:1090
-#: ../DistUpgrade/DistUpgradeController.py:1105
-#: ../DistUpgrade/DistUpgradeController.py:1127
+#: ../DistUpgrade/DistUpgradeController.py:1082
+#: ../DistUpgrade/DistUpgradeController.py:1097
+#: ../DistUpgrade/DistUpgradeController.py:1119
 msgid "Could not install the upgrades"
 msgstr "Немагчыма ўсталяваць абнаўленні"
 
 #. invoke the frontend now and show a error message
-#: ../DistUpgrade/DistUpgradeController.py:1095
+#: ../DistUpgrade/DistUpgradeController.py:1087
 msgid ""
 "The upgrade has aborted. Your system could be in an unusable state. A "
 "recovery will run now (dpkg --configure -a)."
 msgstr ""
 "Абнаўленне было скасавана. Ваша сістэма можа апынуцца ў стане непрыдатным "
-"для нармальнага выкарыстання. Зараз будзе запушчаны працэс аднаўлення (dpkg -"
-"-configure -a)."
+"для нармальнага выкарыстання. Зараз будзе запушчаны працэс аднаўлення (dpkg "
+"--configure -a)."
 
-#: ../DistUpgrade/DistUpgradeController.py:1100
+#: ../DistUpgrade/DistUpgradeController.py:1092
 #, python-format
 msgid ""
 "\n"
 "\n"
-"Please report this bug in a browser at "
-"http://bugs.launchpad.net/ubuntu/+source/update-manager/+filebug and attach "
-"the files in /var/log/dist-upgrade/ to the bug report.\n"
+"Please report this bug in a browser at http://bugs.launchpad.net/ubuntu/"
+"+source/update-manager/+filebug and attach the files in /var/log/dist-"
+"upgrade/ to the bug report.\n"
 "%s"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:1137
+#: ../DistUpgrade/DistUpgradeController.py:1129
 msgid ""
 "The upgrade has aborted. Please check your Internet connection or "
 "installation media and try again. "
@@ -628,20 +630,20 @@ msgstr ""
 "Абнаўленне спыненае. Калі ласка праверце злучэнне з Інтэрнэтам, альбо іншую "
 "крыніцу ўсталёўкі і паспрабуйце зноў. "
 
-#: ../DistUpgrade/DistUpgradeController.py:1217
+#: ../DistUpgrade/DistUpgradeController.py:1209
 msgid "Remove obsolete packages?"
 msgstr "Выдаліць састарэлыя пакеты?"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
-#: ../DistUpgrade/DistUpgrade.ui.h:8
+#: ../DistUpgrade/DistUpgradeController.py:1210
+#: ../DistUpgrade/DistUpgrade.ui.h:22
 msgid "_Keep"
 msgstr "За_хаваць"
 
-#: ../DistUpgrade/DistUpgradeController.py:1218
+#: ../DistUpgrade/DistUpgradeController.py:1210
 msgid "_Remove"
 msgstr "_Выдаліць"
 
-#: ../DistUpgrade/DistUpgradeController.py:1230
+#: ../DistUpgrade/DistUpgradeController.py:1222
 msgid ""
 "A problem occurred during the clean-up. Please see the below message for "
 "more information. "
@@ -649,37 +651,37 @@ msgstr "Падчас ачысткі паўстала праблема. Падр�
 
 #. FIXME: instead of error out, fetch and install it
 #. here
-#: ../DistUpgrade/DistUpgradeController.py:1306
+#: ../DistUpgrade/DistUpgradeController.py:1298
 msgid "Required depends is not installed"
 msgstr "Неабходныя залежнасці не ўсталяваныя"
 
-#: ../DistUpgrade/DistUpgradeController.py:1307
+#: ../DistUpgrade/DistUpgradeController.py:1299
 #, python-format
 msgid "The required dependency '%s' is not installed. "
 msgstr "Неабходныя залежнасці \"%s\" не ўсталяваныя. "
 
 #. sanity check (check for ubuntu-desktop, brokenCache etc)
 #. then open the cache (again)
-#: ../DistUpgrade/DistUpgradeController.py:1568
-#: ../DistUpgrade/DistUpgradeController.py:1633
+#: ../DistUpgrade/DistUpgradeController.py:1544
+#: ../DistUpgrade/DistUpgradeController.py:1609
 msgid "Checking package manager"
 msgstr "Праверка мэнэджара пакетаў"
 
-#: ../DistUpgrade/DistUpgradeController.py:1573
+#: ../DistUpgrade/DistUpgradeController.py:1549
 msgid "Preparing the upgrade failed"
 msgstr "Збой падрыхтоўкі да абнаўлення"
 
-#: ../DistUpgrade/DistUpgradeController.py:1574
+#: ../DistUpgrade/DistUpgradeController.py:1550
 msgid ""
 "Preparing the system for the upgrade failed so a bug reporting process is "
 "being started."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:1588
+#: ../DistUpgrade/DistUpgradeController.py:1564
 msgid "Getting upgrade prerequisites failed"
 msgstr "Падрыхтоўка да абнаўлення завяршылася няўдала"
 
-#: ../DistUpgrade/DistUpgradeController.py:1589
+#: ../DistUpgrade/DistUpgradeController.py:1565
 msgid ""
 "The system was unable to get the prerequisites for the upgrade. The upgrade "
 "will abort now and restore the original system state.\n"
@@ -687,64 +689,64 @@ msgid ""
 "Additionally, a bug reporting process is being started."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:1617
+#: ../DistUpgrade/DistUpgradeController.py:1593
 msgid "Updating repository information"
 msgstr "Абнаўленне інфармацыі аб сховішчы"
 
-#: ../DistUpgrade/DistUpgradeController.py:1624
+#: ../DistUpgrade/DistUpgradeController.py:1600
 msgid "Failed to add the cdrom"
 msgstr "Дадаванне кампакт-дыска завяршылася няўдала"
 
-#: ../DistUpgrade/DistUpgradeController.py:1625
+#: ../DistUpgrade/DistUpgradeController.py:1601
 msgid "Sorry, adding the cdrom was not successful."
 msgstr "Выбачайце, даданне кампакт-дыска завяршылася няўдала."
 
-#: ../DistUpgrade/DistUpgradeController.py:1653
+#: ../DistUpgrade/DistUpgradeController.py:1629
 msgid "Invalid package information"
 msgstr "Некарэктная інфармацыя аб пакеце"
 
-#: ../DistUpgrade/DistUpgradeController.py:1654
+#: ../DistUpgrade/DistUpgradeController.py:1630
 #, python-format
 msgid ""
 "After your package information was updated the essential package '%s' can "
 "not be found anymore so a bug reporting process is being started."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:1670
-#: ../DistUpgrade/DistUpgradeController.py:1723
+#: ../DistUpgrade/DistUpgradeController.py:1646
+#: ../DistUpgrade/DistUpgradeController.py:1699
 msgid "Fetching"
 msgstr "Атрыманне"
 
-#: ../DistUpgrade/DistUpgradeController.py:1676
-#: ../DistUpgrade/DistUpgradeController.py:1727
+#: ../DistUpgrade/DistUpgradeController.py:1652
+#: ../DistUpgrade/DistUpgradeController.py:1703
 msgid "Upgrading"
 msgstr "Абнаўленне"
 
 #. don't abort here, because it would restore the sources.list
-#: ../DistUpgrade/DistUpgradeController.py:1681
-#: ../DistUpgrade/DistUpgradeController.py:1729
-#: ../DistUpgrade/DistUpgradeController.py:1736
-#: ../DistUpgrade/DistUpgradeController.py:1747
+#: ../DistUpgrade/DistUpgradeController.py:1657
+#: ../DistUpgrade/DistUpgradeController.py:1705
+#: ../DistUpgrade/DistUpgradeController.py:1712
+#: ../DistUpgrade/DistUpgradeController.py:1723
 msgid "Upgrade complete"
 msgstr "Абнаўленне скончана"
 
-#: ../DistUpgrade/DistUpgradeController.py:1682
-#: ../DistUpgrade/DistUpgradeController.py:1730
-#: ../DistUpgrade/DistUpgradeController.py:1737
+#: ../DistUpgrade/DistUpgradeController.py:1658
+#: ../DistUpgrade/DistUpgradeController.py:1706
+#: ../DistUpgrade/DistUpgradeController.py:1713
 msgid ""
 "The upgrade has completed but there were errors during the upgrade process."
 msgstr ""
 "Абнаўленне скончана, аднак падчас працэсу абнаўлення здарыліся памылкі."
 
-#: ../DistUpgrade/DistUpgradeController.py:1689
+#: ../DistUpgrade/DistUpgradeController.py:1665
 msgid "Searching for obsolete software"
 msgstr "Пошук састарэлых праграм"
 
-#: ../DistUpgrade/DistUpgradeController.py:1698
+#: ../DistUpgrade/DistUpgradeController.py:1674
 msgid "System upgrade is complete."
 msgstr "Абнаўленне сістэмы завершана"
 
-#: ../DistUpgrade/DistUpgradeController.py:1748
+#: ../DistUpgrade/DistUpgradeController.py:1724
 msgid "The partial upgrade was completed."
 msgstr "Частковае абнаўленне завершана."
 
@@ -764,20 +766,24 @@ msgstr ""
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:496
 msgid ""
-"Your graphics hardware may not be fully supported in elementary OS 12.04 LTS."
+"Your graphics hardware may not be fully supported in elementary OS 11.04."
 msgstr ""
+"Ваша графічнае абсталяванне можа не цалкам падтрымлівацца ў elementary OS "
+"11/04."
 
 #: ../DistUpgrade/DistUpgradeQuirks.py:498
 msgid ""
-"The support in elementary OS 12.04 LTS for your Intel graphics hardware is limited "
-"and you may encounter problems after the upgrade. For more information see "
-"https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx Do you want to "
+"The support in elementary OS 11.04 for your intel graphics hardware is "
+"limited and you may encounter problems after the upgrade. Do you want to "
 "continue with the upgrade?"
 msgstr ""
+"Падтрымка інтэграванага графічнага абсталявання Intel у elementary OS 11.04 "
+"можа быць абмежаванай, а таксама можа прывесці да паўстання памылак. Вы "
+"сапраўды хочаце працягнуць абнаўленне?"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:520
-#: ../DistUpgrade/DistUpgradeQuirks.py:548
-#: ../DistUpgrade/DistUpgradeQuirks.py:575
+#: ../DistUpgrade/DistUpgradeQuirks.py:518
+#: ../DistUpgrade/DistUpgradeQuirks.py:546
+#: ../DistUpgrade/DistUpgradeQuirks.py:573
 msgid ""
 "Upgrading may reduce desktop effects, and performance in games and other "
 "graphically intensive programs."
@@ -785,8 +791,8 @@ msgstr ""
 "Абнаўленне можа выклікаць зніжэнне якасці эфектаў працоўнага стала і "
 "прадукцыйнасці ў гульнях і праграмах, што актыўна выкарыстоўваюць графіку."
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:524
-#: ../DistUpgrade/DistUpgradeQuirks.py:552
+#: ../DistUpgrade/DistUpgradeQuirks.py:522
+#: ../DistUpgrade/DistUpgradeQuirks.py:550
 msgid ""
 "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
 "version of this driver is available that works with your video card in "
@@ -795,15 +801,16 @@ msgid ""
 "Do you want to continue?"
 msgstr ""
 "На гэтым кампутары выкарыстоўваюцца драйвера NVIDIA. Няма даступных версій "
-"гэтых драйвераў, якія працавалі бы з Вашай відэакарткай у elementary OS 10.04 LTS\n"
+"гэтых драйвераў, якія працавалі бы з Вашай відэакарткай у elementary OS "
+"10.04 LTS\n"
 "\n"
 "Працягнуць?"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:579
+#: ../DistUpgrade/DistUpgradeQuirks.py:577
 msgid ""
 "This computer is currently using the AMD 'fglrx' graphics driver. No version "
-"of this driver is available that works with your hardware in elementary OS 10.04 "
-"LTS.\n"
+"of this driver is available that works with your hardware in elementary OS "
+"10.04 LTS.\n"
 "\n"
 "Do you want to continue?"
 msgstr ""
@@ -813,11 +820,11 @@ msgstr ""
 "\n"
 "Працягнуць?"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:609
+#: ../DistUpgrade/DistUpgradeQuirks.py:607
 msgid "No i686 CPU"
 msgstr "Няма i686-сумяшчальнага працэсара"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:610
+#: ../DistUpgrade/DistUpgradeQuirks.py:608
 msgid ""
 "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
 "extension. All packages were built with optimizations requiring i686 as the "
@@ -826,14 +833,14 @@ msgid ""
 msgstr ""
 "Ваша сістэма выкарыстоўвае i568-сумяшчальны працэсар, альбо працэсар у якім "
 "няма пашырэння «cmov». Усе пакеты былі сабраны з аптымізацыяй пад "
-"архітэктуру i686 і вышэй. Абнавіць вашу сістэму да новай версіі elementary OS на "
-"гэтым кампутары не атрымаецца."
+"архітэктуру i686 і вышэй. Абнавіць вашу сістэму да новай версіі elementary "
+"OS на гэтым кампутары не атрымаецца."
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:646
+#: ../DistUpgrade/DistUpgradeQuirks.py:644
 msgid "No ARMv6 CPU"
 msgstr "Няма працэсара ARMv6"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:647
+#: ../DistUpgrade/DistUpgradeQuirks.py:645
 msgid ""
 "Your system uses an ARM CPU that is older than the ARMv6 architecture. All "
 "packages in karmic were built with optimizations requiring ARMv6 as the "
@@ -842,18 +849,18 @@ msgid ""
 msgstr ""
 "Ваша сістэма выкарыстоўвае працэсар архітэктуры ARM, старэйшы за архітэктуру "
 "ARMv6. Усе пакункі ў karmic былі пабудаваны з аптымізацыяй пад архітэктуру "
-"ARMv6 і вышэй. Вашу сістэму немагчыма абнавіць да новага рэлізу elementary OS з "
-"бягучым апаратным забеспячэннем."
+"ARMv6 і вышэй. Вашу сістэму немагчыма абнавіць да новага рэлізу elementary "
+"OS з бягучым апаратным забеспячэннем."
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:667
+#: ../DistUpgrade/DistUpgradeQuirks.py:665
 msgid "No init available"
 msgstr "Служба init недаступна"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:668
+#: ../DistUpgrade/DistUpgradeQuirks.py:666
 msgid ""
 "Your system appears to be a virtualised environment without an init daemon, "
-"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type of "
-"environment, requiring an update to your virtual machine configuration "
+"e.g. Linux-VServer. elementary OS 10.04 LTS cannot function within this type "
+"of environment, requiring an update to your virtual machine configuration "
 "first.\n"
 "\n"
 "Are you sure you want to continue?"
@@ -1008,16 +1015,16 @@ msgstr "Адбылася крытычная памылка"
 #: ../DistUpgrade/DistUpgradeViewGtk.py:464
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:470
 msgid ""
-"Please report this as a bug (if you haven't already) and include the files "
-"/var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
+"Please report this as a bug (if you haven't already) and include the files /"
+"var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in your "
 "report. The upgrade has aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
 "Калі ласка, паведаміце аб гэтым як аб памылцы (калі вы яшчэ гэтага не "
 "зрабілі) і далучыце файлы /var/log/dist-upgrade/main.log и /var/log/dist-"
 "upgrade/apt.log у вашу справаздачу. Абнаўленне было скасавана.\n"
-"Ваш арыгінальны файл sources.list быў захаваны ў  "
-"/etc/apt/sources.list.distUpgrade."
+"Ваш арыгінальны файл sources.list быў захаваны ў  /etc/apt/sources.list."
+"distUpgrade."
 
 #: ../DistUpgrade/DistUpgradeViewGtk.py:481
 #: ../DistUpgrade/DistUpgradeViewGtk3.py:487
@@ -1117,7 +1124,7 @@ msgstr "Інфармацыя"
 
 #: ../DistUpgrade/DistUpgradeViewKDE.py:741
 #: ../DistUpgrade/DistUpgradeViewKDE.py:786
-#: ../DistUpgrade/DistUpgradeViewKDE.py:789 ../DistUpgrade/DistUpgrade.ui.h:7
+#: ../DistUpgrade/DistUpgradeViewKDE.py:789 ../DistUpgrade/DistUpgrade.ui.h:11
 msgid "Details"
 msgstr "Дэталі"
 
@@ -1156,8 +1163,8 @@ msgstr "Патрабуецца перазагрузка"
 msgid "<b><big>Restart the system to complete the upgrade</big></b>"
 msgstr "<b><big>Перагрузіце сістэму для завяршэння абнаўлення</big></b>"
 
-#: ../DistUpgrade/DistUpgradeViewKDE.py:802 ../DistUpgrade/DistUpgrade.ui.h:14
-#: ../data/gtkbuilder/UpdateManager.ui.h:26
+#: ../DistUpgrade/DistUpgradeViewKDE.py:802 ../DistUpgrade/DistUpgrade.ui.h:25
+#: ../data/gtkbuilder/UpdateManager.ui.h:32
 msgid "_Restart Now"
 msgstr "Пера_запусціць"
 
@@ -1213,10 +1220,10 @@ msgstr[2] "%li сэкундаў"
 #. information here if you shuffle %(str_days)s %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:80
 #, python-format
@@ -1227,10 +1234,10 @@ msgstr "%(str_days)s %(str_hours)s"
 #. information here if you shuffle %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#. 
+#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#. 
+#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:98
 #, python-format
@@ -1254,7 +1261,7 @@ msgstr ""
 msgid "This download will take about %s with your connection. "
 msgstr "Загрузка працягнецца прыкладна %s на Вашам далучэнні. "
 
-#: ../DistUpgrade/DistUpgradeView.py:255 ../DistUpgrade/DistUpgrade.ui.h:21
+#: ../DistUpgrade/DistUpgradeView.py:255 ../DistUpgrade/DistUpgrade.ui.h:16
 msgid "Preparing to upgrade"
 msgstr "Падрыхтоўка да абнаўлення"
 
@@ -1262,15 +1269,15 @@ msgstr "Падрыхтоўка да абнаўлення"
 msgid "Getting new software channels"
 msgstr "Змена крыніц усталёўкі"
 
-#: ../DistUpgrade/DistUpgradeView.py:257 ../DistUpgrade/DistUpgrade.ui.h:23
+#: ../DistUpgrade/DistUpgradeView.py:257 ../DistUpgrade/DistUpgrade.ui.h:14
 msgid "Getting new packages"
 msgstr "Атрымаць новыя пакеты"
 
-#: ../DistUpgrade/DistUpgradeView.py:258 ../DistUpgrade/DistUpgrade.ui.h:26
+#: ../DistUpgrade/DistUpgradeView.py:258 ../DistUpgrade/DistUpgrade.ui.h:15
 msgid "Installing the upgrades"
 msgstr "Усталяваць абнаўленні"
 
-#: ../DistUpgrade/DistUpgradeView.py:259 ../DistUpgrade/DistUpgrade.ui.h:25
+#: ../DistUpgrade/DistUpgradeView.py:259 ../DistUpgrade/DistUpgrade.ui.h:10
 msgid "Cleaning up"
 msgstr "Ачыстка"
 
@@ -1346,7 +1353,7 @@ msgid "Removing the packages can take several hours. "
 msgstr ""
 
 #. FIXME: this should go into DistUpgradeController
-#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:683
+#: ../DistUpgrade/DistUpgradeView.py:388 ../UpdateManager/UpdateManager.py:674
 msgid "The software on this computer is up to date."
 msgstr ""
 
@@ -1363,8 +1370,7 @@ msgstr "Патрабуецца перазагрузка"
 #: ../DistUpgrade/DistUpgradeView.py:403
 msgid ""
 "The upgrade is finished and a reboot is required. Do you want to do this now?"
-msgstr ""
-"Абнаўленне скончанае і патрабуецца перазагрузка. Перазагрузіцца зараз?"
+msgstr "Абнаўленне скончанае і патрабуецца перазагрузка. Перазагрузіцца зараз?"
 
 #: ../DistUpgrade/DistUpgradeFetcherCore.py:70
 #: ../UpdateManager/Core/DistUpgradeFetcherCore.py:70
@@ -1480,16 +1486,16 @@ msgstr "Паведамленне аб памылцы «%s»."
 
 #: ../DistUpgrade/DistUpgradeViewText.py:91
 msgid ""
-"Please report this as a bug and include the files /var/log/dist-"
-"upgrade/main.log and /var/log/dist-upgrade/apt.log in your report. The "
-"upgrade has aborted.\n"
+"Please report this as a bug and include the files /var/log/dist-upgrade/main."
+"log and /var/log/dist-upgrade/apt.log in your report. The upgrade has "
+"aborted.\n"
 "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
 msgstr ""
-"Калі ласка, паведаміце пра гэта як пра памылку і ўключаюць у сябе файлы "
-"/var/log/dist-upgrade/main.log і /var/log/dist-upgrade/apt.log ў Вашым "
-"дакладзе. Абнаўленне не сфармавалася.\n"
-"Імя арыгінальнае sources.list быў захаваны ў "
-"/etc/apt/sources.list.distUpgrade."
+"Калі ласка, паведаміце пра гэта як пра памылку і ўключаюць у сябе файлы /var/"
+"log/dist-upgrade/main.log і /var/log/dist-upgrade/apt.log ў Вашым дакладзе. "
+"Абнаўленне не сфармавалася.\n"
+"Імя арыгінальнае sources.list быў захаваны ў /etc/apt/sources.list."
+"distUpgrade."
 
 #: ../DistUpgrade/DistUpgradeViewText.py:115
 msgid "Aborting"
@@ -1566,14 +1572,10 @@ msgstr ""
 "Калі вы абярэце «т», сістэма будзе перазагружана."
 
 #: ../DistUpgrade/DistUpgrade.ui.h:1
-msgid "_Cancel Upgrade"
-msgstr "Ска_саваць абнаўленне"
+msgid "    "
+msgstr "    "
 
 #: ../DistUpgrade/DistUpgrade.ui.h:2
-msgid "_Resume Upgrade"
-msgstr "Пра_цягваць абнаўленне"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:3
 msgid ""
 "<b><big>Cancel the running upgrade?</big></b>\n"
 "\n"
@@ -1585,31 +1587,7 @@ msgstr ""
 "Калі вы перапыніце абнаўленне, сістэма можа апынуцца ў непрацаздольным "
 "стане. Настойліва рэкамендуецца працягваць абнаўленне."
 
-#: ../DistUpgrade/DistUpgrade.ui.h:6
-msgid "_Start Upgrade"
-msgstr "За_пусціць абнаўленне"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:9
-msgid "_Replace"
-msgstr "За_мяніць"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:10
-msgid "Difference between the files"
-msgstr "Розьніца паміж файламі"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:11
-msgid "_Report Bug"
-msgstr "Па_ведаміць аб памылцы"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:12
-msgid "_Continue"
-msgstr "_Працягнуць"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:13
-msgid "<b><big>Start the upgrade?</big></b>"
-msgstr "<b><big>Пачаць абнаўленне?</big></b>"
-
-#: ../DistUpgrade/DistUpgrade.ui.h:15
+#: ../DistUpgrade/DistUpgrade.ui.h:5
 msgid ""
 "<b><big>Restart the system to complete the upgrade</big></b>\n"
 "\n"
@@ -1619,29 +1597,57 @@ msgstr ""
 "\n"
 "Калі ласка, захавайце Вашу працу перад працягам."
 
-#: ../DistUpgrade/DistUpgrade.ui.h:18
-msgid "Distribution Upgrade"
-msgstr "Абнавіць дыстрыбутыў"
+#: ../DistUpgrade/DistUpgrade.ui.h:8
+msgid "<b><big>Start the upgrade?</big></b>"
+msgstr "<b><big>Пачаць абнаўленне?</big></b>"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:19
+#: ../DistUpgrade/DistUpgrade.ui.h:9
 msgid "<b><big>Upgrading elementary OS to version 12.04</big></b>"
 msgstr "<b><big>Абнаўленне elementary OS да версіі 12.04</big></b>"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:20
-msgid "    "
-msgstr "    "
+#: ../DistUpgrade/DistUpgrade.ui.h:12
+msgid "Difference between the files"
+msgstr "Розьніца паміж файламі"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:22
-msgid "Setting new software channels"
-msgstr "Усталёўка новых крыніц праграмнага забеспячэння"
+#: ../DistUpgrade/DistUpgrade.ui.h:13
+msgid "Distribution Upgrade"
+msgstr "Абнавіць дыстрыбутыў"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:24
+#: ../DistUpgrade/DistUpgrade.ui.h:17
 msgid "Restarting the computer"
 msgstr "Перазапуск кампутара"
 
-#: ../DistUpgrade/DistUpgrade.ui.h:27
+#: ../DistUpgrade/DistUpgrade.ui.h:18
+msgid "Setting new software channels"
+msgstr "Усталёўка новых крыніц праграмнага забеспячэння"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:19
 msgid "Terminal"
 msgstr "Тэрмінал"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:20
+msgid "_Cancel Upgrade"
+msgstr "Ска_саваць абнаўленне"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:21
+msgid "_Continue"
+msgstr "_Працягнуць"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:23
+msgid "_Replace"
+msgstr "За_мяніць"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:24
+msgid "_Report Bug"
+msgstr "Па_ведаміць аб памылцы"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:26
+msgid "_Resume Upgrade"
+msgstr "Пра_цягваць абнаўленне"
+
+#: ../DistUpgrade/DistUpgrade.ui.h:27
+msgid "_Start Upgrade"
+msgstr "За_пусціць абнаўленне"
 
 #: ../UpdateManager/backend/InstallBackendSynaptic.py:60
 msgid "Please wait, this can take some time."
@@ -1677,8 +1683,8 @@ msgid "Upgrade"
 msgstr "Абнаўленне"
 
 #: ../UpdateManager/DistUpgradeFetcherKDE.py:89
-#: ../data/gtkbuilder/UpdateManager.ui.h:20
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:2
+#: ../data/gtkbuilder/UpdateManager.ui.h:13
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:4
 msgid "Release Notes"
 msgstr "Нататкі да выпуску"
 
@@ -1716,53 +1722,44 @@ msgstr "Загрузка файла %(current)li з %(total)li з хуткасц
 msgid "Downloading file %(current)li of %(total)li"
 msgstr "Загрузка файла %(current)li з %(total)li"
 
-#: ../UpdateManager/UpdateManager.py:104 ../do-release-upgrade:95
+#: ../UpdateManager/UpdateManager.py:103 ../do-release-upgrade:95
 msgid "Your elementary OS release is not supported anymore."
 msgstr "Ваш выпуск elementary OS больш не падтрымліваецца."
 
-#: ../UpdateManager/UpdateManager.py:105
+#: ../UpdateManager/UpdateManager.py:104
 msgid ""
 "You will not get any further security fixes or critical updates. Please "
 "upgrade to a later version of elementary OS."
 msgstr ""
 
-#: ../UpdateManager/UpdateManager.py:113
+#: ../UpdateManager/UpdateManager.py:112
 msgid "Upgrade information"
 msgstr "Інфармацыя аб абнаўленні"
 
-#: ../UpdateManager/UpdateManager.py:229
-#: ../UpdateManagerText/UpdateManagerText.py:32
-msgid "Install"
-msgstr "Усталяваць"
-
-#: ../UpdateManager/UpdateManager.py:231
-msgid "Name"
-msgstr "Назва"
-
 #. upload_archive = version_match.group(2).strip()
-#: ../UpdateManager/UpdateManager.py:391
+#: ../UpdateManager/UpdateManager.py:387
 #, python-format
 msgid "Version %s: \n"
 msgstr "Версія %s: \n"
 
-#: ../UpdateManager/UpdateManager.py:453
+#: ../UpdateManager/UpdateManager.py:444
 msgid ""
 "No network connection detected, you can not download changelog information."
 msgstr "Не выяўлена сеткавае злучэнне, немагчыма загрузіць спіс змяненняў."
 
-#: ../UpdateManager/UpdateManager.py:461
+#: ../UpdateManager/UpdateManager.py:452
 msgid "Downloading list of changes..."
 msgstr "Загрузка спісу змяненняў ..."
 
-#: ../UpdateManager/UpdateManager.py:505
+#: ../UpdateManager/UpdateManager.py:496
 msgid "_Deselect All"
 msgstr "С_кінуць усё"
 
-#: ../UpdateManager/UpdateManager.py:511
+#: ../UpdateManager/UpdateManager.py:502
 msgid "Select _All"
 msgstr "Вылучыць _усе"
 
-#: ../UpdateManager/UpdateManager.py:571
+#: ../UpdateManager/UpdateManager.py:562
 #, python-format
 msgid "%(count)s update has been selected."
 msgid_plural "%(count)s updates have been selected."
@@ -1770,33 +1767,33 @@ msgstr[0] "%(count)s абнаўленне абрана."
 msgstr[1] "%(count)s абнаўленняў абрана."
 msgstr[2] "%(count)s абнаўленняў абрана."
 
-#: ../UpdateManager/UpdateManager.py:575
+#: ../UpdateManager/UpdateManager.py:566
 #, python-format
 msgid "%s will be downloaded."
 msgstr "%s будзе загружана."
 
-#: ../UpdateManager/UpdateManager.py:587
+#: ../UpdateManager/UpdateManager.py:578
 msgid "The update has already been downloaded, but not installed."
 msgid_plural "The updates have already been downloaded, but not installed."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../UpdateManager/UpdateManager.py:592
+#: ../UpdateManager/UpdateManager.py:583
 msgid "There are no updates to install."
 msgstr ""
 
 #. TRANSLATORS: this allows to switch the order of the count of
 #. updates and the download size string (if needed)
-#: ../UpdateManager/UpdateManager.py:598
+#: ../UpdateManager/UpdateManager.py:589
 #, python-format
 msgid "%(count_str)s %(download_str)s"
 msgstr "%(count_str)s %(download_str)s"
 
-#: ../UpdateManager/UpdateManager.py:605
+#: ../UpdateManager/UpdateManager.py:596
 msgid "Unknown download size."
 msgstr "Загружаны памер невядомы."
 
-#: ../UpdateManager/UpdateManager.py:631
+#: ../UpdateManager/UpdateManager.py:622
 msgid ""
 "It is unknown when the package information was updated last. Please click "
 "the 'Check' button to update the information."
@@ -1804,7 +1801,7 @@ msgstr ""
 "Невядома, калі інфармацыя аб пакеце была абноўлена апошнім разам. Калі "
 "ласка, націсніце кнопку \"Праверыць\" для абнаўлення гэтай інфармацыі."
 
-#: ../UpdateManager/UpdateManager.py:637
+#: ../UpdateManager/UpdateManager.py:628
 #, python-format
 msgid ""
 "The package information was last updated %(days_ago)s days ago.\n"
@@ -1813,16 +1810,15 @@ msgstr ""
 "Інфармацыя аб пакетах была абноўлена %(days_ago)s дзён таму.\n"
 "Націсніце кнопку «Праверыць» для праверкі новых абнаўленняў праграм."
 
-#: ../UpdateManager/UpdateManager.py:642
+#: ../UpdateManager/UpdateManager.py:633
 #, python-format
 msgid "The package information was last updated %(days_ago)s day ago."
-msgid_plural ""
-"The package information was last updated %(days_ago)s days ago."
+msgid_plural "The package information was last updated %(days_ago)s days ago."
 msgstr[0] "Інфармацыя аб пакетах была абноўлена %(days_ago)s дзень таму."
 msgstr[1] "Інфармацыя аб пакетах была абноўлена %(days_ago)s дні таму."
 msgstr[2] "Інфармацыя аб пакетах была абноўлена %(days_ago)s дзён таму."
 
-#: ../UpdateManager/UpdateManager.py:646
+#: ../UpdateManager/UpdateManager.py:637
 #, python-format
 msgid "The package information was last updated %(hours_ago)s hour ago."
 msgid_plural ""
@@ -1832,18 +1828,18 @@ msgstr[1] "Інфармацыя аб пакетах была абноўлена 
 msgstr[2] "Інфармацыя аб пакетах была абноўлена %(hours_ago)s гадзінаў таму."
 
 #. TRANSLATORS: only in plural form, as %s minutes ago is one of 15, 30, 45 minutes ago
-#: ../UpdateManager/UpdateManager.py:651 ../UpdateManager/UpdateManager.py:653
-#: ../UpdateManager/UpdateManager.py:655
+#: ../UpdateManager/UpdateManager.py:642 ../UpdateManager/UpdateManager.py:644
+#: ../UpdateManager/UpdateManager.py:646
 #, python-format
 msgid "The package information was last updated about %s minutes ago."
 msgstr "Інфармацыя аб пакеце была абноўлена прыкладна %s хвілін таму."
 
-#: ../UpdateManager/UpdateManager.py:657
+#: ../UpdateManager/UpdateManager.py:648
 msgid "The package information was just updated."
 msgstr "Інфармацыя аб пакеце была толькі што абноўлена."
 
-#: ../UpdateManager/UpdateManager.py:677
-#: ../data/gtkbuilder/UpdateManager.ui.h:2
+#: ../UpdateManager/UpdateManager.py:668
+#: ../data/gtkbuilder/UpdateManager.ui.h:22
 msgid ""
 "Software updates correct errors, eliminate security vulnerabilities and "
 "provide new features."
@@ -1851,25 +1847,25 @@ msgstr ""
 "Абнаўленні праграм выпраўляюць памылкі, уразлівасці і дадаюць новыя "
 "магчымасці."
 
-#: ../UpdateManager/UpdateManager.py:696
+#: ../UpdateManager/UpdateManager.py:687
 msgid "Software updates may be available for your computer."
 msgstr "Магчыма прысутнічаюць абнаўленні праграм для вашага кампутара."
 
-#: ../UpdateManager/UpdateManager.py:704
+#: ../UpdateManager/UpdateManager.py:695
 msgid "Welcome to elementary OS"
 msgstr "Вітаем у elementary OS"
 
-#: ../UpdateManager/UpdateManager.py:705
+#: ../UpdateManager/UpdateManager.py:696
 msgid ""
-"These software updates have been issued since this version of elementary OS was "
-"released."
+"These software updates have been issued since this version of elementary OS "
+"was released."
 msgstr ""
 
-#: ../UpdateManager/UpdateManager.py:708
+#: ../UpdateManager/UpdateManager.py:699
 msgid "Software updates are available for this computer."
 msgstr ""
 
-#: ../UpdateManager/UpdateManager.py:759
+#: ../UpdateManager/UpdateManager.py:750
 #, python-format
 msgid ""
 "The upgrade needs a total of %s free space on disk '%s'. Please free at "
@@ -1881,7 +1877,7 @@ msgstr ""
 "выдаліце часовыя пакеты ўсталёвак, выканаўшы ў тэрмінале каманду 'sudo apt-"
 "get clean'."
 
-#: ../UpdateManager/UpdateManager.py:784
+#: ../UpdateManager/UpdateManager.py:775
 msgid ""
 "The computer needs to restart to finish installing updates. Please save your "
 "work before continuing."
@@ -1889,23 +1885,23 @@ msgstr ""
 "Для завяршэння ўсталёўкі абнаўленняў неабходна перазапусціць кампутар. Калі "
 "ласка, захавайце вынікі вашай працы перад тым, як працягнуць."
 
-#: ../UpdateManager/UpdateManager.py:848
+#: ../UpdateManager/UpdateManager.py:839
 msgid "Reading package information"
 msgstr "Чытанне інфармацыі аб пакетах"
 
-#: ../UpdateManager/UpdateManager.py:863
+#: ../UpdateManager/UpdateManager.py:854
 msgid "Connecting..."
 msgstr "Злучэнне..."
 
-#: ../UpdateManager/UpdateManager.py:880
+#: ../UpdateManager/UpdateManager.py:871
 msgid "You may not be able to check for updates or download new updates."
 msgstr "У вас недастаткова прывілеяў для праверкі ці зарузкі абнаўленняў."
 
-#: ../UpdateManager/UpdateManager.py:1004
+#: ../UpdateManager/UpdateManager.py:995
 msgid "Could not initialize the package information"
 msgstr "Не атрымалася атрымаць інфармацыю аб пакунках"
 
-#: ../UpdateManager/UpdateManager.py:1005
+#: ../UpdateManager/UpdateManager.py:996
 msgid ""
 "An unresolvable problem occurred while initializing the package "
 "information.\n"
@@ -1918,7 +1914,7 @@ msgstr ""
 "Калі ласка, паведаміце аб гэтай памылцы пакета «update-manager» і ўключыце "
 "гэтае паведамленне:\n"
 
-#: ../UpdateManager/UpdateManager.py:1036
+#: ../UpdateManager/UpdateManager.py:1025
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade.\n"
 "\n"
@@ -1930,31 +1926,31 @@ msgstr ""
 "Калі ласка, паведаміце аб гэтай памылцы пакета 'Мэнэджар абнаўленняў' і "
 "ўключыце гэтае паведамленне:"
 
-#: ../UpdateManager/UpdateManager.py:1061
+#: ../UpdateManager/UpdateManager.py:1050
 msgid " (New install)"
 msgstr " (Новая ўсталёўка)"
 
 #. TRANSLATORS: the b stands for Bytes
-#: ../UpdateManager/UpdateManager.py:1068
+#: ../UpdateManager/UpdateManager.py:1057
 #, python-format
 msgid "(Size: %s)"
 msgstr "(Памер: %s)"
 
-#: ../UpdateManager/UpdateManager.py:1070
+#: ../UpdateManager/UpdateManager.py:1059
 #, python-format
 msgid "From version %(old_version)s to %(new_version)s"
 msgstr "З версіі %(old_version)s на %(new_version)s"
 
-#: ../UpdateManager/UpdateManager.py:1074
+#: ../UpdateManager/UpdateManager.py:1063
 #, python-format
 msgid "Version %s"
 msgstr "Версія %s"
 
-#: ../UpdateManager/UpdateManager.py:1105 ../do-release-upgrade:107
+#: ../UpdateManager/UpdateManager.py:1094 ../do-release-upgrade:107
 msgid "Release upgrade not possible right now"
 msgstr "Абнаўленьне выпуску зараз немагчымае"
 
-#: ../UpdateManager/UpdateManager.py:1106 ../do-release-upgrade:108
+#: ../UpdateManager/UpdateManager.py:1095 ../do-release-upgrade:108
 #, c-format, python-format
 msgid ""
 "The release upgrade can not be performed currently, please try again later. "
@@ -1963,21 +1959,21 @@ msgstr ""
 "Абнаўленне рэлізу цяпер не можа быць выканана, паспрабуйце пазней. Сервер "
 "паведаміў: '%s'"
 
-#: ../UpdateManager/UpdateManager.py:1108 ../check-new-release-gtk:115
+#: ../UpdateManager/UpdateManager.py:1097 ../check-new-release-gtk:115
 msgid "Downloading the release upgrade tool"
 msgstr "Спампоўваецца праграма для абнаўлення дыстрыбутыва"
 
-#: ../UpdateManager/UpdateManager.py:1115
+#: ../UpdateManager/UpdateManager.py:1104
 #, python-format
 msgid "<b>New elementary OS release '%s' is available</b>"
 msgstr "<b>Даступны новы выпуск elementary OS '%s'</b>"
 
 #. we assert a clean cache
-#: ../UpdateManager/UpdateManager.py:1154
+#: ../UpdateManager/UpdateManager.py:1143
 msgid "Software index is broken"
 msgstr "Пашкоджаны індэкс праграм"
 
-#: ../UpdateManager/UpdateManager.py:1155
+#: ../UpdateManager/UpdateManager.py:1144
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -1998,6 +1994,10 @@ msgstr "Усталяваць ўсе даступныя абнаўленні"
 #: ../UpdateManagerText/UpdateManagerText.py:31
 msgid "Cancel"
 msgstr "Скасаваць"
+
+#: ../UpdateManagerText/UpdateManagerText.py:32
+msgid "Install"
+msgstr "Усталяваць"
 
 #: ../UpdateManagerText/UpdateManagerText.py:34
 msgid "Changelog"
@@ -2039,25 +2039,12 @@ msgstr ""
 msgid "Downloading changelog"
 msgstr "Загрузка спісу змяненняў"
 
-#: ../UpdateManager/Core/MyCache.py:138
+#: ../UpdateManager/Core/MyCache.py:130
 #, python-format
 msgid "Other updates (%s)"
 msgstr "Іншыя абнаўленні (%s)"
 
-#: ../UpdateManager/Core/MyCache.py:316
-msgid "This update does not come from a source that supports changelogs."
-msgstr ""
-"Гэтае абнаўленне пастаўляецца крыніцай, што не падтрымлівае спісы зменаў."
-
-#: ../UpdateManager/Core/MyCache.py:322 ../UpdateManager/Core/MyCache.py:350
-msgid ""
-"Failed to download the list of changes. \n"
-"Please check your Internet connection."
-msgstr ""
-"Памылка пры загрузцы спісу змен. \n"
-"Калі ласка, спраўдзьце вашае злучэнне з Інтэрнэтам."
-
-#: ../UpdateManager/Core/MyCache.py:329
+#: ../UpdateManager/Core/MyCache.py:285
 #, python-format
 msgid ""
 "Changes for the versions:\n"
@@ -2070,7 +2057,20 @@ msgstr ""
 "Даступная версія: %s\n"
 "\n"
 
-#: ../UpdateManager/Core/MyCache.py:339
+#: ../UpdateManager/Core/MyCache.py:299
+msgid "This update does not come from a source that supports changelogs."
+msgstr ""
+"Гэтае абнаўленне пастаўляецца крыніцай, што не падтрымлівае спісы зменаў."
+
+#: ../UpdateManager/Core/MyCache.py:305 ../UpdateManager/Core/MyCache.py:326
+msgid ""
+"Failed to download the list of changes. \n"
+"Please check your Internet connection."
+msgstr ""
+"Памылка пры загрузцы спісу змен. \n"
+"Калі ласка, спраўдзьце вашае злучэнне з Інтэрнэтам."
+
+#: ../UpdateManager/Core/MyCache.py:315
 #, python-format
 msgid ""
 "The changelog does not contain any relevant changes.\n"
@@ -2080,11 +2080,11 @@ msgid ""
 msgstr ""
 "Сьпіс зменаў ня ўтрымлівае звязаных з пакункам запісаў.\n"
 "\n"
-"Калі ласка, выкарыстоўвайце "
-"http://launchpad.net/ubuntu/+source/%s/%s/+changelog\n"
+"Калі ласка, выкарыстоўвайце http://launchpad.net/ubuntu/+source/%s/%s/"
+"+changelog\n"
 "пакуль змены ня будуць даступны альбо паспрабуйце яшчэ раз пазней."
 
-#: ../UpdateManager/Core/MyCache.py:344
+#: ../UpdateManager/Core/MyCache.py:320
 #, python-format
 msgid ""
 "The list of changes is not available yet.\n"
@@ -2094,8 +2094,8 @@ msgid ""
 msgstr ""
 "Спіс зменаў пакуль што недаступны.\n"
 "\n"
-"Калі ласка, выкарыстоўвайце "
-"http://launchpad.net/ubuntu/+source/%s/%s/+changelog\n"
+"Калі ласка, выкарыстоўвайце http://launchpad.net/ubuntu/+source/%s/%s/"
+"+changelog\n"
 "пакуль змены ня будуць даступны альбо паспрабуйце яшчэ раз пазней."
 
 #: ../UpdateManager/Core/UpdateList.py:49
@@ -2132,18 +2132,56 @@ msgid "Other updates"
 msgstr "Іншыя абнаўленні"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:1
-msgid "<big><b>Starting Update Manager</b></big>"
-msgstr "<big><b>Стартуе Мэнэджар абнаўленняў</b></big>"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:3
-msgid "_Partial Upgrade"
-msgstr "_Частковае абнаўленне"
+msgid ""
+"<b><big>You must check for updates manually</big></b>\n"
+"\n"
+"Your system does not check for updates automatically. You can configure this "
+"behavior in <i>Software Sources</i> on the <i>Updates</i> tab."
+msgstr ""
+"<b><big>Вы павінны праверыць наяўнасць абнаўленняў  уручную</big></b>\n"
+"\n"
+"Ваша сістэма не правярае наяўнасць абнаўленняў аўтаматычна. Вы можаце "
+"наладзіць гэта ў <i>Крыніцы ўсталёўкі</i> на ўкладцы <i>Абнаўленні</i>."
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:4
 msgid "<big><b>Not all updates can be installed</b></big>"
 msgstr "<big><b>Ня ўсе абнаўленні можна ўсталяваць</b></big>"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:5
+msgid "<big><b>Running on battery</b></big>"
+msgstr "<big><b>Праца ад батарэі</b></big>"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:6
+msgid "<big><b>Starting Update Manager</b></big>"
+msgstr "<big><b>Стартуе Мэнэджар абнаўленняў</b></big>"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:7
+msgid "Changes"
+msgstr "Змены"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:8
+msgid "Chec_k"
+msgstr "Праве_рыць"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:9
+msgid "Co_ntinue"
+msgstr "Пра_цягваць"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:10
+msgid "Description"
+msgstr "Апісанне"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:11
+msgid "Description of update"
+msgstr "Апісанне абнаўлення"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:12
+msgid "It’s safer to connect the computer to AC power before updating."
+msgstr ""
+"Бяспечней будзе падлучыць кампутар да крыніцы сілкавання перад пачаткам "
+"абнаўлення."
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:14
 msgid ""
 "Run a partial upgrade, to install as many updates as possible. \n"
 "\n"
@@ -2162,65 +2200,29 @@ msgstr ""
 " * Неафіцыйныя пакункі, не прадстаўляемыя elementary OS\n"
 " * Нармальныя змены перадрэлізнай версыі elementary OS"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:12
-msgid "Chec_k"
-msgstr "Праве_рыць"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:13
-msgid ""
-"<b><big>You must check for updates manually</big></b>\n"
-"\n"
-"Your system does not check for updates automatically. You can configure this "
-"behavior in <i>Software Sources</i> on the <i>Updates</i> tab."
-msgstr ""
-"<b><big>Вы павінны праверыць наяўнасць абнаўленняў  уручную</big></b>\n"
-"\n"
-"Ваша сістэма не правярае наяўнасць абнаўленняў аўтаматычна. Вы можаце "
-"наладзіць гэта ў <i>Крыніцы ўсталёўкі</i> на ўкладцы <i>Абнаўленні</i>."
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:16
-msgid "_Hide this information in the future"
-msgstr "_Хаваць гэтую інфармацыю ў будучыні"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:17
-msgid "Co_ntinue"
-msgstr "Пра_цягваць"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:18
-msgid "<big><b>Running on battery</b></big>"
-msgstr "<big><b>Праца ад батарэі</b></big>"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:19
-msgid "Your system is running on battery. Are you sure you want to continue?"
-msgstr "Ваш кампутар працуе ад батарэі. Вы ўпэўнены, што хочаце працягнуць?"
-
 #: ../data/gtkbuilder/UpdateManager.ui.h:21
-msgid "_Upgrade"
-msgstr "_Абнавіць"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:22
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:8
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:5
 msgid "Show progress of individual files"
 msgstr "Паказваць прагрэс для асобных файлаў"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:23
-#: ../data/update-manager.desktop.in.h:1
-msgid "Update Manager"
-msgstr "Мэнэджар абнаўленняў"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:24
 msgid "Starting Update Manager"
 msgstr "Запуск Мэнэджара абнаўленняў"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:25
+#: ../data/gtkbuilder/UpdateManager.ui.h:24
 msgid "U_pgrade"
 msgstr "Аб_навіць"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:27
-msgid "updates"
-msgstr "абнаўленні"
+#: ../data/gtkbuilder/UpdateManager.ui.h:25
+#: ../data/update-manager.desktop.in.h:3
+msgid "Update Manager"
+msgstr "Мэнэджар абнаўленняў"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:28
+#: ../data/gtkbuilder/UpdateManager.ui.h:26
+msgid "You are connected via a wireless modem."
+msgstr "Вы падлучаны праз бесправадны мадэм."
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:27
 msgid ""
 "You are connected via roaming and may be charged for the data consumed by "
 "this update."
@@ -2228,56 +2230,51 @@ msgstr ""
 "Вы знаходзіцеся ў роўмінгу і з вас можа спаганяцца плата за дадзеныя, якія "
 "перадаюцца пры абнаўленні."
 
+#: ../data/gtkbuilder/UpdateManager.ui.h:28
+msgid "Your system is running on battery. Are you sure you want to continue?"
+msgstr "Ваш кампутар працуе ад батарэі. Вы ўпэўнены, што хочаце працягнуць?"
+
 #: ../data/gtkbuilder/UpdateManager.ui.h:29
-msgid "You are connected via a wireless modem."
-msgstr "Вы падлучаны праз бесправадны мадэм."
+msgid "_Hide this information in the future"
+msgstr "_Хаваць гэтую інфармацыю ў будучыні"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:30
-msgid "It’s safer to connect the computer to AC power before updating."
-msgstr ""
-"Бяспечней будзе падлучыць кампутар да крыніцы сілкавання перад пачаткам "
-"абнаўлення."
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:31
 msgid "_Install Updates"
 msgstr "_Усталяваць абнаўленні"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:32
-msgid "Changes"
-msgstr "Змены"
+#: ../data/gtkbuilder/UpdateManager.ui.h:31
+msgid "_Partial Upgrade"
+msgstr "_Частковае абнаўленне"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:33
-msgid "Description"
-msgstr "Апісанне"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:34
-msgid "Description of update"
-msgstr "Апісанне абнаўлення"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:35
 msgid "_Settings..."
 msgstr "_Налады..."
 
+#: ../data/gtkbuilder/UpdateManager.ui.h:34
+msgid "_Upgrade"
+msgstr "_Абнавіць"
+
+#: ../data/gtkbuilder/UpdateManager.ui.h:35
+msgid "updates"
+msgstr "абнаўленні"
+
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:1
 msgid ""
-"<b>A new version of elementary OS is available. Would you like to upgrade?</b>"
+"<b>A new version of elementary OS is available. Would you like to upgrade?</"
+"b>"
 msgstr "<b>Даступная новая версія elementary OS. Хочаце абнавіць?</b>"
+
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:2
+msgid "Ask Me Later"
+msgstr "Спытаць пазней"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:3
 msgid "Don't Upgrade"
 msgstr "Не абнаўляць"
 
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:4
-msgid "Ask Me Later"
-msgstr "Спытаць пазней"
-
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:5
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
 msgid "Yes, Upgrade Now"
 msgstr "Так, Абнавіць зараз"
-
-#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:6
-msgid "You have declined to upgrade to the new elementary OS"
-msgstr "Вы адмовіліся ад абнаўлення да новай версіі elementary OS"
 
 #: ../data/gtkbuilder/UpgradePromptDialog.ui.h:7
 msgid ""
@@ -2287,13 +2284,17 @@ msgstr ""
 "Вы можаце абнавіць пазней, адчыніўшы Кіраўнік Абнаўленьняў і націснуўшы на "
 "\"Абнавіць\"."
 
+#: ../data/gtkbuilder/UpgradePromptDialog.ui.h:8
+msgid "You have declined to upgrade to the new elementary OS"
+msgstr "Вы адмовіліся ад абнаўлення да новай версіі elementary OS"
+
+#: ../data/update-manager.desktop.in.h:1
+msgid "Show and install available updates"
+msgstr "Паказаць і ўсталяваць даступныя абнаўленні"
+
 #: ../data/update-manager.desktop.in.h:2
 msgid "Software Updates"
 msgstr "Абнаўленні праграмнага забеспячэння"
-
-#: ../data/update-manager.desktop.in.h:3
-msgid "Show and install available updates"
-msgstr "Паказаць і ўсталяваць даступныя абнаўленні"
 
 #: ../update-manager:61 ../update-manager-text:50 ../do-release-upgrade:46
 msgid "Show version and exit"
@@ -2516,58 +2517,251 @@ msgid "%s needs to be marked as manually installed."
 msgstr "%s павінен быць пазначаны як усталяваны ўручную."
 
 #: ../Janitor/plugins/remove_lilo_plugin.py:28
-msgid ""
-"Remove lilo since grub is also installed.(See bug #314004 for details.)"
+msgid "Remove lilo since grub is also installed.(See bug #314004 for details.)"
 msgstr ""
 "Выдаліце lilo, калі grub ужо ўсталяваны. (Глядзіце bug #314004 для дэталяў)"
+
+#~ msgid ""
+#~ "Unable to locate any package files, perhaps this is not a Ubuntu Disc or "
+#~ "the wrong architecture?"
+#~ msgstr ""
+#~ "Немагчыма адшукаць ніводнага файла з пакетам, верагодна, гэты дыск не "
+#~ "з'яўляецца Ubuntu ці мае іншую архітэктуру."
+
+#~ msgid ""
+#~ "There was a error adding the CD, the upgrade will abort. Please report "
+#~ "this as a bug if this is a valid Ubuntu CD.\n"
+#~ "\n"
+#~ "The error message was:\n"
+#~ "'%s'"
+#~ msgstr ""
+#~ "Пры дадаванні кампакт-дыска адбылася памылка, абнаўленне будзе спынена. "
+#~ "Калі ласка, паведаміце аб памылцы, калі гэта быў карэктны кампакт-дыск "
+#~ "Ubuntu.\n"
+#~ "\n"
+#~ "Тэкст памылкі:\n"
+#~ "\"%s\""
+
+#~ msgid ""
+#~ "An unresolvable problem occurred while calculating the upgrade:\n"
+#~ "%s\n"
+#~ "\n"
+#~ " This can be caused by:\n"
+#~ " * Upgrading to a pre-release version of Ubuntu\n"
+#~ " * Running the current pre-release version of Ubuntu\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Невырашальная праблема паўстала падчас падліку апгрэйду:\n"
+#~ "%s\n"
+#~ "\n"
+#~ " Гэта магло здарыцца з-за наступных прычын:\n"
+#~ " * апгрэйд да прэ-рэлізу Ubuntu\n"
+#~ " * працы з прэ-рэлізам Ubuntu\n"
+#~ " * неафіцыйных праграм, якія не пастаўляюцца з Ubuntu\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
+#~ "desktop or edubuntu-desktop package and it was not possible to detect "
+#~ "which version of Ubuntu you are running.\n"
+#~ " Please install one of the packages above first using synaptic or apt-get "
+#~ "before proceeding."
+#~ msgstr ""
+#~ "Вашая сістэма не ўтрымлівае пакет ubuntu-desktop, kubuntu-desktop, "
+#~ "xubuntu-desktop ці edubuntu-desktop таму немагчыма вызначыць якую версію "
+#~ "Ubuntu вы маеце.\n"
+#~ "Калі ласка, найперш усталюйце адзін з вышэй узгаданых пакетаў з дапамогай "
+#~ "synaptic ці apt-get."
+
+#~ msgid ""
+#~ "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
+#~ "version of this driver is available that works with your video card in "
+#~ "Ubuntu 10.04 LTS.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "На гэтым кампутары выкарыстоўваюцца драйвера NVIDIA. Няма даступных "
+#~ "версій гэтых драйвераў, якія працавалі бы з Вашай відэакарткай у Ubuntu "
+#~ "10.04 LTS\n"
+#~ "\n"
+#~ "Працягнуць?"
+
+#~ msgid ""
+#~ "This computer is currently using the AMD 'fglrx' graphics driver. No "
+#~ "version of this driver is available that works with your hardware in "
+#~ "Ubuntu 10.04 LTS.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "На гэтым кампутары выкарыстоўваюцца драйвера AMD 'fglrx'. Няма даступных "
+#~ "версій гэтых драйвераў, якія працавалі бы з Вашым абсталяваннем ва 10.04 "
+#~ "LTS\n"
+#~ "\n"
+#~ "Працягнуць?"
+
+#~ msgid ""
+#~ "Your system uses an i586 CPU or a CPU that does not have the 'cmov' "
+#~ "extension. All packages were built with optimizations requiring i686 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+#~ msgstr ""
+#~ "Ваша сістэма выкарыстоўвае i568-сумяшчальны працэсар, альбо працэсар у "
+#~ "якім няма пашырэння «cmov». Усе пакеты былі сабраны з аптымізацыяй пад "
+#~ "архітэктуру i686 і вышэй. Абнавіць вашу сістэму да новай версіі Ubuntu на "
+#~ "гэтым кампутары не атрымаецца."
+
+#~ msgid ""
+#~ "Your system uses an ARM CPU that is older than the ARMv6 architecture. "
+#~ "All packages in karmic were built with optimizations requiring ARMv6 as "
+#~ "the minimal architecture. It is not possible to upgrade your system to a "
+#~ "new Ubuntu release with this hardware."
+#~ msgstr ""
+#~ "Ваша сістэма выкарыстоўвае працэсар архітэктуры ARM, старэйшы за "
+#~ "архітэктуру ARMv6. Усе пакункі ў karmic былі пабудаваны з аптымізацыяй "
+#~ "пад архітэктуру ARMv6 і вышэй. Вашу сістэму немагчыма абнавіць да новага "
+#~ "рэлізу Ubuntu з бягучым апаратным забеспячэннем."
+
+#~ msgid ""
+#~ "Your system appears to be a virtualised environment without an init "
+#~ "daemon, e.g. Linux-VServer. Ubuntu 10.04 LTS cannot function within this "
+#~ "type of environment, requiring an update to your virtual machine "
+#~ "configuration first.\n"
+#~ "\n"
+#~ "Are you sure you want to continue?"
+#~ msgstr ""
+#~ "Падобна на тое, што Ваша сістэма з'яўляецца віртуалізаваным асяроддзем "
+#~ "без службы init, напрыклад Linux-VServer.\n"
+#~ "\n"
+#~ "Вы ўпэўнены, што хочаце працягнуць?"
+
+#~ msgid "<b><big>Upgrading Ubuntu to version 12.04</big></b>"
+#~ msgstr "<b><big>Абнаўленне Ubuntu да версіі 12.04</big></b>"
+
+#~ msgid "Your Ubuntu release is not supported anymore."
+#~ msgstr "Ваш выпуск Ubuntu больш не падтрымліваецца."
+
+#~ msgid "Name"
+#~ msgstr "Назва"
+
+#~ msgid "Welcome to Ubuntu"
+#~ msgstr "Вітаем у Ubuntu"
+
+#~ msgid "<b>New Ubuntu release '%s' is available</b>"
+#~ msgstr "<b>Даступны новы выпуск Ubuntu '%s'</b>"
+
+#, fuzzy
+#~ msgid "New hardware support is available"
+#~ msgstr "Даступны новы выпуск '%s'."
+
+#~ msgid ""
+#~ "\n"
+#~ "A normal upgrade can not be calculated, please run: \n"
+#~ "  sudo apt-get dist-upgrade\n"
+#~ "\n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " * A previous upgrade which didn't complete\n"
+#~ " * Problems with some of the installed software\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ " * Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "\n"
+#~ "Звычайнае абнаўленне ня можа быць выканана, калі ласка, запусціце: \n"
+#~ "  sudo apt-get dist-upgrade\n"
+#~ "\n"
+#~ "\n"
+#~ " Гэта можа быць выклікана:\n"
+#~ " * Папярэднім абнаўленнем, якое ня было завершана\n"
+#~ " * Праблемамі з асобна ўсталяванымі пакункамі альбо праграмамі\n"
+#~ " * Неафіцыйнымі пакункамі, якія не падтрымліваюцца Ubuntu\n"
+#~ " * Натуральнымі зменамі ў папярэдняй версіі Ubuntu"
+
+#~ msgid ""
+#~ "Run a partial upgrade, to install as many updates as possible. \n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " * A previous upgrade which didn't complete\n"
+#~ " * Problems with some of the installed software\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ " * Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "Запусціць частковае абнаўленне дыстрыбутыва з усталёўкай па магчымасьці "
+#~ "максімальнай колькасці абнаўленняў.\n"
+#~ " Магчымыя прычыны:\n"
+#~ "\n"
+#~ " * Папярэдняя спроба абнаўлення дыстрыбутыва не завяршылася\n"
+#~ " * Праблема з якой-небудзь усталяванай праграмай\n"
+#~ " * Неафіцыйныя пакункі, не прадстаўляемыя Ubuntu\n"
+#~ " * Нармальныя змены перадрэлізнай версыі Ubuntu"
+
+#, fuzzy
+#~ msgid "I_nstall"
+#~ msgstr "Усталяваць"
+
+#~ msgid ""
+#~ "<b>A new version of Ubuntu is available. Would you like to upgrade?</b>"
+#~ msgstr "<b>Даступная новая версія Ubuntu. Хочаце абнавіць?</b>"
+
+#~ msgid "You have declined to upgrade to the new Ubuntu"
+#~ msgstr "Вы адмовіліся ад абнаўлення да новай версіі Ubuntu"
+
+#~ msgid "Check if a new Ubuntu release is available"
+#~ msgstr "Праверыць, ці даступны новы рэліз Ubuntu"
+
+#~ msgid "Ubuntu %(version)s Upgrade Available"
+#~ msgstr "Даступнае абнаўленне Ubuntu %(version)s"
+
+#~ msgid "You have declined the upgrade to Ubuntu %s"
+#~ msgstr "Вы адмовіліся ад абнаўлення да Ubuntu %s"
 
 #~ msgid "Checking for a new ubuntu release"
 #~ msgstr "Праверыць наяўнасьць новага выпуску ubuntu"
 
-#, python-format
 #~ msgid ""
-#~ "This upgrade is running in sandbox (test) mode. All changes are written to "
-#~ "'%s' and will be lost on the next reboot.\n"
+#~ "This upgrade is running in sandbox (test) mode. All changes are written "
+#~ "to '%s' and will be lost on the next reboot.\n"
 #~ "\n"
 #~ "*No* changes written to a systemdir from now until the next reboot are "
 #~ "permanent."
 #~ msgstr ""
-#~ "Абнаўленне адбываецца ў бяспечным (тэставым) рэжыме. Усе змены запісваюцца ў "
-#~ "'%s' і будуць сцёртыя пасля перазагрузкі.\n"
+#~ "Абнаўленне адбываецца ў бяспечным (тэставым) рэжыме. Усе змены "
+#~ "запісваюцца ў '%s' і будуць сцёртыя пасля перазагрузкі.\n"
 #~ "\n"
-#~ "*Ніякія* змены сістэмных каталогаў ад гэтага часу да наступнай перазагрузкі "
-#~ "не зяўляюцца пастаяннымі."
+#~ "*Ніякія* змены сістэмных каталогаў ад гэтага часу да наступнай "
+#~ "перазагрузкі не зяўляюцца пастаяннымі."
 
 #~ msgid ""
 #~ "Upgrading the repository information resulted in a invalid file. Please "
 #~ "report this as a bug using the command 'ubuntu-bug update-manager' in a "
 #~ "terminal."
 #~ msgstr ""
-#~ "Абнаўленне звестак аб сховішчы прывяло да стварэння няспраўнага файла. Калі "
-#~ "ласка, адпраўце гэту справаздачу, выкарыстоўваючы ў тэрмінале каманду "
-#~ "'ubuntu-bug update-manager'"
+#~ "Абнаўленне звестак аб сховішчы прывяло да стварэння няспраўнага файла. "
+#~ "Калі ласка, адпраўце гэту справаздачу, выкарыстоўваючы ў тэрмінале "
+#~ "каманду 'ubuntu-bug update-manager'"
 
-#, python-format
 #~ msgid ""
 #~ "\n"
 #~ "\n"
 #~ "Please report this bug using the command 'ubuntu-bug update-manager' in a "
-#~ "terminal and include the files in /var/log/dist-upgrade/ in the bug report.\n"
+#~ "terminal and include the files in /var/log/dist-upgrade/ in the bug "
+#~ "report.\n"
 #~ "%s"
 #~ msgstr ""
 #~ "\n"
 #~ "\n"
-#~ "Калі ласка, адпраўце гэтае паведамленне, выкарыстоўваючы ў тэрмінале каманду "
-#~ "'ubuntu-bug update-manager' і дадайце файлы з /var/log/dist-upgrade/ у "
-#~ "паведамленне аб памылцы.\n"
+#~ "Калі ласка, адпраўце гэтае паведамленне, выкарыстоўваючы ў тэрмінале "
+#~ "каманду 'ubuntu-bug update-manager' і дадайце файлы з /var/log/dist-"
+#~ "upgrade/ у паведамленне аб памылцы.\n"
 #~ "%s"
 
 #~ msgid ""
-#~ "The system was unable to get the prerequisites for the upgrade. The upgrade "
-#~ "will abort now and restore the original system state.\n"
+#~ "The system was unable to get the prerequisites for the upgrade. The "
+#~ "upgrade will abort now and restore the original system state.\n"
 #~ "\n"
-#~ "Please report this as a bug using the command 'ubuntu-bug update-manager' in "
-#~ "a terminal and include the files in /var/log/dist-upgrade/ in the bug report."
+#~ "Please report this as a bug using the command 'ubuntu-bug update-manager' "
+#~ "in a terminal and include the files in /var/log/dist-upgrade/ in the bug "
+#~ "report."
 #~ msgstr ""
 #~ "Сістэма не змагла загрузіць спіс абавязковых патрабаванняў для выканання "
 #~ "абнаўлення. Праграма абнаўлення скончыць сваю працу і верне сістэму да яе "
@@ -2579,31 +2773,30 @@ msgstr ""
 
 #~ msgid ""
 #~ "Preparing the system for the upgrade failed. Please report this using the "
-#~ "command 'ubuntu-bug update-manager' in a terminal and include the files in "
-#~ "/var/log/dist-upgrade/ in the bug report."
+#~ "command 'ubuntu-bug update-manager' in a terminal and include the files "
+#~ "in /var/log/dist-upgrade/ in the bug report."
 #~ msgstr ""
 #~ "Немагчыма падрыхтаваць сістэму да выканання абнаўлення. Калі ласка, "
 #~ "паведаміце аб памылцы, выкарыстоўваючы ў тэрмінале каманду 'ubuntu-bug "
 #~ "update-manager' і дадайце файлы з /var/log/dist-upgrade/ у справаздачу аб "
 #~ "сапсаванасці."
 
-#, python-format
 #~ msgid ""
 #~ "After your package information was updated the essential package '%s' can "
 #~ "not be found anymore.\n"
 #~ "This indicates a serious error, please report this bug using the command "
-#~ "'ubuntu-bug update-manager' in a terminal and include the files in "
-#~ "/var/log/dist-upgrade/ in the bug report."
+#~ "'ubuntu-bug update-manager' in a terminal and include the files in /var/"
+#~ "log/dist-upgrade/ in the bug report."
 #~ msgstr ""
 #~ "Пасля абнаўлення звестак аб пакеце, асноўны пакет '%s' больш не можа быць "
 #~ "знойдзены.\n"
 #~ "Гэта азначае сур'ёзную памылку; калі ласка адпраўце справаздачу аб гэтай "
-#~ "праблеме, выкарыстоўваючы каманду 'ubuntu-bug update-manager' у тэрмінале і "
-#~ "далучыце файлы з /var/log/dist-upgrade да паведамлення аб памылцы."
+#~ "праблеме, выкарыстоўваючы каманду 'ubuntu-bug update-manager' у тэрмінале "
+#~ "і далучыце файлы з /var/log/dist-upgrade да паведамлення аб памылцы."
 
-#~ msgid "Your graphics hardware may not be fully supported in elementary OS 11.04."
+#~ msgid "Your graphics hardware may not be fully supported in Ubuntu 11.04."
 #~ msgstr ""
-#~ "Ваша графічнае абсталяванне можа не цалкам падтрымлівацца ў elementary OS 11/04."
+#~ "Ваша графічнае абсталяванне можа не цалкам падтрымлівацца ў Ubuntu 11/04."
 
 #~ msgid ""
 #~ "Fetching and installing the upgrade can take several hours. Once the "
@@ -2615,40 +2808,41 @@ msgstr ""
 #~ msgid "Your system is up-to-date"
 #~ msgstr "Ваша сістэма не патрабуе абнаўлення"
 
-#~ msgid "<b><big>Upgrading elementary OS to version 11.10</big></b>"
-#~ msgstr "<b><big>Абнаўленне elementary OS да версіі 11.10</big></b>"
+#~ msgid "<b><big>Upgrading Ubuntu to version 11.10</big></b>"
+#~ msgstr "<b><big>Абнаўленне Ubuntu да версіі 11.10</big></b>"
 
 #~ msgid ""
 #~ "You will not get any further security fixes or critical updates. Please "
-#~ "upgrade to a later version of elementary OS Linux."
+#~ "upgrade to a later version of Ubuntu Linux."
 #~ msgstr ""
 #~ "У далейшым вы не будзеце атрымліваць абнаўленні бяспекі ці крытычныя "
-#~ "абнаўленні. Калі ласка, абнавіцеся да апошняй версіі elementary OS."
+#~ "абнаўленні. Калі ласка, абнавіцеся да апошняй версіі Ubuntu."
 
 #~ msgid "There are no updates to install"
 #~ msgstr "Няма абнаўленняў"
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of elementary OS was "
-#~ "released. If you don't want to install them now, choose \"Update Manager\" "
-#~ "from Applications later."
+#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "released. If you don't want to install them now, choose \"Update Manager"
+#~ "\" from Applications later."
 #~ msgstr ""
-#~ "Гэтыя абнаўленні былі выпушчаныя пасля дадзенай версіі elementary OS. Калі вы не "
+#~ "Гэтыя абнаўленні былі выпушчаныя пасля дадзенай версіі Ubuntu. Калі вы не "
 #~ "маеце жадання ўсталёўваць іх цяпер, вы можаце пазней абраць \"Мэнэджар "
 #~ "абнаўленняў\" з меню Праграмы."
 
 #~ msgid ""
-#~ "These software updates have been issued since this version of elementary OS was "
-#~ "released. If you don't want to install them now, choose \"Update Manager\" "
-#~ "from the Administration Menu later."
+#~ "These software updates have been issued since this version of Ubuntu was "
+#~ "released. If you don't want to install them now, choose \"Update Manager"
+#~ "\" from the Administration Menu later."
 #~ msgstr ""
-#~ "Гэтыя абнаўленні былі выпушчаныя пасля дадзенай версіі elementary OS. Калі вы не "
+#~ "Гэтыя абнаўленні былі выпушчаныя пасля дадзенай версіі Ubuntu. Калі вы не "
 #~ "маеце жадання ўсталёўваць іх цяпер, вы можаце пазней абраць \"Мэнэджар "
 #~ "абнаўленняў\" з меню Адміністраванне."
 
 #~ msgid "Software updates are available for this computer"
 #~ msgstr ""
-#~ "У наяўнасці маюцца абнаўленні праграмнага забеспячэння для гэтага кампутара"
+#~ "У наяўнасці маюцца абнаўленні праграмнага забеспячэння для гэтага "
+#~ "кампутара"
 
 #~ msgid ""
 #~ "If you don't want to install them now, choose \"Update Manager\" from the "
@@ -2671,13 +2865,13 @@ msgstr ""
 #~ msgstr "1 kB"
 
 #~ msgid ""
-#~ "The support in elementary OS 11.04 for your intel graphics hardware is limited and "
-#~ "you may encounter problems after the upgrade. Do you want to continue with "
-#~ "the upgrade?"
+#~ "The support in Ubuntu 11.04 for your intel graphics hardware is limited "
+#~ "and you may encounter problems after the upgrade. Do you want to continue "
+#~ "with the upgrade?"
 #~ msgstr ""
-#~ "Падтрымка інтэграванага графічнага абсталявання Intel у elementary OS 11.04 можа "
-#~ "быць абмежаванай, а таксама можа прывесці да паўстання памылак. Вы сапраўды "
-#~ "хочаце працягнуць абнаўленне?"
+#~ "Падтрымка інтэграванага графічнага абсталявання Intel у Ubuntu 11.04 можа "
+#~ "быць абмежаванай, а таксама можа прывесці да паўстання памылак. Вы "
+#~ "сапраўды хочаце працягнуць абнаўленне?"
 
 #~ msgid "The update has already been downloaded, but not installed"
 #~ msgid_plural "The updates have already been downloaded, but not installed"
@@ -2685,6 +2879,5 @@ msgstr ""
 #~ msgstr[1] "Абнаўленні ўжо загружаны, але яшчэ не ўсталяваныя"
 #~ msgstr[2] "Абнаўленьні ўжо запампаваныя, але яшчэ не ўсталяваныя"
 
-#, python-format
 #~ msgid "%.0f kB"
 #~ msgstr "%.0f kB"

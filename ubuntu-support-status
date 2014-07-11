@@ -143,6 +143,11 @@ if __name__ == "__main__":
         'num' : len(unsupported),
         'percent' : len(unsupported) * 100.0 / total}
 
+    # provide the support status info as well
+    if os.path.exists("/usr/bin/hwe-support-status"):
+        print("")
+        subprocess.call(["/usr/bin/hwe-support-status"])
+
     if not (options.show_unsupported or
             options.show_supported or
             options.show_all):

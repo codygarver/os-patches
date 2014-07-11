@@ -38,6 +38,7 @@ update-manager-text
 do-release-upgrade
 check-new-release-gtk
 ubuntu-support-status
+hwe-support-status
 Janitor/computerjanitor/cruft.py
 Janitor/computerjanitor/cruft_tests.py
 Janitor/computerjanitor/exc.py
@@ -58,4 +59,4 @@ Janitor/plugins/dpkg_status_plugin_tests.py
 Janitor/plugins/kdelibs4to5_plugin.py
 Janitor/plugins/langpack_manual_plugin.py
 Janitor/plugins/remove_lilo_plugin.py
-
+HweSupportStatus/consts.py
