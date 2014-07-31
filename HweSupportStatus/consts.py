@@ -22,7 +22,7 @@ There is a graphics stack installed on this system. An upgrade to a
 supported (or longer supported) configuration will become available
 on %(date)s and can be invoked by running 'update-manager' in the
 Dash.
-    """) % {'date': TRUSTY_DOT1_DATE.strftime("%x"),
+    """) % {'date': TRUSTY_DOT1_DATE.isoformat()
            }
 
     APT_UPGRADE = _("""
@@ -51,7 +51,7 @@ and graphics stack) of your system will no longer be available.
 
 For more information, please see:
 http://wiki.ubuntu.com/1204_HWE_EOL
-""") % PRECISE_HWE_EOL_DATE.strftime("%x")
+""") % PRECISE_HWE_EOL_DATE.isoformat()
 
     HWE_SUPPORT_HAS_ENDED = _("""
 Your current Hardware Enablement Stack (HWE) is no longer supported
@@ -60,4 +60,4 @@ and graphics stack) of your system are no longer available.
 
 For more information, please see:
 http://wiki.ubuntu.com/1204_HWE_EOL
-""") % PRECISE_HWE_EOL_DATE.strftime("%x")
+""") % PRECISE_HWE_EOL_DATE.isoformat()

@@ -6,6 +6,7 @@ import optparse
 import datetime
 import os
 import re
+import subprocess
 import sys
 
 import apt
@@ -60,9 +61,11 @@ METAPKGS = KERNEL_METAPKGS + XORG_METAPKGS
 
 class Package:
     """A lightweight apt package """
-    def __init__(self, name, version):
+    def __init__(self, name, version, arch, foreign=False):
         self.name = name
         self.installed_version = version
+        self.arch = arch
+        self.foreign = foreign
 
 
 def find_hwe_packages(installed_packages):
@@ -118,15 +121,16 @@ def is_unsupported_xstack_running(unsupported_hwe_packages):
 def find_supported_replacement_hwe_packages(unsupported_hwe_packages):
     unsupported_metapkg_names = set()
     replacement_names = set()
-    unsupported_hwe_package_names = set(
-        [pkg.name for pkg in unsupported_hwe_packages])
     for metapkg in METAPKGS:
         for unsupported_backport in HWE_UNSUPPORTED_BACKPORTS:
             metapkg_name = metapkg + unsupported_backport
-            if metapkg_name in unsupported_hwe_package_names:
-                replacement_name = metapkg + HWE_SUPPORTED_BACKPORT
-                replacement_names.add(replacement_name)
-                unsupported_metapkg_names.add(metapkg_name)
+            for pkg in unsupported_hwe_packages:
+                if pkg.name == metapkg_name:
+                    replacement_name = metapkg + HWE_SUPPORTED_BACKPORT
+                    if pkg.foreign:
+                        replacement_name += ':' + pkg.arch
+                    replacement_names.add(replacement_name)
+                    unsupported_metapkg_names.add(metapkg_name)
     return unsupported_metapkg_names, replacement_names
 
 
@@ -218,6 +222,9 @@ if __name__ == "__main__":
                   HWE_CHECK_DISABLED_FILE, file=sys.stderr)
         sys.exit(0)
 
+    foreign_archs = set(subprocess.check_output(
+        ['dpkg', '--print-foreign-architectures']).split())
+
     # do the actual check
     installed_packages = set()
     tagf = apt.apt_pkg.TagFile("/var/lib/dpkg/status")
@@ -226,13 +233,18 @@ if __name__ == "__main__":
             continue
         pkgname = tagf.section.find("Package")
         version = tagf.section.find("Version")
-        installed_packages.add(Package(pkgname, version))
+        arch = tagf.section.find("Architecture")
+        foreign = arch in foreign_archs
+        installed_packages.add(Package(pkgname, version, arch, foreign))
 
-    has_update_manager = "update-manager" in installed_packages
+    has_update_manager = "update-manager" in [
+        pkg.name for pkg in installed_packages]
     unsupported_hwe_packages, supported_hwe_packages = find_hwe_packages(
         installed_packages)
     if options.show_all_unsupported:
-        print(twrap(" ".join(unsupported_hwe_packages)))
+        print(twrap(" ".join([
+            pkg.foreign and pkg.name + ':' + pkg.arch or pkg.name \
+                    for pkg in unsupported_hwe_packages])))
     if options.show_replacements:
         unsupported, replacements =  find_supported_replacement_hwe_packages(
             unsupported_hwe_packages)
