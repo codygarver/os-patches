@@ -1,3 +1,27 @@
+update-manager (1:0.156.14.17) precise-proposed; urgency=low
+
+  [ Michael Vogt ]
+  * fix regression in release upgrader download (LP: #1348067)
+  * ensure to tell the user about update-manager when its
+    installed  (LP: #1348227)
+  
+  [ Yu Ning ]
+  * fix bug in multiarch handling for hwe-support-status
+    --show-replacements (LP: #1349400)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 28 Jul 2014 14:26:41 +0200
+
+update-manager (1:0.156.14.16) precise-proposed; urgency=low
+
+  * HweSupportStatus/consts.py:
+    - use ISO date format instead of the locales date format because
+      pam_motd does not set the LANG environment (LP: #1342424)
+  * hwe-support-status:
+    - fix crash with hwe-support-status --show-all-unsupported,
+      thanks to "frankster" (LP: #1341324)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 16 Jul 2014 10:38:59 +0200
+
 update-manager (1:0.156.14.15) precise-proposed; urgency=low
 
   * support HardwareEnablement End-of-Life transition 

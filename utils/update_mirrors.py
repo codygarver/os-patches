@@ -16,6 +16,10 @@ d = feedparser.parse("https://launchpad.net/ubuntu/+archivemirrors-rss")
 #pp  = pprint.PrettyPrinter(indent=4)
 #pp.pprint(d)
 
+if not d.entries:
+    print "No mirrors found, aborting"
+    sys.exit(1)
+
 for entry in d.entries:
     for link in entry.links:
         if not link.href in current_mirrors:
