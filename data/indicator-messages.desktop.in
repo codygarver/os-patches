@@ -5,4 +5,3 @@ Exec=@pkglibexecdir@/indicator-messages-service
 StartupNotify=false
 Terminal=false
 OnlyShowIn=Unity;GNOME;Pantheon;
-AutostartCondition=GNOME3 unless-session gnome
