@@ -277,7 +277,7 @@ ido_user_menu_item_primitive_draw_cb_gtk_3 (GtkWidget * widget,
 
       GtkAllocation allocation;
       gtk_widget_get_allocation (widget, &allocation);
-      x = allocation.x + 13;
+      x = allocation.x + 13 - gtk_widget_get_margin_left (widget);
       y = allocation.height / 2;
 
       cairo_arc (cr, x, y, 3.0, 0.0, 2 * G_PI);
