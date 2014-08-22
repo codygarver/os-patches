@@ -43,3 +43,12 @@ macbless_mansection.patch
 grub-shell-no-pad.patch
 freebsd_debugflags_eperm.patch
 install_powerpc_machtypes.patch
+install_arm64_naming.patch
+mkrescue_arm64_naming.patch
+ieee1275-pseries-emulation.patch
+probe-delimiter.patch
+btrfs-endian.patch
+tolerate-lvm-snapshots.patch
+net-receive-packets-yield.patch
+net-ramp-up-interval.patch
+probe_nvme.patch
