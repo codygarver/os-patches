@@ -1,3 +1,10 @@
+ubiquity (2.18.8.1) trusty-proposed; urgency=medium
+
+  [ Aurelien Gateau ]
+  * [KDE] FIX layout of step labels in sidebar LP: #1308931
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 30 Jun 2014 13:24:03 +0000
+
 ubiquity (2.18.8) trusty-proposed; urgency=medium
 
   [ Rohan Garg ]
