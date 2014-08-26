@@ -30,7 +30,7 @@ Package: indicator-keyboard
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-Recommends: gucharmap
+         gucharmap
 Breaks: ibus (<< 1.5.5-1ubuntu3),
 Description: Keyboard indicator
  This package contains the keyboard indicator, which should show as an icon in
