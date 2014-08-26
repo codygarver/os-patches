@@ -19,7 +19,6 @@ no_insmod_on_sb.patch
 default_grub_d.patch
 blacklist_1440x900x32.patch
 uefi_firmware_setup.patch
-mkconfig_ubuntu_distributor.patch
 linuxefi.patch
 linuxefi_amd64_only.patch
 linuxefi_debug.patch
