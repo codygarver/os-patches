@@ -46,7 +46,7 @@ Index: onboard-1.0.0/onboard-defaults.conf
 +# Examples:
 +#key-label-font=Normal bold italic condensed
 +#key-label-font=Ubuntu condensed
-+key-label-font=Ubuntu
++key-label-font=Droid Sans bold
 +
 +# Super key label
 +# Default label override for left and right super keys.
@@ -54,7 +54,7 @@ Index: onboard-1.0.0/onboard-defaults.conf
 +#
 +# Examples:
 +#superkey-label=Super
-+superkey-label=
++superkey-label=⌘
 +
 +# Super key label, independent size
 +# If set to True/yes/1, super keys will scale their label in their own
