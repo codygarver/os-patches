@@ -44,3 +44,4 @@ remove-manual-proxy-in-auto.patch
 use_rfkill_airplane_mode.patch
 more-power-suspend-options.patch
 fix-input-device-bar-status.patch
+sound-fix-potential-memory-corruption.patch

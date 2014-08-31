@@ -1,0 +1,12 @@
+Index: gnome-control-center/panels/sound/gvc-sound-theme-chooser.c
+===================================================================
+--- gnome-control-center.orig/panels/sound/gvc-sound-theme-chooser.c	2014-07-07 12:40:00.839504000 +0800
++++ gnome-control-center/panels/sound/gvc-sound-theme-chooser.c	2014-07-07 12:48:15.822986459 +0800
+@@ -672,6 +672,7 @@
+ 
+         if (g_strcmp0 (last_theme, chooser->priv->current_theme) != 0) {
+                 g_free (chooser->priv->current_parent);
++                chooser->priv->current_parent = NULL;
+                 if (load_theme_name (chooser->priv->current_theme,
+                                      &chooser->priv->current_parent) == FALSE) {
+                         g_free (chooser->priv->current_theme);
