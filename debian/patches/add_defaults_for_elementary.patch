@@ -37,7 +37,7 @@ Index: onboard-1.0.0/onboard-defaults.conf
 +#theme=/usr/share/onboard/themes/Ambiance.theme
 +#theme=Ambiance
 +#theme=Droid
-+theme=Nightshade
++theme=elementary
 +
 +# Key label font
 +# Family and attributes of the default font.
