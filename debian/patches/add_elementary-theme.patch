@@ -1,0 +1,23 @@
+--- /dev/null
++++ b/themes/elementary.theme
+@@ -0,0 +1,19 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<theme format="1.3" name="elementary">
++  <color_scheme>Charcoal</color_scheme>
++  <background_gradient>0.0</background_gradient>
++  <key_style>gradient</key_style>
++  <roundrect_radius>8.0</roundrect_radius>
++  <key_size>100.0</key_size>
++  <key_stroke_width>25.0</key_stroke_width>
++  <key_fill_gradient>5.0</key_fill_gradient>
++  <key_stroke_gradient>5.0</key_stroke_gradient>
++  <key_gradient_direction>0.0</key_gradient_direction>
++  <key_label_font>Open Sans</key_label_font>
++  <key_label_overrides>
++    <key group="" id="LWIN" label="⌘"/>
++    <key group="" id="RWIN" label="⌘"/>
++  </key_label_overrides>
++  <key_shadow_strength>0.0</key_shadow_strength>
++  <key_shadow_size>0.0</key_shadow_size>
++</theme>
+\ No newline at end of file
