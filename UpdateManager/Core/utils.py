@@ -449,9 +449,9 @@ def get_ubuntu_flavor_name(cache=None):
     if pkg in lookup:
         return lookup[pkg]
     elif pkg.endswith('-desktop'):
-        return capitalize_first_word(pkg.rsplit('-desktop', 1)[0])
+        return pkg.rsplit('-desktop', 1)[0]
     elif pkg.endswith('-netbook'):
-        return capitalize_first_word(pkg.rsplit('-netbook', 1)[0])
+        return pkg.rsplit('-netbook', 1)[0]
     else:
         return 'Ubuntu'
 
@@ -558,7 +558,7 @@ def get_package_label(pkg):
         first letter
     """
     name = getattr(pkg.candidate, "summary", "")
-    return capitalize_first_word(name)
+    return name
 
 
 if __name__ == "__main__":
