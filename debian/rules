@@ -1,0 +1,46 @@
+#!/usr/bin/make -f
+
+ARCH=all
+DIST=$(shell lsb_release -c -s)
+DEBVER=$(shell LC_ALL=C dpkg-parsechangelog |sed -n -e '/^Version:/s/^Version: //p' | sed s/.*://)
+TARNAME=dist-upgrader_$(DEBVER)_$(ARCH).tar.gz
+DH_ARGS=--with=python3
+PY3REQUESTED := $(shell py3versions -r)
+PY3DEFAULT := $(shell py3versions -d)
+# Run setup.py with the default python3 last so that the scripts use
+# #!/usr/bin/python3 and not #!/usr/bin/python3.X.
+PY3 := $(filter-out $(PY3DEFAULT),$(PY3REQUESTED)) python3
+
+%:
+	dh $@ $(DH_ARGS)
+
+override_dh_auto_clean:
+	set -ex; for python in $(PY3); do \
+		LANG=C.UTF-8 LC_ALL=C.UTF-8 $$python setup.py clean -a; \
+	done
+	find -name __pycache__ | xargs rm -rf
+	rm -rf ./build ./DistUpgrade/$(DEBVER) ./DistUpgrade/mo \
+		./DistUpgrade/$(DIST)  ./DistUpgrade/$(DIST).tar.gz \
+		 ./DistUpgrade/ubuntu-drivers-obsolete.pkgs ./po/mo
+
+binary-indep:
+	dh $@ $(DH_ARGS)
+	# now the dist-upgrader special tarball
+	(cd DistUpgrade/ && \
+	   ./build-tarball.sh && \
+	   mkdir -p $(DEBVER)  && \
+	   cp $(DIST).tar.gz ./*ReleaseAnnouncement* $(DEBVER) && \
+	   tar czvf ../../$(TARNAME) \
+	       $(DEBVER)/*ReleaseAnnouncement* \
+               $(DEBVER)/$(DIST).tar.gz )
+	dpkg-distaddfile $(TARNAME) raw-dist-upgrader -
+
+override_dh_auto_build:
+	set -ex; for python in $(PY3); do \
+		LANG=C.UTF-8 LC_ALL=C.UTF-8 $$python setup.py build; \
+	done
+
+override_dh_auto_install:
+	set -ex; for python in $(PY3); do \
+		LANG=C.UTF-8 LC_ALL=C.UTF-8 $$python setup.py install --root=$(CURDIR)/debian/tmp --install-layout=deb; \
+	done
