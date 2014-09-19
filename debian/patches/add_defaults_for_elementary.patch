@@ -1,8 +1,6 @@
-Index: onboard-1.0.0/onboard-defaults.conf
-===================================================================
---- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ onboard-1.0.0/onboard-defaults.conf	2014-04-04 20:04:48.271629460 +0200
-@@ -0,0 +1,220 @@
+--- /dev/null
++++ b/onboard-defaults.conf
+@@ -0,0 +1,221 @@
 +#
 +# Onboard system defaults
 +#
@@ -24,7 +22,7 @@ Index: onboard-1.0.0/onboard-defaults.conf
 +# Examples:
 +#layout=/usr/share/onboard/layouts/Classic Onboard.onboard
 +#layout=Full Keyboard
-+layout=Compact
++layout=Small
 +#layout=Phone
 +
 +#system-theme-associations={"HighContrast" : "HighContrast", "HighContrastInverse" : "HighContrastInverse", "LowContrast" : "LowContrast"}
@@ -93,7 +91,7 @@ Index: onboard-1.0.0/onboard-defaults.conf
 +# Other available keys:
 +#
 +#current-settings-page=0
-+#show-status-icon=True
++show-status-icon=False
 +#show-tooltips=True
 +#snippets={0 : ["Onboard\\nHome", "https\\://launchpad.net/onboard"], 1 : ["Example", "Create your macros here."]}
 +#start-minimized=False
@@ -124,6 +122,7 @@ Index: onboard-1.0.0/onboard-defaults.conf
 +#y=40
 +#width=800
 +#height=300
++dock-expand=True
 +
 +[window.portrait]
 +# Position and size of the keyboard window on portrait screens.
@@ -172,7 +171,7 @@ Index: onboard-1.0.0/onboard-defaults.conf
 +#input-event-source=GTK
 +
 +[auto-show]
-+enabled=False
++enabled=True
 +#widget-clearance=(25.0, 55.0, 25.0, 40.0)
 +
 +[typing-assistance]
@@ -223,10 +222,8 @@ Index: onboard-1.0.0/onboard-defaults.conf
 +#disable-touch-handles=False
 +#disable-keys=[["CTRL", "LALT", "F[0-9]+"]]
 +
-Index: onboard-1.0.0/setup.py
-===================================================================
---- onboard-1.0.0.orig/setup.py	2014-04-04 20:03:05.611626193 +0200
-+++ onboard-1.0.0/setup.py	2014-04-04 20:03:05.607626193 +0200
+--- a/setup.py
++++ b/setup.py
 @@ -268,6 +268,7 @@
                    ('share/onboard', glob.glob('COPYING')),
                    ('share/onboard', glob.glob('NEWS')),
