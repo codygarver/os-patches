@@ -6,10 +6,12 @@ if [ -d /target/home/oem ]; then
 	    /usr/share/applications/oem-config-prepare-gtk.desktop \
 	    /usr/share/applications/kde4/oem-config-prepare-kde.desktop; do
 		if [ -f "/target$file" ]; then
-			chroot /target install -d -o oem -g oem \
-				/home/oem/Desktop
-			chroot /target install -o oem -g oem \
-				"$file" "/home/oem/Desktop/$(basename "$file")"
+			name=$(basename "$file")
+			cat > /target/home/oem/.config/plank/dock1/launchers/$name.dockitem <<EOF
+[PlankItemsDockItemPreferences]
+Launcher=$file
+Sort=-1
+EOF
 			break
 		fi
 	done
