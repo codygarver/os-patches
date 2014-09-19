@@ -1,3 +1,11 @@
+ubiquity (2.18.8.2) trusty-proposed; urgency=medium
+
+  * In ubi-console-setup.py query for keyboard names in English
+    in KDE frontend, fixes crash with Swiss German
+    LP: #1182784
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 02 Sep 2014 10:58:19 +0000
+
 ubiquity (2.18.8.1) trusty-proposed; urgency=medium
 
   [ Aurelien Gateau ]
