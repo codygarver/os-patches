@@ -12,3 +12,4 @@ X-GNOME-Bugzilla-Product=gucharmap
 X-GNOME-Bugzilla-Component=general
 X-GNOME-Bugzilla-Version=@VERSION@
 StartupNotify=true
+NotShowIn=Pantheon;
