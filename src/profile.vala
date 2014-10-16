@@ -151,17 +151,17 @@ class Profile: Object
     if (bluetooth.connected)
       {
         a11y = "Bluetooth (connections)";
-        icon_name = "bluetooth-paired";
+        icon_name = "bluetooth-paired-symbolic";
       }
     else if (bluetooth.enabled)
       {
         a11y = "Bluetooth (on)";
-        icon_name = "bluetooth-active";
+        icon_name = "bluetooth-active-symbolic";
       }
     else
       {
         a11y = "Bluetooth (off)";
-        icon_name = "bluetooth-disabled";
+        icon_name = "bluetooth-disabled-symbolic";
       }
 
     var icon = new ThemedIcon.with_default_fallbacks (icon_name);
