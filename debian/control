@@ -15,7 +15,7 @@ Build-Depends: debhelper (>= 9.0.0),
                libgtk-3-dev,
                libibus-1.0-dev (>= 1.5.0),
                liblightdm-gobject-1-dev,
-               valac,
+               valac-0.24,
                xauth,
                xvfb,
 Standards-Version: 3.9.4
