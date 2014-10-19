@@ -701,7 +701,8 @@ public class Indicator.Keyboard.Service : Object {
 		}
 
 		var builder = new VariantBuilder (new VariantType ("a{sv}"));
-		builder.add ("{sv}", "visible", indicator_settings.get_value ("visible"));
+		builder.add ("{sv}", "visible", new Variant.boolean
+				    (indicator_settings.get_boolean ("visible") && sources.length > 1));
 		if (name != null) {
 			var description = _ ("%s input source").printf ((!) name);
 			builder.add ("{sv}", "accessible-desc", new Variant.string (description));
