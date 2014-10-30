@@ -9,7 +9,7 @@
  	<device name="iCade" type="keyboard" pin="ICADE"/>
  
 +	<!-- Microsoft Wedge/Sculpt Touch mouse -->
-+	<device oui="7C:1E:52:" pin="0000"/>
++	<device oui="7C:1E:52:" type="mouse" name="Microsoft Touch Mouse" pin="0000"/>
 +
  <!-- GPS devices -->
  	<device oui="00:0D:B5:" name="TomTom Wireless GPS MkII" pin="0000"/>

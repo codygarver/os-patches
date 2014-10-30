@@ -1,3 +1,10 @@
+gnome-bluetooth (3.8.2.1-0ubuntu4.1) trusty; urgency=low
+
+  * debian/patches/99_add_microsoft_mice.patch: fix the problem that
+    Microsoft Bluetooth Mobile Keyboard 6000 cannot be paired. (LP: #1312349)
+
+ -- Anthony Wong <anthony.wong@ubuntu.com>  Fri, 25 Apr 2014 02:00:56 +0800
+
 gnome-bluetooth (3.8.2.1-0ubuntu4) trusty; urgency=medium
 
   * debian/patches/git_disconnect_callbacks.patch,
