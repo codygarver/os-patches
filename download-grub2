@@ -1,8 +1,13 @@
 #! /bin/bash
+base_dist="trusty"
 
-base_signed_url="http://archive.ubuntu.com/ubuntu/dists/trusty/main/uefi/grub2-amd64/current"
+base_url="http://archive.ubuntu.com/ubuntu/dists/$base_dist/main/uefi/grub2-amd64/current"
 
-wget "$base_signed_url/gcdx64.efi.signed"
-wget "$base_signed_url/grubx64.efi.signed"
-wget "$base_signed_url/grubnetx64.efi.signed"
-wget "$base_signed_url/version"
+efi_filenames=(
+    'gcdx64.efi.signed'
+    'grubnetx64.efi.signed'
+    'grubx64.efi.signed'
+    'version'
+)
+
+for efi_files in "${efi_filenames[@]}" ; do wget "$base_url/$efi_files" ; done
