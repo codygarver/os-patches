@@ -26,8 +26,8 @@ index 0d77a2a..1f27b65 100644
        */
        char *t;
        efi_distributor = bootloader_id;
-+      if (strcmp (efi_distributor, "elementary OS") == 0)
-+	efi_distributor = "elementary";
++      if (strcmp (efi_distributor, "elementary") == 0)
++	efi_distributor = "ubuntu";
        switch (platform)
  	{
  	case GRUB_INSTALL_PLATFORM_I386_EFI:
