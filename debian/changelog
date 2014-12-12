@@ -1,3 +1,10 @@
+ubuntu-release-upgrader (1:0.220.6) trusty-proposed; urgency=medium
+
+  * data/removal_blacklist.cfg: make update-manager blacklist entry more
+    specific so it does not match update-manager-kde. (LP: #1313165)
+
+ -- Brian Murray <brian@ubuntu.com>  Thu, 13 Nov 2014 14:10:13 -0800
+
 ubuntu-release-upgrader (1:0.220.5) trusty-proposed; urgency=medium
 
   * DistUpgrade/DistUpgradeApport.py:
