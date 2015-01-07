@@ -37,6 +37,20 @@ is_locale_12h(void)
     int i;
     static const char *formats_24h[] = {"%H", "%R", "%T", "%OH", "%k", NULL};
     const char* t_fmt = nl_langinfo(T_FMT);
+    const gchar *user_value;
+    GSettings* settings;
+    GVariant * user_variant;
+
+    settings = g_settings_new ("org.gnome.desktop.interface");
+    user_variant = g_settings_get_user_value (settings, "clock-format");
+    user_value = g_variant_get_string (user_variant, NULL);
+    if (user_variant != NULL) {
+        if (strstr(user_value, "12h")) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
 
     for (i=0; formats_24h[i]!=NULL; i++)
         if (strstr(t_fmt, formats_24h[i]) != NULL)
