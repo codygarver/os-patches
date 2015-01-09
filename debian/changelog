@@ -1,3 +1,28 @@
+ubiquity (2.18.8.3) trusty; urgency=medium
+
+  [ Stéphane Graber ]
+  * Fix Windows UEFI detection. (LP: #1265192)
+
+  [ Colin Watson ]
+  * Exclude free space from counts of deleted partitions.
+  * There are far too many situations where we fail to accurately detect all
+    the operating systems installed on the disk, and we must defend in depth
+    against losing user data as a result of this.  This includes not
+    misleading users into believing that an option will erase less than it
+    in fact does.  Therefore, never describe the use_device autopartitioning
+    mode in any way other than "Erase disk and install Ubuntu", and offer
+    separate "Erase Ubuntu <version> and reinstall" and "Erase disk and
+    install Ubuntu" options even if we believe that the disk only contains
+    Ubuntu (LP: #1265192).
+  * Always show a confirmation dialog before committing partitioning.  I've
+    read considerably more reports of users having their data destroyed by
+    some misunderstanding or other of the partitioner than I'm comfortable
+    with; if a slightly ugly confirmation even when we think things are
+    clear saves some people from that, then it's worth it, and it adds
+    another layer of defence against bugs.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 29 Oct 2014 12:54:19 +0000
+
 ubiquity (2.18.8.2) trusty-proposed; urgency=medium
 
   * In ubi-console-setup.py query for keyboard names in English
