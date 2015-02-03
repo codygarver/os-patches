@@ -8,7 +8,7 @@
     <key name="manage-dpms-defaults" type="b">
       <default>true</default>
       <summary>Reset X DPMS values</summary>
-      <description>Whether DPMS values will be adjusted by gnome-settings-daemon<description>
+      <description>Whether DPMS values will be adjusted by gnome-settings-daemon</description>
     </key>
     <key name="priority" type="i">
       <default>0</default>
