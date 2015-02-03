@@ -1986,6 +1986,14 @@ backlight_enable (GsdPowerManager *manager)
 {
         gboolean ret;
         GError *error = NULL;
+        GSettings *settings;
+        gboolean manage_dpms;
+
+        settings = g_settings_new ("org.gnome.settings-daemon.plugins.power");
+        manage_dpms = g_settings_get_boolean (settings, "manage-dpms-defaults");
+
+	if (!manage_dpms)
+                return;
 
         ret = gnome_rr_screen_set_dpms_mode (manager->priv->rr_screen,
                                              GNOME_RR_DPMS_ON,
@@ -2004,6 +2012,14 @@ backlight_disable (GsdPowerManager *manager)
 {
         gboolean ret;
         GError *error = NULL;
+        GSettings *settings;
+        gboolean manage_dpms;
+
+        settings = g_settings_new ("org.gnome.settings-daemon.plugins.power");
+        manage_dpms = g_settings_get_boolean (settings, "manage-dpms-defaults");
+
+        if (!manage_dpms)
+                return;
 
         ret = gnome_rr_screen_set_dpms_mode (manager->priv->rr_screen,
                                              GNOME_RR_DPMS_OFF,
