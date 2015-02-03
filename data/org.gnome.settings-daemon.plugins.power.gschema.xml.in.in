@@ -6,7 +6,7 @@
       <_description>Whether this plugin would be activated by gnome-settings-daemon or not</_description>
     </key>
     <key name="manage-dpms-defaults" type="b">
-      <default>true</default>
+      <default>false</default>
       <summary>Reset X DPMS values</summary>
       <description>Whether DPMS values will be adjusted by gnome-settings-daemon</description>
     </key>
