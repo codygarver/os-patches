@@ -1,3 +1,10 @@
+python-apt (0.8.3ubuntu7.3) precise-proposed; urgency=medium
+
+  * Update list of mirrors from launchpad, using pre-build.sh hook.
+    (LP: #1397578)
+
+ -- Brian Murray <brian@ubuntu.com>  Tue, 06 Jan 2015 16:55:37 -0800
+
 python-apt (0.8.3ubuntu7.2) precise; urgency=medium
 
   * Cherry-pick fixes from 0.8.8ubuntu1 to close apt.Cache and free
