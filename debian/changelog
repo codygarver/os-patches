@@ -1,3 +1,10 @@
+ubiquity (2.18.8.4) trusty; urgency=medium
+
+  * Re-add "console output" stanza to the oem-config upstart job to
+    re-instate stdin/stdout. (LP: #1361595)
+
+ -- Dimitri John Ledkov <dimitri.j.ledkov@linux.intel.com>  Sun, 21 Dec 2014 07:05:55 +0000
+
 ubiquity (2.18.8.3) trusty; urgency=medium
 
   [ Stéphane Graber ]
