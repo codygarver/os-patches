@@ -7,3 +7,4 @@ revert-drop-sendto-plugin.patch
 git_leak_fixes.patch
 git_disconnect_callbacks.patch
 git_reference_handling.patch
+ssp-parameter-fix.patch

@@ -1,3 +1,13 @@
+gnome-bluetooth (3.8.2.1-0ubuntu4.2) trusty-proposed; urgency=medium
+
+  * Add ssp parameter fix, fix the parameter entered in agent dbus API,
+    also fix the wizard's UI to show the pin code correctly.
+    Fixed Logitech Bluetooth Keyboard K760, Logitech Bluetooth Keyboard K810,
+    HP Bluetooth Keyboard K4000 secure simple pairing failed issue.
+    (LP: #1035431)
+
+ -- Jian-Ding Chen (timchen119) <tim.chen119@canonical.com>  Mon, 28 Apr 2014 17:40:00 +0800
+
 gnome-bluetooth (3.8.2.1-0ubuntu4.1) trusty; urgency=low
 
   * debian/patches/99_add_microsoft_mice.patch: fix the problem that
