@@ -1,3 +1,10 @@
+ubuntu-release-upgrader (1:0.220.7) trusty; urgency=medium
+
+  * DistUpgrade/DistUpgradeViewText.py:
+    - flush stdout before reading user input. (LP: #1417880)
+
+ -- Marius Gedminas <marius@gedmin.as>  Wed, 04 Feb 2015 10:49:34 -0500
+
 ubuntu-release-upgrader (1:0.220.6) trusty-proposed; urgency=medium
 
   * data/removal_blacklist.cfg: make update-manager blacklist entry more
