@@ -38,6 +38,16 @@ sudo apt-get install %s
 
 and reboot your system.""")
 
+    # this message is shown if there is no clear upgrade path via a
+    # meta pkg that we recognize
+    APT_SHOW_UNSUPPORTED = _("""
+The following packages are no longer supported:
+ %s
+
+Please upgrade them to a supported HWE stack or remove them if you
+no longer need them.
+""")
+
     HWE_SUPPORTED = _("Your Hardware Enablement Stack (HWE) is "
                       "supported until %(month)s %(year)s.") % {
                           'month': PRECISE_EOL_DATE.strftime("%B"),

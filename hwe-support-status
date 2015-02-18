@@ -51,6 +51,8 @@ SUPPORTED_KERNEL_IMAGE_REGEX = r'linux-.*-3\.13(\.[0-9]+)?-.*'
 KERNEL_METAPKGS = (
     "linux-generic",
     "linux-image-generic",
+    "linux-signed-generic",
+    "linux-signed-image-generic",
 )
 XORG_METAPKGS = (
     "xserver-xorg",
@@ -159,9 +161,15 @@ def advice_about_hwe_status(unsupported_hwe_packages, supported_hwe_packages,
         if has_update_manager:
             print(s + Messages.UM_UPGRADE)
         else:
-            print(s + Messages.APT_UPGRADE % (
-                do_release_upgrade_option,
-            " ".join(supported_replacement_hwe)))
+            # bug #1341320 - if no metapkg is left we need to show
+            #                what is no longer supported
+            if supported_replacement_hwe:
+                print(s + Messages.APT_UPGRADE % (
+                    do_release_upgrade_option,
+                    " ".join(supported_replacement_hwe)))
+            else:
+                print(s + Messages.APT_SHOW_UNSUPPORTED % (
+                    " ".join([pkg.name for pkg in unsupported_hwe_packages])))
 
     # some unsupported package installed but not running and not superseeded
     # - this is worth reporting

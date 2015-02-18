@@ -930,7 +930,7 @@ Your system does not check for updates automatically. You can configure this beh
                         </child>
                         <child>
                           <object class="GtkButton" id="button_nwe_hwe">
-                            <property name="label" translatable="yes">I_nstall</property>
+                            <property name="label" translatable="yes">More info</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>

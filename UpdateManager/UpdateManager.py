@@ -1219,7 +1219,7 @@ class UpdateManager(SimpleGtkbuilderApp):
       for pkgname in self.hwe_replacement_packages:
           if pkgname in self.cache and not self.cache[pkgname].is_installed:
               self.label_new_hwe.set_markup("<b>%s</b>" % _(
-                  "New hardware support is available"))
+                  "New important security and hardware support update"))
               self.frame_new_hwe.show()
               break
       else:
@@ -1252,7 +1252,7 @@ class UpdateManager(SimpleGtkbuilderApp):
               Gtk.ButtonsType.NONE,
               "")
           dialog.set_markup(
-              "<big><b>%s</b></big>" % _("New hardware support is available"))
+              "<big><b>%s</b></big>" % _("New important security and hardware support update"))
           dialog.add_button(_("Cancel"), Gtk.ResponseType.CANCEL)
           dialog.add_button(_("Upgrade"), Gtk.ResponseType.OK)
           # setup content area

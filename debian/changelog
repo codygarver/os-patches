@@ -1,3 +1,18 @@
+update-manager (1:0.156.14.18) precise-proposed; urgency=low
+
+  [ Lefteris Nikoltsios ]
+  * remove all ltsp* blacklisting (LP: #1415785)
+
+  [ Michael Vogt ]
+  * improve HWE support information message in the gtk UI
+    (LP: #1402706)
+  * consider more meta-packages when doing the apt-get install
+    suggestion (LP: #1420217)
+  * show unsupported packages if no replacement packages can be found
+    (LP: #1341320)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 10 Feb 2015 17:39:22 +0100
+
 update-manager (1:0.156.14.17) precise-proposed; urgency=low
 
   [ Michael Vogt ]
