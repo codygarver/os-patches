@@ -1,0 +1,424 @@
+# Tajik translation for update-notifier
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the update-notifier package.
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: update-notifier\n"
+"Report-Msgid-Bugs-To: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"POT-Creation-Date: 2012-04-10 12:15+0100\n"
+"PO-Revision-Date: 2013-04-23 19:22+0000\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <tg@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-10-04 08:36+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
+
+#: ../data/apt_check.py:27
+#, python-format
+msgid "Unknown Error: '%s' (%s)"
+msgstr "Хатогии номаълум: \"%s\" (%s)"
+
+#: ../data/apt_check.py:66
+#, python-format
+msgid "%i package can be updated."
+msgid_plural "%i packages can be updated."
+msgstr[0] "%i баста метавонад навсозӣ карда шавад."
+msgstr[1] "%i баста метавонад навсозӣ карда шавад."
+
+#: ../data/apt_check.py:71
+#, python-format
+msgid "%i update is a security update."
+msgid_plural "%i updates are security updates."
+msgstr[0] "Навсозии %i навсозии амниятӣ мебошад."
+msgstr[1] "Навсозиҳои %i навсозиҳои амниятӣ мебошанд."
+
+#: ../data/apt_check.py:97
+#, python-format
+msgid "Error: Opening the cache (%s)"
+msgstr "Хатогӣ: Кушодани зерҳофиза (%s)"
+
+#: ../data/apt_check.py:111
+msgid "Error: BrokenCount > 0"
+msgstr "Хатогӣ: Ҳисоби қатъшуда > 0"
+
+#: ../data/apt_check.py:118
+#, python-format
+msgid "Error: Marking the upgrade (%s)"
+msgstr "Хатогӣ: Қайдкунии такмилдиҳӣ (%s)"
+
+#: ../data/apt_check.py:182
+msgid "Show the packages that are going to be installed/upgraded"
+msgstr "Намоиш додани бастаҳое, ки ҳозир насб/навсозӣ карда мешаванд"
+
+#: ../data/apt_check.py:187
+msgid "Show human readable output on stdout"
+msgstr "Намоиш додани натиҷаи бо одам хондашаванда дар stdout"
+
+#: ../data/apt_check.py:191
+msgid ""
+"Return the time in days when security updates are installed unattended (0 "
+"means disabled)"
+msgstr ""
+"Бозгашт ба вақт дар рӯзҳо, ки навсозиҳои амниятӣ ба таври худкор насб карда "
+"мешаванд (0 маънои ғайрифаъолро дорад)"
+
+#: ../src/crash.c:45
+msgid "System program problem detected"
+msgstr "Мушкилии барномаи системавӣ пайдо карда шуд"
+
+#: ../src/crash.c:46
+msgid "Do you want to report the problem now?"
+msgstr "Шумо мехоҳед, ки оиди мушкилӣ ҳозир гузориш диҳед?"
+
+#: ../src/crash.c:56
+msgid "Report problem…"
+msgstr "Гузориш додани мушкилӣ…"
+
+#: ../src/crash.c:72
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Please enter your password to access "
+"problem reports of system programs</span>"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Лутфан, барои пайдо кардани дастрасӣ "
+"ба гузоришҳои мушкилиҳои барномаҳои системавӣ, пароли худро ворид "
+"кунед</span>"
+
+#: ../src/crash.c:92 ../src/crash.c:218
+msgid "Crash report detected"
+msgstr "Гузориши вайроншавӣ пайдо карда шуд"
+
+#: ../src/crash.c:93
+msgid ""
+"An application has crashed on your system (now or in the past). Click on the "
+"notification icon to display details. "
+msgstr ""
+"Барнома дар системаи шумо вайрон карда шуд (ҳозир ё дар гузашта). Барои "
+"намоиш додани тафсилот нишонаи огоҳиро зер кунед. "
+
+#. Create and show the notification
+#: ../src/avahi.c:15
+msgid "Network service discovery disabled"
+msgstr "Кашфкунии хидмати шабакавӣ хомӯш карда шудааст"
+
+#: ../src/avahi.c:16
+msgid ""
+"Your current network has a .local domain, which is not recommended and "
+"incompatible with the Avahi network service discovery. The service has been "
+"disabled."
+msgstr ""
+"Шабакаи ҷории шумо домени .local дорад, ки ин домен тавсия дода намешавад, "
+"ва бо кашфкунии шабакаи Avahi мувофиқат намекунад. Хидмат ғайрифаъол карда "
+"шуд."
+
+#: ../src/gdu.c:53
+msgid "Software Packages Volume Detected"
+msgstr "Ҳаҷми анбори бастаҳо пайдо карда шуд"
+
+#: ../src/gdu.c:54
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A volume with software packages has "
+"been detected.</span>\n"
+"\n"
+"Would you like to open it with the package manager?"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Ҳаҷме бо бастаҳои нармафзор пайдо "
+"карда шуд.</span>\n"
+"\n"
+"Шумо мехоҳед, ки онро бо мудири бастаҳо кушоед?"
+
+#: ../src/gdu.c:62
+msgid "Start Package Manager"
+msgstr "Оғоз кардани Мудири бастаҳо"
+
+#: ../src/gdu.c:68
+msgid "Upgrade volume detected"
+msgstr "Ҳаҷми такмилдиҳӣ пайдо карда шуд"
+
+#: ../src/gdu.c:69
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A distribution volume with software "
+"packages has been detected.</span>\n"
+"\n"
+"Would you like to try to upgrade from it automatically? "
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Ҳаҷми паҳнкунӣ бо бастаҳои нармафзор "
+"пайдо карда шуд.</span>\n"
+"\n"
+"Шумо мехоҳед, ки кӯшиш кунед, ки ба таври худкор аз он такмил диҳед? "
+
+#: ../src/gdu.c:76
+msgid "Run upgrade"
+msgstr "Иҷро кардани тақмилдиҳӣ"
+
+#: ../src/gdu.c:82
+msgid "Addon volume detected"
+msgstr "Ҳаҷми ҷузъҳои иловагӣ пайдо карда шуд"
+
+#: ../src/gdu.c:83
+msgid ""
+"<span weight=\"bold\" size=\"larger\">An addon volume with software "
+"applications has been detected.</span>\n"
+"\n"
+"Would you like to view/install the content? "
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Ҳаҷми ҷузъҳои иловагӣ бо барномаҳои "
+"нармафзор пайдо карда шуд.</span>\n"
+"\n"
+"Шумо мехоҳед, ки мӯҳтаворо намоиш диҳед/насб кунед? "
+
+#: ../src/gdu.c:90 ../src/gdu.c:109
+msgid "Start package manager"
+msgstr "Оғоз кардани мудири бастаҳо"
+
+#: ../src/gdu.c:92
+msgid "Start addon installer"
+msgstr "Оғоз кардани насбкунандаи ҷузъҳои иловагӣ"
+
+#: ../src/gdu.c:100
+msgid "APTonCD volume detected"
+msgstr "Ҳаҷми APTonCD пайдо карда шуд"
+
+#: ../src/gdu.c:101
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A volume with unofficial software "
+"packages has been detected.</span>\n"
+"\n"
+"Would you like to open it with the package manager?"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Ҳаҷме бо бастаҳои ғайрирасмии "
+"нармафзор пайдо карда шуд.</span>\n"
+"\n"
+"Шумо мехоҳед, ки онро дар мудири бастаҳо кушоед?"
+
+#: ../src/hooks.c:346 ../ui/hooks-dialog.ui.h:2
+msgid "_Run this action now"
+msgstr "_Ин амалро ҳозир иҷро кунед"
+
+#: ../src/hooks.c:418 ../src/hooks.c:545 ../src/hooks.c:875
+msgid "Information available"
+msgstr "Маълумот дастрас аст"
+
+#: ../src/hooks.c:546
+msgid "Click on the notification icon to show the available information.\n"
+msgstr "Барои намоиш додани маълумоти дастрас, нишонаи огоҳиро зер кунед.\n"
+
+#: ../src/reboot.c:29 ../src/reboot.c:277
+msgid "System restart required"
+msgstr "Бозоғозии система лозим аст"
+
+#: ../src/reboot.c:30
+msgid ""
+"To finish updating your system, please restart it.\n"
+"\n"
+"Click on the notification icon for details."
+msgstr ""
+"Барои ба анҷом расонидани навсозии системаи шумо, лутфан, онро бозоғозӣ "
+"кунед.\n"
+"\n"
+"Барои тафсилот нишонаи огоҳиро зер кунед."
+
+#: ../src/reboot.c:104
+msgid "Reboot failed"
+msgstr "Бозоғозӣ ба анҷом нарасид"
+
+#: ../src/reboot.c:105
+msgid "Failed to request reboot, please shutdown manually"
+msgstr ""
+"Дархост кардани бозоғозӣ ба анҷом нарасид, лутфан, ба таври дастӣ корро ба "
+"анҷом расонед"
+
+#: ../src/update.c:27
+msgid "Show updates"
+msgstr "Намоиш додани навсозиҳо"
+
+#: ../src/update.c:31
+msgid "Install all updates"
+msgstr "Насб кардани ҳамаи навсозиҳо"
+
+#: ../src/update.c:35
+msgid "Check for updates"
+msgstr "Санҷидани навсозиҳо"
+
+#: ../src/update.c:80
+#, c-format
+msgid "There is %i update available"
+msgid_plural "There are %i updates available"
+msgstr[0] "%i навсозӣ дастрас аст"
+msgstr[1] "%i навсозӣ дастрас аст"
+
+#: ../src/update.c:149
+msgid "Show notifications"
+msgstr "Намоиш додани огоҳиҳо"
+
+#. and update the tooltip
+#: ../src/update.c:208
+msgid "A package manager is working"
+msgstr "Мудири бастаҳо кор карда истодааст"
+
+#: ../src/update.c:240
+#, c-format
+msgid ""
+"There is %i update available. Click on the notification icon to show the "
+"available update."
+msgid_plural ""
+"There are %i updates available. Click on the notification icon to show the "
+"available updates."
+msgstr[0] ""
+"%i навсозӣ дастрас аст. Барои намоиш додани навсозиҳои дастрас, нишонаи "
+"огоҳиро зер кунед."
+msgstr[1] ""
+"%i навсозӣ дастрас аст. Барои намоиш додани навсозиҳои дастрас, нишонаи "
+"огоҳиро зер кунед."
+
+#: ../src/update.c:251
+msgid "Software updates available"
+msgstr "Навсозиҳои нармафзор дастрасанд"
+
+#: ../src/update.c:287
+msgid ""
+"The update information is outdated. This may be caused by network problems "
+"or by a repository that is no longer available. Please update manually by "
+"clicking on this icon and then selecting 'Check for updates' and check if "
+"some of the listed repositories fail."
+msgstr ""
+"Маълумоти навсозӣ кӯҳна шудааст. Ин метавонад аз сабаби мушкилиҳои шабакавӣ "
+"ё анбори бастаҳое, ки дигар дастнорас аст, ба вуҷуд ояд. Лутфан, ин нишонаро "
+"зер карда, \"Санҷидани навсозиҳо\"-ро интихоб кунед, то ин ки ба таври дастӣ "
+"навсозӣ кунед, ва санҷед, ки оё баъзе анборҳои бастаҳои номбаршуда бо нокомӣ "
+"дучор мешаванд."
+
+#: ../src/update.c:582
+#, c-format
+msgid ""
+"An error occurred, please run Package Manager from the right-click menu or "
+"apt-get in a terminal to see what is wrong.\n"
+"The error message was: '%s'. "
+msgstr ""
+"Хатогие ба вуҷуд омадааст, лутфан, барои дидани сабаби он, Мудири бастаҳоро "
+"аз менюи зоҳиршаванда ё фармони \"apt-get\"-ро дар терминал иҷро кунед.\n"
+"Паёми хатогӣ зерин буд: \"%s\". "
+
+#: ../src/update.c:589
+msgid ""
+"An error occurred, please run Package Manager from the right-click menu or "
+"apt-get in a terminal to see what is wrong."
+msgstr ""
+"Хатогие ба вуҷуд омадааст, лутфан, барои дидани сабаби он, Мудири бастаҳоро "
+"аз менюи зоҳиршаванда ё фармони \"apt-get\"-ро дар терминал иҷро кунед."
+
+#: ../src/update.c:593
+msgid ""
+"This usually means that your installed packages have unmet dependencies"
+msgstr ""
+"Ин одатан маънои онро дорад, ки бастаҳои насбшудаи шумо вобастагиҳои "
+"номувофиқро доранд"
+
+#: ../src/update.c:606
+msgid "A problem occurred when checking for the updates."
+msgstr "Ҳангоми санҷидани навсозиҳо мушкилӣ ба вуҷуд омад."
+
+#: ../src/update-notifier.c:402
+msgid "Internal error"
+msgstr "Хатогии дарунӣ"
+
+#: ../src/update-notifier.c:570
+msgid "- inform about updates"
+msgstr "- додани маълумот оиди навсозиҳо"
+
+#: ../src/update-notifier.c:572
+#, c-format
+msgid "Failed to init the UI: %s\n"
+msgstr "Оғоз додани интерфейси корбар бо нокомӣ дучор шуд: %s\n"
+
+#: ../src/update-notifier.c:573
+msgid "unknown error"
+msgstr "хатогии номаълум"
+
+#: ../src/update-notifier.c:596
+msgid "update-notifier"
+msgstr "update-notifier"
+
+#: ../ui/hooks-dialog.ui.h:1
+msgid "<span weight=\"bold\" size=\"larger\">Update information</span>"
+msgstr "<span weight=\"bold\" size=\"larger\">Маълумоти навсозӣ</span>"
+
+#: ../ui/reboot-dialog.ui.h:1
+msgid "Restart Required"
+msgstr "Бозоғозӣ лозим аст"
+
+#: ../ui/reboot-dialog.ui.h:2
+msgid "Restart _Later"
+msgstr "Баъдтар _бозоғозидан"
+
+#: ../ui/reboot-dialog.ui.h:4
+msgid "_Restart Now"
+msgstr "_Ҳозир бозоғозидан"
+
+#: ../ui/reboot-dialog.ui.h:3
+msgid ""
+"The computer needs to restart to finish installing updates. Please save your "
+"work before continuing."
+msgstr ""
+"Барои ба анҷом расонидани насбкунии навсозиҳо, ин компютер бояд бозоғозӣ "
+"шавад. Лутфан, пеш аз идома додан, кори худро захира кунед."
+
+#: ../data/update-notifier.desktop.in.h:2
+msgid "Update Notifier"
+msgstr "Огоҳкунандаи навсозиҳо"
+
+#: ../data/update-notifier.desktop.in.h:1
+msgid "Check for available updates automatically"
+msgstr "Ба таври худкор санҷидани навсозиҳои дастрас"
+
+#. Name
+#: ../data/package-data-downloads-failed.in:1
+msgid "Failure to download extra data files"
+msgstr "Ҳангоми боргирии файлҳои иловагии иттилоот нокомӣ ба вуҷуд омадааст"
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid ""
+"The following packages requested additional data downloads after package "
+"installation, but the data could not be downloaded or could not be processed."
+msgstr ""
+"Бастаҳои зерин баъд аз насбкунӣ боргириҳои иловагии иттилоотро дархост "
+"карданд, аммо иттилоот боргирӣ ё коркард нашуд."
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid "  $packages"
+msgstr "  $packages"
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+msgid ""
+"The download will be attempted again later, or you can try the download "
+"again now.  Running this command requires an active Internet connection."
+msgstr ""
+"Боргирӣ баъдтар аз нав кӯшиш карда мешавад, ё ки шумо метавонед боргириро "
+"ҳозир аз нав кӯшиш кунед. Иҷро кардани ин фармон пайвасти фаъоли Интернетро "
+"талаб мекунад."
+
+#. Name
+#: ../data/package-data-downloads-failed-permanently.in:1
+msgid "Data files for some packages could not be downloaded"
+msgstr "Файлҳои иттилоот барои баъзе бастаҳо боргирӣ шуда наметавонанд"
+
+#. Description
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid ""
+"This is a permanent failure that leaves these packages unusable on your "
+"system.  You may need to fix your Internet connection, then remove and "
+"reinstall the packages to fix this problem."
+msgstr ""
+"Нокомии доимие вуҷуд дорад, ки ин бастаҳоро дар системаи шумо "
+"истифоданашаванда мемонад. Ба шумо метавонад лозим шавад, ки барои ҳал "
+"кардани ин мушкилӣ пайвасти Интернети худро таъмир кунед, ва баъдан ин "
+"бастаро тоза кунед ва аз нав насб кунед."

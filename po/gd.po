@@ -1,0 +1,445 @@
+# Gaelic; Scottish translation for update-notifier
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the update-notifier package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: update-notifier\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-04-10 12:15+0100\n"
+"PO-Revision-Date: 2013-07-11 00:43+0000\n"
+"Last-Translator: Akerbeltz <fios@akerbeltz.org>\n"
+"Language-Team: Gaelic; Scottish <gd@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Launchpad-Export-Date: 2013-10-04 08:36+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
+
+#: ../data/apt_check.py:27
+#, python-format
+msgid "Unknown Error: '%s' (%s)"
+msgstr "Mearachd nach aithne dhuinn: \"%s\" (%s)"
+
+#: ../data/apt_check.py:66
+#, python-format
+msgid "%i package can be updated."
+msgid_plural "%i packages can be updated."
+msgstr[0] "Tha %i phacaid ann a ghabhas ùrachadh."
+msgstr[1] "Tha %i phacaid ann a ghabhas ùrachadh."
+msgstr[2] "Tha %i pacaidean ann a ghabhas ùrachadh."
+msgstr[3] "Tha %i pacaid ann a ghabhas ùrachadh."
+
+#: ../data/apt_check.py:71
+#, python-format
+msgid "%i update is a security update."
+msgid_plural "%i updates are security updates."
+msgstr[0] "Tha %i ùrachadh 'na ùrachadh tèarainteachd."
+msgstr[1] "Tha %i ùrachadh 'na ùrachadh tèarainteachd."
+msgstr[2] "Tha %i ùrachaidhean 'na ùrachadh tèarainteachd."
+msgstr[3] "Tha %i ùrachadh 'na ùrachadh tèarainteachd."
+
+#: ../data/apt_check.py:97
+#, python-format
+msgid "Error: Opening the cache (%s)"
+msgstr "Mearachd: A' fosgladh an tasgadain (%s)"
+
+#: ../data/apt_check.py:111
+msgid "Error: BrokenCount > 0"
+msgstr "Mearachd: BrokenCount > 0"
+
+#: ../data/apt_check.py:118
+#, python-format
+msgid "Error: Marking the upgrade (%s)"
+msgstr "Mearachd: A' comharradh an ùrachaidh (%s)"
+
+#: ../data/apt_check.py:182
+msgid "Show the packages that are going to be installed/upgraded"
+msgstr "Seall na pacaidean a tha ri stàladh/ùrachadh"
+
+#: ../data/apt_check.py:187
+msgid "Show human readable output on stdout"
+msgstr "Seall às-chur air stdout as urrainn do dhaoine a leughadh"
+
+#: ../data/apt_check.py:191
+msgid ""
+"Return the time in days when security updates are installed unattended (0 "
+"means disabled)"
+msgstr ""
+"Innis dhomh cuin (ann an làithean) a thèid ùrachaidhean tèarainteachd a "
+"stàladh co-dhiù 's gu fèin-obrachail (tha 0 a' ciallachadh gu bheil e à "
+"comas)"
+
+#: ../src/crash.c:45
+msgid "System program problem detected"
+msgstr "Mhothaich sinn do dhuilgheadas aig prògram an t-siostaim"
+
+#: ../src/crash.c:46
+msgid "Do you want to report the problem now?"
+msgstr "A bheil thu airson aithris a dhèanamh air an duilgheadas an-dràsta?"
+
+#: ../src/crash.c:56
+msgid "Report problem…"
+msgstr "Dèan aithris air duilgheadas..."
+
+#: ../src/crash.c:72
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Please enter your password to access "
+"problem reports of system programs</span>"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Cuir a-steach am facal-faire airson "
+"cothrom fhaighinn air aithrisean mu dhuilgheasan prògraman an t-"
+"siostaim</span>"
+
+#: ../src/crash.c:92 ../src/crash.c:218
+msgid "Crash report detected"
+msgstr "Mhothaich sinn do dh'aithris tuislidh"
+
+#: ../src/crash.c:93
+msgid ""
+"An application has crashed on your system (now or in the past). Click on the "
+"notification icon to display details. "
+msgstr ""
+"Thuislich aplacaid air an t-siostam agad (an-dràsta no roimhe seo). Briog "
+"air ìomhaigheag a' bhratha airson mion-fhiosrachadh. "
+
+#. Create and show the notification
+#: ../src/avahi.c:15
+msgid "Network service discovery disabled"
+msgstr "Tha mothachadh do lìonraidhean à comas"
+
+#: ../src/avahi.c:16
+msgid ""
+"Your current network has a .local domain, which is not recommended and "
+"incompatible with the Avahi network service discovery. The service has been "
+"disabled."
+msgstr ""
+"Tha àrainn .local aig an lìonra làithreach agad ach cha mholar seo 's chan "
+"obraich e le seirbheis mothachadh lìonraidhean Avahi. Chaidh an t-seirbheis "
+"a chur à comas."
+
+#: ../src/gdu.c:53
+msgid "Software Packages Volume Detected"
+msgstr "Mhothaich sinn do dhraibh le pacaidean bathair-bhog"
+
+#: ../src/gdu.c:54
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A volume with software packages has "
+"been detected.</span>\n"
+"\n"
+"Would you like to open it with the package manager?"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Mhothaich sinn do dhraibh le pacaidean "
+"bathair-bhog</span>\n"
+"\n"
+"A bheil thu airson fhosgladh le manaidsear nam pacaidean?"
+
+#: ../src/gdu.c:62
+msgid "Start Package Manager"
+msgstr "Tòisich manaidsear nam pacaidean"
+
+#: ../src/gdu.c:68
+msgid "Upgrade volume detected"
+msgstr "Mhothaich sinn do dhraibh àrdachaidh"
+
+#: ../src/gdu.c:69
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A distribution volume with software "
+"packages has been detected.</span>\n"
+"\n"
+"Would you like to try to upgrade from it automatically? "
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Mhothaich sinn do dhraibh "
+"àrdachaidh.</span>\n"
+"\n"
+"A bheil thu airson odhirp a dhèanamh àrdachadh uaithe gu fèin-obrachail? "
+
+#: ../src/gdu.c:76
+msgid "Run upgrade"
+msgstr "Ruith an t-àrdachadh"
+
+#: ../src/gdu.c:82
+msgid "Addon volume detected"
+msgstr "Mhothaich sinn do dhraibh tuilleadain"
+
+#: ../src/gdu.c:83
+msgid ""
+"<span weight=\"bold\" size=\"larger\">An addon volume with software "
+"applications has been detected.</span>\n"
+"\n"
+"Would you like to view/install the content? "
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Mhothaich sinn do dhraibh tuilleadain "
+"le aplacaidean bathair-bhog.</span>\n"
+"\n"
+"A bheil thu airson an t-susbaint fhaicinn/stàladh? "
+
+#: ../src/gdu.c:90 ../src/gdu.c:109
+msgid "Start package manager"
+msgstr "Tòisich manaidsear nan pacaidean"
+
+#: ../src/gdu.c:92
+msgid "Start addon installer"
+msgstr "Tòiseach stàlaichear nan tuilleadan"
+
+#: ../src/gdu.c:100
+msgid "APTonCD volume detected"
+msgstr "Mhothaich sinn do dhraibh APTonCD"
+
+#: ../src/gdu.c:101
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A volume with unofficial software "
+"packages has been detected.</span>\n"
+"\n"
+"Would you like to open it with the package manager?"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Mhothaich sinn do dhraibh tuilleadain "
+"le aplacaidean bathair-bhog.</span>\n"
+"\n"
+"A bheil thu airson fhosgladh le manaidsear nam pacaidean?"
+
+#: ../src/hooks.c:346 ../ui/hooks-dialog.ui.h:2
+msgid "_Run this action now"
+msgstr "_Ruith an gnìomh seo an-dràsta"
+
+#: ../src/hooks.c:418 ../src/hooks.c:545 ../src/hooks.c:875
+msgid "Information available"
+msgstr "Tha fiosrachadh ri fhaighinn"
+
+#: ../src/hooks.c:546
+msgid "Click on the notification icon to show the available information.\n"
+msgstr ""
+"Briog air ìomhaigheag a' bhratha airson am fiosrachadh a shealltainn.\n"
+
+#: ../src/reboot.c:29 ../src/reboot.c:277
+msgid "System restart required"
+msgstr "Feumaidh tu an siostam ath-thòiseachadh"
+
+#: ../src/reboot.c:30
+msgid ""
+"To finish updating your system, please restart it.\n"
+"\n"
+"Click on the notification icon for details."
+msgstr ""
+"Feumaidh tu an siostam ath-thòiseachadh gus ùrachadh an t-siostaim a "
+"choileanadh\n"
+"\n"
+"Briog air ìomhaigheag a' bhratha airson mion-fhiosrachadh."
+
+#: ../src/reboot.c:104
+msgid "Reboot failed"
+msgstr "Dh'fhàillig an ath-thòiseachadh"
+
+#: ../src/reboot.c:105
+msgid "Failed to request reboot, please shutdown manually"
+msgstr ""
+"Cha b' urrainn dhuinn ath-thòiseachadh iarraidh, bidh agad ri chur dheth de "
+"làimh"
+
+#: ../src/update.c:27
+msgid "Show updates"
+msgstr "Seall na h-ùrachaidhean"
+
+#: ../src/update.c:31
+msgid "Install all updates"
+msgstr "Stàlaich a h-uile ùrachadh"
+
+#: ../src/update.c:35
+msgid "Check for updates"
+msgstr "Thoir sùil a bheil ùrachadh ann"
+
+#: ../src/update.c:80
+#, c-format
+msgid "There is %i update available"
+msgid_plural "There are %i updates available"
+msgstr[0] "Tha %i ùrachadh ri fhaighinn"
+msgstr[1] "Tha %i ùrachadh ri fhaighinn"
+msgstr[2] "Tha %i ùrachaidhean ri fhaighinn"
+msgstr[3] "Tha %i ùrachadh ri fhaighinn"
+
+#: ../src/update.c:149
+msgid "Show notifications"
+msgstr "Seall na brathan"
+
+#. and update the tooltip
+#: ../src/update.c:208
+msgid "A package manager is working"
+msgstr "Tha manaidsear phacaidean ag obair"
+
+#: ../src/update.c:240
+#, c-format
+msgid ""
+"There is %i update available. Click on the notification icon to show the "
+"available update."
+msgid_plural ""
+"There are %i updates available. Click on the notification icon to show the "
+"available updates."
+msgstr[0] ""
+"Tha %i ùrachadh ri fhaighinn. Briog air ìomhaigheag a' bhratha airson an t-"
+"ùrachadh a tha ri làimh a shealltainn."
+msgstr[1] ""
+"Tha %i ùrachadh ri fhaighinn. Briog air ìomhaigheag a' bhratha airson na h-"
+"ùrachaidhean a tha ri làimh a shealltainn."
+msgstr[2] ""
+"Tha %i ùrachadh ri fhaighinn. Briog air ìomhaigheag a' bhratha airson na h-"
+"ùrachaidhean a tha ri làimh a shealltainn."
+msgstr[3] ""
+"Tha %i ùrachadh ri fhaighinn. Briog air ìomhaigheag a' bhratha airson na h-"
+"ùrachaidhean a tha ri làimh a shealltainn."
+
+#: ../src/update.c:251
+msgid "Software updates available"
+msgstr "Tha ùrachaidhean bathair-bhog ri fhaighinn"
+
+#: ../src/update.c:287
+msgid ""
+"The update information is outdated. This may be caused by network problems "
+"or by a repository that is no longer available. Please update manually by "
+"clicking on this icon and then selecting 'Check for updates' and check if "
+"some of the listed repositories fail."
+msgstr ""
+"Tha fiosrachadh air na h-ùrachaidhean ro shean. Dh'fhaoidte gur e "
+"duilgheadas leis an lìonra a dh'adhbharaich seo no ionad-tasgaidh nach eil "
+"ri làimh tuilleadh. Ùraich e de làimh 's tu a' briogadh air an ìomhaigheag "
+"'s a' taghadh \"Thoir sùil ach a bheil ùrachadh ann\" ach a bheil ionad-"
+"tasgaidh sam bith ann a dh'fhàillig."
+
+#: ../src/update.c:582
+#, c-format
+msgid ""
+"An error occurred, please run Package Manager from the right-click menu or "
+"apt-get in a terminal to see what is wrong.\n"
+"The error message was: '%s'. "
+msgstr ""
+"Thachair mearachd, cuir gu dol manaidsear nam pacaidean on chlàr-taice a "
+"ruigeas tu le briogadh deas no le apt-get ann an tèirmineal airson "
+"fiosrachadh mu na tha cearr.\n"
+"Seo an teachdaireachd mearachd a fhuaras> \"%s\". "
+
+#: ../src/update.c:589
+msgid ""
+"An error occurred, please run Package Manager from the right-click menu or "
+"apt-get in a terminal to see what is wrong."
+msgstr ""
+"Thachair mearachd, cuir gu dol manaidsear nam pacaidean on chlàr-taice a "
+"ruigeas tu le briogadh deas no le apt-get ann an tèirmineal airson "
+"fiosrachadh mu na tha cearr."
+
+#: ../src/update.c:593
+msgid ""
+"This usually means that your installed packages have unmet dependencies"
+msgstr ""
+"Tachraidh seo mar is trice ma tha pacaidean stàlaichte agad aig a bheil "
+"eisimeileachdan nach deach an riarachadh."
+
+#: ../src/update.c:606
+msgid "A problem occurred when checking for the updates."
+msgstr "Thachair mearachd nuair a thug sinn sùil airson ùrachadh."
+
+#: ../src/update-notifier.c:402
+msgid "Internal error"
+msgstr "Mearachd inntearnail"
+
+#: ../src/update-notifier.c:570
+msgid "- inform about updates"
+msgstr "- fiosrachadh mu ùrachaidhean"
+
+#: ../src/update-notifier.c:572
+#, c-format
+msgid "Failed to init the UI: %s\n"
+msgstr "Cha b' urrainn dhuinn an UI a thòiseachadh: %s\n"
+
+#: ../src/update-notifier.c:573
+msgid "unknown error"
+msgstr "mearachd neo-aithnichte"
+
+#: ../src/update-notifier.c:596
+msgid "update-notifier"
+msgstr "update-notifier"
+
+#: ../ui/hooks-dialog.ui.h:1
+msgid "<span weight=\"bold\" size=\"larger\">Update information</span>"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Fiosrachadh mun ùrachadh</span>"
+
+#: ../ui/reboot-dialog.ui.h:1
+msgid "Restart Required"
+msgstr "Tha feum air ath-thòiseachadh"
+
+#: ../ui/reboot-dialog.ui.h:2
+msgid "Restart _Later"
+msgstr "Tòisich às ùr _uaireigin eile"
+
+#: ../ui/reboot-dialog.ui.h:4
+msgid "_Restart Now"
+msgstr "_Ath-thòisich an-dràsta"
+
+#: ../ui/reboot-dialog.ui.h:3
+msgid ""
+"The computer needs to restart to finish installing updates. Please save your "
+"work before continuing."
+msgstr ""
+"Feumaidh an coimpiutair ath-thòiseachadh gus na -ùrachaidhean a choileanadh. "
+"Sàbhail d' obair mus lean thu air adhart."
+
+#: ../data/update-notifier.desktop.in.h:2
+msgid "Update Notifier"
+msgstr "Fiosraiche nan ùrachadh"
+
+#: ../data/update-notifier.desktop.in.h:1
+msgid "Check for available updates automatically"
+msgstr "Thoir sùil gu fèin-obrachail ach a bheil ùrachaidhean ann"
+
+#. Name
+#: ../data/package-data-downloads-failed.in:1
+msgid "Failure to download extra data files"
+msgstr "Dh'fhàillig luchdadh a-nuas nam faidhlichean dàta a bharrachd"
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid ""
+"The following packages requested additional data downloads after package "
+"installation, but the data could not be downloaded or could not be processed."
+msgstr ""
+"Dh'iarr na pacaidean a leanas dàta a bharrachd a luchdadh a-nuas às dèidh "
+"stàladh na pacaid ach cha b' urrainn dhuinn a luchdadh a-nuas no an dàta a "
+"ghiullachd."
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid "  $packages"
+msgstr "  $packages"
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+msgid ""
+"The download will be attempted again later, or you can try the download "
+"again now.  Running this command requires an active Internet connection."
+msgstr ""
+"Feuchaidh sinn ris an luchdadh a-nuas a-rithist an ceann greis no 's urrainn "
+"dhut feuchainn ris an-dràsta fhèin. Feumaidh tu ceangal beò ris an eadar-"
+"lìon mus urrainn dhut an àithne seo a ruith."
+
+#. Name
+#: ../data/package-data-downloads-failed-permanently.in:1
+msgid "Data files for some packages could not be downloaded"
+msgstr ""
+"Bha faidhlichean dàta airson cuid a phacaidean ann nach b' urrainn dhuinn a "
+"luchdadh a-nuas"
+
+#. Description
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid ""
+"This is a permanent failure that leaves these packages unusable on your "
+"system.  You may need to fix your Internet connection, then remove and "
+"reinstall the packages to fix this problem."
+msgstr ""
+"Seo mearachd bhuan agus chan obraich na pacaidean seo air an t-siostam agad "
+"ri linn seo. Dh'fhaoidte gum feum thu an ceangal ris an eadar-lìon a "
+"chàradh, na pacaidean a thoirt air falbh is an stàladh às ùr gus an "
+"duilgheadas seo a chur ceart."

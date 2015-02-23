@@ -1,0 +1,412 @@
+# Icelandic translation for update-notifier
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the update-notifier package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: update-notifier\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-10 12:15+0100\n"
+"PO-Revision-Date: 2013-09-18 08:02+0000\n"
+"Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
+"Language-Team: Icelandic <is@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-10-04 08:36+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
+
+#: ../data/apt_check.py:27
+#, python-format
+msgid "Unknown Error: '%s' (%s)"
+msgstr "Óþekkt villa: ‚%s‘ (%s)"
+
+#: ../data/apt_check.py:66
+#, python-format
+msgid "%i package can be updated."
+msgid_plural "%i packages can be updated."
+msgstr[0] "Hægt er að uppfæra %i pakka."
+msgstr[1] "Hægt er að uppfæra %i pakka."
+
+#: ../data/apt_check.py:71
+#, python-format
+msgid "%i update is a security update."
+msgid_plural "%i updates are security updates."
+msgstr[0] "%i uppfærsla er öryggisuppfærsla."
+msgstr[1] "%i uppfærslur eru öryggisuppfærslur."
+
+#: ../data/apt_check.py:97
+#, python-format
+msgid "Error: Opening the cache (%s)"
+msgstr "Villa: Við að opna skyndiminnið (%s)"
+
+#: ../data/apt_check.py:111
+msgid "Error: BrokenCount > 0"
+msgstr "Villa í talningu > 0"
+
+#: ../data/apt_check.py:118
+#, python-format
+msgid "Error: Marking the upgrade (%s)"
+msgstr "Villa: Merking uppfærslu (%s)"
+
+#: ../data/apt_check.py:182
+msgid "Show the packages that are going to be installed/upgraded"
+msgstr "Sýna pakkana sem á að setja upp eða uppfæra"
+
+#: ../data/apt_check.py:187
+msgid "Show human readable output on stdout"
+msgstr "Birta lesanlegt úttak á stdout"
+
+#: ../data/apt_check.py:191
+msgid ""
+"Return the time in days when security updates are installed unattended (0 "
+"means disabled)"
+msgstr ""
+"Sýna tíma í dögum þegar öryggisuppfærslur eru settar inn sjálfvirkt (0 "
+"táknar óvirkt)"
+
+#: ../src/crash.c:45
+msgid "System program problem detected"
+msgstr "Vandamál kom upp í kerfisforriti"
+
+#: ../src/crash.c:46
+msgid "Do you want to report the problem now?"
+msgstr "Viltu tilkynna vandamálið núna?"
+
+#: ../src/crash.c:56
+msgid "Report problem…"
+msgstr "Tilkynna vandamál..."
+
+#: ../src/crash.c:72
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Please enter your password to access "
+"problem reports of system programs</span>"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Sláðu inn lykilorð til að fá aðgang að "
+"vandamálaskýrslum kerfisforrita</span>"
+
+#: ../src/crash.c:92 ../src/crash.c:218
+msgid "Crash report detected"
+msgstr "Hrunskýrsla fannst"
+
+#: ../src/crash.c:93
+msgid ""
+"An application has crashed on your system (now or in the past). Click on the "
+"notification icon to display details. "
+msgstr ""
+"Forrit hrundi í kerfinu (núna eða fyrir skömmu). Ýttu á táknið til að birta "
+"frekari upplýsingar. "
+
+#. Create and show the notification
+#: ../src/avahi.c:15
+msgid "Network service discovery disabled"
+msgstr "Netþjónustuleit óvirk"
+
+#: ../src/avahi.c:16
+msgid ""
+"Your current network has a .local domain, which is not recommended and "
+"incompatible with the Avahi network service discovery. The service has been "
+"disabled."
+msgstr ""
+"Núverandi netkerfi hefur .local (staðbundið) lén sem er ekki ráðlagt og "
+"ósamhæft með Avahi netþjónustuleitinni. Þjónustan hefur verið gerð óvirk."
+
+#: ../src/gdu.c:53
+msgid "Software Packages Volume Detected"
+msgstr "Gagnageymsla með hugbúnaðarpökkum fannst"
+
+#: ../src/gdu.c:54
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A volume with software packages has "
+"been detected.</span>\n"
+"\n"
+"Would you like to open it with the package manager?"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Hugbúnaðarpakkar fundust.</span>\n"
+"\n"
+"Viltu opna þá með pakkastjóranum?"
+
+#: ../src/gdu.c:62
+msgid "Start Package Manager"
+msgstr "Ræsa pakkastjóra"
+
+#: ../src/gdu.c:68
+msgid "Upgrade volume detected"
+msgstr "Uppfærslugagnageymsla fannst"
+
+#: ../src/gdu.c:69
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A distribution volume with software "
+"packages has been detected.</span>\n"
+"\n"
+"Would you like to try to upgrade from it automatically? "
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Dreifingargagnageymsla með "
+"hugbúnaðarpökkum fannst.</span>\n"
+"\n"
+"Viltu uppfæra úr henni sjálfkrafa? "
+
+#: ../src/gdu.c:76
+msgid "Run upgrade"
+msgstr "Keyra uppfærslu"
+
+#: ../src/gdu.c:82
+msgid "Addon volume detected"
+msgstr "Viðbótargagnageymsla fannst"
+
+#: ../src/gdu.c:83
+msgid ""
+"<span weight=\"bold\" size=\"larger\">An addon volume with software "
+"applications has been detected.</span>\n"
+"\n"
+"Would you like to view/install the content? "
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Viðbótargagnageymsla með "
+"hugbúnaðarpökkum fannst.</span>\n"
+"\n"
+"Viltu skoða eða setja upp innihald þess? "
+
+#: ../src/gdu.c:90 ../src/gdu.c:109
+msgid "Start package manager"
+msgstr "Ræsa pakkastjóra"
+
+#: ../src/gdu.c:92
+msgid "Start addon installer"
+msgstr "Ræsa viðbótaruppsetningu"
+
+#: ../src/gdu.c:100
+msgid "APTonCD volume detected"
+msgstr "APTonCD gagnageymsla fannst"
+
+#: ../src/gdu.c:101
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A volume with unofficial software "
+"packages has been detected.</span>\n"
+"\n"
+"Would you like to open it with the package manager?"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Gagnageymsla með óopinberlega studdum "
+"hugbúnaðarpökkum hefur verið fundið.</span>\n"
+"\n"
+"Viltu opna það með skráarstjóranum?"
+
+#: ../src/hooks.c:346 ../ui/hooks-dialog.ui.h:2
+msgid "_Run this action now"
+msgstr "_Keyra þessa aðgerð núna"
+
+#: ../src/hooks.c:418 ../src/hooks.c:545 ../src/hooks.c:875
+msgid "Information available"
+msgstr "Upplýsingar tiltækar"
+
+#: ../src/hooks.c:546
+msgid "Click on the notification icon to show the available information.\n"
+msgstr "Smelltu á tilkynningatáknið til að birta upplýsingarnar.\n"
+
+#: ../src/reboot.c:29 ../src/reboot.c:277
+msgid "System restart required"
+msgstr "Endurræsing nauðsynleg"
+
+#: ../src/reboot.c:30
+msgid ""
+"To finish updating your system, please restart it.\n"
+"\n"
+"Click on the notification icon for details."
+msgstr ""
+"Til að ljúka uppfærslu kerfisins þarf að endurræsa.\n"
+"\n"
+"Ýttu á tilkynningatáknið fyrir nánari upplýsingar."
+
+#: ../src/reboot.c:104
+msgid "Reboot failed"
+msgstr "Það mistókst að endurræsa"
+
+#: ../src/reboot.c:105
+msgid "Failed to request reboot, please shutdown manually"
+msgstr "Það tókst ekki að endurræsa, þú verður að slökkva á tölvunni"
+
+#: ../src/update.c:27
+msgid "Show updates"
+msgstr "Sýna uppfærslur"
+
+#: ../src/update.c:31
+msgid "Install all updates"
+msgstr "Setja upp allar uppfærslur"
+
+#: ../src/update.c:35
+msgid "Check for updates"
+msgstr "Leita að uppfærslum"
+
+#: ../src/update.c:80
+#, c-format
+msgid "There is %i update available"
+msgid_plural "There are %i updates available"
+msgstr[0] "%i uppfærsla fannst"
+msgstr[1] "%i uppfærslur fundust"
+
+#: ../src/update.c:149
+msgid "Show notifications"
+msgstr "Birta tilkynningar"
+
+#. and update the tooltip
+#: ../src/update.c:208
+msgid "A package manager is working"
+msgstr "Pakkastjórinn er í gangi"
+
+#: ../src/update.c:240
+#, c-format
+msgid ""
+"There is %i update available. Click on the notification icon to show the "
+"available update."
+msgid_plural ""
+"There are %i updates available. Click on the notification icon to show the "
+"available updates."
+msgstr[0] "%i uppfærsla fannst. Ýttu á tilkynningatáknið til að sýna hana."
+msgstr[1] "%i uppfærslur fundust. Ýttu á tilkynningatáknið til að sjá þær."
+
+#: ../src/update.c:251
+msgid "Software updates available"
+msgstr "Hugbúnaðaruppfærslur fundust"
+
+#: ../src/update.c:287
+msgid ""
+"The update information is outdated. This may be caused by network problems "
+"or by a repository that is no longer available. Please update manually by "
+"clicking on this icon and then selecting 'Check for updates' and check if "
+"some of the listed repositories fail."
+msgstr ""
+"Þær upplýsingar sem tölvan þín hefur um nýjar útgáfur eru úreltar. Ástæðan "
+"getur verið vandamál við að tengjast netinu eða gagnahirsla sem finnst ekki. "
+"Reyndu a uppfæra handvirkt með því að ýta á táknmyndina til hliðar og ýta "
+"svo á ‚Leita að uppfærslum‘ og sjáðu hvort gagnahirslunar sem koma upp virki "
+"ekki."
+
+#: ../src/update.c:582
+#, c-format
+msgid ""
+"An error occurred, please run Package Manager from the right-click menu or "
+"apt-get in a terminal to see what is wrong.\n"
+"The error message was: '%s'. "
+msgstr ""
+"Villa kom upp, keyrðu Pakkastjórann úr hægri-smella-valmynd eða með apt-get "
+"í skeljarglugga til að sjá hvað er að.\n"
+"Það kom villan: '%s'. "
+
+#: ../src/update.c:589
+msgid ""
+"An error occurred, please run Package Manager from the right-click menu or "
+"apt-get in a terminal to see what is wrong."
+msgstr ""
+"Villa kom upp, keyrðu Pakkastjórann úr hægri-smella-valmynd eða með apt-get "
+"í skeljarglugga til þess að sjá hvað fór úrskeiðis."
+
+#: ../src/update.c:593
+msgid ""
+"This usually means that your installed packages have unmet dependencies"
+msgstr ""
+"Þetta þýðir yfirleitt að uppsettir pakkar hafi óuppfylltar kerfiskröfur"
+
+#: ../src/update.c:606
+msgid "A problem occurred when checking for the updates."
+msgstr "Vandamál kom upp þegar leitað var að uppfærslum."
+
+#: ../src/update-notifier.c:402
+msgid "Internal error"
+msgstr "Innri villa"
+
+#: ../src/update-notifier.c:570
+msgid "- inform about updates"
+msgstr "- upplýsa um uppfærslur"
+
+#: ../src/update-notifier.c:572
+#, c-format
+msgid "Failed to init the UI: %s\n"
+msgstr "Gat ekki ræst viðmótið: %s\n"
+
+#: ../src/update-notifier.c:573
+msgid "unknown error"
+msgstr "óþekkt villa"
+
+#: ../src/update-notifier.c:596
+msgid "update-notifier"
+msgstr "uppfærslu-vaktari"
+
+#: ../ui/hooks-dialog.ui.h:1
+msgid "<span weight=\"bold\" size=\"larger\">Update information</span>"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Upplýsingar um uppfærslu</span>"
+
+#: ../ui/reboot-dialog.ui.h:1
+msgid "Restart Required"
+msgstr "Þú þarft að endurræsa tölvuna"
+
+#: ../ui/reboot-dialog.ui.h:2
+msgid "Restart _Later"
+msgstr "Endurræsa _seinna"
+
+#: ../ui/reboot-dialog.ui.h:4
+msgid "_Restart Now"
+msgstr "Endu_rræsa núna"
+
+#: ../ui/reboot-dialog.ui.h:3
+msgid ""
+"The computer needs to restart to finish installing updates. Please save your "
+"work before continuing."
+msgstr ""
+"Það þarf að endurræsa tölvuna til að ljúka uppfærslum — vistaðu öll skjöl "
+"áður en haldið er áfram."
+
+#: ../data/update-notifier.desktop.in.h:2
+msgid "Update Notifier"
+msgstr "Tilkynningar um uppfærslur"
+
+#: ../data/update-notifier.desktop.in.h:1
+msgid "Check for available updates automatically"
+msgstr "Leita að uppfærslum sjálfkrafa"
+
+#. Name
+#: ../data/package-data-downloads-failed.in:1
+msgid "Failure to download extra data files"
+msgstr "Tókst ekki að hlaða niður auka-gagnaskrám"
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid ""
+"The following packages requested additional data downloads after package "
+"installation, but the data could not be downloaded or could not be processed."
+msgstr ""
+"Eftirfarandi pakkar þurfa auka-gagnaskrár eftir að pakkar eru uppsettir en "
+"ekki tókst að hlaða þeim niður eða ekki var hægt að setja þá upp."
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid "  $packages"
+msgstr "  $packages"
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+msgid ""
+"The download will be attempted again later, or you can try the download "
+"again now.  Running this command requires an active Internet connection."
+msgstr ""
+"Reynt verður að sækja þetta aftur síðar eða þú getur reynt aftur núna strax. "
+"Til að gera það þá þarf virka internettengingu."
+
+#. Name
+#: ../data/package-data-downloads-failed-permanently.in:1
+msgid "Data files for some packages could not be downloaded"
+msgstr "Ekki var hægt að hlaða niður gagnaskrám fyrir suma pakkana"
+
+#. Description
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid ""
+"This is a permanent failure that leaves these packages unusable on your "
+"system.  You may need to fix your Internet connection, then remove and "
+"reinstall the packages to fix this problem."
+msgstr ""
+"Þetta er varanleg villa sem að gerir þessa pakka ónothæfa á þínu kerfi. Þú "
+"getur þurft að laga nettenginguna þína, taka út pakkana og setja þá aftur "
+"inn til að laga þetta."

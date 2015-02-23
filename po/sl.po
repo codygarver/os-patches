@@ -1,0 +1,431 @@
+# Slovenian translation for update-notifier
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the update-notifier package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: update-notifier\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-10 12:15+0100\n"
+"PO-Revision-Date: 2013-03-05 20:04+0000\n"
+"Last-Translator: Damir Jerovšek <Unknown>\n"
+"Language-Team: Slovenian <sl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
+"X-Launchpad-Export-Date: 2013-10-04 08:36+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
+
+#: ../data/apt_check.py:27
+#, python-format
+msgid "Unknown Error: '%s' (%s)"
+msgstr "Neznana napaka: '%s' (%s)"
+
+#: ../data/apt_check.py:66
+#, python-format
+msgid "%i package can be updated."
+msgid_plural "%i packages can be updated."
+msgstr[0] "%i paketov je mogoče posodobiti."
+msgstr[1] "%i paket je mogoče posodobiti."
+msgstr[2] "%i paketa je mogoče posodobiti."
+msgstr[3] "%i pakete je mogoče posodobiti"
+
+#: ../data/apt_check.py:71
+#, python-format
+msgid "%i update is a security update."
+msgid_plural "%i updates are security updates."
+msgstr[0] "%i posodobitev so varnostne posodobitve."
+msgstr[1] "%i posodobitev je varnostna posodobitev."
+msgstr[2] "%i posodobitvi sta varnostni posodobitvi."
+msgstr[3] "%i posodobitve so varnostne posodobitve."
+
+#: ../data/apt_check.py:97
+#, python-format
+msgid "Error: Opening the cache (%s)"
+msgstr "Napaka: odpiranje predpomnilnika (%s)"
+
+#: ../data/apt_check.py:111
+msgid "Error: BrokenCount > 0"
+msgstr "Napaka: BrokenCount > 0"
+
+#: ../data/apt_check.py:118
+#, python-format
+msgid "Error: Marking the upgrade (%s)"
+msgstr "Napaka: označevanje nadgradnje (%s)"
+
+#: ../data/apt_check.py:182
+msgid "Show the packages that are going to be installed/upgraded"
+msgstr "Pokaži pakete, ki bodo nameščeni ali nadgrajeni"
+
+#: ../data/apt_check.py:187
+msgid "Show human readable output on stdout"
+msgstr "Prikaži človeku berljiv prikaz na standardnem izhodu"
+
+#: ../data/apt_check.py:191
+msgid ""
+"Return the time in days when security updates are installed unattended (0 "
+"means disabled)"
+msgstr ""
+"Vrne čas v dneh, ko so varnostne posodobitve nameščene brez posredovanja (0 "
+"pomeni onemogočeno)"
+
+#: ../src/crash.c:45
+msgid "System program problem detected"
+msgstr "Zaznana je bila težava s sistemskim programom"
+
+#: ../src/crash.c:46
+msgid "Do you want to report the problem now?"
+msgstr "Ali želite težavo poročati sedaj?"
+
+#: ../src/crash.c:56
+msgid "Report problem…"
+msgstr "Poročaj težavo ..."
+
+#: ../src/crash.c:72
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Please enter your password to access "
+"problem reports of system programs</span>"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Za dostop do poročil o težavah "
+"sistemskih programov morate vpisati svoje geslo</span>"
+
+#: ../src/crash.c:92 ../src/crash.c:218
+msgid "Crash report detected"
+msgstr "Zaznano je bilo poročilo o sesutju"
+
+#: ../src/crash.c:93
+msgid ""
+"An application has crashed on your system (now or in the past). Click on the "
+"notification icon to display details. "
+msgstr ""
+"Na vašem sistemu se je sesul program (sedaj ali v preteklosti). Za več "
+"podrobnosti kliknite na obvestilno ikono. "
+
+#. Create and show the notification
+#: ../src/avahi.c:15
+msgid "Network service discovery disabled"
+msgstr "Odkrivanje omrežnih storitev je onemogočeno"
+
+#: ../src/avahi.c:16
+msgid ""
+"Your current network has a .local domain, which is not recommended and "
+"incompatible with the Avahi network service discovery. The service has been "
+"disabled."
+msgstr ""
+"Vaše trenutno omrežje uporablja domeno .local, kar ni priporočeno in je "
+"nezdružljivo z odkrivanjem omrežnih storitev Avahi. Storitev je bila "
+"onemogočena."
+
+#: ../src/gdu.c:53
+msgid "Software Packages Volume Detected"
+msgstr "Zaznan je bil nosilec programskih paketov"
+
+#: ../src/gdu.c:54
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A volume with software packages has "
+"been detected.</span>\n"
+"\n"
+"Would you like to open it with the package manager?"
+msgstr ""
+"</span weight=\"bold\" size=\"larger\">Zaznan je bil nosilec s programskimi "
+"paketi.</span>\n"
+"\n"
+"Ali ga želite odpreti z upravljalnikom paketov?"
+
+#: ../src/gdu.c:62
+msgid "Start Package Manager"
+msgstr "Zaženi upravljalnik paketov"
+
+#: ../src/gdu.c:68
+msgid "Upgrade volume detected"
+msgstr "Zaznan je bil nosilec z nadgradnjami"
+
+#: ../src/gdu.c:69
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A distribution volume with software "
+"packages has been detected.</span>\n"
+"\n"
+"Would you like to try to upgrade from it automatically? "
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Zaznan je nosilec distribucije s "
+"programskimi paketi.</span>\n"
+"\n"
+"Ali želite z njega samodejno nadgraditi sistem? "
+
+#: ../src/gdu.c:76
+msgid "Run upgrade"
+msgstr "Zaženi nadgradnjo"
+
+#: ../src/gdu.c:82
+msgid "Addon volume detected"
+msgstr "Zaznan je bil nosilec z dodatki"
+
+#: ../src/gdu.c:83
+msgid ""
+"<span weight=\"bold\" size=\"larger\">An addon volume with software "
+"applications has been detected.</span>\n"
+"\n"
+"Would you like to view/install the content? "
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Zaznan je bil nosilec z dodatnimi "
+"programi.</span>\n"
+"\n"
+"Ali si želite ogledati/namestiti njegovo vsebino? "
+
+#: ../src/gdu.c:90 ../src/gdu.c:109
+msgid "Start package manager"
+msgstr "Zaženi upravljalnik paketov"
+
+#: ../src/gdu.c:92
+msgid "Start addon installer"
+msgstr "Zaženi namestilnik dodatkov"
+
+#: ../src/gdu.c:100
+msgid "APTonCD volume detected"
+msgstr "Zaznan je bil nosilec APTonCD"
+
+#: ../src/gdu.c:101
+msgid ""
+"<span weight=\"bold\" size=\"larger\">A volume with unofficial software "
+"packages has been detected.</span>\n"
+"\n"
+"Would you like to open it with the package manager?"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Zaznan je bil nosilec z neuradnimi "
+"programskimi paketi.</span>\n"
+"\n"
+"Ali ga želite odpreti z upravljalnikom paketov?"
+
+#: ../src/hooks.c:346 ../ui/hooks-dialog.ui.h:2
+msgid "_Run this action now"
+msgstr "_Izvedi to dejanje zdaj"
+
+#: ../src/hooks.c:418 ../src/hooks.c:545 ../src/hooks.c:875
+msgid "Information available"
+msgstr "Na voljo so podatki"
+
+#: ../src/hooks.c:546
+msgid "Click on the notification icon to show the available information.\n"
+msgstr "Za prikaz razpoložljivih podatkov kliknite na obvestilno ikono.\n"
+
+#: ../src/reboot.c:29 ../src/reboot.c:277
+msgid "System restart required"
+msgstr "Zahtevan je ponoven zagon sistema"
+
+#: ../src/reboot.c:30
+msgid ""
+"To finish updating your system, please restart it.\n"
+"\n"
+"Click on the notification icon for details."
+msgstr ""
+"Za končanje posodobitve sistema ga ponovno zaženite.\n"
+"\n"
+"Za podrobnosti kliknite na obvestilno ikono."
+
+#: ../src/reboot.c:104
+msgid "Reboot failed"
+msgstr "Ponovni zagon je spodletel"
+
+#: ../src/reboot.c:105
+msgid "Failed to request reboot, please shutdown manually"
+msgstr ""
+"Zahteva po ponovnem zagonu je spodletela. Ročno izklopite računalnik."
+
+#: ../src/update.c:27
+msgid "Show updates"
+msgstr "Pokaži posodobitve"
+
+#: ../src/update.c:31
+msgid "Install all updates"
+msgstr "Namesti vse posodobitve"
+
+#: ../src/update.c:35
+msgid "Check for updates"
+msgstr "Preveri za posodobitve"
+
+#: ../src/update.c:80
+#, c-format
+msgid "There is %i update available"
+msgid_plural "There are %i updates available"
+msgstr[0] "Na voljo je %i posodobitev"
+msgstr[1] "Na voljo je  %i posodobitev"
+msgstr[2] "Na voljo sta %i posodobitvi"
+msgstr[3] "Na voljo so %i posodobitve"
+
+#: ../src/update.c:149
+msgid "Show notifications"
+msgstr "Pokaži obvestila"
+
+#. and update the tooltip
+#: ../src/update.c:208
+msgid "A package manager is working"
+msgstr "Upravljalnik paketov dela"
+
+#: ../src/update.c:240
+#, c-format
+msgid ""
+"There is %i update available. Click on the notification icon to show the "
+"available update."
+msgid_plural ""
+"There are %i updates available. Click on the notification icon to show the "
+"available updates."
+msgstr[0] ""
+"Na voljo je %i posodobitev. Kliknite na obvestilno ikono za prikaz "
+"razpoložljivih posodobitev."
+msgstr[1] ""
+"Na voljo je %i posodobitev. Kliknite na obvestilno ikono za prikaz "
+"razpoložljive posodobitve."
+msgstr[2] ""
+"Na voljo sta %i posodobitvi. Kliknite na obvestilno ikono za prikaz "
+"razpoložljivih posodobitev."
+msgstr[3] ""
+"Na voljo so %i posodobitve. Kliknite na obvestilno ikono za prikaz "
+"razpoložljivih posodobitev."
+
+#: ../src/update.c:251
+msgid "Software updates available"
+msgstr "Na voljo so posodobitve programov"
+
+#: ../src/update.c:287
+msgid ""
+"The update information is outdated. This may be caused by network problems "
+"or by a repository that is no longer available. Please update manually by "
+"clicking on this icon and then selecting 'Check for updates' and check if "
+"some of the listed repositories fail."
+msgstr ""
+"Razpoložljivi podatki so zastareli. To je lahko posledica težav z omrežjem, "
+"ali pa skladišče ni več na voljo. Za ročno posodobitev kliknite na to ikono, "
+"izberite 'Preveri za posodobitve', ter preverite, če katero od vaših "
+"skladišč javlja napake."
+
+#: ../src/update.c:582
+#, c-format
+msgid ""
+"An error occurred, please run Package Manager from the right-click menu or "
+"apt-get in a terminal to see what is wrong.\n"
+"The error message was: '%s'. "
+msgstr ""
+"Prišlo je do težave. Za ogled težav zaženite iz menija desnega klika "
+"Upravljalnik paketov ali pa v terminalu uporabite ukaz apt-get.\n"
+"Sporočilo o napaki je bilo: '%s'. "
+
+#: ../src/update.c:589
+msgid ""
+"An error occurred, please run Package Manager from the right-click menu or "
+"apt-get in a terminal to see what is wrong."
+msgstr ""
+"Prišlo je do napake. Za odkritje težave zaženite iz menija desnega klika "
+"Upravljalnik paketov ali pa v ukazni vrstici zaženite apt-get."
+
+#: ../src/update.c:593
+msgid ""
+"This usually means that your installed packages have unmet dependencies"
+msgstr ""
+"To ponavadi pomeni, da so nameščeni paketi odvisni od paketov, ki niso na "
+"voljo."
+
+#: ../src/update.c:606
+msgid "A problem occurred when checking for the updates."
+msgstr "Med iskanjem morebitnih posodobitev je prišlo do napake."
+
+#: ../src/update-notifier.c:402
+msgid "Internal error"
+msgstr "Notranja napaka"
+
+#: ../src/update-notifier.c:570
+msgid "- inform about updates"
+msgstr "- obvesti o posodobitvah"
+
+#: ../src/update-notifier.c:572
+#, c-format
+msgid "Failed to init the UI: %s\n"
+msgstr "Zagon uporabniškega vmesnika je spodletel: %s\n"
+
+#: ../src/update-notifier.c:573
+msgid "unknown error"
+msgstr "neznana napaka"
+
+#: ../src/update-notifier.c:596
+msgid "update-notifier"
+msgstr "obvestilnik o posodobitvah"
+
+#: ../ui/hooks-dialog.ui.h:1
+msgid "<span weight=\"bold\" size=\"larger\">Update information</span>"
+msgstr "<span weight=\"bold\" size=\"larger\">Podatki o posodobitvah</span>"
+
+#: ../ui/reboot-dialog.ui.h:1
+msgid "Restart Required"
+msgstr "Zahtevan je ponoven zagon"
+
+#: ../ui/reboot-dialog.ui.h:2
+msgid "Restart _Later"
+msgstr "Znova zaženi _kasneje"
+
+#: ../ui/reboot-dialog.ui.h:4
+msgid "_Restart Now"
+msgstr "_Ponovno zaženi zdaj"
+
+#: ../ui/reboot-dialog.ui.h:3
+msgid ""
+"The computer needs to restart to finish installing updates. Please save your "
+"work before continuing."
+msgstr ""
+"Računalnik se mora za dokončanje opravila posodobitve znova zagnati. Pred "
+"nadaljevanjem shranite svoje delo."
+
+#: ../data/update-notifier.desktop.in.h:2
+msgid "Update Notifier"
+msgstr "Obvestilnik o posodobitvah"
+
+#: ../data/update-notifier.desktop.in.h:1
+msgid "Check for available updates automatically"
+msgstr "Samodejno preveri za posodobitve"
+
+#. Name
+#: ../data/package-data-downloads-failed.in:1
+msgid "Failure to download extra data files"
+msgstr "Prejetje dodatnih podatkovnih datotek je spodletelo"
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid ""
+"The following packages requested additional data downloads after package "
+"installation, but the data could not be downloaded or could not be processed."
+msgstr ""
+"Naslednji paketi so zahtevali prejem dodatnih podatkov po namestitvi paketa, "
+"vendar podatkov ni bilo mogoče prejeti ali obdelati."
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid "  $packages"
+msgstr "  $packages"
+
+#. Description
+#: ../data/package-data-downloads-failed.in:5
+msgid ""
+"The download will be attempted again later, or you can try the download "
+"again now.  Running this command requires an active Internet connection."
+msgstr ""
+"Preizkus prejema se bo samodejno izvršil kasneje, lahko pa ponovno poskusite "
+"takoj. Zagon tega ukaza zahteva dejavno internetno povezavo."
+
+#. Name
+#: ../data/package-data-downloads-failed-permanently.in:1
+msgid "Data files for some packages could not be downloaded"
+msgstr "Podatkovnih datotek za nekatere pakete ni bilo mogoče prejeti"
+
+#. Description
+#: ../data/package-data-downloads-failed-permanently.in:3
+msgid ""
+"This is a permanent failure that leaves these packages unusable on your "
+"system.  You may need to fix your Internet connection, then remove and "
+"reinstall the packages to fix this problem."
+msgstr ""
+"To je trajna napaka, ki pusti te pakete na vašem sistemu neuporabne. Morda "
+"boste morali za popravilo te težave popraviti svojo internetno povezavo in "
+"nato odstraniti in ponovno namestiti pakete."

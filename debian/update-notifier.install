@@ -1,0 +1,17 @@
+etc/xdg/autostart/update-notifier.desktop
+usr/share/update-notifier/ui/hooks-dialog.ui
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/24x24/
+usr/share/icons/hicolor/48x48/
+usr/share/glib-2.0/schemas/com.ubuntu.update-notifier.gschema.xml
+usr/share/GConf/gsettings/update-notifier.convert
+usr/bin/update-notifier
+usr/bin/distro-cd-updater usr/lib/update-notifier/
+usr/bin/local-avahi-notification usr/lib/update-notifier/
+usr/bin/system-crash-notification usr/lib/update-notifier/
+debian/update-notifier-cds.conf usr/share/upstart/sessions/
+debian/update-notifier-hp-firmware.conf usr/share/upstart/sessions/
+debian/unicast-local-avahi.conf usr/share/upstart/sessions/
+debian/update-notifier-release.conf usr/share/upstart/sessions/
+debian/update-notifier-crash.conf usr/share/upstart/sessions/
