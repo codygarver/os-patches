@@ -13,7 +13,7 @@ import subprocess
 
 SYNAPTIC_PINFILE = "/var/lib/synaptic/preferences"
 DISTRO = subprocess.check_output(
-    ["lsb_release", "-c", "-s"],
+    ["lsb_release", "--upstream", "-c", "-s"],
     universal_newlines=True).strip()
 
 def _(msg):
