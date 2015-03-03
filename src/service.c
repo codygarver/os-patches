@@ -689,12 +689,6 @@ create_session_section (IndicatorSessionService * self)
   if (indicator_session_actions_can_hibernate (p->backend_actions))
     g_menu_append (menu, _("Hibernate"), "indicator.hibernate");
 
-  if (indicator_session_actions_can_reboot (p->backend_actions))
-    {
-      const char * label = ellipsis ? _("Restart…") : _("Restart");
-      g_menu_append (menu, label, "indicator.reboot");
-    }
-
   if (!g_settings_get_boolean (s, "suppress-shutdown-menuitem"))
     {
       const char * label = ellipsis ? _("Shut Down…") : _("Shut Down");
