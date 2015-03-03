@@ -336,7 +336,6 @@ create_admin_section (void)
 
   menu = g_menu_new ();
   g_menu_append (menu, _("About This Computer"), "indicator.about");
-  g_menu_append (menu, _("Ubuntu Help"), "indicator.help");
   return G_MENU_MODEL (menu);
 }
 
