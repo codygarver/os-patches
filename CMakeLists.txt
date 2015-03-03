@@ -81,5 +81,3 @@ set (GTEST_SOURCE_DIR /usr/src/gtest/src)
 set (GTEST_INCLUDE_DIR ${GTEST_SOURCE_DIR}/..)
 set (GTEST_LIBS -lpthread)
 
-add_subdirectory(tests)
-
