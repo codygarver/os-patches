@@ -7,7 +7,7 @@ set (PROJECT_VERSION "13.10.1")
 set (PACKAGE ${CMAKE_PROJECT_NAME})
 set (GETTEXT_PACKAGE indicator-session)
 
-option (enable_tests "Build the package's automatic tests." ON)
+option (enable_tests "Build the package's automatic tests." OFF)
 option (enable_lcov "Generate lcov code coverage reports." ON)
 
 ##
