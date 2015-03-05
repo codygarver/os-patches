@@ -1,0 +1,249 @@
+# Danish translation unattended-upgrades.
+# Copyright (C) 2012 unattended-upgrades & nedenstående oversættere.
+# This file is distributed under the same license as the unattended-upgrades package.
+# Joe Hansen <joedalton2@yahoo.dk>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: unattended-upgrades\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-13 08:12+0200\n"
+"PO-Revision-Date: 2012-06-16 23:51+0200\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../unattended-upgrade:136
+#, c-format
+msgid "Progress: %s %% (%s)"
+msgstr "Status: %s %% (%s)"
+
+#: ../unattended-upgrade:352 ../unattended-upgrade:436
+#: ../unattended-upgrade-shutdown:161
+msgid "All upgrades installed"
+msgstr "Alle opgraderinger er installeret"
+
+#: ../unattended-upgrade:354 ../unattended-upgrade:428
+msgid "Installing the upgrades failed!"
+msgstr "Installation af opgraderingerne mislykkedes!"
+
+#: ../unattended-upgrade:355 ../unattended-upgrade:429
+#, c-format
+msgid "error message: '%s'"
+msgstr "fejlbesked: »%s«"
+
+#: ../unattended-upgrade:356 ../unattended-upgrade:430
+#, c-format
+msgid "dpkg returned a error! See '%s' for details"
+msgstr "dpkg returnerede en fejl! Se »%s« for detaljer"
+
+#: ../unattended-upgrade:685
+#, fuzzy
+#| msgid ""
+#| "No '/usr/bin/mail', can not send mail. You probably want to install the "
+#| "'mailx' package."
+msgid ""
+"No '/usr/bin/mail' or '/usr/sbin/sendmail',can not send mail. You probably "
+"want to install the 'mailx' package."
+msgstr ""
+"Ingen »/usr/bin/mail«, kan ikke sende post. Du skal sikkert installere "
+"pakken »mailx«."
+
+#: ../unattended-upgrade:698
+#, fuzzy, c-format
+#| msgid "[reboot required] unattended-upgrades result for '%s'"
+msgid "[reboot required] unattended-upgrades result for '%s': %s"
+msgstr "[genstart krævet] unattended-upgrades resultat for »%s«"
+
+#: ../unattended-upgrade:701
+#, fuzzy, c-format
+#| msgid "unattended-upgrades result for '%s'"
+msgid "unattended-upgrades result for '%s': '%s'"
+msgstr "unattended-upgrades resultat for »%s«"
+
+#: ../unattended-upgrade:703
+#, c-format
+msgid ""
+"Unattended upgrade returned: %s\n"
+"\n"
+msgstr ""
+"Unattended upgrade returnerede: %s\n"
+"\n"
+
+#: ../unattended-upgrade:706
+msgid ""
+"Warning: A reboot is required to complete this upgrade.\n"
+"\n"
+msgstr ""
+"Advarsel: En genstart er krævet for at færdiggøre denne opgradering.\n"
+"\n"
+
+#: ../unattended-upgrade:708
+#, fuzzy
+#| msgid "Packages that are upgraded:\n"
+msgid "Packages that were upgraded:\n"
+msgstr "Pakker som opgraderes:\n"
+
+#: ../unattended-upgrade:710
+#, fuzzy
+#| msgid "Packages that are upgraded:\n"
+msgid "Packages that attempted to upgrade:\n"
+msgstr "Pakker som opgraderes:\n"
+
+#: ../unattended-upgrade:714
+msgid "Packages with upgradable origin but kept back:\n"
+msgstr "Pakker med opgraderbar oprindelse men holdt tilbage:\n"
+
+#: ../unattended-upgrade:719
+msgid "Package installation log:"
+msgstr "Log for pakkeinstallation:"
+
+#: ../unattended-upgrade:723
+msgid "Unattended-upgrades log:\n"
+msgstr "Log for unattended-upgrades:\n"
+
+#: ../unattended-upgrade:747
+#, c-format
+msgid "Writing dpkg log to '%s'"
+msgstr "Skriver dpkg-log til »%s«"
+
+#: ../unattended-upgrade:873
+#, c-format
+msgid "Initial blacklisted packages: %s"
+msgstr "Oprindelig sortlistede pakker: %s"
+
+#: ../unattended-upgrade:875
+msgid "Starting unattended upgrades script"
+msgstr "Starter skript for unattended upgrades"
+
+#: ../unattended-upgrade:878
+#, c-format
+msgid "Allowed origins are: %s"
+msgstr "Tilladte oprindelser er: %s"
+
+#: ../unattended-upgrade:891 ../unattended-upgrade:892
+msgid "Unclean dpkg state detected, trying to correct"
+msgstr "Uklar dpkg-tilstand detekteret, forsøger at rette"
+
+#: ../unattended-upgrade:901
+#, c-format
+msgid ""
+"dpkg --configure -a output:\n"
+"%s"
+msgstr ""
+"dpkg --configure -a output:\n"
+"%s"
+
+#: ../unattended-upgrade:910
+msgid "Lock could not be acquired (another package manager running?)"
+msgstr "Lås kunne ikke indhentes (kører en anden pakkehåndtering?)"
+
+#: ../unattended-upgrade:912
+msgid "Cache lock can not be acquired, exiting"
+msgstr "Lås for mellemlager kan ikke indhentes, afslutter"
+
+#: ../unattended-upgrade:919 ../unattended-upgrade:920
+msgid "Cache has broken packages, exiting"
+msgstr "Mellemlager har ødelagte pakker, afslutter"
+
+#: ../unattended-upgrade:961
+#, c-format
+msgid "package '%s' upgradable but fails to be marked for upgrade (%s)"
+msgstr "pakke »%s« kan opgraderes men fejler i markering for opgradering (%s)"
+
+#: ../unattended-upgrade:982
+#, c-format
+msgid "GetArchives() failed: '%s'"
+msgstr "GetArchives() mislykkedes: »%s«"
+
+#: ../unattended-upgrade:992 ../unattended-upgrade:993
+#, fuzzy, c-format
+#| msgid "An error ocured: '%s'"
+msgid "An error occurred: '%s'"
+msgstr "Der opstod en fejl: »%s«"
+
+#: ../unattended-upgrade:995 ../unattended-upgrade:997
+#, c-format
+msgid "The URI '%s' failed to download, aborting"
+msgstr "Der kunne ikke hentes fra adressen »%s«, afbryder"
+
+#: ../unattended-upgrade:1001
+#, c-format
+msgid "Download finished, but file '%s' not there?!?"
+msgstr "Hentning færdig, men filen »%s« var der ikke?!?"
+
+#: ../unattended-upgrade:1017 ../unattended-upgrade:1021
+#, c-format
+msgid "Package '%s' has conffile prompt and needs to be upgraded manually"
+msgstr ""
+"Pakke »%s« bliver spurgt om oplysninger fra konfigurationsfilen og skal "
+"opgraderes manuelt"
+
+#: ../unattended-upgrade:1044
+#, c-format
+msgid "package '%s' not upgraded"
+msgstr "pakke »%s« blev ikke opgraderet"
+
+#: ../unattended-upgrade:1059
+#, c-format
+msgid "Packages that are auto removed: '%s'"
+msgstr "Pakker som automatisk fjernes: »%s«"
+
+#: ../unattended-upgrade:1068
+msgid "No packages found that can be upgraded unattended"
+msgstr "Ingen pakker fundet som kan opgraderes uden ledsager"
+
+#: ../unattended-upgrade:1088
+#, fuzzy, c-format
+#| msgid "Packages that are upgraded: %s"
+msgid "Packages that will be upgraded: %s"
+msgstr "Pakker som blev opgraderet: %s"
+
+#: ../unattended-upgrade:1125
+msgid "print debug messages"
+msgstr "vis fejlsøgningsbeskeder"
+
+#: ../unattended-upgrade:1128
+#, fuzzy
+#| msgid "print debug messages"
+msgid "make apt/libapt print verbose debug messages"
+msgstr "vis fejlsøgningsbeskeder"
+
+#: ../unattended-upgrade:1131
+#, fuzzy
+#| msgid "print debug messages"
+msgid "print info messages"
+msgstr "vis fejlsøgningsbeskeder"
+
+#: ../unattended-upgrade:1134
+msgid "Simulation, download but do not install"
+msgstr "Simulation, hent men installer ikke"
+
+#: ../unattended-upgrade:1137
+msgid "Upgrade in minimal steps (and allow interrupting with SIGINT"
+msgstr "Opgrader i små trin (og tillad afbrydelse med SIGINT)"
+
+#: ../unattended-upgrade:1142
+msgid "You need to be root to run this application"
+msgstr "Du skal være administrator (root) for at køre dette program"
+
+#: ../unattended-upgrade-shutdown:72
+msgid "Unattended-upgrade in progress during shutdown, sleeping for 5s"
+msgstr "Unattended-upgrade i gang under nedlukning, sover for 5 sekunder"
+
+#: ../unattended-upgrade-shutdown:125
+#, fuzzy
+#| msgid "unattended-upgrades result for '%s'"
+msgid "Running unattended-upgrades in shutdown mode"
+msgstr "unattended-upgrades resultat for »%s«"
+
+#: ../unattended-upgrade-shutdown:153
+#, c-format
+msgid "Giving up on lockfile after %s delay"
+msgstr "Opgiver låsefilen efter %s forsinkelse"
+
+#~ msgid "Progress: %s %%: (%s)"
+#~ msgstr "Status: %s %%: (%s)"
