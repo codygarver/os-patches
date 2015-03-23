@@ -3,7 +3,7 @@
 
 if [ "$IM_CONFIG_PHASE" = 2 ]; then
 # start IBus daemon
-/usr/bin/ibus-daemon --daemonize --xim
+/usr/bin/ibus-daemon --daemonize --xim --panel=disable
 fi
 
 if [ "$IM_CONFIG_PHASE" = 1 ]; then
