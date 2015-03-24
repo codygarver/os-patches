@@ -883,7 +883,9 @@ lock_current_session (IndicatorSessionActions * self, gboolean immediate)
 {
   priv_t * p = INDICATOR_SESSION_ACTIONS_DBUS(self)->priv;
 
-  if (is_owned_proxy (p->unity_session))
+  // testing against unity_session isn't enough for other session (pantheon)
+  // so we check if we have gnome screensaver too
+  if (is_owned_proxy (p->unity_session) && p->screen_saver == NULL)
     {
       if (immediate)
         {
