@@ -1,6 +1,13 @@
+unattended-upgrades (0.82.1ubuntu2.2) trusty-proposed; urgency=medium
+
+  * Handle the situation where you may not be able to decrease process
+    niceness e.g on an LXC container. (LP: #1422345)
+
+ -- Brian Murray <brian@ubuntu.com>  Thu, 05 Mar 2015 15:03:10 -0800
+
 unattended-upgrades (0.82.1ubuntu2.1) trusty-proposed; urgency=medium
 
-  *Properly remove the niceness given. (LP: #1422345)
+  * Properly remove the niceness given. (LP: #1422345)
 
  -- Brian Murray <brian@ubuntu.com>  Tue, 17 Feb 2015 14:32:54 -0800
 

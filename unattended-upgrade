@@ -938,7 +938,16 @@ def main(options, rootdir=""):
 
     # FIXME: make this into a ContextManager
     # be nice when calculating the upgrade as its pretty CPU intensive
-    os.nice(19)
+    old_priority = os.nice(0)
+    try:
+        # Check that we will be able to restore the priority
+        os.nice(-1)
+        os.nice(20)
+    except OSError as e:
+        if e.errno in (errno.EPERM, errno.EACCES):
+            pass
+        else:
+            raise
 
     # speed things up with latest apt
     actiongroup = apt_pkg.ActionGroup(cache._depcache)
@@ -990,7 +999,7 @@ def main(options, rootdir=""):
 
     # FIXME: make this into a ContextManager
     # stop being nice
-    os.nice(-19)
+    os.nice(old_priority - os.nice(0))
 
     # download what looks good
     if options.debug:
