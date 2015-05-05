@@ -278,8 +278,9 @@ class NeedRestartDialog(InternalDialog):
         self.set_header(
             _("The computer needs to restart to finish installing updates."))
         self.add_settings_button()
-        self.add_button(_("Restart _Later"), self.window_main.close)
-        self.focus_button = self.add_button(_("_Restart Now…"), self.restart)
+        self.focus_button = self.add_button(_("Restart _Later"),
+                                            self.window_main.close)
+        self.add_button(_("_Restart Now…"), self.restart)
 
     def start(self):
         Dialog.start(self)

@@ -1,3 +1,10 @@
+update-manager (1:0.196.13) trusty-proposed; urgency=medium
+
+  * UpdateManager/Dialogs.py: set the focus to "Restart Later" instead of
+    "Restart Now", so people don't accidentally reboot. (LP: #1421044)
+
+ -- Brian Murray <brian@ubuntu.com>  Tue, 14 Apr 2015 14:18:36 -0700
+
 update-manager (1:0.196.12) trusty-proposed; urgency=low
 
   * use Gtk.init() to ensure update-manager fails with a
