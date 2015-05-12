@@ -1,3 +1,14 @@
+ubiquity (2.18.8.8) trusty; urgency=medium
+
+  * ubiquity/plugins/ubi-partman.py: allow prompting for a missing passphrase
+    on preseeded installs, if they are requesting to setup crypto.
+    (LP: #1386131)
+  * Go forward rather than back in response to partman-crypto/passphrase and
+    partman-crypto/passphrase-again questions if the UI is not available but
+    they have been preseeded (LP: #1386113).
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Tue, 10 Mar 2015 22:29:37 -0400
+
 ubiquity (2.18.8.7) trusty; urgency=medium
 
   * Revert change in 2.18.8.2, it caused a crash when installing in !english
