@@ -1,3 +1,11 @@
+update-manager (1:0.156.14.19) precise-proposed; urgency=low
+
+  * fix crash in release upgrader when no official mirror is
+    found, thanks to Thomas Reusch for reporting 
+    (LP: #1441157)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 07 Apr 2015 14:55:50 +0200
+
 update-manager (1:0.156.14.18) precise-proposed; urgency=low
 
   [ Lefteris Nikoltsios ]
