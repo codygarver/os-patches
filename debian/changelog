@@ -1,3 +1,9 @@
+grub2 (2.02~beta2-9ubuntu1.1) trusty-proposed; urgency=medium
+
+  * Add dependency on efibootmgr to grub-efi-arm64-bin (LP: #1435663).
+
+ -- dann frazier <dannf@ubuntu.com>  Mon, 06 Apr 2015 22:31:19 -0600
+
 grub2 (2.02~beta2-9ubuntu1) trusty; urgency=medium
 
   * Backport patches from upstream to make the network stack more responsive
