@@ -1,3 +1,18 @@
+grub2 (2.02~beta2-9ubuntu1.2) trusty-proposed; urgency=medium
+
+  * debian/patches/install_powerpc_machtypes.patch: updated: do a better job
+    at detecting machine types; so as to use the right utility when updating
+    nvram for the boot-device. This also fixes adding a CHRP note on the
+    chrp_ibm machines, which broke PowerVM mode. (LP: #1334793)
+  * debian/patches/ppc64el-disable-vsx.patch: disable the VSX instruction,
+    which is enabled by default on POWER7/8 cpu models, to avoid crashes due
+    to instruction exceptions. The kernel will re-enable it when necessary.
+    (LP: #1454743)
+  * debian/patches/ieee1275-clear-reset.patch: clear the text attribute in
+    the clear command. (LP: #1454764)
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Wed, 13 May 2015 12:30:05 -0400
+
 grub2 (2.02~beta2-9ubuntu1.1) trusty-proposed; urgency=medium
 
   * Add dependency on efibootmgr to grub-efi-arm64-bin (LP: #1435663).
