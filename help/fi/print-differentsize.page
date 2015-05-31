@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="print-differentsize" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="printing"/>
+    <desc>Asiakirjan tulostaminen eri kokoiselle, muotoiselle tai suuntaiselle paperille.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sami Jaktholm</mal:name>
+      <mal:email>sjakthol@outlook.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv@iki.fi</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flammie Pirinen</mal:name>
+      <mal:email>flammie@iki.fi</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Paperin koon muuttaminen tulostettaessa</title>
+
+<p>Jos haluat muuttaa asiakirjan sivukokoa (esimerkiksi tulostaaksesi US Kirjeen kokoisen PDF:n A4 paperille), voit muuttaa asiakirjan tulostusmuotoa.</p>
+<steps>
+ <item><p>Valitse <guiseq><gui>Tiedosto</gui><gui>Tulosta</gui></guiseq></p></item>
+ <item><p>Siirry <gui>Sivun asetukset</gui> -välilehdelle.</p></item>
+ <item><p>Valitse tulostuspaperin koko <em>Paperin koko</em> -pudotusvalikosta <em>Paperi</em> sarakkeesta.</p></item>
+ <item><p>Napsauta <gui>Tulosta</gui> ja tulostus alkaa.</p></item>
+</steps>
+
+<p>Tulostuspaperin suuntaa voi vaihtaa <em>Suunta</em>-pudotusvalikosta:</p>
+
+<list>
+<item><p><gui>Pysty</gui></p></item>
+<item><p><gui>Vaaka</gui></p></item>
+<item><p><gui>Käänteinen pysty</gui></p></item>
+<item><p><gui>Käänteinen vaaka</gui></p></item>
+</list>
+</page>

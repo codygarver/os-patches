@@ -1,0 +1,27 @@
+From 57baafadd710dfe2b937b3d8d033635d44128854 Mon Sep 17 00:00:00 2001
+From: Simon Steinbeiss <simon.steinbeiss@elfenbeinturm.at>
+Date: Mon, 16 Feb 2015 17:08:11 +0100
+Subject: [PATCH] Don't hide the titlebar when the window is maximized (without
+ CSD)
+
+https://bugzilla.gnome.org/show_bug.cgi?id=744601
+http://pad.lv/1422354
+---
+ shell/ev-window.c | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/shell/ev-window.c b/shell/ev-window.c
+index bdd1dfa..7092d85 100644
+--- a/shell/ev-window.c
++++ b/shell/ev-window.c
+@@ -7221,7 +7221,6 @@ ev_window_init (EvWindow *ev_window)
+ 	ev_window_setup_default (ev_window);
+ 
+ 	gtk_window_set_default_size (GTK_WINDOW (ev_window), 600, 600);
+-        gtk_window_set_hide_titlebar_when_maximized (GTK_WINDOW (ev_window), TRUE);
+ 
+         ev_window_sizing_mode_changed_cb (ev_window->priv->model, NULL, ev_window);
+ 	ev_window_update_actions_sensitivity (ev_window);
+-- 
+2.1.4
+
