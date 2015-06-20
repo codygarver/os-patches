@@ -217,7 +217,7 @@ def get_dist():
         return dist
     # then check the real one
     from subprocess import Popen, PIPE
-    p = Popen(["lsb_release", "-c", "-s"], stdout=PIPE,
+    p = Popen(["lsb_release", "-c", "-s", "-u"], stdout=PIPE,
               universal_newlines=True)
     res = p.wait()
     if res != 0:
@@ -238,7 +238,7 @@ def get_dist_version():
         return desc
     # then check the real one
     from subprocess import Popen, PIPE
-    p = Popen(["lsb_release", "-r", "-s"], stdout=PIPE,
+    p = Popen(["lsb_release", "-r", "-s", "-u"], stdout=PIPE,
               universal_newlines=True)
     res = p.wait()
     if res != 0:
