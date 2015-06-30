@@ -12,7 +12,7 @@ from unattended_upgrade import (
     match_whitelist_string, check_changes_for_sanity, is_allowed_origin)
 
 class MockOrigin():
-    pass
+    trusted = True
 class MockCandidate():
     pass
 class MockPackage():

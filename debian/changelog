@@ -1,3 +1,11 @@
+unattended-upgrades (0.76ubuntu1.1) precise-security; urgency=medium
+
+  * fix missing package authentication check for apt
+     configurations that force-{confold,confnew} (CVE-2015-1330)
+     LP: #1466380
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 19 Jun 2015 11:12:10 +0200
+
 unattended-upgrades (0.76ubuntu1) precise-proposed; urgency=low
 
   * unattended-upgrade: ignore md5sum "newconffile" (LP: #936870) 
