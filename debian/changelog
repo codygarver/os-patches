@@ -1,3 +1,11 @@
+unattended-upgrades (0.82.1ubuntu2.3) trusty-security; urgency=medium
+
+  * fix missing package authentication check for apt
+     configurations that force-{confold,confnew} (CVE-2015-1330)
+     LP: #1466380
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 19 Jun 2015 11:32:36 +0200
+
 unattended-upgrades (0.82.1ubuntu2.2) trusty-proposed; urgency=medium
 
   * Handle the situation where you may not be able to decrease process
