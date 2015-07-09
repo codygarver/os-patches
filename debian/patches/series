@@ -66,3 +66,7 @@ aarch64_fix_atomic_set.patch
 aarch64_fix_jsc.patch
 ppc64el.patch
 kubuntu_glib-honor-ExcludeSocketNotifiers-flag.diff
+CVE-2014-0190.patch
+CVE-2015-0295.patch
+CVE-2015-1858-1859.patch
+CVE-2015-1860.patch

@@ -1,3 +1,28 @@
+qt4-x11 (4:4.8.5+git192-g085f851+dfsg-2ubuntu4.1) trusty-security; urgency=medium
+
+  * SECURITY UPDATE: denial of service via crafted GIF image
+    - debian/patches/CVE-2014-0190.patch: check for broken image in
+      src/gui/image/qgifhandler.cpp.
+    - CVE-2014-0190
+  * SECURITY UPDATE: denial of service via crafted BMP
+    - debian/patches/CVE-2015-0295.patch: fix division by zero in
+      src/gui/image/qbmphandler.cpp.
+    - CVE-2015-0295
+  * SECURITY UPDATE: denial of service and possible code execution via
+    crafted BMP or ICO images
+    - debian/patches/CVE-2015-1858-1859.patch: move check to better
+      location in src/gui/image/qbmphandler.cpp, check depth in
+      src/plugins/imageformats/ico/qicohandler.cpp.
+    - CVE-2015-1858
+    - CVE-2015-1859
+  * SECURITY UPDATE: denial of service and possible code exection via
+    crafted GIF image
+    - debian/patches/CVE-2015-1860.patch: check bounds in
+      src/gui/image/qgifhandler.cpp.
+    - CVE-2015-1860
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 25 May 2015 13:49:04 -0400
+
 qt4-x11 (4:4.8.5+git192-g085f851+dfsg-2ubuntu4) trusty; urgency=medium
 
   [ Jonathan Riddell ]
