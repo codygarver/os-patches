@@ -1,3 +1,15 @@
+casper (1.340.1) trusty; urgency=low
+
+  * scripts/casper: move union content into a subdirectory of the /cow
+    device, to allow us to create a workdir where that is needed for
+    overlayfs.  Also attempt to mount overlayfs with and without the
+    workdir= to cope with the semantic change in newer kernels.
+    (LP: #1401620)
+  * scripts/casper: switch up to overlayfs V2 format (overlay filesystem
+    type) when available.  (LP: #1412411)
+
+ -- Andy Whitcroft <apw@ubuntu.com>  Wed, 08 Jul 2015 14:57:11 +0100
+
 casper (1.340) trusty; urgency=medium
 
   * Remove 23etc_modules which does more harm than good (LP: #1296386)
