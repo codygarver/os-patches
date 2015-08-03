@@ -1,3 +1,10 @@
+base-files (7.2ubuntu5.3) trusty; urgency=medium
+
+  * /etc/issue, /etc/issue.net, /etc/lsb-release, /etc/os-release: Bump
+    version number to 14.04.3 in preparation for the point release.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Mon, 03 Aug 2015 10:39:14 -0600
+
 base-files (7.2ubuntu5.2) trusty; urgency=medium
 
   * /etc/issue, /etc/issue.net, /etc/lsb-release, /etc/os-release: Bump
