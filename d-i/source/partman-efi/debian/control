@@ -12,6 +12,6 @@ Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-core-dev/partman-efi/ubuntu
 
 Package: partman-efi
 XC-Package-Type: udeb
-Architecture: i386 ia64 amd64
+Architecture: i386 ia64 amd64 arm64
 Depends: partman-base (>= 129), dosfstools-udeb, ${misc:Depends}
 Description: Add to partman support for EFI boot partitions

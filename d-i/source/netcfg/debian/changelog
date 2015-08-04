@@ -1,3 +1,10 @@
+netcfg (1.116ubuntu2) trusty; urgency=medium
+
+  * Fix BOOTIF detection to handle the newline at the end of a line read
+    from /proc/cmdline (LP: #1350302).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 23 Sep 2014 20:38:54 +0100
+
 netcfg (1.116ubuntu1) trusty; urgency=medium
 
   * Resynchronise with Debian.  Remaining changes:

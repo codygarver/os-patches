@@ -1,3 +1,19 @@
+partman-base (172ubuntu1.1) trusty; urgency=medium
+
+  * Fix multipath support: (LP: #1430074)
+    - lib/base.sh: is_multipath_part(): Use 'p' (not '-part') as multipath
+      disk-partition separator.
+    - lib/base.sh: humandev(): Use 'p' (not '-part') as multipath
+      disk-partition separator.
+    - lib/base.sh: humandev(): Accept spaces in multipath WWID.
+    - init.d/parted: part_of_multipath(): Update grep expression for more
+      recent output of 'multipath -l'.
+  * init.d/parted: part_of_multipath(): Update grep expression for more
+    spaces between disk and major:minor (happens when sd[a-z][a-z] exist)
+    (LP: #1436020)
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Fri, 17 Jul 2015 12:03:31 -0400
+
 partman-base (172ubuntu1) trusty; urgency=medium
 
   * Resynchronise with Debian.  Remaining changes:

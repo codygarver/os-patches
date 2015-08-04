@@ -1,3 +1,17 @@
+ubiquity (2.18.8.9) trusty; urgency=medium
+
+  * Automatic update of included source packages: debian-installer-utils
+    1.105ubuntu1.14.04.1, flash-kernel 3.0~rc.4ubuntu49.5, hw-detect
+    1.95ubuntu2.1, netcfg 1.116ubuntu2, partman-auto 118ubuntu3.14.04.2,
+    partman-efi 25ubuntu6.14.04.1, grub-installer 1.78ubuntu20.2, partman-base
+    172ubuntu1.1.
+  * Add trusty-updates to sources.list for d-i components too; because we want
+    things to be up to date...
+  * Flush print into debconf-communicate stdin PIPE, as print(...,file=)
+    may not flush anymore. (LP: #1326707)
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Mon, 27 Jul 2015 21:53:31 -0400
+
 ubiquity (2.18.8.8) trusty; urgency=medium
 
   * ubiquity/plugins/ubi-partman.py: allow prompting for a missing passphrase

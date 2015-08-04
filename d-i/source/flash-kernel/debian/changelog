@@ -1,3 +1,45 @@
+flash-kernel (3.0~rc.4ubuntu49.5) trusty; urgency=medium
+
+  * Allow us to find DTBs in both the old flat layout and the new vendor
+    subdirectory layout, so we keep backward compatibility (LP: #1408004)
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 02 Jun 2015 14:57:54 -0600
+
+flash-kernel (3.0~rc.4ubuntu49.4) trusty-proposed; urgency=medium
+
+  * HP Moonshot Cartridges: Use $baudrate from u-boot environment as
+    serial console speed (LP: #1373628)
+  * Set required boot arguments for HP ProLiant m400 cartridges
+    (LP: #1373659)
+
+ -- dann frazier <dannf@ubuntu.com>  Fri, 26 Sep 2014 16:41:27 -0600
+
+flash-kernel (3.0~rc.4ubuntu49.3) trusty-proposed; urgency=medium
+
+  * Do not fail if there are no specified Kernel-Flavors for this 
+    machine (LP: #1356569).
+
+ -- Scott Moser <smoser@ubuntu.com>  Tue, 02 Sep 2014 10:13:43 -0400
+
+flash-kernel (3.0~rc.4ubuntu49.2) trusty-proposed; urgency=medium
+
+  * Filter the selection of 'latest' usable kernel through the
+    whitelist.  (LP: #1356569)
+
+ -- Manoj Iyer <manoj.iyer@canonical.com>  Tue, 19 Aug 2014 14:33:56 -0500
+
+flash-kernel (3.0~rc.4ubuntu49.1) trusty; urgency=medium
+
+  * Add U-Boot environment configuration support (LP: #1328597)
+  * Explicitly lower the console speed for HP ProLiant m400 cartridges to 9600
+    and enable hardware flow control as required by the HP moonshot chassis
+    (LP: #1328280)
+  * Enable U-Boot environment support for X-Gene platforms
+  * Use filesystem agnostic "load" command instead of assuming ext4
+  * Add support for HP ProLiant m800 cartridges (LP: #1326437)
+
+ -- dann frazier <dann.frazier@canonical.com>  Fri, 20 Jun 2014 17:09:02 -0600
+
 flash-kernel (3.0~rc.4ubuntu49) trusty; urgency=medium
 
   * db/all.db: add dummy entries as noops when running on VMs (LP: #1298070)

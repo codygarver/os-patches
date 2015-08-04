@@ -1,3 +1,11 @@
+debian-installer-utils (1.105ubuntu1.14.04.1) trusty; urgency=medium
+
+  * Add support for --- as a user-params separator (for parameters on the
+    kernel command-line) for parameters to pass on to the installed system.
+    (LP: #1402042)
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Wed, 08 Jul 2015 13:49:58 -0400
+
 debian-installer-utils (1.105ubuntu1) trusty; urgency=medium
 
   * Resynchronise with Debian.  Remaining changes:

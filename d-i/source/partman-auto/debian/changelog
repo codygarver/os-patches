@@ -1,3 +1,17 @@
+partman-auto (118ubuntu3.14.04.2) trusty; urgency=medium
+
+  * Combine / and /usr in the multi recipe for ppc64el; this makes sure / has
+    enough space for completing the install, and brings us in sync with the
+    multi recipe for later releases. (LP: #1461860)
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Wed, 08 Jul 2015 14:25:32 -0400
+
+partman-auto (118ubuntu3.14.04.1) trusty-proposed; urgency=medium
+
+  * Add arm64/efi recipe, reusing amd64/efi (LP: #1435663).
+
+ -- dann frazier <dannf@ubuntu.com>  Tue, 24 Mar 2015 09:49:46 -0600
+
 partman-auto (118ubuntu3) trusty; urgency=medium
 
   * Increase the EFI System Partition size slightly to ensure that it's at

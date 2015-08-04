@@ -1,2 +1,3 @@
 deb-src http://archive.ubuntu.com/ubuntu trusty main
 deb-src http://archive.ubuntu.com/ubuntu trusty-proposed main
+deb-src http://archive.ubuntu.com/ubuntu trusty-updates main
