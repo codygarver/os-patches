@@ -1,3 +1,12 @@
+casper (1.340.2) trusty; urgency=low
+
+  * scripts/casper: migrate existing persistent disk images to the
+    updated upper/work form.  Record the actual format used and
+    ensure we use the existing format and abort if not possible.
+    (LP: #1481117)
+
+ -- Andy Whitcroft <apw@ubuntu.com>  Tue, 04 Aug 2015 21:31:29 +0100
+
 casper (1.340.1) trusty; urgency=low
 
   * scripts/casper: move union content into a subdirectory of the /cow
