@@ -1,9 +1,9 @@
 NAME="elementary OS"
-VERSION="0.3 Freya"
+VERSION="0.3.1 Freya"
 ID="elementary OS"
 ID_LIKE=ubuntu
 PRETTY_NAME="elementary OS Freya"
-VERSION_ID="0.3"
+VERSION_ID="0.3.1"
 HOME_URL="http://elementary.io/"
 SUPPORT_URL="http://elementary.io/support/"
 BUG_REPORT_URL="https://bugs.launchpad.net/elementary/+filebug"
