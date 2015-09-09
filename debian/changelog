@@ -1,3 +1,10 @@
+dkms (2.2.0.3-1ubuntu3.3) precise-proposed; urgency=medium
+
+  * Backport dkms-autopkgtest helper script, so that we can run DKMS tests for
+    new kernel uploads triggered by britney via autodep8. (LP: #1489045)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 27 Aug 2015 12:44:25 +0200
+
 dkms (2.2.0.3-1ubuntu3.2) precise-proposed; urgency=low
 
   * Backport from trunk: Add patch that fixes have_one_kernel for non-
