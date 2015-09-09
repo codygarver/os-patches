@@ -1,3 +1,10 @@
+dkms (2.2.0.3-1.1ubuntu5.14.04.2) trusty; urgency=medium
+
+  * Backport dkms-autopkgtest helper script, so that we can run DKMS tests for
+    new kernel uploads triggered by britney via autodep8. (LP: #1489045)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 27 Aug 2015 12:32:04 +0200
+
 dkms (2.2.0.3-1.1ubuntu5.14.04.1) trusty; urgency=medium
 
   * Add apport_package_key_with_version.patch: Include the package version in
