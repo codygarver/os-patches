@@ -154,7 +154,7 @@ class XIDeviceManager(EventSource):
         except Exception as ex:
             _logger.warning("Failed to create osk.Devices: " + \
                             unicode_str(ex))
-        
+
         self._last_motion_device_id = None
         self._last_click_device_id = None
         self._last_device_blacklist_ids = []
@@ -163,7 +163,7 @@ class XIDeviceManager(EventSource):
 
         if self.is_valid():
             self.update_devices()
-        
+
     def is_valid(self):
         return not self._osk_devices is None
 

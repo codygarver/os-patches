@@ -1340,7 +1340,7 @@ class Keyboard(WordSuggestions):
                 action = KeyCommon.DELAYED_STROKE_ACTION
                 controller = self.button_controllers.get(key)
                 if controller and \
-                   not controller.is_activated_on_press():
+                   controller.is_activated_on_press():
                     action = KeyCommon.SINGLE_STROKE_ACTION
             else:
                 label = key.get_label()
@@ -1558,17 +1558,11 @@ class Keyboard(WordSuggestions):
             return config.mousetweaks
         return self._click_sim
 
-    def cleanup(self):
-        WordSuggestions.cleanup(self)
-
-        # reset still latched and locked modifier keys on exit
-        self.release_latched_sticky_keys()
-
-        # NumLock is special. Keep its state on exit, except when
-        # sticky_key_release_delay is set, when we assume to be
-        # in kiosk mode and everything has to be cleaned up.
-        release_all = bool(config.keyboard.sticky_key_release_delay)
-        self.release_locked_sticky_keys(release_all)
+    def release_pressed_keys(self, redraw = False):
+        """
+        Release pressed keys on exit, or when recreating the main window.
+        """
+        self.hide_touch_feedback()
 
         # Clear key.pressed for all keys that have already been released
         # but are still waiting for redrawing the unpressed state.
@@ -1584,9 +1578,27 @@ class Keyboard(WordSuggestions):
 
                 # Release still pressed enter key when onboard gets killed
                 # on enter key press.
-                _logger.debug("Releasing still pressed key '{}'" \
+                _logger.warning("Releasing still pressed key '{}'" \
                               .format(key.id))
                 self.send_key_up(key)
+                key.pressed = False
+
+                if redraw:
+                    self.redraw([key])
+
+    def cleanup(self):
+        WordSuggestions.cleanup(self)
+
+        # reset still latched and locked modifier keys on exit
+        self.release_latched_sticky_keys()
+
+        # NumLock is special. Keep its state on exit, except when
+        # sticky_key_release_delay is set, when we assume to be
+        # in kiosk mode and everything has to be cleaned up.
+        release_all = bool(config.keyboard.sticky_key_release_delay)
+        self.release_locked_sticky_keys(release_all)
+
+        self.release_pressed_keys()
 
         if self._text_changer:
             self._text_changer.cleanup()
@@ -1837,7 +1849,7 @@ class BCMove(ButtonController):
                          not config.xid_mode)
 
     def is_activated_on_press(self):
-        return False # dragging is already in progress on press
+        return True # cannot undo on press, dragging is already in progress
 
 
 class BCLayer(ButtonController):
@@ -1955,11 +1967,14 @@ class BCLanguage(ButtonController):
 
     def __init__(self, keyboard, key):
         ButtonController.__init__(self, keyboard, key)
+        self._menu_close_time = 0
 
     def release(self, view, button, event_type):
-        self.set_active(not self.key.active)
-        if self.key.active:
-            self._show_menu(view, self.key, button)
+        if time.time() - self._menu_close_time > 0.5:
+            self.set_active(not self.key.active)
+            if self.key.active:
+                self._show_menu(view, self.key, button)
+        self._menu_close_time = 0
 
     def _show_menu(self, view, key, button):
         self.keyboard.hide_touch_feedback()
@@ -1967,6 +1982,7 @@ class BCLanguage(ButtonController):
 
     def _on_menu_closed(self):
         self.set_active(False)
+        self._menu_close_time = time.time()
 
     def update(self):
         if config.are_word_suggestions_enabled():

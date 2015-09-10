@@ -7,643 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: onboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-19 19:53+0100\n"
-"PO-Revision-Date: 2013-04-13 16:50+0000\n"
-"Last-Translator: Samet Pilav <Unknown>\n"
+"POT-Creation-Date: 2014-03-07 20:40+0100\n"
+"PO-Revision-Date: 2014-02-24 15:21+0000\n"
+"Last-Translator: Volkan Gezer <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-02-19 15:32+0000\n"
-"X-Generator: Launchpad (build 16916)\n"
-
-#: ../Onboard/OnboardGtk.py:345
-msgid ""
-"Onboard is configured to appear with the dialog to unlock the screen; for "
-"example to dismiss the password-protected screensaver.\n"
-"\n"
-"However the system is not configured anymore to use Onboard to unlock the "
-"screen. A possible reason can be that another application configured the "
-"system to use something else.\n"
-"\n"
-"Would you like to reconfigure the system to show Onboard when unlocking the "
-"screen?"
-msgstr ""
-"Ekran klavyesi, ekran kilidini açmak için iletişim kutusu görünümünde "
-"yapılandırıldı; örneğin, parola korumalı ekran koruyucusunu açmak için.\n"
-"\n"
-"Ancak sistem, bundan sonra ekran kilidini açmak için Ekran Klavyesi "
-"kullanmaya yapılandırılmadı. Başka bir uygulama sistemi yapılandırmış "
-"olabilir.\n"
-"\n"
-"Ekran kilidini açarken Ekran Klavyesi'nin görünmesi için sistemi tekrar "
-"yapılandırmak ister misiniz?"
-
-#: ../Onboard/OnboardGtk.py:361
-msgid ""
-"Onboard is configured to appear with the dialog to unlock the screen; for "
-"example to dismiss the password-protected screensaver.\n"
-"\n"
-"However this function is disabled in the system.\n"
-"\n"
-"Would you like to activate it?"
-msgstr ""
-"Ekran klavyesi, ekran kilidini açmak için iletişim kutusu görünümünde "
-"yapılandırıldı; örneğin, parola korumalı ekran koruyucusunu açmak için.\n"
-"\n"
-"Bununla beraber bu işlev sistem içinde etkisizdir.\n"
-"\n"
-"Etkinleştirmek ister misiniz?"
-
-#: ../settings.ui.h:1
-msgid "key-repeat"
-msgstr ""
-
-#: ../settings.ui.h:2
-msgid "international character selection"
-msgstr ""
-
-#: ../settings.ui.h:3
-msgid "GTK"
-msgstr ""
-
-#: ../settings.ui.h:4
-msgid "XInput"
-msgstr ""
-
-#: ../settings.ui.h:5
-msgid "XTest"
-msgstr "XTest"
-
-#: ../settings.ui.h:6
-msgid "1"
-msgstr "1"
-
-#: ../settings.ui.h:7
-msgid "AT-SPI"
-msgstr "AT-SPI"
-
-#: ../settings.ui.h:8
-msgid "General"
-msgstr "Genel"
-
-#: ../settings.ui.h:9
-msgid "Window"
-msgstr "Pencere"
-
-#: ../settings.ui.h:10
-msgid "Layout"
-msgstr "Düzen"
-
-#: ../settings.ui.h:11
-msgid "Theme"
-msgstr "Tema"
-
-#. translators: this is a 'tooltip' of the key_template 'layer2' in keyboard layout 'key_defs.xml'
-#: ../settings.ui.h:12 ../data/layoutstrings.py:68
-#: ../data/layoutstrings.py:317
-msgid "Snippets"
-msgstr "Parçacıklar"
-
-#: ../settings.ui.h:13 ../settings_theme_dialog.ui.h:7
-msgid "Keyboard"
-msgstr "Klavye"
-
-#: ../settings.ui.h:14
-msgid "Typing Assistance"
-msgstr ""
-
-#: ../settings.ui.h:15
-msgid "Universal Access"
-msgstr "Evrensel Erişim"
-
-#: ../settings.ui.h:16
-msgid "latch, then lock"
-msgstr ""
-
-#: ../settings.ui.h:17
-msgid "latch, double-click to lock"
-msgstr ""
-
-#: ../settings.ui.h:18
-msgid "latch only"
-msgstr ""
-
-#: ../settings.ui.h:19
-msgid "lock only"
-msgstr ""
-
-#: ../settings.ui.h:20
-msgid "none"
-msgstr ""
-
-#: ../settings.ui.h:21
-msgid "single-touch"
-msgstr ""
-
-#: ../settings.ui.h:22
-msgid "multi-touch"
-msgstr ""
-
-#: ../settings.ui.h:23
-msgid "column"
-msgstr "sütun"
-
-#: ../settings.ui.h:24
-msgid "_Auto-show when editing text"
-msgstr "Yazıyı düzenlerken _kendiliğinden-göster"
-
-#: ../settings.ui.h:25
-msgid ""
-"Show Onboard when there is a recognized text window in focus. Requires Gnome "
-"Accessibility."
-msgstr ""
-"Metin penceresi etkin olduğunda Ekran Klavyesi ile bütünleşik göster. Gnome "
-"Erişilebilirliği gerektiriyor."
-
-#: ../settings.ui.h:26
-msgid "Start Onboard _hidden"
-msgstr "Ekran Klavyesi'ni _gizli başlat"
-
-#: ../settings.ui.h:27
-msgid "Start Onboard hidden."
-msgstr "Ekran Klavyesi'ni gizli başlat."
-
-#: ../settings.ui.h:28
-msgid "Show/Hide options"
-msgstr ""
-
-#: ../settings.ui.h:29
-msgid "_Show status icon"
-msgstr "Durum simgesini _göster"
-
-#: ../settings.ui.h:30
-msgid "Show the status item. A click on that icon hides or shows Onboard."
-msgstr ""
-"Durum öğesini göster. Simge üzerine bir kez tıkladığımda Ekran Klavyesi "
-"gizlensin veya görünsün."
-
-#: ../settings.ui.h:31
-msgid "Show floating _icon when Onboard is hidden"
-msgstr "Ekran Klavyesi gizli çalışırken değişen _simge göster"
-
-#: ../settings.ui.h:32
-msgid ""
-"Show a floating icon on the desktop when Onboard is hidden. A click on the "
-"icon makes Onboard reappear."
-msgstr ""
-"Ekran Klavyesi gizli çalışırken masaüstünde değişen bir simge göster. Simge "
-"üzerine bir kez tıkladığımda Ekran Klavyesi görünür olsun."
-
-#: ../settings.ui.h:33
-msgid "Show when _unlocking the screen"
-msgstr "Ekran kilidini _açarken göster"
-
-#: ../settings.ui.h:34
-msgid ""
-"Show Onboard when the dialog to unlock the screen appears; this way Onboard "
-"can be used for example to enter the password to dismiss the screensaver "
-"when it is set to ask for it."
-msgstr ""
-"Ekran parolasını yazmak istediğimde Ekran Klavyesi'ni aç; bu sayede Ekran "
-"Klavyesi, örneğin parola korumalı bir ekran koruyucudan çıkmak istediğinizde "
-"parolayı yazmanız için etkin olacaktır."
-
-#: ../settings.ui.h:35
-msgid "Show _tooltips"
-msgstr "Araç _ipuçlarını göster"
-
-#: ../settings.ui.h:36
-msgid "Show tooltips for the keyboard&apos;s buttons."
-msgstr "Klavye&apos;s tuşları için araç ipuçlarını göster."
-
-#: ../settings.ui.h:37
-msgid "Show tooltips for the keyboard's buttons."
-msgstr "Klavye tuşları için ipuçlarını göster."
-
-#: ../settings.ui.h:38
-msgid "Desktop Integration"
-msgstr "Masaüstü Bütünleşmesi"
-
-#: ../settings.ui.h:39
-msgid "Dock to screen edge"
-msgstr ""
-
-#: ../settings.ui.h:40
-msgid "Dock the keyboard to the edge of the screen."
-msgstr "Klavyeyi ekranın köşesine yapıştır."
-
-#: ../settings.ui.h:41
-msgid "_Settings"
-msgstr "_Ayarlar"
-
-#: ../settings.ui.h:42
-msgid "Docking"
-msgstr "Yapıştırma"
-
-#: ../settings.ui.h:43
-msgid "Show window _decoration"
-msgstr "Pencere _dekorasyonunu göster"
-
-#: ../settings.ui.h:44
-msgid "Show window caption and frame."
-msgstr "Pencere yazı ve çerçevesini göster"
-
-#: ../settings.ui.h:45
-msgid "Show always on visible _workspace"
-msgstr "Her zaman görünür _çalışma alanında göster"
-
-#: ../settings.ui.h:46
-msgid "&quot;Sticky&quot; mode for keyboard and floating icon."
-msgstr "Klavye ve sabit simge için &quot;Yapışkan&quot; kip."
-
-#: ../settings.ui.h:47
-msgid "\"Sticky\" mode for keyboard and floating icon."
-msgstr "Klavye ve kayan simge için \"Yapışkan\" kip."
-
-#: ../settings.ui.h:48
-msgid "_Force window to top"
-msgstr "Pencereyi en üste _zorla"
-
-#: ../settings.ui.h:49
-msgid "Try harder to keep Onboard above anything on-screen."
-msgstr "Ekran Klavyesi'ni tüm pencerelerin üzerinde görünmesi için zorla."
-
-#: ../settings.ui.h:50
-msgid "Keep _aspect ratio"
-msgstr "_En boy oranını koru"
-
-#: ../settings.ui.h:51
-msgid "Constrain window size to the layout&apos;s aspect ratio."
-msgstr "Pencere boyutunu yerleşimin en-boy oranına sınırla."
-
-#: ../settings.ui.h:52
-msgid "Constrain window size to the layout's aspect ratio."
-msgstr "Yerleşimin en boy oranı için pencere boyutunu kısıtla."
-
-#: ../settings.ui.h:53
-msgid "Floating Window Options"
-msgstr ""
-
-#: ../settings.ui.h:54
-msgid "Window options"
-msgstr ""
-
-#: ../settings.ui.h:55
-msgid "Wind_ow:"
-msgstr "Penc_ere:"
-
-#: ../settings.ui.h:56
-msgid "Transparency of the whole keyboard window. Requires compositing."
-msgstr "Tüm klavye penceresinin saydamlığı. Birleşiklik gerektirir."
-
-#: ../settings.ui.h:57 ../settings_theme_dialog.ui.h:3
-msgid "_Background:"
-msgstr "_Artalan:"
-
-#: ../settings.ui.h:58
-msgid "Transparency of the keyboard background"
-msgstr "Klavye artalanının şeffaflığı"
-
-#: ../settings.ui.h:59
-msgid "_No background"
-msgstr "Artalan _yok"
-
-#: ../settings.ui.h:60
-msgid "Show the desktop through the gaps between keys."
-msgstr "Tuşlar arasındaki boşluklarda masaüstü gözüksün."
-
-#: ../settings.ui.h:61
-msgid "Transparency"
-msgstr "Şeffaflık"
-
-#: ../settings.ui.h:62
-msgid "Set _transparency to"
-msgstr "Saydamlığı _ayarla"
-
-#: ../settings.ui.h:63
-msgid "Enable inactive transparency. Requires compositing."
-msgstr "Pasif şeffaflığı etkinleştir. Birleşiklik gerektirir."
-
-#: ../settings.ui.h:64
-msgid ""
-"Transparency when the pointer leaves the keyboard. Requires compositing."
-msgstr "İmleç klavyeden ayrılınca şeffaflaştır. Birleşiklik gerektirir."
-
-#: ../settings.ui.h:65
-msgid "after"
-msgstr "sonra"
-
-#: ../settings.ui.h:66
-msgid "Delay in seconds until the inactive transparency takes effect."
-msgstr ""
-"Etkin olmayan şeffaflık, etkisini gösterene kadar birkaç saniye gecikebilir."
-
-#: ../settings.ui.h:67
-msgid "seconds"
-msgstr "saniye"
-
-#: ../settings.ui.h:68
-msgid "When Inactive"
-msgstr "Pasif olduğunda"
-
-#: ../settings.ui.h:69
-msgid "_Frame resize handles:"
-msgstr "_Çerçeve yeniden boyutlandırma noktaları:"
-
-#: ../settings.ui.h:70
-msgid "Resize Protection"
-msgstr "Korumayı Yeniden Boyutlandır"
-
-#: ../settings.ui.h:71
-msgid "Name"
-msgstr ""
-
-#: ../settings.ui.h:72
-#, fuzzy
-msgid "Description"
-msgstr "Yön"
-
-#: ../settings.ui.h:73
-msgid "_Open layouts folder"
-msgstr "Düzenler klasörünü _aç"
-
-#: ../settings.ui.h:74
-msgid "C_ustomize theme"
-msgstr "Temayı _kişiselleştir"
-
-#: ../settings.ui.h:75
-msgid "Follow _system theme"
-msgstr "_Sistem temasını kullan"
-
-#: ../settings.ui.h:76
-msgid "Remember what Onboard theme was last used for every system theme."
-msgstr ""
-"Ekran Klavyesi'nin her sistem teması için kullanılmış temasını hatırla."
-
-#: ../settings.ui.h:77
-msgid ""
-"Snippets are pieces of text which are entered when the corresponding button "
-"in Onboard is pressed."
-msgstr ""
-"Kod parçacıkları, Ekran Klavyesi'nde ilgili düğmeye basıldığında girilen "
-"metin parçalarıdır."
-
-#: ../settings.ui.h:78
-msgid "Show label popups"
-msgstr ""
-
-#: ../settings.ui.h:79
-msgid "Show label popups above pressed keys."
-msgstr ""
-
-#: ../settings.ui.h:80
-msgid "Play sound"
-msgstr ""
-
-#: ../settings.ui.h:81
-msgid "Play click sound on keypress."
-msgstr ""
-
-#: ../settings.ui.h:82
-msgid "Key-press Feedback"
-msgstr ""
-
-#: ../settings.ui.h:83
-msgid "Show secondary labels"
-msgstr ""
-
-#: ../settings.ui.h:84
-msgid "Show characters reachable with or without the shift key."
-msgstr ""
-
-#: ../settings.ui.h:85
-msgid "Key Labels"
-msgstr ""
-
-#: ../settings.ui.h:86
-msgid "_Long press action:"
-msgstr ""
-
-#: ../settings.ui.h:87
-msgid ""
-"Choose between key-repeat or long-press menus. Mainly affects alpha-numeric "
-"keys."
-msgstr ""
-
-#: ../settings.ui.h:88
-msgid "Key-stroke _generation:"
-msgstr "Tuş vuruş _oluşturması:"
-
-#: ../settings.ui.h:89
-msgid "Modifier _behavior:"
-msgstr "Düzenleyici _davranışı"
-
-#: ../settings.ui.h:90
-msgid "Behavior of modifier and layer keys."
-msgstr "Düzenleyici ve katman tuşları davranışı."
-
-#: ../settings.ui.h:91
-msgid "Modifier auto-release delay:"
-msgstr ""
-
-#: ../settings.ui.h:92
-msgid ""
-"Seconds of inactivity until active modifiers and layer keys are released. 0 "
-"to disable."
-msgstr ""
-"Etkin düzenleyiciler ve katman tuşlarının bırakılacağı saniye cinsinden "
-"eylemsizlik süresi. Kapatmak için 0."
-
-#: ../settings.ui.h:93
-msgid "Key Behavior"
-msgstr ""
-
-#: ../settings.ui.h:94
-msgid "_Touch input (requires restart):"
-msgstr "_Dokunma girişi (yeniden başlatma gerektirir):"
-
-#: ../settings.ui.h:95
-msgid "_Input event source:"
-msgstr ""
-
-#: ../settings.ui.h:96
-msgid ""
-"Choose &apos;XInput&apos; for more reliable typing into text entries with "
-"pop-up selections. The &apos;GTK&apos; option offers better compatibility, "
-"but typing may fail in the presence of pointer grabs, e.g. with open pop-up "
-"windows."
-msgstr ""
-
-#: ../settings.ui.h:97
-msgid ""
-"Choose 'XInput' for more reliable typing into text entries with pop-up "
-"selections. The 'GTK' option offers better compatibility, but typing may "
-"fail in the presence of pointer grabs, e.g. with open pop-up windows."
-msgstr ""
-
-#: ../settings.ui.h:98
-msgid "Input Options"
-msgstr ""
-
-#: ../settings.ui.h:99
-msgid "Advanced"
-msgstr "Gelişmiş"
-
-#: ../settings.ui.h:100
-msgid "Show _suggestions"
-msgstr ""
-
-#: ../settings.ui.h:101
-msgid "Enable word completion and prediction."
-msgstr ""
-
-#: ../settings.ui.h:102
-msgid "Show spelling suggestions"
-msgstr ""
-
-#: ../settings.ui.h:103
-msgid "Check spelling of the word at or before the cursor."
-msgstr ""
-
-#: ../settings.ui.h:104
-msgid "_Learn from typed text"
-msgstr ""
-
-#: ../settings.ui.h:105
-msgid ""
-"Remember new words, their recency and frequency to improve the suggestions "
-"over time."
-msgstr ""
-
-#: ../settings.ui.h:106
-msgid "Insert word _separators"
-msgstr ""
-
-#: ../settings.ui.h:107
-msgid ""
-"Add and remove spaces when inserting word suggestions followed by "
-"punctuation characters."
-msgstr ""
-
-#: ../settings.ui.h:108
-#, fuzzy
-msgid "Options"
-msgstr "Pencere Seçenekleri"
-
-#: ../settings.ui.h:109
-msgid "Show lan_guage switcher"
-msgstr ""
-
-#: ../settings.ui.h:110
-msgid "Show a button for language selection."
-msgstr ""
-
-#: ../settings.ui.h:111
-msgid "Show button to pause learning"
-msgstr ""
-
-#: ../settings.ui.h:112
-msgid "Words typed while this button is pressed won't be remembered."
-msgstr ""
-
-#: ../settings.ui.h:113
-#, fuzzy
-msgid "Buttons"
-msgstr "Bası"
-
-#: ../settings.ui.h:114
-msgid "Word Suggestions"
-msgstr ""
-
-#: ../settings.ui.h:115
-msgid "Auto-capitalize while typing"
-msgstr ""
-
-#: ../settings.ui.h:116
-msgid "Automatically capitalize sentence begins and name words."
-msgstr ""
-
-#: ../settings.ui.h:117
-msgid "Auto-correct spelling"
-msgstr ""
-
-#: ../settings.ui.h:118
-msgid "Automatically correct the last word."
-msgstr ""
-
-#: ../settings.ui.h:119
-msgid "The spell check engine to use."
-msgstr ""
-
-#: ../settings.ui.h:120
-msgid "Spell-check backend:"
-msgstr ""
-
-#: ../settings.ui.h:121
-msgid "Auto-correction"
-msgstr ""
-
-#: ../settings.ui.h:122
-msgid "_Delay:"
-msgstr "_Gecikme:"
-
-#: ../settings.ui.h:123
-msgid "_Motion threshold:"
-msgstr "_Hareket eşiği:"
-
-#: ../settings.ui.h:124
-msgid "Time in seconds before a click is triggered."
-msgstr "Tıklama tetiklenmeden önce saniye cinsinden geçecek süre."
-
-#: ../settings.ui.h:125
-msgid "Distance in pixels before movement will be recognized."
-msgstr "Hareketin algılanması için piksel biriminde mesaefe"
-
-#: ../settings.ui.h:126
-msgid "Hide hover click window"
-msgstr "Üzerinde tıklama gizleme penceresi"
-
-#: ../settings.ui.h:127
-msgid "Hide the system-provided hover click window while Onboard is running."
-msgstr ""
-"Ekran Klavyesi çalışırken sistem tarafından sağlanan üzerindeyken tıklama "
-"penceresini gizle."
-
-#: ../settings.ui.h:128
-msgid "Enable click type window on exit"
-msgstr "Çıkışta tıkla-yaz penceresini etkinleştir"
-
-#: ../settings.ui.h:129
-msgid ""
-"Always enable the system-provided hover click window when exiting Onboard."
-msgstr ""
-"Ekran Klavyesi'nden çıkarken her zaman sistem tarafından sağlanan "
-"üzerindeyken tıklama penceresini etkinleştir."
-
-#: ../settings.ui.h:130
-msgid "Hover Click"
-msgstr "Vurgulu Tıklama"
-
-#: ../settings.ui.h:131
-msgid "Enable  keyboard _scanning"
-msgstr "Klavye _taramasını etkinleştir"
-
-#: ../settings.ui.h:132
-msgid "Sc_anner Settings"
-msgstr "Ta_rayıcı Ayarları:"
-
-#: ../settings.ui.h:133
-msgid "Keyboard Scanning"
-msgstr "Klavye Taraması"
-
-#: ../Onboard/pypredict/tools/filter.py:382 ../Onboard/SpellChecker.py:617
-#: ../Onboard/SpellChecker.py:653 ../Onboard/SpellChecker.py:692
-#: ../Onboard/SpellChecker.py:706 ../Onboard/LanguageSupport.py:168
-#: ../Onboard/pypredict/tools/train.py:227 ../Onboard/utils.py:1072
-msgid "Failed to execute '{}', {}"
-msgstr "Çalıştırılamadı: '{}', {}"
+"X-Launchpad-Export-Date: 2014-03-07 18:36+0000\n"
+"X-Generator: Launchpad (build 16948)\n"
 
 #: ../Onboard/Indicator.py:68
 msgid "_Show Onboard"
@@ -656,6 +29,266 @@ msgstr "Ekran Klavyesi'ni gi_zle"
 #: ../Onboard/Indicator.py:117
 msgid "Onboard on-screen keyboard"
 msgstr "Ekran klavyesi"
+
+#: ../Onboard/WordSuggestions.py:2055
+msgid ""
+"<big>Onboard failed to open learned word suggestions.</big>\n"
+"\n"
+"The error was:\n"
+"<tt>{}</tt>\n"
+"\n"
+"Revert word suggestions to the last backup (recommended)?"
+msgstr ""
+
+#: ../Onboard/WordSuggestions.py:2073
+msgid ""
+"<big>Onboard failed to open learned word suggestions.</big>\n"
+"\n"
+"The error was:\n"
+"<tt>{}</tt>\n"
+"\n"
+"The suggestions have to be reset, but the erroneous file will remain at \n"
+"'{}'"
+msgstr ""
+
+#: ../Onboard/KbdWindow.py:75 ../data/onboard.desktop.in.h:1
+msgid "Onboard"
+msgstr "Ekran Klavyesi"
+
+#: ../Onboard/KbdWindow.py:175
+msgid "no window transparency available; screen doesn't support alpha channels"
+msgstr "Pencere saydamlığı kullanılamaz; ekran alfa kanallarını desteklemiyor"
+
+#: ../Onboard/Appearance.py:112
+#, python-brace-format
+msgid "Color scheme for theme '{filename}' not found"
+msgstr "'{filename}' teması için renk şeması bulunamadı"
+
+#: ../Onboard/Appearance.py:332
+#, python-brace-format
+msgid "Error loading theme '{filename}'. {exception}: {cause}"
+msgstr "Tema yüklenirken hata: '{filename}'. {exception}: {cause}"
+
+#: ../Onboard/Appearance.py:406
+msgid "Error saving "
+msgstr "Hata kaydı "
+
+#: ../Onboard/Appearance.py:828
+#, python-brace-format
+msgid ""
+"Loading legacy color scheme format '{old_format}', please consider upgrading "
+"to current format '{new_format}': '{filename}'"
+msgstr ""
+"Önceki renk şeması biçimi yükleniyor: '{old_format}', lütfen şimdiki biçime "
+"yükseltirken düşünün: '{new_format}': '{filename}'"
+
+#: ../Onboard/Appearance.py:848
+#, python-brace-format
+msgid "Error loading color scheme '{filename}'. {exception}: {cause}"
+msgstr "Renk şeması yüklenirken hata: '{filename}'. {exception}: {cause}"
+
+#: ../Onboard/Appearance.py:925 ../Onboard/Appearance.py:1057
+msgid ""
+"Duplicate key_id '{}' found in color scheme file. Key_ids must occur only "
+"once."
+msgstr ""
+"Renk şema dosyasında bulunan '{}' key_id çoğaltılıyor. Key_id 'leri sadece "
+"bir kere oluşmalı."
+
+#: ../Onboard/utils.py:382
+msgid "New Input Device"
+msgstr "Yeni Girdi Aygıtı"
+
+#: ../Onboard/utils.py:383
+msgid "Onboard has detected a new input device"
+msgstr "Ekran Klavyesi yeni bir girdi aygıtı algıladı"
+
+#: ../Onboard/utils.py:392
+msgid "Do you want to use this device for keyboard scanning?"
+msgstr "Klavye taraması için bu aygıtı kullanmak istiyor musunuz?"
+
+#: ../Onboard/utils.py:396
+msgid "Use device"
+msgstr "Aygıtı kullan"
+
+#: ../Onboard/utils.py:1166 ../Onboard/LanguageSupport.py:170
+#: ../Onboard/pypredict/tools/train.py:227 ../Onboard/SpellChecker.py:617
+#: ../Onboard/SpellChecker.py:653 ../Onboard/SpellChecker.py:692
+#: ../Onboard/SpellChecker.py:706 ../Onboard/pypredict/tools/filter.py:382
+msgid "Failed to execute '{}', {}"
+msgstr "Çalıştırılamadı: '{}', {}"
+
+#: ../Onboard/utils.py:1763
+msgid "failed to create directory '{}': {}"
+msgstr "'{}': {} klasörü oluşturulamadı"
+
+#: ../Onboard/settings.py:211
+msgid "Onboard Preferences"
+msgstr "Ekran Klavyesi Tercihleri"
+
+#: ../Onboard/settings.py:574
+msgid "Copy layout '{}' to this new name:"
+msgstr ""
+
+#: ../Onboard/settings.py:587
+msgid "Delete layout '{}'?"
+msgstr ""
+
+#: ../Onboard/settings.py:601
+msgid "No file manager to open layout folder"
+msgstr "Düzen dizinini açacak bir dosya yöneticisi yok"
+
+#: ../Onboard/settings.py:633
+msgid "System settings not found ({}): {}"
+msgstr "Sistem özelliği bulunamadı ({}): {}"
+
+#. Frame resize handles: None
+#: ../Onboard/settings.py:646
+msgid "None"
+msgstr "Hiçbiri"
+
+#. Frame resize handles: Corners only
+#: ../Onboard/settings.py:648
+msgid "Corners only"
+msgstr "Sadece köşeler"
+
+#. Frame resize handles: All
+#: ../Onboard/settings.py:650
+msgid "All corners and edges"
+msgstr "Tüm köşeler ve kenarlar"
+
+#: ../Onboard/settings.py:691
+msgid "Core layouts"
+msgstr ""
+
+#: ../Onboard/settings.py:692
+msgid "Contributions"
+msgstr ""
+
+#: ../Onboard/settings.py:693
+msgid "User layouts"
+msgstr ""
+
+#: ../Onboard/settings.py:727
+msgid "Author: {}"
+msgstr ""
+
+#: ../Onboard/settings.py:730
+msgid "About Layout"
+msgstr ""
+
+#: ../Onboard/settings.py:835
+msgid "Enter a name for the new theme:"
+msgstr "Yeni tema için bir isim girin:"
+
+#: ../Onboard/settings.py:843
+#, python-brace-format
+msgid ""
+"This theme file already exists.\n"
+"'{filename}'\n"
+"\n"
+"Overwrite it?"
+msgstr ""
+"Bu tema dosyası zaten var.\n"
+"'{filename}'\n"
+"\n"
+"Üzerine yazılsın mı?"
+
+#: ../Onboard/settings.py:860
+msgid "Reset selected theme to Onboard defaults?"
+msgstr ""
+"Seçtiğiniz tema, Ekran Klavyesi'nin geçerli görünümü olarak kullanılsın mı?"
+
+#: ../Onboard/settings.py:862
+msgid "Delete selected theme?"
+msgstr "Seçili temayı sil?"
+
+#: ../Onboard/settings.py:990
+msgid "Reset"
+msgstr "Sıfırla"
+
+#. Key style with flat fill- and border colors
+#: ../Onboard/settings.py:1251
+msgid "Flat"
+msgstr "Düz"
+
+#. Key style with simple gradients
+#: ../Onboard/settings.py:1253 ../settings_theme_dialog.ui.h:4
+msgid "Gradient"
+msgstr "Renk Geçişi"
+
+#. Key style for dish-like key caps
+#: ../Onboard/settings.py:1255
+msgid "Dish"
+msgstr "Klavye tuşu"
+
+#: ../Onboard/settings.py:1304 ../Onboard/settings.py:1361
+msgid "Default"
+msgstr "Varsayılan"
+
+#: ../Onboard/settings.py:1345
+msgid "Bold"
+msgstr "Kalın"
+
+#: ../Onboard/settings.py:1347
+msgid "Italic"
+msgstr "İtalik"
+
+#: ../Onboard/settings.py:1349
+msgid "Condensed"
+msgstr "Yoğun"
+
+#: ../Onboard/settings.py:1362
+msgid ""
+msgstr ""
+
+#: ../Onboard/settings.py:1362
+msgid "Ubuntu Logo"
+msgstr "Ubuntu Logosu"
+
+#: ../Onboard/settings.py:1496
+msgid "Step"
+msgstr "Basamak"
+
+#: ../Onboard/settings.py:1497
+msgid "Left"
+msgstr "Sol"
+
+#: ../Onboard/settings.py:1498
+msgid "Right"
+msgstr "Sağ"
+
+#: ../Onboard/settings.py:1499
+msgid "Up"
+msgstr "Yukarı"
+
+#: ../Onboard/settings.py:1500
+msgid "Down"
+msgstr "Aşağı"
+
+#: ../Onboard/settings.py:1501
+msgid "Activate"
+msgstr "Etkinleştir"
+
+#: ../Onboard/settings.py:1670
+msgid "Action:"
+msgstr "Eylem:"
+
+#: ../Onboard/settings.py:1834
+msgid "Disabled"
+msgstr "Devre dışı"
+
+#: ../Onboard/settings.py:1840
+msgid "Button"
+msgstr "Bası"
+
+#: ../Onboard/settings.py:1895 ../Onboard/settings.py:1940
+msgid "Press a button..."
+msgstr "Bir basıya bas..."
+
+#: ../Onboard/settings.py:1942
+msgid "Press a key..."
+msgstr "Bir basıya basın..."
 
 #: ../Onboard/ConfigUtils.py:61
 msgid "gsettings schema for '{}' is not installed"
@@ -728,6 +361,51 @@ msgstr ""
 #: ../Onboard/ConfigUtils.py:673
 msgid "Failed to get gsettings value. "
 msgstr "Gsettings değeri alim işleminde error. "
+
+#: ../Onboard/LayoutLoaderSVG.py:134
+msgid ""
+"Loading legacy layout, format '{}'. Please consider upgrading to current "
+"format '{}'"
+msgstr ""
+"Kalıt yerleşimi yükleniyor, biçim '{}'. Lütfen güncel biçimi '{}' "
+"yükseltmeyi düşünün"
+
+#: ../Onboard/LayoutLoaderSVG.py:374
+msgid "Ignoring key '{}'. No svg filename defined."
+msgstr "'{}' anahtarı göz ardı ediliyor. Hiçbir svg dosya adı tanımlanmadı."
+
+#: ../Onboard/LayoutLoaderSVG.py:593
+msgid "Snippet {}"
+msgstr "Parçaçık {}"
+
+#. i18n: full string is "Snippet n, unassigned"
+#: ../Onboard/LayoutLoaderSVG.py:597
+msgid ", unassigned"
+msgstr ", atanmamış"
+
+#: ../Onboard/LayoutLoaderSVG.py:906
+msgid "copying layout '{}' to '{}'"
+msgstr "düzen '{}' den '{}' e kopyalanıyor"
+
+#: ../Onboard/LayoutLoaderSVG.py:926
+msgid "copy_layouts failed, unsupported layout format '{}'."
+msgstr "copy_layouts başarısız, desteklenmeyen yerleşim düzeni '{}'."
+
+#: ../Onboard/LayoutLoaderSVG.py:969
+msgid "copying svg file '{}' to '{}'"
+msgstr "'{}' svg dosyası '{}' 'a kopyalanıyor"
+
+#: ../data/onboard-settings.desktop.in.h:1
+msgid "Onboard Settings"
+msgstr "Ekran Klavyesi Ayarları"
+
+#: ../data/onboard-settings.desktop.in.h:2
+msgid "Onboard onscreen keyboard settings"
+msgstr "Ekran klavyesi uygulama ayarları"
+
+#: ../data/onboard-settings.desktop.in.h:3
+msgid "Change Onboard settings"
+msgstr "Ekran Klavyesi ayarlarını değiştir"
 
 #: ../settings_scanner_dialog.ui.h:1
 msgid "Automatic scan for 1 switch"
@@ -845,220 +523,77 @@ msgstr "Seçili aygıt, sistem fare imlecini ya da klavyesini kontrol edemedi."
 msgid "Input Device"
 msgstr "Girdi Aygıtı"
 
-#. run again
-#: ../Onboard/KbdWindow.py:75 ../data/onboard.desktop.in.h:1
-msgid "Onboard"
-msgstr "Ekran Klavyesi"
-
-#: ../Onboard/KbdWindow.py:174
-msgid "no window transparency available; screen doesn't support alpha channels"
-msgstr "Pencere saydamlığı kullanılamaz; ekran alfa kanallarını desteklemiyor"
-
-#: ../Onboard/settings.py:211
-msgid "Onboard Preferences"
-msgstr "Ekran Klavyesi Tercihleri"
-
-#: ../Onboard/settings.py:574
-#, fuzzy
-msgid "Copy layout '{}' to this new name:"
-msgstr "düzen '{}' den '{}' e kopyalanıyor"
-
-#: ../Onboard/settings.py:587
-msgid "Delete layout '{}'?"
-msgstr ""
-
-#: ../Onboard/settings.py:601
-msgid "No file manager to open layout folder"
-msgstr "Düzen dizinini açacak bir dosya yöneticisi yok"
-
-#: ../Onboard/settings.py:633
-msgid "System settings not found ({}): {}"
-msgstr "Sistem özelliği bulunamadı ({}): {}"
-
-#. Frame resize handles: None
-#: ../Onboard/settings.py:646
-msgid "None"
-msgstr "Hiçbiri"
-
-#. Frame resize handles: Corners only
-#: ../Onboard/settings.py:648
-msgid "Corners only"
-msgstr "Sadece köşeler"
-
-#. Frame resize handles: All
-#: ../Onboard/settings.py:650
-msgid "All corners and edges"
-msgstr "Tüm köşeler ve kenarlar"
-
-#: ../Onboard/settings.py:691
-#, fuzzy
-msgid "Core layouts"
-msgstr "Düzenler"
-
-#: ../Onboard/settings.py:692
-msgid "Contributions"
-msgstr ""
-
-#: ../Onboard/settings.py:693
-#, fuzzy
-msgid "User layouts"
-msgstr "Düzenler"
-
-#: ../Onboard/settings.py:727
-msgid "Author: {}"
-msgstr ""
-
-#: ../Onboard/settings.py:730
-#, fuzzy
-msgid "About Layout"
-msgstr "Düzen Ekle"
-
-#: ../Onboard/settings.py:836
-msgid "Enter a name for the new theme:"
-msgstr "Yeni tema için bir isim girin:"
-
-#: ../Onboard/settings.py:844
-#, python-brace-format
+#: ../Onboard/OnboardGtk.py:345
 msgid ""
-"This theme file already exists.\n"
-"'{filename}'\n"
+"Onboard is configured to appear with the dialog to unlock the screen; for "
+"example to dismiss the password-protected screensaver.\n"
 "\n"
-"Overwrite it?"
-msgstr ""
-"Bu tema dosyası zaten var.\n"
-"'{filename}'\n"
+"However the system is not configured anymore to use Onboard to unlock the "
+"screen. A possible reason can be that another application configured the "
+"system to use something else.\n"
 "\n"
-"Üzerine yazılsın mı?"
-
-#: ../Onboard/settings.py:861
-msgid "Reset selected theme to Onboard defaults?"
+"Would you like to reconfigure the system to show Onboard when unlocking the "
+"screen?"
 msgstr ""
-"Seçtiğiniz tema, Ekran Klavyesi'nin geçerli görünümü olarak kullanılsın mı?"
+"Ekran klavyesi, ekran kilidini açmak için iletişim kutusu görünümünde "
+"yapılandırıldı; örneğin, parola korumalı ekran koruyucusunu açmak için.\n"
+"\n"
+"Ancak sistem, bundan sonra ekran kilidini açmak için Ekran Klavyesi "
+"kullanmaya yapılandırılmadı. Başka bir uygulama sistemi yapılandırmış "
+"olabilir.\n"
+"\n"
+"Ekran kilidini açarken Ekran Klavyesi'nin görünmesi için sistemi tekrar "
+"yapılandırmak ister misiniz?"
 
-#: ../Onboard/settings.py:863
-msgid "Delete selected theme?"
-msgstr "Seçili temayı sil?"
+#: ../Onboard/OnboardGtk.py:364
+msgid ""
+"Onboard is configured to appear with the dialog to unlock the screen; for "
+"example to dismiss the password-protected screensaver.\n"
+"\n"
+"However this function is disabled in the system.\n"
+"\n"
+"Would you like to activate it?"
+msgstr ""
+"Ekran klavyesi, ekran kilidini açmak için iletişim kutusu görünümünde "
+"yapılandırıldı; örneğin, parola korumalı ekran koruyucusunu açmak için.\n"
+"\n"
+"Bununla beraber bu işlev sistem içinde etkisizdir.\n"
+"\n"
+"Etkinleştirmek ister misiniz?"
 
-#: ../Onboard/settings.py:991
-msgid "Reset"
-msgstr "Sıfırla"
-
-#. Key style with flat fill- and border colors
-#: ../Onboard/settings.py:1242
-msgid "Flat"
-msgstr "Düz"
-
-#. Key style with simple gradients
-#: ../Onboard/settings.py:1244 ../settings_theme_dialog.ui.h:4
-msgid "Gradient"
-msgstr "Renk Geçişi"
-
-#. Key style for dish-like key caps
-#: ../Onboard/settings.py:1246
-msgid "Dish"
-msgstr "Klavye tuşu"
-
-#: ../Onboard/settings.py:1295 ../Onboard/settings.py:1352
-msgid "Default"
-msgstr "Varsayılan"
-
-#: ../Onboard/settings.py:1336
-msgid "Bold"
-msgstr "Kalın"
-
-#: ../Onboard/settings.py:1338
-msgid "Italic"
-msgstr "İtalik"
-
-#: ../Onboard/settings.py:1340
-msgid "Condensed"
-msgstr "Yoğun"
-
-#: ../Onboard/settings.py:1353
-msgid ""
-msgstr ""
-
-#: ../Onboard/settings.py:1353
-msgid "Ubuntu Logo"
-msgstr "Ubuntu Logosu"
-
-#: ../Onboard/settings.py:1487
-msgid "Step"
-msgstr "Basamak"
-
-#: ../Onboard/settings.py:1488
-msgid "Left"
-msgstr "Sol"
-
-#: ../Onboard/settings.py:1489
-msgid "Right"
-msgstr "Sağ"
-
-#: ../Onboard/settings.py:1490
-msgid "Up"
-msgstr "Yukarı"
-
-#: ../Onboard/settings.py:1491
-msgid "Down"
-msgstr "Aşağı"
-
-#: ../Onboard/settings.py:1492
-msgid "Activate"
-msgstr "Etkinleştir"
-
-#: ../Onboard/settings.py:1661
-msgid "Action:"
-msgstr "Eylem:"
-
-#: ../Onboard/settings.py:1825
-msgid "Disabled"
-msgstr "Devre dışı"
-
-#: ../Onboard/settings.py:1831
-msgid "Button"
-msgstr "Bası"
-
-#: ../Onboard/settings.py:1886 ../Onboard/settings.py:1931
-msgid "Press a button..."
-msgstr "Bir basıya bas..."
-
-#: ../Onboard/settings.py:1933
-msgid "Press a key..."
-msgstr "Bir basıya basın..."
-
-#: ../Onboard/Config.py:192
+#: ../Onboard/Config.py:200
 msgid "Layout file ({}) or name"
 msgstr "Yerleşim dosyası ({}) ya da adı"
 
-#: ../Onboard/Config.py:195
+#: ../Onboard/Config.py:203
 msgid "Theme file (.theme) or name"
 msgstr "Tema dosyası (.theme) ya da adı"
 
-#: ../Onboard/Config.py:196
+#: ../Onboard/Config.py:204
 msgid "Window x position"
 msgstr "Pencere x konumu"
 
-#: ../Onboard/Config.py:197
+#: ../Onboard/Config.py:205
 msgid "Window y position"
 msgstr "Pencere y konumu"
 
-#: ../Onboard/Config.py:199
+#: ../Onboard/Config.py:207
 msgid "Window size, widthxheight"
 msgstr "Pencere boyutu, genişlik*yükseklik"
 
-#: ../Onboard/Config.py:201
+#: ../Onboard/Config.py:209
 msgid "Start in XEmbed mode, e.g. for gnome-screensaver"
 msgstr "'XEmbed' kipinde başlat, örn. 'gnome-screensaver' için"
 
-#: ../Onboard/Config.py:204
+#: ../Onboard/Config.py:212
 msgid "Keep aspect ratio when resizing the window"
 msgstr "Pencere yeniden boyutlandırılırken en boy oranını koru"
 
-#: ../Onboard/Config.py:209
+#: ../Onboard/Config.py:217
 msgid "Allow multiple Onboard instances"
 msgstr "Çoklu ekran klavyesi örneklerine izin ver"
 
-#: ../Onboard/Config.py:211
+#: ../Onboard/Config.py:219
 msgid ""
 "Override auto-detection and manually select quirks\n"
 "QUIRKS={metacity|compiz|mutter}"
@@ -1066,7 +601,7 @@ msgstr ""
 "Otomatik tespiti yoksayın ve kaçanakları (quirk) kendiniz seçin\n"
 "QUIRKS={metacity|compiz|mutter}"
 
-#: ../Onboard/Config.py:215
+#: ../Onboard/Config.py:223
 msgid ""
 "Silently fail to start in the given desktop environments. DESKTOPS is a "
 "comma-separated list of XDG desktop names, e.g. GNOME for GNOME Shell."
@@ -1075,35 +610,35 @@ msgstr ""
 "masaüstü isimlerinin virgül ile ayrılmış listesidir. Örn. GNOME Kabuğu için "
 "GNOME"
 
-#: ../Onboard/Config.py:281
+#: ../Onboard/Config.py:289
 msgid "Migrating user directory '{}' to '{}'."
 msgstr "Kullanıcı dizini '{}' dan '{}' a geçiriliyor."
 
 #. honor XDG spec
 #. python >2.5
-#: ../Onboard/Config.py:289
+#: ../Onboard/Config.py:297
 msgid "failed to migrate user directory. "
-msgstr ""
+msgstr "Kullanıcı dizini değiştirirken hata oluştu. "
 
-#: ../Onboard/Config.py:595
+#: ../Onboard/Config.py:608
 #, python-brace-format
 msgid "layout '{filename}' does not exist"
 msgstr "'{filename}' düzeni mevcut değil"
 
-#: ../Onboard/Config.py:637
+#: ../Onboard/Config.py:650
 #, python-brace-format
 msgid "theme '{filename}' does not exist"
 msgstr "'{filename}' teması mevcut değil"
 
-#: ../Onboard/Config.py:662
+#: ../Onboard/Config.py:675
 msgid "Loading theme from '{}'"
 msgstr "'{}' den tema yükleniyor"
 
-#: ../Onboard/Config.py:666
+#: ../Onboard/Config.py:679
 msgid "Unable to read theme '{}'"
 msgstr "'{}' Teması okunamıyor"
 
-#: ../Onboard/Config.py:793
+#: ../Onboard/Config.py:806
 msgid ""
 "Enabling auto-show requires Gnome Accessibility.\n"
 "\n"
@@ -1120,22 +655,83 @@ msgstr ""
 "\n"
 "Erişilebilirlik şimdi etkinleştirilsin mi?"
 
-#: ../Onboard/Config.py:1297
+#: ../Onboard/Config.py:1362
 #, python-brace-format
 msgid "color scheme '{filename}' does not exist"
 msgstr "'{filename}' renk şeması mevcut değil"
 
-#: ../data/onboard-settings.desktop.in.h:1
-msgid "Onboard Settings"
-msgstr "Ekran Klavyesi Ayarları"
+#: ../settings_docking_dialog.ui.h:1
+msgid "Top"
+msgstr "Üst"
 
-#: ../data/onboard-settings.desktop.in.h:2
-msgid "Onboard onscreen keyboard settings"
-msgstr "Ekran klavyesi uygulama ayarları"
+#: ../settings_docking_dialog.ui.h:2
+msgid "Bottom"
+msgstr "Alt"
 
-#: ../data/onboard-settings.desktop.in.h:3
-msgid "Change Onboard settings"
-msgstr "Ekran Klavyesi ayarlarını değiştir"
+#: ../settings_docking_dialog.ui.h:3
+msgid "Docking settings"
+msgstr "Yapıştırma ayarları"
+
+#: ../settings_docking_dialog.ui.h:4
+msgid "Shrink workarea"
+msgstr "Çalışma alanını daralt"
+
+#: ../settings_docking_dialog.ui.h:5
+msgid "Shrink the available space for maximized windows."
+msgstr "Büyütülmüş pencereler için kullanılabilir alanı daralt."
+
+#: ../settings_docking_dialog.ui.h:6
+msgid "Expand on landscape screens"
+msgstr "Yatay ekranlarda genişlet"
+
+#: ../settings_docking_dialog.ui.h:7
+msgid "Expand keyboard to the width of the workarea."
+msgstr "Klavyeyi çalışma alanı genişliğine büyüt"
+
+#: ../settings_docking_dialog.ui.h:8
+msgid "Expand on portrait screens"
+msgstr "Dikey ekranlarda genişlet"
+
+#: ../settings_docking_dialog.ui.h:9
+msgid "Dock to screen edge:"
+msgstr "Ekran kenarına yapıştır:"
+
+#. translators: this is a 'tooltip' of the key 'settings' in keyboard layout 'Whiteboard_wide.onboard'
+#: ../settings_docking_dialog.ui.h:10 ../data/layoutstrings.py:296
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: ../Onboard/KeyboardWidget.py:1418
+msgid "New snippet"
+msgstr "Yeni parçacık"
+
+#: ../Onboard/KeyboardWidget.py:1422
+msgid "_Save snippet"
+msgstr "Parçacığı _kaydet"
+
+#: ../Onboard/KeyboardWidget.py:1434
+msgid "Enter a new snippet for this button:"
+msgstr "Bu buton için yeni bir parçacık atayın:"
+
+#: ../Onboard/KeyboardWidget.py:1440
+msgid "_Button label:"
+msgstr "_Düğme etiketi:"
+
+#: ../Onboard/KeyboardWidget.py:1444
+msgid "S_nippet:"
+msgstr "_Parçacık:"
+
+#: ../Onboard/KeyboardWidget.py:1526
+msgid " - System Language"
+msgstr ""
+
+#: ../Onboard/KeyboardWidget.py:1560
+msgid "Other _Languages"
+msgstr "Diğer _Diller"
+
+#: ../Onboard/KeyboardWidget.py:1562
+msgid "_Languages"
+msgstr "_Diller"
 
 #. translators: this is a 'tooltip' of the key_template 'hoverclick' in keyboard layout 'key_defs.xml'
 #: ../data/layoutstrings.py:15 ../data/layoutstrings.py:173
@@ -1300,6 +896,12 @@ msgstr "Sağ tıklama"
 msgid "Scroll"
 msgstr "Kaydır"
 
+#. translators: this is a 'tooltip' of the key_template 'layer2' in keyboard layout 'key_defs.xml'
+#: ../data/layoutstrings.py:68 ../data/layoutstrings.py:317
+#: ../settings.ui.h:12
+msgid "Snippets"
+msgstr "Parçacıklar"
+
 #: ../data/layoutstrings.py:69
 msgid "Space"
 msgstr "Boşluk"
@@ -1323,270 +925,270 @@ msgstr "Win"
 #. translators: this is a 'tooltip' of the key 'DB05' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:76 ../data/layoutstrings.py:344
 msgid "Umbrella"
-msgstr ""
+msgstr "Şemsiye"
 
 #. translators: description of unicode character U+2606
 #. translators: this is a 'tooltip' of the key 'DB07' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:78 ../data/layoutstrings.py:350
 msgid "White star"
-msgstr ""
+msgstr "Beyaz yıldız"
 
 #. translators: description of unicode character U+260F
 #. translators: this is a 'tooltip' of the key 'DB03' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:80 ../data/layoutstrings.py:356
 msgid "White telephone"
-msgstr ""
+msgstr "Beyaz telefon"
 
 #. translators: description of unicode character U+2615
 #: ../data/layoutstrings.py:82
 msgid "Hot beverage"
-msgstr ""
+msgstr "Sıcak içecek"
 
 #. translators: description of unicode character U+2620
 #: ../data/layoutstrings.py:84
 msgid "Skull and crossbones"
-msgstr ""
+msgstr "Kuru kafa ve çapraz kemikler"
 
 #. translators: description of unicode character U+2622
 #. translators: this is a 'tooltip' of the key 'DB09' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:86 ../data/layoutstrings.py:287
 msgid "Radioactive sign"
-msgstr ""
+msgstr "Radyoaktif simgesi"
 
 #. translators: description of unicode character U+262E
 #. translators: this is a 'tooltip' of the key 'DB06' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:88 ../data/layoutstrings.py:275
 msgid "Peace symbol"
-msgstr ""
+msgstr "Barış simgesi"
 
 #. translators: description of unicode character U+262F
 #. translators: this is a 'tooltip' of the key 'DB08' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:90 ../data/layoutstrings.py:362
 msgid "Yin yang"
-msgstr ""
+msgstr "Yin yang"
 
 #. translators: description of unicode character U+2639
 #. translators: this is a 'tooltip' of the key 'DC01' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:92 ../data/layoutstrings.py:218
 msgid "Frowning face"
-msgstr ""
+msgstr "Kızgın yüz"
 
 #. translators: description of unicode character U+263A
 #. translators: this is a 'tooltip' of the key 'DD01' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:94 ../data/layoutstrings.py:299
 msgid "Smiling face"
-msgstr ""
+msgstr "Gülen yüz"
 
 #. translators: description of unicode character U+263C
 #. translators: this is a 'tooltip' of the key 'DD10' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:96 ../data/layoutstrings.py:353
 msgid "White sun with rays"
-msgstr ""
+msgstr "ışınlı beyaz güneş"
 
 #. translators: description of unicode character U+263E
 #. translators: this is a 'tooltip' of the key 'DC10' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:98 ../data/layoutstrings.py:242
 msgid "Last quarter moon"
-msgstr ""
+msgstr "Son dördün"
 
 #. translators: description of unicode character U+2640
 #. translators: this is a 'tooltip' of the key 'DD09' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:100 ../data/layoutstrings.py:215
 msgid "Female sign"
-msgstr ""
+msgstr "Dişi cins işareti"
 
 #. translators: description of unicode character U+2642
 #. translators: this is a 'tooltip' of the key 'DC09' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:102 ../data/layoutstrings.py:248
 msgid "Male sign"
-msgstr ""
+msgstr "Erkek cins işareti"
 
 #. translators: description of unicode character U+2661
 #. translators: this is a 'tooltip' of the key 'DB01' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:104 ../data/layoutstrings.py:347
 msgid "White heart suit"
-msgstr ""
+msgstr "Beyaz kalp işareti"
 
 #. translators: description of unicode character U+2662
 #: ../data/layoutstrings.py:106
 msgid "White diamond suit"
-msgstr ""
+msgstr "Beyaz Elmas işareti"
 
 #. translators: description of unicode character U+2664
 #: ../data/layoutstrings.py:108
 msgid "White spade suit"
-msgstr ""
+msgstr "Beyaz Maça işareti"
 
 #. translators: description of unicode character U+2667
 #: ../data/layoutstrings.py:110
 msgid "White club suit"
-msgstr ""
+msgstr "Beyaz Sinek işareti"
 
 #. translators: description of unicode character U+266B
 #. translators: this is a 'tooltip' of the key 'DB02' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:112 ../data/layoutstrings.py:185
 msgid "Beamed eighth note"
-msgstr ""
+msgstr "Kirişli Sekizinci Nota (Kirişli Kalın Do)"
 
 #. translators: description of unicode character U+2709
 #. translators: this is a 'tooltip' of the key 'DB04' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:114 ../data/layoutstrings.py:206
 msgid "Envelope"
-msgstr ""
+msgstr "Zarf"
 
 #. translators: description of unicode character U+270C
 #: ../data/layoutstrings.py:116
 msgid "Victory hand"
-msgstr ""
+msgstr "Elle zafer işareti"
 
 #. translators: description of unicode character U+270D
 #: ../data/layoutstrings.py:118
 msgid "Writing hand"
-msgstr ""
+msgstr "Kalem tutan el işareti"
 
 #. translators: description of unicode character U+1F604
 #. translators: this is a 'tooltip' of the key 'DD03' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:120 ../data/layoutstrings.py:308
 msgid "Smiling face with open mouth and smiling eyes"
-msgstr ""
+msgstr "Gülen göz ve açık ağızlı gülen yüz"
 
 #. translators: description of unicode character U+1F607
 #. translators: this is a 'tooltip' of the key 'DD08' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:122 ../data/layoutstrings.py:302
 msgid "Smiling face with halo"
-msgstr ""
+msgstr "Başında yuvarlak haleli yülen yüz işareti"
 
 #. translators: description of unicode character U+1F608
 #. translators: this is a 'tooltip' of the key 'DC08' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:124 ../data/layoutstrings.py:305
 msgid "Smiling face with horns"
-msgstr ""
+msgstr "Şeytani gülüş karakter işareti"
 
 #. translators: description of unicode character U+1F609
 #. translators: this is a 'tooltip' of the key 'DD04' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:126 ../data/layoutstrings.py:359
 msgid "Winking face"
-msgstr ""
+msgstr "Sol göz kırpma işareti"
 
 #. translators: description of unicode character U+1F60A
 #. translators: this is a 'tooltip' of the key 'DD02' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:128 ../data/layoutstrings.py:311
 msgid "Smiling face with smiling eyes"
-msgstr ""
+msgstr "Gülen gözlü gülen yüz"
 
 #. translators: description of unicode character U+1F60B
 #. translators: this is a 'tooltip' of the key 'DC07' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:130 ../data/layoutstrings.py:209
 msgid "Face savouring delicious food"
-msgstr ""
+msgstr "yemekten ağzı sulanma işareti"
 
 #. translators: description of unicode character U+1F60D
 #: ../data/layoutstrings.py:132
 msgid "Smiling face with heart-shaped eyes"
-msgstr ""
+msgstr "Kalp şeklinde gözlü gülen yüz"
 
 #. translators: description of unicode character U+1F60E
 #. translators: this is a 'tooltip' of the key 'DD07' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:134 ../data/layoutstrings.py:314
 msgid "Smiling face with sunglasses"
-msgstr ""
+msgstr "Güneş gözlüklü gülen yüz"
 
 #. translators: description of unicode character U+1F60F
 #: ../data/layoutstrings.py:136
 msgid "Smirking face"
-msgstr ""
+msgstr "Gözler kapalı yarı gülümseme"
 
 #. translators: description of unicode character U+1F610
 #: ../data/layoutstrings.py:138
 msgid "Neutral face"
-msgstr ""
+msgstr "Yüzün doğal duruşu işareti"
 
 #. translators: description of unicode character U+1F612
 #: ../data/layoutstrings.py:140
 msgid "Unamused face"
-msgstr ""
+msgstr "Hiç komik değil ifadeli yüz işareti"
 
 #. translators: description of unicode character U+1F616
 #. translators: this is a 'tooltip' of the key 'DC05' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:142 ../data/layoutstrings.py:188
 msgid "Confounded face"
-msgstr ""
+msgstr "Şaşırmış yüz işareti"
 
 #. translators: description of unicode character U+1F618
 #: ../data/layoutstrings.py:144
 msgid "Face throwing a kiss"
-msgstr ""
+msgstr "Öpücük gönderen yüz işareti"
 
 #. translators: description of unicode character U+1F61A
 #. translators: this is a 'tooltip' of the key 'DD06' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:146 ../data/layoutstrings.py:239
 msgid "Kissing face with closed eyes"
-msgstr ""
+msgstr "Gözleri kapalı öpüşen yüz işareti"
 
 #. translators: description of unicode character U+1F61C
 #. translators: this is a 'tooltip' of the key 'DD05' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:148 ../data/layoutstrings.py:212
 msgid "Face with stuck-out tongue and winking eye"
-msgstr ""
+msgstr "Dil çıkarıp göz kırpan yüz işareti"
 
 #. translators: description of unicode character U+1F61D
 #: ../data/layoutstrings.py:150
 msgid "Face with stuck-out tongue and tightly closed eyes"
-msgstr ""
+msgstr "dil çıkarıp gözleri sıkıca kapalı yüz işareti"
 
 #. translators: description of unicode character U+1F61E
 #: ../data/layoutstrings.py:152
 msgid "Disappointed face"
-msgstr ""
+msgstr "Hayal kırıklığı yaşayan yüz işareti"
 
 #. translators: description of unicode character U+1F620
 #. translators: this is a 'tooltip' of the key 'DC02' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:154 ../data/layoutstrings.py:176
 msgid "Angry face"
-msgstr ""
+msgstr "Kızgın yüz"
 
 #. translators: description of unicode character U+1F621
 #: ../data/layoutstrings.py:156
 msgid "Pouting face"
-msgstr ""
+msgstr "Somurtan yüz işareti"
 
 #. translators: description of unicode character U+1F622
 #. translators: this is a 'tooltip' of the key 'DC03' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:158 ../data/layoutstrings.py:191
 msgid "Crying face"
-msgstr ""
+msgstr "Ağlayan yüz"
 
 #. translators: description of unicode character U+1F623
 #: ../data/layoutstrings.py:160
 msgid "Persevering face"
-msgstr ""
+msgstr "Çok Azimli yüz işareti"
 
 #. translators: description of unicode character U+1F629
 #: ../data/layoutstrings.py:162
 msgid "Weary face"
-msgstr ""
+msgstr "Çok Yorgun yüz işareti"
 
 #. translators: description of unicode character U+1F62B
 #. translators: this is a 'tooltip' of the key 'DC06' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:164 ../data/layoutstrings.py:338
 msgid "Tired face"
-msgstr ""
+msgstr "Yorgun yüz işareti"
 
 #. translators: description of unicode character U+1F632
 #. translators: this is a 'tooltip' of the key 'DC04' in keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:166 ../data/layoutstrings.py:182
 msgid "Astonished face"
-msgstr ""
+msgstr "Hayretle bakan yüz işareti"
 
 #. translators: description of unicode character U+1F633
 #: ../data/layoutstrings.py:168
 msgid "Flushed face"
-msgstr ""
+msgstr "Heyecandan bir şey görmeyen yüz işareti"
 
 #. translators: description of unicode character U+1F635
 #: ../data/layoutstrings.py:170
 msgid "Dizzy face"
-msgstr ""
+msgstr "Sersemlemiş Yüz işareti"
 
 #. translators: this is a 'tooltip' of the key_template 'layer4' in keyboard layout 'Whiteboard.onboard'
 #: ../data/layoutstrings.py:179
@@ -1610,15 +1212,13 @@ msgstr ""
 
 #. translators: this is a 'summary' of the keyboard layout 'Grid.onboard'
 #: ../data/layoutstrings.py:224
-#, fuzzy
 msgid "Grid of keys, suitable for keyboard scanning"
-msgstr "Klavye _taramasını etkinleştir"
+msgstr ""
 
 #. translators: this is a 'tooltip' of the key 'hide' in keyboard layout 'Whiteboard_wide.onboard'
 #: ../data/layoutstrings.py:230
-#, fuzzy
 msgid "Hide keyboard"
-msgstr "Ekran Klavyesi'ni gizle"
+msgstr ""
 
 #. translators: this is a 'description' of the keyboard layout 'Whiteboard.onboard'
 #: ../data/layoutstrings.py:233
@@ -1652,32 +1252,23 @@ msgstr ""
 
 #. translators: this is a 'tooltip' of the key 'move' in keyboard layout 'Whiteboard_wide.onboard'
 #: ../data/layoutstrings.py:266
-#, fuzzy
 msgid "Move keyboard"
-msgstr "Ekran Klavyesi'ni taşı"
+msgstr ""
 
 #. translators: this is a 'tooltip' of the key 'quit' in keyboard layout 'Whiteboard_wide.onboard'
 #: ../data/layoutstrings.py:281
-#, fuzzy
 msgid "Quit Keyboard"
-msgstr "Klavye"
+msgstr ""
 
 #. translators: this is a 'tooltip' of the key_template 'quit' in keyboard layout 'key_defs.xml'
 #: ../data/layoutstrings.py:284
-#, fuzzy
 msgid "Quit Onboard"
-msgstr "onBoard'dan Çık"
+msgstr ""
 
 #. translators: this is a 'tooltip' of the key_template 'layer2' in keyboard layout 'Whiteboard.onboard'
 #: ../data/layoutstrings.py:293
-#, fuzzy
 msgid "Set and Settings"
-msgstr "Tarayıcı Ayarları"
-
-#. translators: this is a 'tooltip' of the key 'settings' in keyboard layout 'Whiteboard_wide.onboard'
-#: ../data/layoutstrings.py:296 ../settings_docking_dialog.ui.h:10
-msgid "Settings"
-msgstr "Ayarlar"
+msgstr ""
 
 #. translators: this is a 'summary' of the keyboard layout 'Small.onboard'
 #: ../data/layoutstrings.py:320
@@ -1709,88 +1300,597 @@ msgstr ""
 msgid "Sub-, Superscripts; Fractions"
 msgstr ""
 
-#: ../Onboard/WordSuggestions.py:2052
+#: ../Onboard/WPEngine.py:427
+msgid "Failed to load language model '{}': {} ({})"
+msgstr ""
+
+#: ../settings.ui.h:1
+msgid "key-repeat"
+msgstr "tuş tekrarı"
+
+#: ../settings.ui.h:2
+msgid "international character selection"
+msgstr "uluslararası karakter seçimi"
+
+#: ../settings.ui.h:3
+msgid "GTK"
+msgstr "GTK"
+
+#: ../settings.ui.h:4
+msgid "XInput"
+msgstr "XInput"
+
+#: ../settings.ui.h:5
+msgid "XTest"
+msgstr "XTest"
+
+#: ../settings.ui.h:6
+msgid "1"
+msgstr "1"
+
+#: ../settings.ui.h:7
+msgid "AT-SPI"
+msgstr "AT-SPI"
+
+#: ../settings.ui.h:8
+msgid "General"
+msgstr "Genel"
+
+#: ../settings.ui.h:9
+msgid "Window"
+msgstr "Pencere"
+
+#: ../settings.ui.h:10
+msgid "Layout"
+msgstr "Düzen"
+
+#: ../settings.ui.h:11
+msgid "Theme"
+msgstr "Tema"
+
+#: ../settings.ui.h:13 ../settings_theme_dialog.ui.h:7
+msgid "Keyboard"
+msgstr "Klavye"
+
+#: ../settings.ui.h:14
+msgid "Typing Assistance"
+msgstr "Yazma Yardımcısı"
+
+#: ../settings.ui.h:15
+msgid "Universal Access"
+msgstr "Evrensel Erişim"
+
+#: ../settings.ui.h:16
+msgid "latch, then lock"
+msgstr "sabitle, sonra kilitle"
+
+#: ../settings.ui.h:17
+msgid "latch, double-click to lock"
+msgstr "sabitle ve kilitlemek için çift tıkla"
+
+#: ../settings.ui.h:18
+msgid "latch only"
+msgstr "sadece sabitle"
+
+#: ../settings.ui.h:19
+msgid "lock only"
+msgstr "Sadece kilitle"
+
+#: ../settings.ui.h:20
+msgid "none"
+msgstr "hiçbiri"
+
+#: ../settings.ui.h:21
+msgid "single-touch"
+msgstr "tek dokunma"
+
+#: ../settings.ui.h:22
+msgid "multi-touch"
+msgstr "çoklu dokunma"
+
+#: ../settings.ui.h:23
+msgid "column"
+msgstr "sütun"
+
+#: ../settings.ui.h:24
+msgid "_Auto-show when editing text"
+msgstr "Yazıyı düzenlerken _kendiliğinden-göster"
+
+#: ../settings.ui.h:25
 msgid ""
-"<big>Onboard failed to open learned word suggestions.</big>\n"
-"\n"
-"The error was:\n"
-"<tt>{}</tt>\n"
-"\n"
-"Revert word suggestions to the last backup (recommended)?"
+"Show Onboard when there is a recognized text window in focus. Requires Gnome "
+"Accessibility."
 msgstr ""
+"Metin penceresi etkin olduğunda Ekran Klavyesi ile bütünleşik göster. Gnome "
+"Erişilebilirliği gerektiriyor."
 
-#: ../Onboard/WordSuggestions.py:2070
+#: ../settings.ui.h:26
+msgid "Start Onboard _hidden"
+msgstr "Ekran Klavyesi'ni _gizli başlat"
+
+#: ../settings.ui.h:27
+msgid "Start Onboard hidden."
+msgstr "Ekran Klavyesi'ni gizli başlat."
+
+#: ../settings.ui.h:28
+msgid "Show/Hide options"
+msgstr "Gösterme/Gizleme seçenekleri"
+
+#: ../settings.ui.h:29
+msgid "_Show status icon"
+msgstr "Durum simgesini _göster"
+
+#: ../settings.ui.h:30
+msgid "Show the status item. A click on that icon hides or shows Onboard."
+msgstr ""
+"Durum öğesini göster. Simge üzerine bir kez tıkladığımda Ekran Klavyesi "
+"gizlensin veya görünsün."
+
+#: ../settings.ui.h:31
+msgid "Show floating _icon when Onboard is hidden"
+msgstr "Ekran Klavyesi gizli çalışırken değişen _simge göster"
+
+#: ../settings.ui.h:32
 msgid ""
-"<big>Onboard failed to open learned word suggestions.</big>\n"
-"\n"
-"The error was:\n"
-"<tt>{}</tt>\n"
-"\n"
-"The suggestions have to be reset, but the erroneous file will remain at \n"
-"'{}'"
+"Show a floating icon on the desktop when Onboard is hidden. A click on the "
+"icon makes Onboard reappear."
+msgstr ""
+"Ekran Klavyesi gizli çalışırken masaüstünde değişen bir simge göster. Simge "
+"üzerine bir kez tıkladığımda Ekran Klavyesi görünür olsun."
+
+#: ../settings.ui.h:33
+msgid "Show when _unlocking the screen"
+msgstr "Ekran kilidini _açarken göster"
+
+#: ../settings.ui.h:34
+msgid ""
+"Show Onboard when the dialog to unlock the screen appears; this way Onboard "
+"can be used for example to enter the password to dismiss the screensaver "
+"when it is set to ask for it."
+msgstr ""
+"Ekran parolasını yazmak istediğimde Ekran Klavyesi'ni aç; bu sayede Ekran "
+"Klavyesi, örneğin parola korumalı bir ekran koruyucudan çıkmak istediğinizde "
+"parolayı yazmanız için etkin olacaktır."
+
+#: ../settings.ui.h:35
+msgid "Show _tooltips"
+msgstr "Araç _ipuçlarını göster"
+
+#: ../settings.ui.h:36
+msgid "Show tooltips for the keyboard&apos;s buttons."
+msgstr "Klavye&apos;s tuşları için araç ipuçlarını göster."
+
+#: ../settings.ui.h:37
+msgid "Show tooltips for the keyboard's buttons."
+msgstr "Klavye tuşları için ipuçlarını göster."
+
+#: ../settings.ui.h:38
+msgid "Desktop Integration"
+msgstr "Masaüstü Bütünleşmesi"
+
+#: ../settings.ui.h:39
+msgid "Dock to screen edge"
+msgstr "Ekran kenarına sabitle"
+
+#: ../settings.ui.h:40
+msgid "Dock the keyboard to the edge of the screen."
+msgstr "Klavyeyi ekranın köşesine yapıştır."
+
+#: ../settings.ui.h:41
+msgid "_Settings"
+msgstr "_Ayarlar"
+
+#: ../settings.ui.h:42
+msgid "Docking"
+msgstr "Yapıştırma"
+
+#: ../settings.ui.h:43
+msgid "Show window _decoration"
+msgstr "Pencere _dekorasyonunu göster"
+
+#: ../settings.ui.h:44
+msgid "Show window caption and frame."
+msgstr "Pencere yazı ve çerçevesini göster"
+
+#: ../settings.ui.h:45
+msgid "Show always on visible _workspace"
+msgstr "Her zaman görünür _çalışma alanında göster"
+
+#: ../settings.ui.h:46
+msgid "&quot;Sticky&quot; mode for keyboard and floating icon."
+msgstr "Klavye ve sabit simge için &quot;Yapışkan&quot; kip."
+
+#: ../settings.ui.h:47
+msgid "\"Sticky\" mode for keyboard and floating icon."
+msgstr "Klavye ve kayan simge için \"Yapışkan\" kip."
+
+#: ../settings.ui.h:48
+msgid "_Force window to top"
+msgstr "Pencereyi en üste _zorla"
+
+#: ../settings.ui.h:49
+msgid "Try harder to keep Onboard above anything on-screen."
+msgstr "Ekran Klavyesi'ni tüm pencerelerin üzerinde görünmesi için zorla."
+
+#: ../settings.ui.h:50
+msgid "Keep _aspect ratio"
+msgstr "_En boy oranını koru"
+
+#: ../settings.ui.h:51
+msgid "Constrain window size to the layout&apos;s aspect ratio."
+msgstr "Pencere boyutunu yerleşimin en-boy oranına sınırla."
+
+#: ../settings.ui.h:52
+msgid "Constrain window size to the layout's aspect ratio."
+msgstr "Yerleşimin en boy oranı için pencere boyutunu kısıtla."
+
+#: ../settings.ui.h:53
+msgid "Floating Window Options"
+msgstr "Hareketli Pencere Seçenekleri"
+
+#: ../settings.ui.h:54
+msgid "Window options"
+msgstr "Pencere seçenekleri"
+
+#: ../settings.ui.h:55
+msgid "Wind_ow:"
+msgstr "Penc_ere:"
+
+#: ../settings.ui.h:56
+msgid "Transparency of the whole keyboard window. Requires compositing."
+msgstr "Tüm klavye penceresinin saydamlığı. Birleşiklik gerektirir."
+
+#: ../settings.ui.h:57 ../settings_theme_dialog.ui.h:3
+msgid "_Background:"
+msgstr "_Artalan:"
+
+#: ../settings.ui.h:58
+msgid "Transparency of the keyboard background"
+msgstr "Klavye artalanının şeffaflığı"
+
+#: ../settings.ui.h:59
+msgid "_No background"
+msgstr "Artalan _yok"
+
+#: ../settings.ui.h:60
+msgid "Show the desktop through the gaps between keys."
+msgstr "Tuşlar arasındaki boşluklarda masaüstü gözüksün."
+
+#: ../settings.ui.h:61
+msgid "Transparency"
+msgstr "Şeffaflık"
+
+#: ../settings.ui.h:62
+msgid "Set _transparency to"
+msgstr "Saydamlığı _ayarla"
+
+#: ../settings.ui.h:63
+msgid "Enable inactive transparency. Requires compositing."
+msgstr "Pasif şeffaflığı etkinleştir. Birleşiklik gerektirir."
+
+#: ../settings.ui.h:64
+msgid ""
+"Transparency when the pointer leaves the keyboard. Requires compositing."
+msgstr "İmleç klavyeden ayrılınca şeffaflaştır. Birleşiklik gerektirir."
+
+#: ../settings.ui.h:65
+msgid "after"
+msgstr "sonra"
+
+#: ../settings.ui.h:66
+msgid "Delay in seconds until the inactive transparency takes effect."
+msgstr ""
+"Etkin olmayan şeffaflık, etkisini gösterene kadar birkaç saniye gecikebilir."
+
+#: ../settings.ui.h:67
+msgid "seconds"
+msgstr "saniye"
+
+#: ../settings.ui.h:68
+msgid "When Inactive"
+msgstr "Pasif olduğunda"
+
+#: ../settings.ui.h:69
+msgid "_Frame resize handles:"
+msgstr "_Çerçeve yeniden boyutlandırma noktaları:"
+
+#: ../settings.ui.h:70
+msgid "Resize Protection"
+msgstr "Korumayı Yeniden Boyutlandır"
+
+#: ../settings.ui.h:71
+msgid "Name"
+msgstr "Ad"
+
+#: ../settings.ui.h:72
+msgid "Description"
+msgstr "Açıklama"
+
+#: ../settings.ui.h:73
+msgid "_Open layouts folder"
+msgstr "Düzenler klasörünü _aç"
+
+#: ../settings.ui.h:74
+msgid "C_ustomize theme"
+msgstr "Temayı _kişiselleştir"
+
+#: ../settings.ui.h:75
+msgid "Follow _system theme"
+msgstr "_Sistem temasını kullan"
+
+#: ../settings.ui.h:76
+msgid "Remember what Onboard theme was last used for every system theme."
+msgstr ""
+"Ekran Klavyesi'nin her sistem teması için kullanılmış temasını hatırla."
+
+#: ../settings.ui.h:77
+msgid ""
+"Snippets are pieces of text which are entered when the corresponding button "
+"in Onboard is pressed."
+msgstr ""
+"Kod parçacıkları, Ekran Klavyesi'nde ilgili düğmeye basıldığında girilen "
+"metin parçalarıdır."
+
+#: ../settings.ui.h:78
+msgid "Show label popups"
+msgstr "Etiket bildirilerini göster"
+
+#: ../settings.ui.h:79
+msgid "Show label popups above pressed keys."
+msgstr "Basılan tuşun üzerinde etiket bildirilerini göster"
+
+#: ../settings.ui.h:80
+msgid "Play sound"
+msgstr "Ses çal"
+
+#: ../settings.ui.h:81
+msgid "Play click sound on keypress."
+msgstr "Tuşa basıldığında tıklama sesi çal."
+
+#: ../settings.ui.h:82
+msgid "Key-press Feedback"
+msgstr "Tuşa basma Geribildirimi"
+
+#: ../settings.ui.h:83
+msgid "Show secondary labels"
+msgstr "İkincil etiketleri göster"
+
+#: ../settings.ui.h:84
+msgid "Show characters reachable with or without the shift key."
+msgstr ""
+"Kaydırma tuşuna basarak ya da basmadan erişilebilir karakterleri göster."
+
+#: ../settings.ui.h:85
+msgid "Key Labels"
+msgstr "Tuş etiketleri"
+
+#: ../settings.ui.h:86
+msgid "_Long press action:"
+msgstr "_Uzun basma hareketi:"
+
+#: ../settings.ui.h:87
+msgid ""
+"Choose between key-repeat or long-press menus. Mainly affects alpha-numeric "
+"keys."
+msgstr ""
+"Tuş Tekrarı veya Uzun Basma menüleri arasından seçin. Genel olarak alfabetik "
+"ve sayısal tuşları etkiler."
+
+#: ../settings.ui.h:88
+msgid "Key-stroke _generation:"
+msgstr "Tuş vuruş _oluşturması:"
+
+#: ../settings.ui.h:89
+msgid "Modifier _behavior:"
+msgstr "Düzenleyici _davranışı"
+
+#: ../settings.ui.h:90
+msgid "Behavior of modifier and layer keys."
+msgstr "Düzenleyici ve katman tuşları davranışı."
+
+#: ../settings.ui.h:91
+msgid "Modifier auto-release delay:"
+msgstr "Düzenleyicinin otomatik başlama gecikme süresi:"
+
+#: ../settings.ui.h:92
+msgid ""
+"Seconds of inactivity until active modifiers and layer keys are released. 0 "
+"to disable."
+msgstr ""
+"Etkin düzenleyiciler ve katman tuşlarının bırakılacağı saniye cinsinden "
+"eylemsizlik süresi. Kapatmak için 0."
+
+#: ../settings.ui.h:93
+msgid "Key Behavior"
+msgstr "Tuş Davranışı"
+
+#: ../settings.ui.h:94
+msgid "_Touch input (requires restart):"
+msgstr "_Dokunma girişi (yeniden başlatma gerektirir):"
+
+#: ../settings.ui.h:95
+msgid "_Input event source:"
+msgstr "olay _Giriş kaynağı"
+
+#: ../settings.ui.h:96
+msgid ""
+"Choose &apos;XInput&apos; for more reliable typing into text entries with "
+"pop-up selections. The &apos;GTK&apos; option offers better compatibility, "
+"but typing may fail in the presence of pointer grabs, e.g. with open pop-up "
+"windows."
+msgstr ""
+"Açılır menüden seçim yaparak daha etkili yazı girişi yapabilmek için &apos;"
+"XInput&apos; seçeneğini kulanın. &apos;GTK&apos; seçeneği daha iyi bir "
+"uyumluluk önerse de açılır pencereden dolayı işaretçinin yeri sürekli "
+"değişir ve yazma etkinliği azalabilir."
+
+#: ../settings.ui.h:97
+msgid ""
+"Choose 'XInput' for more reliable typing into text entries with pop-up "
+"selections. The 'GTK' option offers better compatibility, but typing may "
+"fail in the presence of pointer grabs, e.g. with open pop-up windows."
+msgstr ""
+"Açılır menüden seçim yaparak daha etkili yazı girişi yapabilmek için "
+"'XInput' seçeneğini kulanın. 'GTK' seçeneği daha iyi bir uyumluluk önerse de "
+"açılır pencereden dolayı işaretçinin yeri sürekli değişir ve yazma etkinliği "
+"azalabilir."
+
+#: ../settings.ui.h:98
+msgid "Input Options"
+msgstr "Girdi seçenekleri"
+
+#: ../settings.ui.h:99
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+#: ../settings.ui.h:100
+msgid "Show _suggestions"
+msgstr "_Önerileri göster"
+
+#: ../settings.ui.h:101
+msgid "Enable word completion and prediction."
+msgstr "Kelime tamamlama ve tahminini etkinleştir."
+
+#: ../settings.ui.h:102
+msgid "Show spelling suggestions"
+msgstr "Yazım denetimi önerilerini göster"
+
+#: ../settings.ui.h:103
+msgid "Check spelling of the word at or before the cursor."
+msgstr "Kelimenin yazımını imleçten önce veya sonra denetle."
+
+#: ../settings.ui.h:104
+msgid "_Learn from typed text"
+msgstr "Yazılan _metinden öğren"
+
+#: ../settings.ui.h:105
+msgid ""
+"Remember new words, their recency and frequency to improve the suggestions "
+"over time."
+msgstr ""
+"Yeni kelimeleri, ne zaman kullanıldığını ve kullanım sıklığını önerileri "
+"zamanla geliştirmek çin hatırla."
+
+#: ../settings.ui.h:106
+msgid "Insert word _separators"
+msgstr "Kelime _ayırıcıları ekle"
+
+#: ../settings.ui.h:107
+msgid ""
+"Add and remove spaces when inserting word suggestions followed by "
+"punctuation characters."
+msgstr ""
+"Noktalama işaretlerinden önce veya sonra önerilen kelime ekleyeceğiniz zaman "
+"boşluk ekleme ve silme işlemi yapın."
+
+#: ../settings.ui.h:108
+msgid "Options"
+msgstr "Seçenekler"
+
+#: ../settings.ui.h:109
+msgid "Show lan_guage switcher"
 msgstr ""
 
-#. ##############
-#: ../Onboard/SnippetView.py:20
-msgid "<Enter label>"
-msgstr "<Etiket girin>"
-
-#: ../Onboard/SnippetView.py:21
-msgid "<Enter text>"
-msgstr "<Metin girin>"
-
-#: ../Onboard/SnippetView.py:33
-msgid "Button Number"
-msgstr "Bası Sayısı"
-
-#: ../Onboard/SnippetView.py:40
-msgid "Button Label"
-msgstr "Bası Etiketi"
-
-#: ../Onboard/SnippetView.py:49
-msgid "Snippet Text"
-msgstr "Ön bilgi Metni"
-
-#: ../Onboard/SnippetView.py:94
-msgid "Must be an integer number"
-msgstr "Bir tam sayı olmalı"
-
-#: ../Onboard/SnippetView.py:103
-#, python-format
-msgid "Snippet %d is already in use."
-msgstr "Parça %d kullanımda."
-
-#: ../Onboard/KeyboardWidget.py:1400
-msgid "New snippet"
-msgstr "Yeni parçacık"
-
-#: ../Onboard/KeyboardWidget.py:1404
-msgid "_Save snippet"
-msgstr "Parçacığı _kaydet"
-
-#: ../Onboard/KeyboardWidget.py:1416
-msgid "Enter a new snippet for this button:"
-msgstr "Bu buton için yeni bir parçacık atayın:"
-
-#: ../Onboard/KeyboardWidget.py:1422
-msgid "_Button label:"
-msgstr "_Düğme etiketi:"
-
-#: ../Onboard/KeyboardWidget.py:1426
-msgid "S_nippet:"
-msgstr "_Parçacık:"
-
-#: ../Onboard/KeyboardWidget.py:1508
-msgid " - System Language"
+#: ../settings.ui.h:110
+msgid "Show a button for language selection."
 msgstr ""
 
-#: ../Onboard/KeyboardWidget.py:1542
-msgid "Other _Languages"
+#: ../settings.ui.h:111
+msgid "Show button to pause learning"
 msgstr ""
 
-#: ../Onboard/KeyboardWidget.py:1544
-msgid "_Languages"
+#: ../settings.ui.h:112
+msgid "Words typed while this button is pressed won't be remembered."
 msgstr ""
+
+#: ../settings.ui.h:113
+msgid "Buttons"
+msgstr "Düğmeler"
+
+#: ../settings.ui.h:114
+msgid "Word Suggestions"
+msgstr "Kelime Önerileri"
+
+#: ../settings.ui.h:115
+msgid "Auto-capitalize while typing"
+msgstr "Yazarken baş harfleri otomatik büyüt"
+
+#: ../settings.ui.h:116
+msgid "Automatically capitalize sentence begins and name words."
+msgstr "Cümle başlarını ve isimleri otomatik olarak büyük harfle başlat."
+
+#: ../settings.ui.h:117
+msgid "Auto-correct spelling"
+msgstr "Otomatik yazım denetimi"
+
+#: ../settings.ui.h:118
+msgid "Automatically correct the last word."
+msgstr "Son kelimeyi otomatik olarak düzelt."
+
+#: ../settings.ui.h:119
+msgid "The spell check engine to use."
+msgstr "Kullanılacak olan yazım denetimi motoru."
+
+#: ../settings.ui.h:120
+msgid "Spell-check backend:"
+msgstr "Yazım denetimi arkaucu:"
+
+#: ../settings.ui.h:121
+msgid "Auto-correction"
+msgstr "Otomatik düzeltme"
+
+#: ../settings.ui.h:122
+msgid "_Delay:"
+msgstr "_Gecikme:"
+
+#: ../settings.ui.h:123
+msgid "_Motion threshold:"
+msgstr "_Hareket eşiği:"
+
+#: ../settings.ui.h:124
+msgid "Time in seconds before a click is triggered."
+msgstr "Tıklama tetiklenmeden önce saniye cinsinden geçecek süre."
+
+#: ../settings.ui.h:125
+msgid "Distance in pixels before movement will be recognized."
+msgstr "Hareketin algılanması için piksel biriminde mesaefe"
+
+#: ../settings.ui.h:126
+msgid "Hide hover click window"
+msgstr "Üzerinde tıklama gizleme penceresi"
+
+#: ../settings.ui.h:127
+msgid "Hide the system-provided hover click window while Onboard is running."
+msgstr ""
+"Ekran Klavyesi çalışırken sistem tarafından sağlanan üzerindeyken tıklama "
+"penceresini gizle."
+
+#: ../settings.ui.h:128
+msgid "Enable click type window on exit"
+msgstr "Çıkışta tıkla-yaz penceresini etkinleştir"
+
+#: ../settings.ui.h:129
+msgid ""
+"Always enable the system-provided hover click window when exiting Onboard."
+msgstr ""
+"Ekran Klavyesi'nden çıkarken her zaman sistem tarafından sağlanan "
+"üzerindeyken tıklama penceresini etkinleştir."
+
+#: ../settings.ui.h:130
+msgid "Hover Click"
+msgstr "Vurgulu Tıklama"
+
+#: ../settings.ui.h:131
+msgid "Enable  keyboard _scanning"
+msgstr "Klavye _taramasını etkinleştir"
+
+#: ../settings.ui.h:132
+msgid "Sc_anner Settings"
+msgstr "Ta_rayıcı Ayarları:"
+
+#: ../settings.ui.h:133
+msgid "Keyboard Scanning"
+msgstr "Klavye Taraması"
 
 #: ../settings_theme_dialog.ui.h:1
 msgid "Customize Theme"
@@ -1880,98 +1980,35 @@ msgstr "Etiket geçersizleştirme"
 msgid "Labels"
 msgstr "Etiketler"
 
-#: ../Onboard/utils.py:324
-msgid "New Input Device"
-msgstr "Yeni Girdi Aygıtı"
+#. ##############
+#: ../Onboard/SnippetView.py:20
+msgid "<Enter label>"
+msgstr "<Etiket girin>"
 
-#: ../Onboard/utils.py:325
-msgid "Onboard has detected a new input device"
-msgstr "Ekran Klavyesi yeni bir girdi aygıtı algıladı"
+#: ../Onboard/SnippetView.py:21
+msgid "<Enter text>"
+msgstr "<Metin girin>"
 
-#: ../Onboard/utils.py:334
-msgid "Do you want to use this device for keyboard scanning?"
-msgstr "Klavye taraması için bu aygıtı kullanmak istiyor musunuz?"
+#: ../Onboard/SnippetView.py:33
+msgid "Button Number"
+msgstr "Bası Sayısı"
 
-#: ../Onboard/utils.py:338
-msgid "Use device"
-msgstr "Aygıtı kullan"
+#: ../Onboard/SnippetView.py:40
+msgid "Button Label"
+msgstr "Bası Etiketi"
 
-#: ../Onboard/utils.py:1669
-msgid "failed to create directory '{}': {}"
-msgstr ""
+#: ../Onboard/SnippetView.py:49
+msgid "Snippet Text"
+msgstr "Ön bilgi Metni"
 
-#: ../Onboard/Appearance.py:112
-#, python-brace-format
-msgid "Color scheme for theme '{filename}' not found"
-msgstr "'{filename}' teması için renk şeması bulunamadı"
+#: ../Onboard/SnippetView.py:94
+msgid "Must be an integer number"
+msgstr "Bir tam sayı olmalı"
 
-#: ../Onboard/Appearance.py:332
-#, python-brace-format
-msgid "Error loading theme '{filename}'. {exception}: {cause}"
-msgstr "Tema yüklenirken hata: '{filename}'. {exception}: {cause}"
-
-#: ../Onboard/Appearance.py:406
-msgid "Error saving "
-msgstr "Hata kaydı "
-
-#: ../Onboard/Appearance.py:828
-#, python-brace-format
-msgid ""
-"Loading legacy color scheme format '{old_format}', please consider upgrading "
-"to current format '{new_format}': '{filename}'"
-msgstr ""
-"Önceki renk şeması biçimi yükleniyor: '{old_format}', lütfen şimdiki biçime "
-"yükseltirken düşünün: '{new_format}': '{filename}'"
-
-#: ../Onboard/Appearance.py:848
-#, python-brace-format
-msgid "Error loading color scheme '{filename}'. {exception}: {cause}"
-msgstr "Renk şeması yüklenirken hata: '{filename}'. {exception}: {cause}"
-
-#: ../Onboard/Appearance.py:925 ../Onboard/Appearance.py:1057
-msgid ""
-"Duplicate key_id '{}' found in color scheme file. Key_ids must occur only "
-"once."
-msgstr ""
-"Renk şema dosyasında bulunan '{}' key_id çoğaltılıyor. Key_id 'leri sadece "
-"bir kere oluşmalı."
-
-#: ../Onboard/LayoutLoaderSVG.py:134
-msgid ""
-"Loading legacy layout, format '{}'. Please consider upgrading to current "
-"format '{}'"
-msgstr ""
-"Kalıt yerleşimi yükleniyor, biçim '{}'. Lütfen güncel biçimi '{}' "
-"yükseltmeyi düşünün"
-
-#: ../Onboard/LayoutLoaderSVG.py:374
-msgid "Ignoring key '{}'. No svg filename defined."
-msgstr "'{}' anahtarı göz ardı ediliyor. Hiçbir svg dosya adı tanımlanmadı."
-
-#: ../Onboard/LayoutLoaderSVG.py:593
-msgid "Snippet {}"
-msgstr "Parçaçık {}"
-
-#. i18n: full string is "Snippet n, unassigned"
-#: ../Onboard/LayoutLoaderSVG.py:597
-msgid ", unassigned"
-msgstr ", atanmamış"
-
-#: ../Onboard/LayoutLoaderSVG.py:906
-msgid "copying layout '{}' to '{}'"
-msgstr "düzen '{}' den '{}' e kopyalanıyor"
-
-#: ../Onboard/LayoutLoaderSVG.py:926
-msgid "copy_layouts failed, unsupported layout format '{}'."
-msgstr "copy_layouts başarısız, desteklenmeyen yerleşim düzeni '{}'."
-
-#: ../Onboard/LayoutLoaderSVG.py:969
-msgid "copying svg file '{}' to '{}'"
-msgstr "'{}' svg dosyası '{}' 'a kopyalanıyor"
-
-#: ../Onboard/WPEngine.py:427
-msgid "Failed to load language model '{}': {} ({})"
-msgstr ""
+#: ../Onboard/SnippetView.py:103
+#, python-format
+msgid "Snippet %d is already in use."
+msgstr "Parça %d kullanımda."
 
 #: ../data/onboard.desktop.in.h:2
 msgid "Onboard onscreen keyboard"
@@ -1981,56 +2018,8 @@ msgstr "Ekran Klavyesi"
 msgid "Flexible onscreen keyboard for GNOME"
 msgstr "GNOME için esnek ekran klavyesi"
 
-#: ../settings_docking_dialog.ui.h:1
-msgid "Top"
-msgstr "Üst"
-
-#: ../settings_docking_dialog.ui.h:2
-msgid "Bottom"
-msgstr "Alt"
-
-#: ../settings_docking_dialog.ui.h:3
-msgid "Docking settings"
-msgstr "Yapıştırma ayarları"
-
-#: ../settings_docking_dialog.ui.h:4
-msgid "Shrink workarea"
-msgstr "Çalışma alanını daralt"
-
-#: ../settings_docking_dialog.ui.h:5
-msgid "Shrink the available space for maximized windows."
-msgstr "Büyütülmüş pencereler için kullanılabilir alanı daralt."
-
-#: ../settings_docking_dialog.ui.h:6
-msgid "Expand on landscape screens"
-msgstr "Yatay ekranlarda genişlet"
-
-#: ../settings_docking_dialog.ui.h:7
-msgid "Expand keyboard to the width of the workarea."
-msgstr "Klavyeyi çalışma alanı genişliğine büyüt"
-
-#: ../settings_docking_dialog.ui.h:8
-msgid "Expand on portrait screens"
-msgstr "Dikey ekranlarda genişlet"
-
-#: ../settings_docking_dialog.ui.h:9
-msgid "Dock to screen edge:"
-msgstr "Ekran kenarına yapıştır:"
-
 #~ msgid "Atspi unavailable, word suggestions not fully functional"
 #~ msgstr "Atspi bulunmuyor, metin önerileri işlevsel değil"
-
-#~ msgid "Enter name for personalised layout"
-#~ msgstr "Kişiselleştirilmiş düzen için isim girin"
-
-#~ msgid "Onboard layout files"
-#~ msgstr "Ekran Klavyesi yerleşim dosyaları"
-
-#~ msgid "All files"
-#~ msgstr "Tüm dosyalar"
-
-#~ msgid "Atspi unavailable, auto-hide won't be available"
-#~ msgstr "Atspi kullanılabilir değil, otomatik gizleme kullanılamayacak"
 
 #~ msgid "Error loading "
 #~ msgstr "Yüklerken hata oluştu "
@@ -2038,455 +2027,23 @@ msgstr "Ekran kenarına yapıştır:"
 #~ msgid "_Personalize"
 #~ msgstr "_Kişiselleştir"
 
-#~ msgid "_Quit"
-#~ msgstr "_Çık"
+#~ msgid "Atspi unavailable, auto-hide won't be available"
+#~ msgstr "Atspi kullanılabilir değil, otomatik gizleme kullanılamayacak"
 
-#~ msgid ""
-#~ "Switch\n"
-#~ "Buttons"
-#~ msgstr ""
-#~ "Anahtar\n"
-#~ "Düğmeler"
+#~ msgid "Enter name for personalised layout"
+#~ msgstr "Kişiselleştirilmiş düzen için isim girin"
 
-#~ msgid "Show settings"
-#~ msgstr "Ayarları göster"
+#~ msgid "Add Layout"
+#~ msgstr "Düzen Ekle"
 
-#~ msgid "Personalise current layout"
-#~ msgstr "Güncel düzeni kişiselleştir"
+#~ msgid "Onboard layout files"
+#~ msgstr "Ekran Klavyesi yerleşim dosyaları"
 
-#~ msgid "Open layout folder"
-#~ msgstr "Düzen dizinini aç"
+#~ msgid "All files"
+#~ msgstr "Tüm dosyalar"
 
-#~ msgid "onBoard"
-#~ msgstr "onBoard"
+#~ msgid "Atspi unavailable, word prediction may not be fully functional"
+#~ msgstr "Atspi mevcut değil, kelime tahmini tam olarak çalışmayabilir"
 
-#~ msgid "Show onboard when _unlocking the screen"
-#~ msgstr "Ekran kilidini açarken tahtadayı (onboard) göster"
-
-#~ msgid "Show floating _icon when onboard is hidden"
-#~ msgstr "tahtada (onboard) gizliyken, yüzen simgeyi göster"
-
-#~ msgid "Start onboard _minimized"
-#~ msgstr "Tahtadayı (onboard) küçültülmüş durumda başlat"
-
-#~ msgid ""
-#~ "Onboard is configured to appear with the dialog to unlock the screen; for "
-#~ "example to dismiss the password-protected screensaver.\n"
-#~ "\n"
-#~ "However the system is not configured anymore to use onboard to unlock the "
-#~ "screen. A possible reason can be that another application configured the "
-#~ "system to use something else.\n"
-#~ "\n"
-#~ "Would you like to reconfigure the system to show onboard when unlocking "
-#~ "the screen?"
-#~ msgstr ""
-#~ "Yerleşik, ekranı açmayı diyalogda göstermesi için yapılandırıldı. "
-#~ "Örneğin, şifre koruma ekran koruyucuyu devre dışı bırakmak için.\n"
-#~ "\n"
-#~ "Bununla beraber sistem, ekranı açmak için artık yerleşiği "
-#~ "yapılandırılmaz. Olası sebep, sistemdeki diğer yapılı uygulama başka "
-#~ "birşeyi kullanmasıdır.\n"
-#~ "\n"
-#~ "Sistemini, ekran açılırken yerleşiği gösterecek şekilde tekrar "
-#~ "yapılandırmak ister misiniz?"
-
-#~ msgid "Enter text for snippet"
-#~ msgstr "Ufak parça için metin girin"
-
-#~ msgid "onBoard onscreen keyboard settings"
-#~ msgstr "Yerleşik ekranüstü klavye ayarları"
-
-#~ msgid "onBoard Settings"
-#~ msgstr "Tümleşik Ayarlar"
-
-#~ msgid "Change onBoard settings"
-#~ msgstr "Tümleşik ayarları değiştir"
-
-#~ msgid "onBoard onscreen keyboard"
-#~ msgstr "Tümleşik ekran klavyesi"
-
-#~ msgid "_Show icon in system tray to hide/show onboard"
-#~ msgstr ""
-#~ "Tümleşik göster/gizle seçeneği için simgeyi sistem sekmesinde göster"
-
-#~ msgid "color scheme '%s' does not exist"
-#~ msgstr "'%s' renk düzeni yok"
-
-#~ msgid "theme '%s' does not exist"
-#~ msgstr "'%s' teması yok"
-
-#~ msgid "Startup Options"
-#~ msgstr "Başlangıç Seçenekleri"
-
-#~ msgid "Failed to load Onboard icon."
-#~ msgstr "Onboard simgesi yükleniken hata oluştu."
-
-#~ msgid ""
-#~ "<b><i>Scanning mode only works with layouts which are designed for the "
-#~ "purpose.</i></b>"
-#~ msgstr ""
-#~ "<b><i>Tarama kipi yalnızca amaç için tasarlanmış düzenler ile çalışır.</"
-#~ "i></b>"
-
-#~ msgid "Interval"
-#~ msgstr "Aralık"
-
-#~ msgid "Scanning mode"
-#~ msgstr "Tarama kipi"
-
-#~ msgid "Personalise _current layout"
-#~ msgstr "_Geçerli düzeni kişiselleştir"
-
-#~ msgid "Startup Option"
-#~ msgstr "Başlangıç Seçeneği"
-
-#~ msgid "_Open custom layouts folder"
-#~ msgstr "Özel yerleşim dizinini _aç"
-
-#~ msgid " - middle/right click buttons disabled"
-#~ msgstr " - orta/sağ tıklama düğmeleri devre dışı"
-
-#~ msgid "Xlib unavailable%s\n"
-#~ msgstr "Xlib mevcut değil%s\n"
-
-#~ msgid "XInput extension unavailable%s\n"
-#~ msgstr "XInput eklentisi mevcut değil%s\n"
-
-#~ msgid "<enter text>"
-#~ msgstr "<metin gir>"
-
-#~ msgid "Snippet assigned to button %d"
-#~ msgstr "Ön bilgi %d tuşuna atandı"
-
-#~ msgid "Delete"
-#~ msgstr "Sil"
-
-#~ msgid "-"
-#~ msgstr "-"
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "Independent size"
-#~ msgstr "Bağımsız ebatlar"
-
-#~ msgid "Key"
-#~ msgstr "Kısayol"
-
-#~ msgid "Label font"
-#~ msgstr "Etiket yazı tipi"
-
-#~ msgid "Label override"
-#~ msgstr "Etiketi geçersiz kıl"
-
-#~ msgid "Roundness"
-#~ msgstr "keskinlik"
-
-#~ msgid "Failed to load Onboard icon"
-#~ msgstr "Onboard simgesini yükleme başarısız"
-
-#~ msgid "Please enter a new snippet for this button."
-#~ msgstr "Lütfen bu düğme için yeni bir snippet giriniz."
-
-#~ msgid "Units for canvas height and width must currently be px (pixels)."
-#~ msgstr ""
-#~ "Taslak yükseklik ve genişlik birimleri geçerli px(pikseller) olmalı."
-
-#~ msgid "Scanning"
-#~ msgstr "Tarama"
-
-#~ msgid ""
-#~ "Show a floating icon on the desktop when onboard is hidden. A click on "
-#~ "the icon makes onboard reappear."
-#~ msgstr ""
-#~ "Onboard gizliyken masaüstünde simge göster. Simgeye tıklamak onboard'ı "
-#~ "görünür hale getirir."
-
-#~ msgid "Start onboard hidden."
-#~ msgstr "Tahtadayı gizli başlat"
-
-#~ msgid "Snippet"
-#~ msgstr "Parçacık"
-
-#~ msgid ""
-#~ "Pg\n"
-#~ "Up"
-#~ msgstr ""
-#~ "Pg\n"
-#~ "Up"
-
-#~ msgid ""
-#~ "Pg\n"
-#~ "Dn"
-#~ msgstr ""
-#~ "Pg\n"
-#~ "Dn"
-
-#~ msgid ""
-#~ "Nm\n"
-#~ "Lk"
-#~ msgstr ""
-#~ "Nm\n"
-#~ "Lk"
-
-#~ msgid "ESC"
-#~ msgstr "ESC"
-
-#~ msgid "%s appears in scanning definition only"
-#~ msgstr "%s sadece tarama tanımında belirir"
-
-#~ msgid "Show the status item. A click on that icon hides or shows onboard."
-#~ msgstr ""
-#~ "Durum öğesini göster. Bu simgeye bir tık yerleşiği gizler ya da gösterir."
-
-#~ msgid ""
-#~ "Middle\n"
-#~ "Click"
-#~ msgstr ""
-#~ "Orta\n"
-#~ "Tık"
-
-#~ msgid ""
-#~ "Right\n"
-#~ "Click"
-#~ msgstr ""
-#~ "Sağ\n"
-#~ "Tık"
-
-#~ msgid ""
-#~ "Show onboard when the dialog to unlock the screen appears; this way "
-#~ "onboard can be used for example to enter the password to dismiss the "
-#~ "screensaver when it is set to ask for it."
-#~ msgstr ""
-#~ "Ekran kilidini açmak için iletişim kutusu belirdiğinde tahtadayı "
-#~ "(onboard) göster; böylece örneğin ekran koruyucuyu kaldırmak için parola "
-#~ "yazmak gerektiğinde  tahtada (onboard) kullanılabilir."
-
-#~ msgid ""
-#~ "Some password dialogs disable the area around them, making it impossible "
-#~ "to click on onboard. By activating this option, these dialogs behave as "
-#~ "normal windows and the area around the dialog remains active. This option "
-#~ "is also available in the Assistive Technologies control panel."
-#~ msgstr ""
-#~ "Kimi parola iletişim kutuları; çevrelerindeki bölgeyi edilgenleştirerek, "
-#~ "tahtadaya (onboard) basılmasını olanaksızlaştırırlar. Bu seçeneği "
-#~ "etkinleştirdiğinizde; bu iletişim kutuları sıradan pencereler gibi "
-#~ "davranırlar ve çevrelerindeki bölge etkin kalır.  Bu seçenek Yardımcı "
-#~ "Uygulayımbilimleri (Assistive Technologies) denetim masasında da var."
-
-#~ msgid "_Password dialogs as normal windows"
-#~ msgstr "_Parola iletişim kutuları sıradan pencereler gibi"
-
-#~ msgid "Option When Hidden"
-#~ msgstr "Gizliykenki Seçenek"
-
-#~ msgid "Looking for system defaults in %s"
-#~ msgstr "%s içerisinde sistem varsayılanları aranıyor"
-
-#~ msgid "Loading system defaults from %s."
-#~ msgstr "%s öğesinden sistem varsayılanları yükleniyor."
-
-#~ msgid "Can't find file '%s'. Retrying as %s basename."
-#~ msgstr "'%s' dosyası bulunamamakta. %s taban ad alınarak yeniden deneniyor."
-
-#~ msgid "Can't load basename '%s' loading default %s instead"
-#~ msgstr "'%s' basename'i yüklenenemedi onun yerine varsayılan %s yükleniyor."
-
-#~ msgid "Unable to find %s '%s'"
-#~ msgstr "%s '%s' bulunamıyor"
-
-#~ msgid "Start Onboard _minimized"
-#~ msgstr "Onboard'ı _simge durumunda başlat"
-
-#~ msgid "Themes"
-#~ msgstr "Temalar"
-
-#~ msgid ""
-#~ "The theme file already exists.\n"
-#~ "'%s'\n"
-#~ "\n"
-#~ "Overwrite it anyway?"
-#~ msgstr ""
-#~ "Tema dosyası zaten bulunuyor.\n"
-#~ "'%s'\n"
-#~ "\n"
-#~ "Yine de üzerine yazılsın mı?"
-
-#~ msgid "Delete selected theme file?"
-#~ msgstr "Seçilen tema dosyası silinsin mi?"
-
-#~ msgid "Color scheme for theme '%s' not found"
-#~ msgstr "'%s' teması için renk şeması bulunamadı"
-
-#~ msgid "setting keyboard transparency to {}%"
-#~ msgstr "Klavye şeffaflığını  {}%'a ayarla"
-
-#~ msgid "On Inactivity"
-#~ msgstr "Pasif"
-
-#~ msgid "%s '%s' not found yet, retrying in default paths"
-#~ msgstr "%s '%s'  henüz bulanamadı,öngörülen yolları deneyin."
-
-#~ msgid "{} '{}' found."
-#~ msgstr "{} '{}' bulundu."
-
-#~ msgid "failed to find %s '%s'"
-#~ msgstr "%s '%s' bulunamadı."
-
-#~ msgid "Universal Access Settings"
-#~ msgstr "Evrensel Erişim Ayarları"
-
-#~ msgid "Always enable the click-type window on exit"
-#~ msgstr "Çıkışta her zaman tıklama-tipi pencereyi etkinleştir"
-
-#~ msgid "Hide click-type window"
-#~ msgstr "Tıklama-tipi pencereyi sakla"
-
-#~ msgid "I_nterval:"
-#~ msgstr "A_ralık:"
-
-#~ msgid "Show tool-tips for the keyboard's buttons."
-#~ msgstr "Klavye tuşları için araç ipuçlarını (tool-tips) göster."
-
-#~ msgid "Show _tool-tips"
-#~ msgstr "A_raç ipuçlarını göster"
-
-#~ msgid "Found system default '{}={}'"
-#~ msgstr "'{}={}' sistem varsayılanı olarak bulundu"
-
-#~ msgid "Enable _scanning mode"
-#~ msgstr "_Tarama modunu etkinleştir"
-
-#~ msgid ""
-#~ "Always enable the system provided click-type window when exiting Onboard."
-#~ msgstr ""
-#~ "Onboard'dan çıkışta her zaman sistem tarafından sağlanmış tıklama-tipi "
-#~ "pencereyi etkinleştir."
-
-#~ msgid "Hide the system provided click-type window while Onboard is running."
-#~ msgstr ""
-#~ "Onboard çalışırken, sistemin sağladığı tıklama-tipi pencereyi sakla."
-
-#~ msgid "unable to locate '%s', loading default %s instead"
-#~ msgstr "'%s' in yeri belirlenemiyor, onun yerine varsayılan %s yükleniyor"
-
-#~ msgid "Show Onboard when _unlocking the screen"
-#~ msgstr "Ekran kilidini _açarken Onboard'u göster."
-
-#~ msgid "layout '%s' does not exist"
-#~ msgstr "böyle bir '%s' düzeni bulunmuyor"
-
-#~ msgid "_Direction:"
-#~ msgstr "_Konum:"
-
-#~ msgid "Ignoring key '{}'. Not found in '{}'."
-#~ msgstr "'{}' anahtarı göz ardı ediliyor. '{}' içinde bulunamadı."
-
-#~ msgid "screen changed, supports_alpha={}"
-#~ msgstr "ekran değişti, supports_alpha={}"
-
-#~ msgid "Style"
-#~ msgstr "Biçim"
-
-#~ msgid "launching '{}'"
-#~ msgstr "'{}' başlatılıyor"
-
-#~ msgid "Show/Hide Options"
-#~ msgstr "Seçenekleri Göster/Gizle"
-
-#~ msgid "_Universal Access Panel"
-#~ msgstr "_Genel Giriş Paneli"
-
-#~ msgid ""
-#~ "Loading legacy layout format '{}'. Please consider upgrading to current "
-#~ "format '{}'"
-#~ msgstr ""
-#~ "Önceki '{}' yerleşim biçimi geri yükleniyor.  Lütfen mevcut '{}' biçimine "
-#~ "yükseltmeyi unutmayın."
-
-#~ msgid "Enable Hover Click window on _exit"
-#~ msgstr "Çı_kışta Üzerindeyken Tıklama penceresini etkinleştir"
-
-#~ msgid "_Hide Hover Click window"
-#~ msgstr "Üzerindeyken Tıklama penceresini _gizle"
-
-#~ msgid "Releasing still pressed key '{}'"
-#~ msgstr "Basılı '{}' tuşu bırakılıyor"
-
-#~ msgid "Refreshing pango layout, new font dpi setting is '{}'"
-#~ msgstr "Pango düzeni yenileniyor, yeni yazı tipi dpi değeri: '{}'"
-
-#~ msgid "Failed to migrate user directory. "
-#~ msgstr "Kullanici Dizini geçirme işleminde hata "
-
-#~ msgid "Background"
-#~ msgstr "Arkaplan"
-
-#~ msgid ""
-#~ "Scanning mode only works with layouts which are designed for the purpose."
-#~ msgstr ""
-#~ "Tarama modu, sadece bu amaç için tasarlanmış yerleşim düzenleri ile "
-#~ "çalışır."
-
-#~ msgid "Lock"
-#~ msgstr "Kilitle"
-
-#~ msgid "Double-click to lock"
-#~ msgstr "Kilitlemek için çift-tıklayın"
-
-#~ msgid "Window management"
-#~ msgstr "Pencere Yönetimi"
-
-#~ msgid "Keyboard options"
-#~ msgstr "Klavye seçenekleri"
-
-#~ msgid "Multi-touch"
-#~ msgstr "Çoklu dokunuş"
-
-#~ msgid "Single-touch"
-#~ msgstr "Tek dokunuş"
-
-#~ msgid "Release - hold for long press"
-#~ msgstr "Bırak - uzun basmak için basılı tut"
-
-#~ msgid "Press & release - hold for key-repeat"
-#~ msgstr "Bas ve bırak - tuş tekrarı için basılı tut"
-
-#~ msgid "_Docking settings"
-#~ msgstr "_Yapıştırma ayarları."
-
-#~ msgid "Enable docking"
-#~ msgstr "Yapıştırmayı etkinleştir"
-
-#~ msgid "Send _key strokes on:"
-#~ msgstr "_Tuş vuruşlarını şurada gönder:"
-
-#~ msgid "Modifier auto-_release delay:"
-#~ msgstr "Otomatik _bırakma düzenleyici gecikmesi:"
-
-#~ msgid ""
-#~ "Choose between key-repeat or long-press menus. Only affects alpha-numeric "
-#~ "keys."
-#~ msgstr ""
-#~ "Tuş tekrarlama veya uzun basma menüleri arasında seçim yapın. Sadece alfa "
-#~ "sayısal tuşları etkiler."
-
-#~ msgid "Cycle"
-#~ msgstr "Döngü"
-
-#~ msgid "Latch"
-#~ msgstr "Mandal"
-
-#~ msgid ""
-#~ "Swap the scan actions after every key activation. The Step acticon will "
-#~ "become the Activate action and vice versa."
-#~ msgstr ""
-#~ "Her tuş aktivasyonundan sonra tarama eylemlerini değiştir. Adım eylemi "
-#~ "Etkinleştir eylemi veya tam tersi olacak."
-
-#~ msgid ""
-#~ "The time the scanner rests on a key or group  before moving to the next. "
-#~ "(in seconds)"
-#~ msgstr ""
-#~ "Tarayıcının sonrakine geçmeden önce bir anahtarda veya grupta beklediği "
-#~ "süre. (saniye olarak)"
+#~ msgid "_System Language"
+#~ msgstr "_Sistem Dili"

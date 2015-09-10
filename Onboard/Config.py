@@ -11,13 +11,15 @@ import locale
 from shutil import copytree
 from optparse import OptionParser
 
-from gi.repository import Gtk, Gio
+from gi.repository import Gtk, Gio, GLib
 
 from Onboard.utils          import show_confirmation_dialog, Version, \
                                    unicode_str, XDGDirs, chmodtree, \
-                                   Process
-from Onboard.definitions    import *
-from Onboard.WindowUtils    import Handle, DockingEdge
+                                   Process, hexcolor_to_rgba
+from Onboard.definitions    import StatusIconProviderEnum, \
+                                   InputEventSourceEnum, \
+                                   TouchInputEnum, \
+                                   Handle, DockingEdge
 from Onboard.ConfigUtils    import ConfigObject
 from Onboard.ClickSimulator import CSMousetweaks0, CSMousetweaks1
 from Onboard.Exceptions     import SchemaError
@@ -162,6 +164,12 @@ class Config(ConfigObject):
     # from launcher once, the WM won't allow to unminimize onboard
     # itself anymore for auto-show. (Precise)
     allow_iconifying = False
+
+    # Gdk window scaling factor
+    window_scaling_factor = 1.0
+
+    _xembed_background_rgba = None
+    _xembed_background_image_enabled = None
 
     def __new__(cls, *args, **kwargs):
         """
@@ -343,6 +351,9 @@ class Config(ConfigObject):
 
         # initialize all property values
         used_system_defaults = self.init_properties(self.options)
+
+        self._update_xembed_background_rgba()
+        self._update_xembed_background_image_enabled()
 
         # Make sure there is a 'Default' entry when tracking the system theme.
         # 'Default' is the theme used when encountering a so far unknown
@@ -554,6 +565,8 @@ class Config(ConfigObject):
         if sysdef in ["superkey-label", \
                       "superkey-label-independent-size",
                       "xembed-aspect-change-range",
+                      "xembed-background-color",
+                      "xembed-background-image-enabled",
                       "xembed-unity-greeter-offset-x"]:
             return value
         else:
@@ -795,7 +808,8 @@ class Config(ConfigObject):
                          "recommended that you log out and back in "
                          "for it to reach its full potential.\n\n"
                          "Enable accessibility now?")
-            reply = show_confirmation_dialog(question, parent)
+            reply = show_confirmation_dialog(question, parent,
+                                             self.is_force_to_top())
             if not reply == True:
                 return False
 
@@ -976,14 +990,65 @@ class Config(ConfigObject):
 
 
     def get_desktop_background_filename(self):
+        schema="org.gnome.desktop.background"
+        key = "picture-uri"
+
         try:
-            s = Gio.Settings(schema="org.gnome.desktop.background")
-            fn = s.get_string("picture-uri")
-        except:
+            s = Gio.Settings(schema=schema)
+            fn = s.get_string(key)
+        except Exception as ex: # private exception gi._glib.GError
             fn = ""
-        fn = fn.replace("file://", "")
+            _logger.error("failed to read desktop background from {} {}: {}" \
+                          .format(schema, key, unicode_str(ex)))
+        if fn:
+            try:
+                try:
+                    fn, error = GLib.filename_from_uri(fn)
+                except TypeError: # broken introspection on Precise
+                    fn = GLib.filename_from_uri(fn, "")
+                    error = ""
+                if error:
+                    fn = ""
+            except Exception as ex: # private exception gi._glib.GError
+                _logger.error("failed to unescape URI for desktop background "
+                              "'{}': {}" \
+                            .format(fn, unicode_str(ex)))
         return fn
 
+    def get_xembed_aspect_change_range(self):
+        aspect_change_range = [0.0, 1000.0]
+        value = self.system_defaults.get("xembed_aspect_change_range")
+        if not value is None:
+            value = value[1:-1]
+            begin, end = value.split(",")
+            aspect_change_range[0] = float(begin)
+            aspect_change_range[1] = float(end)
+        return aspect_change_range
+
+    def get_xembed_unity_greeter_offset_x(self):
+        offset = self.system_defaults.get("xembed_unity_greeter_offset_x")
+        if not offset is None:
+            try:
+                offset = float(offset)
+            except ValueError:
+                offset = None
+        return offset
+
+    def get_xembed_background_rgba(self):
+        return self._xembed_background_rgba
+
+    def _update_xembed_background_rgba(self):
+        value = self.system_defaults.get("xembed_background_color")
+        self._xembed_background_rgba = hexcolor_to_rgba(value[1:-1]) \
+                                       if not value is None else None
+
+    def get_xembed_background_image_enabled(self):
+        return self._xembed_background_image_enabled
+
+    def _update_xembed_background_image_enabled(self):
+        value = self.system_defaults.get("xembed_background_image_enabled")
+        self._xembed_background_image_enabled = value == "True" \
+                                                if not value is None else None
     def _get_install_dir(self):
         result = None
 

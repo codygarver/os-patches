@@ -1,8 +1,8 @@
-Index: onboard-1.0.0/onboard-defaults.conf
+Index: onboard-1.0.1~1784~trusty/onboard-defaults.conf
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ onboard-1.0.0/onboard-defaults.conf	2014-04-04 20:04:48.271629460 +0200
-@@ -0,0 +1,220 @@
++++ onboard-1.0.1~1784~trusty/onboard-defaults.conf	2014-03-07 17:42:57.141245003 +0100
+@@ -0,0 +1,229 @@
 +#
 +# Onboard system defaults
 +#
@@ -84,11 +84,20 @@ Index: onboard-1.0.0/onboard-defaults.conf
 +# Enable aspect correction and fake transparency in gnome-screensaver
 +# and unity-greeter. Remove this key to have Onboard stretch from
 +# side to side again.
-+xembed-aspect-change-range=[0, 1.6]
++xembed-aspect-change-range=[0, 1.15]
 +
-+# Position of the keyboard in pixels from the left screen edge.
-+# Remove this to center the keyboard in unity-greeter.
++# Position of the keyboard in unity-greeter in pixels from
++# the left screen edge. Remove this to center the keyboard.
 +xembed-unity-greeter-offset-x=85.0
++
++# Color of the background bar that is rendered on top of the
++# background image in unity-greeter and gnome-screensaver.
++# If not specified, the color is taken from the keyboard's background color.
++xembed-background-color='#0000007F'
++
++# Enable drawing the current GNOME background image as background in
++# unity-greeter and gnome-screensaver.
++xembed-background-image-enabled=True
 +
 +# Other available keys:
 +#
@@ -223,10 +232,10 @@ Index: onboard-1.0.0/onboard-defaults.conf
 +#disable-touch-handles=False
 +#disable-keys=[["CTRL", "LALT", "F[0-9]+"]]
 +
-Index: onboard-1.0.0/setup.py
+Index: onboard-1.0.1~1784~trusty/setup.py
 ===================================================================
---- onboard-1.0.0.orig/setup.py	2014-04-04 20:03:05.611626193 +0200
-+++ onboard-1.0.0/setup.py	2014-04-04 20:03:05.607626193 +0200
+--- onboard-1.0.1~1784~trusty.orig/setup.py	2014-03-07 17:42:14.757246145 +0100
++++ onboard-1.0.1~1784~trusty/setup.py	2014-03-07 17:42:14.753246145 +0100
 @@ -268,6 +268,7 @@
                    ('share/onboard', glob.glob('COPYING')),
                    ('share/onboard', glob.glob('NEWS')),

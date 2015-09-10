@@ -110,13 +110,21 @@ class RectKey(Key, RectKeyCommon, DwellProgress):
     def invalidate_key(self):
         self._key_surfaces = {}
 
+    def invalidate_image(self):
+        """
+        Images only have to be expicitely cleared when the
+        window_scaling_factor changes.
+        """
+        self._image_pixbuf = {}
+        self._requested_image_size = {}
+
     def invalidate_shadow(self):
         self._shadow_surface = None
 
     def set_border_rect(self, rect):
         """
         The expand-corrections button moves around a lot.
-        Be sure to keep its images surfaces updated.
+        Be sure to keep its image surfaces updated.
         """
         if rect != self.get_border_rect():
             super(RectKey, self).set_border_rect(rect)
@@ -124,14 +132,15 @@ class RectKey(Key, RectKeyCommon, DwellProgress):
 
     def draw_cached(self, cr):
         key = (self.label, self.font_size >> 8)
-        surface = self._key_surfaces.get(key)
-        if surface is None:
+        entry = self._key_surfaces.get(key)
+        if entry is None:
             if self.font_size:
-                surface = self._create_key_surface(cr)
-                self._key_surfaces[key] = surface
+                entry = self._create_key_surface(cr)
+                self._key_surfaces[key] = entry
 
-        if surface:
-            cr.set_source_surface(surface, 0, 0)
+        if entry:
+            surface, rect = entry
+            cr.set_source_surface(surface, rect.x, rect.y)
             cr.paint()
 
     def _create_key_surface(self, base_context):
@@ -142,15 +151,17 @@ class RectKey(Key, RectKeyCommon, DwellProgress):
         target = base_context.get_target()
         surface = target.create_similar(cairo.CONTENT_COLOR_ALPHA,
                                         clip_rect.w, clip_rect.h)
-
         cr = cairo.Context(surface)
-        surface.set_device_offset(-clip_rect.x, -clip_rect.y)
 
+        cr.save()
+        cr.translate(-clip_rect.x, -clip_rect.y)
         self.draw(cr)
+        cr.restore()
+
         Gdk.flush()   # else artefacts in labels and images
                       # on Nexus 7, Raring
 
-        return surface
+        return surface, clip_rect
 
     def draw(self, cr, lod = LOD.FULL):
         self.draw_geometry(cr, lod)
@@ -584,13 +595,7 @@ class RectKey(Key, RectKeyCommon, DwellProgress):
             return
 
         src_size = (pixbuf.get_width(), pixbuf.get_height())
-        log_rect = self.get_label_rect()
-
-        canvas_rect = self.context.log_to_canvas_rect(log_rect)
-        xalign, yalign = self.align_label(src_size,
-                                            (canvas_rect.w, canvas_rect.h))
-        x = int(canvas_rect.x + xalign)
-        y = int(canvas_rect.y + yalign)
+        xalign, yalign = self.align_label(src_size, (rect.w, rect.h))
 
         label_rgba = self.get_label_color()
         fill = self.get_fill_color()
@@ -606,31 +611,21 @@ class RectKey(Key, RectKeyCommon, DwellProgress):
             else:
                 rgba = label_rgba
 
-            # Draw the image in the themes label color.
-            # Only the alpha channel of the image is used.
-            Gdk.cairo_set_source_pixbuf(context, pixbuf, x + dx, y + dy)
-            pattern = context.get_source()
-            context.rectangle(*rect)
-            context.set_source_rgba(*rgba)
-            context.mask(pattern)
-            context.new_path()
+            pixbuf.draw(context, rect.offset(xalign + dx, yalign + dy), rgba)
 
     def draw_shadow_cached(self, context):
-        surface = self._get_shadow_surface(context)
-        if surface:
-            context.set_source_rgba(0.0, 0.0, 0.0, 1.0)
-            context.mask_surface(surface, 0, 0)
-
-    def _get_shadow_surface(self, context):
-        surface = self._shadow_surface
-        if surface is None:
+        entry = self._shadow_surface
+        if entry is None:
             if config.theme_settings.key_shadow_strength:
-                surface = self.create_shadow_surface(context,
+                entry = self.create_shadow_surface(context,
                                               self._shadow_steps,
                                               self._shadow_alpha)
-            self._shadow_surface = surface
+                self._shadow_surface = entry
 
-        return surface
+        if entry:
+            surface, rect = entry
+            context.set_source_rgba(0.0, 0.0, 0.0, 1.0)
+            context.mask_surface(surface, rect.x, rect.y)
 
     def create_shadow_surface(self, base_context, shadow_steps, shadow_alpha):
         """
@@ -672,10 +667,11 @@ class RectKey(Key, RectKeyCommon, DwellProgress):
         surface = target.create_similar(cairo.CONTENT_ALPHA,
                                         clip_rect.w, clip_rect.h)
         context = cairo.Context(surface)
-        surface.set_device_offset(-clip_rect.x, -clip_rect.y)
 
         # paint the surface
         context.save()
+        context.translate(-clip_rect.x, -clip_rect.y)
+
         context.rectangle(*clip_rect)
         context.clip()
 
@@ -701,7 +697,7 @@ class RectKey(Key, RectKeyCommon, DwellProgress):
 
         context.restore()
 
-        return surface
+        return surface, clip_rect
 
     def _build_canvas_path(self, cr, rect = None, path = None):
         """ Build cairo path of the key geometry. """
@@ -815,9 +811,10 @@ class RectKey(Key, RectKeyCommon, DwellProgress):
             filename = config.get_image_filename(image_filename)
             if filename:
                 _logger.debug("loading image '{}'".format(filename))
+
                 try:
-                    pixbuf = GdkPixbuf.Pixbuf. \
-                             new_from_file_at_size(filename, width, height)
+                    pixbuf = PixBufScaled. \
+                        from_file_and_size(filename, width, height)
                 except Exception as ex: # private exception gi._glib.GError when
                                         # librsvg2-common wasn't installed
                     _logger.error("get_image(): " + unicode_str(ex))
@@ -1177,4 +1174,59 @@ class InputlineKey(FixedFontMixin, RectKey, InputlineKeyCommon):
                 cursor_index = indexes[-(cursor+1)]
 
         return cursor_index
+
+
+class PixBufScaled:
+    """
+    Workaround for blurry images when window_scaling_factor >1
+    """
+    _pixbuf = None
+    _width = 0
+    _height = 0
+    _real_width = 0
+    _real_height = 0
+
+    @staticmethod
+    def from_file_and_size(filename, width, height):
+        pixbuf = PixBufScaled()
+        pixbuf._load(filename, width, height)
+        return pixbuf
+
+    def get_width(self):
+        return self._width
+
+    def get_height(self):
+        return self._height
+
+    def _load(self, filename, width, height):
+        scale = config.window_scaling_factor
+        load_width = width * scale
+        load_height = height * scale
+
+        self._pixbuf = GdkPixbuf.Pixbuf. \
+                    new_from_file_at_size(filename, load_width, load_height)
+        self._real_width = self._pixbuf.get_width()
+        self._real_height = self._pixbuf.get_height()
+        self._width = self._real_width / scale
+        self._height = self._real_height / scale
+
+    def draw(self, context, rect, rgba):
+        """
+        Draw the image in the theme's label color.
+        Only the alpha channel of the image is used.
+        """
+        context.save()
+
+        context.translate(rect.x, rect.y)
+        scale = config.window_scaling_factor
+        if scale and scale != 1.0:
+            context.scale(1.0 / scale, 1.0 / scale)
+
+        Gdk.cairo_set_source_pixbuf(context, self._pixbuf, 0, 0)
+        pattern = context.get_source()
+        context.set_source_rgba(*rgba)
+        context.mask(pattern)
+
+        context.restore()
+
 

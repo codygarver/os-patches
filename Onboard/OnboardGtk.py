@@ -351,7 +351,10 @@ class OnboardGtk(object):
                              "use something else.\n\n"
                              "Would you like to reconfigure the system to show "
                              "Onboard when unlocking the screen?")
-                reply = show_confirmation_dialog(question)
+                _logger.warning("showing dialog: '{}'".format(question))
+                reply = show_confirmation_dialog(question,
+                                                 self._window,
+                                                 config.is_force_to_top())
                 if reply == True:
                     config.enable_gss_embedding(True)
                 else:
@@ -363,14 +366,18 @@ class OnboardGtk(object):
                                  "the password-protected screensaver.\n\n"
                                  "However this function is disabled in the system.\n\n"
                                  "Would you like to activate it?")
-                    reply = show_confirmation_dialog(question)
+                    _logger.warning("showing dialog: '{}'".format(question))
+                    reply = show_confirmation_dialog(question,
+                                                     self._window,
+                                                     config.is_force_to_top())
                     if reply == True:
                         config.enable_gss_embedding(True)
                     else:
                         config.onboard_xembed_enabled = False
 
         # check if gnome accessibility is enabled for auto-show
-        if config.auto_show.enabled and \
+        if (config.is_auto_show_enabled() or \
+            config.are_word_suggestions_enabled()) and \
             not config.check_gnome_accessibility(self._window):
             config.auto_show.enabled = False
 
@@ -478,12 +485,14 @@ class OnboardGtk(object):
         return True
 
     def _update_ui(self):
-        self.keyboard.invalidate_ui()
-        self.keyboard.commit_ui_updates()
+        if self.keyboard:
+            self.keyboard.invalidate_ui()
+            self.keyboard.commit_ui_updates()
 
     def _update_ui_no_resize(self):
-        self.keyboard.invalidate_ui_no_resize()
-        self.keyboard.commit_ui_updates()
+        if self.keyboard:
+            self.keyboard.invalidate_ui_no_resize()
+            self.keyboard.commit_ui_updates()
 
     def _on_window_options_changed(self, value = None):
         self._update_window_options()
@@ -507,6 +516,18 @@ class OnboardGtk(object):
         self._window.on_docking_notify()
         self.keyboard.invalidate_ui()  # show/hide the move button
 #        self.keyboard.commit_ui_updates() # redundant
+
+    def on_gdk_setting_changed(self, name):
+        if name == "gtk-theme-name":
+            self.on_gtk_theme_changed()
+
+        elif name in ["gtk-xft-dpi",
+                      "gtk-xft-antialias"
+                      "gtk-xft-hinting",
+                      "gtk-xft-hintstyle"]:
+            # For some reason the font sizes are still off when running
+            # this immediately. Delay it a little.
+            GLib.idle_add(self.on_gtk_font_dpi_changed)
 
     def on_gtk_theme_changed(self, gtk_theme = None):
         """
@@ -792,15 +813,7 @@ def cb_any_event(event, onboard):
     # doesn't get those settings, i.e. label fonts sizes are off
     # when font dpi changes.
     elif type == Gdk.EventType.SETTING:
-        if event.setting.name == "gtk-theme-name":
-            onboard.on_gtk_theme_changed()
-        elif event.setting.name in ["gtk-xft-dpi",
-                                    "gtk-xft-antialias"
-                                    "gtk-xft-hinting",
-                                    "gtk-xft-hintstyle"]:
-            # For some reason the font sizes are still off when running
-            # this immediately. Delay it a little.
-            GLib.idle_add(onboard.on_gtk_font_dpi_changed)
+        onboard.on_gdk_setting_changed(event.setting.name)
 
     Gtk.main_do_event(event)
 

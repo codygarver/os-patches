@@ -20,7 +20,8 @@ from Onboard.TouchHandles   import TouchHandles
 from Onboard.LayoutView     import LayoutView
 from Onboard.AutoShow       import AutoShow
 from Onboard.utils          import Rect, Timer, FadeTimer
-from Onboard.WindowUtils    import WindowManipulator, Handle, \
+from Onboard.definitions    import Handle
+from Onboard.WindowUtils    import WindowManipulator, \
                                    canvas_to_root_window_rect, \
                                    canvas_to_root_window_point, \
                                    physical_to_monitor_pixel_size, \
@@ -205,7 +206,8 @@ class TransitionState:
         return max(x.duration for x in self._vars)
 
 
-class KeyboardWidget(Gtk.DrawingArea, WindowManipulator, LayoutView, TouchInput):
+class KeyboardWidget(Gtk.DrawingArea, WindowManipulator,
+                     LayoutView, TouchInput):
 
     TRANSITION_DURATION_MOVE = 0.25
     TRANSITION_DURATION_SLIDE = 0.25
@@ -376,34 +378,50 @@ class KeyboardWidget(Gtk.DrawingArea, WindowManipulator, LayoutView, TouchInput)
             self.canvas_rect = canvas_rect
 
         rect = self.canvas_rect.deflate(self.get_frame_width())
-        keep_aspect = config.is_keep_aspect_ratio_enabled()
 
-        x_align = 0.5
-        aspect_change_range = (0, 100)
-        if keep_aspect:
-            if config.xid_mode:
-                value = config.system_defaults.get("xembed_aspect_change_range")
-                if not value is None:
-                    value = value[1:-1]
-                    begin, end = value.split(",")
-                    aspect_change_range = (float(begin), float(end))
-
-                if config.launched_by == config.LAUNCHER_UNITY_GREETER:
-                    offset = config.system_defaults.get("xembed_unity_greeter_offset_x")
-                    if not offset is None:
-                        try:
-                            offset = float(offset)
-                            rect.x += offset
-                            rect.w -= offset
-                            x_align = 0.0
-                        except ValueError: pass
-
-        layout.fit_inside_canvas(rect, keep_aspect,
-                                 aspect_change_range=aspect_change_range,
-                                 x_align=x_align, y_align=0.5)
+        layout.update_log_rect() # update logical tree to base aspect ratio
+        rect = self._get_aspect_corrected_layout_rect(rect,
+                                                      layout.context.log_rect)
+        layout.do_fit_inside_canvas(rect) # update contexts to final aspect
 
         # update the aspect ratio of the main window
         self.on_layout_updated()
+
+    def _get_aspect_corrected_layout_rect(self, rect, base_aspect_rect):
+        """
+        Aspect correction specifically targets xembedding in unity-greeter
+        and gnome-screen-saver. Else we would potentially disrupt embedding
+        in existing kiosk applications.
+        """
+        keep_aspect = config.is_keep_aspect_ratio_enabled()
+        xembedding = config.xid_mode
+        unity_greeter = config.launched_by == config.LAUNCHER_UNITY_GREETER
+
+        x_align = 0.5
+        aspect_change_range = (0, 100)
+
+        if keep_aspect:
+            if xembedding:
+                aspect_change_range = config.get_xembed_aspect_change_range()
+
+            ra = rect.resize_to_aspect_range(base_aspect_rect,
+                                             aspect_change_range)
+
+            if xembedding and \
+               unity_greeter:
+                padding = rect.w - ra.w
+                offset = config.get_xembed_unity_greeter_offset_x()
+                # Attempt to left align to unity-greeters password box,
+                # but use the whole width on small screens.
+                if not offset is None \
+                   and padding > 2 * offset:
+                    rect.x += offset
+                    rect.w -= offset
+                    x_align = 0.0
+
+            rect = rect.align_rect(ra, x_align)
+
+        return rect
 
     def update_resize_handles(self):
         """ Tell WindowManipulator about the active resize handles """
