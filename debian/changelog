@@ -1,3 +1,12 @@
+jockey (0.9.7-0ubuntu7.16) precise-security; urgency=medium
+
+  * data/handlers/nvidia.py:
+    - Add support for nvidia-340 and nvidia-340-updates
+  * This package does _not_ contain the changes from 0.9.7-0ubuntu7.16 in
+    precise-proposed.
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 21 Sep 2015 15:27:32 -0400
+
 jockey (0.9.7-0ubuntu7.14) precise-proposed; urgency=low
 
   * jockey/oslib.py, jockey/xorg_driver.py:

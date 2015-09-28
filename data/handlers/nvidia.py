@@ -278,6 +278,14 @@ class _NvidiaDriverHybridBase(_NvidiaDriverBase):
 
         _NvidiaDriverBase.disable(self)
 
+class NvidiaDriver340(_NvidiaDriverHybridBase):
+    def __init__(self, backend):
+        _NvidiaDriverHybridBase.__init__(self, backend, '340')
+
+class NvidiaDriver340Updates(_NvidiaDriverHybridBase):
+    def __init__(self, backend):
+        _NvidiaDriverHybridBase.__init__(self, backend, '340-updates')
+
 class NvidiaDriver331(_NvidiaDriverHybridBase):
     def __init__(self, backend):
         _NvidiaDriverHybridBase.__init__(self, backend, '331')
