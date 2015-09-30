@@ -11,8 +11,11 @@ run_pkg() {
     export DEBIAN_FRONTEND=noninteractive
     RC=0
     apt-get install -yq $pkg </dev/null || RC=$?
+
     # collect build logs as artifacts
-    (cd /var/lib/dkms; find -name "make.log" -print0 | xargs -0 tar c) > "$ADT_ARTIFACTS/$pkg-make-logs.tar"
+    if [ -d /var/lib/dkms ]; then
+        (cd /var/lib/dkms; find -name "make.log" -print0 | xargs -0 tar c) > "$ADT_ARTIFACTS/$pkg-make-logs.tar"
+    fi
 
     if [ "$RC" -ne 0 ]; then
         echo "E: Package $pkg failed to install" >&2

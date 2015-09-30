@@ -1,3 +1,9 @@
+dkms (2.2.0.3-1ubuntu3.4) precise-proposed; urgency=low
+
+  * d/s/autopkgtest: only collect logs if there are any.  (LP: #1498896)
+
+ -- Andy Whitcroft <apw@ubuntu.com>  Wed, 23 Sep 2015 15:39:40 +0100
+
 dkms (2.2.0.3-1ubuntu3.3) precise-proposed; urgency=medium
 
   * Backport dkms-autopkgtest helper script, so that we can run DKMS tests for
