@@ -1,3 +1,10 @@
+dkms (2.2.0.3-1.1ubuntu5.14.04.5) trusty-security; urgency=medium
+
+  * dkms_apport.py: update to the recent apport.utils api changes
+    (lp: #1499842)
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 30 Sep 2015 07:33:54 -0400
+
 dkms (2.2.0.3-1.1ubuntu5.14.04.3) trusty; urgency=low
 
   * d/s/autopkgtest: only collect logs if there are any.  (LP: #1498896)
