@@ -1,3 +1,10 @@
+ubuntu-release-upgrader (1:0.220.8) trusty-proposed; urgency=medium
+
+  * DistUpgrade/build-tarball.sh: Copy the contents of demoted.cfg so it is
+    not a broken symlink. (LP: #1498193)
+
+ -- Brian Murray <brian@ubuntu.com>  Tue, 29 Sep 2015 12:56:26 -0700
+
 ubuntu-release-upgrader (1:0.220.7) trusty; urgency=medium
 
   * DistUpgrade/DistUpgradeViewText.py:
