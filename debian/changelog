@@ -1,3 +1,12 @@
+ubiquity (2.18.8.10) trusty; urgency=medium
+
+  * Clean up after NetworkManager's system-connections files in prepare job
+    for oem-config: we shouldn't keep wireless connections (or any, really)
+    on the system that may have been setup by OEM, unless done *after* running
+    oem-prepare. (LP: #1418105)
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Wed, 05 Aug 2015 00:43:54 -0400
+
 ubiquity (2.18.8.9) trusty; urgency=medium
 
   * Automatic update of included source packages: debian-installer-utils
