@@ -85,6 +85,7 @@ class MetaReleaseCore(object):
                     (useDevelopmentRelease, useProposed))
         # force download instead of sending if-modified-since
         self.forceDownload = forceDownload
+        self.useDevelopmentRelease = useDevelopmentRelease
         # information about the available dists
         self.downloaded = threading.Event()
         self.upgradable_to = None
@@ -280,6 +281,12 @@ class MetaReleaseCore(object):
         upgradable_to = ""
         for dist in dists:
             if dist.date > current_dist.date:
+                # Only offer to upgrade to an unsupported release if running
+                # with useDevelopmentRelease, this way one can upgrade from an
+                # LTS release to the next supported non-LTS release e.g. from
+                # 14.04 to 15.04.
+                if not dist.supported and not self.useDevelopmentRelease:
+                    continue
                 upgradable_to = dist
                 self._debug("new dist: %s" % upgradable_to)
                 break

@@ -6,6 +6,7 @@ import logging
 import multiprocessing
 import os
 import sys
+import tempfile
 try:
     from test.support import EnvironmentVarGuard
 except ImportError:
@@ -17,6 +18,8 @@ try:
 except ImportError:
     from urllib2 import HTTPError, install_opener, urlopen
 import unittest
+
+from mock import patch
 
 try:
     from http.server import BaseHTTPRequestHandler
@@ -83,7 +86,7 @@ class TestMetaReleaseCore(unittest.TestCase):
 
     def testnewdist(self):
         """ test that upgrades offer the right upgrade path """
-        for (current, next) in [("dapper", "edgy"),
+        for (current, next) in [("dapper", "hardy"),
                                 ("hardy", "lucid"),
                                 ("intrepid", "jaunty"),
                                 ("jaunty", "karmic"),
@@ -153,6 +156,59 @@ class TestMetaReleaseCore(unittest.TestCase):
             data = f.read().decode("UTF-8")
             self.assertTrue(len(data) > 0)
             self.assertTrue("<html>" in data)
+
+    @patch("UpdateManager.Core.MetaRelease.MetaReleaseCore.download")
+    def test_parse_next_release_unsupported(self, mock_download):
+        # We should jump over an unsupported release. LP: #1497024
+        meta = MetaReleaseCore()
+        meta.current_dist_name = "foo"
+        with tempfile.TemporaryFile() as f:
+            f.write("""Dist: foo
+Supported: 1
+Date: Thu, 26 Oct 2006 12:00:00 UTC
+Version: 1.0
+
+Dist: goo
+Supported: 0
+Date: Thu, 26 Oct 2016 12:00:00 UTC
+Version: 2.0
+
+Dist: hoo
+Supported: 1
+Date: Thu, 26 Oct 2026 12:00:00 UTC
+Version: 3.0
+            """.encode("utf-8"))
+            f.seek(0)
+            meta.metarelease_information = f
+            meta.parse()
+            self.assertEqual(meta.upgradable_to.name, "hoo")
+            self.assertEqual(meta.upgradable_to.version, "3.0")
+            self.assertEqual(meta.upgradable_to.supported, True)
+
+    @patch("UpdateManager.Core.MetaRelease.MetaReleaseCore.download")
+    def test_parse_next_release_unsupported_devel(self, mock_download):
+        # We should not jump over an unsupported release if we are running in
+        # "devel" mode. LP: #1497024
+        meta = MetaReleaseCore()
+        meta.current_dist_name = "foo"
+        meta.useDevelopmentRelease = True
+        with tempfile.TemporaryFile() as f:
+            f.write("""Dist: foo
+Supported: 1
+Date: Thu, 26 Oct 2006 12:00:00 UTC
+Version: 1.0
+
+Dist: goo
+Supported: 0
+Date: Thu, 26 Oct 2016 12:00:00 UTC
+Version: 2.0
+            """.encode("utf-8"))
+            f.seek(0)
+            meta.metarelease_information = f
+            meta.parse()
+            self.assertEqual(meta.upgradable_to.name, "goo")
+            self.assertEqual(meta.upgradable_to.version, "2.0")
+            self.assertEqual(meta.upgradable_to.supported, False)
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "-v":
