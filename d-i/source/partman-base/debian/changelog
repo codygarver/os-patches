@@ -1,3 +1,10 @@
+partman-base (172ubuntu1.2) trusty; urgency=low
+
+  * Do not list /dev/mmcblk.(rpmb|boot.) devices, as they cannot be
+    usefully partitioned (LP: #1456443)
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Mon, 10 Aug 2015 11:54:18 -0400
+
 partman-base (172ubuntu1.1) trusty; urgency=medium
 
   * Fix multipath support: (LP: #1430074)

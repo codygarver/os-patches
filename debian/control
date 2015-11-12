@@ -7,7 +7,7 @@ Build-Depends: apt, autopoint, bf-utf-source, check, dctrl-tools, debconf (>= 1.
 Standards-Version: 3.9.4
 X-Python3-Version: >= 3.1
 XS-Testsuite: autopkgtest
-Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-installer/ubiquity/trunk
+Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-installer/ubiquity/trusty-proposed
 
 Package: ubiquity
 Architecture: any

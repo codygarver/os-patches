@@ -5,8 +5,8 @@ choose-mirror 2.55ubuntu1
 clock-setup 0.117ubuntu1
 console-setup 1.70ubuntu8
 debian-installer-utils 1.105ubuntu1.14.04.1
-flash-kernel 3.0~rc.4ubuntu49.5
-grub-installer 1.78ubuntu20.2
+flash-kernel 3.0~rc.4ubuntu49.6
+grub-installer 1.78ubuntu20.3
 hw-detect 1.95ubuntu2.1
 localechooser 2.49ubuntu5
 netcfg 1.116ubuntu2
@@ -15,7 +15,7 @@ partman-auto 118ubuntu3.14.04.2
 partman-auto-crypto 20ubuntu1
 partman-auto-loop 0ubuntu21
 partman-auto-lvm 51ubuntu1
-partman-base 172ubuntu1.1
+partman-base 172ubuntu1.2
 partman-basicfilesystems 86ubuntu2
 partman-basicmethods 58
 partman-btrfs 14ubuntu2

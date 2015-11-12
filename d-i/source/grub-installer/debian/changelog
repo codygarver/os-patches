@@ -1,3 +1,10 @@
+grub-installer (1.78ubuntu20.3) trusty; urgency=medium
+
+  * Properly handle systems on which there may be more than 26 disks, and our
+    boot partition meant to be on a disk named [hsv]d[a-z][a-z]. (LP: #1479213)
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Wed, 16 Sep 2015 13:03:13 -0400
+
 grub-installer (1.78ubuntu20.2) trusty; urgency=medium
 
   * grub-installer: Use 'p' (not '-part') as multipath disk-partition

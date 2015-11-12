@@ -1,3 +1,16 @@
+ubiquity (2.18.8.11) trusty; urgency=medium
+
+  [ Shih-Yuan Lee ]
+  * Automatic update of included source packages: partman-base
+    172ubuntu1.2. (LP: #1456443)
+  * debian/control: Fix Vcs-Bzr.
+
+  [ Mathieu Trudel-Lapierre ]
+  * Automatic update of included source packages: flash-kernel
+    3.0~rc.4ubuntu49.6, grub-installer 1.78ubuntu20.3.
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Fri, 23 Oct 2015 17:45:08 +0100
+
 ubiquity (2.18.8.10) trusty; urgency=medium
 
   * Clean up after NetworkManager's system-connections files in prepare job
