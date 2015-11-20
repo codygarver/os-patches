@@ -1,3 +1,11 @@
+im-config (0.24-1ubuntu4.2) trusty; urgency=medium
+
+  * debian/patches/03-not-always-require-zenity.patch:
+    Get rid of unwarrented crash of gnome-language-selector when
+    calling "im-config -l" (LP: #1450147).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Wed, 04 Nov 2015 16:45:00 +0100
+
 im-config (0.24-1ubuntu4.1) trusty; urgency=medium
 
   * debian/patches/02_support-qt5.patch:
