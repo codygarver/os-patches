@@ -295,12 +295,21 @@ get_user_label (const IndicatorSessionUser * user)
 {
   const char * c;
 
-  /* If blank or whitespace, use username instead */
-  for (c = user->real_name; *c != '\0' && g_ascii_isspace (*c); c++);
-  if (*c == '\0')
-    return user->user_name;
+  /* if real_name exists and is printable, use it */
+  c = user->real_name;
+  if ((c != NULL) && g_utf8_validate(c, -1, NULL))
+    {
+      while (*c != '\0')
+        {
+          if (g_unichar_isgraph(g_utf8_get_char(c)))
+            return user->real_name;
 
-  return user->real_name;
+          c = g_utf8_next_char(c);
+        }
+    }
+
+  /* otherwise, use this as a fallback */
+  return user->user_name;
 }
 
 static const char *
@@ -674,7 +683,7 @@ create_logout_section (IndicatorSessionService * self)
 }
 
 static GMenuModel *
-create_session_section (IndicatorSessionService * self)
+create_session_section (IndicatorSessionService * self, int profile)
 {
   GMenu * menu;
   const priv_t * const p = self->priv;
@@ -689,7 +698,15 @@ create_session_section (IndicatorSessionService * self)
   if (indicator_session_actions_can_hibernate (p->backend_actions))
     g_menu_append (menu, _("Hibernate"), "indicator.hibernate");
 
-  if (!g_settings_get_boolean (s, "suppress-shutdown-menuitem"))
+  if (profile != PROFILE_LOCKSCREEN && 
+    indicator_session_actions_can_reboot (p->backend_actions))
+    {
+      const char * label = ellipsis ? _("Restart…") : _("Restart");
+      g_menu_append (menu, label, "indicator.reboot");
+    }
+
+  if (profile != PROFILE_LOCKSCREEN && 
+    !g_settings_get_boolean (s, "suppress-shutdown-menuitem"))
     {
       const char * label = ellipsis ? _("Shut Down…") : _("Shut Down");
       g_menu_append (menu, label, "indicator.power-off");
@@ -717,16 +734,16 @@ create_menu (IndicatorSessionService * self, int profile)
       sections[n++] = create_settings_section (self);
       sections[n++] = create_switch_section (self, profile);
       sections[n++] = create_logout_section (self);
-      sections[n++] = create_session_section (self);
+      sections[n++] = create_session_section (self, profile);
     }
   else if (profile == PROFILE_GREETER)
     {
-      sections[n++] = create_session_section (self);
+      sections[n++] = create_session_section (self, profile);
     }
   else if (profile == PROFILE_LOCKSCREEN)
     {
       sections[n++] = create_switch_section (self, profile);
-      sections[n++] = create_session_section (self);
+      sections[n++] = create_session_section (self, profile);
     }
 
   /* add sections to the submenu */
@@ -973,9 +990,9 @@ rebuild_now (IndicatorSessionService * self, int sections)
 
   if (sections & SECTION_SESSION)
     {
-      rebuild_section (desktop->submenu, 4, create_session_section(self));
-      rebuild_section (greeter->submenu, 0, create_session_section(self));
-      rebuild_section (lockscreen->submenu, 1, create_session_section(self));
+      rebuild_section (desktop->submenu, 4, create_session_section(self, PROFILE_DESKTOP));
+      rebuild_section (greeter->submenu, 0, create_session_section(self, PROFILE_GREETER));
+      rebuild_section (lockscreen->submenu, 1, create_session_section(self, PROFILE_LOCKSCREEN));
     }
 }
 
