@@ -345,21 +345,39 @@ def match_whitelist_string(whitelist, origin):
     return res
 
 
-def upgrade_normal(cache, pkgs_to_upgrade, logfile_dpkg, verbose):
+def cache_commit(cache, logfile_dpkg, verbose, iprogress=None):
+    """Commit the changes from the given cache to the system"""
+    # set debconf to NON_INTERACTIVE, redirect output
+    os.putenv("DEBIAN_FRONTEND", "noninteractive")
+
+    # only act if there is anything to do (important to avoid writing
+    # empty log stanzas)
+    if len(cache.get_changes()) == 0:
+        return True, None
+
     error = None
     res = False
-    iprogress = LogInstallProgress(logfile_dpkg, verbose)
+    if iprogress is None:
+        iprogress = LogInstallProgress(logfile_dpkg, verbose)
+
     try:
         with Unlocked():
             res = cache.commit(install_progress=iprogress)
     except SystemError as e:
         error = e
+        if verbose:
+            logging.exception("Exception happened during upgrade.")
+    return res, error
+
+
+def upgrade_normal(cache, logfile_dpkg, verbose):
+    res, error = cache_commit(cache, logfile_dpkg, verbose)
     if res:
         logging.info(_("All upgrades installed"))
     else:
         logging.error(_("Installing the upgrades failed!"))
-        logging.error(_("error message: '%s'") % error)
-        logging.error(_("dpkg returned a error! See '%s' for details") %
+        logging.error(_("error message: '%s'"), error)
+        logging.error(_("dpkg returned a error! See '%s' for details"),
                       logfile_dpkg)
     return res
 
@@ -425,16 +443,10 @@ def upgrade_in_minimal_steps(cache, pkgs_to_upgrade, blacklist,
         logging.debug("applying set %s" % smallest_partition)
         rewind_cache(cache, [cache[name] for name in smallest_partition])
 
-        try:
-            iprogress = LogInstallProgress(logfile_dpkg, verbose)
-            with Unlocked():
-                res = cache.commit(install_progress=iprogress)
-                if not res:
-                    raise Exception("cache.commit() returned false")
-            cache.open()
-        except Exception as e:
+        res, error = cache_commit(cache, logfile_dpkg, verbose, install_log)
+        if error:
             logging.error(_("Installing the upgrades failed!"))
-            logging.error(_("error message: '%s'") % e)
+            logging.error(_("error message: '%s'") % error)
             logging.error(_("dpkg returned a error! See '%s' for details") %
                           logfile_dpkg)
             return False
@@ -780,8 +792,7 @@ def do_install(cache, pkgs_to_upgrade, blacklisted_pkgs, options,
                 options.verbose or options.debug)
         else:
             pkg_install_success = upgrade_normal(
-                cache, [pkg.name for pkg in pkgs_to_upgrade],
-                logfile_dpkg, options.verbose or options.debug)
+                cache, logfile_dpkg, options.verbose or options.debug)
     except Exception as e:
         # print unhandled exceptions here this way, while stderr is redirected
         os.write(2, ("Exception: %s\n" % e).encode('utf-8'))
@@ -801,6 +812,10 @@ def _setup_alternative_rootdir(rootdir):
     if os.path.isdir(rootdir + "/etc/apt/apt.conf.d"):
         apt_pkg.read_config_dir(apt_pkg.config,
                                 rootdir + "/etc/apt/apt.conf.d")
+    logdir = os.path.join(rootdir, "var", "log", "unattended-upgrades")
+    if not os.path.exists(logdir):
+        os.makedirs(logdir)
+    apt.apt_pkg.config.set("Unattended-Upgrade::LogDir", logdir)
 
 
 def _get_logdir():
@@ -875,6 +890,32 @@ def write_stamp_file():
     statedir = os.path.join(apt_pkg.config.find_dir("Dir::State"), "periodic")
     with open(os.path.join(statedir, "unattended-upgrades-stamp"), "w"):
         pass
+
+
+def get_auto_removable(cache):
+    return set([pkg.name for pkg in cache
+                if pkg.is_auto_removable])
+
+
+def do_auto_remove(cache, options, logfile_dpkg, verbose=False):
+    auto_removable = get_auto_removable(cache)
+
+    for pkgname in auto_removable:
+        logging.debug("marking %s for remove" % pkgname)
+        cache[pkgname].mark_delete()
+    logging.info(_("Packages that are auto removed: '%s'")
+                 % " ".join(auto_removable))
+
+    # do it
+    res, error = cache_commit(cache, logfile_dpkg, verbose)
+    if res:
+        logging.info(_("Packages auto-removed"))
+    else:
+        logging.error(_("Auto-removing the packages failed!"))
+        logging.error(_("Error message: '%s'") % error)
+        logging.error(_("dpkg returned an error! See '%s' for details")
+                      % logfile_dpkg)
+    return res
 
 
 def main(options, rootdir=""):
@@ -961,8 +1002,6 @@ def main(options, rootdir=""):
     # find out about the packages that are upgradable (in a allowed_origin)
     pkgs_to_upgrade = []
     pkgs_kept_back = []
-    pkgs_auto_removable = set([pkg.name for pkg in cache
-                               if pkg.is_auto_removable])
 
     # now do the actual upgrade
     for pkg in cache:
@@ -1087,24 +1126,19 @@ def main(options, rootdir=""):
     else:
         logging.debug("dpkg is configured not to cause conffile prompts")
 
-    # do auto-remove
+    # auto-removal
     if apt_pkg.config.find_b(
             "Unattended-Upgrade::Remove-Unused-Dependencies", False):
-        now_auto_removable = set([pkg.name for pkg in cache
-                                  if pkg.is_auto_removable])
-        for pkgname in now_auto_removable - pkgs_auto_removable:
-            logging.debug("marking %s for remove" % pkgname)
-            cache[pkgname].mark_delete()
-        logging.info(_("Packages that are auto removed: '%s'") %
-                     " ".join(now_auto_removable - pkgs_auto_removable))
-
-    logging.debug("InstCount=%i DelCount=%i BrokenCount=%i" % (
-        cache._depcache.inst_count, cache._depcache.del_count,
-        cache._depcache.broken_count))
+        pending_autoremovals = get_auto_removable(cache)
+    else:
+        pending_autoremovals = []
 
     # exit if there is nothing to do and nothing to report
-    if (len(pkgs_to_upgrade) == 0) and (len(pkgs_kept_back) == 0):
-        logging.info(_("No packages found that can be upgraded unattended"))
+    if (len(pending_autoremovals) == 0 and
+            len(pkgs_to_upgrade) == 0 and
+            len(pkgs_kept_back) == 0):
+        logging.info(_("No packages found that can be upgraded unattended "
+                       "and no pending auto-removals"))
         # FIXME: DRY violation, write_stamp_file() is used below as well
         write_stamp_file()
         return
@@ -1143,6 +1177,27 @@ def main(options, rootdir=""):
         # do install
         pkg_install_success = do_install(
             cache, pkgs_to_upgrade, blacklisted_pkgs, options, logfile_dpkg)
+
+    # remove unneeded packages if there are any
+    if apt_pkg.config.find_b(
+            "Unattended-Upgrade::Remove-Unused-Dependencies", False):
+        cache = UnattendedUpgradesCache(rootdir=rootdir,
+                                        allowed_origins=allowed_origins)
+        if cache._depcache.broken_count > 0:
+            print(_("Cache has broken packages, exiting"))
+            logging.error(_("Cache has broken packages, exiting"))
+            sys.exit(1)
+
+        remove_success = do_auto_remove(
+            cache, options, logfile_dpkg,
+            options.verbose or options.debug)
+        if pkg_install_success is not False:
+            pkg_install_success = remove_success
+
+    logging.debug("InstCount=%i DelCount=%i BrokenCount=%i"
+                  % (cache._depcache.inst_count,
+                     cache._depcache.del_count,
+                     cache._depcache.broken_count))
 
     # send a mail (if needed)
     if not options.dry_run:

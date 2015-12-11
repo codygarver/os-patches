@@ -1,0 +1,70 @@
+2015-11-05 13:07:45,534 INFO Initial blacklisted packages: 
+2015-11-05 13:07:45,534 INFO Initial whitelisted packages: 
+2015-11-05 13:07:45,534 INFO Starting unattended upgrades script
+2015-11-05 13:07:45,534 INFO Allowed origins are: ['o=Ubuntu,a=lucid-security']
+2015-11-05 13:07:45,751 INFO Option --dry-run given, *not* performing real actions
+2015-11-05 13:07:45,751 INFO Packages that will be upgraded: test-package
+2015-11-05 13:07:45,751 INFO Writing dpkg log to './root.unused-deps/var/log/unattended-upgrades/unattended-upgrades-dpkg.log'
+2015-11-05 13:07:46,677 INFO All upgrades installed
+2015-11-05 13:07:46,681 INFO Packages that are auto removed: 'test-package-dependency'
+2015-11-05 13:07:46,882 INFO Packages were successfully auto-removed
+2015-11-05 13:07:47,084 INFO Initial blacklisted packages: 
+2015-11-05 13:07:47,084 INFO Initial whitelisted packages: 
+2015-11-05 13:07:47,084 INFO Starting unattended upgrades script
+2015-11-05 13:07:47,084 INFO Allowed origins are: ['o=Ubuntu,a=lucid-security']
+2015-11-05 13:07:47,091 INFO Option --dry-run given, *not* performing real actions
+2015-11-05 13:07:47,091 INFO Packages that will be upgraded: test-package
+2015-11-05 13:07:47,091 INFO Writing dpkg log to './root.unused-deps/var/log/unattended-upgrades/unattended-upgrades-dpkg.log'
+2015-11-05 13:07:47,193 INFO All upgrades installed
+2015-11-05 13:07:47,196 INFO Packages that are auto removed: 'test-package-dependency'
+2015-11-05 13:07:47,298 INFO Packages were successfully auto-removed
+2015-12-03 16:56:28,982 INFO Initial blacklisted packages: 
+2015-12-03 16:56:28,982 INFO Starting unattended upgrades script
+2015-12-03 16:56:28,983 INFO Allowed origins are: ['o=Ubuntu,a=lucid-security']
+2015-12-03 16:56:29,137 INFO Packages that are auto removed: ''
+2015-12-03 16:56:29,137 INFO Option --dry-run given, *not* performing real actions
+2015-12-03 16:56:29,137 INFO Packages that will be upgraded: test-package
+2015-12-03 16:56:29,137 INFO Writing dpkg log to './root.unused-deps/var/log/unattended-upgrades/unattended-upgrades-dpkg_2015-12-03_16:56:29.137675.log'
+2015-12-03 16:56:30,040 INFO All upgrades installed
+2015-12-03 16:57:52,388 INFO Initial blacklisted packages: 
+2015-12-03 16:57:52,388 INFO Starting unattended upgrades script
+2015-12-03 16:57:52,388 INFO Allowed origins are: ['o=Ubuntu,a=lucid-security']
+2015-12-03 16:57:52,392 INFO Packages that are auto removed: ''
+2015-12-03 16:57:52,393 INFO Option --dry-run given, *not* performing real actions
+2015-12-03 16:57:52,393 INFO Packages that will be upgraded: test-package
+2015-12-03 16:57:52,393 INFO Writing dpkg log to './root.unused-deps/var/log/unattended-upgrades/unattended-upgrades-dpkg_2015-12-03_16:57:52.393229.log'
+2015-12-03 16:57:52,494 INFO All upgrades installed
+2015-12-03 16:58:24,084 INFO Initial blacklisted packages: 
+2015-12-03 16:58:24,084 INFO Starting unattended upgrades script
+2015-12-03 16:58:24,084 INFO Allowed origins are: ['o=Ubuntu,a=lucid-security']
+2015-12-03 16:58:24,089 INFO Packages that are auto removed: ''
+2015-12-03 16:58:24,089 INFO Option --dry-run given, *not* performing real actions
+2015-12-03 16:58:24,089 INFO Packages that will be upgraded: test-package
+2015-12-03 16:58:24,089 INFO Writing dpkg log to './root.unused-deps/var/log/unattended-upgrades/unattended-upgrades-dpkg_2015-12-03_16:58:24.089280.log'
+2015-12-03 16:58:24,290 INFO All upgrades installed
+2015-12-03 16:58:24,293 INFO Packages that are auto removed: 'test-package-dependency'
+2015-12-03 17:01:18,711 INFO Initial blacklisted packages: 
+2015-12-03 17:01:18,712 INFO Starting unattended upgrades script
+2015-12-03 17:01:18,712 INFO Allowed origins are: ['o=Ubuntu,a=lucid-security']
+2015-12-03 17:01:18,717 INFO Packages that are auto removed: ''
+2015-12-03 17:01:18,717 INFO Option --dry-run given, *not* performing real actions
+2015-12-03 17:01:18,717 INFO Packages that will be upgraded: test-package
+2015-12-03 17:01:18,718 INFO Writing dpkg log to './root.unused-deps/var/log/unattended-upgrades/unattended-upgrades-dpkg_2015-12-03_17:01:18.717990.log'
+2015-12-03 17:01:18,721 INFO Packages that are auto removed: 'test-package-dependency'
+2015-12-03 17:01:18,822 INFO Packages auto-removed
+2015-12-03 17:12:49,400 INFO Initial blacklisted packages: 
+2015-12-03 17:12:49,401 INFO Starting unattended upgrades script
+2015-12-03 17:12:49,401 INFO Allowed origins are: ['o=Ubuntu,a=lucid-security']
+2015-12-03 17:12:49,623 INFO Option --dry-run given, *not* performing real actions
+2015-12-03 17:12:49,623 INFO Packages that will be upgraded: test-package
+2015-12-03 17:12:49,624 INFO Writing dpkg log to './root.unused-deps/var/log/unattended-upgrades/unattended-upgrades-dpkg_2015-12-03_17:12:49.623944.log'
+2015-12-03 17:12:49,627 INFO Packages that are auto removed: 'test-package-dependency'
+2015-12-03 17:12:49,729 INFO Packages auto-removed
+2015-12-03 17:12:49,866 INFO Initial blacklisted packages: 
+2015-12-03 17:12:49,866 INFO Starting unattended upgrades script
+2015-12-03 17:12:49,866 INFO Allowed origins are: ['o=Ubuntu,a=lucid-security']
+2015-12-03 17:12:49,873 INFO Option --dry-run given, *not* performing real actions
+2015-12-03 17:12:49,873 INFO Packages that will be upgraded: test-package
+2015-12-03 17:12:49,873 INFO Writing dpkg log to './root.unused-deps/var/log/unattended-upgrades/unattended-upgrades-dpkg_2015-12-03_17:12:49.873220.log'
+2015-12-03 17:12:49,875 INFO Packages that are auto removed: 'test-package-dependency'
+2015-12-03 17:12:49,976 INFO Packages auto-removed

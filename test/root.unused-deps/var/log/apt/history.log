@@ -1,0 +1,40 @@
+
+Start-Date: 2015-11-05  13:07:46
+Upgrade: test-package:amd64 (1.0, 2.0)
+End-Date: 2015-11-05  13:07:46
+
+Start-Date: 2015-11-05  13:07:46
+Remove: test-package-dependency:amd64 (1.0)
+End-Date: 2015-11-05  13:07:46
+
+Start-Date: 2015-11-05  13:07:47
+Upgrade: test-package:amd64 (1.0, 2.0)
+End-Date: 2015-11-05  13:07:47
+
+Start-Date: 2015-11-05  13:07:47
+Remove: test-package-dependency:amd64 (1.0)
+End-Date: 2015-11-05  13:07:47
+
+Start-Date: 2015-12-03  16:56:30
+Upgrade: test-package:amd64 (1.0, 2.0)
+End-Date: 2015-12-03  16:56:30
+
+Start-Date: 2015-12-03  16:57:52
+Upgrade: test-package:amd64 (1.0, 2.0)
+End-Date: 2015-12-03  16:57:52
+
+Start-Date: 2015-12-03  16:58:24
+Upgrade: test-package:amd64 (1.0, 2.0)
+End-Date: 2015-12-03  16:58:24
+
+Start-Date: 2015-12-03  17:01:18
+Remove: test-package-dependency:amd64 (1.0)
+End-Date: 2015-12-03  17:01:18
+
+Start-Date: 2015-12-03  17:12:49
+Remove: test-package-dependency:amd64 (1.0)
+End-Date: 2015-12-03  17:12:49
+
+Start-Date: 2015-12-03  17:12:49
+Remove: test-package-dependency:amd64 (1.0)
+End-Date: 2015-12-03  17:12:49

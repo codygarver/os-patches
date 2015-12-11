@@ -1,3 +1,9 @@
+unattended-upgrades (0.82.1ubuntu2.4) trusty-proposed; urgency=medium
+
+  * cherry pick fix for unused-dependencies removal (LP: #1267059)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 03 Dec 2015 17:02:17 +0100
+
 unattended-upgrades (0.82.1ubuntu2.3) trusty-security; urgency=medium
 
   * fix missing package authentication check for apt
