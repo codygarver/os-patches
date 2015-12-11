@@ -1,3 +1,16 @@
+grub2 (2.02~beta2-9ubuntu1.5) trusty; urgency=medium
+
+  * d/p/arm64-set-correct-length-of-device-path-end-entry.patch: Fixes
+    booting arm64 kernels on certain UEFI implementations. (LP: #1476882)
+  * progress: avoid NULL dereference for net files. (LP: #1459872)
+  * arm64/setjmp: Add missing license macro. (LP: #1459871)
+  * Cherry-pick patch to add SAS disks to the device list from the ofdisk
+    module. (LP: #1517586)
+  * Cherry-pick patch to open Simple Network Protocol exclusively.
+    (LP: #1508893)
+
+ -- dann frazier <dannf@ubuntu.com>  Wed, 25 Nov 2015 13:13:35 -0700
+
 grub2 (2.02~beta2-9ubuntu1.4) trusty; urgency=medium
 
   * Fix overlap check in check_blocklists for load_env (backported patch from
