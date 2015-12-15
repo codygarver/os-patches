@@ -1,3 +1,16 @@
+grub2-signed (1.34.6) trusty; urgency=medium
+
+  * Rebuild against grub-efi-amd64 2.02~beta2-9ubuntu1.5
+    (LP: #1476882, LP: #1459872, LP: #1459871, LP: #1517586, LP: #1508893)
+
+ -- dann frazier <dannf@ubuntu.com>  Wed, 25 Nov 2015 13:18:17 -0700
+
+grub2-signed (1.34.5) trusty; urgency=medium
+
+  * Rebuild against grub-efi-amd64 2.02~beta2-9ubuntu1.4 (LP: #1311247)
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Mon, 05 Oct 2015 04:23:21 -0600
+
 grub2-signed (1.34.4) trusty; urgency=medium
 
   * Rebuild against grub-efi-amd64 2.02~beta2-9ubuntu1.3 (LP: #1443735).
