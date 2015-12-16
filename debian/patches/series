@@ -60,3 +60,4 @@ progress_avoid_null_deref.patch
 arm64-setjmp-Add-missing-license-macro.patch
 ofdisk_add_sas_disks.patch
 efinet-open-Simple-Network-Protocol-exclusively.patch
+CVE-2015-8370.patch
