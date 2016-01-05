@@ -1,3 +1,14 @@
+grub2 (2.02~beta2-9ubuntu1.7) trusty; urgency=medium
+
+  * Cherry-picks to better handle TFTP timeouts on some arches: (LP: #1521612)
+    - (7b386b7) efidisk: move device path helpers in core for efinet
+    - (c52ae40) efinet: skip virtual IP devices when enumerating cards
+    - (f348aee) efinet: enable hardware filters when opening interface
+  * Update quick boot logic to handle abstractions for which there is no
+    write support. (LP: #1274320)
+
+ -- dann frazier <dann.frazier@canonical.com>  Wed, 16 Dec 2015 14:03:48 -0700
+
 grub2 (2.02~beta2-9ubuntu1.6) trusty-security; urgency=medium
 
   * SECURITY UPDATE: password bypass via backspace key buffer overflow
