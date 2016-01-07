@@ -1,3 +1,9 @@
+unattended-upgrades (0.76ubuntu1.2) precise-proposed; urgency=medium
+
+  * cherry pick fix for unused-dependencies removal. (LP: #1267059)
+
+ -- Brian Murray <brian@ubuntu.com>  Fri, 11 Dec 2015 10:06:00 -0800
+
 unattended-upgrades (0.76ubuntu1.1) precise-security; urgency=medium
 
   * fix missing package authentication check for apt
