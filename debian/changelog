@@ -1,3 +1,15 @@
+ubiquity (2.18.8.12) trusty; urgency=medium
+
+  [ Mathieu Trudel-Lapierre ]
+  * Automatic update of included source packages: flash-kernel
+    3.0~rc.4ubuntu49.7, partman-efi 25ubuntu6.14.04.2.
+
+  [ Jason DeRose ]
+  * Work-around "SMBIOS-implementations-newer-than-version-2-8..." junk from
+    dmidecode when running on newer BIOS implementations. (LP: #1539266)
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Mon, 01 Feb 2016 11:27:15 -0500
+
 ubiquity (2.18.8.11) trusty; urgency=medium
 
   [ Shih-Yuan Lee ]

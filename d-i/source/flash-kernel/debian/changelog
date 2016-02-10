@@ -1,3 +1,10 @@
+flash-kernel (3.0~rc.4ubuntu49.7) trusty; urgency=medium
+
+  * Cherry pick from Debian: Succeed but do nothing when run on an
+    unknown machine which was booted via EFI. (LP: #1517582)
+
+ -- dann frazier <dannf@ubuntu.com>  Wed, 09 Dec 2015 16:13:59 -0700
+
 flash-kernel (3.0~rc.4ubuntu49.6) trusty; urgency=medium
 
   * Wandboard: Use /dev/disk/by-path/platform-2198000.usdhc-part1

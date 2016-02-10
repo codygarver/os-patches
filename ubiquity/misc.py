@@ -600,6 +600,15 @@ def create_bool(text):
         return text
 
 
+# On hardware that uses SMBIOS 2.8+, dmidecode 2.12 will contain this warning
+# message prefixed before system-version, system-product-name, etc.  This is
+# problematic as the default hostname built by Ubiquity wont be valid (it's too
+# long), so we strip this prefix.  Note there is no reason to forward-port this
+# to Xenial as it uses dmidecode 3.0, which doesn't have this problem.
+SMBIOS28_JUNK = 'SMBIOS-implementations-newer-than-version-2-8-are-not-fully-\
+supported-by-this-version-of-dmidecode-'
+
+
 @raise_privileges
 def dmimodel():
     model = ''
@@ -638,6 +647,8 @@ def dmimodel():
         model = re.sub('[^a-zA-Z0-9]+', '-', model).rstrip('-').lstrip('-')
         if model.lower() == 'not-available':
             return
+        if model.startswith(SMBIOS28_JUNK):
+            model = model[len(SMBIOS28_JUNK):]
     except Exception:
         syslog.syslog(syslog.LOG_ERR, 'Unable to determine the model from DMI')
     finally:
