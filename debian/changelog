@@ -1,3 +1,10 @@
+grub2-signed (1.34.8) trusty; urgency=medium
+
+  * Rebuild against grub-efi-amd64 2.02~beta2-9ubuntu1.7 (LP: #1521612,
+    LP: #1274320).
+
+ -- dann frazier <dannf@ubuntu.com>  Wed, 16 Dec 2015 14:23:00 -0700
+
 grub2-signed (1.34.7) trusty-security; urgency=medium
 
   * Rebuild against grub2 2.02~beta2-9ubuntu1.6 security update.
