@@ -1,6 +1,6 @@
 --- /dev/null
 +++ b/onboard-defaults.conf
-@@ -0,0 +1,221 @@
+@@ -0,0 +1,230 @@
 +#
 +# Onboard system defaults
 +#
@@ -82,11 +82,20 @@
 +# Enable aspect correction and fake transparency in gnome-screensaver
 +# and unity-greeter. Remove this key to have Onboard stretch from
 +# side to side again.
-+xembed-aspect-change-range=[0, 1.6]
++xembed-aspect-change-range=[0, 1.15]
 +
-+# Position of the keyboard in pixels from the left screen edge.
-+# Remove this to center the keyboard in unity-greeter.
++# Position of the keyboard in unity-greeter in pixels from
++# the left screen edge. Remove this to center the keyboard.
 +xembed-unity-greeter-offset-x=85.0
++
++# Color of the background bar that is rendered on top of the
++# background image in unity-greeter and gnome-screensaver.
++# If not specified, the color is taken from the keyboard's background color.
++xembed-background-color='#0000007F'
++
++# Enable drawing the current GNOME background image as background in
++# unity-greeter and gnome-screensaver.
++xembed-background-image-enabled=True
 +
 +# Other available keys:
 +#
