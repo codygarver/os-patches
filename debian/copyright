@@ -8,17 +8,21 @@ The source is hosted at:
 
 Upstream Authors:
 
-    Chris Jones <chris.e.jones@gmail.com>
     marmuta <marmvta@googlemail.com>
     Francesco Fumanti <francesco.fumanti@gmx.net>
     Gerd Kohlberger <gerdko gmail com>
+    Chris Jones <chris.e.jones@gmail.com>
 
 Copyright:
-    2011, 2012 Chris Jones, marmuta, Francesco Fumanti, Gerd Kohlberger
-	2009, 2010 Chris Jones, marmuta, Francesco Fumanti
-	2006, 2007, 2008 Chris Jones
 
-License:
+	2011-2014 marmuta, Gerd Kohlberger, Francesco Fumanti
+	2010 marmuta, Chris Jones, Francesco Fumanti
+	2009 Chris Jones, Francesco Fumanti
+	2008 Chris Jones, Francesco Fumanti, Luke Yelavich
+	2007 Chris Jones, Martin Böhm
+	2006 Chris Jones, Henrik Nilsen Omma
+
+License: GPL-3
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

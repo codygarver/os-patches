@@ -32,7 +32,7 @@ import copy
 from gi.repository         import Gdk
 
 from Onboard.utils         import Timer, EventSource
-from Onboard.definitions   import InputEventSourceEnum, TouchInputEnum
+from Onboard.definitions   import TouchInputEnum
 from Onboard.XInput        import XIDeviceManager, XIEventType, XIEventMask
 
 ### Logging ###
@@ -329,6 +329,19 @@ class InputEventSource(EventSource):
         if not win:
             return
 
+        # scale coordinates in response to changes to
+        # org.gnome.desktop.interface scaling-factor
+        try:
+            scale = win.get_scale_factor()  # from Gdk 3.10
+            if scale and scale != 1.0:
+                scale = 1.0 / scale
+                event.x = event.x * scale
+                event.y = event.y * scale
+                event.x_root = event.x_root * scale
+                event.y_root = event.y_root * scale
+        except AttributeError:
+            pass
+
         # Slaves aren't grabbed for moving/resizing when simulating a drag
         # operation (drag click button), or when multiple slave devices are
         # involved (one for button press, another for motion).
@@ -572,7 +585,7 @@ class TouchInput(InputEventSource):
     def can_delay_sequence_begin(self, sequence):
         """ Overloaded in LayoutView to veto delay for move buttons. """
         return True
-        
+
     def on_delayed_sequence_begin(self, sequence, point):
         if not self._gesture_detected: # work around race condition
             sequence.point = point # return to the original begin point

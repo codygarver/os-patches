@@ -93,6 +93,15 @@ class LayoutView:
             for item in layout.iter_keys():
                 item.invalidate_key()
 
+    def invalidate_images(self):
+        """
+        Clear cached images, e.g. after changing window_scaling_factor.
+        """
+        layout = self.get_layout()
+        if layout:
+            for item in layout.iter_keys():
+                item.invalidate_image()
+
     def invalidate_shadows(self):
         """
         Clear cached shadow surfaces, e.g. after resizing,
@@ -343,18 +352,21 @@ class LayoutView:
         rect = Rect(0, 0, self.get_allocated_width(),
                           self.get_allocated_height())
 
-        pixbuf = self._get_xid_background_image()
-        if not pixbuf:
-            return
-        src_size = (pixbuf.get_width(), pixbuf.get_height())
-        x, y = 0, rect.bottom() - src_size[1]
-        Gdk.cairo_set_source_pixbuf(context, pixbuf, x, y)
-        context.rectangle(*rect)
-        context.fill()
+        # draw background image
+        if config.get_xembed_background_image_enabled():
+            pixbuf = self._get_xid_background_image()
+            if pixbuf:
+                src_size = (pixbuf.get_width(), pixbuf.get_height())
+                x, y = 0, rect.bottom() - src_size[1]
+                Gdk.cairo_set_source_pixbuf(context, pixbuf, x, y)
+                context.paint()
 
-        fill = self.get_background_rgba()
-        fill[3] = 0.5
-        context.set_source_rgba(*fill)
+        # draw solid colored bar on top
+        rgba = config.get_xembed_background_rgba()
+        if rgba is None:
+            rgba = self.get_background_rgba()
+            rgba[3] = 0.5
+        context.set_source_rgba(*rgba)
         context.rectangle(*rect)
         context.fill()
 
@@ -365,14 +377,28 @@ class LayoutView:
         except AttributeError:
             size, size_mm = get_monitor_dimensions(self)
             filename = config.get_desktop_background_filename()
-            try:
-                pixbuf = GdkPixbuf.Pixbuf. \
-                            new_from_file_at_size(filename, *size)
-            except Exception as ex: # private exception gi._glib.GError when
-                                    # librsvg2-common wasn't installed
-                _logger.error("_get_xid_background_image(): " + \
-                              unicode_str(ex))
+            if not filename:
                 pixbuf = None
+            else:
+                try:
+                    # load image
+                    pixbuf = GdkPixbuf.Pixbuf.new_from_file(filename)
+
+                    # Scale image to mimic the behavior of gnome-screen-saver.
+                    # Take the largest, aspect correct, centered rectangle
+                    # that fits on the monitor.
+                    rm = Rect(0, 0, size[0], size[1])
+                    rp = Rect(0, 0, pixbuf.get_width(), pixbuf.get_height())
+                    ra = rm.inscribe_with_aspect(rp)
+                    pixbuf = pixbuf.new_subpixbuf(*ra)
+                    pixbuf = pixbuf.scale_simple(size[0], size[1],
+                                                GdkPixbuf.InterpType.BILINEAR)
+                except Exception as ex: # private exception gi._glib.GError when
+                                        # librsvg2-common wasn't installed
+                    _logger.error("_get_xid_background_image(): " + \
+                                unicode_str(ex))
+                    pixbuf = None
+
             self._xid_background_image = pixbuf
 
         return pixbuf

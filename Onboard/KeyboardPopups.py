@@ -11,7 +11,8 @@ from Onboard.utils          import Rect, Timer, roundrect_arc
 from Onboard.WindowUtils    import limit_window_position, \
                                    get_monitor_rects, \
                                    canvas_to_root_window_rect, \
-                                   get_monitor_dimensions
+                                   get_monitor_dimensions, \
+                                   WindowRectTracker
 from Onboard.TouchInput     import TouchInput
 from Onboard                import KeyCommon
 from Onboard.Layout         import LayoutRoot, LayoutPanel
@@ -92,12 +93,20 @@ class TouchFeedback:
         DEFAULT_POPUP_SIZE_MM = 18.0
         MAX_POPUP_SIZE_PX = 120.0  # fall-back if phys. monitor  size unavail.
 
+        gdk_win = window.get_window()
+
         w = config.keyboard.touch_feedback_size
         if w == 0:
             sz, sz_mm = get_monitor_dimensions(window)
             if sz and sz_mm:
                 if sz[0] and sz_mm[0]:
-                    w = sz[0] * DEFAULT_POPUP_SIZE_MM / sz_mm[0]
+                    default_size_mm = DEFAULT_POPUP_SIZE_MM
+
+                    # scale for hires displays
+                    if gdk_win:
+                        default_size_mm *= gdk_win.get_scale_factor()
+
+                    w = sz[0] * default_size_mm / sz_mm[0]
                 else:
                     w = min(sz[0] / 12.0, MAX_POPUP_SIZE_PX)
             else:
@@ -106,10 +115,11 @@ class TouchFeedback:
         return w, w * (1.0 + LabelPopup.ARROW_HEIGHT)
 
 
-class KeyboardPopup(Gtk.Window):
+class KeyboardPopup(WindowRectTracker, Gtk.Window):
     """ Abstract base class for popups. """
 
     def __init__(self):
+        WindowRectTracker.__init__(self)
         Gtk.Window.__init__(self,
                             skip_taskbar_hint=True,
                             skip_pager_hint=True,
@@ -175,10 +185,10 @@ class LabelPopup(KeyboardPopup):
         self.connect("draw", self._on_draw)
 
     def _on_realize_event(self, user_data):
-        win = self.get_window()
-        win.set_override_redirect(True)
+        self.set_override_redirect(True)
 
         # set minimal input shape for the popup to become click-through
+        win = self.get_window()
         self._osk_util.set_input_rect(win, 0, 0, 1, 1)
 
     def _on_draw(self, widget, context):
@@ -218,7 +228,7 @@ class LabelPopup(KeyboardPopup):
         label_color = self._key.get_label_color()
         pixbuf = self._key.get_image(label_rect.w, label_rect.h)
         if pixbuf:
-            self._draw_image(context, pixbuf, label_rect, label_color)
+            pixbuf.draw(context, label_rect, label_color)
         else:
             label = self._key.get_label()
             if label:
@@ -250,14 +260,6 @@ class LabelPopup(KeyboardPopup):
         context.move_to(*offset)
         context.set_source_rgba(*rgba)
         PangoCairo.show_layout(context, layout)
-
-    def _draw_image(self, context, pixbuf, rect, rgba):
-        Gdk.cairo_set_source_pixbuf(context, pixbuf, rect.x, rect.y)
-        pattern = context.get_source()
-        context.rectangle(*rect)
-        context.set_source_rgba(*rgba)
-        context.mask(pattern)
-        context.new_path()
 
     @staticmethod
     def _calc_font_size(rect, base_extents):
@@ -343,7 +345,7 @@ class LayoutPopup(KeyboardPopup, LayoutView, TouchInput):
         return self._drag_selected
 
     def handle_realize_event(self):
-        self.get_window().set_override_redirect(True)
+        self.set_override_redirect(True)
         super(LayoutPopup, self).handle_realize_event()
 
     def _on_destroy_event(self, user_data):

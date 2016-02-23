@@ -1,16 +1,33 @@
-onboard (1.0.0-0ubuntu4) trusty; urgency=medium
+onboard (1.0.1-0ubuntu1) trusty; urgency=medium
 
-  * Request for sponsorship (LP: #1303370)
+  * Request for sponsorship for new upstream release (LP: #1289592)
+  * debian/copyright:
+    - Update and refine copyright section
   * debian/patches/add_defaults_for_ubuntu.patch:
-    - Increase xembed aspect change range (LP: #1297695)
+    - Add more xembed entries to onboard-defaults.conf
+  * Add initial support for org.gnome.interface scaling-factor > 1 (LP #1283491)
+  * Catch Onboard becoming unresponsive due to invisible dialogs
+  * Small fix in the word suggestion line of the layouts
+  * Fix loading of desktop backgrounds with non-ascii filenames
+  * Fix startup failures in case of no defined locale or non-unicode locales
+  * Fix handling of hint file with wrong permissions in /tmp
+  * Fix black bars when xembedding
+  * Ignore x-offset when xembedding in unity-greeter on small screens
+  * Add more entries about embedding to the system defaults example file
+  * Don't activate the move button twice on press
+  * Assume RGBA support exist without compositing only in unity-greeter
+  * Show dialog to enable accessibility also if only word suggestions needs it
+  * Close the language menu when the language button is pressed a second time
+  * Fix back trace and hangs when using click buttons with python3.2 on precise
+  * Work around broken introspection of GLib.filename_from_uri() on precise
+  * Work around jumpy moves and resizes of keyboard after unhiding by auto-show
+  * Update window manager quirk selection after name change in gnome-shell
+  * Fix a GTK depreciation warning
+  * Remove spurious debug output
+  * Some code cleanup
+  * Update translations
 
- -- Francesco Fumanti <francesco.fumanti@gmx.net>  Fri, 04 Apr 2014 21:11:15 +0200
-
-onboard (1.0.0-0ubuntu3) trusty; urgency=medium
-
-  * No change rebuild to drop python3.3 compiled extension.
-
- -- Dimitri John Ledkov <xnox@ubuntu.com>  Mon, 31 Mar 2014 19:35:53 +0100
+ -- Francesco Fumanti <francesco.fumanti@gmx.net>  Fri, 07 Mar 2014 21:38:09 +0100
 
 onboard (1.0.0-0ubuntu2) trusty; urgency=medium
 

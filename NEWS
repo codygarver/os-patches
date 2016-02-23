@@ -1,3 +1,28 @@
+Version 1.0.1
+-------------
+
+  * Add initial support for org.gnome.interface scaling-factor > 1 (LP #1283491)
+  * Catch Onboard becoming unresponsive due to invisible dialogs
+  * Small fix in the word suggestion line of the layouts
+  * Fix loading of desktop backgrounds with non-ascii filenames
+  * Fix startup failures in case of no defined locale or non-unicode locales
+  * Fix handling of hint file with wrong permissions in /tmp
+  * Fix black bars when xembedding
+  * Ignore x-offset when xembedding in unity-greeter on small screens
+  * Add more entries about embedding to the system defaults example file
+  * Don't activate the move button twice on press
+  * Assume RGBA support exist without compositing only in unity-greeter
+  * Show dialog to enable accessibility also if only word suggestions needs it
+  * Close the language menu when the language button is pressed a second time
+  * Fix back trace and hangs when using click buttons with python3.2 on precise
+  * Work around broken introspection of GLib.filename_from_uri() on precise
+  * Work around jumpy moves and resizes of keyboard after unhiding by auto-show
+  * Update window manager quirk selection after name change in gnome-shell
+  * Fix a GTK depreciation warning
+  * Remove spurious debug output
+  * Some code cleanup
+  * Update translations
+
 Version 1.0.0
 -------------
 

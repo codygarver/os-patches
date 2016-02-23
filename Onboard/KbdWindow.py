@@ -6,7 +6,7 @@ import time
 from gi.repository import GObject, GLib, GdkX11, Gdk, Gtk
 
 from Onboard.utils       import Rect, CallOnce, Timer
-from Onboard.WindowUtils import Orientation, WindowRectTracker, \
+from Onboard.WindowUtils import Orientation, WindowRectPersist, \
                                 set_unity_property
 import Onboard.osk as osk
 
@@ -55,13 +55,13 @@ class KbdWindowBase:
 
         self._opacity = 1.0
         self._default_resize_grip = self.get_has_resize_grip()
-        self._override_redirect = False
         self._type_hint = None
 
         self._known_window_rects = []
         self._written_window_rects = {}
         self._written_dock_sizes = {}
         self._wm_quirks = None
+        self._auto_position_started = False
 
         self._desktop_switch_count = 0
         self._moved_desktop_switch_count = 0
@@ -134,7 +134,7 @@ class KbdWindowBase:
         if wm:
             self._wm_quirks = None
             for cls in [WMQuirksCompiz, WMQuirksMetacity, WMQuirksMutter]:
-                if cls.wm == wm.lower():
+                if  wm.lower() in cls.wms:
                     self._wm_quirks = cls()
                     break
 
@@ -149,9 +149,10 @@ class KbdWindowBase:
     def check_alpha_support(self):
         screen = self.get_screen()
         visual = screen.get_rgba_visual()
-        self.supports_alpha = visual and \
-                              (screen.is_composited() or \
-                               config.running_under_gdm) # for lightdm
+        self.supports_alpha = \
+            visual and \
+            (screen.is_composited() or \
+             config.launched_by == config.LAUNCHER_UNITY_GREETER)
 
         self.keyboard_widget.supports_alpha = self.supports_alpha
 
@@ -177,6 +178,7 @@ class KbdWindowBase:
 
     def _show_first_time(self):
         self.update_window_options()
+        self.update_window_scaling_factor(True)
         self.pre_render_keys(*self.get_size())
         self.show()
 
@@ -203,9 +205,7 @@ class KbdWindowBase:
         if not config.xid_mode:   # not when embedding
             ord = self.is_override_redirect_mode()
             if ord:
-                self.get_window().set_override_redirect(True)
-
-            self._override_redirect = ord
+                self.set_override_redirect(True)
 
             self.update_taskbar_hint()
             self.restore_window_rect(startup = True)
@@ -240,7 +240,7 @@ class KbdWindowBase:
 
             # Override redirect toggled?
             ord = self.is_override_redirect_mode()
-            if ord != self._override_redirect:
+            if ord != self.get_override_redirect():
                 recreate = True
 
             # Window type hint changed?
@@ -250,17 +250,7 @@ class KbdWindowBase:
 
             # (re-)create the gdk window?
             if recreate:
-
-                visible = None
-                if self.get_realized(): # not starting up?
-                    visible = self.is_visible()
-                    self.hide()
-                    self.unrealize()
-
-                self.realize()
-
-                if not visible is None:
-                    Gtk.Window.set_visible(self, visible)
+                self._recreate_window()
 
             # Show the resize gripper?
             if config.has_window_decoration():
@@ -269,6 +259,20 @@ class KbdWindowBase:
                 self.set_has_resize_grip(False)
 
             self.update_sticky_state()
+
+    def _recreate_window(self):
+        _logger.info("recreating window - window options changed")
+
+        visible = None
+        if self.get_realized(): # not starting up?
+            visible = self.is_visible()
+            self.hide()
+            self.unrealize()
+
+        self.realize()
+
+        if not visible is None:
+            Gtk.Window.set_visible(self, visible)
 
     def update_sticky_state(self):
         if not config.xid_mode:
@@ -499,7 +503,7 @@ class KbdWindowBase:
            not config.is_docking_enabled()
 
 
-class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
+class KbdWindow(KbdWindowBase, WindowRectPersist, Gtk.Window):
 
     # Minimum window size (for resizing in system mode, see handle_motion())
     MINIMUM_SIZE = 20
@@ -518,7 +522,7 @@ class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
 
         KbdWindowBase.__init__(self, keyboard_widget, icp)
 
-        WindowRectTracker.__init__(self)
+        WindowRectPersist.__init__(self)
 
         GObject.signal_new("quit-onboard", KbdWindow,
                            GObject.SIGNAL_RUN_LAST,
@@ -549,7 +553,7 @@ class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
         config.window.dock_size_notify_add(dock_size_changed)
 
     def cleanup(self):
-        WindowRectTracker.cleanup(self)
+        WindowRectPersist.cleanup(self)
         KbdWindowBase.cleanup(self)
         if self.icp:
             self.icp.cleanup()
@@ -664,8 +668,35 @@ class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
         if self.keyboard_widget.was_moving():
             config.window.docking_enabled = False
 
+    def update_window_scaling_factor(self, startup = False):
+        """ check for changes to the window-scaling-factor """
+        scale = self.get_scale_factor()
+        if not scale is None and \
+           config.window_scaling_factor != scale:
+            config.window_scaling_factor = scale
+            _logger.info("new window-scaling-factor '{}'".format(scale))
+
+            keyboard = self.keyboard_widget.keyboard
+
+            # In override redirect mode the window gets stuck with
+            # the old scale -> recreate it
+            if self.is_override_redirect_mode() and \
+               not startup and \
+               not config.xid_mode:
+                self._recreate_window()
+
+                # Release pressed keys in case the switch was initiated
+                # by Onboard, e.g. with the Return key in the terminal.
+                keyboard.release_pressed_keys()
+
+            # invalidate all images and key surfaces
+            self.keyboard_widget.invalidate_images()
+            keyboard.invalidate_ui()
+            keyboard.commit_ui_updates()
+
     def _on_configure_event(self, widget, event):
         self.update_window_rect()
+        self.update_window_scaling_factor()
 
         if not config.is_docking_enabled():
             # Connect_after seems broken in Quantal, but we still need to
@@ -864,6 +895,7 @@ class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
         return rect
 
     def auto_position(self):
+        self._auto_position_started = True
         self.update_position()
 
         # With docking enabled, when focusing the search entry of a
@@ -930,9 +962,30 @@ class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
         """
         Move the window from a transition, not meant for user positioning.
         """
-        # remember rects to distimguish from user move/resize
+        # remember rects to distinguish from user move/resize
         w, h = self.get_size()
         self.remember_rect(Rect(x, y, w, h))
+
+        # In Trusty, Compiz, floating window with force-to-top enabled,
+        # this window's configure-event lies about the window position
+        # after un-hiding by auto-show, which leads to jumping when
+        # moving or resizing afterwards.
+        #
+        # Test case:
+        # 1) Start onboard with auto-show enabled
+        # 2) Focus text entry to show the keyboard
+        # 3) Move the keyboard
+        # 4) Unfocus all text entries to hide the keyboard
+        # 5) Focus text entry to show the keyboard
+        # 6) Move the keyboard
+        #    -> keyboard jumps to the previous position
+        #
+        # Workaround: force position change to get new, hopefully
+        #             correct configure-events
+        if self._auto_position_started:
+            self._auto_position_started = False
+            if self._wm_quirks.must_fix_configure_event():
+                self.move(x-1, y)
 
         self.move(x, y)
 
@@ -968,7 +1021,7 @@ class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
 
     def on_restore_window_rect(self, rect):
         """
-        Overload for WindowRectTracker.
+        Overload for WindowRectPersist.
         """
         if not config.is_docking_enabled():
             self.home_rect = rect.copy()
@@ -985,7 +1038,7 @@ class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
 
     def on_save_window_rect(self, rect):
         """
-        Overload for WindowRectTracker.
+        Overload for WindowRectPersist.
         """
         # Ignore <rect> (self._window_rect), it may just be a temporary one
         # set by auto-show. Save the user selected home_rect instead.
@@ -994,7 +1047,7 @@ class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
     def read_window_rect(self, orientation):
         """
         Read orientation dependent rect.
-        Overload for WindowRectTracker.
+        Overload for WindowRectPersist.
         """
         if orientation == Orientation.LANDSCAPE:
             co = config.window.landscape
@@ -1006,7 +1059,7 @@ class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
     def write_window_rect(self, orientation, rect):
         """
         Write orientation dependent rect.
-        Overload for WindowRectTracker.
+        Overload for WindowRectPersist.
         """
         # There are separate rects for normal and rotated screen (tablets).
         if orientation == Orientation.LANDSCAPE:
@@ -1066,7 +1119,7 @@ class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
                 keyboard_widget.transition_visible_to(False, 0.0)
                 keyboard_widget.commit_transition()
 
-        WindowRectTracker.on_screen_size_changed(self, screen)
+        WindowRectPersist.on_screen_size_changed(self, screen)
 
     def on_screen_size_changed_delayed(self, screen):
         if config.is_docking_enabled():
@@ -1174,8 +1227,14 @@ class KbdWindow(KbdWindowBase, WindowRectTracker, Gtk.Window):
             top_start_x = rect.left()
             top_end_x   = rect.right() - 1
 
+
         struts = [0, 0, top, bottom, 0, 0, 0, 0,
                   top_start_x, top_end_x, bottom_start_x, bottom_end_x]
+
+        scale = config.window_scaling_factor
+        if scale != 1.0:
+            struts = [val * scale for val in struts]
+
         self._apply_struts(xid, struts)
 
     def _apply_struts(self, xid, struts = None):
@@ -1304,7 +1363,7 @@ class KbdPlugWindow(KbdWindowBase, Gtk.Plug):
 
 class WMQuirksDefault:
     """ Miscellaneous window managers, no special quirks """
-    wm = None
+    wms = ()
 
     @staticmethod
     def set_visible(window, visible):
@@ -1332,10 +1391,14 @@ class WMQuirksDefault:
         # struts fail for override redirect windows in metacity and mutter
         return not config.is_docking_enabled()
 
+    @staticmethod
+    def must_fix_configure_event():
+        """ does configure-event need fixing? """
+        return False
 
 class WMQuirksCompiz(WMQuirksDefault):
     """ Unity with Compiz """
-    wm = "compiz"
+    wms = ("compiz")
 
     @staticmethod
     def get_window_type_hint(window):
@@ -1361,10 +1424,16 @@ class WMQuirksCompiz(WMQuirksDefault):
         # Compiz can handle struts with OR windows.
         return True
 
+    @staticmethod
+    def must_fix_configure_event():
+        return config.is_force_to_top() and \
+            not config.xid_mode # in Trusty
+
+
 class WMQuirksMutter(WMQuirksDefault):
     """ Gnome-shell """
 
-    wm = "mutter"
+    wms = ("mutter", "GNOME Shell".lower())
 
     @staticmethod
     def set_visible(window, visible):
@@ -1382,7 +1451,7 @@ class WMQuirksMutter(WMQuirksDefault):
 class WMQuirksMetacity(WMQuirksDefault):
     """ Unity-2d, Gnome Classic """
 
-    wm = "metacity"
+    wms = ("metacity")
 
     @staticmethod
     def set_visible(window, visible):

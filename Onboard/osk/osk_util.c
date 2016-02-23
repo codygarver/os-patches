@@ -642,7 +642,6 @@ osk_util_set_input_rect (PyObject *self, PyObject *args)
     Py_RETURN_NONE;
 }
 
-
 typedef struct {
     PyObject *callback;
     PyObject *arglist;
