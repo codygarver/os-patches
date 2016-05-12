@@ -1,3 +1,11 @@
+lsb (4.1+Debian11ubuntu6.1) trusty; urgency=medium
+
+  * Add 01-upstart-lsb from the upstart package and make
+    executing rc.d scripts no-op if there is an upstart
+    job for that script. (LP: #1273462)
+
+ -- Zhang Hua <joshua.zhang@canonical.com>  Thu, 06 Aug 2015 11:11:16 -0500
+
 lsb (4.1+Debian11ubuntu6) trusty; urgency=medium
 
   * Don't hardcode pyshared in the install files.
