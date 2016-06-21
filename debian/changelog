@@ -1,3 +1,19 @@
+grub2 (2.02~beta2-9ubuntu1.8) trusty; urgency=medium
+
+  * debian/prep-bootdev.c: add prep-bootdev for use in postinst (and to help
+    detecting the prep partition on ppc64el in general).
+  * debian/rules: build the prep-bootdev binary for grub-ieee1275.
+  * debian/control: add libparted-dev to Build-Depends for prep-bootdev.
+  * debian/grub-ieee1275-bin.install.ppc64el.in: ship prep-bootdev.
+  * debian/clean: clean up prep-bootdev.
+  * debian/postinst.in: (LP: #1549064)
+    - run prep-bootdev to have a device to point grub-ieee1275 to to install
+      the new bootloader data to when calling grub-install.
+    - run grub-install with --no-nvram to avoid clobbering the boot-device
+      variable every time grub is updated.
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Wed, 24 Feb 2016 14:39:34 -0500
+
 grub2 (2.02~beta2-9ubuntu1.7) trusty; urgency=medium
 
   * Cherry-picks to better handle TFTP timeouts on some arches: (LP: #1521612)
