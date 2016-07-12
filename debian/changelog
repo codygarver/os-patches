@@ -1,3 +1,9 @@
+grub2-signed (1.34.13) trusty; urgency=medium
+
+  * Rebuild against grub-efi-amd64 2.02~beta2-9ubuntu1.11 (LP: #1591818)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 04 Jul 2016 13:15:40 +0200
+
 grub2-signed (1.34.9) trusty; urgency=medium
 
   * Rebuild against grub-efi-amd64 2.02~beta2-9ubuntu1.8 (LP: #1549064)
