@@ -1,3 +1,10 @@
+grub2 (2.02~beta2-9ubuntu1.11) trusty-proposed; urgency=medium
+
+  * Add support for running a 64-bit Linux kernel on a 32-bit EFI.
+    (LP: #1591818)
+
+ -- Shih-Yuan Lee (FourDollars) <fourdollars@ubuntu.com>  Wed, 08 Jun 2016 13:53:40 +0800
+
 grub2 (2.02~beta2-9ubuntu1.8) trusty; urgency=medium
 
   * debian/prep-bootdev.c: add prep-bootdev for use in postinst (and to help
