@@ -1,3 +1,11 @@
+dkms (2.2.0.3-1.1ubuntu5.14.04.6) trusty; urgency=medium
+
+  * debian/patches/shim_secureboot_support.patch: use update-secureboot-policy,
+    which has the benefit of being handled via triggers, to allow users to
+    toggle validation in shim. (LP: #1574727)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Fri, 20 May 2016 14:46:26 -0400
+
 dkms (2.2.0.3-1.1ubuntu5.14.04.5) trusty-security; urgency=medium
 
   * dkms_apport.py: update to the recent apport.utils api changes
