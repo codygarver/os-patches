@@ -1,3 +1,14 @@
+dkms (2.2.0.3-1.1ubuntu5.14.04.7) trusty; urgency=medium
+
+  * Build Linux modules in a specific order (LP: #1491729)
+    - Add POST_BUILD directive, and implement a BUILD_DEPENDS directive that
+      instructs `dkms autoinstall` to build Linux modules in a specific order to
+      ensure ZFS to build after SPL.
+    - Force the installation of a module if it is listed in
+      /usr/share/dkms/modules_to_force_install
+
+ -- Colin Ian King <colin.king@canonical.com>  Fri, 24 Jun 2016 16:43:12 +0100
+
 dkms (2.2.0.3-1.1ubuntu5.14.04.6) trusty; urgency=medium
 
   * debian/patches/shim_secureboot_support.patch: use update-secureboot-policy,
