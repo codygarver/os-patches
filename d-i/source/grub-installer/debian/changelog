@@ -1,3 +1,9 @@
+grub-installer (1.78ubuntu20.4) trusty-proposed; urgency=medium
+
+  * Install grub-efi-ia32 on i386/efi platforms (LP: #1592229)
+
+ -- Shih-Yuan Lee (FourDollars) <fourdollars@ubuntu.com>  Tue, 14 Jun 2016 10:42:25 +0800
+
 grub-installer (1.78ubuntu20.3) trusty; urgency=medium
 
   * Properly handle systems on which there may be more than 26 disks, and our

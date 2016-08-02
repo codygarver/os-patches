@@ -1,3 +1,11 @@
+ubiquity (2.18.8.13) trusty; urgency=medium
+
+  * ubiquity/misc.py: fix regex to match against nvme disks. (LP: #1600308)
+  * Automatic update of included source packages: grub-installer
+    1.78ubuntu20.4.
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Mon, 01 Aug 2016 14:58:28 -0400
+
 ubiquity (2.18.8.12) trusty; urgency=medium
 
   [ Mathieu Trudel-Lapierre ]
