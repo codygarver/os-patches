@@ -4,17 +4,17 @@ Date: Mon, 13 Jan 2014 12:13:12 +0000
 Subject: Output a menu entry for firmware setup on UEFI FastBoot systems
 
 Forwarded: no
-Last-Update: 2013-12-25
+Last-Update: 2015-09-04
 
 Patch-Name: uefi_firmware_setup.patch
 ---
- Makefile.util.def               |  6 ++++++
- util/grub.d/30_uefi-firmware.in | 46 +++++++++++++++++++++++++++++++++++++++++
+ Makefile.util.def               |    6 +++++
+ util/grub.d/30_uefi-firmware.in |   46 ++++++++++++++++++++++++++++++++++++++++
  2 files changed, 52 insertions(+)
  create mode 100644 util/grub.d/30_uefi-firmware.in
 
-diff --git a/Makefile.util.def b/Makefile.util.def
-index f659fb4..e1f6089 100644
+Index: b/Makefile.util.def
+===================================================================
 --- a/Makefile.util.def
 +++ b/Makefile.util.def
 @@ -508,6 +508,12 @@ script = {
@@ -30,9 +30,8 @@ index f659fb4..e1f6089 100644
    name = '40_custom';
    common = util/grub.d/40_custom.in;
    installdir = grubconf;
-diff --git a/util/grub.d/30_uefi-firmware.in b/util/grub.d/30_uefi-firmware.in
-new file mode 100644
-index 0000000..0f49bfc
+Index: b/util/grub.d/30_uefi-firmware.in
+===================================================================
 --- /dev/null
 +++ b/util/grub.d/30_uefi-firmware.in
 @@ -0,0 +1,46 @@
@@ -69,7 +68,7 @@ index 0000000..0f49bfc
 +OsIndications="$efi_vars_dir/OsIndicationsSupported-$EFI_GLOBAL_VARIABLE/data"
 +
 +if [ -e "$OsIndications" ] && \
-+   [ "$(( $(printf %x \'"$(cat $OsIndications | cut -b1)") & 1 ))" = 1 ]; then
++   [ "$(( $(printf 0x%x \'"$(cat $OsIndications | cut -b1)") & 1 ))" = 1 ]; then
 +  LABEL="System setup"
 +
 +  gettext_printf "Adding boot menu entry for EFI firmware configuration\n" >&2

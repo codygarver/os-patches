@@ -1,3 +1,11 @@
+grub2 (2.02~beta2-9ubuntu1.12) trusty; urgency=medium
+
+  * debian/patches/uefi_firmware_setup.patch: take into account that the UEFI
+    variable OsIndicationsSupported is a bit field, and as such should be
+    compared as hex values in 30_uefi-firmware.in. (LP: #1456911)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Fri, 29 Jul 2016 14:50:13 -0400
+
 grub2 (2.02~beta2-9ubuntu1.11) trusty-proposed; urgency=medium
 
   * Add support for running a 64-bit Linux kernel on a 32-bit EFI.
