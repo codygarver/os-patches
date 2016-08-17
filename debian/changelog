@@ -1,3 +1,36 @@
+update-manager (1:0.196.19) trusty-proposed; urgency=medium
+
+  * hwe-support-status: utilize a virtualbox metapackage set.  (LP: #1498059)
+
+ -- Brian Murray <brian@ubuntu.com>  Mon, 15 Aug 2016 11:14:48 -0700
+
+update-manager (1:0.196.18) trusty-proposed; urgency=medium
+
+  * hwe-support-status: add libwayland-egl1-mesa to the list of metapackages.
+    (LP: #1610434)
+
+ -- Brian Murray <brian@ubuntu.com>  Wed, 10 Aug 2016 08:38:20 -0700
+
+update-manager (1:0.196.17) trusty-proposed; urgency=medium
+
+  * hwe-support-status: decode output when checking for foreign architectures
+    so that the result is unicode not bytes. (LP: #1498059)
+
+ -- Brian Murray <brian@ubuntu.com>  Tue, 09 Aug 2016 11:19:00 -0700
+
+update-manager (1:0.196.16) trusty-proposed; urgency=medium
+
+  * HweSupportStatus/consts.py: improve messages and recommend upgrading to
+    the correct release. (LP: #1498059)
+
+ -- Brian Murray <brian@ubuntu.com>  Thu, 04 Aug 2016 15:42:06 -0700
+
+update-manager (1:0.196.15) trusty-proposed; urgency=medium
+
+  * Include HWE support tools and information. (LP: #1498059)
+
+ -- Brian Murray <brian@ubuntu.com>  Mon, 18 Jul 2016 10:03:22 -0700
+
 update-manager (1:0.196.14) trusty-proposed; urgency=medium
 
   * UpdateManager/Core/MetaRelease.py: When not running in development mode,

@@ -48,10 +48,11 @@ DBusGMainLoop(set_as_default=True)
 from .UnitySupport import UnitySupport
 from .Dialogs import (DistUpgradeDialog,
                       ErrorDialog,
+                      HWEUpgradeDialog,
                       NeedRestartDialog,
                       NoUpdatesDialog,
-                      StoppedUpdatesDialog,
                       PartialUpgradeDialog,
+                      StoppedUpdatesDialog,
                       UnsupportedDialog,
                       UpdateErrorDialog)
 from .MetaReleaseGObject import MetaRelease
@@ -82,6 +83,7 @@ class UpdateManager(Gtk.Window):
         self.cache = None
         self.update_list = None
         self.meta_release = None
+        self.hwe_replacement_packages = None
 
         # Basic GTK+ parameters
         self.set_title(_("Software Updater"))
@@ -212,8 +214,14 @@ class UpdateManager(Gtk.Window):
         update_backend = get_backend(self, InstallBackend.ACTION_UPDATE)
         self._start_pane(update_backend)
 
-    def start_install(self):
+    def start_install(self, hwe_upgrade=False):
         install_backend = get_backend(self, InstallBackend.ACTION_INSTALL)
+        if hwe_upgrade:
+            for pkgname in self.hwe_replacement_packages:
+                try:
+                    self.cache[pkgname].mark_install()
+                except SystemError:
+                    pass
         self._start_pane(install_backend)
 
     def start_available(self, cancelled_update=False, error_occurred=False):
@@ -227,15 +235,18 @@ class UpdateManager(Gtk.Window):
 
     def _make_available_pane(self, install_count, need_reboot=False,
                              cancelled_update=False, error_occurred=False):
+        self._check_hwe_support_status()
         if install_count == 0:
             # Need Restart > New Release > No Updates
             if need_reboot:
                 return NeedRestartDialog(self)
-            pane = self._check_meta_release()
-            if pane:
-                return pane
+            dist_upgrade = self._check_meta_release()
+            if dist_upgrade:
+                return dist_upgrade
             elif cancelled_update:
                 return StoppedUpdatesDialog(self)
+            elif self.hwe_replacement_packages:
+                return HWEUpgradeDialog(self)
             else:
                 return NoUpdatesDialog(self, error_occurred=error_occurred)
         else:
@@ -247,6 +258,9 @@ class UpdateManager(Gtk.Window):
                 header = _("You stopped the check for updates.")
                 desc = _("Updated software is available from "
                          "a previous check.")
+            # Display HWE updates first as an old HWE stack is vulnerable
+            elif self.hwe_replacement_packages:
+                return HWEUpgradeDialog(self)
             return UpdatesAvailable(self, header, desc, need_reboot)
 
     def start_error(self, is_update_error, header, desc):
@@ -302,6 +316,29 @@ class UpdateManager(Gtk.Window):
         else:
             self.meta_release.connect("done_downloading", Gtk.main_quit)
         return False
+
+    def _check_hwe_support_status(self):
+        HWE = "/usr/bin/hwe-support-status"
+        if not os.path.exists(HWE):
+            return None
+        cmd = [HWE, "--show-replacements"]
+        self._parse_hwe_support_status(cmd)
+
+    def _parse_hwe_support_status(self, cmd):
+        try:
+            subprocess.check_output(cmd)
+            # for debugging
+            # print("nothing unsupported running")
+        except subprocess.CalledProcessError as e:
+            if e.returncode == 10:
+                packages = e.output.strip().split()
+                self.hwe_replacement_packages = []
+                for pkgname in packages:
+                    pkgname = pkgname.decode('utf-8')
+                    if pkgname in self.cache and not self.cache[pkgname].is_installed:
+                        self.hwe_replacement_packages.append(pkgname)
+                # for debugging
+                # print(self.hwe_replacement_packages)
 
     # fixme: we should probably abstract away all the stuff from libapt
     def refresh_cache(self):
@@ -360,7 +397,7 @@ class UpdateManager(Gtk.Window):
             self._start_pane(PartialUpgradeDialog(self))
 
     def _setup_dbus(self):
-        """ this sets up a dbus listener if none is installed alread """
+        """ this sets up a dbus listener if none is installed already """
         # check if there is another g-a-i already and if not setup one
         # listening on dbus
         try:

@@ -30,8 +30,11 @@ warnings.filterwarnings(
     "ignore", "Accessed deprecated property", DeprecationWarning)
 
 import logging
+import datetime
 import dbus
 import os
+
+import HweSupportStatus.consts
 
 from gettext import gettext as _
 
@@ -191,6 +194,24 @@ class DistUpgradeDialog(InternalDialog):
         os.execl("/bin/sh", "/bin/sh", "-c",
                  "/usr/bin/pkexec /usr/bin/do-release-upgrade "
                  "--frontend=DistUpgradeViewGtk3%s" % extra_args)
+
+
+class HWEUpgradeDialog(InternalDialog):
+    def __init__(self, window_main):
+        InternalDialog.__init__(self, window_main)
+        self.set_header(_("New important security and hardware support "
+                          "update."))
+        if datetime.date.today() < HweSupportStatus.consts.HWE_EOL_DATE:
+            self.set_desc(_(HweSupportStatus.consts.Messages.HWE_SUPPORT_ENDS))
+        else:
+            self.set_desc(_(HweSupportStatus.consts.Messages.HWE_SUPPORT_HAS_ENDED))
+        self.add_settings_button()
+        self.add_button(_("_Install…"), self.install)
+        self.focus_button = self.add_button(Gtk.STOCK_OK,
+                                            self.window_main.close)
+
+    def install(self):
+        self.window_main.start_install(hwe_upgrade=True)
 
 
 class UnsupportedDialog(DistUpgradeDialog):
