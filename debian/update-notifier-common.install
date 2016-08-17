@@ -3,6 +3,7 @@ debian/10periodic etc/apt/apt.conf.d
 debian/15update-stamp etc/apt/apt.conf.d
 debian/20archive etc/apt/apt.conf.d
 debian/90-updates-available etc/update-motd.d
+debian/95-hwe-eol etc/update-motd.d
 debian/98-reboot-required etc/update-motd.d
 debian/98-fsck-at-reboot etc/update-motd.d
 usr/share/polkit-1/actions/com.ubuntu.update-notifier.policy

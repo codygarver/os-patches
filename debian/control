@@ -48,7 +48,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          python, python3:any,
          python-apt (>= 0.6.12), python3-apt, python-debian, debconf,
-         patch
+         patch, update-manager-core (>= 1:0.196.16)
 Recommends: libpam-modules (>= 1.0.1-9ubuntu3)
 Suggests: policykit-1
 Description: Files shared between update-notifier and other packages

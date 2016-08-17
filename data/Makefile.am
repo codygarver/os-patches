@@ -16,7 +16,7 @@ convertdir = $(datadir)/GConf/gsettings
 dist_convert_DATA = update-notifier.convert
 
 helperdir = $(libdir)/update-notifier
-helper_SCRIPTS = apt_check.py apt-cdrom-check cddistupgrader update-motd-reboot-required update-motd-updates-available update-motd-fsck-at-reboot backend_helper.py package-data-downloader package-system-locked
+helper_SCRIPTS = apt_check.py apt-cdrom-check cddistupgrader update-motd-reboot-required update-motd-updates-available update-motd-fsck-at-reboot update-motd-hwe-eol backend_helper.py package-data-downloader package-system-locked
 
 notifydir = $(datadir)/update-notifier
 notify_SCRIPTS = notify-reboot-required
