@@ -39,6 +39,13 @@ sudo apt-get install %s
 
 and reboot your system.""")
 
+    # The fglrx driver was deprecated during the development of 16.04
+    FGLRX_DEPRECATION = _(
+"""The fglrx driver which you have installed was deprecated in 16.04,
+if you install the 16.04 Hardware Enablement stack the driver will be
+removed.  See the wiki page for details.
+""")
+
     # this message is shown if there is no clear upgrade path via a
     # meta pkg that we recognize
     APT_SHOW_UNSUPPORTED = _("""
@@ -65,7 +72,7 @@ http://wiki.ubuntu.com/1404_HWE_EOL
 """) % HWE_EOL_DATE.isoformat()
 
     HWE_SUPPORT_HAS_ENDED = _("""
-WARNING: Security updates for your current Hardware Enablement
-Stack ended on %s:
+WARNING: Security updates for your current Hardware Enablement Stack
+ended on %s:
  * http://wiki.ubuntu.com/1404_HWE_EOL
 """) % HWE_EOL_DATE.isoformat()

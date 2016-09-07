@@ -65,6 +65,14 @@ VBOX_METAPKGS = (
 )
 METAPKGS = KERNEL_METAPKGS + XORG_METAPKGS + VBOX_METAPKGS
 
+# fglrx drivers were deprecated in 16.04
+FGLRX_PKGS = {
+    'fglrx',
+    'fglrx-core',
+    'fglrx-updates',
+    'fglrx-updates-core'
+}
+
 
 class Package:
     """A lightweight apt package """
@@ -79,6 +87,8 @@ def find_hwe_packages(installed_packages):
     unsupported_hwe_packages = set()
     supported_hwe_packages = set()
     for pkg in installed_packages:
+        if pkg.name in FGLRX_PKGS:
+            unsupported_hwe_packages.add(pkg)
         # metapackages and X are marked with the -lts-$distro string
         for name in HWE_UNSUPPORTED_BACKPORTS:
             if pkg.name.endswith(name):
@@ -150,8 +160,8 @@ def is_unsupported_hwe_running(unsupported_hwe_packages):
 
 
 def advice_about_hwe_status(unsupported_hwe_packages, supported_hwe_packages,
-                            installed_packages, has_update_manager, today,
-                            verbose):
+                            installed_packages, has_update_manager, has_fglrx,
+                            today, verbose):
     unsupported_hwe_stack_running = is_unsupported_hwe_running(
         unsupported_hwe_packages)
     unsupported_hwe_metapkgs, supported_replacement_hwe = \
@@ -170,6 +180,8 @@ def advice_about_hwe_status(unsupported_hwe_packages, supported_hwe_packages,
             s = Messages.HWE_SUPPORT_HAS_ENDED
         if has_update_manager:
             print(s + Messages.UM_UPGRADE)
+            if has_fglrx:
+                print(Messages.FGLRX_DEPRECATION)
         else:
             # bug #1341320 - if no metapkg is left we need to show
             #                what is no longer supported
@@ -257,8 +269,11 @@ if __name__ == "__main__":
         foreign = arch in foreign_archs
         installed_packages.add(Package(pkgname, version, arch, foreign))
 
-    has_update_manager = "update-manager" in [
-        pkg.name for pkg in installed_packages]
+    installed_pkg_names = [pkg.name for pkg in installed_packages]
+    has_update_manager = "update-manager" in installed_pkg_names
+    has_fglrx = False
+    if FGLRX_PKGS.intersection(installed_pkg_names):
+        has_fglrx = True
     unsupported_hwe_packages, supported_hwe_packages = find_hwe_packages(
         installed_packages)
 
@@ -277,7 +292,7 @@ if __name__ == "__main__":
     if not options.show_all_unsupported and not options.show_replacements:
         advice_about_hwe_status(
             unsupported_hwe_packages, supported_hwe_packages,
-            installed_packages, has_update_manager, today,
+            installed_packages, has_update_manager, has_fglrx, today,
             options.verbose)
     if is_unsupported_hwe_running(unsupported_hwe_packages) and \
             today > HWE_EOL_DATE:

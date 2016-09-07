@@ -1,3 +1,17 @@
+update-manager (1:0.196.21) trusty-proposed; urgency=medium
+
+  * hwe-support-status: Deal with the fact that fglrx was deprecated in 16.04
+    so will not work with the Xenial 16.04 HWE stack. (LP: #1617448)
+
+ -- Brian Murray <brian@ubuntu.com>  Mon, 29 Aug 2016 16:13:22 -0700
+
+update-manager (1:0.196.20) trusty-proposed; urgency=medium
+
+  * source_update-manager.py: collect information about the state of HWE
+    support on the system. (LP: #1617080)
+
+ -- Brian Murray <brian@ubuntu.com>  Thu, 25 Aug 2016 15:26:37 -0700
+
 update-manager (1:0.196.19) trusty-proposed; urgency=medium
 
   * hwe-support-status: utilize a virtualbox metapackage set.  (LP: #1498059)
