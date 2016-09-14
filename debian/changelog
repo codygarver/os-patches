@@ -1,3 +1,13 @@
+lsb (4.1+Debian11ubuntu6.2) trusty; urgency=medium
+
+  * 01-upstart-lsb: when diverting an init script to an upstart job, we
+    can't directly map the 'status' subcommand to /sbin/status because the
+    return value of the latter is always 0 if we communicated successfully
+    with upstart.  Instead, parse the output of the command to correctly map
+    this to the LSB return codes.  LP: #1582813.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 17 May 2016 17:07:10 -0700
+
 lsb (4.1+Debian11ubuntu6.1) trusty; urgency=medium
 
   * Add 01-upstart-lsb from the upstart package and make
