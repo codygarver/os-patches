@@ -1,3 +1,10 @@
+update-manager (1:0.196.22) trusty-proposed; urgency=medium
+
+  * Correctly calculate the end of support, and return correctly when support
+    has ended. Patch from Andrew Gaul, with thanks. (LP: #1574193)
+
+ -- Brian Murray <brian@ubuntu.com>  Fri, 30 Sep 2016 09:45:52 -0700
+
 update-manager (1:0.196.21) trusty-proposed; urgency=medium
 
   * hwe-support-status: Deal with the fact that fglrx was deprecated in 16.04
