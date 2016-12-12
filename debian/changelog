@@ -1,3 +1,13 @@
+software-center (13.10-0ubuntu4.2) trusty; urgency=low
+
+  * debian/patches/07_lp899878.patch
+    - Added support for Adwaita Dark theme variant to fix LP: #899878
+    -- Added new softwarecenter.adwaita-dark.css file
+    -- Added detection for adwaita and dark theme setting
+    -- Adjusted transparency drawing of stipple by 20%
+
+ -- Bruce Pieterse <dev@otq.za.net>  Sun, 30 Oct 2016 19:42:26 +0200
+
 software-center (13.10-0ubuntu4.1) trusty-proposed; urgency=low
 
   * debian/patches/06_lp1308354.patch:

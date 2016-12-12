@@ -1,0 +1,165 @@
+Index: software-center-13.10/data/ui/gtk3/css/softwarecenter.adwaita-dark.css
+===================================================================
+--- /dev/null
++++ software-center-13.10/data/ui/gtk3/css/softwarecenter.adwaita-dark.css
+@@ -0,0 +1,120 @@
++/*  UI Colors
++
++    Palette: https://developer.gnome.org/hig-book/unstable/design-color.html.en
++*/
++
++@define-color accent-red-dark #990000;
++@define-color basic-threed-hilight #EAE8E3;
++@define-color basic-threed-medium #BAB5AB;
++@define-color blue-hilight #4B6983;
++@define-color blue-medium #7590AE;
++@define-color blue-shadow #314E6C;
++@define-color threed-shadow #565248;
++@define-color basic-threed-dark #807D74;
++
++/* - Custom */
++@define-color custom-nls-pane #292929;
++@define-color custom-nls-focus-blue #154D90;
++@define-color custom-light-blue #8DB3DF;
++@define-color custom-light-gray #C4C4C4;
++
++/* - Debugging Color */
++@define-color debug #990000;
++
++/*
++   do not use text-shadow until bugzilla.gnome.org bug #686209 is
++   fixed - its leaking memory. Has Status: RESOLVED FIXED as of 2015-05-27. Safe to use?
++*/
++
++/* GTK */
++GtkViewport {
++    background-color: @custom-nls-pane;
++    border-width: 0;
++    padding: 0;
++}
++
++/* - More, Category Listing */
++GtkTreeView {
++    background-color: @custom-nls-pane;
++}
++GtkTreeView:selected {
++    background-color: @custom-nls-focus-blue;
++}
++
++/* All Software, Installed Drop-Downs */
++#toolbar-popup {
++    padding: 0;
++}
++
++
++/* Landing */
++
++/* - What's New, Top Rated Table Header
++    - - More Button
++*/
++.more-link {
++    -GtkButton-inner-border: 0;
++    -GtkButton-default-border: 0;
++    -GtkButton-default-outside-border: 0;
++    color: @custom-light-gray;
++    background-color: shade (@custom-nls-pane, 0.925);
++    border-color: shade (@custom-nls-pane, 0.875);
++    padding: 10px;
++}
++
++.more-link:hover {
++    color: @blue-hilight;
++}
++
++/* - - Table Header*/
++.frame-header-title {
++    color: @basic-threed-hilight;
++    padding: 10px;
++}
++
++/* - - Table Cells */
++.grid-lines {
++    border-color: @threed-shadow;
++}
++
++/* - Price, Hints
++    - - App Info: Version, Total Size, License, Updates
++*/
++.subtle,
++#subtle-label {
++    -GtkWidget-link-color: shade (@basic-threed-hilight 1);
++    -GtkWidget-visited-link-color: shade (@basic-threed-hilight, 1);
++    color: shade (@basic-threed-hilight, 1); /* non-link text color */
++}
++
++/* - Package Information */
++#screenshot-preview {
++    border-color: @blue-shadow;
++    color: @blue-hilight;
++    border-width: 2px;
++    border-radius: 3px;
++}
++
++/* - - Horizontal Rule */
++.item-view-separator {
++    border-color: shade (@threed-shadow, 0.9);
++    border-width: 1px;
++}
++
++/* Category Listing */
++/* - Row Information: Review Counter: Package Name ***** (12) */
++.cellrenderer-avgrating-label {
++    color: @threed-shadow;
++    background-color: @custom-light-gray;
++}
++.cellrenderer-avgrating-label:selected {
++    color: @basic-threed-hilight;
++    background-color: @custom-light-blue;
++}
++
++/* Global */
++/* - Ratings Star */
++#featured-star {
++    border-color: @basic-threed-medium;
++    color: @basic-threed-hilight;
++}
+Index: software-center-13.10/softwarecenter/ui/gtk3/utils.py
+===================================================================
+--- software-center-13.10.orig/softwarecenter/ui/gtk3/utils.py
++++ software-center-13.10/softwarecenter/ui/gtk3/utils.py
+@@ -52,6 +52,7 @@ def init_sc_css_provider(toplevel, setti
+     datadir = softwarecenter.paths.datadir
+     context = toplevel.get_style_context()
+     theme_name = settings.get_property("gtk-theme-name").lower()
++    adwaita_dark_theme = settings.get_property("gtk-application-prefer-dark-theme")
+ 
+     if hasattr(toplevel, '_css_provider'):
+         # check old provider, see if we can skip setting or remove old
+@@ -62,8 +63,12 @@ def init_sc_css_provider(toplevel, setti
+             context.remove_provider_for_screen(screen, toplevel._css_provider)
+ 
+     # munge css path for theme-name
+-    css_path = os.path.join(
+-        datadir, "ui/gtk3/css/softwarecenter.%s.css" % theme_name)
++    if theme_name == 'adwaita' and adwaita_dark_theme:
++        css_path = os.path.join(
++            datadir, "ui/gtk3/css/softwarecenter.%s-dark.css" % theme_name)
++    else:
++        css_path = os.path.join(
++            datadir, "ui/gtk3/css/softwarecenter.%s.css" % theme_name)
+ 
+     # if no css for theme-name try fallback css
+     if not os.path.exists(css_path):
+Index: software-center-13.10/softwarecenter/ui/gtk3/views/catview.py
+===================================================================
+--- software-center-13.10.orig/softwarecenter/ui/gtk3/views/catview.py
++++ software-center-13.10/softwarecenter/ui/gtk3/views/catview.py
+@@ -175,7 +175,7 @@ class CategoriesView(Viewport):
+     def do_draw(self, cr):
+         cr.save()
+         cr.set_source(_asset_cache["stipple"])
+-        cr.paint_with_alpha(0.5)
++        cr.paint_with_alpha(0.3)
+         cr.restore()
+         for child in self:
+             self.propagate_draw(child, cr)
