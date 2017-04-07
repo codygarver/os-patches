@@ -1,3 +1,10 @@
+update-manager (1:0.196.23) trusty-proposed; urgency=medium
+
+  * Use a 64 bit integer for launch-time instead of a 32 bit one which won't
+    work someday. (LP: #1654008)
+
+ -- Brian Murray <brian@ubuntu.com>  Mon, 20 Mar 2017 18:59:22 -0700
+
 update-manager (1:0.196.22) trusty-proposed; urgency=medium
 
   * Correctly calculate the end of support, and return correctly when support
