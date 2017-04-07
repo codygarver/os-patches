@@ -1,3 +1,10 @@
+update-notifier (0.154.1ubuntu3) trusty-proposed; urgency=medium
+
+  * Switch to using a 64 bit integer for launch-time as update-manager also
+    did. (LP: #1654008)
+
+ -- Brian Murray <brian@ubuntu.com>  Mon, 20 Mar 2017 16:13:09 -0700
+
 update-notifier (0.154.1ubuntu2) trusty-proposed; urgency=medium
 
   * Add support for the HWE End-of-Life notification via

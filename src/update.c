@@ -518,8 +518,8 @@ auto_launch_now (TrayApplet *ta)
 
    // check last launch time 
    GSettings *um_settings = g_settings_new(SETTINGS_UM_SCHEMA);
-   last_launch = g_settings_get_int(um_settings,
-                                    SETTINGS_UM_KEY_LAST_LAUNCH);
+   g_settings_get(um_settings,
+                  SETTINGS_UM_KEY_LAST_LAUNCH, "x", &last_launch);
    g_debug_update ("last_launch: %i (%s)", last_launch, ctime(&last_launch));
    g_object_unref(um_settings);
 
