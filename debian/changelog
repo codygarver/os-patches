@@ -1,3 +1,10 @@
+ido (13.10.0+14.04.20170403-0ubuntu1) trusty; urgency=medium
+
+  * IdoCalendarMenuItem: disconnect from parent signals on item
+    destruction (LP: #1506427)
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Mon, 03 Apr 2017 16:09:37 +0000
+
 ido (13.10.0+14.04.20151021-0ubuntu1) trusty; urgency=medium
 
   * IdoCalendarMenuItem: add crash guard on
