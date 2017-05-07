@@ -1,3 +1,11 @@
+bash (4.3-7ubuntu1.6) trusty-proposed; urgency=medium
+
+  * When the readline `revert-all-at-newline' option is set, pressing newline
+    when the current line is one retrieved from history results in a double
+    free and a segmentation fault. LP: #1422795.
+
+ -- Jeffrey Hutzelman <jhutz@destiny.pc.cs.cmu.edu>  Fri, 16 Oct 2015 17:21:23 -0400
+
 bash (4.3-7ubuntu1.5) trusty-security; urgency=medium
 
   * SECURITY UPDATE: incorrect function definition parsing with

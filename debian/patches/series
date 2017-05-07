@@ -36,3 +36,4 @@ variables-affix.diff
 CVE-2014-718x.diff
 CVE-2014-6277.diff
 CVE-2014-6278.diff
+bash-readline-revert.diff -p1
