@@ -37,3 +37,6 @@ CVE-2014-718x.diff
 CVE-2014-6277.diff
 CVE-2014-6278.diff
 bash-readline-revert.diff -p1
+bash43-047.diff
+bash43-048.diff
+bash44-006.diff
