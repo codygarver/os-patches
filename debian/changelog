@@ -1,3 +1,10 @@
+unattended-upgrades (0.82.1ubuntu2.5) trusty; urgency=medium
+
+  * Add UbuntuESM to the list of sources automatically upgraded from by
+    default.  LP: #1687129.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 02 May 2017 15:55:13 -0400
+
 unattended-upgrades (0.82.1ubuntu2.4) trusty-proposed; urgency=medium
 
   * cherry pick fix for unused-dependencies removal (LP: #1267059)
