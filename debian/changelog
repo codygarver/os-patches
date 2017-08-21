@@ -1,3 +1,10 @@
+update-manager (1:0.196.24) trusty-proposed; urgency=medium
+
+  * Recommend libgtk2-perl be installed so we have a working debconf frontend.
+    (LP: #1607929)
+
+ -- Brian Murray <brian@ubuntu.com>  Mon, 24 Jul 2017 17:43:27 -0700
+
 update-manager (1:0.196.23) trusty-proposed; urgency=medium
 
   * Use a 64 bit integer for launch-time instead of a 32 bit one which won't
