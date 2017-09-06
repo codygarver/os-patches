@@ -1,3 +1,12 @@
+grub2 (2.02~beta2-9ubuntu1.14) trusty; urgency=medium
+
+  * debian/patches/install_signed.patch: update to use the new names for the
+    shim binary (shim$arch) and MokManager (mm$arch). (LP: #1637290)
+  * debian/control: Breaks shim (<< 0.9+1474479173.6c180c6-0ubuntu1~) for the
+    renamed EFI binaries.
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Fri, 14 Jul 2017 12:20:11 -0400
+
 grub2 (2.02~beta2-9ubuntu1.12) trusty; urgency=medium
 
   * debian/patches/uefi_firmware_setup.patch: take into account that the UEFI
