@@ -1,3 +1,20 @@
+update-manager (1:0.196.25) trusty; urgency=medium
+
+  [ Steve Langasek ]
+  * ubuntu-support-status: instead of checking the Release timestamp in
+    the releases file for every single package on the system, get the
+    release date from distro-info-data because it will always be the same.
+    This speeds up the script by > 50% in testing.
+
+  [ Marc Deslauriers ]
+  * ubuntu-support-status: use component to differentiate packages
+    supported by the community and packages supported by Canonical,
+    override the Supported tag for main and restricted to work around the
+    inaccurate Packages files, hardcode the release date since
+    distro-info-date isn't installed by default in Trusty. (LP: #1574670)
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 02 Feb 2018 09:03:31 -0500
+
 update-manager (1:0.196.24) trusty-proposed; urgency=medium
 
   * Recommend libgtk2-perl be installed so we have a working debconf frontend.

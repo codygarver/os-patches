@@ -3,27 +3,46 @@
 from __future__ import print_function
 
 import apt
+import csv
 import locale
 import datetime
 import operator
 import os
 import subprocess
+import time
 import gettext
 import sys
 
 from apt.utils import (
     get_maintenance_end_date,
-    get_release_date_from_release_file,
-    get_release_filename_for_pkg,
     )
 from optparse import OptionParser
 from UpdateManager.Core.utils import twrap
 
-CODENAME = subprocess.Popen(["lsb_release","-c","-s"],
-                            stdout=subprocess.PIPE,
-                            universal_newlines=True).communicate()[0].strip()
+def get_release_date():
+    # Hardcode the release date for the Trusty backport since the
+    # distro-info-data package isn't installed by default
+    return datetime.datetime(2014, 4, 17, 0, 0)
 
-def get_maintenance_status(cache, pkgname, supported_tag):
+def get_component(origin_tag, filename_tag):
+    if origin_tag != "Ubuntu":
+        return None
+
+    if not filename_tag:
+        return None
+
+    for component in ["main", "restricted", "universe", "multiverse"]:
+        if filename_tag.startswith("pool/" + component):
+            return component
+
+    return None
+
+def support_tag_override(support_tag, component):
+    if component in ["main", "restricted"]:
+        return ("5y")
+    return support_tag
+
+def get_maintenance_status(supported_tag, component, release_date):
     if supported_tag.endswith("y"):
         supported_for_n_month = 12*int(supported_tag.rstrip("y"))
     elif supported_tag.endswith("m"):
@@ -31,23 +50,11 @@ def get_maintenance_status(cache, pkgname, supported_tag):
     else:
         raise Exception("Unsupported tag '%s'" % supported_tag)
 
-    # try to figure out the support dates of the release and make
-    # sure to look only for stuff in "Ubuntu" and "distro_codename"
-    # (to exclude stuff in ubuntu-updates for the support time 
-    # calculation because the "Release" file time for that gets
-    # updated regularly)
-    releasef = get_release_filename_for_pkg(cache, pkgname, 
-                                            "Ubuntu", CODENAME)
-    if not releasef:
-        releasef = get_release_filename_for_pkg(cache, pkgname, 
-                                            "Ubuntu", CODENAME + "-updates")
+    if component in ['main', 'restricted']:
+        supported_by = "Canonical"
+    else:
+        supported_by = _("Community")
 
-    time_t = get_release_date_from_release_file(releasef)
-    # check the release date and show support information
-    # based on this
-    if not time_t:
-        raise Exception("No date tag found")
-    release_date = datetime.datetime.fromtimestamp(time_t)
     now = datetime.datetime.now()
 
     # mvo: we do not define the end date very precisely
@@ -60,13 +67,12 @@ def get_maintenance_status(cache, pkgname, supported_tag):
                      (now.year == support_end_year and now.month > support_end_month))
 
     # build dict for the argument string
-    d = { 'support_tag' : supported_tag,
+    d = { 'support_duration' : supported_tag,
           'support_end_month_str' : support_end_month_str,
-          'support_end_year' : support_end_year }
+          'support_end_year' : support_end_year,
+          'supported_by' : supported_by }
 
-    if support_ended:
-        return (False, "%(support_end_month_str)s %(support_end_year)s (%(support_tag)s)" % d)
-    return (True, "%(support_end_month_str)s %(support_end_year)s (%(support_tag)s)" % d)
+    return (not support_ended, d)
 
 if __name__ == "__main__":
     #FIXME: Workaround a bug in optparser which doesn't handle unicode/str
@@ -116,6 +122,8 @@ if __name__ == "__main__":
     # total count, for statistics
     total = 0
 
+    release_date = get_release_date()
+
     # analyze
     with apt.Cache() as cache:
         for pkg in cache:
@@ -129,12 +137,27 @@ if __name__ == "__main__":
                     continue
                 # get support time
                 support_tag = pkg.candidate.record["Supported"]
-                (still_supported, support_str) = get_maintenance_status(cache,
-                    pkg.name, support_tag)
+                component = get_component(
+                    pkg.candidate.record.get("Origin"),
+                    pkg.candidate.record.get("Filename"))
+                if not component:
+                    unsupported.add(pkg.name)
+                    continue
+
+                # Override the support tag because of inaccurate Packages
+                # files (LP: #1574670)
+                support_tag = support_tag_override(support_tag, component)
+
+                (still_supported, details) = get_maintenance_status(
+                    support_tag, component, release_date)
                 if not still_supported:
                     unsupported.add(pkg.name)
                     continue
-                supported_time_for_pkgname[pkg.name] = support_tag
+                supported_time_for_pkgname[pkg.name] = (
+                    "%(support_duration)s - %(supported_by)s" % details)
+                support_str = (
+                    "%(support_end_month_str)s %(support_end_year)s "
+                    "(%(supported_by)s - %(support_duration)s)" % details)
                 if not support_str in supported_by_time:
                     supported_by_time[support_str] = set()
                 supported_by_time[support_str].add(pkg.name)
