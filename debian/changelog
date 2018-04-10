@@ -1,3 +1,9 @@
+ubuntu-release-upgrader (1:0.220.10) trusty-security; urgency=medium
+
+  * Properly drop permissions when opening a browser. (LP: #1174007)
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 09 Apr 2018 10:01:24 -0400
+
 ubuntu-release-upgrader (1:0.220.9) trusty-proposed; urgency=medium
 
   * No change rebuild so the dist-upgrader tarball will be signed with the new
