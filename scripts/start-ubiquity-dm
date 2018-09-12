@@ -57,6 +57,8 @@ export XDG_SESSION_TYPE="x11"
 
 sed -i 's/deb cdrom/deb [trusted=yes] cdrom/g' /etc/apt/sources.list
 
+pactl set-sink-volume @DEFAULT_SINK@ 50%
+
 [ -e /run/systemd/system ] || initctl emit starting-dm DM=ubiquity-dm
 
 # turn off console blanking for install process
