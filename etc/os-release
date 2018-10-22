@@ -9,4 +9,4 @@ SUPPORT_URL="https://elementary.io/support"
 BUG_REPORT_URL="https://github.com/elementary/appcenter/issues/new"
 PRIVACY_POLICY_URL="https://elementary.io/privacy-policy"
 VERSION_CODENAME=juno
-UBUNTU_CODENAME=juno
+UBUNTU_CODENAME=bionic
