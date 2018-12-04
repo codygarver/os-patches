@@ -3,6 +3,7 @@ VERSION="5.0 Juno"
 ID=elementary
 ID_LIKE=ubuntu
 PRETTY_NAME="elementary OS 5.0 Juno"
+LOGO=distributor-logo
 VERSION_ID="5.0"
 HOME_URL="https://elementary.io/"
 SUPPORT_URL="https://elementary.io/support"
