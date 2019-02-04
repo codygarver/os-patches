@@ -1,3 +1,10 @@
+grub2-signed (1.34.18) trusty; urgency=medium
+
+  * Rebuild against grub-efi-amd64 2.02~beta2-9ubuntu1.16
+    (LP: #1785033) (LP: #1642298) (LP: #1696599) (LP: #1792575)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Wed, 09 Jan 2019 09:11:55 -0500
+
 grub2-signed (1.34.17) trusty; urgency=medium
 
   * Rebuild against grub-efi-amd64 2.02~beta2-9ubuntu1.14 (LP: #1708245)
