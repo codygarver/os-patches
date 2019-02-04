@@ -70,6 +70,11 @@ case @PACKAGE@ in
     fi
   ;;
 esac
+case @PACKAGE@ in
+  grub-*efi*|grub-ieee1275)
+    db_input low grub2/update_nvram || true
+  ;;
+esac
 
 db_input ${priority} grub2/linux_cmdline || true
 db_input medium grub2/linux_cmdline_default || true

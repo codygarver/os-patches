@@ -63,6 +63,7 @@ DEFAULT_TIMEOUT := 10
 DEFAULT_HIDDEN_TIMEOUT := 0
 DEFAULT_HIDDEN_TIMEOUT_BOOL := true
 confflags += \
+        --disable-werror \
 	--enable-ubuntu-recovery \
 	--enable-quiet-boot \
 	--enable-quick-boot \

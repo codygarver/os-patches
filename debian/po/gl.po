@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: grub2_1.98+20100804-2_gl\n"
 "Report-Msgid-Bugs-To: grub2@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-27 13:33+0100\n"
+"POT-Creation-Date: 2018-09-05 13:48-0600\n"
 "PO-Revision-Date: 2012-06-13 16:13+0200\n"
 "Last-Translator: Jorge Barreiro <yortx.barry@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -359,15 +359,32 @@ msgstr ""
 "correcta e modifíquea de ser preciso. A liña de comando pódese deixar "
 "baleira."
 
-#. Type: string
+#. Type: boolean
 #. Description
 #: ../templates.in:4001
+msgid "Update NVRAM variables to automatically boot into Debian?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../templates.in:4001
+msgid ""
+"GRUB can configure your platform's NVRAM variables so that it boots into "
+"Debian automatically when powered on. However, you may prefer to disable "
+"this behavior and avoid changes to your boot configuration. For example, if "
+"your NVRAM variables have been setup such that your system contacts a PXE "
+"server on every boot, this would preserve that behavior."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
 msgid "kFreeBSD default command line:"
 msgstr "Liña de comando por defecto para kFreeBSD:"
 
 #. Type: string
 #. Description
-#: ../templates.in:4001
+#: ../templates.in:5001
 msgid ""
 "The following string will be used as kFreeBSD parameters for the default "
 "menu entry but not for the recovery mode."
@@ -377,13 +394,13 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid "/boot/grub/device.map has been regenerated"
 msgstr "/boot/grub/device.map foi rexenerado."
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid ""
 "The file /boot/grub/device.map has been rewritten to use stable device "
 "names. In most cases, this should significantly reduce the need to change it "
@@ -396,7 +413,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid ""
 "However, since more than one disk is present in the system, it is possible "
 "that the system is depending on the old device map. Please check whether "
@@ -410,7 +427,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid ""
 "If you do not understand this message, or if there are no custom boot menu "
 "entries, you can ignore this message."

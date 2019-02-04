@@ -299,6 +299,13 @@ running_in_container()
   type running-in-container >/dev/null 2>&1 && running-in-container >/dev/null
 }
 
+no_nvram_arg() {
+    db_get grub2/update_nvram
+    if [ "$RET" = false ]; then
+        echo "--no-nvram"
+    fi
+}
+
 case "$1" in
   configure)
     . /usr/share/debconf/confmodule
@@ -693,7 +700,8 @@ case "$1" in
             grub-efi-arm)   target=arm-efi ;;
             grub-efi-arm64) target=arm64-efi ;;
           esac
-          grub-install --target="$target"
+          NO_NVRAM="$(no_nvram_arg)"
+          grub-install --target="$target" "$NO_NVRAM"
         fi
 
         # /boot/grub/ has more chances of being accessible by GRUB

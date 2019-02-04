@@ -12,11 +12,11 @@ Last-Update: 2015-12-03
  include/grub/efi/efi.h       |  4 +++
  3 files changed, 55 insertions(+), 51 deletions(-)
 
-diff --git a/grub-core/disk/efi/efidisk.c b/grub-core/disk/efi/efidisk.c
-index 3b12c34..845c66f 100644
---- a/grub-core/disk/efi/efidisk.c
-+++ b/grub-core/disk/efi/efidisk.c
-@@ -43,47 +43,6 @@ static struct grub_efidisk_data *fd_devices;
+Index: grub2-2.02~beta2/grub-core/disk/efi/efidisk.c
+===================================================================
+--- grub2-2.02~beta2.orig/grub-core/disk/efi/efidisk.c
++++ grub2-2.02~beta2/grub-core/disk/efi/efidisk.c
+@@ -43,47 +43,6 @@ static struct grub_efidisk_data *fd_devi
  static struct grub_efidisk_data *hd_devices;
  static struct grub_efidisk_data *cd_devices;
  
@@ -73,7 +73,7 @@ index 3b12c34..845c66f 100644
        if (! ldp)
  	/* This is empty. Why?  */
  	continue;
-@@ -150,11 +109,11 @@ find_parent_device (struct grub_efidisk_data *devices,
+@@ -150,11 +109,11 @@ find_parent_device (struct grub_efidisk_
    grub_efi_device_path_t *dp, *ldp;
    struct grub_efidisk_data *parent;
  
@@ -87,7 +87,7 @@ index 3b12c34..845c66f 100644
    ldp->type = GRUB_EFI_END_DEVICE_PATH_TYPE;
    ldp->subtype = GRUB_EFI_END_ENTIRE_DEVICE_PATH_SUBTYPE;
    ldp->length = sizeof (*ldp);
-@@ -180,11 +139,11 @@ is_child (struct grub_efidisk_data *child,
+@@ -180,11 +139,11 @@ is_child (struct grub_efidisk_data *chil
    grub_efi_device_path_t *dp, *ldp;
    int ret;
  
@@ -101,7 +101,7 @@ index 3b12c34..845c66f 100644
    ldp->type = GRUB_EFI_END_DEVICE_PATH_TYPE;
    ldp->subtype = GRUB_EFI_END_ENTIRE_DEVICE_PATH_SUBTYPE;
    ldp->length = sizeof (*ldp);
-@@ -207,8 +166,8 @@ add_device (struct grub_efidisk_data **devices, struct grub_efidisk_data *d)
+@@ -207,8 +166,8 @@ add_device (struct grub_efidisk_data **d
      {
        int ret;
  
@@ -112,7 +112,7 @@ index 3b12c34..845c66f 100644
        if (ret == 0)
  	ret = grub_efi_compare_device_paths ((*p)->device_path,
  					     d->device_path);
-@@ -795,7 +754,7 @@ grub_efidisk_get_device_name (grub_efi_handle_t *handle)
+@@ -795,7 +754,7 @@ grub_efidisk_get_device_name (grub_efi_h
    if (! dp)
      return 0;
  
@@ -121,7 +121,7 @@ index 3b12c34..845c66f 100644
    if (! ldp)
      return 0;
  
-@@ -811,14 +770,14 @@ grub_efidisk_get_device_name (grub_efi_handle_t *handle)
+@@ -811,14 +770,14 @@ grub_efidisk_get_device_name (grub_efi_h
  
        /* It is necessary to duplicate the device path so that GRUB
  	 can overwrite it.  */
@@ -138,11 +138,11 @@ index 3b12c34..845c66f 100644
  	  if (!(GRUB_EFI_DEVICE_PATH_TYPE (dup_ldp) == GRUB_EFI_MEDIA_DEVICE_PATH_TYPE
  		&& (GRUB_EFI_DEVICE_PATH_SUBTYPE (dup_ldp) == GRUB_EFI_CDROM_DEVICE_PATH_SUBTYPE
  		    || GRUB_EFI_DEVICE_PATH_SUBTYPE (dup_ldp) == GRUB_EFI_HARD_DRIVE_DEVICE_PATH_SUBTYPE)))
-diff --git a/grub-core/kern/efi/efi.c b/grub-core/kern/efi/efi.c
-index 3b6cf26..12102ef 100644
---- a/grub-core/kern/efi/efi.c
-+++ b/grub-core/kern/efi/efi.c
-@@ -422,6 +422,47 @@ grub_efi_get_device_path (grub_efi_handle_t handle)
+Index: grub2-2.02~beta2/grub-core/kern/efi/efi.c
+===================================================================
+--- grub2-2.02~beta2.orig/grub-core/kern/efi/efi.c
++++ grub2-2.02~beta2/grub-core/kern/efi/efi.c
+@@ -385,6 +385,47 @@ grub_efi_get_device_path (grub_efi_handl
  				 GRUB_EFI_OPEN_PROTOCOL_GET_PROTOCOL);
  }
  
@@ -190,11 +190,11 @@ index 3b6cf26..12102ef 100644
  static void
  dump_vendor_path (const char *type, grub_efi_vendor_device_path_t *vendor)
  {
-diff --git a/include/grub/efi/efi.h b/include/grub/efi/efi.h
-index a000c38..2245632 100644
---- a/include/grub/efi/efi.h
-+++ b/include/grub/efi/efi.h
-@@ -56,6 +56,10 @@ void EXPORT_FUNC(grub_efi_print_device_path) (grub_efi_device_path_t *dp);
+Index: grub2-2.02~beta2/include/grub/efi/efi.h
+===================================================================
+--- grub2-2.02~beta2.orig/include/grub/efi/efi.h
++++ grub2-2.02~beta2/include/grub/efi/efi.h
+@@ -56,6 +56,10 @@ void EXPORT_FUNC(grub_efi_print_device_p
  char *EXPORT_FUNC(grub_efi_get_filename) (grub_efi_device_path_t *dp);
  grub_efi_device_path_t *
  EXPORT_FUNC(grub_efi_get_device_path) (grub_efi_handle_t handle);

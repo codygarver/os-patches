@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: grub2\n"
 "Report-Msgid-Bugs-To: grub2@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-27 13:33+0100\n"
+"POT-Creation-Date: 2018-09-05 13:48-0600\n"
 "PO-Revision-Date: 2012-04-22 17:31-0700\n"
 "Last-Translator: Vincent Chen <vinmun@gmail.com>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -326,15 +326,32 @@ msgstr ""
 "中的 `kopt' 參數所擷取出來的。請確認它是否正確，若有必要請加以修改。此命令列"
 "可以留空。"
 
-#. Type: string
+#. Type: boolean
 #. Description
 #: ../templates.in:4001
+msgid "Update NVRAM variables to automatically boot into Debian?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../templates.in:4001
+msgid ""
+"GRUB can configure your platform's NVRAM variables so that it boots into "
+"Debian automatically when powered on. However, you may prefer to disable "
+"this behavior and avoid changes to your boot configuration. For example, if "
+"your NVRAM variables have been setup such that your system contacts a PXE "
+"server on every boot, this would preserve that behavior."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
 msgid "kFreeBSD default command line:"
 msgstr "kFreeBSD 預設命令列："
 
 #. Type: string
 #. Description
-#: ../templates.in:4001
+#: ../templates.in:5001
 msgid ""
 "The following string will be used as kFreeBSD parameters for the default "
 "menu entry but not for the recovery mode."
@@ -343,13 +360,13 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid "/boot/grub/device.map has been regenerated"
 msgstr "已重新產生 /boot/grub/device.map"
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid ""
 "The file /boot/grub/device.map has been rewritten to use stable device "
 "names. In most cases, this should significantly reduce the need to change it "
@@ -361,7 +378,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid ""
 "However, since more than one disk is present in the system, it is possible "
 "that the system is depending on the old device map. Please check whether "
@@ -373,7 +390,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid ""
 "If you do not understand this message, or if there are no custom boot menu "
 "entries, you can ignore this message."

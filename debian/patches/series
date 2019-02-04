@@ -21,10 +21,19 @@ blacklist_1440x900x32.patch
 uefi_firmware_setup.patch
 mkconfig_ubuntu_distributor.patch
 linuxefi.patch
-linuxefi_amd64_only.patch
+linuxefi_backport_arm64.patch
+linuxefi_arm_sb_support.patch
+linuxefi_fix_validation_race.patch
+linuxefi_chainloader_path.patch
+linuxefi_chainloader_sb.patch
+linuxefi_loaders_enforce_sb.patch
+linuxefi_re-enable_linux_cmd.patch
+linuxefi_chainloader_pe_fixes.patch
+linuxefi_rework_non-sb_cases.patch
 linuxefi_debug.patch
-linuxefi_require_shim.patch
 linuxefi_non_sb_fallback.patch
+linuxefi_fix_relocate_coff.patch
+linuxefi_truncate_overlong_relocs.patch
 mkconfig_signed_kernel.patch
 install_signed.patch
 sleep_shift.patch
@@ -55,7 +64,6 @@ probe_nvme.patch
 ppc64el-disable-vsx.patch
 ieee1275-clear-reset.patch
 check_blocklists_overlap_fix.patch
-arm64-set-correct-length-of-device-path-end-entry.patch
 progress_avoid_null_deref.patch
 arm64-setjmp-Add-missing-license-macro.patch
 ofdisk_add_sas_disks.patch
@@ -65,3 +73,4 @@ efidisk-device-path-helpers-for-efinet.patch
 efinet-skip-virtual-devices-on-enumeration.patch
 efinet-enable-hardware-filters-on-interface.patch
 mixed_size_efi.patch
+0001-i386-linux-Add-support-for-ext_lfb_base.patch

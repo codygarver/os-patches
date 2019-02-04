@@ -1,3 +1,51 @@
+grub2 (2.02~beta2-9ubuntu1.16) trusty; urgency=medium
+
+  [ Ivan Hu ]
+  * debian/patches/0001-i386-linux-Add-support-for-ext_lfb_base.patch:
+    Add support for ext_lfb_base. (LP: #1785033)
+
+  [ dann frazier ]
+  * Add grub2/update_nvram template to allow users to disable NVRAM
+    updates during package upgrades (LP: #1642298).
+
+  [ Mathieu Trudel-Lapierre ]
+  * debian/patches: Rework linuxefi/SecureBoot support and sync with upstream
+    SB patch set: (LP: #1696599)
+    - linuxefi_backport_arm64.patch: backport basic arm64 chainload/linux
+      command support from 17.04.
+    - linuxefi_arm_sb_support.patch: add Secure Boot support for arm for its
+      chainloader.
+    - linuxefi_fix_validation_race.patch: Fix a race in validating images.
+    - linuxefi_chainloader_path.patch: honor the starting path for grub, so
+      images do not need to be started from $root.
+    - linuxefi_chainloader_sb.patch: Fix some more issues in chainloader use
+      when Secure Boot is enabled.
+    - linuxefi_loaders_enforce_sb.patch: Enforce Secure Boot policy for all
+      loaders: don't load the commands when Secure Boot is enabled.
+    - linuxefi_re-enable_linux_cmd.patch: Since we rely on the linux and
+      initrd commands to automatically hand-off to linuxefi/initrdefi; re-
+      enable the linux loader.
+    - linuxefi_chainloader_pe_fixes.patch: PE parsing fixes for chainloading
+      "special" PE images, such as Windows'.
+    - linuxefi_rework_non-sb_cases.patch: rework cases where Secure Boot is
+      disabled or shim validation is disabled so loading works as EFI binaries
+      when it is supposed to.
+    - Removed linuxefi_require_shim.patch; superseded by the above.
+    - Removed linuxefi_amd64_only.patch; superseded by the above.
+    - Refreshed patches.
+  * debian/rules: disable the use of -Werror while building grub; the EFI
+    patches have subtle cases which trip it up unnecessarily.
+  * debian/patches/arm64-set-correct-length-of-device-path-end-entry.patch:
+    dropped; included in linuxefi_backport_arm64.patch.
+  * debian/patches/linuxefi_fix_relocate_coff.patch: fix typo in
+    relocate_coff() causing issues with relocation of code in chainload.
+    (LP: #1792575)
+  * debian/patches/linuxefi_truncate_overlong_relocs.patch: The Windows
+    7 bootloader has inconsistent headers; truncate to the smaller, correct
+    size to fix chainloading Windows 7. (LP: #1792575)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Tue, 08 Jan 2019 12:36:49 -0500
+
 grub2 (2.02~beta2-9ubuntu1.15) trusty; urgency=medium
 
   * util/grub-install.c: Use MokManager EFI binary name without

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: grub2@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-27 13:33+0100\n"
+"POT-Creation-Date: 2018-09-05 13:48-0600\n"
 "PO-Revision-Date: 2012-08-18 18:44+0300\n"
 "Last-Translator: Andrei POPESCU <andreimpopescu@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
@@ -357,15 +357,32 @@ msgstr ""
 "corectitudinea acesteia și modificați-o, dacă este nevoie. Linia de comandă "
 "poate fi goală."
 
-#. Type: string
+#. Type: boolean
 #. Description
 #: ../templates.in:4001
+msgid "Update NVRAM variables to automatically boot into Debian?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../templates.in:4001
+msgid ""
+"GRUB can configure your platform's NVRAM variables so that it boots into "
+"Debian automatically when powered on. However, you may prefer to disable "
+"this behavior and avoid changes to your boot configuration. For example, if "
+"your NVRAM variables have been setup such that your system contacts a PXE "
+"server on every boot, this would preserve that behavior."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
 msgid "kFreeBSD default command line:"
 msgstr "Linia de comandă implicită kFreeBSD:"
 
 #. Type: string
 #. Description
-#: ../templates.in:4001
+#: ../templates.in:5001
 msgid ""
 "The following string will be used as kFreeBSD parameters for the default "
 "menu entry but not for the recovery mode."
@@ -375,13 +392,13 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid "/boot/grub/device.map has been regenerated"
 msgstr "/boot/grub/device.map a fost regenerat"
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid ""
 "The file /boot/grub/device.map has been rewritten to use stable device "
 "names. In most cases, this should significantly reduce the need to change it "
@@ -394,7 +411,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid ""
 "However, since more than one disk is present in the system, it is possible "
 "that the system is depending on the old device map. Please check whether "
@@ -408,7 +425,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../templates.in:5001
+#: ../templates.in:6001
 msgid ""
 "If you do not understand this message, or if there are no custom boot menu "
 "entries, you can ignore this message."
@@ -449,8 +466,8 @@ msgstr ""
 #~ "that your installed GRUB won't yet be able to parse correctly. To ensure "
 #~ "your system will be able to boot, you have to:"
 #~ msgstr ""
-#~ "De aceea, există riscul ca sistemul să nu mai pornească dacă update-grub"
-#~ "(8) este rulat înainte ca GRUB să fie actualizat, generând astfel un "
+#~ "De aceea, există riscul ca sistemul să nu mai pornească dacă update-"
+#~ "grub(8) este rulat înainte ca GRUB să fie actualizat, generând astfel un "
 #~ "fișier grub.cfg pe care GRUB-ul instalat nu-l va putea încă analiza "
 #~ "corect. Pentru a vă asigura că sistemul va putea porni, va trebui să:"
 
